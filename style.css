@@ -3,12 +3,14 @@
   --accent: #185fa5; --danger-bg: #fcebeb; --danger: #8f2424; --warn-bg: #faeeda; --warn: #7a4708;
   --ok-bg: #eaf3de; --ok: #2f5a0d; --chip: #f1efe8; --mono: ui-monospace, Consolas, monospace;
   --stripe-red: #e24b4a; --stripe-amber: #ba7517; --stripe-green: #639922;
+  --field: #6b6a66; --focus: rgba(24, 95, 165, 0.25);
 }
 /* Light is the default for everyone. Dark only when the visitor picks it with the switch. */
 :root[data-theme="dark"] {
   --bg: #161615; --card: #1f1f1d; --text: #ecebe6; --muted: #a3a29c; --line: #34332f;
   --accent: #85b7eb; --danger-bg: #3a1818; --danger: #f7c1c1; --warn-bg: #3a2a10; --warn: #fac775;
   --ok-bg: #1f2f12; --ok: #c0dd97; --chip: #2a2a27;
+  --field: #8f8e88; --focus: rgba(133, 183, 235, 0.3);
 }
 .theme { margin-left: 16px; font: inherit; font-size: 14px; color: var(--muted); background: none; border: 1px solid var(--line); border-radius: 8px; padding: 2px 10px; cursor: pointer; }
 * { box-sizing: border-box; }
@@ -20,10 +22,15 @@ a { color: var(--accent); }
 .brand { font-weight: 600; color: var(--text); text-decoration: none; }
 nav a { margin-left: 16px; font-size: 14px; color: var(--muted); text-decoration: none; }
 .lead { color: var(--muted); margin: 24px 0 16px; }
-.controls { display: flex; gap: 8px; flex-wrap: wrap; }
-select, input { font: inherit; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); color: var(--text); }
-select { flex: 0 0 auto; }
-input { flex: 1 1 260px; min-width: 0; }
+.controls { display: flex; gap: 12px; flex-wrap: wrap; align-items: flex-end; }
+.field { display: flex; flex-direction: column; gap: 4px; }
+.field.grow { flex: 1 1 260px; min-width: 0; }
+.field label { font-size: 13px; font-weight: 600; color: var(--text); }
+select, input { font: inherit; font-size: 17px; padding: 11px 12px; border: 2px solid var(--field); border-radius: 8px; background: var(--card); color: var(--text); width: 100%; }
+select { font-weight: 600; cursor: pointer; }
+input::placeholder { color: var(--muted); }
+select:hover, input:hover { border-color: var(--text); }
+select:focus, input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--focus); }
 .chips { margin: 12px 0 8px; display: flex; flex-wrap: wrap; gap: 6px; }
 .chip { font-size: 13px; padding: 3px 10px; border-radius: 8px; background: var(--chip); border: 1px solid var(--line); color: var(--muted); cursor: pointer; }
 .chip.on { background: var(--accent); color: var(--card); border-color: var(--accent); }
