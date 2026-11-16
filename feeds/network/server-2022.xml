@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Network on Windows Server 2022</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/network/server-2022.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/network/server-2022.xml</id>
+  <updated>2026-11-10T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:network:server-2022:2026-Nov</id>
+    <title>Windows Server 2022: Network in the November 2026 update (91 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=network"/>
+    <category term="area-update"/>
+    <summary>KB5131090: 91 security fixes in Network. Biggest parts: Windows DNS (20); Windows DHCP Server (9); Role: DNS Server (9); Windows NetBIOS (4). Files changed (23): afd.sys, bfe.dll, dhcpcore.dll, dhcpcore6.dll, dhcpcsvc.dll, dhcpcsvc6.dll, dhcpctrs.ini, dhcpmib.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:network:server-2022:2026-Oct</id>
+    <title>Windows Server 2022: Network in the October 2026 update (165 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=network"/>
+    <category term="area-update"/>
+    <summary>KB5126655: 165 security fixes in Network. Biggest parts: Role: DNS Server (52); Windows DHCP Server (16); Windows Routing and Remote Access Service (RRAS) (13); Windows TCP/IP (9). Files changed (24): afd.sys, bfe.dll, dhcpcore.dll, dhcpcore6.dll, dhcpcsvc.dll, dhcpcsvc6.dll, dhcpmon.dll, dhcpserverpsprovider.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:network:server-2022:2026-Sep</id>
+    <title>Windows Server 2022: Network in the September 2026 update (103 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=network"/>
+    <category term="area-update"/>
+    <summary>KB5122882: 103 security fixes in Network. Biggest parts: Windows DHCP Server (36); Windows DNS (13); Windows Routing and Remote Access Service (RRAS) (8); Windows TCP/IP (6). Files changed (23): afd.sys, bfe.dll, dhcpcore.dll, dhcpcore6.dll, dhcpcsvc.dll, dhcpcsvc6.dll, dhcpsrvmigplugin.dll, dhcpssvc.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:network:server-2022:2026-Aug</id>
+    <title>Windows Server 2022: Network in the August 2026 update (49 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=network"/>
+    <category term="area-update"/>
+    <summary>KB5120229, KB5120242, KB5123303: 49 security fixes in Network. Biggest parts: Windows DNS (16); Windows DHCP Server (14); Windows HTTP.sys (6); Windows Ancillary Function Driver for WinSock (3).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:network:server-2022:2026-Jul</id>
+    <title>Windows Server 2022: Network in the July 2026 update (47 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=network"/>
+    <category term="area-update"/>
+    <summary>KB5099540: 47 security fixes in Network. Biggest parts: Windows DHCP Server (7); Windows Ancillary Function Driver for WinSock (4); Windows TCP/IP (4); Windows Network File System (4).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:network:server-2022:2026-Jun</id>
+    <title>Windows Server 2022: Network in the June 2026 update (22 fixes)</title>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=network"/>
+    <category term="area-update"/>
+    <summary>KB5094128: 22 security fixes in Network. Biggest parts: Windows Ancillary Function Driver for WinSock (7); Windows DHCP Client (2); Universal Plug and Play (upnp.dll) (2); Windows DHCP Server (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:network:server-2022:2026-May</id>
+    <title>Windows Server 2022: Network in the May 2026 update (16 fixes)</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=network"/>
+    <category term="area-update"/>
+    <summary>KB5087424, KB5087545: 16 security fixes in Network. Biggest parts: Windows TCP/IP (10); Windows Ancillary Function Driver for WinSock (4); Windows Filtering Platform (WFP) (1); Windows Internet Key Exchange (IKE) Protocol (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:network:server-2022:2026-Apr</id>
+    <title>Windows Server 2022: Network in the April 2026 update (32 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=network"/>
+    <category term="area-update"/>
+    <summary>KB5082142: 32 security fixes in Network. Biggest parts: Windows Ancillary Function Driver for WinSock (8); Windows Universal Plug and Play (UPnP) Device Host (8); Function Discovery Service (fdwsd.dll) (4); Windows SSDP Service (3).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:network:server-2022:2026-Mar</id>
+    <title>Windows Server 2022: Network in the March 2026 update (9 fixes)</title>
+    <updated>2026-03-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=network"/>
+    <category term="area-update"/>
+    <summary>KB5078737, KB5078766: 9 security fixes in Network. Biggest parts: Windows Ancillary Function Driver for WinSock (4); Windows Routing and Remote Access Service (RRAS) (3); RPC Runtime (1); Windows Bluetooth RFCOM Protocol Driver (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:network:server-2022:2026-Feb</id>
+    <title>Windows Server 2022: Network in the February 2026 update (4 fixes)</title>
+    <updated>2026-02-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=network"/>
+    <category term="area-update"/>
+    <summary>KB5075906, KB5075943: 4 security fixes in Network. Biggest parts: Windows Ancillary Function Driver for WinSock (3); Windows HTTP.sys (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:network:server-2022:2026-Jan</id>
+    <title>Windows Server 2022: Network in the January 2026 update (9 fixes)</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=network"/>
+    <category term="area-update"/>
+    <summary>KB5073457: 9 security fixes in Network. Biggest parts: Windows Ancillary Function Driver for WinSock (2); Windows Routing and Remote Access Service (RRAS) (2); Windows Remote Procedure Call (1); Windows Internet Connection Sharing (ICS) (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:network:server-2022:2025-Dec</id>
+    <title>Windows Server 2022: Network in the December 2025 update (3 fixes)</title>
+    <updated>2025-12-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=network"/>
+    <category term="area-update"/>
+    <summary>KB5066782, KB5068787, KB5068840, KB5071413, KB5071547, KB5074353: 3 security fixes in Network. Biggest parts: Windows Routing and Remote Access Service (RRAS) (3).</summary>
+  </entry>
+</feed>

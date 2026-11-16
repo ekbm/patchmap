@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Installing and updates on Windows Server 2016</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/install-update/server-2016.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/install-update/server-2016.xml</id>
+  <updated>2026-11-10T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2016:2026-Nov</id>
+    <title>Windows Server 2016: Installing and updates in the November 2026 update (40 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5131083, KB5131291: 40 security fixes in Installing and updates. Biggest parts: Windows Installer (36); Windows AppX Deployment Service (1); Servicing Stack Updates (1); Windows AppX Package Manager (1). Files changed (8): appxdeploymentextensions.desktop.dll, appxdeploymentextensions.onecore.dll, appxdeploymentserver.dll, msi.dll, msi.mof, msiexec.exe, wuapi.dll, wuaueng.dll.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2016:2026-Oct</id>
+    <title>Windows Server 2016: Installing and updates in the October 2026 update (46 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5126649, KB5126868: 46 security fixes in Installing and updates. Biggest parts: Windows Installer (37); Servicing Stack Updates (4); Windows Update Service (2); Windows Update (1). Files changed (7): appxdeploymentextensions.desktop.dll, appxdeploymentextensions.onecore.dll, appxdeploymentserver.dll, msi.dll, msiexec.exe, wuapi.dll, wuaueng.dll.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2016:2026-Sep</id>
+    <title>Windows Server 2016: Installing and updates in the September 2026 update (4 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5122874, KB5123099: 4 security fixes in Installing and updates. Biggest parts: Windows Installer (4). Files changed (7): appxdeploymentextensions.desktop.dll, appxdeploymentextensions.onecore.dll, appxdeploymentserver.dll, msi.dll, trustedinstaller.exe, wuapi.dll, wuaueng.dll.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2016:2026-Aug</id>
+    <title>Windows Server 2016: Installing and updates in the August 2026 update (8 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5120418: 8 security fixes in Installing and updates. Biggest parts: Windows Installer (8).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2016:2026-Jul</id>
+    <title>Windows Server 2016: Installing and updates in the July 2026 update (4 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5099535: 4 security fixes in Installing and updates. Biggest parts: Windows Installer (2); Windows AppX Deployment Service (1); Windows App Installer (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2016:2026-Apr</id>
+    <title>Windows Server 2016: Installing and updates in the April 2026 update (1 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5082198: 1 security fixes in Installing and updates. Biggest parts: Windows Installer (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2016:2026-Jan</id>
+    <title>Windows Server 2016: Installing and updates in the January 2026 update (1 fixes)</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5073722: 1 security fixes in Installing and updates. Biggest parts: Windows Installer (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2016:2025-Dec</id>
+    <title>Windows Server 2016: Installing and updates in the December 2025 update (1 fixes)</title>
+    <updated>2025-12-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5066836, KB5068864, KB5071543: 1 security fixes in Installing and updates. Biggest parts: Windows Installer (1).</summary>
+  </entry>
+</feed>

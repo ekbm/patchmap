@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Sign-in and identity on Windows 11 26H2</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/sign-in/win11-26h2.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/sign-in/win11-26h2.xml</id>
+  <updated>2026-11-10T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:sign-in:win11-26h2:2026-Nov</id>
+    <title>Windows 11 26H2: Sign-in and identity in the November 2026 update (33 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;a=sign-in"/>
+    <category term="area-update"/>
+    <summary>KB5132043, KB5132061, KB5135385: 33 security fixes in Sign-in and identity. Biggest parts: Windows Smart Card (6); Windows Kerberos (6); Windows Local Security Authority Subsystem Service (LSASS) (6); Active Directory Domain Services (4). Files changed (24): kerberos.dll, lsasrv.dll, msv1_0.dll, adsldpc.dll, cloudap.dll, credssp.dll, kdcpw.dll, kerbclientshared.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:sign-in:win11-26h2:2026-Oct</id>
+    <title>Windows 11 26H2: Sign-in and identity in the October 2026 update (41 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;a=sign-in"/>
+    <category term="area-update"/>
+    <summary>KB5127648: 41 security fixes in Sign-in and identity. Biggest parts: Windows Hello (7); Windows Local Security Authority Subsystem Service (LSASS) (5); Active Directory Domain Services (5); Windows Netlogon (3). Files changed (24): kerberos.dll, kerberos.mof, lsasrv.dll, msv1_0.dll, authz.dll, cloudap.dll, kdcpw.dll, kerbclientshared.dll….</summary>
+  </entry>
+</feed>

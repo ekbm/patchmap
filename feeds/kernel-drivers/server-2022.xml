@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Kernel and drivers on Windows Server 2022</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/kernel-drivers/server-2022.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/kernel-drivers/server-2022.xml</id>
+  <updated>2026-11-10T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-4984:fixed</id>
+    <title>Now fixed: USB audio devices might fail to start or produce no sound</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;q=KB5122882"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5122882. Fixed in KB5129237. Affects: Windows Server 2022. Source: https://learn.microsoft.com/en-us/windows/release-health/status-windows-server-2022#4984msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:kernel-drivers:server-2022:2026-Nov</id>
+    <title>Windows Server 2022: Kernel and drivers in the November 2026 update (136 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=kernel-drivers"/>
+    <category term="area-update"/>
+    <summary>KB5131090: 136 security fixes in Kernel and drivers. Biggest parts: Windows Graphics Kernel (32); Windows Kernel (25); Windows Hyper-V (14); Windows USB Driver (8). Files changed (12): cng.sys, fltmgr.sys, ksecdd.sys, ksecpkg.sys, ntfs.sys, ntoskrnl.exe, partmgr.sys, refs.sys….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:kernel-drivers:server-2022:2026-Oct</id>
+    <title>Windows Server 2022: Kernel and drivers in the October 2026 update (229 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=kernel-drivers"/>
+    <category term="area-update"/>
+    <summary>KB5126655: 229 security fixes in Kernel and drivers. Biggest parts: Windows Kernel (35); Windows Win32 Kernel Subsystem (31); Windows Hyper-V (17); Windows Universal Disk Format File System Driver (UDFS) (16). Files changed (12): clfs.sys, cng.sys, ksecdd.sys, ksecpkg.sys, ntfs.sys, ntoskrnl.exe, partmgr.sys, refs.sys….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:kernel-drivers:server-2022:2026-Sep</id>
+    <title>Windows Server 2022: Kernel and drivers in the September 2026 update (98 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=kernel-drivers"/>
+    <category term="area-update"/>
+    <summary>KB5122882: 98 security fixes in Kernel and drivers. Biggest parts: Windows Kernel (11); Windows USB Audio Class driver (usbaudio.sys) (9); Virtual Hard Disk (VHD) Miniport Driver (7); Windows Services for NFS ONCRPC XDR Driver (6). Files changed (11): cng.sys, ksecpkg.sys, ntfs.sys, ntoskrnl.exe, partmgr.sys, refs.sys, storport.sys, volmgrx.sys….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:kernel-drivers:server-2022:2026-Aug</id>
+    <title>Windows Server 2022: Kernel and drivers in the August 2026 update (18 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=kernel-drivers"/>
+    <category term="area-update"/>
+    <summary>KB5120229, KB5120242, KB5123303: 18 security fixes in Kernel and drivers. Biggest parts: Windows Kernel (3); Windows Graphics Kernel (3); Windows Ancillary Function Driver for WinSock (3); Windows Cloud Files Mini Filter Driver (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:kernel-drivers:server-2022:2026-Jul</id>
+    <title>Windows Server 2022: Kernel and drivers in the July 2026 update (64 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=kernel-drivers"/>
+    <category term="area-update"/>
+    <summary>KB5099540: 64 security fixes in Kernel and drivers. Biggest parts: Windows Kernel (30); Windows Ancillary Function Driver for WinSock (4); Windows Cloud Files Mini Filter Driver (4); Windows Hyper-V (4).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:kernel-drivers:server-2022:2026-Jun</id>
+    <title>Windows Server 2022: Kernel and drivers in the June 2026 update (22 fixes)</title>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=kernel-drivers"/>
+    <category term="area-update"/>
+    <summary>KB5094128: 22 security fixes in Kernel and drivers. Biggest parts: Windows Ancillary Function Driver for WinSock (7); Windows Kernel (4); Windows Universal Disk Format File System Driver (UDFS) (2); Windows Projected File System Filter Driver (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:kernel-drivers:server-2022:2026-May</id>
+    <title>Windows Server 2022: Kernel and drivers in the May 2026 update (15 fixes)</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=kernel-drivers"/>
+    <category term="area-update"/>
+    <summary>KB5087424, KB5087545: 15 security fixes in Kernel and drivers. Biggest parts: Windows Ancillary Function Driver for WinSock (4); Windows Cloud Files Mini Filter Driver (3); Windows Kernel (2); Windows Common Log File System Driver (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:kernel-drivers:server-2022:2026-Apr</id>
+    <title>Windows Server 2022: Kernel and drivers in the April 2026 update (23 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=kernel-drivers"/>
+    <category term="area-update"/>
+    <summary>KB5082142: 23 security fixes in Kernel and drivers. Biggest parts: Windows Ancillary Function Driver for WinSock (8); Windows Kernel (5); Role: Windows Hyper-V (2); Windows Virtualization-Based Security (VBS) Enclave (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:kernel-drivers:server-2022:2026-Mar</id>
+    <title>Windows Server 2022: Kernel and drivers in the March 2026 update (10 fixes)</title>
+    <updated>2026-03-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=kernel-drivers"/>
+    <category term="area-update"/>
+    <summary>KB5078737, KB5078766: 10 security fixes in Kernel and drivers. Biggest parts: Windows Ancillary Function Driver for WinSock (4); Windows Kernel (3); Windows Bluetooth RFCOM Protocol Driver (1); Windows Universal Disk Format File System Driver (UDFS) (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:kernel-drivers:server-2022:2026-Feb</id>
+    <title>Windows Server 2022: Kernel and drivers in the February 2026 update (12 fixes)</title>
+    <updated>2026-02-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=kernel-drivers"/>
+    <category term="area-update"/>
+    <summary>KB5075906, KB5075943: 12 security fixes in Kernel and drivers. Biggest parts: Role: Windows Hyper-V (4); Windows Ancillary Function Driver for WinSock (3); Windows Kernel (3); Windows Subsystem for Linux (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3760:fixed</id>
+    <title>Now fixed: Connection and authentication failures in Azure Virtual Desktop and Windows 365</title>
+    <updated>2026-01-24T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;q=KB5073457"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5073457. Fixed in KB5077800. Affects: Windows Server 2022. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2022#3760msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:kernel-drivers:server-2022:2026-Jan</id>
+    <title>Windows Server 2022: Kernel and drivers in the January 2026 update (13 fixes)</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=kernel-drivers"/>
+    <category term="area-update"/>
+    <summary>KB5073457: 13 security fixes in Kernel and drivers. Biggest parts: Windows Graphics Kernel (2); Windows Kernel (2); Windows Ancillary Function Driver for WinSock (2); Windows Cloud Files Mini Filter Driver (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:kernel-drivers:server-2022:2025-Dec</id>
+    <title>Windows Server 2022: Kernel and drivers in the December 2025 update (9 fixes)</title>
+    <updated>2025-12-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=kernel-drivers"/>
+    <category term="area-update"/>
+    <summary>KB5066782, KB5068787, KB5068840, KB5071413, KB5071547, KB5074353: 9 security fixes in Kernel and drivers. Biggest parts: Windows Cloud Files Mini Filter Driver (3); Windows Storage VSP Driver (2); Windows Common Log File System Driver (1); Storvsp.sys Driver (1).</summary>
+  </entry>
+</feed>

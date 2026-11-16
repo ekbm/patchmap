@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Remote Desktop</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/remote-access/all.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/remote-access/all.xml</id>
+  <updated>2026-11-10T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-5031:fixed</id>
+    <title>Now fixed: Remote Desktop connections might fail for non-admin users with error 0xC000000D</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;q=KB5124010"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5124010. Fixed in KB5132061. Affects: Windows 11 24H2, Windows 11 25H2, Windows 11 26H2. Source: https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2#5031msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:win11-26h2:2026-Nov</id>
+    <title>Windows 11 26H2: Remote Desktop in the November 2026 update (17 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5132043, KB5132061, KB5135385: 17 security fixes in Remote Desktop. Biggest parts: Remote Desktop Client (10); Windows Remote Desktop Services (3); Windows Remote Access API (2); Windows Remote Access Connection Manager (1). Files changed (29): mstsc.exe, mstsc.exe.mun, mstscax.dll, mstscax.dll.mun, rdp4vs.dll, rdpavenc.dll, rdpbase.dll, rdpbus.inf….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:win11-25h2:2026-Nov</id>
+    <title>Windows 11 25H2: Remote Desktop in the November 2026 update (17 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5132043, KB5132061, KB5135385: 17 security fixes in Remote Desktop. Biggest parts: Remote Desktop Client (10); Windows Remote Desktop Services (3); Windows Remote Access API (2); Windows Remote Access Connection Manager (1). Files changed (29): mstsc.exe, mstsc.exe.mun, mstscax.dll, mstscax.dll.mun, rdp4vs.dll, rdpavenc.dll, rdpbase.dll, rdpbus.inf….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:win11-24h2:2026-Nov</id>
+    <title>Windows 11 24H2: Remote Desktop in the November 2026 update (17 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5132043, KB5132061, KB5135385: 17 security fixes in Remote Desktop. Biggest parts: Remote Desktop Client (10); Windows Remote Desktop Services (3); Windows Remote Access API (2); Windows Remote Access Connection Manager (1). Files changed (29): mstsc.exe, mstsc.exe.mun, mstscax.dll, mstscax.dll.mun, rdp4vs.dll, rdpavenc.dll, rdpbase.dll, rdpbus.inf….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2025:2026-Nov</id>
+    <title>Windows Server 2025: Remote Desktop in the November 2026 update (21 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5131077, KB5131080, KB5135386: 21 security fixes in Remote Desktop. Biggest parts: Remote Desktop Client (10); Windows Remote Desktop Services (4); Remote Desktop Gateway Service (3); Windows Remote Access API (2). Files changed (7): mstsc.exe, mstsc.exe.mun, mstscax.dll, mstscax.dll.mun, rdpclip.exe, rdpcorets.dll, rdpsharercom.dll.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2022:2026-Nov</id>
+    <title>Windows Server 2022: Remote Desktop in the November 2026 update (19 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5131090: 19 security fixes in Remote Desktop. Biggest parts: Remote Desktop Client (8); Windows Remote Desktop Services (4); Remote Desktop Gateway Service (3); Windows Remote Access API (2). Files changed (6): mstsc.exe, mstsc.exe.mun, mstscax.dll, mstscax.dll.mun, rdpclip.exe, rdpudd.dll.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2019:2026-Nov</id>
+    <title>Windows Server 2019: Remote Desktop in the November 2026 update (19 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5131085: 19 security fixes in Remote Desktop. Biggest parts: Remote Desktop Client (8); Windows Remote Desktop Services (4); Remote Desktop Gateway Service (3); Windows Remote Access API (2). Files changed (3): mstsc.exe, mstscax.dll, rdpclip.exe.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2016:2026-Nov</id>
+    <title>Windows Server 2016: Remote Desktop in the November 2026 update (18 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5131083, KB5131291: 18 security fixes in Remote Desktop. Biggest parts: Remote Desktop Client (7); Windows Remote Desktop Services (4); Remote Desktop Gateway Service (3); Windows Remote Access API (2). Files changed (9): mstsc.exe, mstscax.dll, rdpclip.exe, rdpcorets.dll, rdpsaproxy.exe, rdpsaps.dll, rdpsauachelper.exe, rdpudd.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:win11-26h2:2026-Oct</id>
+    <title>Windows 11 26H2: Remote Desktop in the October 2026 update (41 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5127648: 41 security fixes in Remote Desktop. Biggest parts: Remote Desktop Client (18); Windows Routing and Remote Access Service (RRAS) (13); Windows Remote Desktop Protocol (3); Windows Remote Access Connection Manager (2). Files changed (23): mstsc.exe, mstsc.exe.mun, mstscax.dll, mstscax.dll.mun, rdp4vs.dll, rdpavenc.dll, rdpbase.dll, rdpclip.exe….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:win11-25h2:2026-Oct</id>
+    <title>Windows 11 25H2: Remote Desktop in the October 2026 update (43 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5127648: 43 security fixes in Remote Desktop. Biggest parts: Remote Desktop Client (19); Windows Routing and Remote Access Service (RRAS) (13); Windows Remote Desktop Protocol (3); Windows Remote Access Connection Manager (2). Files changed (23): mstsc.exe, mstsc.exe.mun, mstscax.dll, mstscax.dll.mun, rdp4vs.dll, rdpavenc.dll, rdpbase.dll, rdpclip.exe….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:win11-24h2:2026-Oct</id>
+    <title>Windows 11 24H2: Remote Desktop in the October 2026 update (43 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5127648: 43 security fixes in Remote Desktop. Biggest parts: Remote Desktop Client (19); Windows Routing and Remote Access Service (RRAS) (13); Windows Remote Desktop Protocol (3); Windows Remote Access Connection Manager (2). Files changed (23): mstsc.exe, mstsc.exe.mun, mstscax.dll, mstscax.dll.mun, rdp4vs.dll, rdpavenc.dll, rdpbase.dll, rdpclip.exe….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2025:2026-Oct</id>
+    <title>Windows Server 2025: Remote Desktop in the October 2026 update (47 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5126646: 47 security fixes in Remote Desktop. Biggest parts: Remote Desktop Client (19); Windows Routing and Remote Access Service (RRAS) (13); Remote Desktop Gateway Service (5); Windows Remote Desktop Protocol (3). Files changed (18): mstsc.exe, mstsc.exe.mun, mstscax.dll, mstscax.dll.mun, rdpbase.dll, rdpclip.exe, rdpcorets.dll, rdpcredentialprovider.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2022:2026-Oct</id>
+    <title>Windows Server 2022: Remote Desktop in the October 2026 update (47 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5126655: 47 security fixes in Remote Desktop. Biggest parts: Remote Desktop Client (19); Windows Routing and Remote Access Service (RRAS) (13); Remote Desktop Gateway Service (5); Windows Remote Desktop Protocol (3). Files changed (13): mstsc.exe, mstsc.exe.mun, mstscax.dll, mstscax.dll.mun, rdpbase.dll, rdpcorets.dll, rdpcredentialprovider.dll, rdpendp.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2019:2026-Oct</id>
+    <title>Windows Server 2019: Remote Desktop in the October 2026 update (45 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5126651: 45 security fixes in Remote Desktop. Biggest parts: Remote Desktop Client (19); Windows Routing and Remote Access Service (RRAS) (12); Remote Desktop Gateway Service (5); Windows Remote Desktop Protocol (3). Files changed (12): mstsc.exe, mstscax.dll, rdpbase.dll, rdpcore.dll, rdpcorets.dll, rdpdr.sys, rdpendp.dll, rdpserverbase.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2016:2026-Oct</id>
+    <title>Windows Server 2016: Remote Desktop in the October 2026 update (45 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5126649, KB5126868: 45 security fixes in Remote Desktop. Biggest parts: Remote Desktop Client (19); Windows Routing and Remote Access Service (RRAS) (12); Remote Desktop Gateway Service (5); Windows Remote Desktop Protocol (3). Files changed (8): mstsc.exe, mstscax.dll, rdp4vs.dll, rdpcore.dll, rdpcorets.dll, rdpendp.dll, rdpudd.dll, rdpvideominiport.sys.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-4981:fixed</id>
+    <title>Now fixed: Remote Desktop Services might stop responding after Sept. 2026 security update</title>
+    <updated>2026-09-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;q=KB5124008"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5124008. Fixed in KB5129195. Affects: Windows 11 24H2, Windows 11 25H2, Windows Server 2022, Windows Server 2025, Windows Server 2019. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#4981msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:win11-25h2:2026-Sep</id>
+    <title>Windows 11 25H2: Remote Desktop in the September 2026 update (33 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5124008: 33 security fixes in Remote Desktop. Biggest parts: Windows Remote Desktop Services (9); Windows Routing and Remote Access Service (RRAS) (8); Windows Remote Access Connection Manager (7); Remote Desktop Client (6). Files changed (30): mstsc.exe, mstsc.exe.mun, mstscax.dll, mstscax.dll.mun, rdp4vs.dll, rdpavenc.dll, rdpbase.dll, rdpclip.exe….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:win11-24h2:2026-Sep</id>
+    <title>Windows 11 24H2: Remote Desktop in the September 2026 update (33 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5124008: 33 security fixes in Remote Desktop. Biggest parts: Windows Remote Desktop Services (9); Windows Routing and Remote Access Service (RRAS) (8); Windows Remote Access Connection Manager (7); Remote Desktop Client (6). Files changed (30): mstsc.exe, mstsc.exe.mun, mstscax.dll, mstscax.dll.mun, rdp4vs.dll, rdpavenc.dll, rdpbase.dll, rdpclip.exe….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2025:2026-Sep</id>
+    <title>Windows Server 2025: Remote Desktop in the September 2026 update (36 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5122871: 36 security fixes in Remote Desktop. Biggest parts: Windows Remote Desktop Services (9); Windows Routing and Remote Access Service (RRAS) (8); Windows Remote Access Connection Manager (7); Remote Desktop Client (6). Files changed (17): mstsc.exe, mstsc.exe.mun, mstscax.dll, mstscax.dll.mun, rdpbase.dll, rdpclip.exe, rdpcorets.dll, rdpcredentialprovider.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2022:2026-Sep</id>
+    <title>Windows Server 2022: Remote Desktop in the September 2026 update (34 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5122882: 34 security fixes in Remote Desktop. Biggest parts: Windows Routing and Remote Access Service (RRAS) (8); Windows Remote Desktop Services (7); Windows Remote Access Connection Manager (7); Remote Desktop Client (6). Files changed (18): mstsc.exe, mstsc.exe.mun, mstscax.dll, mstscax.dll.mun, rdpbase.dll, rdpbus.inf, rdpbus.sys, rdpclip.exe….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2019:2026-Sep</id>
+    <title>Windows Server 2019: Remote Desktop in the September 2026 update (34 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5122876: 34 security fixes in Remote Desktop. Biggest parts: Windows Routing and Remote Access Service (RRAS) (8); Windows Remote Desktop Services (7); Windows Remote Access Connection Manager (7); Remote Desktop Client (6). Files changed (14): mstsc.exe, mstscax.dll, rdpbase.dll, rdpbus.inf, rdpbus.sys, rdpclip.exe, rdpcore.dll, rdpcorets.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2016:2026-Sep</id>
+    <title>Windows Server 2016: Remote Desktop in the September 2026 update (34 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5122874, KB5123099: 34 security fixes in Remote Desktop. Biggest parts: Windows Routing and Remote Access Service (RRAS) (8); Windows Remote Desktop Services (7); Windows Remote Access Connection Manager (7); Remote Desktop Client (6). Files changed (13): mstsc.exe, mstscax.dll, rdp4vs.dll, rdpbus.inf, rdpbus.sys, rdpclip.exe, rdpcore.dll, rdpcorets.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:win11-25h2:2026-Aug</id>
+    <title>Windows 11 25H2: Remote Desktop in the August 2026 update (16 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5120994, KB5121003, KB5123273, KB5123607: 16 security fixes in Remote Desktop. Biggest parts: Remote Desktop Client (6); Windows Remote Desktop Services (5); Windows Remote Access Connection Manager (2); Windows Remote Access API (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:win11-24h2:2026-Aug</id>
+    <title>Windows 11 24H2: Remote Desktop in the August 2026 update (16 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5120994, KB5121003, KB5123273, KB5123607: 16 security fixes in Remote Desktop. Biggest parts: Remote Desktop Client (6); Windows Remote Desktop Services (5); Windows Remote Access Connection Manager (2); Windows Remote Access API (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2025:2026-Aug</id>
+    <title>Windows Server 2025: Remote Desktop in the August 2026 update (16 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5120228, KB5120233: 16 security fixes in Remote Desktop. Biggest parts: Remote Desktop Client (6); Windows Remote Desktop Services (5); Windows Remote Access Connection Manager (2); Windows Remote Access API (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2022:2026-Aug</id>
+    <title>Windows Server 2022: Remote Desktop in the August 2026 update (16 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5120229, KB5120242, KB5123303: 16 security fixes in Remote Desktop. Biggest parts: Remote Desktop Client (6); Windows Remote Desktop Services (5); Windows Remote Access Connection Manager (2); Windows Remote Access API (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2019:2026-Aug</id>
+    <title>Windows Server 2019: Remote Desktop in the August 2026 update (15 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5120238: 15 security fixes in Remote Desktop. Biggest parts: Remote Desktop Client (6); Windows Remote Desktop Services (5); Windows Remote Access Connection Manager (2); Windows Routing and Remote Access Service (RRAS) (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2016:2026-Aug</id>
+    <title>Windows Server 2016: Remote Desktop in the August 2026 update (14 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5120418: 14 security fixes in Remote Desktop. Biggest parts: Remote Desktop Client (7); Windows Remote Desktop Services (4); Windows Remote Access Connection Manager (1); Windows Routing and Remote Access Service (RRAS) (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:win11-25h2:2026-Jul</id>
+    <title>Windows 11 25H2: Remote Desktop in the July 2026 update (24 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5101650: 24 security fixes in Remote Desktop. Biggest parts: Windows RDP (12); Remote Desktop Client (4); Windows Routing and Remote Access Service (RRAS) (3); Windows Remote Desktop Services (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:win11-24h2:2026-Jul</id>
+    <title>Windows 11 24H2: Remote Desktop in the July 2026 update (24 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5101650: 24 security fixes in Remote Desktop. Biggest parts: Windows RDP (12); Remote Desktop Client (4); Windows Routing and Remote Access Service (RRAS) (3); Windows Remote Desktop Services (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2025:2026-Jul</id>
+    <title>Windows Server 2025: Remote Desktop in the July 2026 update (24 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5099536: 24 security fixes in Remote Desktop. Biggest parts: Windows RDP (12); Remote Desktop Client (4); Windows Routing and Remote Access Service (RRAS) (3); Windows Remote Desktop Services (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2022:2026-Jul</id>
+    <title>Windows Server 2022: Remote Desktop in the July 2026 update (23 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5099540: 23 security fixes in Remote Desktop. Biggest parts: Windows RDP (12); Windows Routing and Remote Access Service (RRAS) (3); Remote Desktop Client (3); Windows Remote Desktop Services (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2019:2026-Jul</id>
+    <title>Windows Server 2019: Remote Desktop in the July 2026 update (22 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5099538: 22 security fixes in Remote Desktop. Biggest parts: Windows RDP (12); Windows Routing and Remote Access Service (RRAS) (3); Remote Desktop Client (3); Windows Remote Desktop Services (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2016:2026-Jul</id>
+    <title>Windows Server 2016: Remote Desktop in the July 2026 update (22 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5099535: 22 security fixes in Remote Desktop. Biggest parts: Windows RDP (12); Windows Routing and Remote Access Service (RRAS) (3); Remote Desktop Client (3); Windows Remote Desktop Services (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:win11-25h2:2026-Jun</id>
+    <title>Windows 11 25H2: Remote Desktop in the June 2026 update (12 fixes)</title>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5094126: 12 security fixes in Remote Desktop. Biggest parts: Remote Desktop Client (10); Windows RDP (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:win11-24h2:2026-Jun</id>
+    <title>Windows 11 24H2: Remote Desktop in the June 2026 update (12 fixes)</title>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5094126: 12 security fixes in Remote Desktop. Biggest parts: Remote Desktop Client (10); Windows RDP (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2025:2026-Jun</id>
+    <title>Windows Server 2025: Remote Desktop in the June 2026 update (13 fixes)</title>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5094125, KB5094126: 13 security fixes in Remote Desktop. Biggest parts: Remote Desktop Client (11); Windows RDP (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2022:2026-Jun</id>
+    <title>Windows Server 2022: Remote Desktop in the June 2026 update (13 fixes)</title>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5094128: 13 security fixes in Remote Desktop. Biggest parts: Remote Desktop Client (11); Windows RDP (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2019:2026-Jun</id>
+    <title>Windows Server 2019: Remote Desktop in the June 2026 update (11 fixes)</title>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5094123: 11 security fixes in Remote Desktop. Biggest parts: Remote Desktop Client (9); Windows RDP (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2016:2026-Jun</id>
+    <title>Windows Server 2016: Remote Desktop in the June 2026 update (10 fixes)</title>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5094122: 10 security fixes in Remote Desktop. Biggest parts: Remote Desktop Client (8); Windows RDP (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:win11-25h2:2026-May</id>
+    <title>Windows 11 25H2: Remote Desktop in the May 2026 update (1 fixes)</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5089466, KB5089549: 1 security fixes in Remote Desktop. Biggest parts: Windows Remote Desktop (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:win11-24h2:2026-May</id>
+    <title>Windows 11 24H2: Remote Desktop in the May 2026 update (1 fixes)</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5089466, KB5089549: 1 security fixes in Remote Desktop. Biggest parts: Windows Remote Desktop (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2025:2026-May</id>
+    <title>Windows Server 2025: Remote Desktop in the May 2026 update (1 fixes)</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5087423, KB5087539: 1 security fixes in Remote Desktop. Biggest parts: Windows Remote Desktop (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2022:2026-May</id>
+    <title>Windows Server 2022: Remote Desktop in the May 2026 update (1 fixes)</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5087424, KB5087545: 1 security fixes in Remote Desktop. Biggest parts: Windows Remote Desktop (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2019:2026-May</id>
+    <title>Windows Server 2019: Remote Desktop in the May 2026 update (1 fixes)</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5087538: 1 security fixes in Remote Desktop. Biggest parts: Windows Remote Desktop (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2016:2026-May</id>
+    <title>Windows Server 2016: Remote Desktop in the May 2026 update (1 fixes)</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5087537: 1 security fixes in Remote Desktop. Biggest parts: Windows Remote Desktop (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:win11-25h2:2026-Apr</id>
+    <title>Windows 11 25H2: Remote Desktop in the April 2026 update (3 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5083769: 3 security fixes in Remote Desktop. Biggest parts: Windows Remote Desktop Licensing Service (2); Windows Remote Desktop (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:win11-24h2:2026-Apr</id>
+    <title>Windows 11 24H2: Remote Desktop in the April 2026 update (3 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5083769: 3 security fixes in Remote Desktop. Biggest parts: Windows Remote Desktop Licensing Service (2); Windows Remote Desktop (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2025:2026-Apr</id>
+    <title>Windows Server 2025: Remote Desktop in the April 2026 update (3 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5082063: 3 security fixes in Remote Desktop. Biggest parts: Windows Remote Desktop Licensing Service (2); Windows Remote Desktop (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2022:2026-Apr</id>
+    <title>Windows Server 2022: Remote Desktop in the April 2026 update (3 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5082142: 3 security fixes in Remote Desktop. Biggest parts: Windows Remote Desktop Licensing Service (2); Windows Remote Desktop (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2019:2026-Apr</id>
+    <title>Windows Server 2019: Remote Desktop in the April 2026 update (3 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5082123: 3 security fixes in Remote Desktop. Biggest parts: Windows Remote Desktop Licensing Service (2); Windows Remote Desktop (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2016:2026-Apr</id>
+    <title>Windows Server 2016: Remote Desktop in the April 2026 update (3 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5082198: 3 security fixes in Remote Desktop. Biggest parts: Windows Remote Desktop Licensing Service (2); Windows Remote Desktop (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:win11-25h2:2026-Mar</id>
+    <title>Windows 11 25H2: Remote Desktop in the March 2026 update (3 fixes)</title>
+    <updated>2026-03-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5079420, KB5079473, KB5084597: 3 security fixes in Remote Desktop. Biggest parts: Windows Routing and Remote Access Service (RRAS) (3).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:win11-24h2:2026-Mar</id>
+    <title>Windows 11 24H2: Remote Desktop in the March 2026 update (3 fixes)</title>
+    <updated>2026-03-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5079420, KB5079473, KB5084597: 3 security fixes in Remote Desktop. Biggest parts: Windows Routing and Remote Access Service (RRAS) (3).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2025:2026-Mar</id>
+    <title>Windows Server 2025: Remote Desktop in the March 2026 update (3 fixes)</title>
+    <updated>2026-03-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5078736, KB5078740: 3 security fixes in Remote Desktop. Biggest parts: Windows Routing and Remote Access Service (RRAS) (3).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2022:2026-Mar</id>
+    <title>Windows Server 2022: Remote Desktop in the March 2026 update (3 fixes)</title>
+    <updated>2026-03-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5078737, KB5078766: 3 security fixes in Remote Desktop. Biggest parts: Windows Routing and Remote Access Service (RRAS) (3).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2019:2026-Mar</id>
+    <title>Windows Server 2019: Remote Desktop in the March 2026 update (3 fixes)</title>
+    <updated>2026-03-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5078752: 3 security fixes in Remote Desktop. Biggest parts: Windows Routing and Remote Access Service (RRAS) (3).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:server-2016:2026-Mar</id>
+    <title>Windows Server 2016: Remote Desktop in the March 2026 update (3 fixes)</title>
+    <updated>2026-03-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5078938: 3 security fixes in Remote Desktop. Biggest parts: Windows Routing and Remote Access Service (RRAS) (3).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:win11-25h2:2026-Feb</id>
+    <title>Windows 11 25H2: Remote Desktop in the February 2026 update (2 fixes)</title>
+    <updated>2026-02-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5077181, KB5077212: 2 security fixes in Remote Desktop. Biggest parts: Windows Remote Desktop (1); Windows Remote Access Connection Manager (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:remote-access:win11-24h2:2026-Feb</id>
+    <title>Windows 11 24H2: Remote Desktop in the February 2026 update (2 fixes)</title>
+    <updated>2026-02-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=remote-access"/>
+    <category term="area-update"/>
+    <summary>KB5077181, KB5077212: 2 security fixes in Remote Desktop. Biggest parts: Windows Remote Desktop (1); Windows Remote Access Connection Manager (1).</summary>
+  </entry>
+</feed>

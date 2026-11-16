@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Storage and file systems on Windows Server 2025</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/storage/server-2025.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/storage/server-2025.xml</id>
+  <updated>2026-11-10T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:storage:server-2025:2026-Nov</id>
+    <title>Windows Server 2025: Storage and file systems in the November 2026 update (54 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=storage"/>
+    <category term="area-update"/>
+    <summary>KB5131077, KB5131080, KB5135386: 54 security fixes in Storage and file systems. Biggest parts: Windows NTFS (7); Windows Storage Spaces Controller (6); Windows Overlay Filter (6); Windows iSCSI (5).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:storage:server-2025:2026-Oct</id>
+    <title>Windows Server 2025: Storage and file systems in the October 2026 update (115 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=storage"/>
+    <category term="area-update"/>
+    <summary>KB5126646: 115 security fixes in Storage and file systems. Biggest parts: Windows NTFS (26); Windows Universal Disk Format File System Driver (UDFS) (16); Windows Overlay Filter (15); Windows Storage (11).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:storage:server-2025:2026-Sep</id>
+    <title>Windows Server 2025: Storage and file systems in the September 2026 update (106 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=storage"/>
+    <category term="area-update"/>
+    <summary>KB5122871: 106 security fixes in Storage and file systems. Biggest parts: Windows NTFS (28); Windows Spaceport.sys (17); Windows Overlay Filter (7); Virtual Hard Disk (VHD) Miniport Driver (7).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:storage:server-2025:2026-Aug</id>
+    <title>Windows Server 2025: Storage and file systems in the August 2026 update (22 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=storage"/>
+    <category term="area-update"/>
+    <summary>KB5120228, KB5120233: 22 security fixes in Storage and file systems. Biggest parts: Windows NTFS (8); Windows iSCSI Target Service (4); Windows Storage (2); Windows Cloud Files Mini Filter Driver (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:storage:server-2025:2026-Jul</id>
+    <title>Windows Server 2025: Storage and file systems in the July 2026 update (58 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=storage"/>
+    <category term="area-update"/>
+    <summary>KB5099536: 58 security fixes in Storage and file systems. Biggest parts: Windows NTFS (24); Windows Resilient File System (ReFS) (11); Windows Brokering File System (5); Windows Cloud Files Mini Filter Driver (4).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:storage:server-2025:2026-Jun</id>
+    <title>Windows Server 2025: Storage and file systems in the June 2026 update (6 fixes)</title>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=storage"/>
+    <category term="area-update"/>
+    <summary>KB5094125, KB5094126: 6 security fixes in Storage and file systems. Biggest parts: Windows Universal Disk Format File System Driver (UDFS) (2); Windows Projected File System Filter Driver (2); Windows NTFS (1); Windows Storage (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:storage:server-2025:2026-May</id>
+    <title>Windows Server 2025: Storage and file systems in the May 2026 update (6 fixes)</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=storage"/>
+    <category term="area-update"/>
+    <summary>KB5087423, KB5087539: 6 security fixes in Storage and file systems. Biggest parts: Windows Cloud Files Mini Filter Driver (3); Windows Projected File System (1); Windows Storage Spaces Controller (1); Windows Volume Manager Extension Driver (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:storage:server-2025:2026-Apr</id>
+    <title>Windows Server 2025: Storage and file systems in the April 2026 update (11 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=storage"/>
+    <category term="area-update"/>
+    <summary>KB5082063: 11 security fixes in Storage and file systems. Biggest parts: Windows Projected File System (5); Windows Brokering File System (3); Windows Storage Spaces Controller (2); Windows Cloud Files Mini Filter Driver (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:storage:server-2025:2026-Mar</id>
+    <title>Windows Server 2025: Storage and file systems in the March 2026 update (4 fixes)</title>
+    <updated>2026-03-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=storage"/>
+    <category term="area-update"/>
+    <summary>KB5078736, KB5078740: 4 security fixes in Storage and file systems. Biggest parts: Windows Universal Disk Format File System Driver (UDFS) (1); Windows Resilient File System (ReFS) (1); Windows Projected File System (1); Windows Brokering File System (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:storage:server-2025:2026-Feb</id>
+    <title>Windows Server 2025: Storage and file systems in the February 2026 update (1 fixes)</title>
+    <updated>2026-02-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=storage"/>
+    <category term="area-update"/>
+    <summary>KB5075899, KB5075942: 1 security fixes in Storage and file systems. Biggest parts: Windows Storage (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-2738:fixed</id>
+    <title>Now fixed: Apps might become unresponsive when saving files to cloud-backed storage</title>
+    <updated>2026-01-23T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5073379"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5073379. Fixed in KB5078135. Affects: Windows Server 2025. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#2738msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:storage:server-2025:2026-Jan</id>
+    <title>Windows Server 2025: Storage and file systems in the January 2026 update (3 fixes)</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=storage"/>
+    <category term="area-update"/>
+    <summary>KB5073379: 3 security fixes in Storage and file systems. Biggest parts: Windows NTFS (2); Windows Cloud Files Mini Filter Driver (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:storage:server-2025:2025-Dec</id>
+    <title>Windows Server 2025: Storage and file systems in the December 2025 update (13 fixes)</title>
+    <updated>2025-12-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=storage"/>
+    <category term="area-update"/>
+    <summary>KB5066835, KB5068861, KB5068966, KB5072014, KB5072033, KB5074204: 13 security fixes in Storage and file systems. Biggest parts: Windows Projected File System (4); Windows Cloud Files Mini Filter Driver (3); Microsoft Brokering File System (2); Windows Storage VSP Driver (2).</summary>
+  </entry>
+</feed>

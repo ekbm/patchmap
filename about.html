@@ -40,6 +40,17 @@
   <p>Pick your print management software under <b>My software</b> (for now: PaperCut NG/MF and YSoft SafeQ). Each month then shows which parts of Windows that software relies on were changed (for example the Print Spooler, file sharing or Active Directory sign-in) and how many fixes touched each. "Relies on" means worth checking after updating, not "this will break". Each product's list says whether it comes from the vendor's public documentation or from support experience. <a href="https://github.com/ekbm/patchmap/tree/main/data/software">Suggest another product or a correction</a>.</p>
 
   <h2 id="alerts">Get alerts</h2>
+  <div class="picker">
+    <p><b>Pick only what you need.</b> Choose an area and a Windows version or product, then copy the feed link into your reader.</p>
+    <div class="controls">
+      <div class="field"><label for="pa">Area</label><select id="pa"></select></div>
+      <div class="field"><label for="pv">Version or product</label><select id="pv"></select></div>
+    </div>
+    <div class="feedlink"><code id="pu">Loading…</code>
+      <button type="button" class="theme" id="pc">Copy link</button>
+      <a id="po" href="#" class="muted">Open feed</a></div>
+    <p class="is" id="pn"></p>
+  </div>
   <p>Follow Patchmap in any feed reader (Feedly, Inoreader, classic Outlook's RSS Feeds, or a Power Automate flow that posts to Teams). You get a new item when a known problem appears or changes status (for example "Now fixed"), and when a month's security update is added. The feeds refresh every Wednesday.</p>
   <ul>
     <li><b>Everything:</b> <a href="feed.xml">patchmap.verilay.dev/feed.xml</a></li>
@@ -118,6 +129,30 @@
   };
   show();
 })();
+// Feed picker: area + version -> feeds/<area>/<version>.xml (only combinations that exist)
+Promise.all([fetch("data/feeds_index.json").then((r) => r.json()), fetch("data/index.json").then((r) => r.json())]).then(([fi, idx]) => {
+  const pa = document.getElementById("pa"), pv = document.getElementById("pv"), pu = document.getElementById("pu");
+  const po = document.getElementById("po"), pc = document.getElementById("pc"), pn = document.getElementById("pn");
+  const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const areas = Object.keys(fi.areas).sort((a, b) => (b === "print") - (a === "print"));
+  pa.innerHTML = areas.map((a) => `<option value="${esc(a)}">${esc(fi.areas[a])}</option>`).join("");
+  const fillVers = () => {
+    const keep = pv.value;
+    const vers = fi.available[pa.value] || [];
+    pv.innerHTML = vers.map((v) => `<option value="${esc(v)}">${v === "all" ? "All versions and products" : esc(idx.labels[v] || v)}</option>`).join("");
+    if (vers.includes(keep)) pv.value = keep;
+    else if (vers.includes("server-2022")) pv.value = "server-2022";
+    show();
+  };
+  const show = () => {
+    const url = `${location.origin}/feeds/${pa.value}/${pv.value}.xml`;
+    pu.textContent = url; po.href = url;
+    pn.textContent = `New items: each month's ${fi.areas[pa.value]} changes (fixes, parts of Windows and files) and any known problem in this area${pv.value === "all" ? ", for every version." : "."}`;
+  };
+  pa.onchange = fillVers; pv.onchange = show;
+  pc.onclick = () => { navigator.clipboard.writeText(pu.textContent).then(() => { pc.textContent = "Copied"; setTimeout(() => (pc.textContent = "Copy link"), 1500); }).catch(() => {}); };
+  fillVers();
+}).catch(() => { document.getElementById("pu").textContent = "Couldn't load the feed list."; });
 fetch("data/index.json").then((r) => r.json()).then((d) => { document.getElementById("gen").textContent = "Data last updated " + d.generated + "."; }).catch(() => {});
 </script>
 </body>

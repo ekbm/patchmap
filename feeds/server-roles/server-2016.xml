@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Server roles on Windows Server 2016</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/server-roles/server-2016.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/server-roles/server-2016.xml</id>
+  <updated>2026-11-10T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:server-roles:server-2016:2026-Nov</id>
+    <title>Windows Server 2016: Server roles in the November 2026 update (47 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=server-roles"/>
+    <category term="area-update"/>
+    <summary>KB5131083, KB5131291: 47 security fixes in Server roles. Biggest parts: Windows DHCP Server (9); Windows Message Queuing (8); Role: DNS Server (8); Windows Hyper-V (7).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:server-roles:server-2016:2026-Oct</id>
+    <title>Windows Server 2016: Server roles in the October 2026 update (105 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=server-roles"/>
+    <category term="area-update"/>
+    <summary>KB5126649, KB5126868: 105 security fixes in Server roles. Biggest parts: Role: DNS Server (51); Windows DHCP Server (16); Windows Routing and Remote Access Service (RRAS) (12); Windows Hyper-V (8).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:server-roles:server-2016:2026-Sep</id>
+    <title>Windows Server 2016: Server roles in the September 2026 update (68 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=server-roles"/>
+    <category term="area-update"/>
+    <summary>KB5122874, KB5123099: 68 security fixes in Server roles. Biggest parts: Windows DHCP Server (36); Windows Routing and Remote Access Service (RRAS) (8); Windows Remote Access Connection Manager (7); Windows Deployment Services (4).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:server-roles:server-2016:2026-Aug</id>
+    <title>Windows Server 2016: Server roles in the August 2026 update (26 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=server-roles"/>
+    <category term="area-update"/>
+    <summary>KB5120418: 26 security fixes in Server roles. Biggest parts: Windows DHCP Server (14); Windows iSCSI Target Service (4); Windows Message Queuing (3); Windows Hyper-V (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:server-roles:server-2016:2026-Jul</id>
+    <title>Windows Server 2016: Server roles in the July 2026 update (20 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=server-roles"/>
+    <category term="area-update"/>
+    <summary>KB5099535: 20 security fixes in Server roles. Biggest parts: Windows DHCP Server (7); Windows Routing and Remote Access Service (RRAS) (3); Windows Server Update Service (2); Windows Message Queuing Queue Manager (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:server-roles:server-2016:2026-Jun</id>
+    <title>Windows Server 2016: Server roles in the June 2026 update (5 fixes)</title>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=server-roles"/>
+    <category term="area-update"/>
+    <summary>KB5094122: 5 security fixes in Server roles. Biggest parts: Windows DHCP Server (2); Role: Windows Hyper-V (1); Windows Deployment Services (1); Windows Hyper-V (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:server-roles:server-2016:2026-May</id>
+    <title>Windows Server 2016: Server roles in the May 2026 update (2 fixes)</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=server-roles"/>
+    <category term="area-update"/>
+    <summary>KB5087537: 2 security fixes in Server roles. Biggest parts: Windows Message Queuing (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:server-roles:server-2016:2026-Apr</id>
+    <title>Windows Server 2016: Server roles in the April 2026 update (4 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=server-roles"/>
+    <category term="area-update"/>
+    <summary>KB5082198: 4 security fixes in Server roles. Biggest parts: Windows Server Update Service (2); Role: Windows Hyper-V (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:server-roles:server-2016:2026-Mar</id>
+    <title>Windows Server 2016: Server roles in the March 2026 update (3 fixes)</title>
+    <updated>2026-03-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=server-roles"/>
+    <category term="area-update"/>
+    <summary>KB5078938: 3 security fixes in Server roles. Biggest parts: Windows Routing and Remote Access Service (RRAS) (3).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:server-roles:server-2016:2026-Feb</id>
+    <title>Windows Server 2016: Server roles in the February 2026 update (5 fixes)</title>
+    <updated>2026-02-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=server-roles"/>
+    <category term="area-update"/>
+    <summary>KB5075999: 5 security fixes in Server roles. Biggest parts: Role: Windows Hyper-V (4); Windows Remote Access Connection Manager (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:server-roles:server-2016:2026-Jan</id>
+    <title>Windows Server 2016: Server roles in the January 2026 update (4 fixes)</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=server-roles"/>
+    <category term="area-update"/>
+    <summary>KB5073722: 4 security fixes in Server roles. Biggest parts: Windows Routing and Remote Access Service (RRAS) (2); Windows Deployment Services (1); Windows Server Update Service (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:server-roles:server-2016:2025-Dec</id>
+    <title>Windows Server 2016: Server roles in the December 2025 update (7 fixes)</title>
+    <updated>2025-12-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=server-roles"/>
+    <category term="area-update"/>
+    <summary>KB5066836, KB5068864, KB5071543: 7 security fixes in Server roles. Biggest parts: Windows Routing and Remote Access Service (RRAS) (3); Windows Remote Access Connection Manager (2); Windows Message Queuing (1); Windows Hyper-V (1).</summary>
+  </entry>
+</feed>

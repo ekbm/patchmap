@@ -1,0 +1,198 @@
+{
+ "areas": {
+  "print": "Printing and scanning",
+  "sign-in": "Sign-in and identity",
+  "file-sharing": "File sharing",
+  "network": "Network",
+  "remote-access": "Remote Desktop",
+  "security": "Security features",
+  "management": "Management and admin tools",
+  "storage": "Storage and file systems",
+  "apps-desktop": "Desktop and apps",
+  "server-roles": "Server roles",
+  "activation": "Activation and licensing",
+  "install-update": "Installing and updates",
+  "graphics": "Graphics and display",
+  "kernel-drivers": "Kernel and drivers",
+  "email": "Email (Exchange)",
+  "database": "Database and data access",
+  "office-apps": "Office apps"
+ },
+ "available": {
+  "print": [
+   "win11-24h2",
+   "win11-25h2",
+   "win11-26h2",
+   "server-2022",
+   "server-2025",
+   "server-2019",
+   "server-2016",
+   "all"
+  ],
+  "sign-in": [
+   "win11-24h2",
+   "win11-25h2",
+   "win11-26h2",
+   "server-2022",
+   "server-2025",
+   "server-2019",
+   "server-2016",
+   "all"
+  ],
+  "file-sharing": [
+   "win11-24h2",
+   "win11-25h2",
+   "win11-26h2",
+   "server-2022",
+   "server-2025",
+   "server-2019",
+   "server-2016",
+   "all"
+  ],
+  "network": [
+   "win11-24h2",
+   "win11-25h2",
+   "win11-26h2",
+   "server-2022",
+   "server-2025",
+   "server-2019",
+   "server-2016",
+   "all"
+  ],
+  "remote-access": [
+   "win11-24h2",
+   "win11-25h2",
+   "win11-26h2",
+   "server-2022",
+   "server-2025",
+   "server-2019",
+   "server-2016",
+   "all"
+  ],
+  "security": [
+   "win11-24h2",
+   "win11-25h2",
+   "win11-26h2",
+   "server-2022",
+   "server-2025",
+   "server-2019",
+   "server-2016",
+   "all"
+  ],
+  "management": [
+   "win11-24h2",
+   "win11-25h2",
+   "win11-26h2",
+   "server-2022",
+   "server-2025",
+   "server-2019",
+   "server-2016",
+   "all"
+  ],
+  "storage": [
+   "win11-24h2",
+   "win11-25h2",
+   "win11-26h2",
+   "server-2022",
+   "server-2025",
+   "server-2019",
+   "server-2016",
+   "all"
+  ],
+  "apps-desktop": [
+   "win11-24h2",
+   "win11-25h2",
+   "win11-26h2",
+   "server-2022",
+   "server-2025",
+   "server-2019",
+   "server-2016",
+   "sql-server",
+   "m365-apps",
+   "all"
+  ],
+  "server-roles": [
+   "win11-24h2",
+   "win11-25h2",
+   "win11-26h2",
+   "server-2022",
+   "server-2025",
+   "server-2019",
+   "server-2016",
+   "all"
+  ],
+  "activation": [
+   "win11-24h2",
+   "win11-25h2",
+   "win11-26h2",
+   "server-2022",
+   "server-2025",
+   "server-2019",
+   "server-2016",
+   "all"
+  ],
+  "install-update": [
+   "win11-24h2",
+   "win11-25h2",
+   "win11-26h2",
+   "server-2022",
+   "server-2025",
+   "server-2019",
+   "server-2016",
+   "all"
+  ],
+  "graphics": [
+   "win11-24h2",
+   "win11-25h2",
+   "win11-26h2",
+   "server-2022",
+   "server-2025",
+   "server-2019",
+   "server-2016",
+   "m365-apps",
+   "all"
+  ],
+  "kernel-drivers": [
+   "win11-24h2",
+   "win11-25h2",
+   "win11-26h2",
+   "server-2022",
+   "server-2025",
+   "server-2019",
+   "server-2016",
+   "all"
+  ],
+  "email": [
+   "win11-24h2",
+   "win11-25h2",
+   "server-2022",
+   "server-2025",
+   "server-2019",
+   "server-2016",
+   "exchange",
+   "m365-apps",
+   "all"
+  ],
+  "database": [
+   "win11-24h2",
+   "win11-25h2",
+   "win11-26h2",
+   "server-2022",
+   "server-2025",
+   "server-2019",
+   "server-2016",
+   "sql-server",
+   "all"
+  ],
+  "office-apps": [
+   "win11-24h2",
+   "win11-25h2",
+   "server-2022",
+   "server-2025",
+   "server-2019",
+   "server-2016",
+   "m365-apps",
+   "all"
+  ]
+ }
+}

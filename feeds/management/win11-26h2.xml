@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Management and admin tools on Windows 11 26H2</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/management/win11-26h2.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/management/win11-26h2.xml</id>
+  <updated>2026-11-10T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:management:win11-26h2:2026-Nov</id>
+    <title>Windows 11 26H2: Management and admin tools in the November 2026 update (43 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;a=management"/>
+    <category term="area-update"/>
+    <summary>KB5132043, KB5132061, KB5135385: 43 security fixes in Management and admin tools. Biggest parts: Windows Management Instrumentation (8); Windows Task Scheduler (6); Windows Modern Device Management (MDM) (5); Windows Error Reporting (5).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:management:win11-26h2:2026-Oct</id>
+    <title>Windows 11 26H2: Management and admin tools in the October 2026 update (71 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;a=management"/>
+    <category term="area-update"/>
+    <summary>KB5127648: 71 security fixes in Management and admin tools. Biggest parts: Windows Error Reporting (20); Windows Background Intelligent Transfer Service (BITS) (9); Windows Modern Device Management (MDM) (7); Windows Management Instrumentation (7).</summary>
+  </entry>
+</feed>

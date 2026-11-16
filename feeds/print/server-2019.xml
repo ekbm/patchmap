@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Printing and scanning on Windows Server 2019</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/print/server-2019.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/print/server-2019.xml</id>
+  <updated>2026-11-16T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:2026-11-print-zero-size-images:open</id>
+    <title>Open: Printing fails for documents with zero-size images</title>
+    <updated>2026-11-16T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=Printing%20fails%20for%20documents%20with%20zero-s"/>
+    <category term="known-problem"/>
+    <summary>Printing can fail when a document contains an image with zero height or width at the selected resolution. These images can be invisible. Mainly Word documents printed through GDI, but other apps can be affected. Confirmed by Microsoft. No fix date announced. Affects: Windows Server 2019. Source: https://www.ghacks.net/2026/11/15/microsoft-confirms-november-windows-updates-cause-activation-error-0x80041008-and-printing-failures/. From Patchmap (news and vendor reports).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:print:server-2019:2026-Nov</id>
+    <title>Windows Server 2019: Printing and scanning in the November 2026 update (31 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=print"/>
+    <category term="area-update"/>
+    <summary>KB5131085: 31 security fixes in Printing and scanning. Biggest parts: Windows Print Spooler Components (18); Windows GDI (3); Microsoft XPS Document Converter (3); Microsoft Color Management (3). Files changed (22): localspl.dll, ntprint.cat, ntprint.dll, ntprint.exe, ntprint.inf, ntprint4.cat, ntprint4.inf, win32spl.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:print:server-2019:2026-Oct</id>
+    <title>Windows Server 2019: Printing and scanning in the October 2026 update (26 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=print"/>
+    <category term="area-update"/>
+    <summary>KB5126651: 26 security fixes in Printing and scanning. Biggest parts: Windows Print Spooler Components (8); Microsoft PostScript Printer Driver (6); Windows GDI (6); Windows Imaging Component (3). Files changed (18): localspl.dll, ntprint.cat, ntprint.inf, ntprint4.cat, ntprint4.inf, printui.dll, spoolsv.exe, win32spl.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:print:server-2019:2026-Sep</id>
+    <title>Windows Server 2019: Printing and scanning in the September 2026 update (45 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=print"/>
+    <category term="area-update"/>
+    <summary>KB5122876: 45 security fixes in Printing and scanning. Biggest parts: Microsoft Standard XPS (18); Windows Print Spooler Components (9); Windows Imaging Component (8); Windows Image Acquisition (4). Files changed (34): localspl.dll, ntprint.cat, ntprint.inf, ntprint4.cat, ntprint4.inf, spoolss.dll, spoolsv.exe, win32spl.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:print:server-2019:2026-Aug</id>
+    <title>Windows Server 2019: Printing and scanning in the August 2026 update (7 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=print"/>
+    <category term="area-update"/>
+    <summary>KB5120238: 7 security fixes in Printing and scanning. Biggest parts: Windows GDI+ (3); Windows Imaging Component (2); Windows GDI (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:print:server-2019:2026-Jul</id>
+    <title>Windows Server 2019: Printing and scanning in the July 2026 update (9 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=print"/>
+    <category term="area-update"/>
+    <summary>KB5099538: 9 security fixes in Printing and scanning. Biggest parts: Windows Print Spooler Components (4); Windows GDI+ (3); Windows GDI (1); Microsoft Printer Drivers (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:print:server-2019:2026-May</id>
+    <title>Windows Server 2019: Printing and scanning in the May 2026 update (2 fixes)</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=print"/>
+    <category term="area-update"/>
+    <summary>KB5087538: 2 security fixes in Printing and scanning. Biggest parts: Windows Print Spooler Components (1); Windows GDI (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:print:server-2019:2026-Apr</id>
+    <title>Windows Server 2019: Printing and scanning in the April 2026 update (1 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=print"/>
+    <category term="area-update"/>
+    <summary>KB5082123: 1 security fixes in Printing and scanning. Biggest parts: Windows GDI (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:print:server-2019:2026-Mar</id>
+    <title>Windows Server 2019: Printing and scanning in the March 2026 update (2 fixes)</title>
+    <updated>2026-03-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=print"/>
+    <category term="area-update"/>
+    <summary>KB5078752: 2 security fixes in Printing and scanning. Biggest parts: Windows GDI+ (1); Windows GDI (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:print:server-2019:2026-Feb</id>
+    <title>Windows Server 2019: Printing and scanning in the February 2026 update (1 fixes)</title>
+    <updated>2026-02-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=print"/>
+    <category term="area-update"/>
+    <summary>KB5075904: 1 security fixes in Printing and scanning. Biggest parts: Windows GDI+ (1).</summary>
+  </entry>
+</feed>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Network on Windows 11 24H2</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/network/win11-24h2.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/network/win11-24h2.xml</id>
+  <updated>2026-11-10T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:network:win11-24h2:2026-Nov</id>
+    <title>Windows 11 24H2: Network in the November 2026 update (67 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=network"/>
+    <category term="area-update"/>
+    <summary>KB5132043, KB5132061, KB5135385: 67 security fixes in Network. Biggest parts: Windows DNS (5); Windows Internet Connection Sharing (ICS) (5); Windows NetBIOS (4); Windows TCP/IP (4). Files changed (30): afd.sys, bfe.dll, dhcpcmonitor.dll, dhcpcore.dll, dhcpcore6.dll, dhcpcsvc.dll, dhcpcsvc6.dll, dhcpmon.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:network:win11-24h2:2026-Oct</id>
+    <title>Windows 11 24H2: Network in the October 2026 update (125 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=network"/>
+    <category term="area-update"/>
+    <summary>KB5127648: 125 security fixes in Network. Biggest parts: Role: DNS Server (37); Windows Routing and Remote Access Service (RRAS) (13); Windows TCP/IP (9); Network Policy Server (NPS) (8). Files changed (27): afd.sys, bfe.dll, dhcpcmonitor.dll, dhcpcore.dll, dhcpcore6.dll, dhcpcsvc.dll, dhcpcsvc6.dll, dhcpmon.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:network:win11-24h2:2026-Sep</id>
+    <title>Windows 11 24H2: Network in the September 2026 update (54 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=network"/>
+    <category term="area-update"/>
+    <summary>KB5124008: 54 security fixes in Network. Biggest parts: Windows Routing and Remote Access Service (RRAS) (8); Windows TCP/IP (6); Windows Bluetooth Service (4); Windows Secure Socket Tunneling Protocol (SSTP) (4). Files changed (30): afd.sys, bfe.dll, dhcpcmonitor.dll, dhcpcore.dll, dhcpcore6.dll, dhcpcsvc.dll, dhcpcsvc6.dll, dhcpmon.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:network:win11-24h2:2026-Aug</id>
+    <title>Windows 11 24H2: Network in the August 2026 update (31 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=network"/>
+    <category term="area-update"/>
+    <summary>KB5120994, KB5121003, KB5123273, KB5123607: 31 security fixes in Network. Biggest parts: Windows DNS (9); Windows HTTP.sys (6); Windows DHCP Client (4); Windows Ancillary Function Driver for WinSock (3).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:network:win11-24h2:2026-Jul</id>
+    <title>Windows 11 24H2: Network in the July 2026 update (44 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=network"/>
+    <category term="area-update"/>
+    <summary>KB5101650: 44 security fixes in Network. Biggest parts: Windows DNS (6); Windows Ancillary Function Driver for WinSock (4); Windows TCP/IP (4); Windows Network File System (4).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:network:win11-24h2:2026-Jun</id>
+    <title>Windows 11 24H2: Network in the June 2026 update (21 fixes)</title>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=network"/>
+    <category term="area-update"/>
+    <summary>KB5094126: 21 security fixes in Network. Biggest parts: Windows Ancillary Function Driver for WinSock (7); Windows DHCP Client (2); Universal Plug and Play (upnp.dll) (2); Windows DHCP Server (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:network:win11-24h2:2026-May</id>
+    <title>Windows 11 24H2: Network in the May 2026 update (18 fixes)</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=network"/>
+    <category term="area-update"/>
+    <summary>KB5089466, KB5089549: 18 security fixes in Network. Biggest parts: Windows TCP/IP (11); Windows Ancillary Function Driver for WinSock (4); Windows Filtering Platform (WFP) (1); Windows Internet Key Exchange (IKE) Protocol (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:network:win11-24h2:2026-Apr</id>
+    <title>Windows 11 24H2: Network in the April 2026 update (31 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=network"/>
+    <category term="area-update"/>
+    <summary>KB5083769: 31 security fixes in Network. Biggest parts: Windows Ancillary Function Driver for WinSock (8); Windows Universal Plug and Play (UPnP) Device Host (8); Function Discovery Service (fdwsd.dll) (4); Windows SSDP Service (3).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:network:win11-24h2:2026-Mar</id>
+    <title>Windows 11 24H2: Network in the March 2026 update (10 fixes)</title>
+    <updated>2026-03-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=network"/>
+    <category term="area-update"/>
+    <summary>KB5079420, KB5079473, KB5084597: 10 security fixes in Network. Biggest parts: Windows Ancillary Function Driver for WinSock (4); Windows Routing and Remote Access Service (RRAS) (3); RPC Runtime (1); Windows Bluetooth RFCOM Protocol Driver (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:network:win11-24h2:2026-Feb</id>
+    <title>Windows 11 24H2: Network in the February 2026 update (6 fixes)</title>
+    <updated>2026-02-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=network"/>
+    <category term="area-update"/>
+    <summary>KB5077181, KB5077212: 6 security fixes in Network. Biggest parts: Windows Ancillary Function Driver for WinSock (3); Windows HTTP.sys (3).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:network:win11-24h2:2026-Jan</id>
+    <title>Windows 11 24H2: Network in the January 2026 update (8 fixes)</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=network"/>
+    <category term="area-update"/>
+    <summary>KB5074109: 8 security fixes in Network. Biggest parts: Windows Ancillary Function Driver for WinSock (2); Windows Routing and Remote Access Service (RRAS) (2); Windows Remote Procedure Call (1); Windows Internet Connection Sharing (ICS) (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:network:win11-24h2:2025-Dec</id>
+    <title>Windows 11 24H2: Network in the December 2025 update (4 fixes)</title>
+    <updated>2025-12-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=network"/>
+    <category term="area-update"/>
+    <summary>KB5066835, KB5068861, KB5068966, KB5072014, KB5072033, KB5074204: 4 security fixes in Network. Biggest parts: Windows Routing and Remote Access Service (RRAS) (3); Windows Defender Firewall Service (1).</summary>
+  </entry>
+</feed>

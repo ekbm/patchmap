@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Activation and licensing on Windows Server 2019</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/activation/server-2019.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/activation/server-2019.xml</id>
+  <updated>2026-11-10T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:activation:server-2019:2026-Nov</id>
+    <title>Windows Server 2019: Activation and licensing in the November 2026 update (1 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=activation"/>
+    <category term="area-update"/>
+    <summary>KB5131085: 1 security fixes in Activation and licensing. Biggest parts: Software Protection Platform (SPP) (1). Files changed (3): slc.dll, sppobjs.dll, sppsvc.exe.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:activation:server-2019:2026-Oct</id>
+    <title>Windows Server 2019: Activation and licensing in the October 2026 update (3 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=activation"/>
+    <category term="area-update"/>
+    <summary>KB5126651: 3 security fixes in Activation and licensing. Biggest parts: Windows Client License Service (2); Software Protection Platform (SPP) (1). Files changed (3): clipsvc.dll, sppobjs.dll, sppsvc.exe.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:activation:server-2019:2026-Sep</id>
+    <title>Windows Server 2019: Activation and licensing in the September 2026 update (4 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=activation"/>
+    <category term="area-update"/>
+    <summary>KB5122876: 4 security fixes in Activation and licensing. Biggest parts: Windows Remote Desktop Licensing Service (2); Windows License Manager (2). Files changed (3): clipsvc.dll, sppobjs.dll, sppsvc.exe.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:activation:server-2019:2026-Aug</id>
+    <title>Windows Server 2019: Activation and licensing in the August 2026 update (1 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=activation"/>
+    <category term="area-update"/>
+    <summary>KB5120238: 1 security fixes in Activation and licensing. Biggest parts: Windows License Manager (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:activation:server-2019:2026-Apr</id>
+    <title>Windows Server 2019: Activation and licensing in the April 2026 update (2 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=activation"/>
+    <category term="area-update"/>
+    <summary>KB5082123: 2 security fixes in Activation and licensing. Biggest parts: Windows Remote Desktop Licensing Service (2).</summary>
+  </entry>
+</feed>

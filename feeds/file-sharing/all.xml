@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: File sharing</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/file-sharing/all.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/file-sharing/all.xml</id>
+  <updated>2026-11-10T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:win11-26h2:2026-Nov</id>
+    <title>Windows 11 26H2: File sharing in the November 2026 update (13 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5132043, KB5132061, KB5135385: 13 security fixes in File sharing. Biggest parts: Windows Client for NFS (6); Windows SMB Client (2); Windows SMB (2); Windows SMB Server (1). Files changed (19): mrxsmb.sys, mrxsmb10.sys, mrxsmb20.sys, srv2.sys, csc.sys, cscsvc.dll, cscui.dll, dfsc.sys….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:win11-25h2:2026-Nov</id>
+    <title>Windows 11 25H2: File sharing in the November 2026 update (13 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5132043, KB5132061, KB5135385: 13 security fixes in File sharing. Biggest parts: Windows Client for NFS (6); Windows SMB Client (2); Windows SMB (2); Windows SMB Server (1). Files changed (19): mrxsmb.sys, mrxsmb10.sys, mrxsmb20.sys, srv2.sys, csc.sys, cscsvc.dll, cscui.dll, dfsc.sys….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:win11-24h2:2026-Nov</id>
+    <title>Windows 11 24H2: File sharing in the November 2026 update (13 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5132043, KB5132061, KB5135385: 13 security fixes in File sharing. Biggest parts: Windows Client for NFS (6); Windows SMB Client (2); Windows SMB (2); Windows SMB Server (1). Files changed (19): mrxsmb.sys, mrxsmb10.sys, mrxsmb20.sys, srv2.sys, csc.sys, cscsvc.dll, cscui.dll, dfsc.sys….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2025:2026-Nov</id>
+    <title>Windows Server 2025: File sharing in the November 2026 update (18 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5131077, KB5131080, KB5135386: 18 security fixes in File sharing. Biggest parts: Windows Client for NFS (6); Windows File Server Resource Management Service (4); Windows SMB Client (2); Windows SMB (2). Files changed (11): mrxsmb.sys, mrxsmb20.sys, srv2.sys, dfsc.sys, nfsclnt.exe, nfscprop.dll, nfsrdr.sys, nfssvc.exe….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2022:2026-Nov</id>
+    <title>Windows Server 2022: File sharing in the November 2026 update (17 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5131090: 17 security fixes in File sharing. Biggest parts: Windows Client for NFS (6); Windows File Server Resource Management Service (4); Windows SMB Client (2); Windows SMB (2). Files changed (10): mrxsmb.sys, mrxsmb20.sys, srv2.sys, nfsclnt.exe, nfscprop.dll, nfsrdr.sys, nfssvc.exe, nfssvr.sys….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2019:2026-Nov</id>
+    <title>Windows Server 2019: File sharing in the November 2026 update (17 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5131085: 17 security fixes in File sharing. Biggest parts: Windows Client for NFS (6); Windows File Server Resource Management Service (4); Windows SMB Client (2); Windows SMB (2). Files changed (10): mrxsmb.sys, mrxsmb20.sys, srv2.sys, nfsclnt.exe, nfscprop.dll, nfsrdr.sys, nfssvc.exe, nfssvr.sys….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2016:2026-Nov</id>
+    <title>Windows Server 2016: File sharing in the November 2026 update (16 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5131083, KB5131291: 16 security fixes in File sharing. Biggest parts: Windows Client for NFS (6); Windows File Server Resource Management Service (4); Windows SMB Client (2); Windows SMB (2). Files changed (13): mrxsmb.sys, mrxsmb20.sys, srv2.sys, dfsc.sys, mrxdav.sys, nfsclnt.exe, nfscprop.dll, nfsnp.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:win11-26h2:2026-Oct</id>
+    <title>Windows 11 26H2: File sharing in the October 2026 update (30 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5127648: 30 security fixes in File sharing. Biggest parts: WebDAV (13); Windows Distributed File System (DFS) (4); Windows Client for NFS (4); Windows Client-Side Caching (CSC) Service (4). Files changed (17): mrxsmb.sys, mrxsmb20.sys, srv2.sys, csc.sys, cscsvc.dll, cscui.dll, dfsc.sys, dfsrdiag.exe….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:win11-25h2:2026-Oct</id>
+    <title>Windows 11 25H2: File sharing in the October 2026 update (30 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5127648: 30 security fixes in File sharing. Biggest parts: WebDAV (13); Windows Distributed File System (DFS) (4); Windows Client for NFS (4); Windows Client-Side Caching (CSC) Service (4). Files changed (17): mrxsmb.sys, mrxsmb20.sys, srv2.sys, csc.sys, cscsvc.dll, cscui.dll, dfsc.sys, dfsrdiag.exe….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:win11-24h2:2026-Oct</id>
+    <title>Windows 11 24H2: File sharing in the October 2026 update (30 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5127648: 30 security fixes in File sharing. Biggest parts: WebDAV (13); Windows Distributed File System (DFS) (4); Windows Client for NFS (4); Windows Client-Side Caching (CSC) Service (4). Files changed (17): mrxsmb.sys, mrxsmb20.sys, srv2.sys, csc.sys, cscsvc.dll, cscui.dll, dfsc.sys, dfsrdiag.exe….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2025:2026-Oct</id>
+    <title>Windows Server 2025: File sharing in the October 2026 update (31 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5126646: 31 security fixes in File sharing. Biggest parts: WebDAV (13); Windows Distributed File System (DFS) (4); Windows Client for NFS (4); Windows Client-Side Caching (CSC) Service (4). Files changed (18): mrxsmb.sys, mrxsmb10.sys, mrxsmb20.sys, srv2.sys, csc.sys, cscsvc.dll, dfsc.sys, dfsrs.exe….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2022:2026-Oct</id>
+    <title>Windows Server 2022: File sharing in the October 2026 update (31 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5126655: 31 security fixes in File sharing. Biggest parts: WebDAV (13); Windows Distributed File System (DFS) (4); Windows Client for NFS (4); Windows Client-Side Caching (CSC) Service (4). Files changed (17): mrxsmb.sys, mrxsmb10.sys, mrxsmb20.sys, srv2.sys, csc.sys, cscsvc.dll, dfsc.sys, dfssvc.exe….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2019:2026-Oct</id>
+    <title>Windows Server 2019: File sharing in the October 2026 update (30 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5126651: 30 security fixes in File sharing. Biggest parts: WebDAV (13); Windows Distributed File System (DFS) (4); Windows Client for NFS (4); Windows Client-Side Caching (CSC) Service (4). Files changed (17): mrxsmb10.sys, mrxsmb20.sys, srv2.sys, csc.sys, cscsvc.dll, cscui.dll, dfsc.sys, dfssvc.exe….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2016:2026-Oct</id>
+    <title>Windows Server 2016: File sharing in the October 2026 update (30 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5126649, KB5126868: 30 security fixes in File sharing. Biggest parts: WebDAV (13); Windows Distributed File System (DFS) (4); Windows Client for NFS (4); Windows Client-Side Caching (CSC) Service (4). Files changed (17): mrxsmb10.sys, mrxsmb20.sys, srv2.sys, csc.sys, cscsvc.dll, dfsc.sys, dfssvc.exe, mrxdav.sys….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:win11-25h2:2026-Sep</id>
+    <title>Windows 11 25H2: File sharing in the September 2026 update (12 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5124008: 12 security fixes in File sharing. Biggest parts: Windows SMB Client (3); Windows Services for NFS ONCRPC XDR Driver (3); Windows SMB Server (2); Windows Distributed File System (DFS) (2). Files changed (17): mrxsmb.sys, mrxsmb20.sys, srv2.sys, csc.sys, cscsvc.dll, cscui.dll, dfsc.sys, dfsrdiag.exe….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:win11-24h2:2026-Sep</id>
+    <title>Windows 11 24H2: File sharing in the September 2026 update (12 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5124008: 12 security fixes in File sharing. Biggest parts: Windows SMB Client (3); Windows Services for NFS ONCRPC XDR Driver (3); Windows SMB Server (2); Windows Distributed File System (DFS) (2). Files changed (17): mrxsmb.sys, mrxsmb20.sys, srv2.sys, csc.sys, cscsvc.dll, cscui.dll, dfsc.sys, dfsrdiag.exe….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2025:2026-Sep</id>
+    <title>Windows Server 2025: File sharing in the September 2026 update (15 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5122871: 15 security fixes in File sharing. Biggest parts: Windows Services for NFS ONCRPC XDR Driver (6); Windows SMB Client (3); Windows SMB Server (2); Windows Distributed File System (DFS) (2). Files changed (15): mrxsmb.sys, mrxsmb20.sys, srv2.sys, cscsvc.dll, dfsc.sys, dfssvc.exe, mrxdav.sys, nfsclnt.exe….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2022:2026-Sep</id>
+    <title>Windows Server 2022: File sharing in the September 2026 update (15 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5122882: 15 security fixes in File sharing. Biggest parts: Windows Services for NFS ONCRPC XDR Driver (6); Windows SMB Client (3); Windows SMB Server (2); Windows Distributed File System (DFS) (2). Files changed (13): mrxsmb.sys, mrxsmb20.sys, srv2.sys, dfsc.sys, dfssvc.exe, mrxdav.sys, nfsclnt.exe, nfsrdr.sys….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2019:2026-Sep</id>
+    <title>Windows Server 2019: File sharing in the September 2026 update (12 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5122876: 12 security fixes in File sharing. Biggest parts: Windows Services for NFS ONCRPC XDR Driver (6); Windows Distributed File System (DFS) (2); Windows SMB Client (2); Windows SMB Server (1). Files changed (11): mrxsmb20.sys, srv2.sys, dfsc.sys, dfssvc.exe, mrxdav.sys, nfsclnt.exe, nfsrdr.sys, nfssvc.exe….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2016:2026-Sep</id>
+    <title>Windows Server 2016: File sharing in the September 2026 update (12 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5122874, KB5123099: 12 security fixes in File sharing. Biggest parts: Windows Services for NFS ONCRPC XDR Driver (6); Windows Distributed File System (DFS) (2); Windows SMB Client (2); Windows SMB Server (1). Files changed (12): mrxsmb20.sys, srv2.sys, dfsc.sys, dfssvc.exe, mrxdav.sys, nfsclnt.exe, nfsnp.dll, nfsrdr.sys….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:win11-25h2:2026-Aug</id>
+    <title>Windows 11 25H2: File sharing in the August 2026 update (4 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5120994, KB5121003, KB5123273, KB5123607: 4 security fixes in File sharing. Biggest parts: Windows SMB Client (2); Windows SMB Server (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:win11-24h2:2026-Aug</id>
+    <title>Windows 11 24H2: File sharing in the August 2026 update (4 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5120994, KB5121003, KB5123273, KB5123607: 4 security fixes in File sharing. Biggest parts: Windows SMB Client (2); Windows SMB Server (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2025:2026-Aug</id>
+    <title>Windows Server 2025: File sharing in the August 2026 update (4 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5120228, KB5120233: 4 security fixes in File sharing. Biggest parts: Windows SMB Client (2); Windows SMB Server (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2022:2026-Aug</id>
+    <title>Windows Server 2022: File sharing in the August 2026 update (4 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5120229, KB5120242, KB5123303: 4 security fixes in File sharing. Biggest parts: Windows SMB Client (2); Windows SMB Server (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2019:2026-Aug</id>
+    <title>Windows Server 2019: File sharing in the August 2026 update (4 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5120238: 4 security fixes in File sharing. Biggest parts: Windows SMB Client (2); Windows SMB Server (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2016:2026-Aug</id>
+    <title>Windows Server 2016: File sharing in the August 2026 update (4 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5120418: 4 security fixes in File sharing. Biggest parts: Windows SMB Client (2); Windows SMB Server (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:win11-25h2:2026-Jul</id>
+    <title>Windows 11 25H2: File sharing in the July 2026 update (8 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5101650: 8 security fixes in File sharing. Biggest parts: Windows SMB (4); Windows SMB Server (2); Windows SMB Server Network Transport Driver (srvnet.sys) (1); Windows Client-Side Caching (CSC) Service (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:win11-24h2:2026-Jul</id>
+    <title>Windows 11 24H2: File sharing in the July 2026 update (8 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5101650: 8 security fixes in File sharing. Biggest parts: Windows SMB (4); Windows SMB Server (2); Windows SMB Server Network Transport Driver (srvnet.sys) (1); Windows Client-Side Caching (CSC) Service (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2025:2026-Jul</id>
+    <title>Windows Server 2025: File sharing in the July 2026 update (8 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5099536: 8 security fixes in File sharing. Biggest parts: Windows SMB (4); Windows SMB Server (2); Windows SMB Server Network Transport Driver (srvnet.sys) (1); Windows Client-Side Caching (CSC) Service (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2022:2026-Jul</id>
+    <title>Windows Server 2022: File sharing in the July 2026 update (8 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5099540: 8 security fixes in File sharing. Biggest parts: Windows SMB (4); Windows SMB Server (2); Windows SMB Server Network Transport Driver (srvnet.sys) (1); Windows Client-Side Caching (CSC) Service (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2019:2026-Jul</id>
+    <title>Windows Server 2019: File sharing in the July 2026 update (6 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5099538: 6 security fixes in File sharing. Biggest parts: Windows SMB (4); Windows SMB Server Network Transport Driver (srvnet.sys) (1); Windows Client-Side Caching (CSC) Service (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2016:2026-Jul</id>
+    <title>Windows Server 2016: File sharing in the July 2026 update (6 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5099535: 6 security fixes in File sharing. Biggest parts: Windows SMB (4); Windows SMB Server Network Transport Driver (srvnet.sys) (1); Windows Client-Side Caching (CSC) Service (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:win11-25h2:2026-May</id>
+    <title>Windows 11 25H2: File sharing in the May 2026 update (1 fixes)</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5089466, KB5089549: 1 security fixes in File sharing. Biggest parts: Windows SMB Client (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:win11-24h2:2026-May</id>
+    <title>Windows 11 24H2: File sharing in the May 2026 update (1 fixes)</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5089466, KB5089549: 1 security fixes in File sharing. Biggest parts: Windows SMB Client (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2025:2026-May</id>
+    <title>Windows Server 2025: File sharing in the May 2026 update (1 fixes)</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5087423, KB5087539: 1 security fixes in File sharing. Biggest parts: Windows SMB Client (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2022:2026-May</id>
+    <title>Windows Server 2022: File sharing in the May 2026 update (1 fixes)</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5087424, KB5087545: 1 security fixes in File sharing. Biggest parts: Windows SMB Client (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2019:2026-May</id>
+    <title>Windows Server 2019: File sharing in the May 2026 update (1 fixes)</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5087538: 1 security fixes in File sharing. Biggest parts: Windows SMB Client (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2016:2026-May</id>
+    <title>Windows Server 2016: File sharing in the May 2026 update (1 fixes)</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5087537: 1 security fixes in File sharing. Biggest parts: Windows SMB Client (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:win11-25h2:2026-Mar</id>
+    <title>Windows 11 25H2: File sharing in the March 2026 update (3 fixes)</title>
+    <updated>2026-03-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5079420, KB5079473, KB5084597: 3 security fixes in File sharing. Biggest parts: Windows SMB Server (2); Windows File Server (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:win11-24h2:2026-Mar</id>
+    <title>Windows 11 24H2: File sharing in the March 2026 update (3 fixes)</title>
+    <updated>2026-03-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5079420, KB5079473, KB5084597: 3 security fixes in File sharing. Biggest parts: Windows SMB Server (2); Windows File Server (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2025:2026-Mar</id>
+    <title>Windows Server 2025: File sharing in the March 2026 update (3 fixes)</title>
+    <updated>2026-03-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5078736, KB5078740: 3 security fixes in File sharing. Biggest parts: Windows SMB Server (2); Windows File Server (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2022:2026-Mar</id>
+    <title>Windows Server 2022: File sharing in the March 2026 update (2 fixes)</title>
+    <updated>2026-03-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5078737, KB5078766: 2 security fixes in File sharing. Biggest parts: Windows SMB Server (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2019:2026-Mar</id>
+    <title>Windows Server 2019: File sharing in the March 2026 update (2 fixes)</title>
+    <updated>2026-03-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5078752: 2 security fixes in File sharing. Biggest parts: Windows SMB Server (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2016:2026-Mar</id>
+    <title>Windows Server 2016: File sharing in the March 2026 update (2 fixes)</title>
+    <updated>2026-03-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5078938: 2 security fixes in File sharing. Biggest parts: Windows SMB Server (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:win11-25h2:2026-Jan</id>
+    <title>Windows 11 25H2: File sharing in the January 2026 update (7 fixes)</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5074109: 7 security fixes in File sharing. Biggest parts: Windows SMB Server (6); Windows Client-Side Caching (CSC) Service (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:win11-24h2:2026-Jan</id>
+    <title>Windows 11 24H2: File sharing in the January 2026 update (7 fixes)</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5074109: 7 security fixes in File sharing. Biggest parts: Windows SMB Server (6); Windows Client-Side Caching (CSC) Service (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2025:2026-Jan</id>
+    <title>Windows Server 2025: File sharing in the January 2026 update (7 fixes)</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5073379: 7 security fixes in File sharing. Biggest parts: Windows SMB Server (6); Windows Client-Side Caching (CSC) Service (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2022:2026-Jan</id>
+    <title>Windows Server 2022: File sharing in the January 2026 update (7 fixes)</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5073457: 7 security fixes in File sharing. Biggest parts: Windows SMB Server (6); Windows Client-Side Caching (CSC) Service (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2019:2026-Jan</id>
+    <title>Windows Server 2019: File sharing in the January 2026 update (7 fixes)</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5073723: 7 security fixes in File sharing. Biggest parts: Windows SMB Server (6); Windows Client-Side Caching (CSC) Service (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2016:2026-Jan</id>
+    <title>Windows Server 2016: File sharing in the January 2026 update (7 fixes)</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5073722: 7 security fixes in File sharing. Biggest parts: Windows SMB Server (6); Windows Client-Side Caching (CSC) Service (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:win11-25h2:2025-Dec</id>
+    <title>Windows 11 25H2: File sharing in the December 2025 update (1 fixes)</title>
+    <updated>2025-12-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5066835, KB5068861, KB5068966, KB5072014, KB5072033, KB5074204: 1 security fixes in File sharing. Biggest parts: Windows Client-Side Caching (CSC) Service (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:win11-24h2:2025-Dec</id>
+    <title>Windows 11 24H2: File sharing in the December 2025 update (1 fixes)</title>
+    <updated>2025-12-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5066835, KB5068861, KB5068966, KB5072014, KB5072033, KB5074204: 1 security fixes in File sharing. Biggest parts: Windows Client-Side Caching (CSC) Service (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2025:2025-Dec</id>
+    <title>Windows Server 2025: File sharing in the December 2025 update (1 fixes)</title>
+    <updated>2025-12-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5066835, KB5068861, KB5068966, KB5072014, KB5072033, KB5074204: 1 security fixes in File sharing. Biggest parts: Windows Client-Side Caching (CSC) Service (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2022:2025-Dec</id>
+    <title>Windows Server 2022: File sharing in the December 2025 update (1 fixes)</title>
+    <updated>2025-12-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5066782, KB5068787, KB5068840, KB5071413, KB5071547, KB5074353: 1 security fixes in File sharing. Biggest parts: Windows Client-Side Caching (CSC) Service (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2019:2025-Dec</id>
+    <title>Windows Server 2019: File sharing in the December 2025 update (1 fixes)</title>
+    <updated>2025-12-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5066586, KB5068791, KB5071544: 1 security fixes in File sharing. Biggest parts: Windows Client-Side Caching (CSC) Service (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:file-sharing:server-2016:2025-Dec</id>
+    <title>Windows Server 2016: File sharing in the December 2025 update (1 fixes)</title>
+    <updated>2025-12-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=file-sharing"/>
+    <category term="area-update"/>
+    <summary>KB5066836, KB5068864, KB5071543: 1 security fixes in File sharing. Biggest parts: Windows Client-Side Caching (CSC) Service (1).</summary>
+  </entry>
+</feed>

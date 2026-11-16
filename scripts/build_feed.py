@@ -135,6 +135,59 @@ def main():
         n = write_feed(ROOT / "feeds" / f"{ver}.xml", f"Verilay Patchmap: {name}",
                        f"{SITE}feeds/{ver}.xml", issue_items(issues, labels, ver) + update_items(labels, ver))
         print(f"feeds/{ver}.xml: {n} items")
+    build_area_feeds(labels, issues)
+
+
+def area_month_items(area, area_label, labels, only=None):
+    """One item per (version, month) where this area had fixes: counts, top parts, files changed."""
+    files_idx = load("files/index.json", {})
+    items = []
+    for ver in labels:
+        if only and ver != only:
+            continue
+        d = load(f"versions/{ver}.json", {"months": []})
+        for m in d["months"]:
+            a = m["areas"].get(area)
+            if not a:
+                continue
+            kbs = ", ".join(u["kb"] for u in m["updates"])
+            parts = sorted(a["components"].items(), key=lambda x: -len(x[1]))[:4]
+            parts_txt = "; ".join(f"{c} ({len(fx)})" for c, fx in parts)
+            files_txt = ""
+            fi = (files_idx.get(ver) or {}).get(m["month"])
+            if fi and fi.get("by_tag", {}).get(area):
+                r = json.loads((ROOT / fi["path"]).read_text(encoding="utf-8"))
+                names = [f["n"] for f in r["changed"] + r["added"] if area in f["t"]]
+                key = ("spool", "localspl", "win32spl", "printui", "ntprint", "kerberos", "lsasrv", "msv1_0", "srv2", "mrxsmb", "rpcrt4")
+                names.sort(key=lambda n: (not n.startswith(key), n))  # the best-known files first
+                files_txt = f" Files changed ({len(names)}): {', '.join(names[:8])}{'…' if len(names) > 8 else ''}."
+            items.append({
+                "id": f"tag:patchmap.verilay.dev,2026:area:{area}:{ver}:{m['month']}",
+                "title": f"{labels[ver]}: {area_label} in the {month_name(m['month'])} update ({a['count']} fixes)",
+                "updated": ts(m["released"]),
+                "link": f"{SITE}#v={quote(ver)}&a={quote(area)}",
+                "summary": f"{kbs or 'Update'}: {a['count']} security fixes in {area_label}. Biggest parts: {parts_txt}.{files_txt}",
+                "category": "area-update",
+            })
+    return items
+
+
+def build_area_feeds(labels, issues):
+    """feeds/<area>/<version>.xml and feeds/<area>/all.xml, plus a list for the website's feed picker."""
+    tags = {k: v["label"] for k, v in load("area_tags.json", {"tags": {}})["tags"].items()}
+    available = {}
+    for area, area_label in tags.items():
+        area_issues = [i for i in issues if area in i.get("areas", [])]
+        for ver in list(labels) + ["all"]:
+            only = None if ver == "all" else ver
+            items = area_month_items(area, area_label, labels, only) + issue_items(area_issues, labels, only)
+            if not items:
+                continue
+            title = f"Verilay Patchmap: {area_label}" + ("" if ver == "all" else f" on {labels[ver]}")
+            write_feed(ROOT / "feeds" / area / f"{ver}.xml", title, f"{SITE}feeds/{area}/{ver}.xml", items)
+            available.setdefault(area, []).append(ver)
+    (DATA / "feeds_index.json").write_text(json.dumps({"areas": {a: tags[a] for a in available}, "available": available}, indent=1), encoding="utf-8")
+    print(f"area feeds: {sum(len(v) for v in available.values())} across {len(available)} areas")
 
 
 if __name__ == "__main__":

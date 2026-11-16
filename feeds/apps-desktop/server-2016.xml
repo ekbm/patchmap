@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Desktop and apps on Windows Server 2016</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/apps-desktop/server-2016.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/apps-desktop/server-2016.xml</id>
+  <updated>2026-11-10T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-4984:fixed</id>
+    <title>Now fixed: USB audio devices might fail to start or produce no sound</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;q=KB5123099"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5123099. Fixed in KB5131291. Affects: Windows Server 2016. Source: https://learn.microsoft.com/en-us/windows/release-health/status-windows-10-1607-and-windows-server-2016#4984msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:apps-desktop:server-2016:2026-Nov</id>
+    <title>Windows Server 2016: Desktop and apps in the November 2026 update (53 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=apps-desktop"/>
+    <category term="area-update"/>
+    <summary>KB5131083, KB5131291: 53 security fixes in Desktop and apps. Biggest parts: Microsoft WDAC OLE DB provider for SQL (5); Windows Shell (4); Windows Telephony Service (4); Windows PowerShell (4).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:apps-desktop:server-2016:2026-Oct</id>
+    <title>Windows Server 2016: Desktop and apps in the October 2026 update (92 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=apps-desktop"/>
+    <category term="area-update"/>
+    <summary>KB5126649, KB5126868: 92 security fixes in Desktop and apps. Biggest parts: Microsoft Windows Search Component (26); Windows Device Association Service (9); Microsoft Windows Media Foundation (7); Windows Shell (7).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:apps-desktop:server-2016:2026-Sep</id>
+    <title>Windows Server 2016: Desktop and apps in the September 2026 update (59 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=apps-desktop"/>
+    <category term="area-update"/>
+    <summary>KB5122874, KB5123099: 59 security fixes in Desktop and apps. Biggest parts: Windows USB Audio Class driver (usbaudio.sys) (8); Windows Device Association Service (8); Microsoft Windows Search Component (8); Windows Program Compatibility Assistant Service (5).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:apps-desktop:server-2016:2026-Aug</id>
+    <title>Windows Server 2016: Desktop and apps in the August 2026 update (18 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=apps-desktop"/>
+    <category term="area-update"/>
+    <summary>KB5120418: 18 security fixes in Desktop and apps. Biggest parts: Windows Telephony Service (12); Windows Device Association Service (2); Microsoft Windows Search Component (1); Microsoft COM for Windows (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:apps-desktop:server-2016:2026-Jul</id>
+    <title>Windows Server 2016: Desktop and apps in the July 2026 update (37 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=apps-desktop"/>
+    <category term="area-update"/>
+    <summary>KB5099535: 37 security fixes in Desktop and apps. Biggest parts: Windows File Explorer (8); Microsoft Windows Media Foundation (5); Microsoft Windows App Store (4); Windows Media (4).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:apps-desktop:server-2016:2026-Jun</id>
+    <title>Windows Server 2016: Desktop and apps in the June 2026 update (7 fixes)</title>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=apps-desktop"/>
+    <category term="area-update"/>
+    <summary>KB5094122: 7 security fixes in Desktop and apps. Biggest parts: Windows Push Notifications (4); Windows Telephony Service (2); Windows Media (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:apps-desktop:server-2016:2026-May</id>
+    <title>Windows Server 2016: Desktop and apps in the May 2026 update (5 fixes)</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=apps-desktop"/>
+    <category term="area-update"/>
+    <summary>KB5087537: 5 security fixes in Desktop and apps. Biggest parts: Windows Telephony Service (3); Windows Rich Text Edit (1); Windows Rich Text Edit Control (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:apps-desktop:server-2016:2026-Apr</id>
+    <title>Windows Server 2016: Desktop and apps in the April 2026 update (17 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=apps-desktop"/>
+    <category term="area-update"/>
+    <summary>KB5082198: 17 security fixes in Desktop and apps. Biggest parts: Windows File Explorer (3); Windows Shell (3); Windows User Interface Core (2); Windows Speech Brokered Api (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:apps-desktop:server-2016:2026-Mar</id>
+    <title>Windows Server 2016: Desktop and apps in the March 2026 update (6 fixes)</title>
+    <updated>2026-03-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=apps-desktop"/>
+    <category term="area-update"/>
+    <summary>KB5078938: 6 security fixes in Desktop and apps. Biggest parts: Windows Accessibility Infrastructure (ATBroker.exe) (2); Windows Device Association Service (2); Windows Shell Link Processing (1); Windows Telephony Service (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:apps-desktop:server-2016:2026-Feb</id>
+    <title>Windows Server 2016: Desktop and apps in the February 2026 update (1 fixes)</title>
+    <updated>2026-02-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=apps-desktop"/>
+    <category term="area-update"/>
+    <summary>KB5075999: 1 security fixes in Desktop and apps. Biggest parts: Windows Shell (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:apps-desktop:server-2016:2026-Jan</id>
+    <title>Windows Server 2016: Desktop and apps in the January 2026 update (8 fixes)</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=apps-desktop"/>
+    <category term="area-update"/>
+    <summary>KB5073722: 8 security fixes in Desktop and apps. Biggest parts: Windows File Explorer (4); Windows Shell (2); Windows Clipboard Server (1); Windows Telephony Service (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:apps-desktop:server-2016:2025-Dec</id>
+    <title>Windows Server 2016: Desktop and apps in the December 2025 update (3 fixes)</title>
+    <updated>2025-12-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=apps-desktop"/>
+    <category term="area-update"/>
+    <summary>KB5066836, KB5068864, KB5071543: 3 security fixes in Desktop and apps. Biggest parts: Windows Shell (2); Windows PowerShell (1).</summary>
+  </entry>
+</feed>

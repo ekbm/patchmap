@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Graphics and display on Windows 11 26H2</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/graphics/win11-26h2.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/graphics/win11-26h2.xml</id>
+  <updated>2026-11-10T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:graphics:win11-26h2:2026-Nov</id>
+    <title>Windows 11 26H2: Graphics and display in the November 2026 update (98 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;a=graphics"/>
+    <category term="area-update"/>
+    <summary>KB5132043, KB5132061, KB5135385: 98 security fixes in Graphics and display. Biggest parts: Windows Advanced Rasterization Platform (37); Windows Graphics Kernel (35); Desktop Window Manager (9); Windows Win32K (8).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:graphics:win11-26h2:2026-Oct</id>
+    <title>Windows 11 26H2: Graphics and display in the October 2026 update (52 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;a=graphics"/>
+    <category term="area-update"/>
+    <summary>KB5127648: 52 security fixes in Graphics and display. Biggest parts: Windows DWM Core Library (13); Windows Direct Composition (9); Desktop Window Manager (8); Windows Win32K (8).</summary>
+  </entry>
+</feed>

@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Security features</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/security/all.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/security/all.xml</id>
+  <updated>2026-11-10T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:win11-26h2:2026-Nov</id>
+    <title>Windows 11 26H2: Security features in the November 2026 update (15 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5132043, KB5132061, KB5135385: 15 security fixes in Security features. Biggest parts: Windows Filtering Platform (WFP) (3); Windows Encrypting File System (EFS) (2); Windows BitLocker (2); Windows LUAFV (2). Files changed (28): applockercsp.dll, applockerfltr.sys, bcrypt.dll, bcryptprimitives.dll, bdesvc.dll, ci.dll, crypt32.dll, crypt32.dll.mun….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:win11-25h2:2026-Nov</id>
+    <title>Windows 11 25H2: Security features in the November 2026 update (18 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5132043, KB5132061, KB5135385: 18 security fixes in Security features. Biggest parts: Windows Filtering Platform (WFP) (3); Windows Biometric Service (3); Windows Encrypting File System (EFS) (2); Windows BitLocker (2). Files changed (28): applockercsp.dll, applockerfltr.sys, bcrypt.dll, bcryptprimitives.dll, bdesvc.dll, ci.dll, crypt32.dll, crypt32.dll.mun….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:win11-24h2:2026-Nov</id>
+    <title>Windows 11 24H2: Security features in the November 2026 update (18 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5132043, KB5132061, KB5135385: 18 security fixes in Security features. Biggest parts: Windows Filtering Platform (WFP) (3); Windows Biometric Service (3); Windows Encrypting File System (EFS) (2); Windows BitLocker (2). Files changed (28): applockercsp.dll, applockerfltr.sys, bcrypt.dll, bcryptprimitives.dll, bdesvc.dll, ci.dll, crypt32.dll, crypt32.dll.mun….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2025:2026-Nov</id>
+    <title>Windows Server 2025: Security features in the November 2026 update (17 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5131077, KB5131080, KB5135386: 17 security fixes in Security features. Biggest parts: Windows Filtering Platform (WFP) (3); Windows Biometric Service (3); Windows Encrypting File System (EFS) (2); Windows BitLocker (2). Files changed (18): bcrypt.dll, bcryptprimitives.dll, bdesvc.dll, crypt32.dll, crypt32.dll.mun, fveapi.dll, fveapibase.dll, ncrypt.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2022:2026-Nov</id>
+    <title>Windows Server 2022: Security features in the November 2026 update (17 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5131090: 17 security fixes in Security features. Biggest parts: Windows Filtering Platform (WFP) (3); Windows Biometric Service (3); Windows Encrypting File System (EFS) (2); Windows BitLocker (2). Files changed (12): bdesvc.dll, ci.dll, crypt32.dll, crypt32.dll.mun, ncrypt.dll, ncryptprov.dll, ncryptsslp.dll, schannel.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2019:2026-Nov</id>
+    <title>Windows Server 2019: Security features in the November 2026 update (17 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5131085: 17 security fixes in Security features. Biggest parts: Windows Filtering Platform (WFP) (3); Windows Biometric Service (3); Windows Encrypting File System (EFS) (2); Windows BitLocker (2). Files changed (9): bdesvc.dll, ci.dll, crypt32.dll, ncrypt.dll, ncryptprov.dll, ncryptsslp.dll, securekernel.exe, tpmengum.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2016:2026-Nov</id>
+    <title>Windows Server 2016: Security features in the November 2026 update (14 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5131083, KB5131291: 14 security fixes in Security features. Biggest parts: Windows Biometric Service (3); Windows Filtering Platform (WFP) (2); Windows LUAFV (2); Windows Encrypting File System (EFS) (1). Files changed (7): crypt32.dll, ncrypt.dll, ncryptprov.dll, ncryptsslp.dll, securekernel.exe, tpmengum.dll, tpmvsc.inf.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:win11-26h2:2026-Oct</id>
+    <title>Windows 11 26H2: Security features in the October 2026 update (42 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5127648: 42 security fixes in Security features. Biggest parts: Windows Virtualization-Based Security (VBS) Enclave (7); Windows Kernel-Mode Drivers (7); Windows Encrypting File System (EFS) (6); Windows BitLocker (5). Files changed (27): applockercsp.dll, bcrypt.dll, bcryptprimitives.dll, bdesvc.dll, ci.dll, crypt32.dll, crypt32.dll.mun, cryptsvc.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:win11-25h2:2026-Oct</id>
+    <title>Windows 11 25H2: Security features in the October 2026 update (43 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5127648: 43 security fixes in Security features. Biggest parts: Windows Virtualization-Based Security (VBS) Enclave (7); Windows Kernel-Mode Drivers (7); Windows Encrypting File System (EFS) (6); Windows SmartScreen (5). Files changed (27): applockercsp.dll, bcrypt.dll, bcryptprimitives.dll, bdesvc.dll, ci.dll, crypt32.dll, crypt32.dll.mun, cryptsvc.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:win11-24h2:2026-Oct</id>
+    <title>Windows 11 24H2: Security features in the October 2026 update (43 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5127648: 43 security fixes in Security features. Biggest parts: Windows Virtualization-Based Security (VBS) Enclave (7); Windows Kernel-Mode Drivers (7); Windows Encrypting File System (EFS) (6); Windows SmartScreen (5). Files changed (27): applockercsp.dll, bcrypt.dll, bcryptprimitives.dll, bdesvc.dll, ci.dll, crypt32.dll, crypt32.dll.mun, cryptsvc.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2025:2026-Oct</id>
+    <title>Windows Server 2025: Security features in the October 2026 update (41 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5126646: 41 security fixes in Security features. Biggest parts: Windows Kernel-Mode Drivers (9); Windows Virtualization-Based Security (VBS) Enclave (6); Windows Encrypting File System (EFS) (6); Windows BitLocker (5). Files changed (24): applockercsp.dll, applockerfltr.sys, bcrypt.dll, bcryptprimitives.dll, bdesvc.dll, ci.dll, crypt32.dll, crypt32.dll.mun….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2022:2026-Oct</id>
+    <title>Windows Server 2022: Security features in the October 2026 update (35 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5126655: 35 security fixes in Security features. Biggest parts: Windows Kernel-Mode Drivers (7); Windows Encrypting File System (EFS) (6); Windows Virtualization-Based Security (VBS) Enclave (5); Windows BitLocker (5). Files changed (19): applockercsp.dll, applockerfltr.sys, bcrypt.dll, bcryptprimitives.dll, bdesvc.dll, ci.dll, fveapi.dll, fveapibase.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2019:2026-Oct</id>
+    <title>Windows Server 2019: Security features in the October 2026 update (32 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5126651: 32 security fixes in Security features. Biggest parts: Windows Kernel-Mode Drivers (7); Windows Encrypting File System (EFS) (6); Windows Virtualization-Based Security (VBS) Enclave (4); Windows BitLocker (3). Files changed (18): applockercsp.dll, bcrypt.dll, bcryptprimitives.dll, bdesvc.dll, ci.dll, crypt32.dll, fveapi.dll, fveapibase.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2016:2026-Oct</id>
+    <title>Windows Server 2016: Security features in the October 2026 update (25 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5126649, KB5126868: 25 security fixes in Security features. Biggest parts: Windows Kernel-Mode Drivers (7); Windows Encrypting File System (EFS) (6); Windows BitLocker (3); Windows Virtualization-Based Security (VBS) Enclave (2). Files changed (9): bcrypt.dll, bcryptprimitives.dll, ci.dll, ncrypt.dll, ncryptprov.dll, schannel.dll, securekernel.exe, tpmengum.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-4956:fixed</id>
+    <title>Now fixed: Incorrect notifications that "Microsoft Defender Antivirus is turned off"</title>
+    <updated>2026-09-30T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;q=Incorrect%20notifications%20that%20%22Microsoft%20"/>
+    <category term="known-problem"/>
+    <summary> Affects: Windows 11 24H2, Windows 11 25H2, Windows Server 2022, Windows Server 2025, Windows Server 2019. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#4956msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:win11-25h2:2026-Sep</id>
+    <title>Windows 11 25H2: Security features in the September 2026 update (79 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5124008: 79 security fixes in Security features. Biggest parts: Windows Biometric Service (64); Windows Encrypting File System (EFS) (3); Windows Defender Firewall Service (2); Windows BitLocker (2). Files changed (28): applockercsp.dll, applockerfltr.sys, bcrypt.dll, bcryptprimitives.dll, bdesvc.dll, ci.dll, crypt32.dll, crypt32.dll.mun….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:win11-24h2:2026-Sep</id>
+    <title>Windows 11 24H2: Security features in the September 2026 update (79 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5124008: 79 security fixes in Security features. Biggest parts: Windows Biometric Service (64); Windows Encrypting File System (EFS) (3); Windows Defender Firewall Service (2); Windows BitLocker (2). Files changed (28): applockercsp.dll, applockerfltr.sys, bcrypt.dll, bcryptprimitives.dll, bdesvc.dll, ci.dll, crypt32.dll, crypt32.dll.mun….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2025:2026-Sep</id>
+    <title>Windows Server 2025: Security features in the September 2026 update (78 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5122871: 78 security fixes in Security features. Biggest parts: Windows Biometric Service (64); Windows Encrypting File System (EFS) (3); Windows Defender Firewall Service (2); Windows BitLocker (2). Files changed (23): applockercsp.dll, applockerfltr.sys, bcrypt.dll, bcryptprimitives.dll, bdesvc.dll, ci.dll, crypt32.dll, crypt32.dll.mun….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2022:2026-Sep</id>
+    <title>Windows Server 2022: Security features in the September 2026 update (76 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5122882: 76 security fixes in Security features. Biggest parts: Windows Biometric Service (64); Windows Encrypting File System (EFS) (3); Windows Defender Firewall Service (2); Windows BitLocker (2). Files changed (10): bcrypt.dll, bcryptprimitives.dll, ci.dll, ncryptprov.dll, schannel.dll, securekernel.exe, tpmengum.dll, tpmengum138.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2019:2026-Sep</id>
+    <title>Windows Server 2019: Security features in the September 2026 update (74 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5122876: 74 security fixes in Security features. Biggest parts: Windows Biometric Service (64); Windows Encrypting File System (EFS) (3); Windows Defender Firewall Service (2); Windows BitLocker (2). Files changed (12): bcrypt.dll, bcryptprimitives.dll, ci.dll, schannel.dll, securekernel.exe, tpm.inf, tpm.sys, tpmcertresources.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2016:2026-Sep</id>
+    <title>Windows Server 2016: Security features in the September 2026 update (73 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5122874, KB5123099: 73 security fixes in Security features. Biggest parts: Windows Biometric Service (64); Windows Encrypting File System (EFS) (3); Windows Defender Firewall Service (2); Windows BitLocker (2). Files changed (7): bcrypt.dll, bcryptprimitives.dll, ci.dll, securekernel.exe, tpmengum.dll, tpmtasks.dll, wintrust.dll.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:win11-25h2:2026-Aug</id>
+    <title>Windows 11 25H2: Security features in the August 2026 update (7 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5120994, KB5121003, KB5123273, KB5123607: 7 security fixes in Security features. Biggest parts: Windows Schannel (2); Windows TPM (2); Windows LUAFV (1); Windows Encrypting File System (EFS) (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:win11-24h2:2026-Aug</id>
+    <title>Windows 11 24H2: Security features in the August 2026 update (7 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5120994, KB5121003, KB5123273, KB5123607: 7 security fixes in Security features. Biggest parts: Windows Schannel (2); Windows TPM (2); Windows LUAFV (1); Windows Encrypting File System (EFS) (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2025:2026-Aug</id>
+    <title>Windows Server 2025: Security features in the August 2026 update (7 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5120228, KB5120233: 7 security fixes in Security features. Biggest parts: Windows Schannel (2); Windows TPM (2); Windows LUAFV (1); Windows Encrypting File System (EFS) (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2022:2026-Aug</id>
+    <title>Windows Server 2022: Security features in the August 2026 update (6 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5120229, KB5120242, KB5123303: 6 security fixes in Security features. Biggest parts: Windows TPM (2); Windows LUAFV (1); Windows Encrypting File System (EFS) (1); Windows Defender Firewall Service (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2019:2026-Aug</id>
+    <title>Windows Server 2019: Security features in the August 2026 update (6 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5120238: 6 security fixes in Security features. Biggest parts: Windows TPM (2); Windows LUAFV (1); Windows Encrypting File System (EFS) (1); Windows Defender Firewall Service (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2016:2026-Aug</id>
+    <title>Windows Server 2016: Security features in the August 2026 update (3 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5120418: 3 security fixes in Security features. Biggest parts: Windows LUAFV (1); Windows Encrypting File System (EFS) (1); Windows Schannel (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:win11-25h2:2026-Jul</id>
+    <title>Windows 11 25H2: Security features in the July 2026 update (13 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5101650: 13 security fixes in Security features. Biggest parts: Windows Cryptographic Services (4); Windows Kernel-Mode Drivers (2); Windows Secure Boot (1); Windows LUAFV (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:win11-24h2:2026-Jul</id>
+    <title>Windows 11 24H2: Security features in the July 2026 update (13 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5101650: 13 security fixes in Security features. Biggest parts: Windows Cryptographic Services (4); Windows Kernel-Mode Drivers (2); Windows Secure Boot (1); Windows LUAFV (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2025:2026-Jul</id>
+    <title>Windows Server 2025: Security features in the July 2026 update (13 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5099536: 13 security fixes in Security features. Biggest parts: Windows Cryptographic Services (4); Windows Kernel-Mode Drivers (2); Windows Secure Boot (1); Windows LUAFV (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2022:2026-Jul</id>
+    <title>Windows Server 2022: Security features in the July 2026 update (11 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5099540: 11 security fixes in Security features. Biggest parts: Windows Cryptographic Services (4); Windows Secure Boot (1); Windows LUAFV (1); Windows Filtering Platform (WFP) (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2019:2026-Jul</id>
+    <title>Windows Server 2019: Security features in the July 2026 update (10 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5099538: 10 security fixes in Security features. Biggest parts: Windows Cryptographic Services (3); Windows Secure Boot (1); Windows LUAFV (1); Windows Filtering Platform (WFP) (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2016:2026-Jul</id>
+    <title>Windows Server 2016: Security features in the July 2026 update (10 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5099535: 10 security fixes in Security features. Biggest parts: Windows Cryptographic Services (3); Windows Secure Boot (1); Windows LUAFV (1); Windows Filtering Platform (WFP) (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:win11-25h2:2026-Jun</id>
+    <title>Windows 11 25H2: Security features in the June 2026 update (16 fixes)</title>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5094126: 16 security fixes in Security features. Biggest parts: Windows Secure Boot (8); Windows BitLocker (3); Windows Application Identity (AppID) Subsystem (2); Windows Cryptographic Services (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:win11-24h2:2026-Jun</id>
+    <title>Windows 11 24H2: Security features in the June 2026 update (16 fixes)</title>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5094126: 16 security fixes in Security features. Biggest parts: Windows Secure Boot (8); Windows BitLocker (3); Windows Application Identity (AppID) Subsystem (2); Windows Cryptographic Services (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2025:2026-Jun</id>
+    <title>Windows Server 2025: Security features in the June 2026 update (16 fixes)</title>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5094125, KB5094126: 16 security fixes in Security features. Biggest parts: Windows Secure Boot (8); Windows BitLocker (3); Windows Application Identity (AppID) Subsystem (2); Windows Cryptographic Services (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2022:2026-Jun</id>
+    <title>Windows Server 2022: Security features in the June 2026 update (13 fixes)</title>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5094128: 13 security fixes in Security features. Biggest parts: Windows Secure Boot (7); Windows BitLocker (3); Windows Cryptographic Services (1); Windows Application Identity (AppID) Subsystem (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2019:2026-Jun</id>
+    <title>Windows Server 2019: Security features in the June 2026 update (12 fixes)</title>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5094123: 12 security fixes in Security features. Biggest parts: Windows Secure Boot (7); Windows BitLocker (3); Windows Application Identity (AppID) Subsystem (1); Windows Boot Manager (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2016:2026-Jun</id>
+    <title>Windows Server 2016: Security features in the June 2026 update (12 fixes)</title>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5094122: 12 security fixes in Security features. Biggest parts: Windows Secure Boot (7); Windows BitLocker (3); Windows Application Identity (AppID) Subsystem (1); Windows Boot Manager (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:win11-25h2:2026-May</id>
+    <title>Windows 11 25H2: Security features in the May 2026 update (6 fixes)</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5089466, KB5089549: 6 security fixes in Security features. Biggest parts: Windows Filtering Platform (WFP) (1); Windows Application Identity (AppID) Subsystem (1); Windows Cryptographic Services (1); Windows Kernel-Mode Drivers (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:win11-24h2:2026-May</id>
+    <title>Windows 11 24H2: Security features in the May 2026 update (6 fixes)</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5089466, KB5089549: 6 security fixes in Security features. Biggest parts: Windows Filtering Platform (WFP) (1); Windows Application Identity (AppID) Subsystem (1); Windows Cryptographic Services (1); Windows Kernel-Mode Drivers (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2025:2026-May</id>
+    <title>Windows Server 2025: Security features in the May 2026 update (7 fixes)</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5087423, KB5087539: 7 security fixes in Security features. Biggest parts: Windows Kernel-Mode Drivers (2); Windows Filtering Platform (WFP) (1); Windows Application Identity (AppID) Subsystem (1); Windows Cryptographic Services (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2022:2026-May</id>
+    <title>Windows Server 2022: Security features in the May 2026 update (5 fixes)</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5087424, KB5087545: 5 security fixes in Security features. Biggest parts: Windows Filtering Platform (WFP) (1); Windows Application Identity (AppID) Subsystem (1); Windows Cryptographic Services (1); Windows Kernel-Mode Drivers (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2019:2026-May</id>
+    <title>Windows Server 2019: Security features in the May 2026 update (5 fixes)</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5087538: 5 security fixes in Security features. Biggest parts: Windows Filtering Platform (WFP) (1); Windows Application Identity (AppID) Subsystem (1); Windows Cryptographic Services (1); Windows Kernel-Mode Drivers (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2016:2026-May</id>
+    <title>Windows Server 2016: Security features in the May 2026 update (4 fixes)</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5087537: 4 security fixes in Security features. Biggest parts: Windows Filtering Platform (WFP) (1); Windows Application Identity (AppID) Subsystem (1); Windows Cryptographic Services (1); Windows Kernel-Mode Drivers (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:win11-25h2:2026-Apr</id>
+    <title>Windows 11 25H2: Security features in the April 2026 update (9 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5083769: 9 security fixes in Security features. Biggest parts: Windows Virtualization-Based Security (VBS) Enclave (2); Applocker Filter Driver (applockerfltr.sys) (1); Windows Secure Boot (1); Windows Cryptographic Services (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:win11-24h2:2026-Apr</id>
+    <title>Windows 11 24H2: Security features in the April 2026 update (9 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5083769: 9 security fixes in Security features. Biggest parts: Windows Virtualization-Based Security (VBS) Enclave (2); Applocker Filter Driver (applockerfltr.sys) (1); Windows Secure Boot (1); Windows Cryptographic Services (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2025:2026-Apr</id>
+    <title>Windows Server 2025: Security features in the April 2026 update (9 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5082063: 9 security fixes in Security features. Biggest parts: Windows Virtualization-Based Security (VBS) Enclave (2); Applocker Filter Driver (applockerfltr.sys) (1); Windows Secure Boot (1); Windows Cryptographic Services (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2022:2026-Apr</id>
+    <title>Windows Server 2022: Security features in the April 2026 update (8 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5082142: 8 security fixes in Security features. Biggest parts: Windows Virtualization-Based Security (VBS) Enclave (1); Windows Secure Boot (1); Windows Cryptographic Services (1); Windows Encrypting File System (EFS) (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2019:2026-Apr</id>
+    <title>Windows Server 2019: Security features in the April 2026 update (8 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5082123: 8 security fixes in Security features. Biggest parts: Windows Virtualization-Based Security (VBS) Enclave (1); Windows Secure Boot (1); Windows Cryptographic Services (1); Windows Encrypting File System (EFS) (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2016:2026-Apr</id>
+    <title>Windows Server 2016: Security features in the April 2026 update (6 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5082198: 6 security fixes in Security features. Biggest parts: Windows Virtualization-Based Security (VBS) Enclave (1); Windows Secure Boot (1); Windows Cryptographic Services (1); Windows Boot Manager (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:win11-25h2:2026-Jan</id>
+    <title>Windows 11 25H2: Security features in the January 2026 update (7 fixes)</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5074109: 7 security fixes in Security features. Biggest parts: Windows Virtualization-Based Security (VBS) Enclave (4); Windows TPM (1); Windows Kernel-Mode Drivers (1); Windows Secure Boot (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:win11-24h2:2026-Jan</id>
+    <title>Windows 11 24H2: Security features in the January 2026 update (7 fixes)</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5074109: 7 security fixes in Security features. Biggest parts: Windows Virtualization-Based Security (VBS) Enclave (4); Windows TPM (1); Windows Kernel-Mode Drivers (1); Windows Secure Boot (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2025:2026-Jan</id>
+    <title>Windows Server 2025: Security features in the January 2026 update (4 fixes)</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5073379: 4 security fixes in Security features. Biggest parts: Windows TPM (1); Windows Kernel-Mode Drivers (1); Windows Virtualization-Based Security (VBS) Enclave (1); Windows Secure Boot (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2022:2026-Jan</id>
+    <title>Windows Server 2022: Security features in the January 2026 update (2 fixes)</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5073457: 2 security fixes in Security features. Biggest parts: Windows TPM (1); Windows Secure Boot (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2019:2026-Jan</id>
+    <title>Windows Server 2019: Security features in the January 2026 update (2 fixes)</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5073723: 2 security fixes in Security features. Biggest parts: Windows TPM (1); Windows Secure Boot (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2016:2026-Jan</id>
+    <title>Windows Server 2016: Security features in the January 2026 update (1 fixes)</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5073722: 1 security fixes in Security features. Biggest parts: Windows Secure Boot (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:win11-25h2:2025-Dec</id>
+    <title>Windows 11 25H2: Security features in the December 2025 update (1 fixes)</title>
+    <updated>2025-12-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5066835, KB5068861, KB5068966, KB5072014, KB5072033, KB5074204: 1 security fixes in Security features. Biggest parts: Windows Defender Firewall Service (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:win11-24h2:2025-Dec</id>
+    <title>Windows 11 24H2: Security features in the December 2025 update (1 fixes)</title>
+    <updated>2025-12-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5066835, KB5068861, KB5068966, KB5072014, KB5072033, KB5074204: 1 security fixes in Security features. Biggest parts: Windows Defender Firewall Service (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2025:2025-Dec</id>
+    <title>Windows Server 2025: Security features in the December 2025 update (1 fixes)</title>
+    <updated>2025-12-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5066835, KB5068861, KB5068966, KB5072014, KB5072033, KB5074204: 1 security fixes in Security features. Biggest parts: Windows Defender Firewall Service (1).</summary>
+  </entry>
+</feed>

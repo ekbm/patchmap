@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Installing and updates</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/install-update/all.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/install-update/all.xml</id>
+  <updated>2026-11-16T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:2026-11-install-0x800f0993:fix-rolling-out</id>
+    <title>Fix rolling out: November update fails to install (0x800f0993, 0x800f0989, 0x80070306)</title>
+    <updated>2026-11-16T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;q=November%20update%20fails%20to%20install%20%280x800f"/>
+    <category term="known-problem"/>
+    <summary>Some devices that installed the October 2026 preview update KB5127936 can't finish installing the November security update and may retry repeatedly. Microsoft says a fix is rolling out for devices using Windows Update. Sources disagree on whether it has fully shipped. Affects: Windows 11 24H2, Windows 11 25H2, Windows 11 26H2. Source: https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-kb5132061-installation-issues-0x80070306-0x800f0989-0x800f0993-errors/. From Patchmap (news and vendor reports).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:win11-26h2:2026-Nov</id>
+    <title>Windows 11 26H2: Installing and updates in the November 2026 update (40 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5132043, KB5132061, KB5135385: 40 security fixes in Installing and updates. Biggest parts: Windows Installer (36); Servicing Stack Updates (1); Windows Update Stack (1); Windows AppX Package Manager (1). Files changed (17): appxdeploymentclient.dll, appxdeploymentextensions.desktop.dll, appxdeploymentextensions.onecore.dll, appxdeploymentserver.dll, dism.exe, dismapi.dll, dismcore.dll, dismcoreps.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:win11-25h2:2026-Nov</id>
+    <title>Windows 11 25H2: Installing and updates in the November 2026 update (40 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5132043, KB5132061, KB5135385: 40 security fixes in Installing and updates. Biggest parts: Windows Installer (36); Servicing Stack Updates (1); Windows Update Stack (1); Windows AppX Package Manager (1). Files changed (17): appxdeploymentclient.dll, appxdeploymentextensions.desktop.dll, appxdeploymentextensions.onecore.dll, appxdeploymentserver.dll, dism.exe, dismapi.dll, dismcore.dll, dismcoreps.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:win11-24h2:2026-Nov</id>
+    <title>Windows 11 24H2: Installing and updates in the November 2026 update (40 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5132043, KB5132061, KB5135385: 40 security fixes in Installing and updates. Biggest parts: Windows Installer (36); Servicing Stack Updates (1); Windows Update Stack (1); Windows AppX Package Manager (1). Files changed (17): appxdeploymentclient.dll, appxdeploymentextensions.desktop.dll, appxdeploymentextensions.onecore.dll, appxdeploymentserver.dll, dism.exe, dismapi.dll, dismcore.dll, dismcoreps.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2025:2026-Nov</id>
+    <title>Windows Server 2025: Installing and updates in the November 2026 update (40 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5131077, KB5131080, KB5135386: 40 security fixes in Installing and updates. Biggest parts: Windows Installer (36); Servicing Stack Updates (1); Windows Update Stack (1); Windows AppX Package Manager (1). Files changed (13): appxdeploymentextensions.desktop.dll, appxdeploymentextensions.onecore.dll, appxdeploymentserver.dll, dism.exe, dismapi.dll, dismcore.dll, dismcoreps.dll, dismprov.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2022:2026-Nov</id>
+    <title>Windows Server 2022: Installing and updates in the November 2026 update (40 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5131090: 40 security fixes in Installing and updates. Biggest parts: Windows Installer (36); Windows AppX Deployment Service (1); Servicing Stack Updates (1); Windows AppX Package Manager (1). Files changed (15): appxdeploymentclient.dll, appxdeploymentextensions.desktop.dll, appxdeploymentextensions.onecore.dll, appxdeploymentextensions.server.dll, appxdeploymentserver.dll, dism.exe, dismapi.dll, dismcore.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2019:2026-Nov</id>
+    <title>Windows Server 2019: Installing and updates in the November 2026 update (40 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5131085: 40 security fixes in Installing and updates. Biggest parts: Windows Installer (36); Windows AppX Deployment Service (1); Servicing Stack Updates (1); Windows AppX Package Manager (1). Files changed (7): appxdeploymentextensions.desktop.dll, appxdeploymentextensions.onecore.dll, appxdeploymentserver.dll, msi.dll, msiexec.exe, wuapi.dll, wuaueng.dll.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2016:2026-Nov</id>
+    <title>Windows Server 2016: Installing and updates in the November 2026 update (40 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5131083, KB5131291: 40 security fixes in Installing and updates. Biggest parts: Windows Installer (36); Windows AppX Deployment Service (1); Servicing Stack Updates (1); Windows AppX Package Manager (1). Files changed (8): appxdeploymentextensions.desktop.dll, appxdeploymentextensions.onecore.dll, appxdeploymentserver.dll, msi.dll, msi.mof, msiexec.exe, wuapi.dll, wuaueng.dll.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:win11-26h2:2026-Oct</id>
+    <title>Windows 11 26H2: Installing and updates in the October 2026 update (75 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5127648: 75 security fixes in Installing and updates. Biggest parts: Windows Installer (38); Windows Update (8); Windows Update Orchestrator Service (7); Servicing Stack Updates (7). Files changed (16): appxdeploymentclient.dll, appxdeploymentextensions.desktop.dll, appxdeploymentextensions.onecore.dll, appxdeploymentserver.dll, dism.exe, dismapi.dll, dismcore.dll, dismcoreps.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:win11-25h2:2026-Oct</id>
+    <title>Windows 11 25H2: Installing and updates in the October 2026 update (75 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5127648: 75 security fixes in Installing and updates. Biggest parts: Windows Installer (38); Windows Update (8); Windows Update Orchestrator Service (7); Servicing Stack Updates (7). Files changed (16): appxdeploymentclient.dll, appxdeploymentextensions.desktop.dll, appxdeploymentextensions.onecore.dll, appxdeploymentserver.dll, dism.exe, dismapi.dll, dismcore.dll, dismcoreps.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:win11-24h2:2026-Oct</id>
+    <title>Windows 11 24H2: Installing and updates in the October 2026 update (75 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5127648: 75 security fixes in Installing and updates. Biggest parts: Windows Installer (38); Windows Update (8); Windows Update Orchestrator Service (7); Servicing Stack Updates (7). Files changed (16): appxdeploymentclient.dll, appxdeploymentextensions.desktop.dll, appxdeploymentextensions.onecore.dll, appxdeploymentserver.dll, dism.exe, dismapi.dll, dismcore.dll, dismcoreps.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2025:2026-Oct</id>
+    <title>Windows Server 2025: Installing and updates in the October 2026 update (75 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5126646: 75 security fixes in Installing and updates. Biggest parts: Windows Installer (38); Windows Update (8); Windows Update Orchestrator Service (7); Servicing Stack Updates (7). Files changed (16): appxdeploymentclient.dll, appxdeploymentextensions.desktop.dll, appxdeploymentextensions.onecore.dll, appxdeploymentextensions.server.dll, appxdeploymentserver.dll, dism.exe, dismapi.dll, dismcore.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2022:2026-Oct</id>
+    <title>Windows Server 2022: Installing and updates in the October 2026 update (62 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5126655: 62 security fixes in Installing and updates. Biggest parts: Windows Installer (38); Windows AppX Deployment Service (6); Servicing Stack Updates (5); Windows Update Orchestrator Service (4). Files changed (16): appxdeploymentclient.dll, appxdeploymentextensions.desktop.dll, appxdeploymentextensions.onecore.dll, appxdeploymentextensions.server.dll, appxdeploymentserver.dll, dism.exe, dismapi.dll, dismcore.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2019:2026-Oct</id>
+    <title>Windows Server 2019: Installing and updates in the October 2026 update (53 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5126651: 53 security fixes in Installing and updates. Biggest parts: Windows Installer (37); Servicing Stack Updates (5); Windows AppX Deployment Service (4); Windows Update Service (3). Files changed (14): appxdeploymentclient.dll, appxdeploymentextensions.desktop.dll, appxdeploymentextensions.onecore.dll, appxdeploymentextensions.server.dll, appxdeploymentserver.dll, dismapi.dll, dismcore.dll, dismcoreps.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2016:2026-Oct</id>
+    <title>Windows Server 2016: Installing and updates in the October 2026 update (46 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5126649, KB5126868: 46 security fixes in Installing and updates. Biggest parts: Windows Installer (37); Servicing Stack Updates (4); Windows Update Service (2); Windows Update (1). Files changed (7): appxdeploymentextensions.desktop.dll, appxdeploymentextensions.onecore.dll, appxdeploymentserver.dll, msi.dll, msiexec.exe, wuapi.dll, wuaueng.dll.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:win11-25h2:2026-Sep</id>
+    <title>Windows 11 25H2: Installing and updates in the September 2026 update (6 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5124008: 6 security fixes in Installing and updates. Biggest parts: Windows Installer (5); Windows Update Stack (1). Files changed (16): appxdeploymentclient.dll, appxdeploymentextensions.desktop.dll, appxdeploymentextensions.onecore.dll, appxdeploymentserver.dll, dism.exe, dismapi.dll, dismcore.dll, dismcoreps.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:win11-24h2:2026-Sep</id>
+    <title>Windows 11 24H2: Installing and updates in the September 2026 update (6 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5124008: 6 security fixes in Installing and updates. Biggest parts: Windows Installer (5); Windows Update Stack (1). Files changed (16): appxdeploymentclient.dll, appxdeploymentextensions.desktop.dll, appxdeploymentextensions.onecore.dll, appxdeploymentserver.dll, dism.exe, dismapi.dll, dismcore.dll, dismcoreps.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2025:2026-Sep</id>
+    <title>Windows Server 2025: Installing and updates in the September 2026 update (6 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5122871: 6 security fixes in Installing and updates. Biggest parts: Windows Installer (5); Windows Update Stack (1). Files changed (12): appxdeploymentclient.dll, appxdeploymentextensions.desktop.dll, appxdeploymentextensions.onecore.dll, appxdeploymentextensions.server.dll, appxdeploymentserver.dll, dism.exe, dismapi.dll, dismcore.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2022:2026-Sep</id>
+    <title>Windows Server 2022: Installing and updates in the September 2026 update (4 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5122882: 4 security fixes in Installing and updates. Biggest parts: Windows Installer (4). Files changed (6): dismapi.dll, dismcore.dll, dismcoreps.dll, dismprov.dll, msi.dll, trustedinstaller.exe.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2019:2026-Sep</id>
+    <title>Windows Server 2019: Installing and updates in the September 2026 update (4 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5122876: 4 security fixes in Installing and updates. Biggest parts: Windows Installer (4). Files changed (3): appxdeploymentserver.dll, msi.dll, trustedinstaller.exe.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2016:2026-Sep</id>
+    <title>Windows Server 2016: Installing and updates in the September 2026 update (4 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5122874, KB5123099: 4 security fixes in Installing and updates. Biggest parts: Windows Installer (4). Files changed (7): appxdeploymentextensions.desktop.dll, appxdeploymentextensions.onecore.dll, appxdeploymentserver.dll, msi.dll, trustedinstaller.exe, wuapi.dll, wuaueng.dll.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:win11-25h2:2026-Aug</id>
+    <title>Windows 11 25H2: Installing and updates in the August 2026 update (9 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5120994, KB5121003, KB5123273, KB5123607: 9 security fixes in Installing and updates. Biggest parts: Windows Installer (9).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:win11-24h2:2026-Aug</id>
+    <title>Windows 11 24H2: Installing and updates in the August 2026 update (9 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5120994, KB5121003, KB5123273, KB5123607: 9 security fixes in Installing and updates. Biggest parts: Windows Installer (9).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2025:2026-Aug</id>
+    <title>Windows Server 2025: Installing and updates in the August 2026 update (9 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5120228, KB5120233: 9 security fixes in Installing and updates. Biggest parts: Windows Installer (9).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2022:2026-Aug</id>
+    <title>Windows Server 2022: Installing and updates in the August 2026 update (8 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5120229, KB5120242, KB5123303: 8 security fixes in Installing and updates. Biggest parts: Windows Installer (8).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2019:2026-Aug</id>
+    <title>Windows Server 2019: Installing and updates in the August 2026 update (8 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5120238: 8 security fixes in Installing and updates. Biggest parts: Windows Installer (8).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2016:2026-Aug</id>
+    <title>Windows Server 2016: Installing and updates in the August 2026 update (8 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5120418: 8 security fixes in Installing and updates. Biggest parts: Windows Installer (8).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:win11-25h2:2026-Jul</id>
+    <title>Windows 11 25H2: Installing and updates in the July 2026 update (6 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5101650: 6 security fixes in Installing and updates. Biggest parts: Windows App Installer (3); Windows Installer (2); Windows AppX Deployment Service (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:win11-24h2:2026-Jul</id>
+    <title>Windows 11 24H2: Installing and updates in the July 2026 update (6 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5101650: 6 security fixes in Installing and updates. Biggest parts: Windows App Installer (3); Windows Installer (2); Windows AppX Deployment Service (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2025:2026-Jul</id>
+    <title>Windows Server 2025: Installing and updates in the July 2026 update (6 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5099536: 6 security fixes in Installing and updates. Biggest parts: Windows App Installer (3); Windows Installer (2); Windows AppX Deployment Service (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2022:2026-Jul</id>
+    <title>Windows Server 2022: Installing and updates in the July 2026 update (4 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5099540: 4 security fixes in Installing and updates. Biggest parts: Windows Installer (2); Windows AppX Deployment Service (1); Windows App Installer (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2019:2026-Jul</id>
+    <title>Windows Server 2019: Installing and updates in the July 2026 update (4 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5099538: 4 security fixes in Installing and updates. Biggest parts: Windows Installer (2); Windows AppX Deployment Service (1); Windows App Installer (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2016:2026-Jul</id>
+    <title>Windows Server 2016: Installing and updates in the July 2026 update (4 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5099535: 4 security fixes in Installing and updates. Biggest parts: Windows Installer (2); Windows AppX Deployment Service (1); Windows App Installer (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:win11-25h2:2026-Apr</id>
+    <title>Windows 11 25H2: Installing and updates in the April 2026 update (1 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5083769: 1 security fixes in Installing and updates. Biggest parts: Windows Installer (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:win11-24h2:2026-Apr</id>
+    <title>Windows 11 24H2: Installing and updates in the April 2026 update (1 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5083769: 1 security fixes in Installing and updates. Biggest parts: Windows Installer (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2025:2026-Apr</id>
+    <title>Windows Server 2025: Installing and updates in the April 2026 update (1 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5082063: 1 security fixes in Installing and updates. Biggest parts: Windows Installer (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2022:2026-Apr</id>
+    <title>Windows Server 2022: Installing and updates in the April 2026 update (1 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5082142: 1 security fixes in Installing and updates. Biggest parts: Windows Installer (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2019:2026-Apr</id>
+    <title>Windows Server 2019: Installing and updates in the April 2026 update (1 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5082123: 1 security fixes in Installing and updates. Biggest parts: Windows Installer (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2016:2026-Apr</id>
+    <title>Windows Server 2016: Installing and updates in the April 2026 update (1 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5082198: 1 security fixes in Installing and updates. Biggest parts: Windows Installer (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:win11-25h2:2026-Jan</id>
+    <title>Windows 11 25H2: Installing and updates in the January 2026 update (1 fixes)</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5074109: 1 security fixes in Installing and updates. Biggest parts: Windows Installer (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:win11-24h2:2026-Jan</id>
+    <title>Windows 11 24H2: Installing and updates in the January 2026 update (1 fixes)</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5074109: 1 security fixes in Installing and updates. Biggest parts: Windows Installer (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2025:2026-Jan</id>
+    <title>Windows Server 2025: Installing and updates in the January 2026 update (1 fixes)</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5073379: 1 security fixes in Installing and updates. Biggest parts: Windows Installer (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2022:2026-Jan</id>
+    <title>Windows Server 2022: Installing and updates in the January 2026 update (1 fixes)</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5073457: 1 security fixes in Installing and updates. Biggest parts: Windows Installer (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2019:2026-Jan</id>
+    <title>Windows Server 2019: Installing and updates in the January 2026 update (1 fixes)</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5073723: 1 security fixes in Installing and updates. Biggest parts: Windows Installer (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2016:2026-Jan</id>
+    <title>Windows Server 2016: Installing and updates in the January 2026 update (1 fixes)</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5073722: 1 security fixes in Installing and updates. Biggest parts: Windows Installer (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:win11-25h2:2025-Dec</id>
+    <title>Windows 11 25H2: Installing and updates in the December 2025 update (1 fixes)</title>
+    <updated>2025-12-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5066835, KB5068861, KB5068966, KB5072014, KB5072033, KB5074204: 1 security fixes in Installing and updates. Biggest parts: Windows Installer (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:win11-24h2:2025-Dec</id>
+    <title>Windows 11 24H2: Installing and updates in the December 2025 update (1 fixes)</title>
+    <updated>2025-12-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5066835, KB5068861, KB5068966, KB5072014, KB5072033, KB5074204: 1 security fixes in Installing and updates. Biggest parts: Windows Installer (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2025:2025-Dec</id>
+    <title>Windows Server 2025: Installing and updates in the December 2025 update (1 fixes)</title>
+    <updated>2025-12-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5066835, KB5068861, KB5068966, KB5072014, KB5072033, KB5074204: 1 security fixes in Installing and updates. Biggest parts: Windows Installer (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2022:2025-Dec</id>
+    <title>Windows Server 2022: Installing and updates in the December 2025 update (1 fixes)</title>
+    <updated>2025-12-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5066782, KB5068787, KB5068840, KB5071413, KB5071547, KB5074353: 1 security fixes in Installing and updates. Biggest parts: Windows Installer (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2019:2025-Dec</id>
+    <title>Windows Server 2019: Installing and updates in the December 2025 update (1 fixes)</title>
+    <updated>2025-12-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5066586, KB5068791, KB5071544: 1 security fixes in Installing and updates. Biggest parts: Windows Installer (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2016:2025-Dec</id>
+    <title>Windows Server 2016: Installing and updates in the December 2025 update (1 fixes)</title>
+    <updated>2025-12-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5066836, KB5068864, KB5071543: 1 security fixes in Installing and updates. Biggest parts: Windows Installer (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3697:fixed</id>
+    <title>Now fixed: Smartcard authentication issues might occur with the October 2025 Windows update</title>
+    <updated>2025-10-22T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;q=KB5066835"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5066835. Affects: Windows 11 24H2, Windows 11 25H2, Windows Server 2022, Windows Server 2025, Windows Server 2019. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#3697msgdesc. From Microsoft release health.</summary>
+  </entry>
+</feed>

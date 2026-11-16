@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Network on Windows 11 26H2</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/network/win11-26h2.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/network/win11-26h2.xml</id>
+  <updated>2026-11-10T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:network:win11-26h2:2026-Nov</id>
+    <title>Windows 11 26H2: Network in the November 2026 update (66 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;a=network"/>
+    <category term="area-update"/>
+    <summary>KB5132043, KB5132061, KB5135385: 66 security fixes in Network. Biggest parts: Windows DNS (5); Windows Internet Connection Sharing (ICS) (5); Windows NetBIOS (4); Windows TCP/IP (4). Files changed (30): afd.sys, bfe.dll, dhcpcmonitor.dll, dhcpcore.dll, dhcpcore6.dll, dhcpcsvc.dll, dhcpcsvc6.dll, dhcpmon.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:network:win11-26h2:2026-Oct</id>
+    <title>Windows 11 26H2: Network in the October 2026 update (124 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;a=network"/>
+    <category term="area-update"/>
+    <summary>KB5127648: 124 security fixes in Network. Biggest parts: Role: DNS Server (37); Windows Routing and Remote Access Service (RRAS) (13); Windows TCP/IP (9); Network Policy Server (NPS) (8). Files changed (27): afd.sys, bfe.dll, dhcpcmonitor.dll, dhcpcore.dll, dhcpcore6.dll, dhcpcsvc.dll, dhcpcsvc6.dll, dhcpmon.dll….</summary>
+  </entry>
+</feed>

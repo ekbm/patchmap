@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Office apps</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/office-apps/all.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/office-apps/all.xml</id>
+  <updated>2026-11-10T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:office-apps:m365-apps:2026-Nov</id>
+    <title>Microsoft 365 Apps and Office: Office apps in the November 2026 update (175 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=m365-apps&amp;a=office-apps"/>
+    <category term="area-update"/>
+    <summary>Click-to-Run update: 175 security fixes in Office apps. Biggest parts: Microsoft Office Word (65); Microsoft Office Excel (64); Microsoft Office Outlook (20); Microsoft Office (9).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:office-apps:m365-apps:2026-Oct</id>
+    <title>Microsoft 365 Apps and Office: Office apps in the October 2026 update (162 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=m365-apps&amp;a=office-apps"/>
+    <category term="area-update"/>
+    <summary>Click-to-Run update: 162 security fixes in Office apps. Biggest parts: Microsoft Office Excel (70); Microsoft Office Word (45); Microsoft Office Access (13); Microsoft Office PowerPoint (12).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:office-apps:win11-25h2:2026-Sep</id>
+    <title>Windows 11 25H2: Office apps in the September 2026 update (3 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=office-apps"/>
+    <category term="area-update"/>
+    <summary>KB5124008: 3 security fixes in Office apps. Biggest parts: Microsoft Office Word (3).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:office-apps:win11-24h2:2026-Sep</id>
+    <title>Windows 11 24H2: Office apps in the September 2026 update (3 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=office-apps"/>
+    <category term="area-update"/>
+    <summary>KB5124008: 3 security fixes in Office apps. Biggest parts: Microsoft Office Word (3).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:office-apps:server-2025:2026-Sep</id>
+    <title>Windows Server 2025: Office apps in the September 2026 update (3 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=office-apps"/>
+    <category term="area-update"/>
+    <summary>KB5122871: 3 security fixes in Office apps. Biggest parts: Microsoft Office Word (3).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:office-apps:server-2022:2026-Sep</id>
+    <title>Windows Server 2022: Office apps in the September 2026 update (3 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=office-apps"/>
+    <category term="area-update"/>
+    <summary>KB5122882: 3 security fixes in Office apps. Biggest parts: Microsoft Office Word (3).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:office-apps:server-2019:2026-Sep</id>
+    <title>Windows Server 2019: Office apps in the September 2026 update (3 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=office-apps"/>
+    <category term="area-update"/>
+    <summary>KB5122876: 3 security fixes in Office apps. Biggest parts: Microsoft Office Word (3).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:office-apps:server-2016:2026-Sep</id>
+    <title>Windows Server 2016: Office apps in the September 2026 update (3 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=office-apps"/>
+    <category term="area-update"/>
+    <summary>KB5122874, KB5123099: 3 security fixes in Office apps. Biggest parts: Microsoft Office Word (3).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:office-apps:m365-apps:2026-Sep</id>
+    <title>Microsoft 365 Apps and Office: Office apps in the September 2026 update (104 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=m365-apps&amp;a=office-apps"/>
+    <category term="area-update"/>
+    <summary>Click-to-Run update: 104 security fixes in Office apps. Biggest parts: Microsoft Office Word (33); Microsoft Office Excel (32); Microsoft Office (16); Microsoft Office PowerPoint (10).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:office-apps:m365-apps:2026-Aug</id>
+    <title>Microsoft 365 Apps and Office: Office apps in the August 2026 update (13 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=m365-apps&amp;a=office-apps"/>
+    <category term="area-update"/>
+    <summary>KB5002791, KB5002795, KB5002897, KB5002900, KB5002902: 13 security fixes in Office apps. Biggest parts: Microsoft Office (13).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:office-apps:m365-apps:2026-Jul</id>
+    <title>Microsoft 365 Apps and Office: Office apps in the July 2026 update (27 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=m365-apps&amp;a=office-apps"/>
+    <category term="area-update"/>
+    <summary>KB5002273, KB5002748, KB5002830, KB5002887: 27 security fixes in Office apps. Biggest parts: Microsoft Office (27).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:office-apps:m365-apps:2026-Jun</id>
+    <title>Microsoft 365 Apps and Office: Office apps in the June 2026 update (10 fixes)</title>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=m365-apps&amp;a=office-apps"/>
+    <category term="area-update"/>
+    <summary>KB5002852, KB5002878: 10 security fixes in Office apps. Biggest parts: Microsoft Office (10).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:office-apps:m365-apps:2026-May</id>
+    <title>Microsoft 365 Apps and Office: Office apps in the May 2026 update (2 fixes)</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=m365-apps&amp;a=office-apps"/>
+    <category term="area-update"/>
+    <summary>KB5002578, KB5002866: 2 security fixes in Office apps. Biggest parts: Microsoft Office (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:office-apps:m365-apps:2026-Apr</id>
+    <title>Microsoft 365 Apps and Office: Office apps in the April 2026 update (1 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=m365-apps&amp;a=office-apps"/>
+    <category term="area-update"/>
+    <summary>KB5002859: 1 security fixes in Office apps. Biggest parts: Microsoft Office (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:office-apps:m365-apps:2026-Mar</id>
+    <title>Microsoft 365 Apps and Office: Office apps in the March 2026 update (2 fixes)</title>
+    <updated>2026-03-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=m365-apps&amp;a=office-apps"/>
+    <category term="area-update"/>
+    <summary>KB5002838, KB5002848: 2 security fixes in Office apps. Biggest parts: Microsoft Office (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:office-apps:m365-apps:2026-Jan</id>
+    <title>Microsoft 365 Apps and Office: Office apps in the January 2026 update (4 fixes)</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=m365-apps&amp;a=office-apps"/>
+    <category term="area-update"/>
+    <summary>KB5002713, KB5002826: 4 security fixes in Office apps. Biggest parts: Microsoft Office (4).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:office-apps:m365-apps:2025-Dec</id>
+    <title>Microsoft 365 Apps and Office: Office apps in the December 2025 update (2 fixes)</title>
+    <updated>2025-12-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=m365-apps&amp;a=office-apps"/>
+    <category term="area-update"/>
+    <summary>KB5002819: 2 security fixes in Office apps. Biggest parts: Microsoft Office (2).</summary>
+  </entry>
+</feed>

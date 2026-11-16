@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Sign-in and identity on Windows 11 24H2</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/sign-in/win11-24h2.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/sign-in/win11-24h2.xml</id>
+  <updated>2026-11-10T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:sign-in:win11-24h2:2026-Nov</id>
+    <title>Windows 11 24H2: Sign-in and identity in the November 2026 update (36 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=sign-in"/>
+    <category term="area-update"/>
+    <summary>KB5132043, KB5132061, KB5135385: 36 security fixes in Sign-in and identity. Biggest parts: Windows Smart Card (6); Windows Kerberos (6); Windows Local Security Authority Subsystem Service (LSASS) (6); Active Directory Domain Services (4). Files changed (24): kerberos.dll, lsasrv.dll, msv1_0.dll, adsldpc.dll, cloudap.dll, credssp.dll, kdcpw.dll, kerbclientshared.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:sign-in:win11-24h2:2026-Oct</id>
+    <title>Windows 11 24H2: Sign-in and identity in the October 2026 update (41 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=sign-in"/>
+    <category term="area-update"/>
+    <summary>KB5127648: 41 security fixes in Sign-in and identity. Biggest parts: Windows Hello (7); Windows Local Security Authority Subsystem Service (LSASS) (5); Active Directory Domain Services (5); Windows Netlogon (3). Files changed (24): kerberos.dll, kerberos.mof, lsasrv.dll, msv1_0.dll, authz.dll, cloudap.dll, kdcpw.dll, kerbclientshared.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:sign-in:win11-24h2:2026-Sep</id>
+    <title>Windows 11 24H2: Sign-in and identity in the September 2026 update (99 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=sign-in"/>
+    <category term="area-update"/>
+    <summary>KB5124008: 99 security fixes in Sign-in and identity. Biggest parts: Windows Biometric Service (64); Windows Hello (9); Active Directory Domain Services (6); Windows Kerberos (5). Files changed (23): kerberos.dll, lsasrv.dll, msv1_0.dll, cloudap.dll, kdcpw.dll, kerbclientshared.dll, lsaiso.exe, lsass.exe….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:sign-in:win11-24h2:2026-Aug</id>
+    <title>Windows 11 24H2: Sign-in and identity in the August 2026 update (11 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=sign-in"/>
+    <category term="area-update"/>
+    <summary>KB5120994, KB5121003, KB5123273, KB5123607: 11 security fixes in Sign-in and identity. Biggest parts: Windows Kerberos (4); Windows Active Directory (2); Windows LDAP - Lightweight Directory Access Protocol (2); Windows Hello (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:sign-in:win11-24h2:2026-Jul</id>
+    <title>Windows 11 24H2: Sign-in and identity in the July 2026 update (14 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=sign-in"/>
+    <category term="area-update"/>
+    <summary>KB5101650: 14 security fixes in Sign-in and identity. Biggest parts: Active Directory Domain Services (4); Active Directory Federation Services (AD FS) (4); Windows Active Directory (3); Windows Local Security Authority Subsystem Service (LSASS) (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:sign-in:win11-24h2:2026-Jun</id>
+    <title>Windows 11 24H2: Sign-in and identity in the June 2026 update (2 fixes)</title>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=sign-in"/>
+    <category term="area-update"/>
+    <summary>KB5094126: 2 security fixes in Sign-in and identity. Biggest parts: Windows Kerberos (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:sign-in:win11-24h2:2026-May</id>
+    <title>Windows 11 24H2: Sign-in and identity in the May 2026 update (1 fixes)</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=sign-in"/>
+    <category term="area-update"/>
+    <summary>KB5089466, KB5089549: 1 security fixes in Sign-in and identity. Biggest parts: Windows LDAP - Lightweight Directory Access Protocol (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:sign-in:win11-24h2:2026-Apr</id>
+    <title>Windows 11 24H2: Sign-in and identity in the April 2026 update (5 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=sign-in"/>
+    <category term="area-update"/>
+    <summary>KB5083769: 5 security fixes in Sign-in and identity. Biggest parts: Windows Local Security Authority Subsystem Service (LSASS) (2); Windows Hello (1); Windows Active Directory (1); Windows Biometric Service (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:sign-in:win11-24h2:2026-Mar</id>
+    <title>Windows 11 24H2: Sign-in and identity in the March 2026 update (2 fixes)</title>
+    <updated>2026-03-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=sign-in"/>
+    <category term="area-update"/>
+    <summary>KB5079420, KB5079473, KB5084597: 2 security fixes in Sign-in and identity. Biggest parts: Windows Authentication Methods (1); Active Directory Domain Services (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:sign-in:win11-24h2:2026-Feb</id>
+    <title>Windows 11 24H2: Sign-in and identity in the February 2026 update (1 fixes)</title>
+    <updated>2026-02-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=sign-in"/>
+    <category term="area-update"/>
+    <summary>KB5077181, KB5077212: 1 security fixes in Sign-in and identity. Biggest parts: Windows NTLM (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3760:fixed</id>
+    <title>Now fixed: Connection and authentication failures in Azure Virtual Desktop and Windows 365</title>
+    <updated>2026-01-24T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;q=KB5074109"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5074109. Fixed in KB5078127. Affects: Windows 11 24H2. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#3760msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:sign-in:win11-24h2:2026-Jan</id>
+    <title>Windows 11 24H2: Sign-in and identity in the January 2026 update (8 fixes)</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=sign-in"/>
+    <category term="area-update"/>
+    <summary>KB5074109: 8 security fixes in Sign-in and identity. Biggest parts: Windows Hello (2); Windows Local Security Authority Subsystem Service (LSASS) (2); Windows NTLM (2); Windows LDAP - Lightweight Directory Access Protocol (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3697:fixed</id>
+    <title>Now fixed: Smartcard authentication issues might occur with the October 2025 Windows update</title>
+    <updated>2025-10-22T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;q=KB5066835"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5066835. Affects: Windows 11 24H2. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#3697msgdesc. From Microsoft release health.</summary>
+  </entry>
+</feed>

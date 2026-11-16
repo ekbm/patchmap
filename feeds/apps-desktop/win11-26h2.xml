@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Desktop and apps on Windows 11 26H2</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/apps-desktop/win11-26h2.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/apps-desktop/win11-26h2.xml</id>
+  <updated>2026-11-10T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-4984:fixed</id>
+    <title>Now fixed: USB audio devices might fail to start or produce no sound</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;q=USB%20audio%20devices%20might%20fail%20to%20start%20or"/>
+    <category term="known-problem"/>
+    <summary>Fixed in KB5132061. Affects: Windows 11 26H2. Source: https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-26h2#4984msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:apps-desktop:win11-26h2:2026-Nov</id>
+    <title>Windows 11 26H2: Desktop and apps in the November 2026 update (81 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;a=apps-desktop"/>
+    <category term="area-update"/>
+    <summary>KB5132043, KB5132061, KB5135385: 81 security fixes in Desktop and apps. Biggest parts: Windows Audio Service (8); Windows Broadcast DVR User Service (8); Microsoft WDAC OLE DB provider for SQL (5); Windows Shell (4).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3781:fixed</id>
+    <title>Now fixed: Applications which require AC-3 audio decoding might close unexpectedly</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;q=KB5124010"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5124010. Fixed in KB5127648. Affects: Windows 11 26H2. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-26h2#3781msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:apps-desktop:win11-26h2:2026-Oct</id>
+    <title>Windows 11 26H2: Desktop and apps in the October 2026 update (151 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;a=apps-desktop"/>
+    <category term="area-update"/>
+    <summary>KB5127648: 151 security fixes in Desktop and apps. Biggest parts: Microsoft Windows Search Component (29); Windows Broadcast DVR User Service (20); Windows Device Association Service (11); Microsoft Windows Media Foundation (9).</summary>
+  </entry>
+</feed>

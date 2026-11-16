@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Printing and scanning on Windows 11 26H2</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/print/win11-26h2.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/print/win11-26h2.xml</id>
+  <updated>2026-11-16T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:2026-11-print-zero-size-images:open</id>
+    <title>Open: Printing fails for documents with zero-size images</title>
+    <updated>2026-11-16T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;q=Printing%20fails%20for%20documents%20with%20zero-s"/>
+    <category term="known-problem"/>
+    <summary>Printing can fail when a document contains an image with zero height or width at the selected resolution. These images can be invisible. Mainly Word documents printed through GDI, but other apps can be affected. Confirmed by Microsoft. No fix date announced. Affects: Windows 11 26H2. Source: https://www.ghacks.net/2026/11/15/microsoft-confirms-november-windows-updates-cause-activation-error-0x80041008-and-printing-failures/. From Patchmap (news and vendor reports).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:print:win11-26h2:2026-Nov</id>
+    <title>Windows 11 26H2: Printing and scanning in the November 2026 update (36 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;a=print"/>
+    <category term="area-update"/>
+    <summary>KB5132043, KB5132061, KB5135385: 36 security fixes in Printing and scanning. Biggest parts: Windows Print Spooler Components (20); Windows GDI (3); Microsoft XPS Document Converter (3); Microsoft Color Management (3). Files changed (66): localspl.dll, ntprint.cat, ntprint.dll, ntprint.exe, ntprint.inf, ntprint4.cat, ntprint4.inf, printui.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:print:win11-26h2:2026-Oct</id>
+    <title>Windows 11 26H2: Printing and scanning in the October 2026 update (35 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;a=print"/>
+    <category term="area-update"/>
+    <summary>KB5127648: 35 security fixes in Printing and scanning. Biggest parts: Windows Print Spooler Components (8); Windows USB Print Driver (8); Microsoft PostScript Printer Driver (6); Windows GDI (6). Files changed (67): localspl.dll, ntprint.cat, ntprint.dll, ntprint.exe, ntprint.inf, ntprint4.cat, ntprint4.inf, printui.dll….</summary>
+  </entry>
+</feed>

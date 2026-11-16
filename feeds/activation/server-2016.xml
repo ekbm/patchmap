@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Activation and licensing on Windows Server 2016</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/activation/server-2016.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/activation/server-2016.xml</id>
+  <updated>2026-10-13T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:activation:server-2016:2026-Oct</id>
+    <title>Windows Server 2016: Activation and licensing in the October 2026 update (1 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=activation"/>
+    <category term="area-update"/>
+    <summary>KB5126649, KB5126868: 1 security fixes in Activation and licensing. Biggest parts: Software Protection Platform (SPP) (1). Files changed (4): clipsvc.dll, sppobjs.dll, sppsvc.exe, sppwinob.dll.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:activation:server-2016:2026-Sep</id>
+    <title>Windows Server 2016: Activation and licensing in the September 2026 update (2 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=activation"/>
+    <category term="area-update"/>
+    <summary>KB5122874, KB5123099: 2 security fixes in Activation and licensing. Biggest parts: Windows Remote Desktop Licensing Service (2). Files changed (4): clipsvc.dll, sppobjs.dll, sppsvc.exe, sppwinob.dll.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:activation:server-2016:2026-Aug</id>
+    <title>Windows Server 2016: Activation and licensing in the August 2026 update (1 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=activation"/>
+    <category term="area-update"/>
+    <summary>KB5120418: 1 security fixes in Activation and licensing. Biggest parts: Windows License Manager (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:activation:server-2016:2026-Apr</id>
+    <title>Windows Server 2016: Activation and licensing in the April 2026 update (2 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=activation"/>
+    <category term="area-update"/>
+    <summary>KB5082198: 2 security fixes in Activation and licensing. Biggest parts: Windows Remote Desktop Licensing Service (2).</summary>
+  </entry>
+</feed>

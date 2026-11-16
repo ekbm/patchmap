@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Installing and updates on Windows Server 2025</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/install-update/server-2025.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/install-update/server-2025.xml</id>
+  <updated>2026-11-10T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2025:2026-Nov</id>
+    <title>Windows Server 2025: Installing and updates in the November 2026 update (40 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5131077, KB5131080, KB5135386: 40 security fixes in Installing and updates. Biggest parts: Windows Installer (36); Servicing Stack Updates (1); Windows Update Stack (1); Windows AppX Package Manager (1). Files changed (13): appxdeploymentextensions.desktop.dll, appxdeploymentextensions.onecore.dll, appxdeploymentserver.dll, dism.exe, dismapi.dll, dismcore.dll, dismcoreps.dll, dismprov.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2025:2026-Oct</id>
+    <title>Windows Server 2025: Installing and updates in the October 2026 update (75 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5126646: 75 security fixes in Installing and updates. Biggest parts: Windows Installer (38); Windows Update (8); Windows Update Orchestrator Service (7); Servicing Stack Updates (7). Files changed (16): appxdeploymentclient.dll, appxdeploymentextensions.desktop.dll, appxdeploymentextensions.onecore.dll, appxdeploymentextensions.server.dll, appxdeploymentserver.dll, dism.exe, dismapi.dll, dismcore.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2025:2026-Sep</id>
+    <title>Windows Server 2025: Installing and updates in the September 2026 update (6 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5122871: 6 security fixes in Installing and updates. Biggest parts: Windows Installer (5); Windows Update Stack (1). Files changed (12): appxdeploymentclient.dll, appxdeploymentextensions.desktop.dll, appxdeploymentextensions.onecore.dll, appxdeploymentextensions.server.dll, appxdeploymentserver.dll, dism.exe, dismapi.dll, dismcore.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2025:2026-Aug</id>
+    <title>Windows Server 2025: Installing and updates in the August 2026 update (9 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5120228, KB5120233: 9 security fixes in Installing and updates. Biggest parts: Windows Installer (9).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2025:2026-Jul</id>
+    <title>Windows Server 2025: Installing and updates in the July 2026 update (6 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5099536: 6 security fixes in Installing and updates. Biggest parts: Windows App Installer (3); Windows Installer (2); Windows AppX Deployment Service (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2025:2026-Apr</id>
+    <title>Windows Server 2025: Installing and updates in the April 2026 update (1 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5082063: 1 security fixes in Installing and updates. Biggest parts: Windows Installer (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2025:2026-Jan</id>
+    <title>Windows Server 2025: Installing and updates in the January 2026 update (1 fixes)</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5073379: 1 security fixes in Installing and updates. Biggest parts: Windows Installer (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:server-2025:2025-Dec</id>
+    <title>Windows Server 2025: Installing and updates in the December 2025 update (1 fixes)</title>
+    <updated>2025-12-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5066835, KB5068861, KB5068966, KB5072014, KB5072033, KB5074204: 1 security fixes in Installing and updates. Biggest parts: Windows Installer (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3697:fixed</id>
+    <title>Now fixed: Smartcard authentication issues might occur with the October 2025 Windows update</title>
+    <updated>2025-10-22T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5066835"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5066835. Affects: Windows Server 2025. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#3697msgdesc. From Microsoft release health.</summary>
+  </entry>
+</feed>

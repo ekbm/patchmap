@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Server roles on Windows 11 26H2</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/server-roles/win11-26h2.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/server-roles/win11-26h2.xml</id>
+  <updated>2026-11-10T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:server-roles:win11-26h2:2026-Nov</id>
+    <title>Windows 11 26H2: Server roles in the November 2026 update (33 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;a=server-roles"/>
+    <category term="area-update"/>
+    <summary>KB5132043, KB5132061, KB5135385: 33 security fixes in Server roles. Biggest parts: Windows Hyper-V (15); Windows Message Queuing (8); Windows Internet Information Services (3); Windows Message Queuing Queue Manager (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:server-roles:win11-26h2:2026-Oct</id>
+    <title>Windows 11 26H2: Server roles in the October 2026 update (83 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;a=server-roles"/>
+    <category term="area-update"/>
+    <summary>KB5127648: 83 security fixes in Server roles. Biggest parts: Role: DNS Server (37); Windows Hyper-V (18); Windows Routing and Remote Access Service (RRAS) (13); Windows Message Queuing Queue Manager (6).</summary>
+  </entry>
+</feed>

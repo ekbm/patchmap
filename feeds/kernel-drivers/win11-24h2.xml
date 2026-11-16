@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Kernel and drivers on Windows 11 24H2</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/kernel-drivers/win11-24h2.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/kernel-drivers/win11-24h2.xml</id>
+  <updated>2026-11-10T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-4984:fixed</id>
+    <title>Now fixed: USB audio devices might fail to start or produce no sound</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;q=KB5124008"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5124008. Fixed in KB5132061. Affects: Windows 11 24H2. Source: https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2#4984msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:kernel-drivers:win11-24h2:2026-Nov</id>
+    <title>Windows 11 24H2: Kernel and drivers in the November 2026 update (146 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=kernel-drivers"/>
+    <category term="area-update"/>
+    <summary>KB5132043, KB5132061, KB5135385: 146 security fixes in Kernel and drivers. Biggest parts: Windows Graphics Kernel (35); Windows Kernel (27); Windows Hyper-V (15); Windows USB Driver (9). Files changed (16): clfs.sys, fltmgr.sys, ksecdd.sys, ksecpkg.sys, ntfs.sys, ntoskrnl.exe, partmgr.sys, refs.sys….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:kernel-drivers:win11-24h2:2026-Oct</id>
+    <title>Windows 11 24H2: Kernel and drivers in the October 2026 update (246 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=kernel-drivers"/>
+    <category term="area-update"/>
+    <summary>KB5127648: 246 security fixes in Kernel and drivers. Biggest parts: Windows Kernel (42); Windows Win32 Kernel Subsystem (34); Windows Hyper-V (18); Windows Universal Disk Format File System Driver (UDFS) (16). Files changed (18): clfs.sys, cng.sys, ksecdd.sys, ksecpkg.sys, ntfs.sys, ntoskrnl.exe, partmgr.sys, refs.adml….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-4983:fixed</id>
+    <title>Now fixed: Host folder shares might be unavailable in Hyper-V-based Linux VMs</title>
+    <updated>2026-09-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;q=KB5124008"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5124008. Fixed in KB5129195. Affects: Windows 11 24H2. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#4983msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:kernel-drivers:win11-24h2:2026-Sep</id>
+    <title>Windows 11 24H2: Kernel and drivers in the September 2026 update (99 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=kernel-drivers"/>
+    <category term="area-update"/>
+    <summary>KB5124008: 99 security fixes in Kernel and drivers. Biggest parts: Windows Kernel (11); Windows USB Audio Class driver (usbaudio.sys) (9); Virtual Hard Disk (VHD) Miniport Driver (7); Windows USB Driver (5). Files changed (17): clfs.sys, cng.sys, fltmgr.sys, ksecdd.sys, ksecpkg.sys, ntfs.sys, ntoskrnl.exe, partmgr.sys….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3731:fixed</id>
+    <title>Now fixed: Some games become unresponsive when certain drivers are present</title>
+    <updated>2026-08-26T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;q=KB5121003"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5121003. Affects: Windows 11 24H2. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#3731msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:kernel-drivers:win11-24h2:2026-Aug</id>
+    <title>Windows 11 24H2: Kernel and drivers in the August 2026 update (27 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=kernel-drivers"/>
+    <category term="area-update"/>
+    <summary>KB5120994, KB5121003, KB5123273, KB5123607: 27 security fixes in Kernel and drivers. Biggest parts: Windows Kernel (9); Windows Graphics Kernel (3); Windows Ancillary Function Driver for WinSock (3); Windows Bind Filter Driver (3).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-4906:fixed</id>
+    <title>Now fixed: Some Dell devices with a specific Intel driver might experience poor performance</title>
+    <updated>2026-07-17T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;q=KB5095093"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5095093. Fixed in KB5121767. Affects: Windows 11 24H2. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#4906msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:kernel-drivers:win11-24h2:2026-Jul</id>
+    <title>Windows 11 24H2: Kernel and drivers in the July 2026 update (81 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=kernel-drivers"/>
+    <category term="area-update"/>
+    <summary>KB5101650: 81 security fixes in Kernel and drivers. Biggest parts: Windows Kernel (34); Windows USB Print Driver (8); Windows Ancillary Function Driver for WinSock (4); Windows Cloud Files Mini Filter Driver (4).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:kernel-drivers:win11-24h2:2026-Jun</id>
+    <title>Windows 11 24H2: Kernel and drivers in the June 2026 update (24 fixes)</title>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=kernel-drivers"/>
+    <category term="area-update"/>
+    <summary>KB5094126: 24 security fixes in Kernel and drivers. Biggest parts: Windows Ancillary Function Driver for WinSock (7); Windows Kernel (4); Windows Universal Disk Format File System Driver (UDFS) (2); Windows Projected File System Filter Driver (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:kernel-drivers:win11-24h2:2026-May</id>
+    <title>Windows 11 24H2: Kernel and drivers in the May 2026 update (14 fixes)</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=kernel-drivers"/>
+    <category term="area-update"/>
+    <summary>KB5089466, KB5089549: 14 security fixes in Kernel and drivers. Biggest parts: Windows Ancillary Function Driver for WinSock (4); Windows Cloud Files Mini Filter Driver (3); Windows Kernel (2); Windows Common Log File System Driver (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:kernel-drivers:win11-24h2:2026-Apr</id>
+    <title>Windows 11 24H2: Kernel and drivers in the April 2026 update (27 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=kernel-drivers"/>
+    <category term="area-update"/>
+    <summary>KB5083769: 27 security fixes in Kernel and drivers. Biggest parts: Windows Ancillary Function Driver for WinSock (8); Windows Kernel (6); Windows Virtualization-Based Security (VBS) Enclave (2); Role: Windows Hyper-V (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:kernel-drivers:win11-24h2:2026-Mar</id>
+    <title>Windows 11 24H2: Kernel and drivers in the March 2026 update (10 fixes)</title>
+    <updated>2026-03-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=kernel-drivers"/>
+    <category term="area-update"/>
+    <summary>KB5079420, KB5079473, KB5084597: 10 security fixes in Kernel and drivers. Biggest parts: Windows Ancillary Function Driver for WinSock (4); Windows Kernel (3); Windows Bluetooth RFCOM Protocol Driver (1); Windows Universal Disk Format File System Driver (UDFS) (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:kernel-drivers:win11-24h2:2026-Feb</id>
+    <title>Windows 11 24H2: Kernel and drivers in the February 2026 update (13 fixes)</title>
+    <updated>2026-02-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=kernel-drivers"/>
+    <category term="area-update"/>
+    <summary>KB5077181, KB5077212: 13 security fixes in Kernel and drivers. Biggest parts: Role: Windows Hyper-V (4); Windows Kernel (4); Windows Ancillary Function Driver for WinSock (3); Windows Subsystem for Linux (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3760:fixed</id>
+    <title>Now fixed: Connection and authentication failures in Azure Virtual Desktop and Windows 365</title>
+    <updated>2026-01-24T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;q=KB5074109"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5074109. Fixed in KB5078127. Affects: Windows 11 24H2. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#3760msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:kernel-drivers:win11-24h2:2026-Jan</id>
+    <title>Windows 11 24H2: Kernel and drivers in the January 2026 update (16 fixes)</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=kernel-drivers"/>
+    <category term="area-update"/>
+    <summary>KB5074109: 16 security fixes in Kernel and drivers. Biggest parts: Windows Virtualization-Based Security (VBS) Enclave (4); Windows Graphics Kernel (2); Windows Ancillary Function Driver for WinSock (2); Agere Windows Modem Driver (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:kernel-drivers:win11-24h2:2025-Dec</id>
+    <title>Windows 11 24H2: Kernel and drivers in the December 2025 update (9 fixes)</title>
+    <updated>2025-12-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=kernel-drivers"/>
+    <category term="area-update"/>
+    <summary>KB5066835, KB5068861, KB5068966, KB5072014, KB5072033, KB5074204: 9 security fixes in Kernel and drivers. Biggest parts: Windows Cloud Files Mini Filter Driver (3); Windows Storage VSP Driver (2); Windows Common Log File System Driver (1); Storvsp.sys Driver (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3696:fixed</id>
+    <title>Now fixed: USB mouse and keyboard not working in the Windows Recovery Environment (WinRE)</title>
+    <updated>2025-10-20T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;q=KB5066835"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5066835. Fixed in KB5070773. Affects: Windows 11 24H2. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#3696msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3509:fixed</id>
+    <title>Now fixed: Devices with apps using sprotect.sys driver might stop responding</title>
+    <updated>2025-10-16T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;q=Devices%20with%20apps%20using%20sprotect.sys%20dri"/>
+    <category term="known-problem"/>
+    <summary> Affects: Windows 11 24H2. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#3509msgdesc. From Microsoft release health.</summary>
+  </entry>
+</feed>

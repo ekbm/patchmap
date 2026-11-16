@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Installing and updates on Windows 11 26H2</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/install-update/win11-26h2.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/install-update/win11-26h2.xml</id>
+  <updated>2026-11-16T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:2026-11-install-0x800f0993:fix-rolling-out</id>
+    <title>Fix rolling out: November update fails to install (0x800f0993, 0x800f0989, 0x80070306)</title>
+    <updated>2026-11-16T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;q=November%20update%20fails%20to%20install%20%280x800f"/>
+    <category term="known-problem"/>
+    <summary>Some devices that installed the October 2026 preview update KB5127936 can't finish installing the November security update and may retry repeatedly. Microsoft says a fix is rolling out for devices using Windows Update. Sources disagree on whether it has fully shipped. Affects: Windows 11 26H2. Source: https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-kb5132061-installation-issues-0x80070306-0x800f0989-0x800f0993-errors/. From Patchmap (news and vendor reports).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:win11-26h2:2026-Nov</id>
+    <title>Windows 11 26H2: Installing and updates in the November 2026 update (40 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5132043, KB5132061, KB5135385: 40 security fixes in Installing and updates. Biggest parts: Windows Installer (36); Servicing Stack Updates (1); Windows Update Stack (1); Windows AppX Package Manager (1). Files changed (17): appxdeploymentclient.dll, appxdeploymentextensions.desktop.dll, appxdeploymentextensions.onecore.dll, appxdeploymentserver.dll, dism.exe, dismapi.dll, dismcore.dll, dismcoreps.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:install-update:win11-26h2:2026-Oct</id>
+    <title>Windows 11 26H2: Installing and updates in the October 2026 update (75 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;a=install-update"/>
+    <category term="area-update"/>
+    <summary>KB5127648: 75 security fixes in Installing and updates. Biggest parts: Windows Installer (38); Windows Update (8); Windows Update Orchestrator Service (7); Servicing Stack Updates (7). Files changed (16): appxdeploymentclient.dll, appxdeploymentextensions.desktop.dll, appxdeploymentextensions.onecore.dll, appxdeploymentserver.dll, dism.exe, dismapi.dll, dismcore.dll, dismcoreps.dll….</summary>
+  </entry>
+</feed>

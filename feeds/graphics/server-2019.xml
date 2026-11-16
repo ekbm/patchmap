@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Graphics and display on Windows Server 2019</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/graphics/server-2019.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/graphics/server-2019.xml</id>
+  <updated>2026-11-10T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:graphics:server-2019:2026-Nov</id>
+    <title>Windows Server 2019: Graphics and display in the November 2026 update (89 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=graphics"/>
+    <category term="area-update"/>
+    <summary>KB5131085: 89 security fixes in Graphics and display. Biggest parts: Windows Advanced Rasterization Platform (37); Windows Graphics Kernel (31); Windows Win32K (8); Desktop Window Manager (5).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:graphics:server-2019:2026-Oct</id>
+    <title>Windows Server 2019: Graphics and display in the October 2026 update (41 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=graphics"/>
+    <category term="area-update"/>
+    <summary>KB5126651: 41 security fixes in Graphics and display. Biggest parts: Windows DWM Core Library (12); Desktop Window Manager (8); Windows Win32K (6); Windows Direct Composition (4).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:graphics:server-2019:2026-Sep</id>
+    <title>Windows Server 2019: Graphics and display in the September 2026 update (29 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=graphics"/>
+    <category term="area-update"/>
+    <summary>KB5122876: 29 security fixes in Graphics and display. Biggest parts: Windows Win32K (20); Microsoft Graphics Component (5); Graphic Fonts (3); Windows Graphics Kernel (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:graphics:server-2019:2026-Aug</id>
+    <title>Windows Server 2019: Graphics and display in the August 2026 update (18 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=graphics"/>
+    <category term="area-update"/>
+    <summary>KB5120238: 18 security fixes in Graphics and display. Biggest parts: Windows Win32K (11); Windows DWM Core Library (3); Windows Graphics Kernel (2); Desktop Window Manager (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:graphics:server-2019:2026-Jul</id>
+    <title>Windows Server 2019: Graphics and display in the July 2026 update (21 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=graphics"/>
+    <category term="area-update"/>
+    <summary>KB5099538: 21 security fixes in Graphics and display. Biggest parts: Windows Win32K (10); Windows DirectX (4); Windows Graphics Kernel (2); Windows DWM Core Library (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:graphics:server-2019:2026-Jun</id>
+    <title>Windows Server 2019: Graphics and display in the June 2026 update (7 fixes)</title>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=graphics"/>
+    <category term="area-update"/>
+    <summary>KB5094123: 7 security fixes in Graphics and display. Biggest parts: Windows DWM Core Library (4); Windows Win32K - GRFX (2); Microsoft Graphics Component (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:graphics:server-2019:2026-May</id>
+    <title>Windows Server 2019: Graphics and display in the May 2026 update (8 fixes)</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=graphics"/>
+    <category term="area-update"/>
+    <summary>KB5087538: 8 security fixes in Graphics and display. Biggest parts: Windows Win32K - GRFX (6); Windows DWM Core Library (1); Windows Win32K - ICOMP (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:graphics:server-2019:2026-Apr</id>
+    <title>Windows Server 2019: Graphics and display in the April 2026 update (4 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=graphics"/>
+    <category term="area-update"/>
+    <summary>KB5082123: 4 security fixes in Graphics and display. Biggest parts: Desktop Window Manager (2); Windows Advanced Rasterization Platform (1); Windows Win32K - GRFX (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:graphics:server-2019:2026-Mar</id>
+    <title>Windows Server 2019: Graphics and display in the March 2026 update (6 fixes)</title>
+    <updated>2026-03-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=graphics"/>
+    <category term="area-update"/>
+    <summary>KB5078752: 6 security fixes in Graphics and display. Biggest parts: Microsoft Graphics Component (4); Windows Win32K (1); Windows DWM Core Library (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:graphics:server-2019:2026-Feb</id>
+    <title>Windows Server 2019: Graphics and display in the February 2026 update (3 fixes)</title>
+    <updated>2026-02-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=graphics"/>
+    <category term="area-update"/>
+    <summary>KB5075904: 3 security fixes in Graphics and display. Biggest parts: Microsoft Graphics Component (2); Desktop Window Manager (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:graphics:server-2019:2026-Jan</id>
+    <title>Windows Server 2019: Graphics and display in the January 2026 update (4 fixes)</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=graphics"/>
+    <category term="area-update"/>
+    <summary>KB5073723: 4 security fixes in Graphics and display. Biggest parts: Windows Graphics Kernel (2); Desktop Window Manager (1); Microsoft Graphics Component (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:graphics:server-2019:2025-Dec</id>
+    <title>Windows Server 2019: Graphics and display in the December 2025 update (4 fixes)</title>
+    <updated>2025-12-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;a=graphics"/>
+    <category term="area-update"/>
+    <summary>KB5066586, KB5068791, KB5071544: 4 security fixes in Graphics and display. Biggest parts: Windows DWM Core Library (2); Windows Win32K - GRFX (1); Windows DirectX (1).</summary>
+  </entry>
+</feed>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Database and data access on Windows 11 26H2</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/database/win11-26h2.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/database/win11-26h2.xml</id>
+  <updated>2026-11-12T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3721:open</id>
+    <title>Open: SQL Server linked server connections might remain open</title>
+    <updated>2026-11-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;q=KB5127648"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5127648. Affects: Windows 11 26H2. Source: https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-26h2#3721msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:database:win11-26h2:2026-Nov</id>
+    <title>Windows 11 26H2: Database and data access in the November 2026 update (7 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;a=database"/>
+    <category term="area-update"/>
+    <summary>KB5132043, KB5132061, KB5135385: 7 security fixes in Database and data access. Biggest parts: Microsoft WDAC OLE DB provider for SQL (5); Windows OLE DB (1); Windows ODBC Driver (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:database:win11-26h2:2026-Oct</id>
+    <title>Windows 11 26H2: Database and data access in the October 2026 update (1 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;a=database"/>
+    <category term="area-update"/>
+    <summary>KB5127648: 1 security fixes in Database and data access. Biggest parts: Windows OLE DB (1).</summary>
+  </entry>
+</feed>

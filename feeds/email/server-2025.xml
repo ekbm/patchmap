@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Email (Exchange) on Windows Server 2025</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/email/server-2025.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/email/server-2025.xml</id>
+  <updated>2026-11-10T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-5047:fixed</id>
+    <title>Now fixed: Users might be unable to sign in to OWA or send emails on Exchange Server</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5126646"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5126646. Fixed in KB5131080. Affects: Windows Server 2025. Source: https://learn.microsoft.com/en-us/windows/release-health/status-windows-server-2025#5047msgdesc. From Microsoft release health.</summary>
+  </entry>
+</feed>

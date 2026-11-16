@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Printing and scanning on Windows 11 25H2</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/print/win11-25h2.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/print/win11-25h2.xml</id>
+  <updated>2026-11-16T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:2026-11-print-zero-size-images:open</id>
+    <title>Open: Printing fails for documents with zero-size images</title>
+    <updated>2026-11-16T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;q=Printing%20fails%20for%20documents%20with%20zero-s"/>
+    <category term="known-problem"/>
+    <summary>Printing can fail when a document contains an image with zero height or width at the selected resolution. These images can be invisible. Mainly Word documents printed through GDI, but other apps can be affected. Confirmed by Microsoft. No fix date announced. Affects: Windows 11 25H2. Source: https://www.ghacks.net/2026/11/15/microsoft-confirms-november-windows-updates-cause-activation-error-0x80041008-and-printing-failures/. From Patchmap (news and vendor reports).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:print:win11-25h2:2026-Nov</id>
+    <title>Windows 11 25H2: Printing and scanning in the November 2026 update (36 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=print"/>
+    <category term="area-update"/>
+    <summary>KB5132043, KB5132061, KB5135385: 36 security fixes in Printing and scanning. Biggest parts: Windows Print Spooler Components (20); Windows GDI (3); Microsoft XPS Document Converter (3); Microsoft Color Management (3). Files changed (66): localspl.dll, ntprint.cat, ntprint.dll, ntprint.exe, ntprint.inf, ntprint4.cat, ntprint4.inf, printui.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:print:win11-25h2:2026-Oct</id>
+    <title>Windows 11 25H2: Printing and scanning in the October 2026 update (36 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=print"/>
+    <category term="area-update"/>
+    <summary>KB5127648: 36 security fixes in Printing and scanning. Biggest parts: Windows Print Spooler Components (8); Windows USB Print Driver (8); Microsoft PostScript Printer Driver (6); Windows GDI (6). Files changed (67): localspl.dll, ntprint.cat, ntprint.dll, ntprint.exe, ntprint.inf, ntprint4.cat, ntprint4.inf, printui.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:print:win11-25h2:2026-Sep</id>
+    <title>Windows 11 25H2: Printing and scanning in the September 2026 update (47 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=print"/>
+    <category term="area-update"/>
+    <summary>KB5124008: 47 security fixes in Printing and scanning. Biggest parts: Microsoft Standard XPS (18); Windows Print Spooler Components (11); Windows Imaging Component (8); Windows Image Acquisition (4). Files changed (70): localspl.dll, ntprint.cat, ntprint.dll, ntprint.exe, ntprint.inf, ntprint4.cat, ntprint4.inf, printui.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:print:win11-25h2:2026-Aug</id>
+    <title>Windows 11 25H2: Printing and scanning in the August 2026 update (7 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=print"/>
+    <category term="area-update"/>
+    <summary>KB5120994, KB5121003, KB5123273, KB5123607: 7 security fixes in Printing and scanning. Biggest parts: Windows GDI+ (3); Windows Imaging Component (2); Windows GDI (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:print:win11-25h2:2026-Jul</id>
+    <title>Windows 11 25H2: Printing and scanning in the July 2026 update (19 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=print"/>
+    <category term="area-update"/>
+    <summary>KB5101650: 19 security fixes in Printing and scanning. Biggest parts: Windows USB Print Driver (8); Windows Print Spooler Components (4); Windows GDI+ (3); Microsoft Printer Drivers (2).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:print:win11-25h2:2026-May</id>
+    <title>Windows 11 25H2: Printing and scanning in the May 2026 update (2 fixes)</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=print"/>
+    <category term="area-update"/>
+    <summary>KB5089466, KB5089549: 2 security fixes in Printing and scanning. Biggest parts: Windows Print Spooler Components (1); Windows GDI (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:print:win11-25h2:2026-Apr</id>
+    <title>Windows 11 25H2: Printing and scanning in the April 2026 update (4 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=print"/>
+    <category term="area-update"/>
+    <summary>KB5083769: 4 security fixes in Printing and scanning. Biggest parts: Windows GDI (2); Windows USB Print Driver (1); Windows Print Spooler Components (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:print:win11-25h2:2026-Mar</id>
+    <title>Windows 11 25H2: Printing and scanning in the March 2026 update (2 fixes)</title>
+    <updated>2026-03-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=print"/>
+    <category term="area-update"/>
+    <summary>KB5079420, KB5079473, KB5084597: 2 security fixes in Printing and scanning. Biggest parts: Windows GDI+ (1); Windows GDI (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:print:win11-25h2:2026-Feb</id>
+    <title>Windows 11 25H2: Printing and scanning in the February 2026 update (1 fixes)</title>
+    <updated>2026-02-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=print"/>
+    <category term="area-update"/>
+    <summary>KB5077181, KB5077212: 1 security fixes in Printing and scanning. Biggest parts: Windows GDI+ (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:print:win11-25h2:2026-Jan</id>
+    <title>Windows 11 25H2: Printing and scanning in the January 2026 update (1 fixes)</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;a=print"/>
+    <category term="area-update"/>
+    <summary>KB5074109: 1 security fixes in Printing and scanning. Biggest parts: Printer Association Object (1).</summary>
+  </entry>
+</feed>

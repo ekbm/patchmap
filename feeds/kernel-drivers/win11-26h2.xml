@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Kernel and drivers on Windows 11 26H2</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/kernel-drivers/win11-26h2.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/kernel-drivers/win11-26h2.xml</id>
+  <updated>2026-11-10T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-4984:fixed</id>
+    <title>Now fixed: USB audio devices might fail to start or produce no sound</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;q=USB%20audio%20devices%20might%20fail%20to%20start%20or"/>
+    <category term="known-problem"/>
+    <summary>Fixed in KB5132061. Affects: Windows 11 26H2. Source: https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-26h2#4984msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:kernel-drivers:win11-26h2:2026-Nov</id>
+    <title>Windows 11 26H2: Kernel and drivers in the November 2026 update (146 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;a=kernel-drivers"/>
+    <category term="area-update"/>
+    <summary>KB5132043, KB5132061, KB5135385: 146 security fixes in Kernel and drivers. Biggest parts: Windows Graphics Kernel (35); Windows Kernel (27); Windows Hyper-V (15); Windows USB Driver (9). Files changed (16): clfs.sys, fltmgr.sys, ksecdd.sys, ksecpkg.sys, ntfs.sys, ntoskrnl.exe, partmgr.sys, refs.sys….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:kernel-drivers:win11-26h2:2026-Oct</id>
+    <title>Windows 11 26H2: Kernel and drivers in the October 2026 update (243 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;a=kernel-drivers"/>
+    <category term="area-update"/>
+    <summary>KB5127648: 243 security fixes in Kernel and drivers. Biggest parts: Windows Kernel (42); Windows Win32 Kernel Subsystem (33); Windows Hyper-V (18); Windows Universal Disk Format File System Driver (UDFS) (16). Files changed (18): clfs.sys, cng.sys, ksecdd.sys, ksecpkg.sys, ntfs.sys, ntoskrnl.exe, partmgr.sys, refs.adml….</summary>
+  </entry>
+</feed>

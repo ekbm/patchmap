@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Activation and licensing on Windows Server 2022</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/activation/server-2022.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/activation/server-2022.xml</id>
+  <updated>2026-11-16T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:2026-11-activation-0x80041008:fix-available</id>
+    <title>Fix available: Activation and licensing commands fail with 0x80041008</title>
+    <updated>2026-11-16T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;q=Activation%20and%20licensing%20commands%20fail%20w"/>
+    <category term="known-problem"/>
+    <summary>Activation, KMS configuration or product key commands (for example slmgr) can fail with error 0x80041008, especially with automated licensing tools. Reported fixed by an out-of-band update on 13 Nov 2026. Server packages are in the Microsoft Update Catalog only. Check Microsoft's KB page for your version. Affects: Windows Server 2022. Source: https://support.microsoft.com/en-us/servicing/os/windows-11/2026/11/kb5131087-windows-11-23h2-security-update. From Patchmap (news and vendor reports).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:activation:server-2022:2026-Nov</id>
+    <title>Windows Server 2022: Activation and licensing in the November 2026 update (1 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=activation"/>
+    <category term="area-update"/>
+    <summary>KB5131090: 1 security fixes in Activation and licensing. Biggest parts: Software Protection Platform (SPP) (1). Files changed (3): clipsvc.dll, sppobjs.dll, sppsvc.exe.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:activation:server-2022:2026-Oct</id>
+    <title>Windows Server 2022: Activation and licensing in the October 2026 update (3 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=activation"/>
+    <category term="area-update"/>
+    <summary>KB5126655: 3 security fixes in Activation and licensing. Biggest parts: Windows Client License Service (2); Software Protection Platform (SPP) (1). Files changed (3): clipsvc.dll, sppobjs.dll, sppsvc.exe.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:activation:server-2022:2026-Sep</id>
+    <title>Windows Server 2022: Activation and licensing in the September 2026 update (4 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=activation"/>
+    <category term="area-update"/>
+    <summary>KB5122882: 4 security fixes in Activation and licensing. Biggest parts: Windows Remote Desktop Licensing Service (2); Windows License Manager (2). Files changed (3): clipsvc.dll, sppobjs.dll, sppsvc.exe.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:activation:server-2022:2026-Aug</id>
+    <title>Windows Server 2022: Activation and licensing in the August 2026 update (1 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=activation"/>
+    <category term="area-update"/>
+    <summary>KB5120229, KB5120242, KB5123303: 1 security fixes in Activation and licensing. Biggest parts: Windows License Manager (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:activation:server-2022:2026-Apr</id>
+    <title>Windows Server 2022: Activation and licensing in the April 2026 update (2 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;a=activation"/>
+    <category term="area-update"/>
+    <summary>KB5082142: 2 security fixes in Activation and licensing. Biggest parts: Windows Remote Desktop Licensing Service (2).</summary>
+  </entry>
+</feed>

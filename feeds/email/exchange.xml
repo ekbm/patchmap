@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Email (Exchange) on Exchange Server</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/email/exchange.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/email/exchange.xml</id>
+  <updated>2026-11-10T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:email:exchange:2026-Nov</id>
+    <title>Exchange Server: Email (Exchange) in the November 2026 update (9 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=exchange&amp;a=email"/>
+    <category term="area-update"/>
+    <summary>KB5133453: 9 security fixes in Email (Exchange). Biggest parts: Microsoft Exchange Server (9).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:email:exchange:2026-Oct</id>
+    <title>Exchange Server: Email (Exchange) in the October 2026 update (6 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=exchange&amp;a=email"/>
+    <category term="area-update"/>
+    <summary>KB5128895, KB5128896, KB5128897, KB5128898: 6 security fixes in Email (Exchange). Biggest parts: Microsoft Exchange Server (6).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:email:exchange:2026-Sep</id>
+    <title>Exchange Server: Email (Exchange) in the September 2026 update (9 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=exchange&amp;a=email"/>
+    <category term="area-update"/>
+    <summary>KB5121608, KB5121609, KB5121610, KB5121611: 9 security fixes in Email (Exchange). Biggest parts: Microsoft Exchange Server (9).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:email:exchange:2026-Aug</id>
+    <title>Exchange Server: Email (Exchange) in the August 2026 update (7 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=exchange&amp;a=email"/>
+    <category term="area-update"/>
+    <summary>KB5121573, KB5121574, KB5121575, KB5121576: 7 security fixes in Email (Exchange). Biggest parts: Microsoft Exchange Server (7).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:email:exchange:2026-Jul</id>
+    <title>Exchange Server: Email (Exchange) in the July 2026 update (4 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=exchange&amp;a=email"/>
+    <category term="area-update"/>
+    <summary>Update: 4 security fixes in Email (Exchange). Biggest parts: Microsoft Exchange Server (4).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:email:exchange:2026-Jun</id>
+    <title>Exchange Server: Email (Exchange) in the June 2026 update (7 fixes)</title>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=exchange&amp;a=email"/>
+    <category term="area-update"/>
+    <summary>KB5103212, KB5103213, KB5103214, KB5103215: 7 security fixes in Email (Exchange). Biggest parts: Microsoft Exchange Server (7).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:email:exchange:2026-May</id>
+    <title>Exchange Server: Email (Exchange) in the May 2026 update (1 fixes)</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=exchange&amp;a=email"/>
+    <category term="area-update"/>
+    <summary>KB5094139, KB5094140, KB5094142, KB5094144: 1 security fixes in Email (Exchange). Biggest parts: Microsoft Exchange Server (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:email:exchange:2026-Feb</id>
+    <title>Exchange Server: Email (Exchange) in the February 2026 update (1 fixes)</title>
+    <updated>2026-02-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=exchange&amp;a=email"/>
+    <category term="area-update"/>
+    <summary>KB5074992, KB5074993, KB5074994, KB5074995: 1 security fixes in Email (Exchange). Biggest parts: Microsoft Exchange Server (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:email:exchange:2025-Dec</id>
+    <title>Exchange Server: Email (Exchange) in the December 2025 update (2 fixes)</title>
+    <updated>2025-12-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=exchange&amp;a=email"/>
+    <category term="area-update"/>
+    <summary>KB5071873, KB5071874, KB5071875, KB5071876: 2 security fixes in Email (Exchange). Biggest parts: Microsoft Exchange Server (2).</summary>
+  </entry>
+</feed>

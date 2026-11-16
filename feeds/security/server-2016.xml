@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Security features on Windows Server 2016</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/security/server-2016.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/security/server-2016.xml</id>
+  <updated>2026-11-10T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2016:2026-Nov</id>
+    <title>Windows Server 2016: Security features in the November 2026 update (14 fixes)</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5131083, KB5131291: 14 security fixes in Security features. Biggest parts: Windows Biometric Service (3); Windows Filtering Platform (WFP) (2); Windows LUAFV (2); Windows Encrypting File System (EFS) (1). Files changed (7): crypt32.dll, ncrypt.dll, ncryptprov.dll, ncryptsslp.dll, securekernel.exe, tpmengum.dll, tpmvsc.inf.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2016:2026-Oct</id>
+    <title>Windows Server 2016: Security features in the October 2026 update (25 fixes)</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5126649, KB5126868: 25 security fixes in Security features. Biggest parts: Windows Kernel-Mode Drivers (7); Windows Encrypting File System (EFS) (6); Windows BitLocker (3); Windows Virtualization-Based Security (VBS) Enclave (2). Files changed (9): bcrypt.dll, bcryptprimitives.dll, ci.dll, ncrypt.dll, ncryptprov.dll, schannel.dll, securekernel.exe, tpmengum.dll….</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2016:2026-Sep</id>
+    <title>Windows Server 2016: Security features in the September 2026 update (73 fixes)</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5122874, KB5123099: 73 security fixes in Security features. Biggest parts: Windows Biometric Service (64); Windows Encrypting File System (EFS) (3); Windows Defender Firewall Service (2); Windows BitLocker (2). Files changed (7): bcrypt.dll, bcryptprimitives.dll, ci.dll, securekernel.exe, tpmengum.dll, tpmtasks.dll, wintrust.dll.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2016:2026-Aug</id>
+    <title>Windows Server 2016: Security features in the August 2026 update (3 fixes)</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5120418: 3 security fixes in Security features. Biggest parts: Windows LUAFV (1); Windows Encrypting File System (EFS) (1); Windows Schannel (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2016:2026-Jul</id>
+    <title>Windows Server 2016: Security features in the July 2026 update (10 fixes)</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5099535: 10 security fixes in Security features. Biggest parts: Windows Cryptographic Services (3); Windows Secure Boot (1); Windows LUAFV (1); Windows Filtering Platform (WFP) (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2016:2026-Jun</id>
+    <title>Windows Server 2016: Security features in the June 2026 update (12 fixes)</title>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5094122: 12 security fixes in Security features. Biggest parts: Windows Secure Boot (7); Windows BitLocker (3); Windows Application Identity (AppID) Subsystem (1); Windows Boot Manager (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2016:2026-May</id>
+    <title>Windows Server 2016: Security features in the May 2026 update (4 fixes)</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5087537: 4 security fixes in Security features. Biggest parts: Windows Filtering Platform (WFP) (1); Windows Application Identity (AppID) Subsystem (1); Windows Cryptographic Services (1); Windows Kernel-Mode Drivers (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2016:2026-Apr</id>
+    <title>Windows Server 2016: Security features in the April 2026 update (6 fixes)</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5082198: 6 security fixes in Security features. Biggest parts: Windows Virtualization-Based Security (VBS) Enclave (1); Windows Secure Boot (1); Windows Cryptographic Services (1); Windows Boot Manager (1).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:area:security:server-2016:2026-Jan</id>
+    <title>Windows Server 2016: Security features in the January 2026 update (1 fixes)</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;a=security"/>
+    <category term="area-update"/>
+    <summary>KB5073722: 1 security fixes in Security features. Biggest parts: Windows Secure Boot (1).</summary>
+  </entry>
+</feed>
