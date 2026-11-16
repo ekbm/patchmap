@@ -1,0 +1,18 @@
+{
+ "kb": "KB5102335",
+ "month": "2026-Jul",
+ "released": "2026-07-14",
+ "type": "Security Update",
+ "restart": "Maybe",
+ "catalog_url": "https://www.microsoft.com/download/details.aspx?familyid=0a742248-b0b1-4008-87ac-32af17ce5f2c",
+ "versions": {
+  "sql-server": "15.0.4480.2"
+ },
+ "supersedes": [],
+ "fixes": [
+  "CVE-2026-47295",
+  "CVE-2026-47296",
+  "CVE-2026-54118",
+  "CVE-2026-55002"
+ ]
+}

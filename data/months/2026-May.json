@@ -1,7 +1,7 @@
 {
  "month": "2026-May",
  "released": "2026-05-12",
- "fix_count": 65,
+ "fix_count": 71,
  "by_tag": {
   "kernel-drivers": 18,
   "network": 18,
@@ -9,15 +9,61 @@
   "security": 7,
   "storage": 6,
   "apps-desktop": 5,
+  "other": 4,
   "server-roles": 3,
   "sign-in": 2,
-  "other": 2,
   "print": 2,
+  "office-apps": 2,
   "management": 1,
+  "database": 1,
   "remote-access": 1,
-  "file-sharing": 1
+  "file-sharing": 1,
+  "email": 1
  },
  "fixes": [
+  {
+   "cve": "CVE-2025-54518",
+   "title": "AMD: CVE-2025-54518 CPU OP Cache Corruption",
+   "component": "AMD CPU Branch",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5087537"
+    ],
+    "server-2019": [
+     "KB5087538"
+    ],
+    "server-2022": [
+     "KB5078737",
+     "KB5087545"
+    ],
+    "server-2025": [
+     "KB5087423",
+     "KB5087539"
+    ],
+    "win11-24h2": [
+     "KB5089466",
+     "KB5089549"
+    ],
+    "win11-25h2": [
+     "KB5089466",
+     "KB5089549"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54518"
+  },
   {
    "cve": "CVE-2026-21530",
    "title": "Windows Rich Text Edit Elevation of Privilege Vulnerability",
@@ -32,10 +78,14 @@
     "server-2025": "Important",
     "win11-25h2": "Important",
     "win11-24h2": "Important",
-    "server-2016": "Important"
+    "server-2016": "Important",
+    "m365-apps": "Important"
    },
    "customer_action_required": true,
    "kbs": {
+    "m365-apps": [
+     "KB5002578"
+    ],
     "server-2016": [
      "KB5087537"
     ],
@@ -1633,6 +1683,44 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-35424"
   },
   {
+   "cve": "CVE-2026-40358",
+   "title": "Microsoft Office Remote Code Execution Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "m365-apps": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002866"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40358"
+  },
+  {
+   "cve": "CVE-2026-40363",
+   "title": "Microsoft Office Remote Code Execution Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "m365-apps": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002866"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40363"
+  },
+  {
    "cve": "CVE-2026-40369",
    "title": "Windows Kernel Elevation of Privilege Vulnerability",
    "component": "Windows Kernel",
@@ -1661,6 +1749,34 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40369"
+  },
+  {
+   "cve": "CVE-2026-40370",
+   "title": "SQL Server Remote Code Execution Vulnerability",
+   "component": "SQL Server",
+   "tags": [
+    "database"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "sql-server": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "sql-server": [
+     "KB5089270",
+     "KB5089271",
+     "KB5089899",
+     "KB5089900",
+     "KB5090347",
+     "KB5090354",
+     "KB5090407",
+     "KB5090408",
+     "KB5091158",
+     "KB5091223"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40370"
   },
   {
    "cve": "CVE-2026-40377",
@@ -2426,6 +2542,39 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41089"
   },
   {
+   "cve": "CVE-2026-41095",
+   "title": "Data Deduplication Elevation of Privilege Vulnerability",
+   "component": "Data Deduplication",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2025": "Important",
+    "server-2019": "Important",
+    "server-2016": "Important",
+    "server-2022": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5087537"
+    ],
+    "server-2019": [
+     "KB5087538"
+    ],
+    "server-2022": [
+     "KB5087424",
+     "KB5087545"
+    ],
+    "server-2025": [
+     "KB5087423",
+     "KB5087539"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41095"
+  },
+  {
    "cve": "CVE-2026-41096",
    "title": "Windows DNS Client Remote Code Execution Vulnerability",
    "component": "Microsoft Windows DNS",
@@ -2566,6 +2715,28 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42896"
+  },
+  {
+   "cve": "CVE-2026-42897",
+   "title": "Microsoft Exchange Server Spoofing Vulnerability",
+   "component": "Microsoft Exchange Server",
+   "tags": [
+    "email"
+   ],
+   "impact": "Spoofing",
+   "severity": {
+    "exchange": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "exchange": [
+     "KB5094139",
+     "KB5094140",
+     "KB5094142",
+     "KB5094144"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42897"
   },
   {
    "cve": "CVE-2026-45585",

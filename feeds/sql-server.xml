@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: SQL Server</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/sql-server.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/sql-server.xml</id>
+  <updated>2026-11-10T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:sql-server:2026-Nov</id>
+    <title>SQL Server: November 2026 security update KB5129299, KB5129300, KB5132745, KB5132746, KB5132747, KB5132748, KB5132749, KB5132751</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=sql-server&amp;q=KB5129299"/>
+    <category term="monthly-update"/>
+    <summary>KB5129299 (build 17.0.5045.3), KB5129300 (build 16.0.4315.2), KB5132745 (build 15.0.4510.2), KB5132746 (build 14.0.3570.2), KB5132747 (build 16.0.1220.3), KB5132748 (build 17.0.1155.3), KB5132749 (build 14.0.2150.2), KB5132751 (build 15.0.2210.4). 52 security fixes. Biggest areas: database 52.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:sql-server:2026-Oct</id>
+    <title>SQL Server: October 2026 security update KB5126934, KB5126967, KB5128492, KB5128493, KB5128494, KB5128495</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=sql-server&amp;q=KB5126934"/>
+    <category term="monthly-update"/>
+    <summary>KB5126934 (build 16.0.4305.5), KB5126967 (build 17.0.5015.4), KB5128492 (build 17.0.1145.4), KB5128493 (build 16.0.1210.3), KB5128494 (build 15.0.4500.2), KB5128495 (build 15.0.2200.2). 22 security fixes. Biggest areas: database 22.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:sql-server:2026-Sep</id>
+    <title>SQL Server: September 2026 security update KB5122768, KB5122769, KB5122770, KB5122771, KB5122772, KB5122773, KB5122774, KB5122775</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=sql-server&amp;q=KB5122768"/>
+    <category term="monthly-update"/>
+    <summary>KB5122768 (build 16.0.4275.2), KB5122769 (build 17.0.4085.5), KB5122770 (build 17.0.1135.8), KB5122771 (build 16.0.1200.5), KB5122772 (build 15.0.4490.9), KB5122773 (build 15.0.2190.7), KB5122774 (build 14.0.3550.4), KB5122775 (build 14.0.2130.4). 62 security fixes. Biggest areas: database 62, apps-desktop 2.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:sql-server:2026-Jul</id>
+    <title>SQL Server: July 2026 security update KB5101346, KB5101347, KB5102333, KB5102334, KB5102335, KB5102336, KB5102337, KB5102338, KB5102339, KB5102340</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=sql-server&amp;q=KB5101346"/>
+    <category term="monthly-update"/>
+    <summary>KB5101346 (build 17.0.4060.2), KB5101347 (build 16.0.4262.2), KB5102333 (build 17.0.1125.2), KB5102334 (build 16.0.1190.2), KB5102335 (build 15.0.4480.2), KB5102336 (build 15.0.2180.2), KB5102337 (build 14.0.3540.1), KB5102338 (build 14.0.2120.1), KB5102339 (build 13.0.7095.1), KB5102340 (build 13.0.6500.1). 7 security fixes. Biggest areas: database 7.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:sql-server:2026-May</id>
+    <title>SQL Server: May 2026 security update KB5089270, KB5089271, KB5089899, KB5089900, KB5090347, KB5090354, KB5090407, KB5090408, KB5091158, KB5091223</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=sql-server&amp;q=KB5089270"/>
+    <category term="monthly-update"/>
+    <summary>KB5089270 (build 13.0.7085.1), KB5089271 (build 13.0.6490.1), KB5089899 (build 17.0.4040.1), KB5089900 (build 16.0.4252.3), KB5090347 (build 14.0.2110.2), KB5090354 (build 14.0.3530.2), KB5090407 (build 15.0.4470.1), KB5090408 (build 15.0.2170.1), KB5091158 (build 16.0.1180.1), KB5091223 (build 17.0.1115.1). 1 security fixes. Biggest areas: database 1.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:sql-server:2026-Apr</id>
+    <title>SQL Server: April 2026 security update KB5083245, KB5083252, KB5084814, KB5084815, KB5084816, KB5084817, KB5084818, KB5084819, KB5084820, KB5084821</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=sql-server&amp;q=KB5083245"/>
+    <category term="monthly-update"/>
+    <summary>KB5083245 (build 17.0.4030.1), KB5083252 (build 16.0.4250.1), KB5084814 (build 17.0.1110.1), KB5084815 (build 16.0.1175.1), KB5084816 (build 15.0.4465.1), KB5084817 (build 15.0.2165.1), KB5084818 (build 14.0.3525.1), KB5084819 (build 14.0.2105.1), KB5084820 (build 13.0.7080.1), KB5084821 (build 13.0.6485.1). 3 security fixes. Biggest areas: database 3.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:sql-server:2026-Mar</id>
+    <title>SQL Server: March 2026 security update KB5077464, KB5077465, KB5077466, KB5077468, KB5077469, KB5077470, KB5077471, KB5077472, KB5077473, KB5077474</title>
+    <updated>2026-03-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=sql-server&amp;q=KB5077464"/>
+    <category term="monthly-update"/>
+    <summary>KB5077464 (build 16.0.4240.4), KB5077465 (build 16.0.1170.5), KB5077466 (build 17.0.4020.2), KB5077468 (build 17.0.1105.2), KB5077469 (build 15.0.4460.4), KB5077470 (build 15.0.2160.4), KB5077471 (build 14.0.3520.4), KB5077472 (build 14.0.2100.4), KB5077473 (build 13.0.7075.5), KB5077474 (build 13.0.6480.4). 3 security fixes. Biggest areas: database 3.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:sql-server:2026-Jan</id>
+    <title>SQL Server: January 2026 security update KB5072936, KB5073031, KB5073177</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=sql-server&amp;q=KB5072936"/>
+    <category term="monthly-update"/>
+    <summary>KB5072936 (build 16.0.4230.2), KB5073031 (build 16.0.1165.1), KB5073177 (build 17.0.1050.2). 1 security fixes. Biggest areas: database 1.</summary>
+  </entry>
+</feed>

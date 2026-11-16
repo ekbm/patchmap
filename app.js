@@ -120,7 +120,7 @@ function parseBuild(q) {
 }
 const bparts = (s) => s.split(".").map(Number);
 function findBuild(b) {
-  const same = state.builds.filter((x) => bparts(x.build)[2] === b.major);
+  const same = state.builds.filter((x) => x.build.startsWith("10.0.") && bparts(x.build)[2] === b.major);
   if (!same.length) return null;
   // Several versions can share a build family (e.g. 26100): pick the one whose builds are closest.
   const byVer = {};
@@ -235,7 +235,8 @@ function buildCard(b, hit) {
 }
 
 function renderChips() {
-  const order = Object.keys(state.tags).concat("other");
+  const present = new Set((state.data ? state.data.months : []).flatMap((m) => Object.keys(m.areas)));
+  const order = Object.keys(state.tags).concat("other").filter((t) => present.has(t) || t === state.area);
   $("chips").innerHTML = '<span class="muted" style="align-self:center">Area:</span>' +
     [["", "All"]].concat(order.map((t) => [t, label(t)]))
       .map(([t, l]) => `<button class="chip${state.area === t ? " on" : ""}" data-a="${t}">${esc(l)}</button>`).join("");

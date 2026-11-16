@@ -1,22 +1,25 @@
 {
  "month": "2026-Jul",
  "released": "2026-07-14",
- "fix_count": 380,
+ "fix_count": 440,
  "by_tag": {
-  "apps-desktop": 82,
-  "kernel-drivers": 79,
-  "storage": 59,
-  "network": 51,
-  "other": 26,
+  "apps-desktop": 83,
+  "kernel-drivers": 82,
+  "storage": 61,
+  "network": 54,
+  "other": 32,
+  "office-apps": 27,
+  "graphics": 25,
   "server-roles": 24,
-  "graphics": 24,
-  "remote-access": 22,
+  "remote-access": 24,
+  "sign-in": 22,
   "print": 19,
-  "sign-in": 18,
-  "security": 12,
+  "security": 13,
   "management": 8,
+  "database": 8,
   "file-sharing": 8,
-  "install-update": 6
+  "install-update": 6,
+  "email": 4
  },
  "fixes": [
   {
@@ -479,6 +482,46 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42982"
   },
   {
+   "cve": "CVE-2026-42990",
+   "title": "SQL Server ODBC driver Elevation of Privilege Vulnerability",
+   "component": "SQL Server ODBC driver",
+   "tags": [
+    "kernel-drivers",
+    "database"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5099535"
+    ],
+    "server-2019": [
+     "KB5099538"
+    ],
+    "server-2022": [
+     "KB5099540"
+    ],
+    "server-2025": [
+     "KB5099536"
+    ],
+    "win11-24h2": [
+     "KB5101650"
+    ],
+    "win11-25h2": [
+     "KB5101650"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42990"
+  },
+  {
    "cve": "CVE-2026-44800",
    "title": "Windows Push Notifications Elevation of Privilege Vulnerability",
    "component": "Windows Push Notifications",
@@ -543,6 +586,81 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44806"
+  },
+  {
+   "cve": "CVE-2026-47290",
+   "title": "Microsoft Office Remote Code Execution Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "m365-apps": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002273"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47290"
+  },
+  {
+   "cve": "CVE-2026-47295",
+   "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+   "component": "SQL Server",
+   "tags": [
+    "database"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "sql-server": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "sql-server": [
+     "KB5101346",
+     "KB5101347",
+     "KB5102333",
+     "KB5102334",
+     "KB5102335",
+     "KB5102336",
+     "KB5102337",
+     "KB5102338",
+     "KB5102339",
+     "KB5102340"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47295"
+  },
+  {
+   "cve": "CVE-2026-47296",
+   "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+   "component": "SQL Server",
+   "tags": [
+    "database"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "sql-server": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "sql-server": [
+     "KB5101346",
+     "KB5101347",
+     "KB5102333",
+     "KB5102334",
+     "KB5102335",
+     "KB5102336",
+     "KB5102337",
+     "KB5102338",
+     "KB5102339",
+     "KB5102340"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47296"
   },
   {
    "cve": "CVE-2026-48564",
@@ -1150,6 +1268,45 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49178"
   },
   {
+   "cve": "CVE-2026-49180",
+   "title": "Universal Plug and Play (upnp.dll) Information Disclosure Vulnerability",
+   "component": "Universal Plug and Play (upnp.dll)",
+   "tags": [
+    "network"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5099535"
+    ],
+    "server-2019": [
+     "KB5099538"
+    ],
+    "server-2022": [
+     "KB5099540"
+    ],
+    "server-2025": [
+     "KB5099536"
+    ],
+    "win11-24h2": [
+     "KB5101650"
+    ],
+    "win11-25h2": [
+     "KB5101650"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49180"
+  },
+  {
    "cve": "CVE-2026-49181",
    "title": "Windows DHCP Client Elevation of Privilege Vulnerability",
    "component": "Windows DHCP Client",
@@ -1370,6 +1527,45 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49787"
+  },
+  {
+   "cve": "CVE-2026-49788",
+   "title": "HTTP/2 Denial of Service Vulnerability",
+   "component": "HTTP/2",
+   "tags": [
+    "other"
+   ],
+   "impact": "Denial of Service",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5099535"
+    ],
+    "server-2019": [
+     "KB5099538"
+    ],
+    "server-2022": [
+     "KB5099540"
+    ],
+    "server-2025": [
+     "KB5099536"
+    ],
+    "win11-24h2": [
+     "KB5101650"
+    ],
+    "win11-25h2": [
+     "KB5101650"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49788"
   },
   {
    "cve": "CVE-2026-49789",
@@ -2399,6 +2595,25 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50300"
   },
   {
+   "cve": "CVE-2026-50301",
+   "title": "Microsoft Office Remote Code Execution Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "m365-apps": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002887"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50301"
+  },
+  {
    "cve": "CVE-2026-50302",
    "title": "Windows Cryptographic Services Security Feature Bypass Vulnerability",
    "component": "Windows Cryptographic Services",
@@ -2826,6 +3041,25 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50313"
+  },
+  {
+   "cve": "CVE-2026-50314",
+   "title": "Microsoft Office Remote Code Execution Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "m365-apps": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002887"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50314"
   },
   {
    "cve": "CVE-2026-50315",
@@ -3652,6 +3886,41 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50342"
   },
   {
+   "cve": "CVE-2026-50343",
+   "title": "Microsoft Install Service Elevation of Privilege Vulnerability",
+   "component": "Microsoft Install Service",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2019": [
+     "KB5099538"
+    ],
+    "server-2022": [
+     "KB5099540"
+    ],
+    "server-2025": [
+     "KB5099536"
+    ],
+    "win11-24h2": [
+     "KB5101650"
+    ],
+    "win11-25h2": [
+     "KB5101650"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50343"
+  },
+  {
    "cve": "CVE-2026-50344",
    "title": "Windows OLE Elevation of Privilege Vulnerability",
    "component": "Windows OLE",
@@ -3716,6 +3985,45 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50345"
+  },
+  {
+   "cve": "CVE-2026-50346",
+   "title": "Netlogon RPC Elevation of Privilege Vulnerability",
+   "component": "RPC Runtime",
+   "tags": [
+    "network"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5099535"
+    ],
+    "server-2019": [
+     "KB5099538"
+    ],
+    "server-2022": [
+     "KB5099540"
+    ],
+    "server-2025": [
+     "KB5099536"
+    ],
+    "win11-24h2": [
+     "KB5101650"
+    ],
+    "win11-25h2": [
+     "KB5101650"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50346"
   },
   {
    "cve": "CVE-2026-50347",
@@ -4109,6 +4417,45 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50358"
+  },
+  {
+   "cve": "CVE-2026-50359",
+   "title": "Microsoft XML Core Services Elevation of Privilege Vulnerability",
+   "component": "Microsoft XML Core Services",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5099535"
+    ],
+    "server-2019": [
+     "KB5099538"
+    ],
+    "server-2022": [
+     "KB5099540"
+    ],
+    "server-2025": [
+     "KB5099536"
+    ],
+    "win11-24h2": [
+     "KB5101650"
+    ],
+    "win11-25h2": [
+     "KB5101650"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50359"
   },
   {
    "cve": "CVE-2026-50360",
@@ -4842,6 +5189,37 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50380"
+  },
+  {
+   "cve": "CVE-2026-50381",
+   "title": "Composite Image File System driver (cimfs.sys) Information Disclosure Vulnerability",
+   "component": "Composite Image File System Driver",
+   "tags": [
+    "kernel-drivers"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5099540"
+    ],
+    "server-2025": [
+     "KB5099536"
+    ],
+    "win11-24h2": [
+     "KB5101650"
+    ],
+    "win11-25h2": [
+     "KB5101650"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50381"
   },
   {
    "cve": "CVE-2026-50382",
@@ -6294,6 +6672,37 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50426"
   },
   {
+   "cve": "CVE-2026-50427",
+   "title": "Content Delivery Manager Elevation of Privilege Vulnerability",
+   "component": "Content Delivery Manager",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2019": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2019": [
+     "KB5099538"
+    ],
+    "server-2025": [
+     "KB5099536"
+    ],
+    "win11-24h2": [
+     "KB5101650"
+    ],
+    "win11-25h2": [
+     "KB5101650"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50427"
+  },
+  {
    "cve": "CVE-2026-50429",
    "title": "Windows Kernel Information Disclosure Vulnerability",
    "component": "Windows Kernel",
@@ -7129,6 +7538,45 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50454"
   },
   {
+   "cve": "CVE-2026-50455",
+   "title": "Universal Plug and Play (upnp.dll) Information Disclosure Vulnerability",
+   "component": "Universal Plug and Play (upnp.dll)",
+   "tags": [
+    "network"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5099535"
+    ],
+    "server-2019": [
+     "KB5099538"
+    ],
+    "server-2022": [
+     "KB5099540"
+    ],
+    "server-2025": [
+     "KB5099536"
+    ],
+    "win11-24h2": [
+     "KB5101650"
+    ],
+    "win11-25h2": [
+     "KB5101650"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50455"
+  },
+  {
    "cve": "CVE-2026-50456",
    "title": "Windows File Explorer Information Disclosure Vulnerability",
    "component": "Windows File Explorer",
@@ -7460,6 +7908,45 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50466"
   },
   {
+   "cve": "CVE-2026-50467",
+   "title": "Microsoft Office Remote Code Execution Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "m365-apps": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002887"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50467"
+  },
+  {
+   "cve": "CVE-2026-50468",
+   "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+   "component": "SQL Server",
+   "tags": [
+    "database"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "sql-server": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "sql-server": [
+     "KB5101346",
+     "KB5102333"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50468"
+  },
+  {
    "cve": "CVE-2026-50469",
    "title": "Windows Projected File System Elevation of Privilege Vulnerability",
    "component": "Windows Projected File System",
@@ -7610,6 +8097,45 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50473"
+  },
+  {
+   "cve": "CVE-2026-50474",
+   "title": "Remote Desktop Client Remote Code Execution Vulnerability",
+   "component": "Remote Desktop Client",
+   "tags": [
+    "remote-access"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2019": "Critical",
+    "server-2022": "Critical",
+    "server-2025": "Critical",
+    "win11-25h2": "Critical",
+    "win11-24h2": "Critical",
+    "server-2016": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5099535"
+    ],
+    "server-2019": [
+     "KB5099538"
+    ],
+    "server-2022": [
+     "KB5099540"
+    ],
+    "server-2025": [
+     "KB5099536"
+    ],
+    "win11-24h2": [
+     "KB5101650"
+    ],
+    "win11-25h2": [
+     "KB5101650"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50474"
   },
   {
    "cve": "CVE-2026-50475",
@@ -8108,6 +8634,45 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50490"
+  },
+  {
+   "cve": "CVE-2026-50491",
+   "title": "Code Integrity DLL (ci.dll) Elevation of Privilege Vulnerability",
+   "component": "Code Integrity DLL (ci.dll)",
+   "tags": [
+    "security"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5099535"
+    ],
+    "server-2019": [
+     "KB5099538"
+    ],
+    "server-2022": [
+     "KB5099540"
+    ],
+    "server-2025": [
+     "KB5099536"
+    ],
+    "win11-24h2": [
+     "KB5101650"
+    ],
+    "win11-25h2": [
+     "KB5101650"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50491"
   },
   {
    "cve": "CVE-2026-50492",
@@ -8689,6 +9254,45 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50518"
   },
   {
+   "cve": "CVE-2026-50647",
+   "title": "Active Directory Federation Server Denial of Service Vulnerability",
+   "component": "Active Directory Federation Services (AD FS)",
+   "tags": [
+    "sign-in"
+   ],
+   "impact": "Denial of Service",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5099535"
+    ],
+    "server-2019": [
+     "KB5099538"
+    ],
+    "server-2022": [
+     "KB5099540"
+    ],
+    "server-2025": [
+     "KB5099536"
+    ],
+    "win11-24h2": [
+     "KB5101650"
+    ],
+    "win11-25h2": [
+     "KB5101650"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50647"
+  },
+  {
    "cve": "CVE-2026-50655",
    "title": "Microsoft Windows Media Foundation Remote Code Execution Vulnerability",
    "component": "Windows Media",
@@ -8765,6 +9369,25 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50661"
+  },
+  {
+   "cve": "CVE-2026-50665",
+   "title": "Microsoft Office Information Disclosure Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "m365-apps": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002887"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50665"
   },
   {
    "cve": "CVE-2026-50666",
@@ -9272,6 +9895,37 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50683"
   },
   {
+   "cve": "CVE-2026-50684",
+   "title": "Active Directory Federation Server Spoofing Vulnerability",
+   "component": "Active Directory Federation Services (AD FS)",
+   "tags": [
+    "sign-in"
+   ],
+   "impact": "Spoofing",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5099535"
+    ],
+    "server-2019": [
+     "KB5099538"
+    ],
+    "server-2022": [
+     "KB5099540"
+    ],
+    "server-2025": [
+     "KB5099536"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50684"
+  },
+  {
    "cve": "CVE-2026-50685",
    "title": "Windows DHCP Server Remote Code Execution Vulnerability",
    "component": "Windows DHCP Server",
@@ -9481,6 +10135,45 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50690"
+  },
+  {
+   "cve": "CVE-2026-50692",
+   "title": "Desktop Window Manager Elevation of Privilege Vulnerability",
+   "component": "Desktop Window Manager",
+   "tags": [
+    "graphics"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5099535"
+    ],
+    "server-2019": [
+     "KB5099538"
+    ],
+    "server-2022": [
+     "KB5099540"
+    ],
+    "server-2025": [
+     "KB5099536"
+    ],
+    "win11-24h2": [
+     "KB5101650"
+    ],
+    "win11-25h2": [
+     "KB5101650"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50692"
   },
   {
    "cve": "CVE-2026-50694",
@@ -9850,6 +10543,74 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54115"
   },
   {
+   "cve": "CVE-2026-54116",
+   "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+   "component": "SQL Server",
+   "tags": [
+    "database"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "sql-server": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "sql-server": [
+     "KB5101346",
+     "KB5102333"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54116"
+  },
+  {
+   "cve": "CVE-2026-54117",
+   "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+   "component": "SQL Server",
+   "tags": [
+    "database"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "sql-server": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "sql-server": [
+     "KB5101346",
+     "KB5102333"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54117"
+  },
+  {
+   "cve": "CVE-2026-54118",
+   "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+   "component": "SQL Server",
+   "tags": [
+    "database"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "sql-server": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "sql-server": [
+     "KB5101346",
+     "KB5101347",
+     "KB5102333",
+     "KB5102334",
+     "KB5102335",
+     "KB5102336",
+     "KB5102337",
+     "KB5102338",
+     "KB5102339",
+     "KB5102340"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54118"
+  },
+  {
    "cve": "CVE-2026-54119",
    "title": "Windows Active Directory Denial of Service Vulnerability",
    "component": "Windows Active Directory",
@@ -9887,6 +10648,37 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54119"
+  },
+  {
+   "cve": "CVE-2026-54121",
+   "title": "Active Directory Certificate Services Elevation of Privilege Vulnerability",
+   "component": "Active Directory Certificate Services (AD CS)",
+   "tags": [
+    "sign-in"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2019": "Critical",
+    "server-2022": "Critical",
+    "server-2025": "Critical",
+    "server-2016": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5099535"
+    ],
+    "server-2019": [
+     "KB5099538"
+    ],
+    "server-2022": [
+     "KB5099540"
+    ],
+    "server-2025": [
+     "KB5099536"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54121"
   },
   {
    "cve": "CVE-2026-54122",
@@ -10327,6 +11119,72 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54987"
   },
   {
+   "cve": "CVE-2026-54989",
+   "title": "Quality Windows Audio/Video Experience (QWAVE) Elevation of Privilege Vulnerability",
+   "component": "Quality Windows Audio/Video Experience (QWAVE) service",
+   "tags": [
+    "apps-desktop"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5099535"
+    ],
+    "server-2019": [
+     "KB5099538"
+    ],
+    "server-2022": [
+     "KB5099540"
+    ],
+    "server-2025": [
+     "KB5099536"
+    ],
+    "win11-24h2": [
+     "KB5101650"
+    ],
+    "win11-25h2": [
+     "KB5101650"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54989"
+  },
+  {
+   "cve": "CVE-2026-54990",
+   "title": "Remote Desktop Client Remote Code Execution Vulnerability",
+   "component": "Remote Desktop Client",
+   "tags": [
+    "remote-access"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2025": [
+     "KB5099536"
+    ],
+    "win11-24h2": [
+     "KB5101650"
+    ],
+    "win11-25h2": [
+     "KB5101650"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54990"
+  },
+  {
    "cve": "CVE-2026-54991",
    "title": "Windows USB Print Driver Elevation of Privilege Vulnerability",
    "component": "Windows USB Print Driver",
@@ -10633,6 +11491,34 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55001"
   },
   {
+   "cve": "CVE-2026-55002",
+   "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+   "component": "SQL Server",
+   "tags": [
+    "database"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "sql-server": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "sql-server": [
+     "KB5101346",
+     "KB5101347",
+     "KB5102333",
+     "KB5102334",
+     "KB5102335",
+     "KB5102336",
+     "KB5102337",
+     "KB5102338",
+     "KB5102339",
+     "KB5102340"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55002"
+  },
+  {
    "cve": "CVE-2026-55003",
    "title": "Windows Remote Desktop Protocol (RDP) Information Disclosure Vulnerability",
    "component": "Windows RDP",
@@ -10712,6 +11598,456 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55004"
   },
   {
+   "cve": "CVE-2026-55005",
+   "title": "Microsoft Exchange Server Remote Code Execution Vulnerability",
+   "component": "Microsoft Exchange Server",
+   "tags": [
+    "email"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "exchange": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "exchange": [
+     "KB5103212",
+     "KB5103213",
+     "KB5103214",
+     "KB5103215"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55005"
+  },
+  {
+   "cve": "CVE-2026-55006",
+   "title": "Microsoft Exchange Server Elevation of Privilege Vulnerability",
+   "component": "Microsoft Exchange Server",
+   "tags": [
+    "email"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "exchange": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "exchange": [
+     "KB5103212",
+     "KB5103213",
+     "KB5103214",
+     "KB5103215"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55006"
+  },
+  {
+   "cve": "CVE-2026-55008",
+   "title": "Microsoft Exchange Server Spoofing Vulnerability",
+   "component": "Microsoft Exchange Server",
+   "tags": [
+    "email"
+   ],
+   "impact": "Spoofing",
+   "severity": {
+    "exchange": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "exchange": [
+     "KB5103212",
+     "KB5103213",
+     "KB5103214",
+     "KB5103215"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55008"
+  },
+  {
+   "cve": "CVE-2026-55009",
+   "title": "Microsoft Exchange Server Elevation of Privilege Vulnerability",
+   "component": "Microsoft Exchange Server",
+   "tags": [
+    "email"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "exchange": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "exchange": [
+     "KB5103212",
+     "KB5103213",
+     "KB5103214",
+     "KB5103215"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55009"
+  },
+  {
+   "cve": "CVE-2026-55017",
+   "title": "Microsoft Office Remote Code Execution Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "m365-apps": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002273"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55017"
+  },
+  {
+   "cve": "CVE-2026-55018",
+   "title": "Microsoft Office Remote Code Execution Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "m365-apps": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002887"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55018"
+  },
+  {
+   "cve": "CVE-2026-55022",
+   "title": "Microsoft Office Remote Code Execution Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "m365-apps": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002887"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55022"
+  },
+  {
+   "cve": "CVE-2026-55023",
+   "title": "Microsoft Office Information Disclosure Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "m365-apps": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002887"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55023"
+  },
+  {
+   "cve": "CVE-2026-55026",
+   "title": "Microsoft Office Information Disclosure Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "m365-apps": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002887"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55026"
+  },
+  {
+   "cve": "CVE-2026-55027",
+   "title": "Microsoft Office Information Disclosure Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "m365-apps": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002887"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55027"
+  },
+  {
+   "cve": "CVE-2026-55028",
+   "title": "Microsoft Office Information Disclosure Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "m365-apps": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002887"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55028"
+  },
+  {
+   "cve": "CVE-2026-55035",
+   "title": "Microsoft Office Information Disclosure Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "m365-apps": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002887"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55035"
+  },
+  {
+   "cve": "CVE-2026-55042",
+   "title": "Microsoft Office Information Disclosure Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "m365-apps": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002887"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55042"
+  },
+  {
+   "cve": "CVE-2026-55045",
+   "title": "Microsoft Office Remote Code Execution Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "m365-apps": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002887"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55045"
+  },
+  {
+   "cve": "CVE-2026-55047",
+   "title": "Microsoft Office Information Disclosure Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "m365-apps": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002887"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55047"
+  },
+  {
+   "cve": "CVE-2026-55049",
+   "title": "Microsoft Office Remote Code Execution Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "m365-apps": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002748"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55049"
+  },
+  {
+   "cve": "CVE-2026-55056",
+   "title": "Microsoft Office Remote Code Execution Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "m365-apps": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002887"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55056"
+  },
+  {
+   "cve": "CVE-2026-55057",
+   "title": "Microsoft Office Information Disclosure Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "m365-apps": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002887"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55057"
+  },
+  {
+   "cve": "CVE-2026-55121",
+   "title": "Microsoft Office Information Disclosure Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "m365-apps": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002887"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55121"
+  },
+  {
+   "cve": "CVE-2026-55125",
+   "title": "Microsoft Office Remote Code Execution Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "m365-apps": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002887"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55125"
+  },
+  {
+   "cve": "CVE-2026-55129",
+   "title": "Microsoft Office Remote Code Execution Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "m365-apps": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002887"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55129"
+  },
+  {
+   "cve": "CVE-2026-55139",
+   "title": "Microsoft Office Information Disclosure Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "m365-apps": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002887"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55139"
+  },
+  {
+   "cve": "CVE-2026-55140",
+   "title": "Microsoft Office Remote Code Execution Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "m365-apps": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002748",
+     "KB5002830"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55140"
+  },
+  {
    "cve": "CVE-2026-55144",
    "title": "Windows Cryptography API: Next Generation (CNG) Tampering Vulnerability",
    "component": "Windows CryptoAPI",
@@ -10741,6 +12077,37 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55144"
+  },
+  {
+   "cve": "CVE-2026-56155",
+   "title": "Active Directory Federation Services Elevation of Privilege Vulnerability",
+   "component": "Active Directory Federation Services (AD FS)",
+   "tags": [
+    "sign-in"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5099535"
+    ],
+    "server-2019": [
+     "KB5099538"
+    ],
+    "server-2022": [
+     "KB5099540"
+    ],
+    "server-2025": [
+     "KB5099536"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56155"
   },
   {
    "cve": "CVE-2026-56159",
@@ -11219,6 +12586,44 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56190"
   },
   {
+   "cve": "CVE-2026-56192",
+   "title": "Microsoft Office Information Disclosure Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "m365-apps": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002887"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56192"
+  },
+  {
+   "cve": "CVE-2026-56193",
+   "title": "Microsoft Office Information Disclosure Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "m365-apps": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002887"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56193"
+  },
+  {
    "cve": "CVE-2026-56194",
    "title": "Windows NFS Server Elevation of Privilege Vulnerability",
    "component": "Windows Network File System",
@@ -11256,6 +12661,25 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56194"
+  },
+  {
+   "cve": "CVE-2026-56195",
+   "title": "Microsoft Office Information Disclosure Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "m365-apps": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002887"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56195"
   },
   {
    "cve": "CVE-2026-56643",
@@ -11649,6 +13073,33 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57087"
   },
   {
+   "cve": "CVE-2026-57088",
+   "title": "Extensible Storage Engine (ESENT) Elevation of Privilege Vulnerability",
+   "component": "Extensible Storage Engine (ESENT)",
+   "tags": [
+    "storage"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2019": [
+     "KB5099538"
+    ],
+    "server-2022": [
+     "KB5099540"
+    ],
+    "server-2025": [
+     "KB5099536"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57088"
+  },
+  {
    "cve": "CVE-2026-57089",
    "title": "Windows SMB Server Network Transport Driver (srvnet.sys) Remote Code Execution Vulnerability",
    "component": "Windows SMB Server Network Transport Driver (srvnet.sys)",
@@ -11964,6 +13415,45 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57096"
+  },
+  {
+   "cve": "CVE-2026-57097",
+   "title": "Microsoft XML Security Feature Bypass Vulnerability",
+   "component": "Microsoft XML",
+   "tags": [
+    "other"
+   ],
+   "impact": "Security Feature Bypass",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5099535"
+    ],
+    "server-2019": [
+     "KB5099538"
+    ],
+    "server-2022": [
+     "KB5099540"
+    ],
+    "server-2025": [
+     "KB5099536"
+    ],
+    "win11-24h2": [
+     "KB5101650"
+    ],
+    "win11-25h2": [
+     "KB5101650"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-57097"
   },
   {
    "cve": "CVE-2026-57976",
@@ -12455,6 +13945,33 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58536"
   },
   {
+   "cve": "CVE-2026-58537",
+   "title": "Microsoft NAT Helper Components (ipnathlp.dll) Elevation of Privilege Vulnerability",
+   "component": "Microsoft NAT Helper Components (ipnathlp.dll)",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2025": [
+     "KB5099536"
+    ],
+    "win11-24h2": [
+     "KB5101650"
+    ],
+    "win11-25h2": [
+     "KB5101650"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58537"
+  },
+  {
    "cve": "CVE-2026-58538",
    "title": "Windows Bluetooth Service Elevation of Privilege Vulnerability",
    "component": "Windows Bluetooth Service",
@@ -12862,6 +14379,46 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58598"
+  },
+  {
+   "cve": "CVE-2026-58601",
+   "title": "Virtual Hard Disk (VHD) Miniport Driver Elevation of Privilege Vulernability",
+   "component": "Virtual Hard Disk (VHD) Miniport Driver",
+   "tags": [
+    "storage",
+    "kernel-drivers"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5099535"
+    ],
+    "server-2019": [
+     "KB5099538"
+    ],
+    "server-2022": [
+     "KB5099540"
+    ],
+    "server-2025": [
+     "KB5099536"
+    ],
+    "win11-24h2": [
+     "KB5101650"
+    ],
+    "win11-25h2": [
+     "KB5101650"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58601"
   },
   {
    "cve": "CVE-2026-58602",

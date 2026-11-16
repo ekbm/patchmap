@@ -3,7 +3,7 @@
  "tags": {
   "print": {
    "label": "Printing and scanning",
-   "match": "print|spool|xps|gdi|imaging|scan|image acquisition"
+   "match": "print|spool|xps|gdi|imaging|scan|image acquisition|color management"
   },
   "sign-in": {
    "label": "Sign-in and identity",
@@ -56,6 +56,18 @@
   "kernel-drivers": {
    "label": "Kernel and drivers",
    "match": "kernel|driver|usb|hyper-v|virtual|alpc|subsystem for linux|\\bhid\\b"
+  },
+  "email": {
+   "label": "Email (Exchange)",
+   "match": "exchange server|outlook"
+  },
+  "database": {
+   "label": "Database and data access",
+   "match": "sql server|ole db|odbc"
+  },
+  "office-apps": {
+   "label": "Office apps",
+   "match": "microsoft office|\\bexcel\\b|microsoft word|powerpoint|microsoft access|\\bvisio\\b|microsoft project|onenote|publisher"
   }
  }
 }

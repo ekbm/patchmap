@@ -1,0 +1,16 @@
+{
+ "kb": "KB5071876",
+ "month": "2025-Dec",
+ "released": "2025-12-09",
+ "type": "Security Update",
+ "restart": "Yes",
+ "catalog_url": "http://www.microsoft.com/en-us/download/details.aspx?id=108493",
+ "versions": {
+  "exchange": "15.02.2562.035"
+ },
+ "supersedes": [],
+ "fixes": [
+  "CVE-2025-64666",
+  "CVE-2025-64667"
+ ]
+}

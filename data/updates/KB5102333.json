@@ -1,0 +1,21 @@
+{
+ "kb": "KB5102333",
+ "month": "2026-Jul",
+ "released": "2026-07-14",
+ "type": "Security Update",
+ "restart": "Maybe",
+ "catalog_url": "https://www.microsoft.com/download/details.aspx?familyid=6a71f56f-474c-4c05-a420-f30ae538ebe7",
+ "versions": {
+  "sql-server": "17.0.1125.2"
+ },
+ "supersedes": [],
+ "fixes": [
+  "CVE-2026-47295",
+  "CVE-2026-47296",
+  "CVE-2026-50468",
+  "CVE-2026-54116",
+  "CVE-2026-54117",
+  "CVE-2026-54118",
+  "CVE-2026-55002"
+ ]
+}

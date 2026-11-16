@@ -1,0 +1,17 @@
+{
+ "kb": "KB4011160",
+ "month": "2026-Aug",
+ "released": "2026-08-11",
+ "type": "Security Update",
+ "restart": null,
+ "catalog_url": "https://www.microsoft.com/en-us/download/details.aspx?id=108802",
+ "versions": {
+  "m365-apps": "16.0.5569.1002"
+ },
+ "supersedes": [
+  "KB3213551"
+ ],
+ "fixes": [
+  "CVE-2026-78512"
+ ]
+}

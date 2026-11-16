@@ -1,0 +1,17 @@
+{
+ "kb": "KB5074995",
+ "month": "2026-Feb",
+ "released": "2026-02-10",
+ "type": "Security Update",
+ "restart": "Yes",
+ "catalog_url": "",
+ "versions": {
+  "exchange": "15.01.2507.066"
+ },
+ "supersedes": [
+  "KB5071873"
+ ],
+ "fixes": [
+  "CVE-2026-21527"
+ ]
+}

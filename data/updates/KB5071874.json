@@ -1,0 +1,16 @@
+{
+ "kb": "KB5071874",
+ "month": "2025-Dec",
+ "released": "2025-12-09",
+ "type": "Security Update",
+ "restart": "Yes",
+ "catalog_url": "",
+ "versions": {
+  "exchange": "15.02.1544.037"
+ },
+ "supersedes": [],
+ "fixes": [
+  "CVE-2025-64666",
+  "CVE-2025-64667"
+ ]
+}

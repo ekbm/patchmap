@@ -1,0 +1,17 @@
+{
+ "kb": "KB5084815",
+ "month": "2026-Apr",
+ "released": "2026-04-14",
+ "type": "Security Update",
+ "restart": "Maybe",
+ "catalog_url": "https://www.microsoft.com/en-us/download/details.aspx?id=108622",
+ "versions": {
+  "sql-server": "16.0.1175.1"
+ },
+ "supersedes": [],
+ "fixes": [
+  "CVE-2026-32167",
+  "CVE-2026-32176",
+  "CVE-2026-33120"
+ ]
+}

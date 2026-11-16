@@ -1,0 +1,18 @@
+{
+ "kb": "KB5102337",
+ "month": "2026-Jul",
+ "released": "2026-07-14",
+ "type": "Security Update",
+ "restart": "Maybe",
+ "catalog_url": "https://www.microsoft.com/download/details.aspx?familyid=22c8589d-8b4f-41a4-a7b3-072a8bd4aa3a",
+ "versions": {
+  "sql-server": "14.0.3540.1"
+ },
+ "supersedes": [],
+ "fixes": [
+  "CVE-2026-47295",
+  "CVE-2026-47296",
+  "CVE-2026-54118",
+  "CVE-2026-55002"
+ ]
+}

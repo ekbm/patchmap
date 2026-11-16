@@ -1,0 +1,25 @@
+{
+ "kb": "KB5128496",
+ "month": "2026-Sep",
+ "released": "2026-09-08",
+ "type": "Security Update",
+ "restart": "Yes",
+ "catalog_url": "https://www.microsoft.com/download/details.aspx?familyid=b6413b5c-ab8e-4bd7-9793-72f5e805e83b",
+ "versions": {
+  "sql-server": "14.0.3560.2"
+ },
+ "supersedes": [
+  "KB5122774"
+ ],
+ "fixes": [
+  "CVE-2026-32176",
+  "CVE-2026-67625",
+  "CVE-2026-67628",
+  "CVE-2026-68883",
+  "CVE-2026-70189",
+  "CVE-2026-85886",
+  "CVE-2026-85888",
+  "CVE-2026-88081",
+  "CVE-2026-88085"
+ ]
+}

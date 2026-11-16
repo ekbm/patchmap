@@ -1,5 +1,429 @@
 [
  {
+  "version": "exchange",
+  "kb": "KB5071873",
+  "build": "15.01.2507.063",
+  "month": "2025-Dec",
+  "released": "2025-12-09",
+  "type": "Security Update"
+ },
+ {
+  "version": "exchange",
+  "kb": "KB5074995",
+  "build": "15.01.2507.066",
+  "month": "2026-Feb",
+  "released": "2026-02-10",
+  "type": "Security Update"
+ },
+ {
+  "version": "exchange",
+  "kb": "KB5094144",
+  "build": "15.01.2507.069",
+  "month": "2026-May",
+  "released": "2026-05-12",
+  "type": "Security Update"
+ },
+ {
+  "version": "exchange",
+  "kb": "KB5103215",
+  "build": "15.01.2507.071",
+  "month": "2026-Jun",
+  "released": "2026-06-09",
+  "type": "Security Update"
+ },
+ {
+  "version": "exchange",
+  "kb": "KB5121576",
+  "build": "15.01.2507.072",
+  "month": "2026-Aug",
+  "released": "2026-08-11",
+  "type": "Security Update"
+ },
+ {
+  "version": "exchange",
+  "kb": "KB5121611",
+  "build": "15.01.2507.073",
+  "month": "2026-Sep",
+  "released": "2026-09-08",
+  "type": "Security Update"
+ },
+ {
+  "version": "exchange",
+  "kb": "KB5128898",
+  "build": "15.01.2507.077",
+  "month": "2026-Oct",
+  "released": "2026-10-13",
+  "type": "Security Update"
+ },
+ {
+  "version": "exchange",
+  "kb": "KB5071874",
+  "build": "15.02.1544.037",
+  "month": "2025-Dec",
+  "released": "2025-12-09",
+  "type": "Security Update"
+ },
+ {
+  "version": "exchange",
+  "kb": "KB5074994",
+  "build": "15.02.1544.039",
+  "month": "2026-Feb",
+  "released": "2026-02-10",
+  "type": "Security Update"
+ },
+ {
+  "version": "exchange",
+  "kb": "KB5094142",
+  "build": "15.02.1544.041",
+  "month": "2026-May",
+  "released": "2026-05-12",
+  "type": "Security Update"
+ },
+ {
+  "version": "exchange",
+  "kb": "KB5103214",
+  "build": "15.02.1544.043",
+  "month": "2026-Jun",
+  "released": "2026-06-09",
+  "type": "Security Update"
+ },
+ {
+  "version": "exchange",
+  "kb": "KB5121575",
+  "build": "15.02.1544.044",
+  "month": "2026-Aug",
+  "released": "2026-08-11",
+  "type": "Security Update"
+ },
+ {
+  "version": "exchange",
+  "kb": "KB5121610",
+  "build": "15.02.1544.046",
+  "month": "2026-Sep",
+  "released": "2026-09-08",
+  "type": "Security Update"
+ },
+ {
+  "version": "exchange",
+  "kb": "KB5128897",
+  "build": "15.02.1544.050",
+  "month": "2026-Oct",
+  "released": "2026-10-13",
+  "type": "Security Update"
+ },
+ {
+  "version": "exchange",
+  "kb": "KB5071875",
+  "build": "15.02.1748.042",
+  "month": "2025-Dec",
+  "released": "2025-12-09",
+  "type": "Security Update"
+ },
+ {
+  "version": "exchange",
+  "kb": "KB5074993",
+  "build": "15.02.1748.043",
+  "month": "2026-Feb",
+  "released": "2026-02-10",
+  "type": "Security Update"
+ },
+ {
+  "version": "exchange",
+  "kb": "KB5094140",
+  "build": "15.02.1748.046",
+  "month": "2026-May",
+  "released": "2026-05-12",
+  "type": "Security Update"
+ },
+ {
+  "version": "exchange",
+  "kb": "KB5103213",
+  "build": "15.02.1748.048",
+  "month": "2026-Jun",
+  "released": "2026-06-09",
+  "type": "Security Update"
+ },
+ {
+  "version": "exchange",
+  "kb": "KB5121574",
+  "build": "15.02.1748.049",
+  "month": "2026-Aug",
+  "released": "2026-08-11",
+  "type": "Security Update"
+ },
+ {
+  "version": "exchange",
+  "kb": "KB5121609",
+  "build": "15.02.1748.051",
+  "month": "2026-Sep",
+  "released": "2026-09-08",
+  "type": "Security Update"
+ },
+ {
+  "version": "exchange",
+  "kb": "KB5128896",
+  "build": "15.02.1748.055",
+  "month": "2026-Oct",
+  "released": "2026-10-13",
+  "type": "Security Update"
+ },
+ {
+  "version": "exchange",
+  "kb": "KB5071876",
+  "build": "15.02.2562.035",
+  "month": "2025-Dec",
+  "released": "2025-12-09",
+  "type": "Security Update"
+ },
+ {
+  "version": "exchange",
+  "kb": "KB5074992",
+  "build": "15.02.2562.037",
+  "month": "2026-Feb",
+  "released": "2026-02-10",
+  "type": "Security Update"
+ },
+ {
+  "version": "exchange",
+  "kb": "KB5094139",
+  "build": "15.02.2562.043",
+  "month": "2026-May",
+  "released": "2026-05-12",
+  "type": "Security Update"
+ },
+ {
+  "version": "exchange",
+  "kb": "KB5103212",
+  "build": "15.02.2562.045",
+  "month": "2026-Jun",
+  "released": "2026-06-09",
+  "type": "Security Update"
+ },
+ {
+  "version": "exchange",
+  "kb": "KB5121573",
+  "build": "15.02.2562.046",
+  "month": "2026-Aug",
+  "released": "2026-08-11",
+  "type": "Security Update"
+ },
+ {
+  "version": "exchange",
+  "kb": "KB5121608",
+  "build": "15.02.2562.049",
+  "month": "2026-Sep",
+  "released": "2026-09-08",
+  "type": "Security Update"
+ },
+ {
+  "version": "exchange",
+  "kb": "KB5128895",
+  "build": "15.02.2562.056",
+  "month": "2026-Oct",
+  "released": "2026-10-13",
+  "type": "Security Update"
+ },
+ {
+  "version": "exchange",
+  "kb": "KB5133453",
+  "build": "15.02.2562.057",
+  "month": "2026-Nov",
+  "released": "2026-11-10",
+  "type": "Security Update"
+ },
+ {
+  "version": "m365-apps",
+  "kb": "KB5002819",
+  "build": "16.0.5530.1001",
+  "month": "2025-Dec",
+  "released": "2025-12-09",
+  "type": "Security Update"
+ },
+ {
+  "version": "m365-apps",
+  "kb": "KB5002826",
+  "build": "16.0.5535.1000",
+  "month": "2026-Jan",
+  "released": "2026-01-13",
+  "type": "Security Update"
+ },
+ {
+  "version": "m365-apps",
+  "kb": "KB5002713",
+  "build": "16.0.5539.1001",
+  "month": "2026-Jan",
+  "released": "2026-01-13",
+  "type": "Security Update"
+ },
+ {
+  "version": "m365-apps",
+  "kb": "KB5002838",
+  "build": "16.0.5543.1000",
+  "month": "2026-Mar",
+  "released": "2026-03-10",
+  "type": "Security Update"
+ },
+ {
+  "version": "m365-apps",
+  "kb": "KB5002848",
+  "build": "16.0.5543.1000",
+  "month": "2026-Mar",
+  "released": "2026-03-10",
+  "type": "Security Update"
+ },
+ {
+  "version": "m365-apps",
+  "kb": "KB5002859",
+  "build": "16.0.5548.1000",
+  "month": "2026-Apr",
+  "released": "2026-04-14",
+  "type": "Security Update"
+ },
+ {
+  "version": "m365-apps",
+  "kb": "KB5002866",
+  "build": "16.0.5552.1000",
+  "month": "2026-May",
+  "released": "2026-05-12",
+  "type": "Security Update"
+ },
+ {
+  "version": "m365-apps",
+  "kb": "KB5002578",
+  "build": "16.0.5556.1000",
+  "month": "2026-May",
+  "released": "2026-05-12",
+  "type": "Security Update"
+ },
+ {
+  "version": "m365-apps",
+  "kb": "KB5002852",
+  "build": "16.0.5556.1001",
+  "month": "2026-Jun",
+  "released": "2026-06-09",
+  "type": "Security Update"
+ },
+ {
+  "version": "m365-apps",
+  "kb": "KB5002878",
+  "build": "16.0.5556.1005",
+  "month": "2026-Jun",
+  "released": "2026-06-09",
+  "type": "Security Update"
+ },
+ {
+  "version": "m365-apps",
+  "kb": "KB5002273",
+  "build": "16.0.5561.1000",
+  "month": "2026-Jul",
+  "released": "2026-07-14",
+  "type": "Security Update"
+ },
+ {
+  "version": "m365-apps",
+  "kb": "KB5002887",
+  "build": "16.0.5561.1000",
+  "month": "2026-Jul",
+  "released": "2026-07-14",
+  "type": "Security Update"
+ },
+ {
+  "version": "m365-apps",
+  "kb": "KB5002748",
+  "build": "16.0.5561.1000",
+  "month": "2026-Jul",
+  "released": "2026-07-14",
+  "type": "Security Update"
+ },
+ {
+  "version": "m365-apps",
+  "kb": "KB5002830",
+  "build": "16.0.5561.1001",
+  "month": "2026-Jul",
+  "released": "2026-07-14",
+  "type": "Security Update"
+ },
+ {
+  "version": "m365-apps",
+  "kb": "KB5002791",
+  "build": "16.0.5565.1000",
+  "month": "2026-Aug",
+  "released": "2026-08-11",
+  "type": "Security Update"
+ },
+ {
+  "version": "m365-apps",
+  "kb": "KB5002795",
+  "build": "16.0.5565.1000",
+  "month": "2026-Aug",
+  "released": "2026-08-11",
+  "type": "Security Update"
+ },
+ {
+  "version": "m365-apps",
+  "kb": "KB5002900",
+  "build": "16.0.5565.1000",
+  "month": "2026-Aug",
+  "released": "2026-08-11",
+  "type": "Security Update"
+ },
+ {
+  "version": "m365-apps",
+  "kb": "KB5002897",
+  "build": "16.0.5565.1001",
+  "month": "2026-Aug",
+  "released": "2026-08-11",
+  "type": "Security Update"
+ },
+ {
+  "version": "m365-apps",
+  "kb": "KB5002902",
+  "build": "16.0.5565.1001",
+  "month": "2026-Aug",
+  "released": "2026-08-11",
+  "type": "Security Update"
+ },
+ {
+  "version": "m365-apps",
+  "kb": "KB5002916",
+  "build": "16.0.5569.1000",
+  "month": "2026-Aug",
+  "released": "2026-08-11",
+  "type": "Security Update"
+ },
+ {
+  "version": "m365-apps",
+  "kb": "KB5002913",
+  "build": "16.0.5569.1002",
+  "month": "2026-Aug",
+  "released": "2026-08-11",
+  "type": "Security Update"
+ },
+ {
+  "version": "m365-apps",
+  "kb": "KB4011160",
+  "build": "16.0.5569.1002",
+  "month": "2026-Aug",
+  "released": "2026-08-11",
+  "type": "Security Update"
+ },
+ {
+  "version": "m365-apps",
+  "kb": "KB5002898",
+  "build": "16.0.5569.1002",
+  "month": "2026-Aug",
+  "released": "2026-08-11",
+  "type": "Security Update"
+ },
+ {
+  "version": "m365-apps",
+  "kb": "KB5002904",
+  "build": "16.0.5569.1003",
+  "month": "2026-Aug",
+  "released": "2026-08-11",
+  "type": "Security Update"
+ },
+ {
   "version": "server-2016",
   "kb": "KB5066836",
   "build": "10.0.14393.8519",
@@ -603,6 +1027,542 @@
   "version": "server-2025",
   "kb": "KB5131080",
   "build": "10.0.26100.33822",
+  "month": "2026-Nov",
+  "released": "2026-11-10",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5077474",
+  "build": "13.0.6480.4",
+  "month": "2026-Mar",
+  "released": "2026-03-10",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5084821",
+  "build": "13.0.6485.1",
+  "month": "2026-Apr",
+  "released": "2026-04-14",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5089271",
+  "build": "13.0.6490.1",
+  "month": "2026-May",
+  "released": "2026-05-12",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5102340",
+  "build": "13.0.6500.1",
+  "month": "2026-Jul",
+  "released": "2026-07-14",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5077473",
+  "build": "13.0.7075.5",
+  "month": "2026-Mar",
+  "released": "2026-03-10",
+  "type": "Monthly Rollup"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5084820",
+  "build": "13.0.7080.1",
+  "month": "2026-Apr",
+  "released": "2026-04-14",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5089270",
+  "build": "13.0.7085.1",
+  "month": "2026-May",
+  "released": "2026-05-12",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5102339",
+  "build": "13.0.7095.1",
+  "month": "2026-Jul",
+  "released": "2026-07-14",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5077472",
+  "build": "14.0.2100.4",
+  "month": "2026-Mar",
+  "released": "2026-03-10",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5084819",
+  "build": "14.0.2105.1",
+  "month": "2026-Apr",
+  "released": "2026-04-14",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5090347",
+  "build": "14.0.2110.2",
+  "month": "2026-May",
+  "released": "2026-05-12",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5102338",
+  "build": "14.0.2120.1",
+  "month": "2026-Jul",
+  "released": "2026-07-14",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5122775",
+  "build": "14.0.2130.4",
+  "month": "2026-Sep",
+  "released": "2026-09-08",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5128497",
+  "build": "14.0.2140.2",
+  "month": "2026-Sep",
+  "released": "2026-09-08",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5132749",
+  "build": "14.0.2150.2",
+  "month": "2026-Nov",
+  "released": "2026-11-10",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5077471",
+  "build": "14.0.3520.4",
+  "month": "2026-Mar",
+  "released": "2026-03-10",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5084818",
+  "build": "14.0.3525.1",
+  "month": "2026-Apr",
+  "released": "2026-04-14",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5090354",
+  "build": "14.0.3530.2",
+  "month": "2026-May",
+  "released": "2026-05-12",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5102337",
+  "build": "14.0.3540.1",
+  "month": "2026-Jul",
+  "released": "2026-07-14",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5122774",
+  "build": "14.0.3550.4",
+  "month": "2026-Sep",
+  "released": "2026-09-08",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5128496",
+  "build": "14.0.3560.2",
+  "month": "2026-Sep",
+  "released": "2026-09-08",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5132746",
+  "build": "14.0.3570.2",
+  "month": "2026-Nov",
+  "released": "2026-11-10",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5077470",
+  "build": "15.0.2160.4",
+  "month": "2026-Mar",
+  "released": "2026-03-10",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5084817",
+  "build": "15.0.2165.1",
+  "month": "2026-Apr",
+  "released": "2026-04-14",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5090408",
+  "build": "15.0.2170.1",
+  "month": "2026-May",
+  "released": "2026-05-12",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5102336",
+  "build": "15.0.2180.2",
+  "month": "2026-Jul",
+  "released": "2026-07-14",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5122773",
+  "build": "15.0.2190.7",
+  "month": "2026-Sep",
+  "released": "2026-09-08",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5128495",
+  "build": "15.0.2200.2",
+  "month": "2026-Oct",
+  "released": "2026-10-13",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5132751",
+  "build": "15.0.2210.4",
+  "month": "2026-Nov",
+  "released": "2026-11-10",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5077469",
+  "build": "15.0.4460.4",
+  "month": "2026-Mar",
+  "released": "2026-03-10",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5084816",
+  "build": "15.0.4465.1",
+  "month": "2026-Apr",
+  "released": "2026-04-14",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5090407",
+  "build": "15.0.4470.1",
+  "month": "2026-May",
+  "released": "2026-05-12",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5102335",
+  "build": "15.0.4480.2",
+  "month": "2026-Jul",
+  "released": "2026-07-14",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5122772",
+  "build": "15.0.4490.9",
+  "month": "2026-Sep",
+  "released": "2026-09-08",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5128494",
+  "build": "15.0.4500.2",
+  "month": "2026-Oct",
+  "released": "2026-10-13",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5132745",
+  "build": "15.0.4510.2",
+  "month": "2026-Nov",
+  "released": "2026-11-10",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5073031",
+  "build": "16.0.1165.1",
+  "month": "2026-Jan",
+  "released": "2026-01-13",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5077465",
+  "build": "16.0.1170.5",
+  "month": "2026-Mar",
+  "released": "2026-03-10",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5084815",
+  "build": "16.0.1175.1",
+  "month": "2026-Apr",
+  "released": "2026-04-14",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5091158",
+  "build": "16.0.1180.1",
+  "month": "2026-May",
+  "released": "2026-05-12",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5102334",
+  "build": "16.0.1190.2",
+  "month": "2026-Jul",
+  "released": "2026-07-14",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5122771",
+  "build": "16.0.1200.5",
+  "month": "2026-Sep",
+  "released": "2026-09-08",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5128493",
+  "build": "16.0.1210.3",
+  "month": "2026-Oct",
+  "released": "2026-10-13",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5132747",
+  "build": "16.0.1220.3",
+  "month": "2026-Nov",
+  "released": "2026-11-10",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5072936",
+  "build": "16.0.4230.2",
+  "month": "2026-Jan",
+  "released": "2026-01-13",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5077464",
+  "build": "16.0.4240.4",
+  "month": "2026-Mar",
+  "released": "2026-03-10",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5083252",
+  "build": "16.0.4250.1",
+  "month": "2026-Apr",
+  "released": "2026-04-14",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5089900",
+  "build": "16.0.4252.3",
+  "month": "2026-May",
+  "released": "2026-05-12",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5101347",
+  "build": "16.0.4262.2",
+  "month": "2026-Jul",
+  "released": "2026-07-14",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5122768",
+  "build": "16.0.4275.2",
+  "month": "2026-Sep",
+  "released": "2026-09-08",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5126934",
+  "build": "16.0.4305.5",
+  "month": "2026-Oct",
+  "released": "2026-10-13",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5129300",
+  "build": "16.0.4315.2",
+  "month": "2026-Nov",
+  "released": "2026-11-10",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5073177",
+  "build": "17.0.1050.2",
+  "month": "2026-Jan",
+  "released": "2026-01-13",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5077468",
+  "build": "17.0.1105.2",
+  "month": "2026-Mar",
+  "released": "2026-03-10",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5084814",
+  "build": "17.0.1110.1",
+  "month": "2026-Apr",
+  "released": "2026-04-14",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5091223",
+  "build": "17.0.1115.1",
+  "month": "2026-May",
+  "released": "2026-05-12",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5102333",
+  "build": "17.0.1125.2",
+  "month": "2026-Jul",
+  "released": "2026-07-14",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5122770",
+  "build": "17.0.1135.8",
+  "month": "2026-Sep",
+  "released": "2026-09-08",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5128492",
+  "build": "17.0.1145.4",
+  "month": "2026-Oct",
+  "released": "2026-10-13",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5132748",
+  "build": "17.0.1155.3",
+  "month": "2026-Nov",
+  "released": "2026-11-10",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5077466",
+  "build": "17.0.4020.2",
+  "month": "2026-Mar",
+  "released": "2026-03-10",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5083245",
+  "build": "17.0.4030.1",
+  "month": "2026-Apr",
+  "released": "2026-04-14",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5089899",
+  "build": "17.0.4040.1",
+  "month": "2026-May",
+  "released": "2026-05-12",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5101346",
+  "build": "17.0.4060.2",
+  "month": "2026-Jul",
+  "released": "2026-07-14",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5122769",
+  "build": "17.0.4085.5",
+  "month": "2026-Sep",
+  "released": "2026-09-08",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5126967",
+  "build": "17.0.5015.4",
+  "month": "2026-Oct",
+  "released": "2026-10-13",
+  "type": "Security Update"
+ },
+ {
+  "version": "sql-server",
+  "kb": "KB5129299",
+  "build": "17.0.5045.3",
   "month": "2026-Nov",
   "released": "2026-11-10",
   "type": "Security Update"

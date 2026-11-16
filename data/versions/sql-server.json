@@ -1,0 +1,2878 @@
+{
+ "version": "sql-server",
+ "label": "SQL Server",
+ "months": [
+  {
+   "month": "2026-Nov",
+   "released": "2026-11-10",
+   "fix_count": 52,
+   "updates": [
+    {
+     "kb": "KB5129299",
+     "build": "17.0.5045.3",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5125471"
+     ]
+    },
+    {
+     "kb": "KB5129300",
+     "build": "16.0.4315.2",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5126934"
+     ]
+    },
+    {
+     "kb": "KB5132745",
+     "build": "15.0.4510.2",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5128494"
+     ]
+    },
+    {
+     "kb": "KB5132746",
+     "build": "14.0.3570.2",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5128496"
+     ]
+    },
+    {
+     "kb": "KB5132747",
+     "build": "16.0.1220.3",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5128493"
+     ]
+    },
+    {
+     "kb": "KB5132748",
+     "build": "17.0.1155.3",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5128492"
+     ]
+    },
+    {
+     "kb": "KB5132749",
+     "build": "14.0.2150.2",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5128497"
+     ]
+    },
+    {
+     "kb": "KB5132751",
+     "build": "15.0.2210.4",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5128495"
+     ]
+    }
+   ],
+   "areas": {
+    "database": {
+     "count": 52,
+     "components": {
+      "SQL Server": [
+       {
+        "cve": "CVE-2026-116929",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-116930",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-116931",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-116932",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-116933",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5126967",
+         "KB5129299",
+         "KB5129300",
+         "KB5132747",
+         "KB5132748"
+        ]
+       },
+       {
+        "cve": "CVE-2026-116934",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-116935",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-116936",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-116937",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-116938",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-116939",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-116940",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-116941",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-116942",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-116943",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-116944",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-116945",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-116946",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-116947",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118102",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118103",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118104",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118105",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118106",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118108",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118109",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118110",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118111",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118112",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118113",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118114",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118115",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118116",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118117",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118118",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118119",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118120",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-66813",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67372",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5132748"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67374",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67375",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5132748"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67382",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67387",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67391",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67632",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67637",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67646",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5132748"
+        ]
+       },
+       {
+        "cve": "CVE-2026-68783",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5132748"
+        ]
+       },
+       {
+        "cve": "CVE-2026-84010",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88111",
+        "title": "SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300"
+        ]
+       },
+       {
+        "cve": "CVE-2026-94511",
+        "title": "SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-94513",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5129299",
+         "KB5129300",
+         "KB5132747",
+         "KB5132748"
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "month": "2026-Oct",
+   "released": "2026-10-13",
+   "fix_count": 22,
+   "updates": [
+    {
+     "kb": "KB5126934",
+     "build": "16.0.4305.5",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5104824"
+     ]
+    },
+    {
+     "kb": "KB5126967",
+     "build": "17.0.5015.4",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5122048"
+     ]
+    },
+    {
+     "kb": "KB5128492",
+     "build": "17.0.1145.4",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5122770"
+     ]
+    },
+    {
+     "kb": "KB5128493",
+     "build": "16.0.1210.3",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5122771"
+     ]
+    },
+    {
+     "kb": "KB5128494",
+     "build": "15.0.4500.2",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5122772"
+     ]
+    },
+    {
+     "kb": "KB5128495",
+     "build": "15.0.2200.2",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5122773"
+     ]
+    }
+   ],
+   "areas": {
+    "database": {
+     "count": 22,
+     "components": {
+      "SQL Server": [
+       {
+        "cve": "CVE-2026-65674",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5126934",
+         "KB5126967",
+         "KB5128492",
+         "KB5128493",
+         "KB5128494",
+         "KB5128495"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67625",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5126934",
+         "KB5126967",
+         "KB5128492",
+         "KB5128493",
+         "KB5128494",
+         "KB5128495",
+         "KB5128496",
+         "KB5128497"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67626",
+        "title": "Microsoft SQL Server Denial of Service Vulnerability",
+        "impact": "Denial of Service",
+        "severity": "Important",
+        "kbs": [
+         "KB5126934",
+         "KB5126967",
+         "KB5128492",
+         "KB5128493"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67628",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5126934",
+         "KB5126967",
+         "KB5128492",
+         "KB5128493",
+         "KB5128494",
+         "KB5128495",
+         "KB5128496",
+         "KB5128497"
+        ]
+       },
+       {
+        "cve": "CVE-2026-68883",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5126934",
+         "KB5126967",
+         "KB5128492",
+         "KB5128493",
+         "KB5128494",
+         "KB5128495",
+         "KB5128496",
+         "KB5128497"
+        ]
+       },
+       {
+        "cve": "CVE-2026-70189",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5126934",
+         "KB5126967",
+         "KB5128492",
+         "KB5128493",
+         "KB5128494",
+         "KB5128495",
+         "KB5128496",
+         "KB5128497"
+        ]
+       },
+       {
+        "cve": "CVE-2026-83945",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5126967",
+         "KB5129299",
+         "KB5129300",
+         "KB5132747",
+         "KB5132748"
+        ]
+       },
+       {
+        "cve": "CVE-2026-85876",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5126934",
+         "KB5126967",
+         "KB5128492",
+         "KB5128493",
+         "KB5128494",
+         "KB5128495"
+        ]
+       },
+       {
+        "cve": "CVE-2026-85886",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5126934",
+         "KB5126967",
+         "KB5128492",
+         "KB5128493",
+         "KB5128494",
+         "KB5128495",
+         "KB5128496",
+         "KB5128497"
+        ]
+       },
+       {
+        "cve": "CVE-2026-85888",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5126934",
+         "KB5126967",
+         "KB5128492",
+         "KB5128493",
+         "KB5128494",
+         "KB5128495",
+         "KB5128496",
+         "KB5128497"
+        ]
+       },
+       {
+        "cve": "CVE-2026-85919",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5126934",
+         "KB5126967",
+         "KB5128492",
+         "KB5128493",
+         "KB5128494",
+         "KB5128495"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88081",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5126934",
+         "KB5126967",
+         "KB5128492",
+         "KB5128493",
+         "KB5128494",
+         "KB5128495",
+         "KB5128496",
+         "KB5128497"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88082",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5126934",
+         "KB5126967",
+         "KB5128492",
+         "KB5128493",
+         "KB5128494",
+         "KB5128495"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88083",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5126934",
+         "KB5126967",
+         "KB5128492",
+         "KB5128493"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88084",
+        "title": "Microsoft SQL Server Denial of Service Vulnerability",
+        "impact": "Denial of Service",
+        "severity": "Important",
+        "kbs": [
+         "KB5128494",
+         "KB5128495"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88085",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5126934",
+         "KB5126967",
+         "KB5128492",
+         "KB5128493",
+         "KB5128494",
+         "KB5128495",
+         "KB5128496",
+         "KB5128497"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88086",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5126934",
+         "KB5126967",
+         "KB5128492",
+         "KB5128493",
+         "KB5128494",
+         "KB5128495"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88088",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5126934",
+         "KB5126967",
+         "KB5128492",
+         "KB5128493",
+         "KB5128494",
+         "KB5128495"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88089",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5126967",
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-94512",
+        "title": "SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5126967",
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-94520",
+        "title": "Microsoft SQL Server Denial of Service Vulnerability",
+        "impact": "Denial of Service",
+        "severity": "Important",
+        "kbs": [
+         "KB5126967",
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       },
+       {
+        "cve": "CVE-2026-96956",
+        "title": "SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5126967",
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746",
+         "KB5132747",
+         "KB5132748",
+         "KB5132749",
+         "KB5132751"
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "month": "2026-Sep",
+   "released": "2026-09-08",
+   "fix_count": 62,
+   "updates": [
+    {
+     "kb": "KB5122768",
+     "build": "16.0.4275.2",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5093420"
+     ]
+    },
+    {
+     "kb": "KB5122769",
+     "build": "17.0.4085.5",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5104822"
+     ]
+    },
+    {
+     "kb": "KB5122770",
+     "build": "17.0.1135.8",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5102333"
+     ]
+    },
+    {
+     "kb": "KB5122771",
+     "build": "16.0.1200.5",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5102334"
+     ]
+    },
+    {
+     "kb": "KB5122772",
+     "build": "15.0.4490.9",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5102335"
+     ]
+    },
+    {
+     "kb": "KB5122773",
+     "build": "15.0.2190.7",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5102336"
+     ]
+    },
+    {
+     "kb": "KB5122774",
+     "build": "14.0.3550.4",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5102337"
+     ]
+    },
+    {
+     "kb": "KB5122775",
+     "build": "14.0.2130.4",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5102338"
+     ]
+    }
+   ],
+   "areas": {
+    "database": {
+     "count": 62,
+     "components": {
+      "SQL Server": [
+       {
+        "cve": "CVE-2026-47297",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773"
+        ]
+       },
+       {
+        "cve": "CVE-2026-66814",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-66816",
+        "title": "Microsoft SQL Server Security Feature Bypass Vulnerability",
+        "impact": "Security Feature Bypass",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771"
+        ]
+       },
+       {
+        "cve": "CVE-2026-66818",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-66819",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-66820",
+        "title": "SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67368",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67369",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5122769",
+         "KB5122770"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67370",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67373",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5122769",
+         "KB5122770"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67376",
+        "title": "Microsoft SQL Server Denial of Service Vulnerability",
+        "impact": "Denial of Service",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67378",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67379",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67380",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67381",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67383",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5122769",
+         "KB5122770"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67384",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67385",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67386",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67388",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67389",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67390",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67393",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67624",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67629",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67630",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67631",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67633",
+        "title": "Microsoft SQL Server Denial of Service Vulnerability",
+        "impact": "Denial of Service",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67636",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67638",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5122769",
+         "KB5122770"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67639",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67641",
+        "title": "Microsoft SQL Server Denial of Service Vulnerability",
+        "impact": "Denial of Service",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67642",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5122769",
+         "KB5122770"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67643",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67645",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775",
+         "KB5126934",
+         "KB5132745",
+         "KB5132746"
+        ]
+       },
+       {
+        "cve": "CVE-2026-67648",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-68775",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-68776",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-68777",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-68778",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-68779",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-68780",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-68781",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775",
+         "KB5129299",
+         "KB5129300",
+         "KB5132745",
+         "KB5132746"
+        ]
+       },
+       {
+        "cve": "CVE-2026-68784",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-68785",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-68786",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-68787",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-69562",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-73028",
+        "title": "SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-73029",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773"
+        ]
+       },
+       {
+        "cve": "CVE-2026-77480",
+        "title": "SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-77481",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-77482",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-77483",
+        "title": "SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-77484",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773"
+        ]
+       },
+       {
+        "cve": "CVE-2026-77485",
+        "title": "SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-77486",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-77487",
+        "title": "SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-77488",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122769",
+         "KB5122770",
+         "KB5122771",
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-78456",
+        "title": "SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5122768",
+         "KB5122771"
+        ]
+       }
+      ],
+      "Windows OLE DB": [
+       {
+        "cve": "CVE-2026-78441",
+        "title": "Windows OLE DB Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-78442",
+        "title": "Windows OLE DB Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       }
+      ]
+     }
+    },
+    "apps-desktop": {
+     "count": 2,
+     "components": {
+      "Windows OLE DB": [
+       {
+        "cve": "CVE-2026-78441",
+        "title": "Windows OLE DB Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       },
+       {
+        "cve": "CVE-2026-78442",
+        "title": "Windows OLE DB Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5122772",
+         "KB5122773",
+         "KB5122774",
+         "KB5122775"
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "month": "2026-Jul",
+   "released": "2026-07-14",
+   "fix_count": 7,
+   "updates": [
+    {
+     "kb": "KB5101346",
+     "build": "17.0.4060.2",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5101347",
+     "build": "16.0.4262.2",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5102333",
+     "build": "17.0.1125.2",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5102334",
+     "build": "16.0.1190.2",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5102335",
+     "build": "15.0.4480.2",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5102336",
+     "build": "15.0.2180.2",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5102337",
+     "build": "14.0.3540.1",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5102338",
+     "build": "14.0.2120.1",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5102339",
+     "build": "13.0.7095.1",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5102340",
+     "build": "13.0.6500.1",
+     "type": "Security Update",
+     "supersedes": []
+    }
+   ],
+   "areas": {
+    "database": {
+     "count": 7,
+     "components": {
+      "SQL Server": [
+       {
+        "cve": "CVE-2026-47295",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5101346",
+         "KB5101347",
+         "KB5102333",
+         "KB5102334",
+         "KB5102335",
+         "KB5102336",
+         "KB5102337",
+         "KB5102338",
+         "KB5102339",
+         "KB5102340"
+        ]
+       },
+       {
+        "cve": "CVE-2026-47296",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5101346",
+         "KB5101347",
+         "KB5102333",
+         "KB5102334",
+         "KB5102335",
+         "KB5102336",
+         "KB5102337",
+         "KB5102338",
+         "KB5102339",
+         "KB5102340"
+        ]
+       },
+       {
+        "cve": "CVE-2026-50468",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5101346",
+         "KB5102333"
+        ]
+       },
+       {
+        "cve": "CVE-2026-54116",
+        "title": "Microsoft SQL Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5101346",
+         "KB5102333"
+        ]
+       },
+       {
+        "cve": "CVE-2026-54117",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5101346",
+         "KB5102333"
+        ]
+       },
+       {
+        "cve": "CVE-2026-54118",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5101346",
+         "KB5101347",
+         "KB5102333",
+         "KB5102334",
+         "KB5102335",
+         "KB5102336",
+         "KB5102337",
+         "KB5102338",
+         "KB5102339",
+         "KB5102340"
+        ]
+       },
+       {
+        "cve": "CVE-2026-55002",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5101346",
+         "KB5101347",
+         "KB5102333",
+         "KB5102334",
+         "KB5102335",
+         "KB5102336",
+         "KB5102337",
+         "KB5102338",
+         "KB5102339",
+         "KB5102340"
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "month": "2026-May",
+   "released": "2026-05-12",
+   "fix_count": 1,
+   "updates": [
+    {
+     "kb": "KB5089270",
+     "build": "13.0.7085.1",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5089271",
+     "build": "13.0.6490.1",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5089899",
+     "build": "17.0.4040.1",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5089900",
+     "build": "16.0.4252.3",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5090347",
+     "build": "14.0.2110.2",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5090354",
+     "build": "14.0.3530.2",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5090407",
+     "build": "15.0.4470.1",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5090408",
+     "build": "15.0.2170.1",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5091158",
+     "build": "16.0.1180.1",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5091223",
+     "build": "17.0.1115.1",
+     "type": "Security Update",
+     "supersedes": []
+    }
+   ],
+   "areas": {
+    "database": {
+     "count": 1,
+     "components": {
+      "SQL Server": [
+       {
+        "cve": "CVE-2026-40370",
+        "title": "SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5089270",
+         "KB5089271",
+         "KB5089899",
+         "KB5089900",
+         "KB5090347",
+         "KB5090354",
+         "KB5090407",
+         "KB5090408",
+         "KB5091158",
+         "KB5091223"
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "month": "2026-Apr",
+   "released": "2026-04-14",
+   "fix_count": 3,
+   "updates": [
+    {
+     "kb": "KB5083245",
+     "build": "17.0.4030.1",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5083252",
+     "build": "16.0.4250.1",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5084814",
+     "build": "17.0.1110.1",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5084815",
+     "build": "16.0.1175.1",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5084816",
+     "build": "15.0.4465.1",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5084817",
+     "build": "15.0.2165.1",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5084818",
+     "build": "14.0.3525.1",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5084819",
+     "build": "14.0.2105.1",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5084820",
+     "build": "13.0.7080.1",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5084821",
+     "build": "13.0.6485.1",
+     "type": "Security Update",
+     "supersedes": []
+    }
+   ],
+   "areas": {
+    "database": {
+     "count": 3,
+     "components": {
+      "SQL Server": [
+       {
+        "cve": "CVE-2026-32167",
+        "title": "SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5083245",
+         "KB5083252",
+         "KB5084814",
+         "KB5084815",
+         "KB5084816",
+         "KB5084817",
+         "KB5084818",
+         "KB5084819",
+         "KB5084820",
+         "KB5084821"
+        ]
+       },
+       {
+        "cve": "CVE-2026-32176",
+        "title": "SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5083245",
+         "KB5083252",
+         "KB5084814",
+         "KB5084815",
+         "KB5084816",
+         "KB5084817",
+         "KB5084818",
+         "KB5084819",
+         "KB5084820",
+         "KB5084821",
+         "KB5126934",
+         "KB5126967",
+         "KB5128492",
+         "KB5128493",
+         "KB5128494",
+         "KB5128495",
+         "KB5128496",
+         "KB5128497"
+        ]
+       },
+       {
+        "cve": "CVE-2026-33120",
+        "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5084815"
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "month": "2026-Mar",
+   "released": "2026-03-10",
+   "fix_count": 3,
+   "updates": [
+    {
+     "kb": "KB5077464",
+     "build": "16.0.4240.4",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5077465",
+     "build": "16.0.1170.5",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5073031"
+     ]
+    },
+    {
+     "kb": "KB5077466",
+     "build": "17.0.4020.2",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5077468",
+     "build": "17.0.1105.2",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5073177"
+     ]
+    },
+    {
+     "kb": "KB5077469",
+     "build": "15.0.4460.4",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5077469"
+     ]
+    },
+    {
+     "kb": "KB5077470",
+     "build": "15.0.2160.4",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5068405"
+     ]
+    },
+    {
+     "kb": "KB5077471",
+     "build": "14.0.3520.4",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5068402"
+     ]
+    },
+    {
+     "kb": "KB5077472",
+     "build": "14.0.2100.4",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5068403"
+     ]
+    },
+    {
+     "kb": "KB5077473",
+     "build": "13.0.7075.5",
+     "type": "Monthly Rollup",
+     "supersedes": [
+      "KB5068400"
+     ]
+    },
+    {
+     "kb": "KB5077474",
+     "build": "13.0.6480.4",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5068401"
+     ]
+    }
+   ],
+   "areas": {
+    "database": {
+     "count": 3,
+     "components": {
+      "SQL Server": [
+       {
+        "cve": "CVE-2026-21262",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5077464",
+         "KB5077465",
+         "KB5077466",
+         "KB5077468",
+         "KB5077469",
+         "KB5077470",
+         "KB5077471",
+         "KB5077472",
+         "KB5077473",
+         "KB5077474"
+        ]
+       },
+       {
+        "cve": "CVE-2026-26115",
+        "title": "SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5077464",
+         "KB5077465",
+         "KB5077466",
+         "KB5077468",
+         "KB5077469",
+         "KB5077470",
+         "KB5077471",
+         "KB5077472",
+         "KB5077473",
+         "KB5077474"
+        ]
+       },
+       {
+        "cve": "CVE-2026-26116",
+        "title": "SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5077466",
+         "KB5077468"
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "month": "2026-Jan",
+   "released": "2026-01-13",
+   "fix_count": 1,
+   "updates": [
+    {
+     "kb": "KB5072936",
+     "build": "16.0.4230.2",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5068450"
+     ]
+    },
+    {
+     "kb": "KB5073031",
+     "build": "16.0.1165.1",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5068407"
+     ]
+    },
+    {
+     "kb": "KB5073177",
+     "build": "17.0.1050.2",
+     "type": "Security Update",
+     "supersedes": []
+    }
+   ],
+   "areas": {
+    "database": {
+     "count": 1,
+     "components": {
+      "SQL Server": [
+       {
+        "cve": "CVE-2026-20803",
+        "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5072936",
+         "KB5073031",
+         "KB5073177"
+        ]
+       }
+      ]
+     }
+    }
+   }
+  }
+ ]
+}

@@ -8,7 +8,7 @@
    "title": "SQL Server linked server connections might remain open",
    "summary": "",
    "areas": [
-    "other"
+    "database"
    ],
    "months": [
     "2026-Oct"
@@ -241,7 +241,7 @@
    "title": "Users might be unable to sign in to OWA or send emails on Exchange Server",
    "summary": "",
    "areas": [
-    "other"
+    "email"
    ],
    "months": [
     "2026-Oct"
@@ -649,7 +649,7 @@
    "title": "Microsoft Teams and Outlook might fail to launch on ARM-based devices",
    "summary": "",
    "areas": [
-    "other"
+    "email"
    ],
    "months": [
     "2026-Aug"

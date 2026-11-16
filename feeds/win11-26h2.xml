@@ -45,7 +45,7 @@
     <updated>2026-11-10T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;q=KB5132043"/>
     <category term="monthly-update"/>
-    <summary>KB5132043 (build 10.0.26300.9911), KB5132061 (build 10.0.26300.9974), KB5135385 (build 10.0.26300.9968). 587 security fixes. Biggest areas: kernel-drivers 135, graphics 87, apps-desktop 73, network 62, storage 51.</summary>
+    <summary>KB5132043 (build 10.0.26300.9911), KB5132061 (build 10.0.26300.9974), KB5135385 (build 10.0.26300.9968). 656 security fixes. Biggest areas: kernel-drivers 146, graphics 98, apps-desktop 81, other 69, network 66.</summary>
   </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:issue:ms-5031:fixed</id>
@@ -69,7 +69,7 @@
     <updated>2026-10-13T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;q=KB5127648"/>
     <category term="monthly-update"/>
-    <summary>KB5127648 (build 10.0.26300.9711). 850 security fixes. Biggest areas: kernel-drivers 222, apps-desktop 149, storage 112, network 77, management 71.</summary>
+    <summary>KB5127648 (build 10.0.26300.9711). 1008 security fixes. Biggest areas: kernel-drivers 243, apps-desktop 151, network 124, storage 114, server-roles 83.</summary>
   </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:issue:ms-5006:fixed</id>

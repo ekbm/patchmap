@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Microsoft 365 Apps and Office</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/m365-apps.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/m365-apps.xml</id>
+  <updated>2026-11-10T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:m365-apps:2026-Nov</id>
+    <title>Microsoft 365 Apps and Office: November 2026 security update Click-to-Run update</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=m365-apps&amp;q=Click-to-Run%20update"/>
+    <category term="monthly-update"/>
+    <summary>Click-to-Run update. 175 security fixes. Biggest areas: office-apps 175, email 20.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:m365-apps:2026-Oct</id>
+    <title>Microsoft 365 Apps and Office: October 2026 security update Click-to-Run update</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=m365-apps&amp;q=Click-to-Run%20update"/>
+    <category term="monthly-update"/>
+    <summary>Click-to-Run update. 163 security fixes. Biggest areas: office-apps 162, email 11, apps-desktop 1.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:m365-apps:2026-Sep</id>
+    <title>Microsoft 365 Apps and Office: September 2026 security update Click-to-Run update</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=m365-apps&amp;q=Click-to-Run%20update"/>
+    <category term="monthly-update"/>
+    <summary>Click-to-Run update. 105 security fixes. Biggest areas: office-apps 104, email 7, graphics 1.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:m365-apps:2026-Aug</id>
+    <title>Microsoft 365 Apps and Office: August 2026 security update KB5002791, KB5002795, KB5002897, KB5002900, KB5002902</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=m365-apps&amp;q=KB5002791"/>
+    <category term="monthly-update"/>
+    <summary>KB5002791 (build 16.0.5565.1000), KB5002795 (build 16.0.5565.1000), KB5002897 (build 16.0.5565.1001), KB5002900 (build 16.0.5565.1000), KB5002902 (build 16.0.5565.1001). 13 security fixes. Biggest areas: office-apps 13.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:m365-apps:2026-Jul</id>
+    <title>Microsoft 365 Apps and Office: July 2026 security update KB5002273, KB5002748, KB5002830, KB5002887</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=m365-apps&amp;q=KB5002273"/>
+    <category term="monthly-update"/>
+    <summary>KB5002273 (build 16.0.5561.1000), KB5002748 (build 16.0.5561.1000), KB5002830 (build 16.0.5561.1001), KB5002887 (build 16.0.5561.1000). 27 security fixes. Biggest areas: office-apps 27.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:m365-apps:2026-Jun</id>
+    <title>Microsoft 365 Apps and Office: June 2026 security update KB5002852, KB5002878</title>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=m365-apps&amp;q=KB5002852"/>
+    <category term="monthly-update"/>
+    <summary>KB5002852 (build 16.0.5556.1001), KB5002878 (build 16.0.5556.1005). 10 security fixes. Biggest areas: office-apps 10.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:m365-apps:2026-May</id>
+    <title>Microsoft 365 Apps and Office: May 2026 security update KB5002578, KB5002866</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=m365-apps&amp;q=KB5002578"/>
+    <category term="monthly-update"/>
+    <summary>KB5002578 (build 16.0.5556.1000), KB5002866 (build 16.0.5552.1000). 3 security fixes. Biggest areas: office-apps 2, apps-desktop 1.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:m365-apps:2026-Apr</id>
+    <title>Microsoft 365 Apps and Office: April 2026 security update KB5002859</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=m365-apps&amp;q=KB5002859"/>
+    <category term="monthly-update"/>
+    <summary>KB5002859 (build 16.0.5548.1000). 1 security fixes. Biggest areas: office-apps 1.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:m365-apps:2026-Mar</id>
+    <title>Microsoft 365 Apps and Office: March 2026 security update KB5002838, KB5002848</title>
+    <updated>2026-03-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=m365-apps&amp;q=KB5002838"/>
+    <category term="monthly-update"/>
+    <summary>KB5002838 (build 16.0.5543.1000), KB5002848 (build 16.0.5543.1000). 2 security fixes. Biggest areas: office-apps 2.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:m365-apps:2026-Jan</id>
+    <title>Microsoft 365 Apps and Office: January 2026 security update KB5002713, KB5002826</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=m365-apps&amp;q=KB5002713"/>
+    <category term="monthly-update"/>
+    <summary>KB5002713 (build 16.0.5539.1001), KB5002826 (build 16.0.5535.1000). 4 security fixes. Biggest areas: office-apps 4.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:m365-apps:2025-Dec</id>
+    <title>Microsoft 365 Apps and Office: December 2025 security update KB5002819</title>
+    <updated>2025-12-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=m365-apps&amp;q=KB5002819"/>
+    <category term="monthly-update"/>
+    <summary>KB5002819 (build 16.0.5530.1001). 2 security fixes. Biggest areas: office-apps 2.</summary>
+  </entry>
+</feed>

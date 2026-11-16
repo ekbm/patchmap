@@ -1,0 +1,27 @@
+{
+ "kb": "KB5103212",
+ "month": "2026-Jun",
+ "released": "2026-06-09",
+ "type": "Security Update",
+ "restart": "Yes",
+ "catalog_url": "https://www.microsoft.com/en-us/download/details.aspx?id=108746",
+ "versions": {
+  "exchange": "15.02.2562.045"
+ },
+ "supersedes": [
+  "KB5094139"
+ ],
+ "fixes": [
+  "CVE-2026-45500",
+  "CVE-2026-45501",
+  "CVE-2026-45502",
+  "CVE-2026-45503",
+  "CVE-2026-45504",
+  "CVE-2026-45583",
+  "CVE-2026-47631",
+  "CVE-2026-55005",
+  "CVE-2026-55006",
+  "CVE-2026-55008",
+  "CVE-2026-55009"
+ ]
+}

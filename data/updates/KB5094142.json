@@ -1,0 +1,17 @@
+{
+ "kb": "KB5094142",
+ "month": "2026-May",
+ "released": "2026-05-12",
+ "type": "Security Update",
+ "restart": "Yes",
+ "catalog_url": "",
+ "versions": {
+  "exchange": "15.02.1544.041"
+ },
+ "supersedes": [
+  "KB5066368"
+ ],
+ "fixes": [
+  "CVE-2026-42897"
+ ]
+}

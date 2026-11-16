@@ -1,0 +1,878 @@
+{
+ "version": "exchange",
+ "label": "Exchange Server",
+ "months": [
+  {
+   "month": "2026-Nov",
+   "released": "2026-11-10",
+   "fix_count": 9,
+   "updates": [
+    {
+     "kb": "KB5133453",
+     "build": "15.02.2562.057",
+     "type": "Security Update",
+     "supersedes": []
+    }
+   ],
+   "areas": {
+    "email": {
+     "count": 9,
+     "components": {
+      "Microsoft Exchange Server": [
+       {
+        "cve": "CVE-2026-118149",
+        "title": "Microsoft Exchange Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5133453"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118150",
+        "title": "Microsoft Exchange Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5133453"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118151",
+        "title": "Microsoft Exchange Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5133453"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118152",
+        "title": "Microsoft Exchange Server Spoofing Vulnerability",
+        "impact": "Spoofing",
+        "severity": "Important",
+        "kbs": [
+         "KB5133453"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118153",
+        "title": "Microsoft Exchange Server Denial of Service Vulnerability",
+        "impact": "Denial of Service",
+        "severity": "Important",
+        "kbs": [
+         "KB5133453"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118154",
+        "title": "Microsoft Exchange Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5133453"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118157",
+        "title": "Microsoft Exchange Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5133453"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118207",
+        "title": "Microsoft Exchange Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5133453"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118208",
+        "title": "Microsoft Exchange Server Spoofing Vulnerability",
+        "impact": "Spoofing",
+        "severity": "Important",
+        "kbs": [
+         "KB5133453"
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "month": "2026-Oct",
+   "released": "2026-10-13",
+   "fix_count": 6,
+   "updates": [
+    {
+     "kb": "KB5128895",
+     "build": "15.02.2562.056",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5128896",
+     "build": "15.02.1748.055",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5128897",
+     "build": "15.02.1544.050",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5128898",
+     "build": "15.01.2507.077",
+     "type": "Security Update",
+     "supersedes": []
+    }
+   ],
+   "areas": {
+    "email": {
+     "count": 6,
+     "components": {
+      "Microsoft Exchange Server": [
+       {
+        "cve": "CVE-2026-70279",
+        "title": "Microsoft Exchange Server Spoofing Vulnerability",
+        "impact": "Spoofing",
+        "severity": "Important",
+        "kbs": [
+         "KB5128895",
+         "KB5128896",
+         "KB5128897",
+         "KB5128898"
+        ]
+       },
+       {
+        "cve": "CVE-2026-70571",
+        "title": "Microsoft Exchange Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5128895",
+         "KB5128896",
+         "KB5128897",
+         "KB5128898"
+        ]
+       },
+       {
+        "cve": "CVE-2026-77910",
+        "title": "Microsoft Exchange Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5128895",
+         "KB5128896",
+         "KB5128897",
+         "KB5128898"
+        ]
+       },
+       {
+        "cve": "CVE-2026-87692",
+        "title": "Microsoft Exchange Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5128895",
+         "KB5128897",
+         "KB5128898"
+        ]
+       },
+       {
+        "cve": "CVE-2026-87695",
+        "title": "Microsoft Exchange Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5128895",
+         "KB5128896",
+         "KB5128897",
+         "KB5128898"
+        ]
+       },
+       {
+        "cve": "CVE-2026-87696",
+        "title": "Microsoft Exchange Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5128895",
+         "KB5128896",
+         "KB5128897",
+         "KB5128898"
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "month": "2026-Sep",
+   "released": "2026-09-08",
+   "fix_count": 9,
+   "updates": [
+    {
+     "kb": "KB5121608",
+     "build": "15.02.2562.049",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5121609",
+     "build": "15.02.1748.051",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5121610",
+     "build": "15.02.1544.046",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5121611",
+     "build": "15.01.2507.073",
+     "type": "Security Update",
+     "supersedes": []
+    }
+   ],
+   "areas": {
+    "email": {
+     "count": 9,
+     "components": {
+      "Microsoft Exchange Server": [
+       {
+        "cve": "CVE-2026-55007",
+        "title": "Microsoft Exchange Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5121608",
+         "KB5121609",
+         "KB5121610"
+        ]
+       },
+       {
+        "cve": "CVE-2026-69355",
+        "title": "Microsoft Exchange Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5121608",
+         "KB5121609",
+         "KB5121610",
+         "KB5121611"
+        ]
+       },
+       {
+        "cve": "CVE-2026-69356",
+        "title": "Microsoft Exchange Server Spoofing Vulnerability",
+        "impact": "Spoofing",
+        "severity": "Important",
+        "kbs": [
+         "KB5121608",
+         "KB5121609",
+         "KB5121610",
+         "KB5121611"
+        ]
+       },
+       {
+        "cve": "CVE-2026-69361",
+        "title": "Microsoft Exchange Server Spoofing Vulnerability",
+        "impact": "Spoofing",
+        "severity": "Important",
+        "kbs": [
+         "KB5121608",
+         "KB5121609",
+         "KB5121610",
+         "KB5121611"
+        ]
+       },
+       {
+        "cve": "CVE-2026-69375",
+        "title": "Microsoft Exchange Server Tampering Vulnerability",
+        "impact": "Tampering",
+        "severity": "Important",
+        "kbs": [
+         "KB5121608",
+         "KB5121609",
+         "KB5121610",
+         "KB5121611"
+        ]
+       },
+       {
+        "cve": "CVE-2026-69378",
+        "title": "Microsoft Exchange Server Denial of Service Vulnerability",
+        "impact": "Denial of Service",
+        "severity": "Important",
+        "kbs": [
+         "KB5121608",
+         "KB5121609",
+         "KB5121610",
+         "KB5121611"
+        ]
+       },
+       {
+        "cve": "CVE-2026-69380",
+        "title": "Microsoft Exchange Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5121608",
+         "KB5121609",
+         "KB5121610",
+         "KB5121611"
+        ]
+       },
+       {
+        "cve": "CVE-2026-69382",
+        "title": "Microsoft Exchange Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5121608",
+         "KB5121609",
+         "KB5121610",
+         "KB5121611"
+        ]
+       },
+       {
+        "cve": "CVE-2026-69641",
+        "title": "Microsoft Exchange Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5121608",
+         "KB5121609",
+         "KB5121610",
+         "KB5121611"
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "month": "2026-Aug",
+   "released": "2026-08-11",
+   "fix_count": 7,
+   "updates": [
+    {
+     "kb": "KB5121573",
+     "build": "15.02.2562.046",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5103212"
+     ]
+    },
+    {
+     "kb": "KB5121574",
+     "build": "15.02.1748.049",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5103213"
+     ]
+    },
+    {
+     "kb": "KB5121575",
+     "build": "15.02.1544.044",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5103214"
+     ]
+    },
+    {
+     "kb": "KB5121576",
+     "build": "15.01.2507.072",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5103215"
+     ]
+    }
+   ],
+   "areas": {
+    "email": {
+     "count": 7,
+     "components": {
+      "Microsoft Exchange Server": [
+       {
+        "cve": "CVE-2026-62910",
+        "title": "Microsoft Exchange Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5121573",
+         "KB5121574",
+         "KB5121575",
+         "KB5121576"
+        ]
+       },
+       {
+        "cve": "CVE-2026-62911",
+        "title": "Microsoft Exchange Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Critical",
+        "kbs": [
+         "KB5121573",
+         "KB5121574",
+         "KB5121575",
+         "KB5121576"
+        ]
+       },
+       {
+        "cve": "CVE-2026-62912",
+        "title": "Microsoft Exchange Server Denial of Service Vulnerability",
+        "impact": "Denial of Service",
+        "severity": "Important",
+        "kbs": [
+         "KB5121573",
+         "KB5121574",
+         "KB5121575",
+         "KB5121576"
+        ]
+       },
+       {
+        "cve": "CVE-2026-62913",
+        "title": "Microsoft Exchange Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5121573",
+         "KB5121574",
+         "KB5121575",
+         "KB5121576"
+        ]
+       },
+       {
+        "cve": "CVE-2026-62914",
+        "title": "Microsoft Exchange Server Spoofing Vulnerability",
+        "impact": "Spoofing",
+        "severity": "Important",
+        "kbs": [
+         "KB5121573",
+         "KB5121574",
+         "KB5121575",
+         "KB5121576"
+        ]
+       },
+       {
+        "cve": "CVE-2026-62915",
+        "title": "Microsoft Exchange Server Security Feature Bypass Vulnerability",
+        "impact": "Security Feature Bypass",
+        "severity": "Important",
+        "kbs": [
+         "KB5121573",
+         "KB5121574",
+         "KB5121575",
+         "KB5121576"
+        ]
+       },
+       {
+        "cve": "CVE-2026-65813",
+        "title": "Microsoft Exchange Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5121573",
+         "KB5121574",
+         "KB5121575",
+         "KB5121576"
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "month": "2026-Jul",
+   "released": "2026-07-14",
+   "fix_count": 4,
+   "updates": [],
+   "areas": {
+    "email": {
+     "count": 4,
+     "components": {
+      "Microsoft Exchange Server": [
+       {
+        "cve": "CVE-2026-55005",
+        "title": "Microsoft Exchange Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5103212",
+         "KB5103213",
+         "KB5103214",
+         "KB5103215"
+        ]
+       },
+       {
+        "cve": "CVE-2026-55006",
+        "title": "Microsoft Exchange Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5103212",
+         "KB5103213",
+         "KB5103214",
+         "KB5103215"
+        ]
+       },
+       {
+        "cve": "CVE-2026-55008",
+        "title": "Microsoft Exchange Server Spoofing Vulnerability",
+        "impact": "Spoofing",
+        "severity": "Critical",
+        "kbs": [
+         "KB5103212",
+         "KB5103213",
+         "KB5103214",
+         "KB5103215"
+        ]
+       },
+       {
+        "cve": "CVE-2026-55009",
+        "title": "Microsoft Exchange Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5103212",
+         "KB5103213",
+         "KB5103214",
+         "KB5103215"
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "month": "2026-Jun",
+   "released": "2026-06-09",
+   "fix_count": 7,
+   "updates": [
+    {
+     "kb": "KB5103212",
+     "build": "15.02.2562.045",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5094139"
+     ]
+    },
+    {
+     "kb": "KB5103213",
+     "build": "15.02.1748.048",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5094140"
+     ]
+    },
+    {
+     "kb": "KB5103214",
+     "build": "15.02.1544.043",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5094142"
+     ]
+    },
+    {
+     "kb": "KB5103215",
+     "build": "15.01.2507.071",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5094144"
+     ]
+    }
+   ],
+   "areas": {
+    "email": {
+     "count": 7,
+     "components": {
+      "Microsoft Exchange Server": [
+       {
+        "cve": "CVE-2026-45500",
+        "title": "Microsoft Exchange Server Spoofing Vulnerability",
+        "impact": "Spoofing",
+        "severity": "Important",
+        "kbs": [
+         "KB5103212",
+         "KB5103213",
+         "KB5103214",
+         "KB5103215"
+        ]
+       },
+       {
+        "cve": "CVE-2026-45501",
+        "title": "Microsoft Exchange Server Spoofing Vulnerability",
+        "impact": "Spoofing",
+        "severity": "Important",
+        "kbs": [
+         "KB5103212",
+         "KB5103213",
+         "KB5103214",
+         "KB5103215"
+        ]
+       },
+       {
+        "cve": "CVE-2026-45502",
+        "title": "Microsoft Exchange Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5103212",
+         "KB5103213",
+         "KB5103214",
+         "KB5103215"
+        ]
+       },
+       {
+        "cve": "CVE-2026-45503",
+        "title": "Microsoft Exchange Server Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5103212",
+         "KB5103213",
+         "KB5103214",
+         "KB5103215"
+        ]
+       },
+       {
+        "cve": "CVE-2026-45504",
+        "title": "Microsoft Exchange Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5103212",
+         "KB5103213",
+         "KB5103214",
+         "KB5103215"
+        ]
+       },
+       {
+        "cve": "CVE-2026-45583",
+        "title": "Microsoft Exchange Server Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5103212",
+         "KB5103213",
+         "KB5103214",
+         "KB5103215"
+        ]
+       },
+       {
+        "cve": "CVE-2026-47631",
+        "title": "Microsoft Exchange Server Spoofing Vulnerability",
+        "impact": "Spoofing",
+        "severity": "Important",
+        "kbs": [
+         "KB5103212",
+         "KB5103213",
+         "KB5103214",
+         "KB5103215"
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "month": "2026-May",
+   "released": "2026-05-12",
+   "fix_count": 1,
+   "updates": [
+    {
+     "kb": "KB5094139",
+     "build": "15.02.2562.043",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5066366"
+     ]
+    },
+    {
+     "kb": "KB5094140",
+     "build": "15.02.1748.046",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5066367"
+     ]
+    },
+    {
+     "kb": "KB5094142",
+     "build": "15.02.1544.041",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5066368"
+     ]
+    },
+    {
+     "kb": "KB5094144",
+     "build": "15.01.2507.069",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5066369"
+     ]
+    }
+   ],
+   "areas": {
+    "email": {
+     "count": 1,
+     "components": {
+      "Microsoft Exchange Server": [
+       {
+        "cve": "CVE-2026-42897",
+        "title": "Microsoft Exchange Server Spoofing Vulnerability",
+        "impact": "Spoofing",
+        "severity": "Critical",
+        "kbs": [
+         "KB5094139",
+         "KB5094140",
+         "KB5094142",
+         "KB5094144"
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "month": "2026-Feb",
+   "released": "2026-02-10",
+   "fix_count": 1,
+   "updates": [
+    {
+     "kb": "KB5074992",
+     "build": "15.02.2562.037",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5071876"
+     ]
+    },
+    {
+     "kb": "KB5074993",
+     "build": "15.02.1748.043",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5017260"
+     ]
+    },
+    {
+     "kb": "KB5074994",
+     "build": "15.02.1544.039",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5071874"
+     ]
+    },
+    {
+     "kb": "KB5074995",
+     "build": "15.01.2507.066",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5071873"
+     ]
+    }
+   ],
+   "areas": {
+    "email": {
+     "count": 1,
+     "components": {
+      "Microsoft Exchange Server": [
+       {
+        "cve": "CVE-2026-21527",
+        "title": "Microsoft Exchange Server Spoofing Vulnerability",
+        "impact": "Spoofing",
+        "severity": "Important",
+        "kbs": [
+         "KB5074992",
+         "KB5074993",
+         "KB5074994",
+         "KB5074995"
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "month": "2025-Dec",
+   "released": "2025-12-09",
+   "fix_count": 2,
+   "updates": [
+    {
+     "kb": "KB5071873",
+     "build": "15.01.2507.063",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5071874",
+     "build": "15.02.1544.037",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5071875",
+     "build": "15.02.1748.042",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5071876",
+     "build": "15.02.2562.035",
+     "type": "Security Update",
+     "supersedes": []
+    }
+   ],
+   "areas": {
+    "email": {
+     "count": 2,
+     "components": {
+      "Microsoft Exchange Server": [
+       {
+        "cve": "CVE-2025-64667",
+        "title": "Microsoft Exchange Server Spoofing Vulnerability",
+        "impact": "Spoofing",
+        "severity": "Important",
+        "kbs": [
+         "KB5071873",
+         "KB5071874",
+         "KB5071875",
+         "KB5071876"
+        ]
+       },
+       {
+        "cve": "CVE-2025-64666",
+        "title": "Microsoft Exchange Server Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5071873",
+         "KB5071874",
+         "KB5071875",
+         "KB5071876"
+        ]
+       }
+      ]
+     }
+    }
+   }
+  }
+ ]
+}

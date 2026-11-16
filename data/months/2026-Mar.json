@@ -1,22 +1,77 @@
 {
  "month": "2026-Mar",
  "released": "2026-03-10",
- "fix_count": 40,
+ "fix_count": 50,
  "by_tag": {
+  "network": 10,
   "kernel-drivers": 10,
-  "network": 8,
+  "apps-desktop": 7,
   "graphics": 6,
-  "apps-desktop": 6,
   "storage": 5,
+  "other": 4,
   "server-roles": 4,
-  "other": 3,
+  "database": 3,
   "file-sharing": 3,
+  "sign-in": 3,
   "remote-access": 3,
-  "sign-in": 2,
   "print": 2,
+  "office-apps": 2,
   "management": 1
  },
  "fixes": [
+  {
+   "cve": "CVE-2026-21262",
+   "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+   "component": "SQL Server",
+   "tags": [
+    "database"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "sql-server": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "sql-server": [
+     "KB5077464",
+     "KB5077465",
+     "KB5077466",
+     "KB5077468",
+     "KB5077469",
+     "KB5077470",
+     "KB5077471",
+     "KB5077472",
+     "KB5077473",
+     "KB5077474"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21262"
+  },
+  {
+   "cve": "CVE-2026-23667",
+   "title": "Broadcast DVR Elevation of Privilege Vulnerability",
+   "component": "Broadcast DVR",
+   "tags": [
+    "apps-desktop"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "win11-24h2": [
+     "KB5079420",
+     "KB5079473"
+    ],
+    "win11-25h2": [
+     "KB5079420",
+     "KB5079473"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23667"
+  },
   {
    "cve": "CVE-2026-23668",
    "title": "Windows Graphics Component Elevation of Privilege Vulnerability",
@@ -44,6 +99,49 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23668"
+  },
+  {
+   "cve": "CVE-2026-23669",
+   "title": "RPC Runtime Library Remote Code Execution Vulnerability",
+   "component": "RPC Runtime",
+   "tags": [
+    "network"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5078938"
+    ],
+    "server-2019": [
+     "KB5078752"
+    ],
+    "server-2022": [
+     "KB5078737",
+     "KB5078766"
+    ],
+    "server-2025": [
+     "KB5078736",
+     "KB5078740"
+    ],
+    "win11-24h2": [
+     "KB5079420",
+     "KB5079473"
+    ],
+    "win11-25h2": [
+     "KB5079420",
+     "KB5079473"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23669"
   },
   {
    "cve": "CVE-2026-23671",
@@ -218,6 +316,31 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23674"
+  },
+  {
+   "cve": "CVE-2026-24282",
+   "title": "Push message Routing Service Elevation of Privilege Vulnerability",
+   "component": "Push Message Routing Service",
+   "tags": [
+    "network"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "win11-24h2": [
+     "KB5079420",
+     "KB5079473"
+    ],
+    "win11-25h2": [
+     "KB5079420",
+     "KB5079473"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-24282"
   },
   {
    "cve": "CVE-2026-24283",
@@ -1127,6 +1250,49 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-25176"
   },
   {
+   "cve": "CVE-2026-25177",
+   "title": "Active Directory Domain Services Elevation of Privilege Vulnerability",
+   "component": "Active Directory Domain Services",
+   "tags": [
+    "sign-in"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5078938"
+    ],
+    "server-2019": [
+     "KB5078752"
+    ],
+    "server-2022": [
+     "KB5078737",
+     "KB5078766"
+    ],
+    "server-2025": [
+     "KB5078736",
+     "KB5078740"
+    ],
+    "win11-24h2": [
+     "KB5079420",
+     "KB5079473"
+    ],
+    "win11-25h2": [
+     "KB5079420",
+     "KB5079473"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-25177"
+  },
+  {
    "cve": "CVE-2026-25178",
    "title": "Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
    "component": "Windows Ancillary Function Driver for WinSock",
@@ -1387,6 +1553,49 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-25186"
   },
   {
+   "cve": "CVE-2026-25187",
+   "title": "Winlogon Elevation of Privilege Vulnerability",
+   "component": "Winlogon",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5078938"
+    ],
+    "server-2019": [
+     "KB5078752"
+    ],
+    "server-2022": [
+     "KB5078737",
+     "KB5078766"
+    ],
+    "server-2025": [
+     "KB5078736",
+     "KB5078740"
+    ],
+    "win11-24h2": [
+     "KB5079420",
+     "KB5079473"
+    ],
+    "win11-25h2": [
+     "KB5079420",
+     "KB5079473"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-25187"
+  },
+  {
    "cve": "CVE-2026-25188",
    "title": "Windows Telephony Service Elevation of Privilege Vulnerability",
    "component": "Windows Telephony Service",
@@ -1497,6 +1706,25 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-25190"
   },
   {
+   "cve": "CVE-2026-26110",
+   "title": "Microsoft Office Remote Code Execution Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "m365-apps": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002838"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26110"
+  },
+  {
    "cve": "CVE-2026-26111",
    "title": "Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability",
    "component": "Windows Routing and Remote Access Service (RRAS)",
@@ -1540,6 +1768,73 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26111"
+  },
+  {
+   "cve": "CVE-2026-26113",
+   "title": "Microsoft Office Remote Code Execution Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "m365-apps": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002848"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26113"
+  },
+  {
+   "cve": "CVE-2026-26115",
+   "title": "SQL Server Elevation of Privilege Vulnerability",
+   "component": "SQL Server",
+   "tags": [
+    "database"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "sql-server": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "sql-server": [
+     "KB5077464",
+     "KB5077465",
+     "KB5077466",
+     "KB5077468",
+     "KB5077469",
+     "KB5077470",
+     "KB5077471",
+     "KB5077472",
+     "KB5077473",
+     "KB5077474"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26115"
+  },
+  {
+   "cve": "CVE-2026-26116",
+   "title": "SQL Server Elevation of Privilege Vulnerability",
+   "component": "SQL Server",
+   "tags": [
+    "database"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "sql-server": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "sql-server": [
+     "KB5077466",
+     "KB5077468"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26116"
   },
   {
    "cve": "CVE-2026-26128",

@@ -1,17 +1,20 @@
 {
  "month": "2025-Dec",
  "released": "2025-12-09",
- "fix_count": 35,
+ "fix_count": 42,
  "by_tag": {
-  "storage": 11,
+  "storage": 13,
   "kernel-drivers": 9,
   "graphics": 7,
   "server-roles": 7,
   "remote-access": 5,
   "apps-desktop": 5,
   "network": 4,
+  "email": 2,
+  "office-apps": 2,
   "file-sharing": 1,
   "install-update": 1,
+  "other": 1,
   "security": 1,
   "management": 1
  },
@@ -201,6 +204,36 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62466"
+  },
+  {
+   "cve": "CVE-2025-62469",
+   "title": "Microsoft Brokering File System Elevation of Privilege Vulnerability",
+   "component": "Microsoft Brokering File System",
+   "tags": [
+    "storage"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2025": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-24h2": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-25h2": [
+     "KB5072014",
+     "KB5072033"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62469"
   },
   {
    "cve": "CVE-2025-62470",
@@ -423,6 +456,36 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62571"
   },
   {
+   "cve": "CVE-2025-62572",
+   "title": "Application Information Service Elevation of Privilege Vulnerability",
+   "component": "Application Information Services",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2025": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-24h2": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-25h2": [
+     "KB5072014",
+     "KB5072033"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62572"
+  },
+  {
    "cve": "CVE-2025-62573",
    "title": "DirectX Graphics Kernel Elevation of Privilege Vulnerability",
    "component": "Windows DirectX",
@@ -503,6 +566,50 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64658"
+  },
+  {
+   "cve": "CVE-2025-64667",
+   "title": "Microsoft Exchange Server Spoofing Vulnerability",
+   "component": "Microsoft Exchange Server",
+   "tags": [
+    "email"
+   ],
+   "impact": "Spoofing",
+   "severity": {
+    "exchange": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "exchange": [
+     "KB5071873",
+     "KB5071874",
+     "KB5071875",
+     "KB5071876"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64667"
+  },
+  {
+   "cve": "CVE-2025-64666",
+   "title": "Microsoft Exchange Server Elevation of Privilege Vulnerability",
+   "component": "Microsoft Exchange Server",
+   "tags": [
+    "email"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "exchange": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "exchange": [
+     "KB5071873",
+     "KB5071874",
+     "KB5071875",
+     "KB5071876"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64666"
   },
   {
    "cve": "CVE-2025-64670",
@@ -1027,6 +1134,44 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62474"
   },
   {
+   "cve": "CVE-2025-62554",
+   "title": "Microsoft Office Remote Code Execution Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "m365-apps": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002819"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62554"
+  },
+  {
+   "cve": "CVE-2025-62557",
+   "title": "Microsoft Office Remote Code Execution Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "m365-apps": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002819"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62557"
+  },
+  {
    "cve": "CVE-2025-62567",
    "title": "Windows Hyper-V Denial of Service Vulnerability",
    "component": "Windows Hyper-V",
@@ -1069,6 +1214,36 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62567"
+  },
+  {
+   "cve": "CVE-2025-62569",
+   "title": "Microsoft Brokering File System Elevation of Privilege Vulnerability",
+   "component": "Microsoft Brokering File System",
+   "tags": [
+    "storage"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2025": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-24h2": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-25h2": [
+     "KB5072014",
+     "KB5072033"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62569"
   },
   {
    "cve": "CVE-2025-62570",

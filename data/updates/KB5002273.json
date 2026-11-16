@@ -1,0 +1,18 @@
+{
+ "kb": "KB5002273",
+ "month": "2026-Jul",
+ "released": "2026-07-14",
+ "type": "Security Update",
+ "restart": "Maybe",
+ "catalog_url": "https://www.microsoft.com/en-us/download/details.aspx?id=108731",
+ "versions": {
+  "m365-apps": "16.0.5561.1000"
+ },
+ "supersedes": [
+  "KB5002112"
+ ],
+ "fixes": [
+  "CVE-2026-47290",
+  "CVE-2026-55017"
+ ]
+}

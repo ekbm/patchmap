@@ -1,0 +1,17 @@
+{
+ "kb": "KB5073031",
+ "month": "2026-Jan",
+ "released": "2026-01-13",
+ "type": "Security Update",
+ "restart": "Maybe",
+ "catalog_url": "https://www.microsoft.com/en-us/download/details.aspx?id=108527",
+ "versions": {
+  "sql-server": "16.0.1165.1"
+ },
+ "supersedes": [
+  "KB5068407"
+ ],
+ "fixes": [
+  "CVE-2026-20803"
+ ]
+}

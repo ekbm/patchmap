@@ -1,0 +1,18 @@
+{
+ "kb": "KB5002819",
+ "month": "2025-Dec",
+ "released": "2025-12-09",
+ "type": "Security Update",
+ "restart": "Maybe",
+ "catalog_url": "https://www.microsoft.com/en-us/download/details.aspx?id=108482",
+ "versions": {
+  "m365-apps": "16.0.5530.1001"
+ },
+ "supersedes": [
+  "KB5002809"
+ ],
+ "fixes": [
+  "CVE-2025-62554",
+  "CVE-2025-62557"
+ ]
+}

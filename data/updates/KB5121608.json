@@ -1,0 +1,23 @@
+{
+ "kb": "KB5121608",
+ "month": "2026-Sep",
+ "released": "2026-09-08",
+ "type": "Security Update",
+ "restart": "Yes",
+ "catalog_url": "https://www.microsoft.com/en-us/download/details.aspx?id=108825",
+ "versions": {
+  "exchange": "15.02.2562.049"
+ },
+ "supersedes": [],
+ "fixes": [
+  "CVE-2026-55007",
+  "CVE-2026-69355",
+  "CVE-2026-69356",
+  "CVE-2026-69361",
+  "CVE-2026-69375",
+  "CVE-2026-69378",
+  "CVE-2026-69380",
+  "CVE-2026-69382",
+  "CVE-2026-69641"
+ ]
+}

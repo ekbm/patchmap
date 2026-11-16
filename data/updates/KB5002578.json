@@ -1,0 +1,17 @@
+{
+ "kb": "KB5002578",
+ "month": "2026-May",
+ "released": "2026-05-12",
+ "type": "Security Update",
+ "restart": "Maybe",
+ "catalog_url": "https://www.microsoft.com/en-us/download/details.aspx?id=108690",
+ "versions": {
+  "m365-apps": "16.0.5556.1000"
+ },
+ "supersedes": [
+  "KB5002058"
+ ],
+ "fixes": [
+  "CVE-2026-21530"
+ ]
+}

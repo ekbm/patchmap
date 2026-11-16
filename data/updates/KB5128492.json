@@ -1,0 +1,33 @@
+{
+ "kb": "KB5128492",
+ "month": "2026-Oct",
+ "released": "2026-10-13",
+ "type": "Security Update",
+ "restart": "Yes",
+ "catalog_url": "https://www.microsoft.com/download/details.aspx?familyid=05d38ba3-f609-4011-b045-d56a9eb0bccb",
+ "versions": {
+  "sql-server": "17.0.1145.4"
+ },
+ "supersedes": [
+  "KB5122770"
+ ],
+ "fixes": [
+  "CVE-2026-32176",
+  "CVE-2026-65674",
+  "CVE-2026-67625",
+  "CVE-2026-67626",
+  "CVE-2026-67628",
+  "CVE-2026-68883",
+  "CVE-2026-70189",
+  "CVE-2026-85876",
+  "CVE-2026-85886",
+  "CVE-2026-85888",
+  "CVE-2026-85919",
+  "CVE-2026-88081",
+  "CVE-2026-88082",
+  "CVE-2026-88083",
+  "CVE-2026-88085",
+  "CVE-2026-88086",
+  "CVE-2026-88088"
+ ]
+}

@@ -1,19 +1,21 @@
 {
  "month": "2026-Jun",
  "released": "2026-06-09",
- "fix_count": 95,
+ "fix_count": 129,
  "by_tag": {
   "kernel-drivers": 24,
   "network": 22,
   "security": 16,
+  "other": 14,
   "apps-desktop": 14,
-  "other": 9,
-  "graphics": 7,
+  "remote-access": 13,
+  "office-apps": 10,
+  "graphics": 8,
   "server-roles": 7,
+  "email": 7,
   "storage": 6,
   "sign-in": 5,
-  "management": 3,
-  "remote-access": 2
+  "management": 3
  },
  "fixes": [
   {
@@ -174,6 +176,45 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40409"
+  },
+  {
+   "cve": "CVE-2026-41092",
+   "title": "Microsoft Kinect Elevation of Privilege Vulnerability",
+   "component": "Microsoft Kinect",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5094122"
+    ],
+    "server-2019": [
+     "KB5094123"
+    ],
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41092"
   },
   {
    "cve": "CVE-2026-41108",
@@ -563,6 +604,45 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42908"
   },
   {
+   "cve": "CVE-2026-42909",
+   "title": "Remote Desktop Client Remote Code Execution Vulnerability",
+   "component": "Remote Desktop Client",
+   "tags": [
+    "remote-access"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5094122"
+    ],
+    "server-2019": [
+     "KB5094123"
+    ],
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42909"
+  },
+  {
    "cve": "CVE-2026-42910",
    "title": "Windows Hotpatch Monitoring Service Elevation of Privilege Vulnerability",
    "component": "Windows Hotpatch Monitoring Service",
@@ -667,6 +747,37 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42912"
+  },
+  {
+   "cve": "CVE-2026-42913",
+   "title": "Remote Desktop Client Remote Code Execution Vulnerability",
+   "component": "Remote Desktop Client",
+   "tags": [
+    "remote-access"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42913"
   },
   {
    "cve": "CVE-2026-42914",
@@ -1289,6 +1400,84 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42984"
   },
   {
+   "cve": "CVE-2026-42985",
+   "title": "Remote Desktop Client Remote Code Execution Vulnerability",
+   "component": "Remote Desktop Client",
+   "tags": [
+    "remote-access"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2019": "Critical",
+    "server-2022": "Critical",
+    "server-2025": "Critical",
+    "win11-25h2": "Critical",
+    "win11-24h2": "Critical",
+    "server-2016": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5094122"
+    ],
+    "server-2019": [
+     "KB5094123"
+    ],
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42985"
+  },
+  {
+   "cve": "CVE-2026-42986",
+   "title": "Microsoft Graphics Component Elevation of Privilege Vulnerability",
+   "component": "Microsoft Graphics Component",
+   "tags": [
+    "graphics"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5094122"
+    ],
+    "server-2019": [
+     "KB5094123"
+    ],
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42986"
+  },
+  {
    "cve": "CVE-2026-42987",
    "title": "Windows Deployment Services (WDS) Remote Code Execution",
    "component": "Windows Deployment Services",
@@ -1319,6 +1508,45 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42987"
+  },
+  {
+   "cve": "CVE-2026-42989",
+   "title": "Winlogon Elevation of Privilege Vulnerability",
+   "component": "Winlogon",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5094122"
+    ],
+    "server-2019": [
+     "KB5094123"
+    ],
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42989"
   },
   {
    "cve": "CVE-2026-42991",
@@ -1354,6 +1582,154 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42991"
+  },
+  {
+   "cve": "CVE-2026-42992",
+   "title": "Remote Desktop Client Remote Code Execution Vulnerability",
+   "component": "Remote Desktop Client",
+   "tags": [
+    "remote-access"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2019": "Critical",
+    "server-2022": "Critical",
+    "server-2025": "Critical",
+    "win11-25h2": "Critical",
+    "win11-24h2": "Critical",
+    "server-2016": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5094122"
+    ],
+    "server-2019": [
+     "KB5094123"
+    ],
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42992"
+  },
+  {
+   "cve": "CVE-2026-42993",
+   "title": "Remote Desktop Client Remote Code Execution Vulnerability",
+   "component": "Remote Desktop Client",
+   "tags": [
+    "remote-access"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42993"
+  },
+  {
+   "cve": "CVE-2026-44799",
+   "title": "Remote Desktop Client Remote Code Execution Vulnerability",
+   "component": "Remote Desktop Client",
+   "tags": [
+    "remote-access"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2019": "Critical",
+    "server-2022": "Critical",
+    "server-2025": "Critical",
+    "win11-25h2": "Critical",
+    "win11-24h2": "Critical",
+    "server-2016": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5094122"
+    ],
+    "server-2019": [
+     "KB5094123"
+    ],
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44799"
+  },
+  {
+   "cve": "CVE-2026-44801",
+   "title": "Remote Desktop Client Remote Code Execution Vulnerability",
+   "component": "Remote Desktop Client",
+   "tags": [
+    "remote-access"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2019": "Critical",
+    "server-2022": "Critical",
+    "server-2025": "Critical",
+    "win11-25h2": "Critical",
+    "win11-24h2": "Critical",
+    "server-2016": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5094122"
+    ],
+    "server-2019": [
+     "KB5094123"
+    ],
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44801"
   },
   {
    "cve": "CVE-2026-44802",
@@ -1593,6 +1969,177 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44815"
   },
   {
+   "cve": "CVE-2026-44819",
+   "title": "Microsoft Office Remote Code Execution Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "m365-apps": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002878"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44819"
+  },
+  {
+   "cve": "CVE-2026-44821",
+   "title": "Microsoft Office Information Disclosure Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "m365-apps": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002878"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44821"
+  },
+  {
+   "cve": "CVE-2026-44824",
+   "title": "Microsoft Office Remote Code Execution Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "m365-apps": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002878"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44824"
+  },
+  {
+   "cve": "CVE-2026-45461",
+   "title": "Microsoft Office Remote Code Execution Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "m365-apps": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002878"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45461"
+  },
+  {
+   "cve": "CVE-2026-45463",
+   "title": "Microsoft Office Remote Code Execution Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "m365-apps": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002878"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45463"
+  },
+  {
+   "cve": "CVE-2026-45472",
+   "title": "Microsoft Office Remote Code Execution Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "m365-apps": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002878"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45472"
+  },
+  {
+   "cve": "CVE-2026-45474",
+   "title": "Microsoft Office Remote Code Execution Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "m365-apps": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002878"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45474"
+  },
+  {
+   "cve": "CVE-2026-45475",
+   "title": "Microsoft Office Remote Code Execution Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "m365-apps": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002878"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45475"
+  },
+  {
+   "cve": "CVE-2026-45485",
+   "title": "Microsoft Office Information Disclosure Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "m365-apps": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002878"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45485"
+  },
+  {
    "cve": "CVE-2026-45487",
    "title": "Windows Program Compatibility Assistant Service Elevation of Privilege Vulnerability",
    "component": "Windows Program Compatibility Assistant Service",
@@ -1622,6 +2169,138 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45487"
+  },
+  {
+   "cve": "CVE-2026-45500",
+   "title": "Microsoft Exchange Server Spoofing Vulnerability",
+   "component": "Microsoft Exchange Server",
+   "tags": [
+    "email"
+   ],
+   "impact": "Spoofing",
+   "severity": {
+    "exchange": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "exchange": [
+     "KB5103212",
+     "KB5103213",
+     "KB5103214",
+     "KB5103215"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45500"
+  },
+  {
+   "cve": "CVE-2026-45501",
+   "title": "Microsoft Exchange Server Spoofing Vulnerability",
+   "component": "Microsoft Exchange Server",
+   "tags": [
+    "email"
+   ],
+   "impact": "Spoofing",
+   "severity": {
+    "exchange": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "exchange": [
+     "KB5103212",
+     "KB5103213",
+     "KB5103214",
+     "KB5103215"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45501"
+  },
+  {
+   "cve": "CVE-2026-45502",
+   "title": "Microsoft Exchange Server Information Disclosure Vulnerability",
+   "component": "Microsoft Exchange Server",
+   "tags": [
+    "email"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "exchange": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "exchange": [
+     "KB5103212",
+     "KB5103213",
+     "KB5103214",
+     "KB5103215"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45502"
+  },
+  {
+   "cve": "CVE-2026-45503",
+   "title": "Microsoft Exchange Server Information Disclosure Vulnerability",
+   "component": "Microsoft Exchange Server",
+   "tags": [
+    "email"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "exchange": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "exchange": [
+     "KB5103212",
+     "KB5103213",
+     "KB5103214",
+     "KB5103215"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45503"
+  },
+  {
+   "cve": "CVE-2026-45504",
+   "title": "Microsoft Exchange Server Elevation of Privilege Vulnerability",
+   "component": "Microsoft Exchange Server",
+   "tags": [
+    "email"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "exchange": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "exchange": [
+     "KB5103212",
+     "KB5103213",
+     "KB5103214",
+     "KB5103215"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45504"
+  },
+  {
+   "cve": "CVE-2026-45583",
+   "title": "Microsoft Exchange Server Remote Code Execution Vulnerability",
+   "component": "Microsoft Exchange Server",
+   "tags": [
+    "email"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "exchange": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "exchange": [
+     "KB5103212",
+     "KB5103213",
+     "KB5103214",
+     "KB5103215"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45583"
   },
   {
    "cve": "CVE-2026-45586",
@@ -2218,6 +2897,45 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45605"
   },
   {
+   "cve": "CVE-2026-45606",
+   "title": "Microsoft UxTheme Library (uxtheme.dll) Denial of Service Vulnerability",
+   "component": "Microsoft UxTheme Library (uxtheme.dll)",
+   "tags": [
+    "other"
+   ],
+   "impact": "Denial of Service",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5094122"
+    ],
+    "server-2019": [
+     "KB5094123"
+    ],
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45606"
+  },
+  {
    "cve": "CVE-2026-45607",
    "title": "Windows Hyper-V Remote Code Execution Vulnerability",
    "component": "Windows Hyper-V",
@@ -2593,6 +3311,64 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45641"
   },
   {
+   "cve": "CVE-2026-45642",
+   "title": "Microsoft Azure Attestation service and Device Health Attestation Service Spoofing Vulnerability",
+   "component": "Microsoft Azure Attestation service and Device Health Attestation Service",
+   "tags": [
+    "other"
+   ],
+   "impact": "Spoofing",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5094122"
+    ],
+    "server-2019": [
+     "KB5094123"
+    ],
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45642"
+  },
+  {
+   "cve": "CVE-2026-45645",
+   "title": "Microsoft Office Remote Code Execution Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "m365-apps": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002852"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45645"
+  },
+  {
    "cve": "CVE-2026-45648",
    "title": "Windows Active Directory Domain Services Remote Code Execution Vulnerability",
    "component": "Active Directory Domain Services",
@@ -2861,6 +3637,45 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47288"
   },
   {
+   "cve": "CVE-2026-47289",
+   "title": "Remote Desktop Client Remote Code Execution Vulnerability",
+   "component": "Remote Desktop Client",
+   "tags": [
+    "remote-access"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2019": "Critical",
+    "server-2022": "Critical",
+    "server-2025": "Critical",
+    "win11-25h2": "Critical",
+    "win11-24h2": "Critical",
+    "server-2016": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5094122"
+    ],
+    "server-2019": [
+     "KB5094123"
+    ],
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47289"
+  },
+  {
    "cve": "CVE-2026-47291",
    "title": "HTTP.sys Remote Code Execution Vulnerability",
    "component": "Windows HTTP.sys",
@@ -2898,6 +3713,28 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47291"
+  },
+  {
+   "cve": "CVE-2026-47631",
+   "title": "Microsoft Exchange Server Spoofing Vulnerability",
+   "component": "Microsoft Exchange Server",
+   "tags": [
+    "email"
+   ],
+   "impact": "Spoofing",
+   "severity": {
+    "exchange": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "exchange": [
+     "KB5103212",
+     "KB5103213",
+     "KB5103214",
+     "KB5103215"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47631"
   },
   {
    "cve": "CVE-2026-47648",
@@ -2971,6 +3808,76 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47652"
   },
   {
+   "cve": "CVE-2026-47653",
+   "title": "Remote Desktop Client Remote Code Execution Vulnerability",
+   "component": "Remote Desktop Client",
+   "tags": [
+    "remote-access"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5094122"
+    ],
+    "server-2019": [
+     "KB5094123"
+    ],
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47653"
+  },
+  {
+   "cve": "CVE-2026-47654",
+   "title": "Remote Desktop Client Remote Code Execution Vulnerability",
+   "component": "Remote Desktop Client",
+   "tags": [
+    "remote-access"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2019": "Critical",
+    "server-2022": "Critical",
+    "server-2025": "Critical",
+    "server-2016": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5094122"
+    ],
+    "server-2019": [
+     "KB5094123"
+    ],
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47654"
+  },
+  {
    "cve": "CVE-2026-47656",
    "title": "Windows Boot Manager Security Feature Bypass Vulnerability",
    "component": "Windows Boot Manager",
@@ -3008,6 +3915,41 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47656"
+  },
+  {
+   "cve": "CVE-2026-48563",
+   "title": "Remote Desktop Client Remote Code Execution Vulnerability",
+   "component": "Remote Desktop Client",
+   "tags": [
+    "remote-access"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2019": "Critical",
+    "server-2022": "Critical",
+    "server-2025": "Critical",
+    "win11-25h2": "Critical",
+    "win11-24h2": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2019": [
+     "KB5094123"
+    ],
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48563"
   },
   {
    "cve": "CVE-2026-48566",
@@ -3350,6 +4292,45 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48583"
+  },
+  {
+   "cve": "CVE-2026-49160",
+   "title": "HTTP.sys Denial of Service Vulnerability",
+   "component": "HTTP/2",
+   "tags": [
+    "other"
+   ],
+   "impact": "Denial of Service",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5094122"
+    ],
+    "server-2019": [
+     "KB5094123"
+    ],
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-49160"
   },
   {
    "cve": "CVE-2026-50507",

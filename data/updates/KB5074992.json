@@ -1,0 +1,17 @@
+{
+ "kb": "KB5074992",
+ "month": "2026-Feb",
+ "released": "2026-02-10",
+ "type": "Security Update",
+ "restart": "Yes",
+ "catalog_url": "https://www.microsoft.com/en-us/download/details.aspx?id=108556",
+ "versions": {
+  "exchange": "15.02.2562.037"
+ },
+ "supersedes": [
+  "KB5071876"
+ ],
+ "fixes": [
+  "CVE-2026-21527"
+ ]
+}

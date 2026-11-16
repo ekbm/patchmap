@@ -1,0 +1,23 @@
+{
+ "kb": "KB5133453",
+ "month": "2026-Nov",
+ "released": "2026-11-10",
+ "type": "Security Update",
+ "restart": "Yes",
+ "catalog_url": "https://www.microsoft.com/download/details.aspx?familyid=ea6bc0c3-d1d8-4434-85ad-d1f021fc702f",
+ "versions": {
+  "exchange": "15.02.2562.057"
+ },
+ "supersedes": [],
+ "fixes": [
+  "CVE-2026-118149",
+  "CVE-2026-118150",
+  "CVE-2026-118151",
+  "CVE-2026-118152",
+  "CVE-2026-118153",
+  "CVE-2026-118154",
+  "CVE-2026-118157",
+  "CVE-2026-118207",
+  "CVE-2026-118208"
+ ]
+}

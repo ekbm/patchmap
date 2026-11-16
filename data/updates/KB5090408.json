@@ -1,0 +1,15 @@
+{
+ "kb": "KB5090408",
+ "month": "2026-May",
+ "released": "2026-05-12",
+ "type": "Security Update",
+ "restart": "Maybe",
+ "catalog_url": "https://www.microsoft.com/download/details.aspx?id=108665",
+ "versions": {
+  "sql-server": "15.0.2170.1"
+ },
+ "supersedes": [],
+ "fixes": [
+  "CVE-2026-40370"
+ ]
+}

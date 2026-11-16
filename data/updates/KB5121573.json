@@ -1,0 +1,23 @@
+{
+ "kb": "KB5121573",
+ "month": "2026-Aug",
+ "released": "2026-08-11",
+ "type": "Security Update",
+ "restart": "Yes",
+ "catalog_url": "https://www.microsoft.com/en-us/download/details.aspx?id=108785",
+ "versions": {
+  "exchange": "15.02.2562.046"
+ },
+ "supersedes": [
+  "KB5103212"
+ ],
+ "fixes": [
+  "CVE-2026-62910",
+  "CVE-2026-62911",
+  "CVE-2026-62912",
+  "CVE-2026-62913",
+  "CVE-2026-62914",
+  "CVE-2026-62915",
+  "CVE-2026-65813"
+ ]
+}

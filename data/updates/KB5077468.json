@@ -1,0 +1,19 @@
+{
+ "kb": "KB5077468",
+ "month": "2026-Mar",
+ "released": "2026-03-10",
+ "type": "Security Update",
+ "restart": "Maybe",
+ "catalog_url": "https://www.microsoft.com/download/details.aspx?id=108589",
+ "versions": {
+  "sql-server": "17.0.1105.2"
+ },
+ "supersedes": [
+  "KB5073177"
+ ],
+ "fixes": [
+  "CVE-2026-21262",
+  "CVE-2026-26115",
+  "CVE-2026-26116"
+ ]
+}

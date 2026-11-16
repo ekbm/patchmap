@@ -1,24 +1,65 @@
 {
  "month": "2026-Jan",
  "released": "2026-01-13",
- "fix_count": 81,
+ "fix_count": 98,
  "by_tag": {
-  "kernel-drivers": 18,
+  "kernel-drivers": 19,
   "management": 15,
+  "other": 12,
+  "graphics": 10,
   "network": 10,
   "apps-desktop": 10,
   "sign-in": 9,
-  "graphics": 8,
   "security": 7,
   "file-sharing": 7,
   "server-roles": 5,
   "storage": 4,
-  "other": 3,
+  "office-apps": 4,
   "remote-access": 2,
+  "database": 1,
   "print": 1,
   "install-update": 1
  },
  "fixes": [
+  {
+   "cve": "CVE-2023-31096",
+   "title": "MITRE: CVE-2023-31096 Windows Agere Soft Modem Driver Elevation of Privilege Vulnerability",
+   "component": "Agere Windows Modem Driver",
+   "tags": [
+    "kernel-drivers"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5073722"
+    ],
+    "server-2019": [
+     "KB5073723"
+    ],
+    "server-2022": [
+     "KB5073457"
+    ],
+    "server-2025": [
+     "KB5073379"
+    ],
+    "win11-24h2": [
+     "KB5074109"
+    ],
+    "win11-25h2": [
+     "KB5074109"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-31096"
+  },
   {
    "cve": "CVE-2024-55414",
    "title": "Windows Motorola Soft Modem Driver Elevation of Privilege Vulnerability",
@@ -91,6 +132,27 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0386"
   },
   {
+   "cve": "CVE-2026-20803",
+   "title": "Microsoft SQL Server Elevation of Privilege Vulnerability",
+   "component": "SQL Server",
+   "tags": [
+    "database"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "sql-server": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "sql-server": [
+     "KB5072936",
+     "KB5073031",
+     "KB5073177"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20803"
+  },
+  {
    "cve": "CVE-2026-20804",
    "title": "Windows Hello Tampering Vulnerability",
    "component": "Windows Hello",
@@ -128,6 +190,45 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20804"
+  },
+  {
+   "cve": "CVE-2026-20805",
+   "title": "Desktop Window Manager Information Disclosure Vulnerability",
+   "component": "Desktop Window Manager",
+   "tags": [
+    "graphics"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5073722"
+    ],
+    "server-2019": [
+     "KB5073723"
+    ],
+    "server-2022": [
+     "KB5073457"
+    ],
+    "server-2025": [
+     "KB5073379"
+    ],
+    "win11-24h2": [
+     "KB5074109"
+    ],
+    "win11-25h2": [
+     "KB5074109"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20805"
   },
   {
    "cve": "CVE-2026-20808",
@@ -324,6 +425,33 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20814"
+  },
+  {
+   "cve": "CVE-2026-20815",
+   "title": "Capability Access Management Service (camsvc) Elevation of Privilege Vulnerability",
+   "component": "Capability Access Management Service (camsvc)",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2025": [
+     "KB5073379"
+    ],
+    "win11-24h2": [
+     "KB5074109"
+    ],
+    "win11-25h2": [
+     "KB5074109"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20815"
   },
   {
    "cve": "CVE-2026-20816",
@@ -682,6 +810,84 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20825"
   },
   {
+   "cve": "CVE-2026-20826",
+   "title": "Tablet Windows User Interface (TWINUI) Subsystem Information Disclosure Vulnerability",
+   "component": "Tablet Windows User Interface (TWINUI) Subsystem",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5073722"
+    ],
+    "server-2019": [
+     "KB5073723"
+    ],
+    "server-2022": [
+     "KB5073457"
+    ],
+    "server-2025": [
+     "KB5073379"
+    ],
+    "win11-24h2": [
+     "KB5074109"
+    ],
+    "win11-25h2": [
+     "KB5074109"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20826"
+  },
+  {
+   "cve": "CVE-2026-20827",
+   "title": "Tablet Windows User Interface (TWINUI) Subsystem Information Disclosure Vulnerability",
+   "component": "Tablet Windows User Interface (TWINUI) Subsystem",
+   "tags": [
+    "other"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5073722"
+    ],
+    "server-2019": [
+     "KB5073723"
+    ],
+    "server-2022": [
+     "KB5073457"
+    ],
+    "server-2025": [
+     "KB5073379"
+    ],
+    "win11-24h2": [
+     "KB5074109"
+    ],
+    "win11-25h2": [
+     "KB5074109"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20827"
+  },
+  {
    "cve": "CVE-2026-20828",
    "title": "Windows rndismp6.sys Information Disclosure Vulnerability",
    "component": "Windows Internet Connection Sharing (ICS)",
@@ -754,6 +960,25 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20829"
+  },
+  {
+   "cve": "CVE-2026-20830",
+   "title": "Capability Access Management Service (camsvc) Elevation of Privilege Vulnerability",
+   "component": "Capability Access Management Service (camsvc)",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2025": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2025": [
+     "KB5073379"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20830"
   },
   {
    "cve": "CVE-2026-20831",
@@ -903,6 +1128,33 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20834"
+  },
+  {
+   "cve": "CVE-2026-20835",
+   "title": "Capability Access Management Service (camsvc) Information Disclosure Vulnerability",
+   "component": "Capability Access Management Service (camsvc)",
+   "tags": [
+    "other"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2025": [
+     "KB5073379"
+    ],
+    "win11-24h2": [
+     "KB5074109"
+    ],
+    "win11-25h2": [
+     "KB5074109"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20835"
   },
   {
    "cve": "CVE-2026-20836",
@@ -1315,6 +1567,33 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20849"
+  },
+  {
+   "cve": "CVE-2026-20851",
+   "title": "Capability Access Management Service (camsvc) Information Disclosure Vulnerability",
+   "component": "Capability Access Management Service (camsvc)",
+   "tags": [
+    "other"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2025": [
+     "KB5073379"
+    ],
+    "win11-24h2": [
+     "KB5074109"
+    ],
+    "win11-25h2": [
+     "KB5074109"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20851"
   },
   {
    "cve": "CVE-2026-20852",
@@ -1931,6 +2210,37 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20870"
+  },
+  {
+   "cve": "CVE-2026-20871",
+   "title": "Desktop Window Manager Elevation of Privilege Vulnerability",
+   "component": "Desktop Window Manager",
+   "tags": [
+    "graphics"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5073457"
+    ],
+    "server-2025": [
+     "KB5073379"
+    ],
+    "win11-24h2": [
+     "KB5074109"
+    ],
+    "win11-25h2": [
+     "KB5074109"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20871"
   },
   {
    "cve": "CVE-2026-20872",
@@ -2839,6 +3149,152 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20940"
   },
   {
+   "cve": "CVE-2026-20941",
+   "title": "Host Process for Windows Tasks Elevation of Privilege Vulnerability",
+   "component": "Host Process for Windows Tasks",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2025": [
+     "KB5073379"
+    ],
+    "win11-24h2": [
+     "KB5074109"
+    ],
+    "win11-25h2": [
+     "KB5074109"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20941"
+  },
+  {
+   "cve": "CVE-2026-20943",
+   "title": "Microsoft Office Click-To-Run Remote Code Execution Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "m365-apps": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002826"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20943"
+  },
+  {
+   "cve": "CVE-2026-20952",
+   "title": "Microsoft Office Remote Code Execution Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "m365-apps": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002826"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20952"
+  },
+  {
+   "cve": "CVE-2026-20953",
+   "title": "Microsoft Office Remote Code Execution Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "m365-apps": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002826"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20953"
+  },
+  {
+   "cve": "CVE-2026-20962",
+   "title": "Dynamic Root of Trust for Measurement (DRTM) Information Disclosure Vulnerability",
+   "component": "Dynamic Root of Trust for Measurement (DRTM)",
+   "tags": [
+    "other"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "win11-25h2": "Important",
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2019": [
+     "KB5073723"
+    ],
+    "server-2022": [
+     "KB5073457"
+    ],
+    "server-2025": [
+     "KB5073379"
+    ],
+    "win11-24h2": [
+     "KB5074109"
+    ],
+    "win11-25h2": [
+     "KB5074109"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20962"
+  },
+  {
+   "cve": "CVE-2026-21221",
+   "title": "Capability Access Management Service (camsvc) Elevation of Privilege Vulnerability",
+   "component": "Capability Access Management Service (camsvc)",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2025": [
+     "KB5073379"
+    ],
+    "win11-24h2": [
+     "KB5074109"
+    ],
+    "win11-25h2": [
+     "KB5074109"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21221"
+  },
+  {
    "cve": "CVE-2026-21265",
    "title": "Secure Boot Certificate Expiration Security Feature Bypass Vulnerability",
    "component": "Windows Secure Boot",
@@ -2876,6 +3332,25 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21265"
+  },
+  {
+   "cve": "CVE-2026-21509",
+   "title": "Microsoft Office Security Feature Bypass Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Security Feature Bypass",
+   "severity": {
+    "m365-apps": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002713"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21509"
   }
  ]
 }

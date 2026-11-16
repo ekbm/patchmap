@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Exchange Server</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/exchange.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/exchange.xml</id>
+  <updated>2026-11-10T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:exchange:2026-Nov</id>
+    <title>Exchange Server: November 2026 security update KB5133453</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=exchange&amp;q=KB5133453"/>
+    <category term="monthly-update"/>
+    <summary>KB5133453 (build 15.02.2562.057). 9 security fixes. Biggest areas: email 9.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:exchange:2026-Oct</id>
+    <title>Exchange Server: October 2026 security update KB5128895, KB5128896, KB5128897, KB5128898</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=exchange&amp;q=KB5128895"/>
+    <category term="monthly-update"/>
+    <summary>KB5128895 (build 15.02.2562.056), KB5128896 (build 15.02.1748.055), KB5128897 (build 15.02.1544.050), KB5128898 (build 15.01.2507.077). 6 security fixes. Biggest areas: email 6.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:exchange:2026-Sep</id>
+    <title>Exchange Server: September 2026 security update KB5121608, KB5121609, KB5121610, KB5121611</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=exchange&amp;q=KB5121608"/>
+    <category term="monthly-update"/>
+    <summary>KB5121608 (build 15.02.2562.049), KB5121609 (build 15.02.1748.051), KB5121610 (build 15.02.1544.046), KB5121611 (build 15.01.2507.073). 9 security fixes. Biggest areas: email 9.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:exchange:2026-Aug</id>
+    <title>Exchange Server: August 2026 security update KB5121573, KB5121574, KB5121575, KB5121576</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=exchange&amp;q=KB5121573"/>
+    <category term="monthly-update"/>
+    <summary>KB5121573 (build 15.02.2562.046), KB5121574 (build 15.02.1748.049), KB5121575 (build 15.02.1544.044), KB5121576 (build 15.01.2507.072). 7 security fixes. Biggest areas: email 7.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:exchange:2026-Jul</id>
+    <title>Exchange Server: July 2026 security update</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=exchange&amp;q="/>
+    <category term="monthly-update"/>
+    <summary>update number not listed. 4 security fixes. Biggest areas: email 4.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:exchange:2026-Jun</id>
+    <title>Exchange Server: June 2026 security update KB5103212, KB5103213, KB5103214, KB5103215</title>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=exchange&amp;q=KB5103212"/>
+    <category term="monthly-update"/>
+    <summary>KB5103212 (build 15.02.2562.045), KB5103213 (build 15.02.1748.048), KB5103214 (build 15.02.1544.043), KB5103215 (build 15.01.2507.071). 7 security fixes. Biggest areas: email 7.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:exchange:2026-May</id>
+    <title>Exchange Server: May 2026 security update KB5094139, KB5094140, KB5094142, KB5094144</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=exchange&amp;q=KB5094139"/>
+    <category term="monthly-update"/>
+    <summary>KB5094139 (build 15.02.2562.043), KB5094140 (build 15.02.1748.046), KB5094142 (build 15.02.1544.041), KB5094144 (build 15.01.2507.069). 1 security fixes. Biggest areas: email 1.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:exchange:2026-Feb</id>
+    <title>Exchange Server: February 2026 security update KB5074992, KB5074993, KB5074994, KB5074995</title>
+    <updated>2026-02-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=exchange&amp;q=KB5074992"/>
+    <category term="monthly-update"/>
+    <summary>KB5074992 (build 15.02.2562.037), KB5074993 (build 15.02.1748.043), KB5074994 (build 15.02.1544.039), KB5074995 (build 15.01.2507.066). 1 security fixes. Biggest areas: email 1.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:exchange:2025-Dec</id>
+    <title>Exchange Server: December 2025 security update KB5071873, KB5071874, KB5071875, KB5071876</title>
+    <updated>2025-12-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=exchange&amp;q=KB5071873"/>
+    <category term="monthly-update"/>
+    <summary>KB5071873 (build 15.01.2507.063), KB5071874 (build 15.02.1544.037), KB5071875 (build 15.02.1748.042), KB5071876 (build 15.02.2562.035). 2 security fixes. Biggest areas: email 2.</summary>
+  </entry>
+</feed>

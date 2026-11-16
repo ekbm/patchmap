@@ -37,7 +37,7 @@
     <updated>2026-11-10T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5131077"/>
     <category term="monthly-update"/>
-    <summary>KB5131077 (build 10.0.26100.33730), KB5131080 (build 10.0.26100.33822), KB5135386 (build 10.0.26100.33812). 619 security fixes. Biggest areas: kernel-drivers 131, network 94, graphics 87, apps-desktop 62, server-roles 56.</summary>
+    <summary>KB5131077 (build 10.0.26100.33730), KB5131080 (build 10.0.26100.33822), KB5135386 (build 10.0.26100.33812). 690 security fixes. Biggest areas: kernel-drivers 142, network 99, graphics 98, apps-desktop 70, other 66.</summary>
   </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:issue:ms-5047:fixed</id>
@@ -61,7 +61,7 @@
     <updated>2026-10-13T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5126646"/>
     <category term="monthly-update"/>
-    <summary>KB5126646 (build 10.0.26100.33650). 858 security fixes. Biggest areas: kernel-drivers 229, apps-desktop 122, storage 112, network 104, server-roles 79.</summary>
+    <summary>KB5126646 (build 10.0.26100.33650). 1051 security fixes. Biggest areas: kernel-drivers 252, network 167, apps-desktop 124, server-roles 122, storage 115.</summary>
   </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:issue:ms-4956:fixed</id>
@@ -85,7 +85,7 @@
     <updated>2026-09-08T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5122871"/>
     <category term="monthly-update"/>
-    <summary>KB5122871 (build 10.0.26100.33438). 598 security fixes. Biggest areas: network 103, storage 94, kernel-drivers 89, sign-in 87, security 78.</summary>
+    <summary>KB5122871 (build 10.0.26100.33438). 679 security fixes. Biggest areas: network 106, storage 106, kernel-drivers 103, sign-in 96, apps-desktop 81.</summary>
   </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:update:server-2025:2026-Aug</id>
@@ -93,7 +93,7 @@
     <updated>2026-08-11T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5120228"/>
     <category term="monthly-update"/>
-    <summary>KB5120228 (build 10.0.26100.33222), KB5120233 (build 10.0.26100.33296). 196 security fixes. Biggest areas: network 52, server-roles 28, kernel-drivers 25, storage 21, apps-desktop 20.</summary>
+    <summary>KB5120228 (build 10.0.26100.33222), KB5120233 (build 10.0.26100.33296). 215 security fixes. Biggest areas: network 53, server-roles 28, kernel-drivers 26, graphics 23, storage 22.</summary>
   </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:issue:ms-4891:fixed</id>
@@ -117,7 +117,7 @@
     <updated>2026-07-14T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5099536"/>
     <category term="monthly-update"/>
-    <summary>KB5099536 (build 10.0.26100.33158). 366 security fixes. Biggest areas: kernel-drivers 78, apps-desktop 73, storage 56, network 51, other 25.</summary>
+    <summary>KB5099536 (build 10.0.26100.33158). 388 security fixes. Biggest areas: kernel-drivers 81, apps-desktop 74, storage 58, network 54, other 31.</summary>
   </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:issue:ms-4875:fixed</id>
@@ -133,7 +133,7 @@
     <updated>2026-06-09T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5094125"/>
     <category term="monthly-update"/>
-    <summary>KB5094125 (build 10.0.26100.32995), KB5094126. 93 security fixes. Biggest areas: kernel-drivers 24, network 22, security 16, apps-desktop 14, other 8.</summary>
+    <summary>KB5094125 (build 10.0.26100.32995), KB5094126. 110 security fixes. Biggest areas: kernel-drivers 24, network 22, security 16, apps-desktop 14, other 13.</summary>
   </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:issue:ms-3630:fixed</id>
@@ -149,7 +149,7 @@
     <updated>2026-05-12T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5087423"/>
     <category term="monthly-update"/>
-    <summary>KB5087423 (build 10.0.26100.32772), KB5087539 (build 10.0.26100.32860). 64 security fixes. Biggest areas: network 18, kernel-drivers 17, graphics 11, security 7, storage 6.</summary>
+    <summary>KB5087423 (build 10.0.26100.32772), KB5087539 (build 10.0.26100.32860). 66 security fixes. Biggest areas: network 18, kernel-drivers 17, graphics 11, security 7, storage 6.</summary>
   </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:issue:ms-4833:fixed</id>
@@ -165,7 +165,7 @@
     <updated>2026-04-14T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5082063"/>
     <category term="monthly-update"/>
-    <summary>KB5082063 (build 10.0.26100.32690). 111 security fixes. Biggest areas: network 29, apps-desktop 28, kernel-drivers 25, storage 11, security 8.</summary>
+    <summary>KB5082063 (build 10.0.26100.32690). 122 security fixes. Biggest areas: network 31, apps-desktop 29, kernel-drivers 26, storage 11, security 9.</summary>
   </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:issue:ms-3404:fixed</id>
@@ -181,7 +181,7 @@
     <updated>2026-03-10T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5078736"/>
     <category term="monthly-update"/>
-    <summary>KB5078736 (build 10.0.26100.32463), KB5078740 (build 10.0.26100.32522). 36 security fixes. Biggest areas: kernel-drivers 10, network 8, apps-desktop 6, storage 4, graphics 4.</summary>
+    <summary>KB5078736 (build 10.0.26100.32463), KB5078740 (build 10.0.26100.32522). 39 security fixes. Biggest areas: kernel-drivers 10, network 9, apps-desktop 6, storage 4, other 4.</summary>
   </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:update:server-2025:2026-Feb</id>
@@ -189,7 +189,7 @@
     <updated>2026-02-10T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5075899"/>
     <category term="monthly-update"/>
-    <summary>KB5075899 (build 10.0.26100.32370), KB5075942 (build 10.0.26100.32313). 26 security fixes. Biggest areas: kernel-drivers 13, network 6, server-roles 5, other 2, remote-access 2.</summary>
+    <summary>KB5075899 (build 10.0.26100.32370), KB5075942 (build 10.0.26100.32313). 29 security fixes. Biggest areas: kernel-drivers 13, network 6, server-roles 5, other 4, graphics 2.</summary>
   </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:issue:ms-3760:fixed</id>
@@ -213,7 +213,7 @@
     <updated>2026-01-13T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5073379"/>
     <category term="monthly-update"/>
-    <summary>KB5073379 (build 10.0.26100.32230). 73 security fixes. Biggest areas: management 15, kernel-drivers 13, sign-in 9, apps-desktop 9, network 8.</summary>
+    <summary>KB5073379 (build 10.0.26100.32230). 85 security fixes. Biggest areas: management 15, kernel-drivers 14, other 12, sign-in 9, graphics 9.</summary>
   </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:update:server-2025:2025-Dec</id>
@@ -221,7 +221,7 @@
     <updated>2025-12-09T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5066835"/>
     <category term="monthly-update"/>
-    <summary>KB5066835 (build 10.0.26100.6899), KB5068861 (build 10.0.26100.7171), KB5068966 (build 10.0.26100.7092), KB5072014 (build 10.0.26100.7392), KB5072033 (build 10.0.26100.7462), KB5074204 (build 10.0.26100.7392). 33 security fixes. Biggest areas: storage 11, kernel-drivers 9, server-roles 6, graphics 6, remote-access 5.</summary>
+    <summary>KB5066835 (build 10.0.26100.6899), KB5068861 (build 10.0.26100.7171), KB5068966 (build 10.0.26100.7092), KB5072014 (build 10.0.26100.7392), KB5072033 (build 10.0.26100.7462), KB5074204 (build 10.0.26100.7392). 36 security fixes. Biggest areas: storage 13, kernel-drivers 9, server-roles 6, graphics 6, remote-access 5.</summary>
   </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:issue:ms-3692:fixed</id>

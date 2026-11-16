@@ -1,20 +1,64 @@
 {
  "month": "2026-Feb",
  "released": "2026-02-10",
- "fix_count": 27,
+ "fix_count": 31,
  "by_tag": {
   "kernel-drivers": 13,
   "network": 6,
   "server-roles": 5,
-  "graphics": 2,
-  "other": 2,
+  "other": 4,
+  "graphics": 3,
   "remote-access": 2,
   "sign-in": 2,
+  "email": 1,
   "apps-desktop": 1,
   "storage": 1,
   "print": 1
  },
  "fixes": [
+  {
+   "cve": "CVE-2026-21519",
+   "title": "Desktop Window Manager Elevation of Privilege Vulnerability",
+   "component": "Desktop Window Manager",
+   "tags": [
+    "graphics"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5075999"
+    ],
+    "server-2019": [
+     "KB5075904"
+    ],
+    "server-2022": [
+     "KB5075906",
+     "KB5075943"
+    ],
+    "server-2025": [
+     "KB5075899",
+     "KB5075942"
+    ],
+    "win11-24h2": [
+     "KB5077181",
+     "KB5077212"
+    ],
+    "win11-25h2": [
+     "KB5077181",
+     "KB5077212"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21519"
+  },
   {
    "cve": "CVE-2026-21248",
    "title": "Windows Hyper-V Remote Code Execution Vulnerability",
@@ -293,6 +337,71 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21533"
   },
   {
+   "cve": "CVE-2026-21513",
+   "title": "MSHTML Framework Security Feature Bypass Vulnerability",
+   "component": "MSHTML Framework",
+   "tags": [
+    "other"
+   ],
+   "impact": "Security Feature Bypass",
+   "severity": {
+    "server-2022": "Important",
+    "server-2019": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5075999"
+    ],
+    "server-2019": [
+     "KB5075904"
+    ],
+    "server-2022": [
+     "KB5075906",
+     "KB5075943"
+    ],
+    "server-2025": [
+     "KB5075899",
+     "KB5075942"
+    ],
+    "win11-24h2": [
+     "KB5077181",
+     "KB5077212"
+    ],
+    "win11-25h2": [
+     "KB5077181",
+     "KB5077212"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21513"
+  },
+  {
+   "cve": "CVE-2026-21527",
+   "title": "Microsoft Exchange Server Spoofing Vulnerability",
+   "component": "Microsoft Exchange Server",
+   "tags": [
+    "email"
+   ],
+   "impact": "Spoofing",
+   "severity": {
+    "exchange": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "exchange": [
+     "KB5074992",
+     "KB5074993",
+     "KB5074994",
+     "KB5074995"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21527"
+  },
+  {
    "cve": "CVE-2026-21510",
    "title": "Windows Shell Security Feature Bypass Vulnerability",
    "component": "Windows Shell",
@@ -465,6 +574,49 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21255"
+  },
+  {
+   "cve": "CVE-2026-21253",
+   "title": "Mailslot File System Elevation of Privilege Vulnerability",
+   "component": "Mailslot File System",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important",
+    "server-2019": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5075999"
+    ],
+    "server-2019": [
+     "KB5075904"
+    ],
+    "server-2022": [
+     "KB5075906",
+     "KB5075943"
+    ],
+    "server-2025": [
+     "KB5075899",
+     "KB5075942"
+    ],
+    "win11-24h2": [
+     "KB5077181",
+     "KB5077212"
+    ],
+    "win11-25h2": [
+     "KB5077181",
+     "KB5077212"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21253"
   },
   {
    "cve": "CVE-2026-21251",

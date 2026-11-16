@@ -1,0 +1,15 @@
+{
+ "kb": "KB5089900",
+ "month": "2026-May",
+ "released": "2026-05-12",
+ "type": "Security Update",
+ "restart": "Maybe",
+ "catalog_url": "https://www.microsoft.com/download/details.aspx?id=108660",
+ "versions": {
+  "sql-server": "16.0.4252.3"
+ },
+ "supersedes": [],
+ "fixes": [
+  "CVE-2026-40370"
+ ]
+}

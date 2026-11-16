@@ -1,0 +1,18 @@
+{
+ "kb": "KB5102339",
+ "month": "2026-Jul",
+ "released": "2026-07-14",
+ "type": "Security Update",
+ "restart": "Maybe",
+ "catalog_url": "https://www.microsoft.com/download/details.aspx?familyid=6a7d7b5b-d102-4114-b131-899859ecc3cc",
+ "versions": {
+  "sql-server": "13.0.7095.1"
+ },
+ "supersedes": [],
+ "fixes": [
+  "CVE-2026-47295",
+  "CVE-2026-47296",
+  "CVE-2026-54118",
+  "CVE-2026-55002"
+ ]
+}

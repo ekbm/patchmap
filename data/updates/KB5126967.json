@@ -1,0 +1,39 @@
+{
+ "kb": "KB5126967",
+ "month": "2026-Oct",
+ "released": "2026-10-13",
+ "type": "Security Update",
+ "restart": "Yes",
+ "catalog_url": "https://www.microsoft.com/download/details.aspx?familyid=6d582614-a5b0-4cfa-b1f5-ef5c74f5d252",
+ "versions": {
+  "sql-server": "17.0.5015.4"
+ },
+ "supersedes": [
+  "KB5122048"
+ ],
+ "fixes": [
+  "CVE-2026-116933",
+  "CVE-2026-32176",
+  "CVE-2026-65674",
+  "CVE-2026-67625",
+  "CVE-2026-67626",
+  "CVE-2026-67628",
+  "CVE-2026-68883",
+  "CVE-2026-70189",
+  "CVE-2026-83945",
+  "CVE-2026-85876",
+  "CVE-2026-85886",
+  "CVE-2026-85888",
+  "CVE-2026-85919",
+  "CVE-2026-88081",
+  "CVE-2026-88082",
+  "CVE-2026-88083",
+  "CVE-2026-88085",
+  "CVE-2026-88086",
+  "CVE-2026-88088",
+  "CVE-2026-88089",
+  "CVE-2026-94512",
+  "CVE-2026-94520",
+  "CVE-2026-96956"
+ ]
+}

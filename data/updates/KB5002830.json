@@ -1,0 +1,17 @@
+{
+ "kb": "KB5002830",
+ "month": "2026-Jul",
+ "released": "2026-07-14",
+ "type": "Security Update",
+ "restart": "Maybe",
+ "catalog_url": "https://www.microsoft.com/en-us/download/details.aspx?id=108725",
+ "versions": {
+  "m365-apps": "16.0.5561.1001"
+ },
+ "supersedes": [
+  "KB5002818"
+ ],
+ "fixes": [
+  "CVE-2026-55140"
+ ]
+}

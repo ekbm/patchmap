@@ -1,24 +1,53 @@
 {
  "month": "2026-Apr",
  "released": "2026-04-14",
- "fix_count": 116,
+ "fix_count": 132,
  "by_tag": {
-  "network": 30,
-  "apps-desktop": 29,
-  "kernel-drivers": 26,
+  "network": 32,
+  "apps-desktop": 30,
+  "kernel-drivers": 27,
   "storage": 11,
-  "security": 9,
+  "security": 10,
+  "graphics": 9,
   "sign-in": 8,
+  "other": 5,
+  "management": 4,
   "server-roles": 4,
-  "graphics": 4,
   "print": 4,
-  "management": 3,
   "remote-access": 3,
-  "other": 2,
+  "database": 3,
   "activation": 2,
-  "install-update": 1
+  "install-update": 1,
+  "office-apps": 1
  },
  "fixes": [
+  {
+   "cve": "CVE-2023-20585",
+   "title": "AMD: CVE-2023-20585 IOMMU Write Buffer Vulnerability",
+   "component": "Input-Output Memory Management Unit (IOMMU)",
+   "tags": [
+    "other"
+   ],
+   "impact": "Tampering",
+   "severity": {
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2025": [
+     "KB5082063"
+    ],
+    "win11-24h2": [
+     "KB5083769"
+    ],
+    "win11-25h2": [
+     "KB5083769"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-20585"
+  },
   {
    "cve": "CVE-2026-0390",
    "title": "UEFI Secure Boot Security Feature Bypass Vulnerability",
@@ -194,6 +223,34 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-23670"
+  },
+  {
+   "cve": "CVE-2026-25184",
+   "title": "Applocker Filter Driver (applockerfltr.sys) Elevation of Privilege Vulnerability",
+   "component": "Applocker Filter Driver (applockerfltr.sys)",
+   "tags": [
+    "security",
+    "kernel-drivers"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2025": [
+     "KB5082063"
+    ],
+    "win11-24h2": [
+     "KB5083769"
+    ],
+    "win11-25h2": [
+     "KB5083769"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-25184"
   },
   {
    "cve": "CVE-2026-25250",
@@ -830,6 +887,46 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26169"
+  },
+  {
+   "cve": "CVE-2026-26170",
+   "title": "PowerShell Elevation of Privilege Vulnerability",
+   "component": "Microsoft PowerShell",
+   "tags": [
+    "management",
+    "apps-desktop"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5082198"
+    ],
+    "server-2019": [
+     "KB5082123"
+    ],
+    "server-2022": [
+     "KB5082142"
+    ],
+    "server-2025": [
+     "KB5082063"
+    ],
+    "win11-24h2": [
+     "KB5083769"
+    ],
+    "win11-25h2": [
+     "KB5083769"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26170"
   },
   {
    "cve": "CVE-2026-26172",
@@ -1563,6 +1660,45 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-27913"
   },
   {
+   "cve": "CVE-2026-27914",
+   "title": "Microsoft Management Console Elevation of Privilege Vulnerability",
+   "component": "Microsoft Management Console",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5082198"
+    ],
+    "server-2019": [
+     "KB5082123"
+    ],
+    "server-2022": [
+     "KB5082142"
+    ],
+    "server-2025": [
+     "KB5082063"
+    ],
+    "win11-24h2": [
+     "KB5083769"
+    ],
+    "win11-25h2": [
+     "KB5083769"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-27914"
+  },
+  {
    "cve": "CVE-2026-27915",
    "title": "Windows UPnP Device Host Elevation of Privilege Vulnerability",
    "component": "Windows Universal Plug and Play (UPnP) Device Host",
@@ -1871,6 +2007,64 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-27922"
+  },
+  {
+   "cve": "CVE-2026-27923",
+   "title": "Desktop Window Manager Elevation of Privilege Vulnerability",
+   "component": "Desktop Window Manager",
+   "tags": [
+    "graphics"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5082198"
+    ],
+    "server-2019": [
+     "KB5082123"
+    ],
+    "server-2022": [
+     "KB5082142"
+    ],
+    "server-2025": [
+     "KB5082063"
+    ],
+    "win11-24h2": [
+     "KB5083769"
+    ],
+    "win11-25h2": [
+     "KB5083769"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-27923"
+  },
+  {
+   "cve": "CVE-2026-27924",
+   "title": "Desktop Window Manager Elevation of Privilege Vulnerability",
+   "component": "Desktop Window Manager",
+   "tags": [
+    "graphics"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5082142"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-27924"
   },
   {
    "cve": "CVE-2026-27925",
@@ -3182,6 +3376,37 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32151"
   },
   {
+   "cve": "CVE-2026-32152",
+   "title": "Desktop Window Manager Elevation of Privilege Vulnerability",
+   "component": "Desktop Window Manager",
+   "tags": [
+    "graphics"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5082142"
+    ],
+    "server-2025": [
+     "KB5082063"
+    ],
+    "win11-24h2": [
+     "KB5083769"
+    ],
+    "win11-25h2": [
+     "KB5083769"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32152"
+  },
+  {
    "cve": "CVE-2026-32153",
    "title": "Windows Speech Runtime Elevation of Privilege Vulnerability",
    "component": "Microsoft Windows Speech",
@@ -3203,6 +3428,76 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32153"
+  },
+  {
+   "cve": "CVE-2026-32154",
+   "title": "Desktop Window Manager Elevation of Privilege Vulnerability",
+   "component": "Desktop Window Manager",
+   "tags": [
+    "graphics"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5082198"
+    ],
+    "server-2019": [
+     "KB5082123"
+    ],
+    "server-2022": [
+     "KB5082142"
+    ],
+    "server-2025": [
+     "KB5082063"
+    ],
+    "win11-24h2": [
+     "KB5083769"
+    ],
+    "win11-25h2": [
+     "KB5083769"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32154"
+  },
+  {
+   "cve": "CVE-2026-32155",
+   "title": "Desktop Window Manager Elevation of Privilege Vulnerability",
+   "component": "Desktop Window Manager",
+   "tags": [
+    "graphics"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5082142"
+    ],
+    "server-2025": [
+     "KB5082063"
+    ],
+    "win11-24h2": [
+     "KB5083769"
+    ],
+    "win11-25h2": [
+     "KB5083769"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32155"
   },
   {
    "cve": "CVE-2026-32156",
@@ -3493,6 +3788,101 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32165"
   },
   {
+   "cve": "CVE-2026-32167",
+   "title": "SQL Server Elevation of Privilege Vulnerability",
+   "component": "SQL Server",
+   "tags": [
+    "database"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "sql-server": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "sql-server": [
+     "KB5083245",
+     "KB5083252",
+     "KB5084814",
+     "KB5084815",
+     "KB5084816",
+     "KB5084817",
+     "KB5084818",
+     "KB5084819",
+     "KB5084820",
+     "KB5084821"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32167"
+  },
+  {
+   "cve": "CVE-2026-32176",
+   "title": "SQL Server Elevation of Privilege Vulnerability",
+   "component": "SQL Server",
+   "tags": [
+    "database"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "sql-server": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "sql-server": [
+     "KB5083245",
+     "KB5083252",
+     "KB5084814",
+     "KB5084815",
+     "KB5084816",
+     "KB5084817",
+     "KB5084818",
+     "KB5084819",
+     "KB5084820",
+     "KB5084821",
+     "KB5126934",
+     "KB5126967",
+     "KB5128492",
+     "KB5128493",
+     "KB5128494",
+     "KB5128495",
+     "KB5128496",
+     "KB5128497"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32176"
+  },
+  {
+   "cve": "CVE-2026-32181",
+   "title": "Connected User Experiences and Telemetry Service Denial of Service Vulnerability",
+   "component": "Microsoft Windows",
+   "tags": [
+    "other"
+   ],
+   "impact": "Denial of Service",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5082142"
+    ],
+    "server-2025": [
+     "KB5082063"
+    ],
+    "win11-24h2": [
+     "KB5083769"
+    ],
+    "win11-25h2": [
+     "KB5083769"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32181"
+  },
+  {
    "cve": "CVE-2026-32183",
    "title": "Windows Snipping Tool Remote Code Execution Vulnerability",
    "component": "Windows Snipping Tool",
@@ -3532,6 +3922,25 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32183"
   },
   {
+   "cve": "CVE-2026-32190",
+   "title": "Microsoft Office Remote Code Execution Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "m365-apps": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "KB5002859"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32190"
+  },
+  {
    "cve": "CVE-2026-32202",
    "title": "Windows Shell Spoofing Vulnerability",
    "component": "Windows Shell",
@@ -3569,6 +3978,84 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32202"
+  },
+  {
+   "cve": "CVE-2026-32212",
+   "title": "Universal Plug and Play (upnp.dll) Information Disclosure Vulnerability",
+   "component": "Universal Plug and Play (upnp.dll)",
+   "tags": [
+    "network"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5082198"
+    ],
+    "server-2019": [
+     "KB5082123"
+    ],
+    "server-2022": [
+     "KB5082142"
+    ],
+    "server-2025": [
+     "KB5082063"
+    ],
+    "win11-24h2": [
+     "KB5083769"
+    ],
+    "win11-25h2": [
+     "KB5083769"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32212"
+  },
+  {
+   "cve": "CVE-2026-32214",
+   "title": "Universal Plug and Play (upnp.dll) Information Disclosure Vulnerability",
+   "component": "Universal Plug and Play (upnp.dll)",
+   "tags": [
+    "network"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5082198"
+    ],
+    "server-2019": [
+     "KB5082123"
+    ],
+    "server-2022": [
+     "KB5082142"
+    ],
+    "server-2025": [
+     "KB5082063"
+    ],
+    "win11-24h2": [
+     "KB5083769"
+    ],
+    "win11-25h2": [
+     "KB5083769"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32214"
   },
   {
    "cve": "CVE-2026-32215",
@@ -4062,6 +4549,25 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33104"
+  },
+  {
+   "cve": "CVE-2026-33120",
+   "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+   "component": "SQL Server",
+   "tags": [
+    "database"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "sql-server": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "sql-server": [
+     "KB5084815"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33120"
   },
   {
    "cve": "CVE-2026-33824",

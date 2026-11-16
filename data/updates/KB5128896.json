@@ -1,0 +1,19 @@
+{
+ "kb": "KB5128896",
+ "month": "2026-Oct",
+ "released": "2026-10-13",
+ "type": "Security Update",
+ "restart": "No",
+ "catalog_url": "",
+ "versions": {
+  "exchange": "15.02.1748.055"
+ },
+ "supersedes": [],
+ "fixes": [
+  "CVE-2026-70279",
+  "CVE-2026-70571",
+  "CVE-2026-77910",
+  "CVE-2026-87695",
+  "CVE-2026-87696"
+ ]
+}

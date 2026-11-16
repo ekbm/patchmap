@@ -1,0 +1,15 @@
+{
+ "kb": "KB5089899",
+ "month": "2026-May",
+ "released": "2026-05-12",
+ "type": "Security Update",
+ "restart": "Maybe",
+ "catalog_url": "https://www.microsoft.com/download/details.aspx?id=108661",
+ "versions": {
+  "sql-server": "17.0.4040.1"
+ },
+ "supersedes": [],
+ "fixes": [
+  "CVE-2026-40370"
+ ]
+}

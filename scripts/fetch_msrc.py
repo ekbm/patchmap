@@ -39,12 +39,30 @@ SCOPE = {
     "server-2022": ["Windows Server 2022", "Windows Server 2022 (Server Core installation)"],
     "server-2019": ["Windows Server 2019", "Windows Server 2019 (Server Core installation)"],
     "server-2016": ["Windows Server 2016", "Windows Server 2016 (Server Core installation)"],
+    # Other Microsoft products support teams look after. "re:" = a pattern, so new versions
+    # (e.g. a new SQL Server cumulative update) are picked up without editing this list.
+    "exchange": [r"re:^Microsoft Exchange Server (2016|2019|Subscription Edition)"],
+    "sql-server": [r"re:^Microsoft SQL Server 20\d\d for x64-based Systems"],
+    "m365-apps": [r"re:^Microsoft 365 Apps for Enterprise", r"re:^Microsoft Office (2016 \(|2019 for|LTSC 20\d\d for \d)"],
 }
+
+WINDOWS = [v for v in SCOPE if v.startswith(("win", "server"))]
+C2R = "Click-to-Run update"  # stands in for a KB number for Microsoft 365 Apps / Office 2021-2024
+
+
+def product_matches(name, patterns):
+    for pat in patterns:
+        if pat.startswith("re:") and re.search(pat[3:], name):
+            return True
+        if name == pat:
+            return True
+    return False
 
 LABELS = {
     "win11-24h2": "Windows 11 24H2", "win11-25h2": "Windows 11 25H2", "win11-26h2": "Windows 11 26H2",
     "server-2022": "Windows Server 2022", "server-2025": "Windows Server 2025",
     "server-2019": "Windows Server 2019", "server-2016": "Windows Server 2016",
+    "exchange": "Exchange Server", "sql-server": "SQL Server", "m365-apps": "Microsoft 365 Apps and Office",
 }
 
 IMPACT_SUFFIX = re.compile(
@@ -98,18 +116,18 @@ def process_month(month, rules, refresh):
 
     # Microsoft product ID -> our short name, e.g. "12345" -> "server-2022"
     pid_to_ver = {}
-    for short, full_names in SCOPE.items():
+    for short, patterns in SCOPE.items():
         for pid, name in names.items():
-            if name in full_names:
+            if product_matches(name, patterns):
                 pid_to_ver[pid] = short
-    missing = [s for s, f in SCOPE.items() if not any(names.get(p) in f for p in pid_to_ver if pid_to_ver[p] == s)]
+    missing = [s for s in SCOPE if s not in pid_to_ver.values()]
 
     fixes, kbs = [], {}
     for v in doc["Vulnerability"]:
         title = (v.get("Title") or {}).get("Value") or ""  # a few entries have no title
         component = note(v, 7) or IMPACT_SUFFIX.sub("", title)
-        if not (title.startswith(("Windows", "Microsoft Windows")) or component.startswith("Windows")):
-            continue  # skip Linux, Mariner, Office, third-party etc.
+        # (Fixes for products outside SCOPE - Linux, Mariner, Edge, etc. - are dropped below,
+        # because none of their product IDs are in pid_to_ver.)
         # Microsoft's monthly file also re-lists OLDER fixes it edited this month. Only count a fix
         # in the month it was first published (first revision within 7 days of release day).
         first = min((h.get("Date", "")[:10] for h in v.get("RevisionHistory", []) if h.get("Date")), default=released)
@@ -121,14 +139,24 @@ def process_month(month, rules, refresh):
         for t in v.get("Threats", []):
             for pid in t.get("ProductID", []):
                 if pid in pid_to_ver:
+                    desc = (t.get("Description") or {}).get("Value")
+                    if not desc:
+                        continue
                     if t["Type"] == 3:
-                        severity[pid_to_ver[pid]] = t["Description"]["Value"]
+                        severity[pid_to_ver[pid]] = desc
                     elif t["Type"] == 0:
-                        impact = t["Description"]["Value"]
+                        impact = desc
 
         fix_kbs = defaultdict(set)  # our version -> KB numbers that fix this
         for r in v.get("Remediations", []):
             kb = str(r.get("Description", {}).get("Value", ""))
+            if r.get("Type") == 2 and kb == "Release Notes":
+                # Microsoft 365 Apps and Office 2021/2024 update through Click-to-Run: no KB number,
+                # just a link to the release notes. Count it as that month's Office update.
+                for pid in r.get("ProductID", []):
+                    if pid in pid_to_ver:
+                        fix_kbs[pid_to_ver[pid]].add(C2R)
+                continue
             if r.get("Type") != 2 or not re.fullmatch(r"\d{6,7}", kb):
                 continue
             for pid in r.get("ProductID", []):
@@ -157,7 +185,7 @@ def process_month(month, rules, refresh):
             "msrc_url": f"https://msrc.microsoft.com/update-guide/vulnerability/{v['CVE']}",
         }
         fixes.append(fix)
-        for kb in {k for s in fix_kbs.values() for k in s}:
+        for kb in {k for s in fix_kbs.values() for k in s} - {C2R}:
             kbs[kb]["fixes"].append(v["CVE"])
 
     return {"month": month["ID"], "released": released, "fixes": fixes, "kbs": kbs, "missing_versions": missing}
@@ -192,7 +220,7 @@ def assign_kb_months(month_results, all_kbs):
             for kb, n in counts.items():
                 if fixes and n >= len(fixes) / 2 and (ver, kb) not in main:
                     main[(ver, kb)] = r["month"]
-    build_num = lambda b: [int(p) for p in b.split(".")]
+    build_num = lambda b: [int(p) if p.isdigit() else 0 for p in (b or "0").split(".")]
     for ver in SCOPE:
         kbs = sorted((k for k, i in all_kbs.items() if i["versions"].get(ver)), key=lambda k: build_num(all_kbs[k]["versions"][ver]))
         mains = [(build_num(all_kbs[k]["versions"][ver]), main[(ver, k)]) for k in kbs if (ver, k) in main]
@@ -232,10 +260,13 @@ def write_versions(month_results, all_kbs):
                         "cve": f["cve"], "title": f["title"], "impact": f["impact"],
                         "severity": f["severity"].get(ver), "kbs": f["kbs"][ver],
                     })
+            ups = [{"kb": k, "build": all_kbs[k]["versions"].get(ver), "type": all_kbs[k]["type"],
+                    "supersedes": all_kbs[k]["supersedes"]} for k in kbs]
+            if any(C2R in f["kbs"][ver] for f in fixes):
+                ups.append({"kb": C2R, "build": None, "type": "Microsoft 365 Apps / Office 2021-2024", "supersedes": []})
             months_out.append({
                 "month": res["month"], "released": res["released"], "fix_count": len(fixes),
-                "updates": [{"kb": k, "build": all_kbs[k]["versions"].get(ver), "type": all_kbs[k]["type"],
-                             "supersedes": all_kbs[k]["supersedes"]} for k in kbs],
+                "updates": ups,
                 "areas": dict(sorted(areas.items(), key=lambda x: -x[1]["count"])),
             })
         write_json(DATA / "versions" / f"{ver}.json", {"version": ver, "label": LABELS[ver], "months": months_out})
@@ -292,7 +323,7 @@ def main():
     builds = sorted(
         ({"version": ver, "kb": kb, "build": b, "month": info["month"], "released": info["released"], "type": info["type"]}
          for kb, info in all_kbs.items() for ver, b in info["versions"].items() if b),
-        key=lambda x: (x["version"], [int(p) for p in x["build"].split(".")]),
+        key=lambda x: (x["version"], [int(p) if p.isdigit() else 0 for p in x["build"].split(".")]),
     )
     write_json(DATA / "builds.json", builds)
     print(f"Done: {len(all_kbs)} update files, {len(components)} Windows components -> {DATA}")

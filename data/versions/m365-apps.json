@@ -1,0 +1,5371 @@
+{
+ "version": "m365-apps",
+ "label": "Microsoft 365 Apps and Office",
+ "months": [
+  {
+   "month": "2026-Nov",
+   "released": "2026-11-10",
+   "fix_count": 175,
+   "updates": [
+    {
+     "kb": "Click-to-Run update",
+     "build": null,
+     "type": "Microsoft 365 Apps / Office 2021-2024",
+     "supersedes": []
+    }
+   ],
+   "areas": {
+    "office-apps": {
+     "count": 175,
+     "components": {
+      "Microsoft Office PowerPoint": [
+       {
+        "cve": "CVE-2026-109487",
+        "title": "Microsoft PowerPoint Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-112734",
+        "title": "Microsoft Office PowerPoint Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-112737",
+        "title": "Microsoft Office PowerPoint Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-112738",
+        "title": "Microsoft Office PowerPoint Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-116922",
+        "title": "Microsoft Office PowerPoint Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-120001",
+        "title": "Microsoft Office PowerPoint Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-120005",
+        "title": "Microsoft PowerPoint Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       }
+      ],
+      "Microsoft Office Word": [
+       {
+        "cve": "CVE-2026-109491",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-109500",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-109501",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-109503",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-109505",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-110046",
+        "title": "Microsoft Office Word Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-110047",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-110048",
+        "title": "Microsoft Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-110049",
+        "title": "Microsoft Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-110050",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-110051",
+        "title": "Microsoft Office Word Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-110052",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-110053",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-110054",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-110055",
+        "title": "Microsoft Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-110056",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-110061",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-110062",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-110064",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-110066",
+        "title": "Microsoft Office Word Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-110067",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-111285",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-111287",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-111288",
+        "title": "Microsoft Office Word Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-111290",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-111294",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-111295",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-111298",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-111299",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-111302",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-111304",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-111306",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-111307",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-111308",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-111310",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-112714",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-112715",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-112716",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-112717",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-112718",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-112719",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-112720",
+        "title": "Microsoft Office Word Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-112721",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-112722",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-112723",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-112724",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-112726",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-112728",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-112729",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-112730",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-112733",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-112735",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-112739",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-112741",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-113759",
+        "title": "Microsoft Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-116718",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-116719",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-116720",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-116721",
+        "title": "Microsoft Office Word Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-116722",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-116923",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-116925",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-123394",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-124185",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-124233",
+        "title": "Microsoft Office Word Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       }
+      ],
+      "Microsoft Office Access": [
+       {
+        "cve": "CVE-2026-109493",
+        "title": "Microsoft Office Access Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-109498",
+        "title": "Microsoft Office Access Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-110058",
+        "title": "Microsoft Office Access Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-110059",
+        "title": "Microsoft Office Access Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-110060",
+        "title": "Microsoft Office Access Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-111301",
+        "title": "Microsoft Office Access Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-111305",
+        "title": "Microsoft Office Access Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       }
+      ],
+      "Microsoft Office Visio": [
+       {
+        "cve": "CVE-2026-109494",
+        "title": "Microsoft Office Visio Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-109496",
+        "title": "Microsoft Office Visio Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       }
+      ],
+      "Microsoft Office Outlook": [
+       {
+        "cve": "CVE-2026-110043",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-110068",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-111309",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-119993",
+        "title": "Microsoft Office Outlook Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-119995",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-119996",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-119997",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-123375",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-123376",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-123377",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-123378",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-123379",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-123380",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-123381",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-123382",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-123383",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-123384",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-124194",
+        "title": "Microsoft Outlook Spoofing Vulnerability",
+        "impact": "Spoofing",
+        "severity": "Moderate",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-124227",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-124228",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       }
+      ],
+      "Microsoft Office": [
+       {
+        "cve": "CVE-2026-111286",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-111289",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-111291",
+        "title": "Microsoft Office Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-111293",
+        "title": "Microsoft Office Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-112731",
+        "title": "Microsoft Office Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-116717",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-119998",
+        "title": "Microsoft Office Security Feature Bypass Vulnerability",
+        "impact": "Security Feature Bypass",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-120003",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-122198",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       }
+      ],
+      "Microsoft Office Excel": [
+       {
+        "cve": "CVE-2026-111292",
+        "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-116927",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118292",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118293",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118294",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118295",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118296",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118297",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118298",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118299",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118300",
+        "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118301",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118302",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118700",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118701",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118702",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118703",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118704",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118705",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118706",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118707",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118708",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118709",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118710",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118711",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118712",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118713",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118714",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118715",
+        "title": "Microsoft Office Excel Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118716",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118717",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118718",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118719",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118720",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118721",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118722",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118723",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118724",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118725",
+        "title": "Microsoft Office Excel Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118726",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118727",
+        "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118728",
+        "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118729",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118730",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118731",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-118732",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-119986",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-119999",
+        "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-120785",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-120786",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-120788",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-120789",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-120790",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-120791",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-123385",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-123395",
+        "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-124170",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-124174",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-124176",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-124178",
+        "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-124179",
+        "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-124183",
+        "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-124187",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-124229",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       }
+      ],
+      "Microsoft Office OneNote": [
+       {
+        "cve": "CVE-2026-126526",
+        "title": "Microsoft Office OneNote Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       }
+      ]
+     }
+    },
+    "email": {
+     "count": 20,
+     "components": {
+      "Microsoft Office Outlook": [
+       {
+        "cve": "CVE-2026-110043",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-110068",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-111309",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-119993",
+        "title": "Microsoft Office Outlook Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-119995",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-119996",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-119997",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-123375",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-123376",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-123377",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-123378",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-123379",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-123380",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-123381",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-123382",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-123383",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-123384",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-124194",
+        "title": "Microsoft Outlook Spoofing Vulnerability",
+        "impact": "Spoofing",
+        "severity": "Moderate",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-124227",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-124228",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "month": "2026-Oct",
+   "released": "2026-10-13",
+   "fix_count": 163,
+   "updates": [
+    {
+     "kb": "Click-to-Run update",
+     "build": null,
+     "type": "Microsoft 365 Apps / Office 2021-2024",
+     "supersedes": []
+    }
+   ],
+   "areas": {
+    "office-apps": {
+     "count": 162,
+     "components": {
+      "Microsoft Office Excel": [
+       {
+        "cve": "CVE-2026-100209",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-100210",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-100211",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-100212",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-105718",
+        "title": "Microsoft Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-108446",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-69922",
+        "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-70214",
+        "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-70219",
+        "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-70254",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-77902",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88145",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88151",
+        "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88153",
+        "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88154",
+        "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88172",
+        "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88175",
+        "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88184",
+        "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88190",
+        "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88192",
+        "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88195",
+        "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88201",
+        "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97003",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97004",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97007",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97008",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97009",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97010",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97011",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97014",
+        "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97017",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97738",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97739",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97740",
+        "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97741",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97742",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97743",
+        "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97745",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97746",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97747",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97748",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97750",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97751",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97752",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97753",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97754",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97755",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97756",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97757",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97758",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97759",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97760",
+        "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97761",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97762",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97763",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97765",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97766",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97767",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97768",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97769",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97770",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97771",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97772",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97773",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97775",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97776",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97777",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97778",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97779",
+        "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97780",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       }
+      ],
+      "Microsoft Office Access": [
+       {
+        "cve": "CVE-2026-102849",
+        "title": "Microsoft Office Access Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-102850",
+        "title": "Microsoft Office Access Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-105591",
+        "title": "Microsoft Office Access Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-105592",
+        "title": "Microsoft Office Access Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-105593",
+        "title": "Microsoft Office Access Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-105595",
+        "title": "Microsoft Office Access Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-105596",
+        "title": "Microsoft Office Access Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-105597",
+        "title": "Microsoft Office Access Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-105598",
+        "title": "Microsoft Office Access Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-105714",
+        "title": "Microsoft Office Access Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-105716",
+        "title": "Microsoft Office Access Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-105717",
+        "title": "Microsoft Office Access Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-94506",
+        "title": "Microsoft Office Access Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       }
+      ],
+      "Microsoft Office Visio": [
+       {
+        "cve": "CVE-2026-102855",
+        "title": "Microsoft Office Visio Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-102856",
+        "title": "Microsoft Office Visio Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-102857",
+        "title": "Microsoft Office Visio Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       }
+      ],
+      "Microsoft Office Word": [
+       {
+        "cve": "CVE-2026-102867",
+        "title": "Microsoft Office Word Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-105715",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-108426",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-108427",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-108428",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-108429",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-108430",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-108431",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-108432",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-108433",
+        "title": "Microsoft Office Word Security Feature Bypass Vulnerability",
+        "impact": "Security Feature Bypass",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-108434",
+        "title": "Microsoft Office Word Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-108435",
+        "title": "Microsoft Office Word Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-108436",
+        "title": "Microsoft Office Word Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-108437",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-108438",
+        "title": "Microsoft Office Word Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-108439",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-108440",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-108441",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-108442",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-108443",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-108445",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-108447",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-108449",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-108450",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-108451",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-70206",
+        "title": "Microsoft Office Word Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-70220",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-70263",
+        "title": "Microsoft Office Word Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-70268",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-70269",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-70287",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-70300",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-70301",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-70302",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-83891",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88150",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88167",
+        "title": "Microsoft Office Word Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88169",
+        "title": "Microsoft Office Word Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88185",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88186",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88202",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88210",
+        "title": "Microsoft Office Word Security Feature Bypass Vulnerability",
+        "impact": "Security Feature Bypass",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-96995",
+        "title": "Microsoft Office Word Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-96996",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97001",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       }
+      ],
+      "Microsoft Office PowerPoint": [
+       {
+        "cve": "CVE-2026-105599",
+        "title": "Microsoft Office PowerPoint Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-108453",
+        "title": "Microsoft Office PowerPoint Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-108454",
+        "title": "Microsoft Office PowerPoint Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-108455",
+        "title": "Microsoft Office PowerPoint Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-70215",
+        "title": "Microsoft Office PowerPoint Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88144",
+        "title": "Microsoft Office PowerPoint Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88178",
+        "title": "Microsoft Office PowerPoint Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88183",
+        "title": "Microsoft Office PowerPoint Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88203",
+        "title": "Microsoft Office PowerPoint Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88207",
+        "title": "Microsoft Office PowerPoint Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97005",
+        "title": "Microsoft Office PowerPoint Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97744",
+        "title": "Microsoft Office PowerPoint Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       }
+      ],
+      "Microsoft Office": [
+       {
+        "cve": "CVE-2026-108444",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88196",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88197",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       }
+      ],
+      "Microsoft Office Outlook": [
+       {
+        "cve": "CVE-2026-108448",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-70242",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-70256",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-70257",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-70281",
+        "title": "Microsoft Office Outlook Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-70282",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-70291",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88156",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97012",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97016",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97749",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       }
+      ],
+      "Microsoft Office Click-To-Run": [
+       {
+        "cve": "CVE-2026-70276",
+        "title": "Microsoft Office Click-To-Run Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-85340",
+        "title": "Microsoft Office Click-To-Run Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88109",
+        "title": "Microsoft Office Click-To-Run Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       }
+      ],
+      "Microsoft Office OneNote": [
+       {
+        "cve": "CVE-2026-96997",
+        "title": "Microsoft Office OneNote Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97781",
+        "title": "Microsoft Office OneNote Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       }
+      ]
+     }
+    },
+    "email": {
+     "count": 11,
+     "components": {
+      "Microsoft Office Outlook": [
+       {
+        "cve": "CVE-2026-108448",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-70242",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-70256",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-70257",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-70281",
+        "title": "Microsoft Office Outlook Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-70282",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-70291",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-88156",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97012",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97016",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-97749",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       }
+      ]
+     }
+    },
+    "apps-desktop": {
+     "count": 1,
+     "components": {
+      "Windows Rich Text Edit Control": [
+       {
+        "cve": "CVE-2026-70096",
+        "title": "Windows Rich Text Edit Control Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "month": "2026-Sep",
+   "released": "2026-09-08",
+   "fix_count": 105,
+   "updates": [
+    {
+     "kb": "Click-to-Run update",
+     "build": null,
+     "type": "Microsoft 365 Apps / Office 2021-2024",
+     "supersedes": []
+    }
+   ],
+   "areas": {
+    "office-apps": {
+     "count": 104,
+     "components": {
+      "Microsoft Office": [
+       {
+        "cve": "CVE-2026-69285",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002916"
+        ]
+       },
+       {
+        "cve": "CVE-2026-69442",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002916"
+        ]
+       },
+       {
+        "cve": "CVE-2026-69626",
+        "title": "Microsoft Office Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002916"
+        ]
+       },
+       {
+        "cve": "CVE-2026-69632",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-69739",
+        "title": "Microsoft Office Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002916"
+        ]
+       },
+       {
+        "cve": "CVE-2026-77898",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-78505",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002916"
+        ]
+       },
+       {
+        "cve": "CVE-2026-78510",
+        "title": "Microsoft Outlook and Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002916"
+        ]
+       },
+       {
+        "cve": "CVE-2026-78524",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002916"
+        ]
+       },
+       {
+        "cve": "CVE-2026-80076",
+        "title": "Microsoft Office Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-80078",
+        "title": "Microsoft Office Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-80082",
+        "title": "Microsoft Office Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-80087",
+        "title": "Microsoft Office Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002916"
+        ]
+       },
+       {
+        "cve": "CVE-2026-80089",
+        "title": "Microsoft Office Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002916"
+        ]
+       },
+       {
+        "cve": "CVE-2026-80091",
+        "title": "Microsoft Office Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002916"
+        ]
+       },
+       {
+        "cve": "CVE-2026-64918",
+        "title": "Microsoft Office Spoofing Vulnerability",
+        "impact": "Spoofing",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002916"
+        ]
+       }
+      ],
+      "Microsoft Office Access": [
+       {
+        "cve": "CVE-2026-69477",
+        "title": "Microsoft Office Access Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-69529",
+        "title": "Microsoft Office Access Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002913"
+        ]
+       },
+       {
+        "cve": "CVE-2026-69614",
+        "title": "Microsoft Office Access Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-69778",
+        "title": "Microsoft Office Access Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002913"
+        ]
+       }
+      ],
+      "Microsoft Office Word": [
+       {
+        "cve": "CVE-2026-69556",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-69671",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-69686",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-69719",
+        "title": "Microsoft Office Word Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-69722",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-69734",
+        "title": "Microsoft Office Word Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002916"
+        ]
+       },
+       {
+        "cve": "CVE-2026-69759",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-69764",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002916"
+        ]
+       },
+       {
+        "cve": "CVE-2026-72972",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-72973",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-72976",
+        "title": "Microsoft Office Word Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-77901",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-77911",
+        "title": "Microsoft Office Word Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-78502",
+        "title": "Microsoft Office Word Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-78503",
+        "title": "Microsoft Office Word Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-78504",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-78506",
+        "title": "Microsoft Office Word Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-78507",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-78511",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-78512",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB4011160"
+        ]
+       },
+       {
+        "cve": "CVE-2026-78514",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-78517",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-78521",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-78522",
+        "title": "Microsoft Office Word Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-78526",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002898"
+        ]
+       },
+       {
+        "cve": "CVE-2026-80079",
+        "title": "Microsoft Office Word Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-80080",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-80085",
+        "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-80088",
+        "title": "Microsoft Office Word Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002916"
+        ]
+       },
+       {
+        "cve": "CVE-2026-80090",
+        "title": "Microsoft Office Word Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-81952",
+        "title": "Microsoft Word Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002916"
+        ]
+       },
+       {
+        "cve": "CVE-2026-83949",
+        "title": "Microsoft Office Word Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-83951",
+        "title": "Microsoft Office Word Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       }
+      ],
+      "Microsoft Office Outlook": [
+       {
+        "cve": "CVE-2026-69629",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-78509",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-78519",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-78520",
+        "title": "Microsoft Office Outlook Information Disclosure Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-78525",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-80073",
+        "title": "Microsoft Office Outlook Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-80084",
+        "title": "Microsoft Office Outlook Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002898"
+        ]
+       }
+      ],
+      "Microsoft Office PowerPoint": [
+       {
+        "cve": "CVE-2026-69678",
+        "title": "Microsoft Office PowerPoint Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-69767",
+        "title": "Microsoft Office PowerPoint Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-69797",
+        "title": "Microsoft Office PowerPoint Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-72938",
+        "title": "Microsoft Office PowerPoint Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-72956",
+        "title": "Microsoft Office PowerPoint Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-72975",
+        "title": "Microsoft Office PowerPoint Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-72977",
+        "title": "Microsoft Office PowerPoint Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-78513",
+        "title": "Microsoft Office PowerPoint Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-80081",
+        "title": "Microsoft Office PowerPoint Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-80086",
+        "title": "Microsoft Office PowerPoint Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       }
+      ],
+      "Microsoft Office Publisher": [
+       {
+        "cve": "CVE-2026-69742",
+        "title": "Microsoft Office Publisher Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-81385",
+        "title": "Microsoft Office Publisher Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       }
+      ],
+      "Microsoft Office Excel": [
+       {
+        "cve": "CVE-2026-72974",
+        "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002916"
+        ]
+       },
+       {
+        "cve": "CVE-2026-78515",
+        "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002916"
+        ]
+       },
+       {
+        "cve": "CVE-2026-78518",
+        "title": "Microsoft Office Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002904"
+        ]
+       },
+       {
+        "cve": "CVE-2026-81386",
+        "title": "Microsoft Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002904"
+        ]
+       },
+       {
+        "cve": "CVE-2026-81387",
+        "title": "Microsoft Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002904"
+        ]
+       },
+       {
+        "cve": "CVE-2026-81388",
+        "title": "Microsoft Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002904"
+        ]
+       },
+       {
+        "cve": "CVE-2026-81389",
+        "title": "Microsoft Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002904"
+        ]
+       },
+       {
+        "cve": "CVE-2026-81390",
+        "title": "Microsoft Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002904"
+        ]
+       },
+       {
+        "cve": "CVE-2026-81391",
+        "title": "Microsoft Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002904"
+        ]
+       },
+       {
+        "cve": "CVE-2026-81392",
+        "title": "Microsoft Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002904"
+        ]
+       },
+       {
+        "cve": "CVE-2026-81393",
+        "title": "Microsoft Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002904"
+        ]
+       },
+       {
+        "cve": "CVE-2026-81394",
+        "title": "Microsoft Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002904"
+        ]
+       },
+       {
+        "cve": "CVE-2026-81395",
+        "title": "Microsoft Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002904"
+        ]
+       },
+       {
+        "cve": "CVE-2026-81396",
+        "title": "Microsoft Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002904"
+        ]
+       },
+       {
+        "cve": "CVE-2026-81397",
+        "title": "Microsoft Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002904"
+        ]
+       },
+       {
+        "cve": "CVE-2026-81398",
+        "title": "Microsoft Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002904"
+        ]
+       },
+       {
+        "cve": "CVE-2026-81399",
+        "title": "Microsoft Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002904"
+        ]
+       },
+       {
+        "cve": "CVE-2026-81400",
+        "title": "Microsoft Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002904"
+        ]
+       },
+       {
+        "cve": "CVE-2026-81401",
+        "title": "Microsoft Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002904"
+        ]
+       },
+       {
+        "cve": "CVE-2026-81947",
+        "title": "Microsoft Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002904"
+        ]
+       },
+       {
+        "cve": "CVE-2026-81948",
+        "title": "Microsoft Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002904"
+        ]
+       },
+       {
+        "cve": "CVE-2026-81949",
+        "title": "Microsoft Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002904"
+        ]
+       },
+       {
+        "cve": "CVE-2026-81950",
+        "title": "Microsoft Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002904"
+        ]
+       },
+       {
+        "cve": "CVE-2026-81951",
+        "title": "Microsoft Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002904"
+        ]
+       },
+       {
+        "cve": "CVE-2026-81953",
+        "title": "Microsoft Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002904"
+        ]
+       },
+       {
+        "cve": "CVE-2026-81954",
+        "title": "Microsoft Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002904"
+        ]
+       },
+       {
+        "cve": "CVE-2026-81956",
+        "title": "Microsoft Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002904"
+        ]
+       },
+       {
+        "cve": "CVE-2026-81957",
+        "title": "Microsoft Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002904"
+        ]
+       },
+       {
+        "cve": "CVE-2026-81958",
+        "title": "Microsoft Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002904"
+        ]
+       },
+       {
+        "cve": "CVE-2026-81959",
+        "title": "Microsoft Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002904"
+        ]
+       },
+       {
+        "cve": "CVE-2026-81960",
+        "title": "Microsoft Excel Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002904"
+        ]
+       },
+       {
+        "cve": "CVE-2026-85875",
+        "title": "Microsoft Office Excel Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002904"
+        ]
+       }
+      ]
+     }
+    },
+    "email": {
+     "count": 7,
+     "components": {
+      "Microsoft Office Outlook": [
+       {
+        "cve": "CVE-2026-69629",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-78509",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-78519",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-78520",
+        "title": "Microsoft Office Outlook Information Disclosure Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-78525",
+        "title": "Microsoft Office Outlook Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-80073",
+        "title": "Microsoft Office Outlook Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update"
+        ]
+       },
+       {
+        "cve": "CVE-2026-80084",
+        "title": "Microsoft Office Outlook Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002898"
+        ]
+       }
+      ]
+     }
+    },
+    "graphics": {
+     "count": 1,
+     "components": {
+      "Microsoft Graphics Component": [
+       {
+        "cve": "CVE-2026-81955",
+        "title": "Windows Graphics Component Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "Click-to-Run update",
+         "KB5002916"
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "month": "2026-Aug",
+   "released": "2026-08-11",
+   "fix_count": 13,
+   "updates": [
+    {
+     "kb": "KB5002791",
+     "build": "16.0.5565.1000",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5002795",
+     "build": "16.0.5565.1000",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5002897",
+     "build": "16.0.5565.1001",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5002900",
+     "build": "16.0.5565.1000",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5002902",
+     "build": "16.0.5565.1001",
+     "type": "Security Update",
+     "supersedes": []
+    }
+   ],
+   "areas": {
+    "office-apps": {
+     "count": 13,
+     "components": {
+      "Microsoft Office": [
+       {
+        "cve": "CVE-2026-63513",
+        "title": "Microsoft Office Graphics Component Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5002897"
+        ]
+       },
+       {
+        "cve": "CVE-2026-63515",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5002902"
+        ]
+       },
+       {
+        "cve": "CVE-2026-63517",
+        "title": "Microsoft Office Graphics Component Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5002897"
+        ]
+       },
+       {
+        "cve": "CVE-2026-63524",
+        "title": "Microsoft Office Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5002897"
+        ]
+       },
+       {
+        "cve": "CVE-2026-63526",
+        "title": "Microsoft Office Graphics Component Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5002897"
+        ]
+       },
+       {
+        "cve": "CVE-2026-63529",
+        "title": "Microsoft Office Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5002897"
+        ]
+       },
+       {
+        "cve": "CVE-2026-63532",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5002897"
+        ]
+       },
+       {
+        "cve": "CVE-2026-63533",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5002897"
+        ]
+       },
+       {
+        "cve": "CVE-2026-64899",
+        "title": "Microsoft Office Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5002897"
+        ]
+       },
+       {
+        "cve": "CVE-2026-64903",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5002897"
+        ]
+       },
+       {
+        "cve": "CVE-2026-64909",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5002897"
+        ]
+       },
+       {
+        "cve": "CVE-2026-65661",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5002791",
+         "KB5002795",
+         "KB5002897",
+         "KB5002900"
+        ]
+       },
+       {
+        "cve": "CVE-2026-70317",
+        "title": "Microsoft Office Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5002897"
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "month": "2026-Jul",
+   "released": "2026-07-14",
+   "fix_count": 27,
+   "updates": [
+    {
+     "kb": "KB5002273",
+     "build": "16.0.5561.1000",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5002112"
+     ]
+    },
+    {
+     "kb": "KB5002748",
+     "build": "16.0.5561.1000",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5002616"
+     ]
+    },
+    {
+     "kb": "KB5002830",
+     "build": "16.0.5561.1001",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5002818"
+     ]
+    },
+    {
+     "kb": "KB5002887",
+     "build": "16.0.5561.1000",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5002878"
+     ]
+    }
+   ],
+   "areas": {
+    "office-apps": {
+     "count": 27,
+     "components": {
+      "Microsoft Office": [
+       {
+        "cve": "CVE-2026-47290",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5002273"
+        ]
+       },
+       {
+        "cve": "CVE-2026-50301",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5002887"
+        ]
+       },
+       {
+        "cve": "CVE-2026-50314",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5002887"
+        ]
+       },
+       {
+        "cve": "CVE-2026-50467",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5002887"
+        ]
+       },
+       {
+        "cve": "CVE-2026-50665",
+        "title": "Microsoft Office Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5002887"
+        ]
+       },
+       {
+        "cve": "CVE-2026-55017",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5002273"
+        ]
+       },
+       {
+        "cve": "CVE-2026-55018",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5002887"
+        ]
+       },
+       {
+        "cve": "CVE-2026-55022",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5002887"
+        ]
+       },
+       {
+        "cve": "CVE-2026-55023",
+        "title": "Microsoft Office Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5002887"
+        ]
+       },
+       {
+        "cve": "CVE-2026-55026",
+        "title": "Microsoft Office Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5002887"
+        ]
+       },
+       {
+        "cve": "CVE-2026-55027",
+        "title": "Microsoft Office Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5002887"
+        ]
+       },
+       {
+        "cve": "CVE-2026-55028",
+        "title": "Microsoft Office Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5002887"
+        ]
+       },
+       {
+        "cve": "CVE-2026-55035",
+        "title": "Microsoft Office Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5002887"
+        ]
+       },
+       {
+        "cve": "CVE-2026-55042",
+        "title": "Microsoft Office Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5002887"
+        ]
+       },
+       {
+        "cve": "CVE-2026-55045",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5002887"
+        ]
+       },
+       {
+        "cve": "CVE-2026-55047",
+        "title": "Microsoft Office Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5002887"
+        ]
+       },
+       {
+        "cve": "CVE-2026-55049",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5002748"
+        ]
+       },
+       {
+        "cve": "CVE-2026-55056",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5002887"
+        ]
+       },
+       {
+        "cve": "CVE-2026-55057",
+        "title": "Microsoft Office Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5002887"
+        ]
+       },
+       {
+        "cve": "CVE-2026-55121",
+        "title": "Microsoft Office Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5002887"
+        ]
+       },
+       {
+        "cve": "CVE-2026-55125",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5002887"
+        ]
+       },
+       {
+        "cve": "CVE-2026-55129",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5002887"
+        ]
+       },
+       {
+        "cve": "CVE-2026-55139",
+        "title": "Microsoft Office Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5002887"
+        ]
+       },
+       {
+        "cve": "CVE-2026-55140",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5002748",
+         "KB5002830"
+        ]
+       },
+       {
+        "cve": "CVE-2026-56192",
+        "title": "Microsoft Office Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5002887"
+        ]
+       },
+       {
+        "cve": "CVE-2026-56193",
+        "title": "Microsoft Office Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5002887"
+        ]
+       },
+       {
+        "cve": "CVE-2026-56195",
+        "title": "Microsoft Office Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5002887"
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "month": "2026-Jun",
+   "released": "2026-06-09",
+   "fix_count": 10,
+   "updates": [
+    {
+     "kb": "KB5002852",
+     "build": "16.0.5556.1001",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5002713"
+     ]
+    },
+    {
+     "kb": "KB5002878",
+     "build": "16.0.5556.1005",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5002866"
+     ]
+    }
+   ],
+   "areas": {
+    "office-apps": {
+     "count": 10,
+     "components": {
+      "Microsoft Office": [
+       {
+        "cve": "CVE-2026-44819",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5002878"
+        ]
+       },
+       {
+        "cve": "CVE-2026-44821",
+        "title": "Microsoft Office Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5002878"
+        ]
+       },
+       {
+        "cve": "CVE-2026-44824",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5002878"
+        ]
+       },
+       {
+        "cve": "CVE-2026-45461",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5002878"
+        ]
+       },
+       {
+        "cve": "CVE-2026-45463",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5002878"
+        ]
+       },
+       {
+        "cve": "CVE-2026-45472",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5002878"
+        ]
+       },
+       {
+        "cve": "CVE-2026-45474",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5002878"
+        ]
+       },
+       {
+        "cve": "CVE-2026-45475",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5002878"
+        ]
+       },
+       {
+        "cve": "CVE-2026-45485",
+        "title": "Microsoft Office Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5002878"
+        ]
+       },
+       {
+        "cve": "CVE-2026-45645",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5002852"
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "month": "2026-May",
+   "released": "2026-05-12",
+   "fix_count": 3,
+   "updates": [
+    {
+     "kb": "KB5002578",
+     "build": "16.0.5556.1000",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5002058"
+     ]
+    },
+    {
+     "kb": "KB5002866",
+     "build": "16.0.5552.1000",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5002859"
+     ]
+    }
+   ],
+   "areas": {
+    "office-apps": {
+     "count": 2,
+     "components": {
+      "Microsoft Office": [
+       {
+        "cve": "CVE-2026-40358",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5002866"
+        ]
+       },
+       {
+        "cve": "CVE-2026-40363",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5002866"
+        ]
+       }
+      ]
+     }
+    },
+    "apps-desktop": {
+     "count": 1,
+     "components": {
+      "Windows Rich Text Edit": [
+       {
+        "cve": "CVE-2026-21530",
+        "title": "Windows Rich Text Edit Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5002578"
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "month": "2026-Apr",
+   "released": "2026-04-14",
+   "fix_count": 1,
+   "updates": [
+    {
+     "kb": "KB5002859",
+     "build": "16.0.5548.1000",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5002838"
+     ]
+    }
+   ],
+   "areas": {
+    "office-apps": {
+     "count": 1,
+     "components": {
+      "Microsoft Office": [
+       {
+        "cve": "CVE-2026-32190",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5002859"
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "month": "2026-Mar",
+   "released": "2026-03-10",
+   "fix_count": 2,
+   "updates": [
+    {
+     "kb": "KB5002838",
+     "build": "16.0.5543.1000",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5002826"
+     ]
+    },
+    {
+     "kb": "KB5002848",
+     "build": "16.0.5543.1000",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5002839"
+     ]
+    }
+   ],
+   "areas": {
+    "office-apps": {
+     "count": 2,
+     "components": {
+      "Microsoft Office": [
+       {
+        "cve": "CVE-2026-26110",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5002838"
+        ]
+       },
+       {
+        "cve": "CVE-2026-26113",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5002848"
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "month": "2026-Jan",
+   "released": "2026-01-13",
+   "fix_count": 4,
+   "updates": [
+    {
+     "kb": "KB5002713",
+     "build": "16.0.5539.1001",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5002573"
+     ]
+    },
+    {
+     "kb": "KB5002826",
+     "build": "16.0.5535.1000",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5002819"
+     ]
+    }
+   ],
+   "areas": {
+    "office-apps": {
+     "count": 4,
+     "components": {
+      "Microsoft Office": [
+       {
+        "cve": "CVE-2026-20943",
+        "title": "Microsoft Office Click-To-Run Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5002826"
+        ]
+       },
+       {
+        "cve": "CVE-2026-20952",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5002826"
+        ]
+       },
+       {
+        "cve": "CVE-2026-20953",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5002826"
+        ]
+       },
+       {
+        "cve": "CVE-2026-21509",
+        "title": "Microsoft Office Security Feature Bypass Vulnerability",
+        "impact": "Security Feature Bypass",
+        "severity": "Important",
+        "kbs": [
+         "KB5002713"
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "month": "2025-Dec",
+   "released": "2025-12-09",
+   "fix_count": 2,
+   "updates": [
+    {
+     "kb": "KB5002819",
+     "build": "16.0.5530.1001",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5002809"
+     ]
+    }
+   ],
+   "areas": {
+    "office-apps": {
+     "count": 2,
+     "components": {
+      "Microsoft Office": [
+       {
+        "cve": "CVE-2025-62554",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5002819"
+        ]
+       },
+       {
+        "cve": "CVE-2025-62557",
+        "title": "Microsoft Office Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5002819"
+        ]
+       }
+      ]
+     }
+    }
+   }
+  }
+ ]
+}
