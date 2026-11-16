@@ -93,6 +93,25 @@ def issue_card(i, ver=None, problem_url=None):
             f'<span class="it">{title}</span></div>')
 
 
+def software_section(kb, ver, fixes, software):
+    """Which print-management (etc.) software relies on parts of Windows this update changed."""
+    out = []
+    for sw in software:
+        rows = []
+        for d in sw["depends_on"]:
+            n = sum(1 for f in fixes if f["component"] in d["components"])
+            if n:
+                rows.append(f"<li>{e(d['name'])}: <b>{n} fix{'es' if n != 1 else ''}</b></li>")
+        if rows:
+            out.append(f'<li><a href="/#v={e(ver)}&amp;q={e(kb)}&amp;s={e(sw["id"])}">{e(sw["name"])}</a>'
+                       f'<ul>{"".join(rows)}</ul></li>')
+    if not out:
+        return ""
+    return ("<h2>Software that relies on parts this update changed</h2>"
+            '<p class="muted">Worth checking after installing, not a sign it will break.</p>'
+            f'<ul class="sw-list">{"".join(out)}</ul>')
+
+
 def main():
     for d in OUT_DIRS:
         shutil.rmtree(ROOT / d, ignore_errors=True)
@@ -107,6 +126,7 @@ def main():
         for f in load(f"months/{m['month']}.json")["fixes"]:
             fix_by_cve[f["cve"]] = f
     updates = {p.stem: json.loads(p.read_text(encoding="utf-8")) for p in (DATA / "updates").glob("KB*.json")}
+    software = [json.loads(p.read_text(encoding="utf-8")) for p in sorted((DATA / "software").glob("*.json")) if p.stem != "index"]
     urls = []
 
     # names for problem pages, and which problems mention which KBs / error codes
@@ -169,6 +189,7 @@ def main():
                 + f'Restart needed: {e(u.get("restart") or "not stated")}.</p>'
                 + ("<h2>Known problems this update started</h2>" + "".join(issue_card(i, vers[0], purl(i)) for i in prob_c) if prob_c else "")
                 + ("<h2>Known problems this update fixed</h2>" + "".join(issue_card(i, vers[0], purl(i)) for i in prob_f) if prob_f else "")
+                + software_section(kb, vers[0], fixes, software)
                 + f"<h2>Security fixes by area</h2>{area_list or '<p>No security fixes listed.</p>'}"
                 + f'<h2>Links</h2><ul><li><a href="{explore}">Open {e(kb)} in the Patchmap explorer</a></li>'
                 f'<li><a href="https://support.microsoft.com/help/{e(kb[2:])}" rel="noopener">Microsoft\'s page for {e(kb)}</a></li>'
@@ -231,6 +252,10 @@ def main():
                 + f'<p><a href="/#v={ver}">Explore {e(name)} step by step</a> · <a href="/feeds/{ver}.xml">Alert feed for {e(name)}</a></p>')
         urls.append(page(f"version/{ver}", f"{name} updates and known problems",
                          f"{name}: every monthly security update for the last 12 months, build numbers, security fixes and open known problems.", body, [e(name)]))
+
+    # ---- software list for the website's "My software" menu ----
+    sw_ids = sorted(p.stem for p in (DATA / "software").glob("*.json") if p.stem != "index")
+    (DATA / "software" / "index.json").write_text(json.dumps(sw_ids), encoding="utf-8")
 
     # ---- sitemap + robots ----
     today = dt.date.today().isoformat()

@@ -1,5 +1,5 @@
 // Verilay Patchmap v0.1: reads data/*.json and draws the step-by-step drill-down.
-const state = { ver: "server-2022", q: "", area: "", data: null, tags: {}, issues: [] };
+const state = { ver: "server-2022", q: "", area: "", sw: "", software: {}, data: null, tags: {}, issues: [] };
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const monthName = (id) => { const [y, m] = id.split("-"); return `${({Jan:"January",Feb:"February",Mar:"March",Apr:"April",May:"May",Jun:"June",Jul:"July",Aug:"August",Sep:"September",Oct:"October",Nov:"November",Dec:"December"})[m]} ${y}`; };
@@ -11,12 +11,14 @@ function readHash() {
   if (h.get("v")) state.ver = h.get("v");
   state.q = h.get("q") || "";
   state.area = h.get("a") || "";
+  state.sw = h.get("s") || "";
 }
 function writeHash() {
   const h = new URLSearchParams();
   h.set("v", state.ver);
   if (state.q) h.set("q", state.q);
   if (state.area) h.set("a", state.area);
+  if (state.sw) h.set("s", state.sw);
   history.replaceState(null, "", "#" + h.toString());
 }
 
@@ -40,6 +42,13 @@ async function init() {
     getJSON("data/release_health.json").catch(() => ({ issues: [] })),
     getJSON("data/builds.json").catch(() => []),
   ]);
+  const swList = await getJSON("data/software/index.json").catch(() => []);
+  for (const id of swList) { try { state.software[id] = await getJSON(`data/software/${id}.json`); } catch (e) {} }
+  const ssel = $("sw");
+  ssel.innerHTML = '<option value="">No filter</option>' + Object.values(state.software).map((x) => `<option value="${esc(x.id)}">${esc(x.name)}</option>`).join("");
+  if (!state.software[state.sw]) state.sw = "";
+  ssel.value = state.sw;
+  ssel.onchange = () => { state.sw = ssel.value; render(); };
   state.tags = tags.tags;
   state.issues = issues.issues.concat(ms.issues);
   state.builds = builds;
@@ -55,7 +64,7 @@ async function init() {
   q.value = state.q;
   let t;
   q.oninput = () => { clearTimeout(t); t = setTimeout(() => { state.q = q.value.trim(); render(); }, 200); };
-  window.addEventListener("hashchange", () => { readHash(); sel.value = state.ver; q.value = state.q; load(); });
+  window.addEventListener("hashchange", () => { readHash(); sel.value = state.ver; q.value = state.q; $("sw").value = state.software[state.sw] ? state.sw : ""; load(); });
   await load();
 }
 
@@ -68,6 +77,8 @@ async function load() {
 function render() {
   writeHash();
   renderChips();
+  const sw = state.software[state.sw];
+  $("swinfo").innerHTML = sw ? `<details class="sw-card" id="swdetails"><summary><span class="l">${esc(sw.name)}: the ${sw.depends_on.length} parts of Windows it relies on</span><span class="r">show</span></summary>${swCard()}</details>` : "";
   renderIssues();
   const pair = parseBuildPair(state.q);
   if (pair) {
@@ -273,7 +284,7 @@ function renderMonths(only) {
     const kf = issuesFor(m.month).length - ki;
     const kt = [ki ? `${ki} open problem${ki > 1 ? "s" : ""}` : "", kf ? `${kf} fixed` : ""].filter(Boolean).join(", ");
     return `<details class="month" data-i="${idx}"${idx === firstShown ? " open" : ""}><summary><span class="l">${monthName(m.month)} · ${ups}</span>` +
-      `<span class="r">${n} fixes${state.area ? " in " + esc(label(state.area)) : ""}${kt ? " · " + kt : ""}</span></summary></details>`;
+      `<span class="r">${n} fixes${state.area ? " in " + esc(label(state.area)) : ""}${swCount(m) !== null ? ` · <b>${swCount(m)} in ${esc(state.software[state.sw].name)}'s parts</b>` : ""}${kt ? " · " + kt : ""}</span></summary></details>`;
   }).join("");
   box.querySelectorAll("details.month").forEach((d) => {
     const fill = () => { if (!d.dataset.done) { d.insertAdjacentHTML("beforeend", monthBody(months[+d.dataset.i])); d.dataset.done = 1; wireAreas(d); } };
@@ -282,11 +293,47 @@ function renderMonths(only) {
   });
 }
 
+// ---- "My software" filter (R5) ----
+function swFixes(m, dep) {
+  // fixes this month in the Windows parts one dependency lists (no duplicates)
+  const seen = new Map();
+  for (const a of Object.values(m.areas)) for (const c of dep.components) for (const f of a.components[c] || []) seen.set(f.cve, f);
+  return [...seen.values()];
+}
+function swCount(m) {
+  const sw = state.software[state.sw];
+  if (!sw) return null;
+  return new Set(sw.depends_on.flatMap((d) => swFixes(m, d).map((f) => f.cve))).size;
+}
+function swBlock(m) {
+  const sw = state.software[state.sw];
+  if (!sw) return "";
+  const rows = sw.depends_on.map((d) => {
+    const fx = swFixes(m, d);
+    return `<details class="sw-dep"><summary><span class="l">${esc(d.name)}</span><span class="r">${fx.length ? `<b>${fx.length} fix${fx.length === 1 ? "" : "es"}</b>` : "no change"}</span></summary>` +
+      `<p class="is">${esc(d.why)}</p>${fx.map(fixHTML).join("")}</details>`;
+  }).join("");
+  return `<div class="sw-box"><div class="sw-h">Parts of Windows ${esc(sw.name)} relies on, changed in ${monthName(m.month)}</div>${rows}` +
+    `<p class="is">"Relies on" means worth checking, not "will break". ${sw.basis === "support-experience" ? "Based on support experience. " : "Based on the vendor's public documentation. "}<a href="#" data-swinfo="1">About this list</a></p></div>`;
+}
+function swCard() {
+  const sw = state.software[state.sw];
+  if (!sw) return "";
+  const deps = sw.depends_on.map((d) => {
+    const src = (d.sources || []).map((s) => `<a href="${esc(s.url)}" rel="noopener">${esc(s.name)}</a>`).join(", ");
+    return `<li><b>${esc(d.name)}</b>: ${esc(d.why)}${src ? ` <span class="is">Sources: ${src}</span>` : ""}</li>`;
+  }).join("");
+  const past = (sw.past_problems || []).map((p) => `<li>${esc(p.when)}: <a href="${esc(p.url)}" rel="noopener">${esc(p.what)}</a></li>`).join("");
+  return `<div class="issue build" id="swcard"><span class="pill src">${sw.basis === "support-experience" ? "From support experience" : "From vendor docs"}</span><span class="it">${esc(sw.name)}: what it relies on in Windows</span>` +
+    `<div>${esc(sw.about)}</div><ul class="sw-list">${deps}</ul>${past ? `<div class="is">Past Windows update problems the vendor documented:</div><ul class="sw-list">${past}</ul>` : ""}` +
+    `<div class="is">${esc(sw.note)} Checked ${esc(sw.checked)}. <a href="https://github.com/ekbm/patchmap/blob/main/data/software/${esc(sw.id)}.json">Suggest a correction</a></div></div>`;
+}
+
 function monthBody(m) {
   const ups = m.updates.map((u) => `${esc(u.kb)}${u.build ? ` → build ${esc(u.build)}` : ""}${u.supersedes && u.supersedes.length ? ` (replaces ${esc(u.supersedes.join(", "))})` : ""}`).join(" · ");
   const issues = issuesBlock(issuesFor(m.month));
   const areas = Object.entries(m.areas).filter(([t]) => !state.area || t === state.area);
-  return `<p class="meta">Released ${esc(m.released)}${ups ? " · " + ups : ""}</p>${issues}` + areas.map(([t, a]) =>
+  return `<p class="meta">Released ${esc(m.released)}${ups ? " · " + ups : ""}</p>${issues}${swBlock(m)}` + areas.map(([t, a]) =>
     `<details class="area" data-t="${esc(t)}"><summary><span class="l">${esc(label(t))}</span><span class="r">${a.count} fixes · ${Object.keys(a.components).length} components</span></summary></details>`
   ).join("");
 }
@@ -329,5 +376,13 @@ function renderSearch() {
     `<details class="month"${out[0][0] === m ? " open" : ""}><summary><span class="l">${monthName(m.month)} · ${m.updates.map((u) => `<span class="kb">${esc(u.kb)}</span>`).join(" ")}</span><span class="r">${hits.length} matches</span></summary>${hits.slice(0, 300).map(fixHTML).join("")}</details>`
   ).join("");
 }
+
+document.addEventListener("click", (ev) => {
+  const t = ev.target.closest("[data-swinfo]");
+  if (!t) return;
+  ev.preventDefault();
+  const d = $("swdetails");
+  if (d) { d.open = true; d.scrollIntoView({ behavior: "smooth", block: "start" }); }
+});
 
 init().catch((e) => { $("months").innerHTML = `<p class="muted">Couldn't load the data (${esc(e.message)}). Try refreshing.</p>`; });

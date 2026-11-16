@@ -48,6 +48,16 @@ select:focus, input:focus { outline: none; border-color: var(--accent); box-shad
 .issue.fixed { border-left-color: var(--stripe-green); }
 .issue.build { border-left-color: var(--accent); }
 .issue.build > div { margin-top: 4px; }
+.sw-box { border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 8px; padding: 8px 14px; margin: 10px 0; background: var(--card); }
+.sw-h { font-weight: 600; font-size: 14px; margin-bottom: 2px; }
+.sw-box details { border-top: 1px solid var(--line); }
+.sw-box details:first-of-type { border-top: 0; }
+.sw-box summary { padding: 6px 0; font-size: 14px; }
+.sw-box .is { margin: 2px 0 6px 20px; }
+.sw-card { border: 0; margin: 8px 0 0; }
+.sw-card > summary { font-size: 14px; color: var(--accent); padding: 4px 0; }
+.sw-list { margin: 6px 0; padding-left: 20px; font-size: 14px; }
+.sw-list li { margin: 4px 0; }
 .ok-line { color: var(--ok); font-weight: 600; }
 .issue .it { font-weight: 600; display: block; margin: 2px 0; }
 .issue .is { color: var(--muted); font-size: 13px; }

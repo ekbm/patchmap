@@ -1,0 +1,50 @@
+{
+ "id": "ysoft-safeq",
+ "name": "YSoft SafeQ",
+ "about": "Print management and secure release (SafeQ 6, SafeQ Cloud and SafeQ Managed). These points apply where SafeQ parts run on Windows servers or take print jobs from Windows.",
+ "checked": "2026-11-16",
+ "basis": "support-experience",
+ "note": "Based on hands-on support experience, not on YSoft documentation (YSoft's public docs weren't reachable when this was written). 'Relies on' means worth checking when this part of Windows changes, not that an update will break SafeQ. Corrections welcome via GitHub.",
+ "depends_on": [
+  {
+   "name": "Windows print queues and Print Spooler",
+   "area": "print",
+   "components": ["Windows Print Spooler Components", "Microsoft Printer Drivers", "Windows HTTP Print Provider", "Printer Association Object"],
+   "why": "Jobs from Windows users pass through Windows print queues and the Print Spooler before SafeQ holds them for release. A Spooler or driver problem stops jobs reaching SafeQ.",
+   "sources": []
+  },
+  {
+   "name": "Job intake over shared printers (SMB) and LPR",
+   "area": "file-sharing",
+   "components": ["Windows SMB", "Windows SMB Server", "Windows SMB Client", "Windows SMB Server Network Transport Driver (srvnet.sys)"],
+   "why": "Print jobs commonly reach SafeQ through shared Windows printers (SMB) or LPR. Changes to SMB security or signing can stop jobs arriving.",
+   "sources": []
+  },
+  {
+   "name": "Remote Procedure Call (RPC) for Windows printing",
+   "area": "network",
+   "components": ["Windows Remote Procedure Call", "Windows RPC API", "Windows Remote Procedure Call Runtime", "Windows Remote Procedure Call Interface Definition Language (IDL)"],
+   "why": "Windows clients talk to a print server's Spooler over RPC; the 2021 PrintNightmare fixes changed this and broke shared printing for many print management products.",
+   "sources": [
+    {"name": "Microsoft: Point and Print changes (KB5005010)", "url": "https://support.microsoft.com/help/5005010"}
+   ]
+  },
+  {
+   "name": "Active Directory sign-in and user sync (LDAP, Kerberos)",
+   "area": "sign-in",
+   "components": ["Windows LDAP - Lightweight Directory Access Protocol", "Windows Kerberos", "Windows Active Directory", "Active Directory Domain Services", "Windows NTLM", "Windows Netlogon"],
+   "why": "Users are synced and signed in from Active Directory (LDAP and/or Kerberos), for example for card login and single sign-on. Sign-in hardening updates (LDAP, Kerberos, NTLM) can stop users being recognised at the printer.",
+   "sources": []
+  },
+  {
+   "name": "Document rendering for printing (GDI)",
+   "area": "print",
+   "components": ["Windows GDI", "Windows GDI+"],
+   "why": "Windows apps render documents through GDI before jobs reach the queue. GDI problems look like print-management problems: the November 2026 printing failure (zero-size images) was in this path.",
+   "sources": [
+    {"name": "How-To Geek: November 2026 printing problem", "url": "https://www.howtogeek.com/word-printing-problems-microsofts-november-windows-updates-are-the-likely-cause/"}
+   ]
+  }
+ ],
+ "past_problems": []
+}
