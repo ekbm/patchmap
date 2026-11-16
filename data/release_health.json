@@ -1,0 +1,1790 @@
+{
+ "about": "Collected from Microsoft's public Windows release health pages by scripts/fetch_release_health.py. Titles and statuses only; follow the links for Microsoft's details.",
+ "checked": "2026-11-16",
+ "issues": [
+  {
+   "id": "ms-3721",
+   "origin": "microsoft",
+   "title": "SQL Server linked server connections might remain open",
+   "summary": "",
+   "areas": [
+    "other"
+   ],
+   "months": [
+    "2026-Oct"
+   ],
+   "versions": [
+    "win11-24h2",
+    "win11-25h2",
+    "win11-26h2",
+    "server-2022",
+    "server-2025"
+   ],
+   "status": "open",
+   "ms_status": "Confirmed",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2"
+    }
+   ],
+   "by_version": {
+    "win11-24h2": {
+     "caused_by": [
+      "KB5127648"
+     ],
+     "fixed_by": [],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2#3721msgdesc"
+    },
+    "win11-25h2": {
+     "caused_by": [
+      "KB5127648"
+     ],
+     "fixed_by": [],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-25h2#3721msgdesc"
+    },
+    "win11-26h2": {
+     "caused_by": [
+      "KB5127648"
+     ],
+     "fixed_by": [],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-26h2#3721msgdesc"
+    },
+    "server-2022": {
+     "caused_by": [
+      "KB5126655"
+     ],
+     "fixed_by": [],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-server-2022#3721msgdesc"
+    },
+    "server-2025": {
+     "caused_by": [
+      "KB5126646"
+     ],
+     "fixed_by": [],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-server-2025#3721msgdesc"
+    }
+   },
+   "updated": "2026-11-12"
+  },
+  {
+   "id": "ms-4984",
+   "origin": "microsoft",
+   "title": "USB audio devices might fail to start or produce no sound",
+   "summary": "",
+   "areas": [
+    "apps-desktop",
+    "kernel-drivers"
+   ],
+   "months": [
+    "2026-Sep"
+   ],
+   "versions": [
+    "win11-24h2",
+    "win11-25h2",
+    "win11-26h2",
+    "server-2022",
+    "server-2025"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2"
+    }
+   ],
+   "by_version": {
+    "win11-24h2": {
+     "caused_by": [
+      "KB5124008"
+     ],
+     "fixed_by": [
+      "KB5132061"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2#4984msgdesc"
+    },
+    "win11-25h2": {
+     "caused_by": [
+      "KB5124008"
+     ],
+     "fixed_by": [
+      "KB5132061"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-25h2#4984msgdesc"
+    },
+    "win11-26h2": {
+     "caused_by": [],
+     "fixed_by": [
+      "KB5132061"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-26h2#4984msgdesc"
+    },
+    "server-2022": {
+     "caused_by": [
+      "KB5122882"
+     ],
+     "fixed_by": [
+      "KB5129237"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-server-2022#4984msgdesc"
+    },
+    "server-2025": {
+     "caused_by": [
+      "KB5122871"
+     ],
+     "fixed_by": [
+      "KB5131080"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-server-2025#4984msgdesc"
+    }
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "ms-5031",
+   "origin": "microsoft",
+   "title": "Remote Desktop connections might fail for non-admin users with error 0xC000000D",
+   "summary": "",
+   "areas": [
+    "remote-access"
+   ],
+   "months": [
+    "2026-Sep"
+   ],
+   "versions": [
+    "win11-24h2",
+    "win11-25h2",
+    "win11-26h2"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2"
+    }
+   ],
+   "by_version": {
+    "win11-24h2": {
+     "caused_by": [
+      "KB5124010"
+     ],
+     "fixed_by": [
+      "KB5132061"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2#5031msgdesc"
+    },
+    "win11-25h2": {
+     "caused_by": [
+      "KB5124010"
+     ],
+     "fixed_by": [
+      "KB5127936"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-25h2#5031msgdesc"
+    },
+    "win11-26h2": {
+     "caused_by": [
+      "KB5124010"
+     ],
+     "fixed_by": [
+      "KB5127936"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-26h2#5031msgdesc"
+    }
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "ms-5047",
+   "origin": "microsoft",
+   "title": "Users might be unable to sign in to OWA or send emails on Exchange Server",
+   "summary": "",
+   "areas": [
+    "other"
+   ],
+   "months": [
+    "2026-Oct"
+   ],
+   "versions": [
+    "server-2022",
+    "server-2025"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-server-2022"
+    }
+   ],
+   "by_version": {
+    "server-2022": {
+     "caused_by": [
+      "KB5126655"
+     ],
+     "fixed_by": [
+      "KB5131090"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-server-2022#5047msgdesc"
+    },
+    "server-2025": {
+     "caused_by": [
+      "KB5126646"
+     ],
+     "fixed_by": [
+      "KB5131080"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-server-2025#5047msgdesc"
+    }
+   },
+   "updated": "2026-11-10"
+  },
+  {
+   "id": "ms-5006",
+   "origin": "microsoft",
+   "title": "Devices might experience a black screen or desktop loading issues after sign-in",
+   "summary": "",
+   "areas": [
+    "other"
+   ],
+   "months": [
+    "2026-Aug"
+   ],
+   "versions": [
+    "win11-24h2",
+    "win11-25h2",
+    "win11-26h2"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2"
+    }
+   ],
+   "by_version": {
+    "win11-24h2": {
+     "caused_by": [
+      "KB5120998"
+     ],
+     "fixed_by": [
+      "KB5127648"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#5006msgdesc"
+    },
+    "win11-25h2": {
+     "caused_by": [
+      "KB5120998"
+     ],
+     "fixed_by": [
+      "KB5127648"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-25h2#5006msgdesc"
+    },
+    "win11-26h2": {
+     "caused_by": [],
+     "fixed_by": [
+      "KB5127648"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-26h2#5006msgdesc"
+    }
+   },
+   "updated": "2026-10-13"
+  },
+  {
+   "id": "ms-3781",
+   "origin": "microsoft",
+   "title": "Applications which require AC-3 audio decoding might close unexpectedly",
+   "summary": "",
+   "areas": [
+    "apps-desktop"
+   ],
+   "months": [
+    "2026-Sep"
+   ],
+   "versions": [
+    "win11-24h2",
+    "win11-25h2",
+    "win11-26h2"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2"
+    }
+   ],
+   "by_version": {
+    "win11-24h2": {
+     "caused_by": [
+      "KB5124010"
+     ],
+     "fixed_by": [
+      "KB5127648"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#3781msgdesc"
+    },
+    "win11-25h2": {
+     "caused_by": [
+      "KB5124010"
+     ],
+     "fixed_by": [
+      "KB5127648"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-25h2#3781msgdesc"
+    },
+    "win11-26h2": {
+     "caused_by": [
+      "KB5124010"
+     ],
+     "fixed_by": [
+      "KB5127648"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-26h2#3781msgdesc"
+    }
+   },
+   "updated": "2026-10-13"
+  },
+  {
+   "id": "ms-4956",
+   "origin": "microsoft",
+   "title": "Incorrect notifications that \"Microsoft Defender Antivirus is turned off\"",
+   "summary": "",
+   "areas": [
+    "security",
+    "apps-desktop"
+   ],
+   "months": [],
+   "versions": [
+    "win11-24h2",
+    "win11-25h2",
+    "server-2022",
+    "server-2025"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2"
+    }
+   ],
+   "by_version": {
+    "win11-24h2": {
+     "caused_by": [],
+     "fixed_by": [],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#4956msgdesc"
+    },
+    "win11-25h2": {
+     "caused_by": [],
+     "fixed_by": [],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-25h2#4956msgdesc"
+    },
+    "server-2022": {
+     "caused_by": [],
+     "fixed_by": [],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2022#4956msgdesc"
+    },
+    "server-2025": {
+     "caused_by": [],
+     "fixed_by": [],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#4956msgdesc"
+    }
+   },
+   "updated": "2026-09-30"
+  },
+  {
+   "id": "ms-4990",
+   "origin": "microsoft",
+   "title": "Domain-joined devices might lose their secure trust relationship with the domain",
+   "summary": "",
+   "areas": [
+    "other"
+   ],
+   "months": [
+    "2026-Sep"
+   ],
+   "versions": [
+    "win11-24h2",
+    "win11-25h2",
+    "win11-26h2"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2"
+    }
+   ],
+   "by_version": {
+    "win11-24h2": {
+     "caused_by": [
+      "KB5124008"
+     ],
+     "fixed_by": [
+      "KB5124010"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#4990msgdesc"
+    },
+    "win11-25h2": {
+     "caused_by": [
+      "KB5124008"
+     ],
+     "fixed_by": [
+      "KB5124010"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-25h2#4990msgdesc"
+    },
+    "win11-26h2": {
+     "caused_by": [],
+     "fixed_by": [
+      "KB5124010"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-26h2#4990msgdesc"
+    }
+   },
+   "updated": "2026-09-22"
+  },
+  {
+   "id": "ms-4981",
+   "origin": "microsoft",
+   "title": "Remote Desktop Services might stop responding after Sept. 2026 security update",
+   "summary": "",
+   "areas": [
+    "remote-access"
+   ],
+   "months": [
+    "2026-Sep"
+   ],
+   "versions": [
+    "win11-24h2",
+    "win11-25h2",
+    "server-2022",
+    "server-2025"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2"
+    }
+   ],
+   "by_version": {
+    "win11-24h2": {
+     "caused_by": [
+      "KB5124008"
+     ],
+     "fixed_by": [
+      "KB5129195"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#4981msgdesc"
+    },
+    "win11-25h2": {
+     "caused_by": [
+      "KB5124008"
+     ],
+     "fixed_by": [
+      "KB5129195"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-25h2#4981msgdesc"
+    },
+    "server-2022": {
+     "caused_by": [
+      "KB5122882"
+     ],
+     "fixed_by": [
+      "KB5129237"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2022#4981msgdesc"
+    },
+    "server-2025": {
+     "caused_by": [
+      "KB5122871"
+     ],
+     "fixed_by": [
+      "KB5129235"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#4981msgdesc"
+    }
+   },
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "ms-4983",
+   "origin": "microsoft",
+   "title": "Host folder shares might be unavailable in Hyper-V-based Linux VMs",
+   "summary": "",
+   "areas": [
+    "server-roles",
+    "kernel-drivers"
+   ],
+   "months": [
+    "2026-Sep"
+   ],
+   "versions": [
+    "win11-24h2",
+    "win11-25h2"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2"
+    }
+   ],
+   "by_version": {
+    "win11-24h2": {
+     "caused_by": [
+      "KB5124008"
+     ],
+     "fixed_by": [
+      "KB5129195"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#4983msgdesc"
+    },
+    "win11-25h2": {
+     "caused_by": [
+      "KB5124008"
+     ],
+     "fixed_by": [
+      "KB5129195"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-25h2#4983msgdesc"
+    }
+   },
+   "updated": "2026-09-14"
+  },
+  {
+   "id": "ms-4959",
+   "origin": "microsoft",
+   "title": "Microsoft Teams and Outlook might fail to launch on ARM-based devices",
+   "summary": "",
+   "areas": [
+    "other"
+   ],
+   "months": [
+    "2026-Aug"
+   ],
+   "versions": [
+    "win11-24h2",
+    "win11-25h2"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2"
+    }
+   ],
+   "by_version": {
+    "win11-24h2": {
+     "caused_by": [
+      "KB5121003"
+     ],
+     "fixed_by": [
+      "KB5124008"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#4959msgdesc"
+    },
+    "win11-25h2": {
+     "caused_by": [
+      "KB5121003"
+     ],
+     "fixed_by": [
+      "KB5124008"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-25h2#4959msgdesc"
+    }
+   },
+   "updated": "2026-09-08"
+  },
+  {
+   "id": "ms-3596",
+   "origin": "microsoft",
+   "title": "Mouse customization is reset on non-English Windows devices",
+   "summary": "",
+   "areas": [
+    "other"
+   ],
+   "months": [
+    "2026-Aug"
+   ],
+   "versions": [
+    "win11-24h2",
+    "win11-25h2"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2"
+    }
+   ],
+   "by_version": {
+    "win11-24h2": {
+     "caused_by": [
+      "KB5120998"
+     ],
+     "fixed_by": [
+      "KB5124008"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#3596msgdesc"
+    },
+    "win11-25h2": {
+     "caused_by": [
+      "KB5120998"
+     ],
+     "fixed_by": [
+      "KB5124008"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-25h2#3596msgdesc"
+    }
+   },
+   "updated": "2026-09-08"
+  },
+  {
+   "id": "ms-3734",
+   "origin": "microsoft",
+   "title": "Desktop background settings are lost or reset on some devices",
+   "summary": "",
+   "areas": [
+    "other"
+   ],
+   "months": [
+    "2026-Aug"
+   ],
+   "versions": [
+    "win11-24h2",
+    "win11-25h2"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2"
+    }
+   ],
+   "by_version": {
+    "win11-24h2": {
+     "caused_by": [
+      "KB5120998"
+     ],
+     "fixed_by": [
+      "KB5124008"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#3734msgdesc"
+    },
+    "win11-25h2": {
+     "caused_by": [
+      "KB5120998"
+     ],
+     "fixed_by": [
+      "KB5124008"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-25h2#3734msgdesc"
+    }
+   },
+   "updated": "2026-09-08"
+  },
+  {
+   "id": "ms-3731",
+   "origin": "microsoft",
+   "title": "Some games become unresponsive when certain drivers are present",
+   "summary": "",
+   "areas": [
+    "kernel-drivers"
+   ],
+   "months": [
+    "2026-Aug"
+   ],
+   "versions": [
+    "win11-24h2",
+    "win11-25h2"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2"
+    }
+   ],
+   "by_version": {
+    "win11-24h2": {
+     "caused_by": [
+      "KB5121003"
+     ],
+     "fixed_by": [],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#3731msgdesc"
+    },
+    "win11-25h2": {
+     "caused_by": [
+      "KB5121003"
+     ],
+     "fixed_by": [],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-25h2#3731msgdesc"
+    }
+   },
+   "updated": "2026-08-26"
+  },
+  {
+   "id": "ms-4891",
+   "origin": "microsoft",
+   "title": "GIF functionality in the Windows Emoji Panel might become unavailable",
+   "summary": "",
+   "areas": [
+    "other"
+   ],
+   "months": [],
+   "versions": [
+    "win11-24h2",
+    "win11-25h2",
+    "server-2025"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2"
+    }
+   ],
+   "by_version": {
+    "win11-24h2": {
+     "caused_by": [],
+     "fixed_by": [
+      "KB5095093"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#4891msgdesc"
+    },
+    "win11-25h2": {
+     "caused_by": [],
+     "fixed_by": [
+      "KB5095093"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-25h2#4891msgdesc"
+    },
+    "server-2025": {
+     "caused_by": [],
+     "fixed_by": [
+      "KB5120233"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#4891msgdesc"
+    }
+   },
+   "updated": "2026-08-11"
+  },
+  {
+   "id": "ms-3549",
+   "origin": "microsoft",
+   "title": "Windows Server Update Services sync operations might have issues or time out",
+   "summary": "",
+   "areas": [
+    "management",
+    "server-roles"
+   ],
+   "months": [],
+   "versions": [
+    "win11-24h2",
+    "win11-25h2",
+    "server-2022",
+    "server-2025"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2"
+    }
+   ],
+   "by_version": {
+    "win11-24h2": {
+     "caused_by": [],
+     "fixed_by": [],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#3549msgdesc"
+    },
+    "win11-25h2": {
+     "caused_by": [],
+     "fixed_by": [],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-25h2#3549msgdesc"
+    },
+    "server-2022": {
+     "caused_by": [],
+     "fixed_by": [],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2022#3549msgdesc"
+    },
+    "server-2025": {
+     "caused_by": [],
+     "fixed_by": [],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#3549msgdesc"
+    }
+   },
+   "updated": "2026-07-20"
+  },
+  {
+   "id": "ms-4906",
+   "origin": "microsoft",
+   "title": "Some Dell devices with a specific Intel driver might experience poor performance",
+   "summary": "",
+   "areas": [
+    "kernel-drivers"
+   ],
+   "months": [
+    "2026-Jun"
+   ],
+   "versions": [
+    "win11-24h2",
+    "win11-25h2"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2"
+    }
+   ],
+   "by_version": {
+    "win11-24h2": {
+     "caused_by": [
+      "KB5095093"
+     ],
+     "fixed_by": [
+      "KB5121767"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#4906msgdesc"
+    },
+    "win11-25h2": {
+     "caused_by": [
+      "KB5095093"
+     ],
+     "fixed_by": [
+      "KB5121767"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-25h2#4906msgdesc"
+    }
+   },
+   "updated": "2026-07-17"
+  },
+  {
+   "id": "ms-4875",
+   "origin": "microsoft",
+   "title": "Deleting a file from the Recycle Bin displays an internal filename in the dialog",
+   "summary": "",
+   "areas": [
+    "other"
+   ],
+   "months": [
+    "2026-Jun"
+   ],
+   "versions": [
+    "win11-24h2",
+    "win11-25h2",
+    "server-2022",
+    "server-2025"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2"
+    }
+   ],
+   "by_version": {
+    "win11-24h2": {
+     "caused_by": [
+      "KB5094126"
+     ],
+     "fixed_by": [
+      "KB5095093"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#4875msgdesc"
+    },
+    "win11-25h2": {
+     "caused_by": [
+      "KB5094126"
+     ],
+     "fixed_by": [
+      "KB5095093"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-25h2#4875msgdesc"
+    },
+    "server-2022": {
+     "caused_by": [
+      "KB5094128"
+     ],
+     "fixed_by": [
+      "KB5099540"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2022#4875msgdesc"
+    },
+    "server-2025": {
+     "caused_by": [
+      "KB5094125"
+     ],
+     "fixed_by": [
+      "KB5099536"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#4875msgdesc"
+    }
+   },
+   "updated": "2026-07-14"
+  },
+  {
+   "id": "ms-3630",
+   "origin": "microsoft",
+   "title": "Updates installed via WUSA might fail if installed from a shared folder",
+   "summary": "",
+   "areas": [
+    "other"
+   ],
+   "months": [
+    "2025-May",
+    "2025-Jun"
+   ],
+   "versions": [
+    "win11-24h2",
+    "win11-25h2",
+    "server-2025"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2"
+    }
+   ],
+   "by_version": {
+    "win11-24h2": {
+     "caused_by": [
+      "KB5058499"
+     ],
+     "fixed_by": [
+      "KB5079391"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#3630msgdesc"
+    },
+    "win11-25h2": {
+     "caused_by": [],
+     "fixed_by": [
+      "KB5079391"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-25h2#3630msgdesc"
+    },
+    "server-2025": {
+     "caused_by": [
+      "KB5060842"
+     ],
+     "fixed_by": [
+      "KB5094125"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#3630msgdesc"
+    }
+   },
+   "updated": "2026-06-09"
+  },
+  {
+   "id": "ms-4854",
+   "origin": "microsoft",
+   "title": "May 2026 security update might fail to install with error 0x800f0922",
+   "summary": "",
+   "areas": [
+    "other"
+   ],
+   "months": [
+    "2026-May"
+   ],
+   "versions": [
+    "win11-24h2",
+    "win11-25h2"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2"
+    }
+   ],
+   "by_version": {
+    "win11-24h2": {
+     "caused_by": [
+      "KB5089549"
+     ],
+     "fixed_by": [
+      "KB5089573"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#4854msgdesc"
+    },
+    "win11-25h2": {
+     "caused_by": [
+      "KB5089549"
+     ],
+     "fixed_by": [
+      "KB5089573"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-25h2#4854msgdesc"
+    }
+   },
+   "updated": "2026-05-26"
+  },
+  {
+   "id": "ms-4833",
+   "origin": "microsoft",
+   "title": "Domain controllers may restart repeatedly after installing April security update",
+   "summary": "",
+   "areas": [
+    "other"
+   ],
+   "months": [
+    "2026-Apr"
+   ],
+   "versions": [
+    "server-2022",
+    "server-2025"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-server-2022"
+    }
+   ],
+   "by_version": {
+    "server-2022": {
+     "caused_by": [
+      "KB5082142"
+     ],
+     "fixed_by": [
+      "KB5091575"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2022#4833msgdesc"
+    },
+    "server-2025": {
+     "caused_by": [
+      "KB5082063"
+     ],
+     "fixed_by": [
+      "KB5091157"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#4833msgdesc"
+    }
+   },
+   "updated": "2026-04-19"
+  },
+  {
+   "id": "ms-3404",
+   "origin": "microsoft",
+   "title": "Windows Server 2022 and Server 2019 unexpectedly upgraded to Windows Server 2025",
+   "summary": "",
+   "areas": [
+    "other"
+   ],
+   "months": [],
+   "versions": [
+    "server-2022",
+    "server-2025"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-server-2022"
+    }
+   ],
+   "by_version": {
+    "server-2022": {
+     "caused_by": [],
+     "fixed_by": [
+      "KB5082142"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2022#3404msgdesc"
+    },
+    "server-2025": {
+     "caused_by": [],
+     "fixed_by": [
+      "KB5082063"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#3404msgdesc"
+    }
+   },
+   "updated": "2026-04-14"
+  },
+  {
+   "id": "ms-3360",
+   "origin": "microsoft",
+   "title": "Microsoft account sign ins might fail for Microsoft Teams Free and other apps",
+   "summary": "",
+   "areas": [
+    "other"
+   ],
+   "months": [
+    "2026-Mar"
+   ],
+   "versions": [
+    "win11-24h2",
+    "win11-25h2"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2"
+    }
+   ],
+   "by_version": {
+    "win11-24h2": {
+     "caused_by": [
+      "KB5079473"
+     ],
+     "fixed_by": [
+      "KB5085516"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#3360msgdesc"
+    },
+    "win11-25h2": {
+     "caused_by": [
+      "KB5079473"
+     ],
+     "fixed_by": [
+      "KB5085516"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-25h2#3360msgdesc"
+    }
+   },
+   "updated": "2026-03-21"
+  },
+  {
+   "id": "ms-3801",
+   "origin": "microsoft",
+   "title": "Microsoft received reports of loss of access to the C: drive and app failures",
+   "summary": "",
+   "areas": [
+    "other"
+   ],
+   "months": [],
+   "versions": [
+    "win11-24h2",
+    "win11-25h2"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved external",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2"
+    }
+   ],
+   "by_version": {
+    "win11-24h2": {
+     "caused_by": [],
+     "fixed_by": [],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#3801msgdesc"
+    },
+    "win11-25h2": {
+     "caused_by": [],
+     "fixed_by": [],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-25h2#3801msgdesc"
+    }
+   },
+   "updated": "2026-03-16"
+  },
+  {
+   "id": "ms-350",
+   "origin": "microsoft",
+   "title": "Parental consent may not show for some browser versions with web filtering on",
+   "summary": "",
+   "areas": [
+    "other"
+   ],
+   "months": [],
+   "versions": [
+    "win11-24h2"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2"
+    }
+   ],
+   "by_version": {
+    "win11-24h2": {
+     "caused_by": [],
+     "fixed_by": [],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#350msgdesc"
+    }
+   },
+   "updated": "2026-02-10"
+  },
+  {
+   "id": "ms-3764",
+   "origin": "microsoft",
+   "title": "Some devices might fail to shut down or hibernate",
+   "summary": "",
+   "areas": [
+    "other"
+   ],
+   "months": [
+    "2026-Jan"
+   ],
+   "versions": [
+    "server-2022"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-server-2022"
+    }
+   ],
+   "by_version": {
+    "server-2022": {
+     "caused_by": [
+      "KB5073457"
+     ],
+     "fixed_by": [
+      "KB5075906"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2022#3764msgdesc"
+    }
+   },
+   "updated": "2026-02-10"
+  },
+  {
+   "id": "ms-3760",
+   "origin": "microsoft",
+   "title": "Connection and authentication failures in Azure Virtual Desktop and Windows 365",
+   "summary": "",
+   "areas": [
+    "sign-in",
+    "kernel-drivers"
+   ],
+   "months": [
+    "2026-Jan"
+   ],
+   "versions": [
+    "win11-24h2",
+    "win11-25h2",
+    "server-2022",
+    "server-2025"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2"
+    }
+   ],
+   "by_version": {
+    "win11-24h2": {
+     "caused_by": [
+      "KB5074109"
+     ],
+     "fixed_by": [
+      "KB5078127"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#3760msgdesc"
+    },
+    "win11-25h2": {
+     "caused_by": [
+      "KB5074109"
+     ],
+     "fixed_by": [
+      "KB5078127"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-25h2#3760msgdesc"
+    },
+    "server-2022": {
+     "caused_by": [
+      "KB5073457"
+     ],
+     "fixed_by": [
+      "KB5077800"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2022#3760msgdesc"
+    },
+    "server-2025": {
+     "caused_by": [
+      "KB5073379"
+     ],
+     "fixed_by": [
+      "KB5077793"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#3760msgdesc"
+    }
+   },
+   "updated": "2026-01-24"
+  },
+  {
+   "id": "ms-2738",
+   "origin": "microsoft",
+   "title": "Apps might become unresponsive when saving files to cloud-backed storage",
+   "summary": "",
+   "areas": [
+    "storage"
+   ],
+   "months": [
+    "2026-Jan"
+   ],
+   "versions": [
+    "win11-24h2",
+    "win11-25h2",
+    "server-2022",
+    "server-2025"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2"
+    }
+   ],
+   "by_version": {
+    "win11-24h2": {
+     "caused_by": [
+      "KB5074109"
+     ],
+     "fixed_by": [
+      "KB5078127"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#2738msgdesc"
+    },
+    "win11-25h2": {
+     "caused_by": [
+      "KB5074109"
+     ],
+     "fixed_by": [
+      "KB5078127"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-25h2#2738msgdesc"
+    },
+    "server-2022": {
+     "caused_by": [
+      "KB5073457"
+     ],
+     "fixed_by": [
+      "KB5078136"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2022#2738msgdesc"
+    },
+    "server-2025": {
+     "caused_by": [
+      "KB5073379"
+     ],
+     "fixed_by": [
+      "KB5078135"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#2738msgdesc"
+    }
+   },
+   "updated": "2026-01-23"
+  },
+  {
+   "id": "ms-3707",
+   "origin": "microsoft",
+   "title": "Task Manager process might continue to run in background after app is closed",
+   "summary": "",
+   "areas": [
+    "other"
+   ],
+   "months": [
+    "2025-Oct"
+   ],
+   "versions": [
+    "win11-24h2",
+    "win11-25h2"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2"
+    }
+   ],
+   "by_version": {
+    "win11-24h2": {
+     "caused_by": [
+      "KB5067036"
+     ],
+     "fixed_by": [
+      "KB5068861"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#3707msgdesc"
+    },
+    "win11-25h2": {
+     "caused_by": [
+      "KB5067036"
+     ],
+     "fixed_by": [
+      "KB5068861"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-25h2#3707msgdesc"
+    }
+   },
+   "updated": "2025-11-11"
+  },
+  {
+   "id": "ms-3592",
+   "origin": "microsoft",
+   "title": "IIS websites might fail to load",
+   "summary": "",
+   "areas": [
+    "server-roles"
+   ],
+   "months": [
+    "2025-Sep",
+    "2025-Oct"
+   ],
+   "versions": [
+    "win11-24h2",
+    "win11-25h2",
+    "server-2025"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2"
+    }
+   ],
+   "by_version": {
+    "win11-24h2": {
+     "caused_by": [
+      "KB5065789"
+     ],
+     "fixed_by": [
+      "KB5067036"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#3592msgdesc"
+    },
+    "win11-25h2": {
+     "caused_by": [
+      "KB5065789"
+     ],
+     "fixed_by": [
+      "KB5067036"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-25h2#3592msgdesc"
+    },
+    "server-2025": {
+     "caused_by": [
+      "KB5066835"
+     ],
+     "fixed_by": [
+      "KB5068861"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#3592msgdesc"
+    }
+   },
+   "updated": "2025-11-11"
+  },
+  {
+   "id": "ms-3692",
+   "origin": "microsoft",
+   "title": "Directory synchronization fails for AD groups exceeding 10,000 members",
+   "summary": "",
+   "areas": [
+    "other"
+   ],
+   "months": [
+    "2025-Sep"
+   ],
+   "versions": [
+    "server-2025"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-server-2025"
+    }
+   ],
+   "by_version": {
+    "server-2025": {
+     "caused_by": [
+      "KB5065426"
+     ],
+     "fixed_by": [
+      "KB5068861"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#3692msgdesc"
+    }
+   },
+   "updated": "2025-11-11"
+  },
+  {
+   "id": "ms-3674",
+   "origin": "microsoft",
+   "title": "Problems playing protected content in some BluRay/DVD/Digital TV applications",
+   "summary": "",
+   "areas": [
+    "other"
+   ],
+   "months": [
+    "2025-Aug"
+   ],
+   "versions": [
+    "win11-24h2",
+    "win11-25h2"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2"
+    }
+   ],
+   "by_version": {
+    "win11-24h2": {
+     "caused_by": [
+      "KB5064081"
+     ],
+     "fixed_by": [
+      "KB5067036"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#3674msgdesc"
+    },
+    "win11-25h2": {
+     "caused_by": [],
+     "fixed_by": [
+      "KB5067036"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-25h2#3674msgdesc"
+    }
+   },
+   "updated": "2025-10-28"
+  },
+  {
+   "id": "ms-3697",
+   "origin": "microsoft",
+   "title": "Smartcard authentication issues might occur with the October 2025 Windows update",
+   "summary": "",
+   "areas": [
+    "sign-in",
+    "install-update"
+   ],
+   "months": [
+    "2025-Oct"
+   ],
+   "versions": [
+    "win11-24h2",
+    "win11-25h2",
+    "server-2022",
+    "server-2025"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2"
+    }
+   ],
+   "by_version": {
+    "win11-24h2": {
+     "caused_by": [
+      "KB5066835"
+     ],
+     "fixed_by": [],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#3697msgdesc"
+    },
+    "win11-25h2": {
+     "caused_by": [
+      "KB5066835"
+     ],
+     "fixed_by": [],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-25h2#3697msgdesc"
+    },
+    "server-2022": {
+     "caused_by": [
+      "KB5066782"
+     ],
+     "fixed_by": [],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2022#3697msgdesc"
+    },
+    "server-2025": {
+     "caused_by": [
+      "KB5066835"
+     ],
+     "fixed_by": [],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#3697msgdesc"
+    }
+   },
+   "updated": "2025-10-22"
+  },
+  {
+   "id": "ms-3696",
+   "origin": "microsoft",
+   "title": "USB mouse and keyboard not working in the Windows Recovery Environment (WinRE)",
+   "summary": "",
+   "areas": [
+    "kernel-drivers"
+   ],
+   "months": [
+    "2025-Oct"
+   ],
+   "versions": [
+    "win11-24h2",
+    "win11-25h2",
+    "server-2025"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2"
+    }
+   ],
+   "by_version": {
+    "win11-24h2": {
+     "caused_by": [
+      "KB5066835"
+     ],
+     "fixed_by": [
+      "KB5070773"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#3696msgdesc"
+    },
+    "win11-25h2": {
+     "caused_by": [
+      "KB5066835"
+     ],
+     "fixed_by": [
+      "KB5070773"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-25h2#3696msgdesc"
+    },
+    "server-2025": {
+     "caused_by": [
+      "KB5066835"
+     ],
+     "fixed_by": [
+      "KB5070773"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#3696msgdesc"
+    }
+   },
+   "updated": "2025-10-20"
+  },
+  {
+   "id": "ms-3509",
+   "origin": "microsoft",
+   "title": "Devices with apps using sprotect.sys driver might stop responding",
+   "summary": "",
+   "areas": [
+    "kernel-drivers"
+   ],
+   "months": [],
+   "versions": [
+    "win11-24h2"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2"
+    }
+   ],
+   "by_version": {
+    "win11-24h2": {
+     "caused_by": [],
+     "fixed_by": [],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#3509msgdesc"
+    }
+   },
+   "updated": "2025-10-16"
+  },
+  {
+   "id": "ms-3370",
+   "origin": "microsoft",
+   "title": "Wallpaper customization applications might not work as expected",
+   "summary": "",
+   "areas": [
+    "other"
+   ],
+   "months": [],
+   "versions": [
+    "win11-24h2"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2"
+    }
+   ],
+   "by_version": {
+    "win11-24h2": {
+     "caused_by": [],
+     "fixed_by": [],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#3370msgdesc"
+    }
+   },
+   "updated": "2025-10-16"
+  }
+ ]
+}

@@ -2,6 +2,7 @@
   --bg: #fafaf8; --card: #ffffff; --text: #1d1d1b; --muted: #6b6a66; --line: #e4e2dc;
   --accent: #185fa5; --danger-bg: #fcebeb; --danger: #8f2424; --warn-bg: #faeeda; --warn: #7a4708;
   --ok-bg: #eaf3de; --ok: #2f5a0d; --chip: #f1efe8; --mono: ui-monospace, Consolas, monospace;
+  --stripe-red: #e24b4a; --stripe-amber: #ba7517; --stripe-green: #639922;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
@@ -26,11 +27,20 @@ input { flex: 1 1 260px; min-width: 0; }
 .chips { margin: 12px 0 8px; display: flex; flex-wrap: wrap; gap: 6px; }
 .chip { font-size: 13px; padding: 3px 10px; border-radius: 8px; background: var(--chip); border: 1px solid var(--line); color: var(--muted); cursor: pointer; }
 .chip.on { background: var(--accent); color: var(--card); border-color: var(--accent); }
-.issue { border-radius: 8px; padding: 10px 14px; margin: 10px 0; font-size: 14px; }
-.issue.open { background: var(--danger-bg); color: var(--danger); }
-.issue.fix-rolling-out, .issue.fix-available { background: var(--warn-bg); color: var(--warn); }
-.issue b { display: block; }
-.issue a { color: inherit; }
+.issue { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--muted); border-radius: 8px; padding: 10px 14px; margin: 10px 0; font-size: 14px; color: var(--text); }
+.issue.open { border-left-color: var(--stripe-red); }
+.issue.mitigated, .issue.fix-rolling-out, .issue.fix-available { border-left-color: var(--stripe-amber); }
+.issue.fixed { border-left-color: var(--stripe-green); }
+.issue .it { font-weight: 600; display: block; margin: 2px 0; }
+.issue .is { color: var(--muted); font-size: 13px; }
+.pill { display: inline-block; font-size: 12px; font-weight: 600; padding: 1px 8px; border-radius: 6px; margin-right: 6px; }
+.pill.open { background: var(--danger-bg); color: var(--danger); }
+.pill.mitigated, .pill.fix-rolling-out, .pill.fix-available { background: var(--warn-bg); color: var(--warn); }
+.pill.fixed { background: var(--ok-bg); color: var(--ok); }
+.pill.src { background: var(--chip); color: var(--muted); font-weight: 400; }
+.fixed-list { margin: 6px 0 10px; }
+.fixed-list summary { font-size: 14px; color: var(--muted); }
+.fixed-list .issue { margin-left: 18px; }
 details { border-top: 1px solid var(--line); }
 details details { margin-left: 18px; }
 summary { cursor: pointer; padding: 10px 0; display: flex; justify-content: space-between; gap: 12px; list-style: none; }

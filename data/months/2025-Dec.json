@@ -3,12 +3,17 @@
  "released": "2025-12-09",
  "fix_count": 34,
  "by_tag": {
-  "other": 12,
+  "storage": 11,
   "kernel-drivers": 9,
   "graphics": 7,
+  "server-roles": 6,
   "remote-access": 5,
-  "network": 3,
-  "install-update": 1
+  "apps-desktop": 5,
+  "network": 4,
+  "file-sharing": 1,
+  "install-update": 1,
+  "security": 1,
+  "management": 1
  },
  "fixes": [
   {
@@ -16,6 +21,7 @@
    "title": "Windows Cloud Files Mini Filter Driver Elevation of Privilege Vulnerability",
    "component": "Windows Cloud Files Mini Filter Driver",
    "tags": [
+    "storage",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -51,7 +57,7 @@
    "title": "Windows Resilient File System (ReFS) Remote Code Execution Vulnerability",
    "component": "Windows Resilient File System (ReFS)",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -86,6 +92,7 @@
    "title": "Windows Cloud Files Mini Filter Driver Elevation of Privilege Vulnerability",
    "component": "Windows Cloud Files Mini Filter Driver",
    "tags": [
+    "storage",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -141,7 +148,7 @@
    "title": "Windows Client-Side Caching Elevation of Privilege Vulnerability",
    "component": "Windows Client-Side Caching (CSC) Service",
    "tags": [
-    "other"
+    "file-sharing"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -211,7 +218,8 @@
    "title": "Windows Remote Access Connection Manager Elevation of Privilege Vulnerability",
    "component": "Windows Remote Access Connection Manager",
    "tags": [
-    "remote-access"
+    "remote-access",
+    "server-roles"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -247,7 +255,8 @@
    "component": "Windows Routing and Remote Access Service (RRAS)",
    "tags": [
     "network",
-    "remote-access"
+    "remote-access",
+    "server-roles"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -283,7 +292,8 @@
    "component": "Windows Routing and Remote Access Service (RRAS)",
    "tags": [
     "network",
-    "remote-access"
+    "remote-access",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -388,7 +398,7 @@
    "title": "Windows File Explorer Elevation of Privilege Vulnerability",
    "component": "Windows Shell",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -493,6 +503,7 @@
    "title": "Windows Storage VSP Driver Elevation of Privilege Vulnerability",
    "component": "Windows Storage VSP Driver",
    "tags": [
+    "storage",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -528,6 +539,7 @@
    "title": "Windows Storage VSP Driver Elevation of Privilege Vulnerability",
    "component": "Windows Storage VSP Driver",
    "tags": [
+    "storage",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -563,6 +575,7 @@
    "title": "Windows Projected File System Elevation of Privilege Vulnerability",
    "component": "Windows Projected File System Filter Driver",
    "tags": [
+    "storage",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -598,7 +611,7 @@
    "title": "Windows Projected File System Elevation of Privilege Vulnerability",
    "component": "Windows Projected File System",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -668,7 +681,7 @@
    "title": "Windows Projected File System Elevation of Privilege Vulnerability",
    "component": "Windows Projected File System",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -738,7 +751,7 @@
    "title": "Windows Projected File System Elevation of Privilege Vulnerability",
    "component": "Windows Projected File System",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -773,7 +786,7 @@
    "title": "Windows Projected File System Elevation of Privilege Vulnerability",
    "component": "Windows Projected File System",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -808,7 +821,8 @@
    "title": "Windows Defender Firewall Service Information Disclosure Vulnerability",
    "component": "Windows Defender Firewall Service",
    "tags": [
-    "other"
+    "network",
+    "security"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -838,7 +852,8 @@
    "title": "Windows Remote Access Connection Manager Elevation of Privilege Vulnerability",
    "component": "Windows Remote Access Connection Manager",
    "tags": [
-    "remote-access"
+    "remote-access",
+    "server-roles"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -873,6 +888,7 @@
    "title": "Windows Hyper-V Denial of Service Vulnerability",
    "component": "Windows Hyper-V",
    "tags": [
+    "server-roles",
     "kernel-drivers"
    ],
    "impact": "Denial of Service",
@@ -908,7 +924,7 @@
    "title": "Windows Camera Frame Server Monitor Information Disclosure Vulnerability",
    "component": "Windows Camera Frame Server Monitor",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -938,7 +954,7 @@
    "title": "Windows File Explorer Elevation of Privilege Vulnerability",
    "component": "Windows Shell",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -973,7 +989,7 @@
    "title": "Windows Shell Elevation of Privilege Vulnerability",
    "component": "Windows Shell",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -1009,7 +1025,8 @@
    "component": "Windows Routing and Remote Access Service (RRAS)",
    "tags": [
     "network",
-    "remote-access"
+    "remote-access",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -1106,7 +1123,8 @@
    "title": "PowerShell Remote Code Execution Vulnerability",
    "component": "Windows PowerShell",
    "tags": [
-    "other"
+    "management",
+    "apps-desktop"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -1141,6 +1159,7 @@
    "title": "Windows Cloud Files Mini Filter Driver Elevation of Privilege Vulnerability",
    "component": "Windows Cloud Files Mini Filter Driver",
    "tags": [
+    "storage",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",

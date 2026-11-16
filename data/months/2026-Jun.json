@@ -3,11 +3,16 @@
  "released": "2026-06-09",
  "fix_count": 95,
  "by_tag": {
-  "other": 46,
-  "kernel-drivers": 26,
-  "network": 17,
+  "kernel-drivers": 24,
+  "network": 22,
+  "security": 16,
+  "apps-desktop": 14,
+  "other": 9,
   "graphics": 7,
+  "server-roles": 7,
+  "storage": 6,
   "sign-in": 5,
+  "management": 3,
   "remote-access": 2
  },
  "fixes": [
@@ -79,6 +84,7 @@
    "title": "Windows Universal Disk Format File System Driver (UDFS) Elevation of Privilege Vulnerability",
    "component": "Windows Universal Disk Format File System Driver (UDFS)",
    "tags": [
+    "storage",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -110,6 +116,7 @@
    "title": "Windows Universal Disk Format File System Driver (UDFS) Elevation of Privilege Vulnerability",
    "component": "Windows Universal Disk Format File System Driver (UDFS)",
    "tags": [
+    "storage",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -172,6 +179,7 @@
    "title": "Windows Projected File System Elevation of Privilege Vulnerability",
    "component": "Windows Projected File System Filter Driver",
    "tags": [
+    "storage",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -226,7 +234,7 @@
    "title": "Windows Function Discovery Service (fdwsd.dll) Elevation of Privilege Vulnerability",
    "component": "Function Discovery Service (fdwsd.dll)",
    "tags": [
-    "other"
+    "network"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -257,6 +265,7 @@
    "title": "Windows Projected File System Elevation of Privilege Vulnerability",
    "component": "Windows Projected File System Filter Driver",
    "tags": [
+    "storage",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -381,7 +390,7 @@
    "title": "Windows Shell Information Disclosure Vulnerability",
    "component": "Windows Shell",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -412,7 +421,7 @@
    "title": "Windows Shell Information Disclosure Vulnerability",
    "component": "Windows Shell",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -533,7 +542,7 @@
    "title": "Windows Telephony Service Elevation of Privilege Vulnerability",
    "component": "Windows Telephony Service",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -595,7 +604,7 @@
    "title": "Microsoft Windows VMSwitch Denial of Service Vulnerability",
    "component": "Windows VMSwitch",
    "tags": [
-    "other"
+    "network"
    ],
    "impact": "Denial of Service",
    "severity": {
@@ -657,7 +666,7 @@
    "title": "Windows Telephony Server Information Disclosure Vulnerability",
    "component": "Windows Telephony Service",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -688,7 +697,7 @@
    "title": "Windows Push Notification Information Disclosure Vulnerability",
    "component": "Windows Push Notifications",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -719,7 +728,7 @@
    "title": "Windows Push Notification Information Disclosure Vulnerability",
    "component": "Windows Push Notifications",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -750,7 +759,7 @@
    "title": "Windows Push Notification Information Disclosure Vulnerability",
    "component": "Windows Push Notifications",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -781,6 +790,7 @@
    "title": "Windows Hyper-V Information Disclosure Vulnerability",
    "component": "Role: Windows Hyper-V",
    "tags": [
+    "server-roles",
     "kernel-drivers"
    ],
    "impact": "Information Disclosure",
@@ -812,7 +822,7 @@
    "title": "Windows Push Notification Information Disclosure Vulnerability",
    "component": "Windows Push Notifications",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -843,7 +853,7 @@
    "title": "Windows Performance Monitor Remote Code Execution Vulnerability",
    "component": "Windows Performance Monitor",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -874,7 +884,7 @@
    "title": "Windows Push Notifications Elevation of Privilege Vulnerability",
    "component": "Windows Push Notifications",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -905,7 +915,7 @@
    "title": "Windows Push Notifications Elevation of Privilege Vulnerability",
    "component": "Windows Push Notifications",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -936,7 +946,7 @@
    "title": "Windows Push Notifications Elevation of Privilege Vulnerability",
    "component": "Windows Push Notifications",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -998,7 +1008,7 @@
    "title": "Windows Performance Monitor Remote Code Execution Vulnerability",
    "component": "Windows Performance Monitor",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -1091,7 +1101,8 @@
    "title": "Windows Deployment Services (WDS) Remote Code Execution",
    "component": "Windows Deployment Services",
    "tags": [
-    "other"
+    "management",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -1114,7 +1125,7 @@
    "title": "Windows Push Notifications Elevation of Privilege Vulnerability",
    "component": "Windows Push Notifications",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -1257,7 +1268,7 @@
    "title": "Microsoft Cryptographic Services Elevation of Privilege Vulnerability",
    "component": "Windows Cryptographic Services",
    "tags": [
-    "other"
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -1350,7 +1361,7 @@
    "title": "Windows Program Compatibility Assistant Service Elevation of Privilege Vulnerability",
    "component": "Windows Program Compatibility Assistant Service",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -1412,7 +1423,7 @@
    "title": "Secure Boot Security Feature Bypass Vulnerability",
    "component": "Windows Secure Boot",
    "tags": [
-    "other"
+    "security"
    ],
    "impact": "Security Feature Bypass",
    "severity": {
@@ -1443,7 +1454,7 @@
    "title": "Windows Internet (wininet.dll) Elevation of Privilege Vulnerability",
    "component": "Windows Internet (wininet.dll)",
    "tags": [
-    "other"
+    "network"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -1505,7 +1516,7 @@
    "title": "Windows Application Identity (AppID) Information Disclosure Vulnerability",
    "component": "Windows Application Identity (AppID) Subsystem",
    "tags": [
-    "other"
+    "security"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -1662,7 +1673,7 @@
    "title": "Windows UPnP Device Host Remote Code Execution Vulnerability",
    "component": "Universal Plug and Play (upnp.dll)",
    "tags": [
-    "other"
+    "network"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -1693,6 +1704,7 @@
    "title": "Windows Kernel-Mode Driver Elevation of Privilege Vulnerability",
    "component": "Windows Kernel-Mode Drivers",
    "tags": [
+    "security",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -1752,7 +1764,8 @@
    "title": "Windows Dynamic Host Configuration Protocol (DHCP) Tampering Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Tampering",
    "severity": {
@@ -1815,7 +1828,7 @@
    "title": "Windows Managed Installer Information Disclosure Vulnerability",
    "component": "Windows Application Identity (AppID) Subsystem",
    "tags": [
-    "other"
+    "security"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -1873,6 +1886,7 @@
    "title": "Windows Hyper-V Remote Code Execution Vulnerability",
    "component": "Windows Hyper-V",
    "tags": [
+    "server-roles",
     "kernel-drivers"
    ],
    "impact": "Remote Code Execution",
@@ -1935,7 +1949,8 @@
    "title": "Windows DHCP Client Information Disclosure Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -1966,7 +1981,7 @@
    "title": "Windows UPnP Device Host Remote Code Execution Vulnerability",
    "component": "Universal Plug and Play (upnp.dll)",
    "tags": [
-    "other"
+    "network"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -1997,7 +2012,7 @@
    "title": "Windows NTFS Remote Code Execution Vulnerability",
    "component": "Windows NTFS",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -2154,6 +2169,7 @@
    "title": "Windows Hyper-V Remote Code Execution Vulnerability",
    "component": "Role: Windows Hyper-V",
    "tags": [
+    "server-roles",
     "kernel-drivers"
    ],
    "impact": "Remote Code Execution",
@@ -2239,7 +2255,7 @@
    "title": "Secure Boot Security Feature Bypass Vulnerability",
    "component": "Windows Secure Boot",
    "tags": [
-    "other"
+    "security"
    ],
    "impact": "Security Feature Bypass",
    "severity": {
@@ -2266,7 +2282,7 @@
    "title": "Windows BitLocker Security Feature Bypass Vulnerability",
    "component": "Windows BitLocker",
    "tags": [
-    "other"
+    "security"
    ],
    "impact": "Security Feature Bypass",
    "severity": {
@@ -2359,7 +2375,7 @@
    "title": "Windows BitLocker Security Feature Bypass Vulnerability",
    "component": "Windows BitLocker",
    "tags": [
-    "other"
+    "security"
    ],
    "impact": "Security Feature Bypass",
    "severity": {
@@ -2444,7 +2460,7 @@
    "title": "Windows Storage Elevation of Privilege Vulnerability",
    "component": "Windows Storage",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -2475,6 +2491,7 @@
    "title": "Windows Hyper-V Remote Code Execution Vulnerability",
    "component": "Windows Hyper-V",
    "tags": [
+    "server-roles",
     "kernel-drivers"
    ],
    "impact": "Remote Code Execution",
@@ -2506,7 +2523,7 @@
    "title": "Windows Boot Manager Security Feature Bypass Vulnerability",
    "component": "Windows Boot Manager",
    "tags": [
-    "other"
+    "security"
    ],
    "impact": "Security Feature Bypass",
    "severity": {
@@ -2567,7 +2584,7 @@
    "title": "Secure Boot Security Feature Bypass Vulnerability",
    "component": "Windows Secure Boot",
    "tags": [
-    "other"
+    "security"
    ],
    "impact": "Security Feature Bypass",
    "severity": {
@@ -2598,7 +2615,7 @@
    "title": "Secure Boot Security Feature Bypass Vulnerability",
    "component": "Windows Secure Boot",
    "tags": [
-    "other"
+    "security"
    ],
    "impact": "Security Feature Bypass",
    "severity": {
@@ -2629,7 +2646,7 @@
    "title": "Secure Boot Security Feature Bypass Vulnerability",
    "component": "Windows Secure Boot",
    "tags": [
-    "other"
+    "security"
    ],
    "impact": "Security Feature Bypass",
    "severity": {
@@ -2660,7 +2677,7 @@
    "title": "Windows Media Remote Code Execution Vulnerability",
    "component": "Windows Media",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -2691,7 +2708,7 @@
    "title": "Secure Boot Security Feature Bypass Vulnerability",
    "component": "Windows Secure Boot",
    "tags": [
-    "other"
+    "security"
    ],
    "impact": "Security Feature Bypass",
    "severity": {
@@ -2722,7 +2739,7 @@
    "title": "Secure Boot Security Feature Bypass Vulnerability",
    "component": "Windows Secure Boot",
    "tags": [
-    "other"
+    "security"
    ],
    "impact": "Security Feature Bypass",
    "severity": {
@@ -2753,7 +2770,7 @@
    "title": "Secure Boot Security Feature Bypass Vulnerability",
    "component": "Windows Secure Boot",
    "tags": [
-    "other"
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -2815,7 +2832,7 @@
    "title": "Windows BitLocker Security Feature Bypass Vulnerability",
    "component": "Windows BitLocker",
    "tags": [
-    "other"
+    "security"
    ],
    "impact": "Security Feature Bypass",
    "severity": {

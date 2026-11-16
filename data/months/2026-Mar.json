@@ -3,13 +3,17 @@
  "released": "2026-03-10",
  "fix_count": 39,
  "by_tag": {
-  "other": 13,
-  "kernel-drivers": 11,
+  "kernel-drivers": 10,
   "network": 8,
   "graphics": 6,
+  "apps-desktop": 6,
+  "storage": 5,
+  "server-roles": 4,
+  "other": 3,
   "file-sharing": 3,
   "remote-access": 3,
   "print": 2,
+  "management": 1,
   "sign-in": 1
  },
  "fixes": [
@@ -74,6 +78,7 @@
    "title": "Windows Universal Disk Format File System Driver (UDFS) Elevation of Privilege Vulnerability",
    "component": "Windows Universal Disk Format File System Driver (UDFS)",
    "tags": [
+    "storage",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -109,7 +114,7 @@
    "title": "Windows Resilient File System (ReFS) Elevation of Privilege Vulnerability",
    "component": "Windows Resilient File System (ReFS)",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -314,7 +319,7 @@
    "title": "Windows Projected File System Elevation of Privilege Vulnerability",
    "component": "Windows Projected File System",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -349,7 +354,7 @@
    "title": "Windows Accessibility Infrastructure (ATBroker.exe) Elevation of Privilege Vulnerability",
    "component": "Windows Accessibility Infrastructure (ATBroker.exe)",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -490,7 +495,7 @@
    "title": "Windows Device Association Service Elevation of Privilege Vulnerability",
    "component": "Windows Device Association Service",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -525,7 +530,7 @@
    "title": "Windows Device Association Service Elevation of Privilege Vulnerability",
    "component": "Windows Device Association Service",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -560,7 +565,7 @@
    "title": "Performance Counters for Windows Elevation of Privilege Vulnerability",
    "component": "Windows Performance Counters",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -595,7 +600,7 @@
    "title": "Microsoft Brokering File System Elevation of Privilege Vulnerability",
    "component": "Windows Brokering File System",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -695,6 +700,7 @@
    "title": "Windows Hyper-V Elevation of Privilege Vulnerability",
    "component": "Role: Windows Hyper-V",
    "tags": [
+    "server-roles",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -766,7 +772,8 @@
    "component": "Windows Routing and Remote Access Service (RRAS)",
    "tags": [
     "network",
-    "remote-access"
+    "remote-access",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -802,7 +809,8 @@
    "component": "Windows Routing and Remote Access Service (RRAS)",
    "tags": [
     "network",
-    "remote-access"
+    "remote-access",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -872,7 +880,7 @@
    "title": "Windows NTFS Elevation of Privilege Vulnerability",
    "component": "Windows NTFS",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -1070,7 +1078,7 @@
    "title": "Windows Shell Link Processing Spoofing Vulnerability",
    "component": "Windows Shell Link Processing",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Spoofing",
    "severity": {
@@ -1105,7 +1113,7 @@
    "title": "Windows Accessibility Infrastructure (ATBroker.exe) Information Disclosure Vulnerability",
    "component": "Windows Accessibility Infrastructure (ATBroker.exe)",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -1140,7 +1148,7 @@
    "title": "Windows Telephony Service Elevation of Privilege Vulnerability",
    "component": "Windows Telephony Service",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -1231,7 +1239,8 @@
    "component": "Windows Routing and Remote Access Service (RRAS)",
    "tags": [
     "network",
-    "remote-access"
+    "remote-access",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {

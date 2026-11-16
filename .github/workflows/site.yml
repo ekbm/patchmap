@@ -31,7 +31,9 @@ jobs:
 
       - name: Refresh Microsoft data
         if: github.event_name != 'push'
-        run: python scripts/fetch_msrc.py
+        run: |
+          python scripts/fetch_msrc.py
+          python scripts/fetch_release_health.py
 
       - name: Save refreshed data
         if: github.event_name != 'push'

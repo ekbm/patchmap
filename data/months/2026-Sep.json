@@ -3,12 +3,17 @@
  "released": "2026-09-08",
  "fix_count": 629,
  "by_tag": {
-  "other": 299,
-  "kernel-drivers": 127,
-  "network": 89,
-  "sign-in": 30,
+  "network": 105,
+  "storage": 98,
+  "sign-in": 96,
+  "kernel-drivers": 91,
+  "apps-desktop": 85,
+  "security": 79,
+  "server-roles": 74,
+  "management": 41,
+  "other": 35,
+  "print": 30,
   "remote-access": 30,
-  "print": 26,
   "graphics": 26,
   "file-sharing": 15,
   "install-update": 6,
@@ -145,7 +150,7 @@
    "title": "Windows Push Notifications Elevation of Privilege Vulnerability",
    "component": "Windows Push Notifications",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -176,7 +181,7 @@
    "title": "Microsoft Windows Media Foundation Remote Code Execution Vulnerability",
    "component": "Microsoft Windows Media Foundation",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -207,7 +212,7 @@
    "title": "Microsoft Windows Media Foundation Remote Code Execution Vulnerability",
    "component": "Microsoft Windows Media Foundation",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -296,7 +301,8 @@
    "title": "Microsoft PowerShell Security Feature Bypass Vulnerability",
    "component": "Windows PowerShell",
    "tags": [
-    "other"
+    "management",
+    "apps-desktop"
    ],
    "impact": "Security Feature Bypass",
    "severity": {
@@ -358,7 +364,7 @@
    "title": "Connected User Experiences and Telemetry Elevation of Privilege Vulnerability",
    "component": "Windows Connected User Experiences and Telemetry",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -447,7 +453,7 @@
    "title": "Windows Universal Plug and Play (UPnP) Device Host Information Disclosure Vulnerability",
    "component": "Windows Universal Plug and Play (UPnP) Device Host",
    "tags": [
-    "other"
+    "network"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -478,7 +484,8 @@
    "title": "Windows Defender Firewall Service Information Disclosure Vulnerability",
    "component": "Windows Defender Firewall Service",
    "tags": [
-    "other"
+    "network",
+    "security"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -509,7 +516,7 @@
    "title": "Windows NTFS Elevation of Privilege Vulnerability",
    "component": "Windows NTFS",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -540,7 +547,7 @@
    "title": "Windows NTFS Remote Code Execution Vulnerability",
    "component": "Windows NTFS",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -571,7 +578,7 @@
    "title": "Windows NTFS Elevation of Privilege Vulnerability",
    "component": "Windows NTFS",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -633,7 +640,7 @@
    "title": "Windows File History Service Elevation of Privilege Vulnerability",
    "component": "Windows File History Service",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -656,7 +663,7 @@
    "title": "Windows NTFS Elevation of Privilege Vulnerability",
    "component": "Windows NTFS",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -687,6 +694,7 @@
    "title": "Windows USB Mass Storage Class Driver Remote Code Execution Vulnerability",
    "component": "Windows USB Mass Storage Class Driver",
    "tags": [
+    "storage",
     "kernel-drivers"
    ],
    "impact": "Remote Code Execution",
@@ -749,7 +757,7 @@
    "title": "Windows NTFS Elevation of Privilege Vulnerability",
    "component": "Windows NTFS",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -780,7 +788,7 @@
    "title": "Windows MIDI Service Module Information Disclosure Vulnerability",
    "component": "Windows MIDI Service Module",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -803,7 +811,7 @@
    "title": "Windows Storage Spaces Controller Remote Code Execution Vulnerability",
    "component": "Windows Storage Spaces Controller",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -834,7 +842,7 @@
    "title": "Windows Program Compatibility Assistant Service Elevation of Privilege Vulnerability",
    "component": "Windows Program Compatibility Assistant Service",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -896,7 +904,7 @@
    "title": "Connected User Experiences and Telemetry Elevation of Privilege Vulnerability",
    "component": "Windows Connected User Experiences and Telemetry",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -990,7 +998,7 @@
    "title": "Windows NTFS Information Disclosure Vulnerability",
    "component": "Windows NTFS",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -1021,7 +1029,7 @@
    "title": "Windows Program Compatibility Assistant Service Information Disclosure Vulnerability",
    "component": "Windows Program Compatibility Assistant Service",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -1048,7 +1056,7 @@
    "title": "Windows Program Compatibility Assistant Service Information Disclosure Vulnerability",
    "component": "Windows Program Compatibility Assistant Service",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -1079,7 +1087,7 @@
    "title": "Windows NTFS Remote Code Execution Vulnerability",
    "component": "Windows NTFS",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -1110,7 +1118,7 @@
    "title": "Windows Program Compatibility Assistant Service Elevation of Privilege Vulnerability",
    "component": "Windows Program Compatibility Assistant Service",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -1141,7 +1149,7 @@
    "title": "Windows Storage Spaces Controller Remote Code Execution Vulnerability",
    "component": "Windows Storage Spaces Controller",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -1172,6 +1180,7 @@
    "title": "Windows Fast FAT Driver Elevation of Privilege Vulnerability",
    "component": "Windows Fast FAT Driver",
    "tags": [
+    "storage",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -1296,7 +1305,7 @@
    "title": "Windows Message Queuing Queue Manager Denial of Service Vulnerability",
    "component": "Windows Message Queuing Queue Manager",
    "tags": [
-    "other"
+    "server-roles"
    ],
    "impact": "Denial of Service",
    "severity": {
@@ -1351,7 +1360,7 @@
    "title": "Windows Error Reporting Elevation of Privilege Vulnerability",
    "component": "Windows Error Reporting",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -1382,7 +1391,7 @@
    "title": "Microsoft Windows Search Component Elevation of Privilege Vulnerability",
    "component": "Microsoft Windows Search Component",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -1413,7 +1422,7 @@
    "title": "Windows iSCSI Denial of Service Vulnerability",
    "component": "Windows iSCSI",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Denial of Service",
    "severity": {
@@ -1444,7 +1453,7 @@
    "title": "Windows NTFS Elevation of Privilege Vulnerability",
    "component": "Windows NTFS",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -1475,7 +1484,8 @@
    "title": "Windows DHCP Server Remote Code Execution Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -1498,7 +1508,7 @@
    "title": "Windows Connected User Experiences and Telemetry Information Disclosure Vulnerability",
    "component": "Windows Connected User Experiences and Telemetry",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -1529,6 +1539,7 @@
    "title": "Windows USB Audio Class driver (usbaudio.sys) Elevation of Privilege Vulnerability",
    "component": "Windows USB Audio Class driver (usbaudio.sys)",
    "tags": [
+    "apps-desktop",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -1591,6 +1602,7 @@
    "title": "Windows Cloud Files Mini Filter Driver Elevation of Privilege Vulnerability",
    "component": "Windows Cloud Files Mini Filter Driver",
    "tags": [
+    "storage",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -1622,7 +1634,7 @@
    "title": "Windows Push Notifications Elevation of Privilege Vulnerability",
    "component": "Windows Push Notifications",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -1746,6 +1758,7 @@
    "title": "Windows USB Audio Class Driver Information Disclosure Vulnerability",
    "component": "Windows USB Audio Class driver (usbaudio.sys)",
    "tags": [
+    "apps-desktop",
     "kernel-drivers"
    ],
    "impact": "Information Disclosure",
@@ -1839,7 +1852,7 @@
    "title": "Windows Setup Files Cleanup Elevation of Privilege Vulnerability",
    "component": "Windows Setup Files Cleanup",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -1870,7 +1883,7 @@
    "title": "Windows Storage Spaces Controller Elevation of Privilege Vulnerability",
    "component": "Windows Storage Spaces Controller",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -1901,6 +1914,7 @@
    "title": "Windows Volume Manager Extension Driver Remote Code Execution Vulnerability",
    "component": "Windows Volume Manager Extension Driver",
    "tags": [
+    "storage",
     "kernel-drivers"
    ],
    "impact": "Remote Code Execution",
@@ -1932,7 +1946,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -1994,7 +2009,7 @@
    "title": "Windows Device Association Service Elevation of Privilege Vulnerability",
    "component": "Windows Device Association Service",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -2025,7 +2040,8 @@
    "title": "Windows DHCP Server Information Disclosure Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -2048,7 +2064,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -2079,7 +2096,7 @@
    "title": "Windows Push Notifications Elevation of Privilege Vulnerability",
    "component": "Windows Push Notifications",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -2141,7 +2158,7 @@
    "title": "Microsoft Windows Search Component Elevation of Privilege Vulnerability",
    "component": "Microsoft Windows Search Component",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -2172,6 +2189,7 @@
    "title": "Windows USB Audio Class driver (usbaudio.sys) Elevation of Privilege Vulnerability",
    "component": "Windows USB Audio Class driver (usbaudio.sys)",
    "tags": [
+    "apps-desktop",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -2265,7 +2283,7 @@
    "title": "Windows Audio Service Elevation of Privilege Vulnerability",
    "component": "Windows Audio Service",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -2296,7 +2314,7 @@
    "title": "Windows NTFS Elevation of Privilege Vulnerability",
    "component": "Windows NTFS",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -2327,7 +2345,7 @@
    "title": "Windows Device Association Broker Service Elevation of Privilege Vulnerability",
    "component": "Windows Device Association Broker service",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -2389,7 +2407,7 @@
    "title": "Windows Overlay Filter Information Disclosure Vulnerability",
    "component": "Windows Overlay Filter",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -2544,7 +2562,7 @@
    "title": "Microsoft Windows Search Component Elevation of Privilege Vulnerability",
    "component": "Microsoft Windows Search Component",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -2575,7 +2593,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -2606,7 +2625,7 @@
    "title": "Windows Performance Monitor Elevation of Privilege Vulnerability",
    "component": "Windows Performance Monitor",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -2637,7 +2656,7 @@
    "title": "Windows Storage Elevation of Privilege Vulnerability",
    "component": "Windows Storage",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -2668,7 +2687,8 @@
    "title": "Windows Remote Access Connection Manager Elevation of Privilege Vulnerability",
    "component": "Windows Remote Access Connection Manager",
    "tags": [
-    "remote-access"
+    "remote-access",
+    "server-roles"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -2699,7 +2719,7 @@
    "title": "Windows NTFS Elevation of Privilege Vulnerability",
    "component": "Windows NTFS",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -2753,6 +2773,7 @@
    "title": "Windows Volume Manager Extension Driver Remote Code Execution Vulnerability",
    "component": "Windows Volume Manager Extension Driver",
    "tags": [
+    "storage",
     "kernel-drivers"
    ],
    "impact": "Remote Code Execution",
@@ -2846,7 +2867,7 @@
    "title": "Windows MIDI Service Module Information Disclosure Vulnerability",
    "component": "Windows MIDI Service Module",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -2869,7 +2890,7 @@
    "title": "Windows NTFS Elevation of Privilege Vulnerability",
    "component": "Windows NTFS",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -2900,7 +2921,7 @@
    "title": "Windows Image Acquisition Elevation of Privilege Vulnerability",
    "component": "Windows Image Acquisition",
    "tags": [
-    "other"
+    "print"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -2931,7 +2952,8 @@
    "title": "Windows DHCP Server Denial of Service Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Denial of Service",
    "severity": {
@@ -2954,7 +2976,7 @@
    "title": "Windows Overlay Filter Information Disclosure Vulnerability",
    "component": "Windows Overlay Filter",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -3047,6 +3069,7 @@
    "title": "Windows Fast FAT Driver Remote Code Execution Vulnerability",
    "component": "Windows Fast FAT Driver",
    "tags": [
+    "storage",
     "kernel-drivers"
    ],
    "impact": "Remote Code Execution",
@@ -3105,7 +3128,7 @@
    "title": "Windows Management Instrumentation Information Disclosure Vulnerability",
    "component": "Windows Management Instrumentation",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -3136,7 +3159,7 @@
    "title": "Windows Overlay Filter Elevation of Privilege Vulnerability",
    "component": "Windows Overlay Filter",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -3167,7 +3190,7 @@
    "title": "Windows Universal Plug and Play (UPnP) Device Host Information Disclosure Vulnerability",
    "component": "Windows Universal Plug and Play (UPnP) Device Host",
    "tags": [
-    "other"
+    "network"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -3198,7 +3221,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -3229,7 +3253,7 @@
    "title": "Windows Text Shaping Information Disclosure Vulnerability",
    "component": "Windows Text Shaping",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -3260,7 +3284,7 @@
    "title": "Windows NDIS Elevation of Privilege Vulnerability",
    "component": "Windows NDIS",
    "tags": [
-    "other"
+    "network"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -3283,7 +3307,7 @@
    "title": "Windows Error Reporting Elevation of Privilege Vulnerability",
    "component": "Windows Error Reporting",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -3376,7 +3400,7 @@
    "title": "Windows Overlay Filter Elevation of Privilege Vulnerability",
    "component": "Windows Overlay Filter",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -3430,7 +3454,7 @@
    "title": "Windows Overlay Filter Elevation of Privilege Vulnerability",
    "component": "Windows Overlay Filter",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -3484,7 +3508,7 @@
    "title": "Windows Overlay Filter Elevation of Privilege Vulnerability",
    "component": "Windows Overlay Filter",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -3546,7 +3570,7 @@
    "title": "Windows Modern Device Management (MDM) Elevation of Privilege Vulnerability",
    "component": "Windows Modern Device Management (MDM)",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -3577,7 +3601,7 @@
    "title": "Windows NTFS Elevation of Privilege Vulnerability",
    "component": "Windows NTFS",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -3604,6 +3628,7 @@
    "title": "Windows Storage Port Driver Information Disclosure Vulnerability",
    "component": "Windows Storage Port Driver",
    "tags": [
+    "storage",
     "kernel-drivers"
    ],
    "impact": "Information Disclosure",
@@ -3635,7 +3660,7 @@
    "title": "Windows Shell Elevation of Privilege Vulnerability",
    "component": "Windows Shell",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -3693,7 +3718,7 @@
    "title": "Microsoft Windows Media Foundation Remote Code Execution Vulnerability",
    "component": "Microsoft Windows Media Foundation",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -3755,7 +3780,7 @@
    "title": "Windows Storage Management Provider Elevation of Privilege Vulnerability",
    "component": "Windows Storage Management Provider",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -3786,7 +3811,7 @@
    "title": "Windows Spaceport.sys Information Disclosure Vulnerability",
    "component": "Windows Spaceport.sys",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -3848,7 +3873,7 @@
    "title": "Windows Shell Elevation of Privilege Vulnerability",
    "component": "Windows Shell",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -3875,7 +3900,7 @@
    "title": "Windows Spaceport.sys Information Disclosure Vulnerability",
    "component": "Windows Spaceport.sys",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -3906,7 +3931,7 @@
    "title": "Windows Audio Service Elevation of Privilege Vulnerability",
    "component": "Windows Audio Service",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -3937,7 +3962,7 @@
    "title": "Windows NDIS Elevation of Privilege Vulnerability",
    "component": "Windows NDIS",
    "tags": [
-    "other"
+    "network"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -4061,7 +4086,8 @@
    "title": "Windows DHCP Server Denial of Service Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Denial of Service",
    "severity": {
@@ -4115,7 +4141,7 @@
    "title": "Microsoft Windows Media Foundation Remote Code Execution Vulnerability",
    "component": "Microsoft Windows Media Foundation",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -4146,7 +4172,8 @@
    "title": "Windows DHCP Server Remote Code Execution Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -4169,6 +4196,7 @@
    "title": "Windows USB Audio Class driver (usbaudio.sys) Elevation of Privilege Vulnerability",
    "component": "Windows USB Audio Class driver (usbaudio.sys)",
    "tags": [
+    "apps-desktop",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -4200,7 +4228,8 @@
    "title": "Windows DHCP Server Elevation of Privilege Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -4223,7 +4252,8 @@
    "title": "Windows DHCP Server Denial of Service Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Denial of Service",
    "severity": {
@@ -4397,7 +4427,7 @@
    "title": "Windows NTFS Tampering Vulnerability",
    "component": "Windows NTFS",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Tampering",
    "severity": {
@@ -4575,7 +4605,7 @@
    "title": "Windows Error Reporting Elevation of Privilege Vulnerability",
    "component": "Windows Error Reporting",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -4668,7 +4698,7 @@
    "title": "Windows MIDI Service Module Elevation of Privileges Vulnerability",
    "component": "Windows MIDI Service Module",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -4745,7 +4775,7 @@
    "title": "Microsoft Windows Speech Elevation of Privilege Vulnerability",
    "component": "Microsoft Windows Speech",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -4807,7 +4837,7 @@
    "title": "Windows Audio Service Elevation of Privilege Vulnerability",
    "component": "Windows Audio Service",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -4865,7 +4895,7 @@
    "title": "Windows BitLocker Remote Code Execution Vulnerability",
    "component": "Windows BitLocker",
    "tags": [
-    "other"
+    "security"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -4896,7 +4926,7 @@
    "title": "Windows Error Reporting Elevation of Privilege Vulnerability",
    "component": "Windows Error Reporting",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -4927,7 +4957,7 @@
    "title": "Windows Management Instrumentation Elevation of Privilege Vulnerability",
    "component": "Windows Management Instrumentation",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -4958,7 +4988,7 @@
    "title": "Microsoft Windows Search Component Tampering Vulnerability",
    "component": "Microsoft Windows Search Component",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Tampering",
    "severity": {
@@ -4989,7 +5019,8 @@
    "title": "Windows Remote Access Connection Manager Elevation of Privilege Vulnerability",
    "component": "Windows Remote Access Connection Manager",
    "tags": [
-    "remote-access"
+    "remote-access",
+    "server-roles"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -5020,7 +5051,7 @@
    "title": "Microsoft Windows Speech Elevation of Privilege Vulnerability",
    "component": "Microsoft Windows Speech",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -5082,7 +5113,7 @@
    "title": "Windows BitLocker Elevation of Privilege Vulnerability",
    "component": "Windows BitLocker",
    "tags": [
-    "other"
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -5144,7 +5175,7 @@
    "title": "Windows Modern Device Management (MDM) Elevation of Privilege Vulnerability",
    "component": "Windows Modern Device Management (MDM)",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -5175,7 +5206,7 @@
    "title": "Windows NTFS Remote Code Execution Vulnerability",
    "component": "Windows NTFS",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -5206,7 +5237,7 @@
    "title": "Windows Error Reporting Elevation of Privilege Vulnerability",
    "component": "Windows Error Reporting",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -5237,7 +5268,7 @@
    "title": "Windows NTFS Remote Code Execution Vulnerability",
    "component": "Windows NTFS",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -5299,6 +5330,7 @@
    "title": "Windows Volume Manager Extension Driver Elevation of Privilege Vulnerability",
    "component": "Windows Volume Manager Extension Driver",
    "tags": [
+    "storage",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -5330,6 +5362,7 @@
    "title": "Windows USB Audio Class driver (usbaudio.sys) Elevation of Privilege Vulnerability",
    "component": "Windows USB Audio Class driver (usbaudio.sys)",
    "tags": [
+    "apps-desktop",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -5361,7 +5394,7 @@
    "title": "Connected User Experiences and Telemetry Elevation of Privilege Vulnerability",
    "component": "Windows Connected User Experiences and Telemetry",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -5454,7 +5487,7 @@
    "title": "Windows Overlay Filter Information Disclosure Vulnerability",
    "component": "Windows Overlay Filter",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -5516,7 +5549,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -5547,7 +5581,7 @@
    "title": "Windows Device Association Service Elevation of Privilege Vulnerability",
    "component": "Windows Device Association Service",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -5578,7 +5612,7 @@
    "title": "Windows NTFS Remote Code Execution Vulnerability",
    "component": "Windows NTFS",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -5671,7 +5705,7 @@
    "title": "Windows Error Reporting Tampering Vulnerability",
    "component": "Windows Error Reporting",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Tampering",
    "severity": {
@@ -5702,7 +5736,7 @@
    "title": "Windows Image Acquisition Information Disclosure Vulnerability",
    "component": "Windows Image Acquisition",
    "tags": [
-    "other"
+    "print"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -5733,7 +5767,7 @@
    "title": "Windows Device Association Service Elevation of Privilege Vulnerability",
    "component": "Windows Device Association Service",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -5764,7 +5798,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -5795,6 +5830,7 @@
    "title": "Windows USB Mass Storage Class Driver Elevation of Privilege Vulnerability",
    "component": "Windows USB Mass Storage Class Driver",
    "tags": [
+    "storage",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -5826,7 +5862,7 @@
    "title": "Microsoft DirectMusic Remote Code Execution Vulnerability",
    "component": "Windows Microsoft DirectMusic",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -5888,7 +5924,7 @@
    "title": "Windows Event Logging Service Remote Code Execution Vulnerability",
    "component": "Windows Event Logging Service",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -5919,7 +5955,7 @@
    "title": "Windows Event Logging Service Remote Code Execution Vulnerability",
    "component": "Windows Event Logging Service",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -5950,7 +5986,7 @@
    "title": "Windows Event Logging Service Remote Code Execution Vulnerability",
    "component": "Windows Event Logging Service",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -6012,7 +6048,8 @@
    "title": "Windows DHCP Server Denial of Service Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Denial of Service",
    "severity": {
@@ -6097,7 +6134,7 @@
    "title": "Windows Image Acquisition Elevation of Privilege Vulnerability",
    "component": "Windows Image Acquisition",
    "tags": [
-    "other"
+    "print"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -6190,7 +6227,7 @@
    "title": "Windows NTFS Information Disclosure Vulnerability",
    "component": "Windows NTFS",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -6221,7 +6258,7 @@
    "title": "Windows NTFS Elevation of Privilege Vulnerability",
    "component": "Windows NTFS",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -6252,7 +6289,7 @@
    "title": "Microsoft Windows Search Component Information Disclosure Vulnerability",
    "component": "Microsoft Windows Search Component",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -6283,7 +6320,7 @@
    "title": "Windows MIDI Service Module Elevation of Privileges Vulnerability",
    "component": "Windows MIDI Service Module",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -6306,7 +6343,8 @@
    "title": "Windows DHCP Server Remote Code Execution Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -6329,7 +6367,7 @@
    "title": "Microsoft Windows Media Foundation Remote Code Execution Vulnerability",
    "component": "Microsoft Windows Media Foundation",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -6360,7 +6398,7 @@
    "title": "Windows Spaceport.sys Elevation of Privilege Vulnerability",
    "component": "Windows Spaceport.sys",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -6391,7 +6429,7 @@
    "title": "Windows Error Reporting Elevation of Privilege Vulnerability",
    "component": "Windows Error Reporting",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -6577,6 +6615,7 @@
    "title": "Windows USB Mass Storage Class Driver Information Disclosure Vulnerability",
    "component": "Windows USB Mass Storage Class Driver",
    "tags": [
+    "storage",
     "kernel-drivers"
    ],
    "impact": "Information Disclosure",
@@ -6608,7 +6647,7 @@
    "title": "Windows Shell Elevation of Privilege Vulnerability",
    "component": "Windows Shell",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -6658,7 +6697,7 @@
    "title": "Microsoft Windows Speech Tampering Vulnerability",
    "component": "Microsoft Windows Speech",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Tampering",
    "severity": {
@@ -6689,7 +6728,7 @@
    "title": "Windows NTFS Elevation of Privilege Vulnerability",
    "component": "Windows NTFS",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -6720,7 +6759,7 @@
    "title": "Windows Program Compatibility Assistant Service Elevation of Privilege Vulnerability",
    "component": "Windows Program Compatibility Assistant Service",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -6751,7 +6790,7 @@
    "title": "Windows Spaceport.sys Elevation of Privilege Vulnerability",
    "component": "Windows Spaceport.sys",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -6809,7 +6848,7 @@
    "title": "Windows Spaceport.sys Remote Code Execution Vulnerability",
    "component": "Windows Spaceport.sys",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -6871,7 +6910,7 @@
    "title": "Windows Audio Service Elevation of Privilege Vulnerability",
    "component": "Windows Audio Service",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -6902,7 +6941,7 @@
    "title": "Windows Camera Frame Server Monitor Elevation of Privilege Vulnerability",
    "component": "Windows Camera Frame Server Monitor",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -6960,7 +6999,8 @@
    "title": "Windows DHCP Server Remote Code Execution Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -6983,7 +7023,7 @@
    "title": "Windows RNDIS Information Disclosure Vulnerability",
    "component": "Windows RNDIS",
    "tags": [
-    "other"
+    "network"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -7068,6 +7108,7 @@
    "title": "Windows Hyper-V Elevation of Privilege Vulnerability",
    "component": "Windows Hyper-V",
    "tags": [
+    "server-roles",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -7099,7 +7140,7 @@
    "title": "Microsoft Windows Search Component Tampering Vulnerability",
    "component": "Microsoft Windows Search Component",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Tampering",
    "severity": {
@@ -7188,7 +7229,7 @@
    "title": "Windows Program Compatibility Assistant Service Elevation of Privilege Vulnerability",
    "component": "Windows Program Compatibility Assistant Service",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -7242,7 +7283,7 @@
    "title": "Windows NTFS Remote Code Execution Vulnerability",
    "component": "Windows NTFS",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -7273,7 +7314,7 @@
    "title": "Windows NTFS Elevation of Privilege Vulnerability",
    "component": "Windows NTFS",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -7304,7 +7345,7 @@
    "title": "Storage Spaces Controller Information Disclosure Vulnerability",
    "component": "Windows Storage Spaces Controller",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -7366,6 +7407,7 @@
    "title": "Windows USB Audio Class driver (usbaudio.sys) Elevation of Privilege Vulnerability",
    "component": "Windows USB Audio Class driver (usbaudio.sys)",
    "tags": [
+    "apps-desktop",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -7428,6 +7470,7 @@
    "title": "Windows Universal Disk Format File System Driver (UDFS) Elevation of Privilege Vulnerability",
    "component": "Windows Universal Disk Format File System Driver (UDFS)",
    "tags": [
+    "storage",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -7459,7 +7502,7 @@
    "title": "Windows Device Association Service Elevation of Privilege Vulnerability",
    "component": "Windows Device Association Service",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -7490,7 +7533,7 @@
    "title": "Windows Storage Spaces Controller Elevation of Privilege Vulnerability",
    "component": "Windows Storage Spaces Controller",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -7552,7 +7595,7 @@
    "title": "Windows Message Queuing Remote Code Execution Vulnerability",
    "component": "Windows Message Queuing",
    "tags": [
-    "other"
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -7583,7 +7626,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -7614,7 +7658,7 @@
    "title": "Windows Device Association Service Elevation of Privilege Vulnerability",
    "component": "Windows Device Association Service",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -7645,6 +7689,7 @@
    "title": "Windows Volume Manager Extension Driver Elevation of Privilege Vulnerability",
    "component": "Windows Volume Manager Extension Driver",
    "tags": [
+    "storage",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -7676,7 +7721,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -7738,7 +7784,7 @@
    "title": "Microsoft Windows Search Component Elevation of Privilege Vulnerability",
    "component": "Microsoft Windows Search Component",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -7862,7 +7908,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -7894,7 +7941,8 @@
    "component": "Windows Routing and Remote Access Service (RRAS)",
    "tags": [
     "network",
-    "remote-access"
+    "remote-access",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -7925,7 +7973,7 @@
    "title": "Windows NTFS Information Disclosure Vulnerability",
    "component": "Windows NTFS",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -7956,6 +8004,7 @@
    "title": "Windows Universal Disk Format File System Driver (UDFS) Elevation of Privilege Vulnerability",
    "component": "Windows Universal Disk Format File System Driver (UDFS)",
    "tags": [
+    "storage",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -7987,7 +8036,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -8069,7 +8119,7 @@
    "title": "Windows iSCSI Remote Code Execution Vulnerability",
    "component": "Windows iSCSI",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -8127,7 +8177,7 @@
    "title": "Microsoft Windows Search Component Elevation of Privilege Vulnerability",
    "component": "Microsoft Windows Search Component",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -8158,7 +8208,7 @@
    "title": "Microsoft Windows Media Foundation Remote Code Execution Vulnerability",
    "component": "Microsoft Windows Media Foundation",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -8220,6 +8270,7 @@
    "title": "Windows Hyper-V Remote Code Execution Vulnerability",
    "component": "Windows Hyper-V",
    "tags": [
+    "server-roles",
     "kernel-drivers"
    ],
    "impact": "Remote Code Execution",
@@ -8251,7 +8302,7 @@
    "title": "Windows Audio Service Elevation of Privilege Vulnerability",
    "component": "Windows Audio Service",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -8282,7 +8333,7 @@
    "title": "Windows Shell Elevation of Privilege Vulnerability",
    "component": "Windows Shell",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -8309,7 +8360,8 @@
    "title": "Windows Deployment Services Remote Code Execution Vulnerability",
    "component": "Windows Deployment Services",
    "tags": [
-    "other"
+    "management",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -8332,7 +8384,7 @@
    "title": "Microsoft Windows Search Component Elevation of Privilege Vulnerability",
    "component": "Microsoft Windows Search Component",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -8425,7 +8477,7 @@
    "title": "Windows Error Reporting Elevation of Privilege Vulnerability",
    "component": "Windows Error Reporting",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -8456,7 +8508,7 @@
    "title": "Windows Image Acquisition Elevation of Privilege Vulnerability",
    "component": "Windows Image Acquisition",
    "tags": [
-    "other"
+    "print"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -8518,7 +8570,7 @@
    "title": "Windows Resilient File System (ReFS) Elevation of Privilege Vulnerability",
    "component": "Windows Resilient File System (ReFS)",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -8568,7 +8620,7 @@
    "title": "Windows exFAT File System Elevation of Privilege Vulnerability",
    "component": "Windows exFAT File System",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -8599,7 +8651,8 @@
    "title": "Windows DHCP Server Remote Code Execution Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -8653,7 +8706,7 @@
    "title": "Connected User Experiences and Telemetry Elevation of Privilege Vulnerability",
    "component": "Windows Connected User Experiences and Telemetry",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -8716,7 +8769,7 @@
    "title": "Windows iSCSI Remote Code Execution Vulnerability",
    "component": "Windows iSCSI",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -8801,7 +8854,8 @@
    "title": "Windows DHCP Server Denial of Service Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Denial of Service",
    "severity": {
@@ -8824,7 +8878,7 @@
    "title": "Windows NTFS Remote Code Execution Vulnerability",
    "component": "Windows NTFS",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -8855,7 +8909,7 @@
    "title": "Windows Spaceport.sys Elevation of Privilege Vulnerability",
    "component": "Windows Spaceport.sys",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -8886,7 +8940,7 @@
    "title": "Windows Message Queuing Elevation of Privilege Vulnerability",
    "component": "Windows Message Queuing",
    "tags": [
-    "other"
+    "server-roles"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -8917,7 +8971,7 @@
    "title": "Windows Notification Elevation of Privilege Vulnerability",
    "component": "Windows Notification",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -9064,7 +9118,7 @@
    "title": "Windows Modern Device Management (MDM) Security Feature Bypass Vulnerability",
    "component": "Windows Modern Device Management (MDM)",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Security Feature Bypass",
    "severity": {
@@ -9126,7 +9180,8 @@
    "title": "Windows DHCP Server Denial of Service Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Denial of Service",
    "severity": {
@@ -9172,7 +9227,7 @@
    "title": "Windows Host Guardian Service Elevation of Privilege Vulnerability",
    "component": "Windows Host Guardian Service",
    "tags": [
-    "other"
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -9203,7 +9258,7 @@
    "title": "Windows Error Reporting Information Disclosure Vulnerability",
    "component": "Windows Error Reporting",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -9265,6 +9320,7 @@
    "title": "Windows USB Audio Class driver (usbaudio.sys) Elevation of Privilege Vulnerability",
    "component": "Windows USB Audio Class driver (usbaudio.sys)",
    "tags": [
+    "apps-desktop",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -9296,7 +9352,7 @@
    "title": "Windows Encrypting File System (EFS) Elevation of Privilege Vulnerability",
    "component": "Windows Encrypting File System (EFS)",
    "tags": [
-    "other"
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -9358,7 +9414,7 @@
    "title": "Windows Spaceport.sys Elevation of Privilege Vulnerability",
    "component": "Windows Spaceport.sys",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -9389,7 +9445,7 @@
    "title": "Windows Audio Service Elevation of Privilege Vulnerability",
    "component": "Windows Audio Service",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -9420,7 +9476,7 @@
    "title": "Windows Device Association Broker Service Elevation of Privilege Vulnerability",
    "component": "Windows Device Association Broker service",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -9513,6 +9569,7 @@
    "title": "Windows USB Audio Class driver (usbaudio.sys) Elevation of Privilege Vulnerability",
    "component": "Windows USB Audio Class driver (usbaudio.sys)",
    "tags": [
+    "apps-desktop",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -9544,7 +9601,7 @@
    "title": "Windows Web Platform Storage Elevation of Privilege Vulnerability",
    "component": "Windows Web Platform Storage",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -9575,7 +9632,7 @@
    "title": "Windows NTFS Remote Code Execution Vulnerability",
    "component": "Windows NTFS",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -9629,7 +9686,7 @@
    "title": "Windows Device Association Service Elevation of Privilege Vulnerability",
    "component": "Windows Device Association Service",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -9660,7 +9717,7 @@
    "title": "Windows Key Distribution Center Remote Code Execution Vulnerability",
    "component": "Windows Key Distribution Center",
    "tags": [
-    "other"
+    "sign-in"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -9683,7 +9740,7 @@
    "title": "Windows Secure Boot Security Feature Bypass Vulnerability",
    "component": "Windows Secure Boot",
    "tags": [
-    "other"
+    "security"
    ],
    "impact": "Security Feature Bypass",
    "severity": {
@@ -9714,7 +9771,7 @@
    "title": "Windows Device Association Service Elevation of Privilege Vulnerability",
    "component": "Windows Device Association Service",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -9776,7 +9833,7 @@
    "title": "Windows Group Policy Elevation of Privilege Vulnerability",
    "component": "Windows Group Policy",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -9807,7 +9864,7 @@
    "title": "Windows MIDI Service Module Elevation of Privileges Vulnerability",
    "component": "Windows MIDI Service Module",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -9884,7 +9941,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -9965,7 +10023,7 @@
    "title": "Windows Link Layer Topology Discovery Protocol Remote Code Execution Vulnerability",
    "component": "Windows Link Layer Topology Discovery Protocol",
    "tags": [
-    "other"
+    "network"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -9996,7 +10054,7 @@
    "title": "Windows Broadcast DVR User Service Elevation of Privilege Vulnerability",
    "component": "Windows Broadcast DVR User Service",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -10019,7 +10077,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -10073,7 +10132,7 @@
    "title": "Windows Spaceport.sys Information Disclosure Vulnerability",
    "component": "Windows Spaceport.sys",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -10162,6 +10221,7 @@
    "title": "Windows Universal Disk Format File System Driver (UDFS) Elevation of Privilege Vulnerability",
    "component": "Windows Universal Disk Format File System Driver (UDFS)",
    "tags": [
+    "storage",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -10286,7 +10346,7 @@
    "title": "Windows RNDIS Remote Code Execution Vulnerability",
    "component": "Windows RNDIS",
    "tags": [
-    "other"
+    "network"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -10348,7 +10408,7 @@
    "title": "Windows Spaceport.sys Information Disclosure Vulnerability",
    "component": "Windows Spaceport.sys",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -10433,7 +10493,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -10564,7 +10625,8 @@
    "title": "Windows DNS Server Remote Code Execution Vulnerability",
    "component": "Role: DNS Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -10641,7 +10703,7 @@
    "title": "Windows Text Shaping Remote Code Execution Vulnerability",
    "component": "Windows Text Shaping",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -10672,7 +10734,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -10734,7 +10797,7 @@
    "title": "Windows Device Association Service Elevation of Privilege Vulnerability",
    "component": "Windows Device Association Service",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -10827,7 +10890,7 @@
    "title": "Windows Encrypting File System (EFS) Information Disclosure Vulnerability",
    "component": "Windows Encrypting File System (EFS)",
    "tags": [
-    "other"
+    "security"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -10881,7 +10944,7 @@
    "title": "Windows Audio Service Elevation of Privilege Vulnerability",
    "component": "Windows Audio Service",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -10912,7 +10975,8 @@
    "title": "Windows DHCP Server Information Disclosure Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -10935,7 +10999,8 @@
    "title": "PowerShell Elevation of Privilege Vulnerability",
    "component": "Windows PowerShell",
    "tags": [
-    "other"
+    "management",
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -11222,7 +11287,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -11253,7 +11319,8 @@
    "title": "Windows DNS Server Remote Code Execution Vulnerability",
    "component": "Role: DNS Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -11276,7 +11343,7 @@
    "title": "Windows Shell Remote Code Execution Vulnerability",
    "component": "Windows Shell",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -11338,7 +11405,7 @@
    "title": "Windows ALPC Elevation of Privilege Vulnerability",
    "component": "Windows ALPC",
    "tags": [
-    "other"
+    "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -11400,7 +11467,8 @@
    "title": "Windows iSCSI Target Service Denial of Service Vulnerability",
    "component": "Windows iSCSI Target Service",
    "tags": [
-    "other"
+    "storage",
+    "server-roles"
    ],
    "impact": "Denial of Service",
    "severity": {
@@ -11423,7 +11491,7 @@
    "title": "Windows Encrypting File System (EFS) Elevation of Privilege Vulnerability",
    "component": "Windows Encrypting File System (EFS)",
    "tags": [
-    "other"
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -11485,7 +11553,8 @@
    "title": "Windows DHCP Server Remote Code Execution Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -11539,7 +11608,8 @@
    "title": "Windows DHCP Server Remote Code Execution Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -11571,7 +11641,8 @@
    "component": "Windows Routing and Remote Access Service (RRAS)",
    "tags": [
     "network",
-    "remote-access"
+    "remote-access",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -11656,6 +11727,7 @@
    "title": "Windows USB Audio Class driver (usbaudio.sys) Elevation of Privilege Vulnerability",
    "component": "Windows USB Audio Class driver (usbaudio.sys)",
    "tags": [
+    "apps-desktop",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -11764,7 +11836,7 @@
    "title": "Windows Device Association Service Elevation of Privilege Vulnerability",
    "component": "Windows Device Association Service",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -11795,7 +11867,7 @@
    "title": "Windows ALPC Elevation of Privilege Vulnerability",
    "component": "Windows ALPC",
    "tags": [
-    "other"
+    "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -11826,7 +11898,7 @@
    "title": "Windows NTFS Elevation of Privilege Vulnerability",
    "component": "Windows NTFS",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -11857,7 +11929,8 @@
    "title": "Windows DHCP Server Remote Code Execution Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -11880,7 +11953,8 @@
    "title": "Windows DHCP Server Remote Code Execution Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -11996,7 +12070,7 @@
    "title": "Windows Media Elevation of Privilege Vulnerability",
    "component": "Windows Media",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -12027,7 +12101,7 @@
    "title": "Windows Spaceport.sys Information Disclosure Vulnerability",
    "component": "Windows Spaceport.sys",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -12058,7 +12132,7 @@
    "title": "Windows Error Reporting Elevation of Privilege Vulnerability",
    "component": "Windows Error Reporting",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -12147,6 +12221,7 @@
    "title": "Windows Hyper-V Remote Code Execution Vulnerability",
    "component": "Windows Hyper-V",
    "tags": [
+    "server-roles",
     "kernel-drivers"
    ],
    "impact": "Remote Code Execution",
@@ -12178,7 +12253,7 @@
    "title": "Microsoft Windows Search Component Elevation of Privilege Vulnerability",
    "component": "Microsoft Windows Search Component",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -12240,7 +12315,8 @@
    "title": "Windows DHCP Server Information Disclosure Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -12263,7 +12339,8 @@
    "title": "Windows DHCP Server Information Disclosure Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -12286,7 +12363,8 @@
    "title": "Windows DNS Server Remote Code Execution Vulnerability",
    "component": "Role: DNS Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -12336,7 +12414,8 @@
    "title": "Windows DHCP Server Denial of Service Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Denial of Service",
    "severity": {
@@ -12382,7 +12461,8 @@
    "title": "Windows DHCP Server Information Disclosure Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -12405,7 +12485,7 @@
    "title": "Microsoft Windows Search Component Information Disclosure Vulnerability",
    "component": "Microsoft Windows Search Component",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -12436,7 +12516,7 @@
    "title": "Windows Media Player Remote Code Execution Vulnerability",
    "component": "Windows Media Player",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -12623,7 +12703,7 @@
    "title": "Windows Audio Service Elevation of Privilege Vulnerability",
    "component": "Windows Audio Service",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -12654,7 +12734,7 @@
    "title": "Windows Shell Spoofing Vulnerability",
    "component": "Windows Shell",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Spoofing",
    "severity": {
@@ -12774,7 +12854,8 @@
    "title": "Windows Defender Firewall Service Elevation of Privilege Vulnerability",
    "component": "Windows Defender Firewall Service",
    "tags": [
-    "other"
+    "network",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -12805,7 +12886,7 @@
    "title": "Windows Spaceport.sys Elevation of Privilege Vulnerability",
    "component": "Windows Spaceport.sys",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -12837,7 +12918,8 @@
    "component": "Windows Routing and Remote Access Service (RRAS)",
    "tags": [
     "network",
-    "remote-access"
+    "remote-access",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -12868,7 +12950,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -12899,7 +12982,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -12930,7 +13014,7 @@
    "title": "Windows Schannel Denial of Service Vulnerability",
    "component": "Windows Schannel",
    "tags": [
-    "other"
+    "security"
    ],
    "impact": "Denial of Service",
    "severity": {
@@ -12961,7 +13045,7 @@
    "title": "Windows Modern Device Management (MDM) Elevation of Privilege Vulnerability",
    "component": "Windows Modern Device Management (MDM)",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -13038,7 +13122,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -13069,7 +13154,7 @@
    "title": "Windows Management Instrumentation Elevation of Privilege Vulnerability",
    "component": "Windows Management Instrumentation",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -13100,7 +13185,7 @@
    "title": "Windows Core Messaging Elevation of Privilege Vulnerability",
    "component": "Windows Core Messaging",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -13131,7 +13216,7 @@
    "title": "Windows Core Messaging Elevation of Privilege Vulnerability",
    "component": "Windows Core Messaging",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -13186,7 +13271,7 @@
    "title": "Windows Paint Remote Code Execution Vulnerability",
    "component": "Windows Paint",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -13248,7 +13333,7 @@
    "title": "Windows NTFS Remote Code Execution Vulnerability",
    "component": "Windows NTFS",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -13311,7 +13396,7 @@
    "title": "Windows Secure Socket Tunneling Protocol (SSTP) Elevation of Privilege Vulnerability",
    "component": "Windows Secure Socket Tunneling Protocol (SSTP)",
    "tags": [
-    "other"
+    "network"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -13342,7 +13427,8 @@
    "title": "Windows Remote Access Connection Manager Elevation of Privilege Vulnerability",
    "component": "Windows Remote Access Connection Manager",
    "tags": [
-    "remote-access"
+    "remote-access",
+    "server-roles"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -13427,7 +13513,7 @@
    "title": "Windows Storage Management Provider Elevation of Privilege Vulnerability",
    "component": "Windows Storage Management Provider",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -13458,7 +13544,7 @@
    "title": "Windows Failover Cluster Elevation of Privilege Vulnerability",
    "component": "Windows Failover Cluster",
    "tags": [
-    "other"
+    "server-roles"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -13512,7 +13598,7 @@
    "title": "Windows File History Service Elevation of Privilege Vulnerability",
    "component": "Windows File History Service",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -13566,7 +13652,8 @@
    "title": "Windows Remote Access Connection Manager Elevation of Privilege Vulnerability",
    "component": "Windows Remote Access Connection Manager",
    "tags": [
-    "remote-access"
+    "remote-access",
+    "server-roles"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -13597,7 +13684,8 @@
    "title": "Windows Remote Access Connection Manager Remote Code Execution Vulnerability",
    "component": "Windows Remote Access Connection Manager",
    "tags": [
-    "remote-access"
+    "remote-access",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -13628,7 +13716,7 @@
    "title": "Windows Spaceport.sys Remote Code Execution Vulnerability",
    "component": "Windows Spaceport.sys",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -13659,7 +13747,7 @@
    "title": "Windows Spaceport.sys Remote Code Execution Vulnerability",
    "component": "Windows Spaceport.sys",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -13690,7 +13778,7 @@
    "title": "Windows Spaceport.sys Remote Code Execution Vulnerability",
    "component": "Windows Spaceport.sys",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -13721,7 +13809,7 @@
    "title": "Windows Spaceport.sys Remote Code Execution Vulnerability",
    "component": "Windows Spaceport.sys",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -13753,7 +13841,8 @@
    "component": "Windows Routing and Remote Access Service (RRAS)",
    "tags": [
     "network",
-    "remote-access"
+    "remote-access",
+    "server-roles"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -13784,7 +13873,8 @@
    "title": "Windows Remote Access Connection Manager Remote Code Execution Vulnerability",
    "component": "Windows Remote Access Connection Manager",
    "tags": [
-    "remote-access"
+    "remote-access",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -13816,7 +13906,8 @@
    "component": "Windows Routing and Remote Access Service (RRAS)",
    "tags": [
     "network",
-    "remote-access"
+    "remote-access",
+    "server-roles"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -13847,7 +13938,7 @@
    "title": "Windows Internet Connection Sharing (ICS) Elevation of Privilege Vulnerability",
    "component": "Windows Internet Connection Sharing (ICS)",
    "tags": [
-    "other"
+    "network"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -13924,7 +14015,7 @@
    "title": "Windows Secure Socket Tunneling Protocol (SSTP) Remote Code Execution Vulnerability",
    "component": "Windows Secure Socket Tunneling Protocol (SSTP)",
    "tags": [
-    "other"
+    "network"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -13955,7 +14046,7 @@
    "title": "Windows Secure Socket Tunneling Protocol (SSTP) Denial of Service Vulnerability",
    "component": "Windows Secure Socket Tunneling Protocol (SSTP)",
    "tags": [
-    "other"
+    "network"
    ],
    "impact": "Denial of Service",
    "severity": {
@@ -13986,7 +14077,7 @@
    "title": "Windows Message Queuing Queue Manager Information Disclosure Vulnerability",
    "component": "Windows Message Queuing Queue Manager",
    "tags": [
-    "other"
+    "server-roles"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -14017,7 +14108,7 @@
    "title": "Windows NTFS Elevation of Privilege Vulnerability",
    "component": "Windows NTFS",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -14079,6 +14170,7 @@
    "title": "Windows Storage Port Driver Information Disclosure Vulnerability",
    "component": "Storage Port Driver",
    "tags": [
+    "storage",
     "kernel-drivers"
    ],
    "impact": "Information Disclosure",
@@ -14111,7 +14203,8 @@
    "component": "Windows Routing and Remote Access Service (RRAS)",
    "tags": [
     "network",
-    "remote-access"
+    "remote-access",
+    "server-roles"
    ],
    "impact": "Denial of Service",
    "severity": {
@@ -14142,7 +14235,7 @@
    "title": "Windows Schannel Remote Code Execution Vulnerability",
    "component": "Windows Schannel",
    "tags": [
-    "other"
+    "security"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -14173,7 +14266,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -14204,7 +14298,7 @@
    "title": "Windows Spaceport.sys Information Disclosure Vulnerability",
    "component": "Windows Spaceport.sys",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -14235,7 +14329,8 @@
    "title": "Windows Deployment Services Remote Code Execution Vulnerability",
    "component": "Windows Deployment Services",
    "tags": [
-    "other"
+    "management",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -14258,7 +14353,7 @@
    "title": "Windows Task Scheduler Information Disclosure Vulnerability",
    "component": "Windows Task Scheduler",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -14277,7 +14372,7 @@
    "title": "Windows File History Service Elevation of Privilege Vulnerability",
    "component": "Windows File History Service",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -14357,7 +14452,8 @@
    "component": "Windows Routing and Remote Access Service (RRAS)",
    "tags": [
     "network",
-    "remote-access"
+    "remote-access",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -14388,7 +14484,7 @@
    "title": "Windows Spaceport.sys Remote Code Execution Vulnerability",
    "component": "Windows Spaceport.sys",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -14450,7 +14546,8 @@
    "title": "Windows Deployment Services Remote Code Execution Vulnerability",
    "component": "Windows Deployment Services",
    "tags": [
-    "other"
+    "management",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -14473,7 +14570,8 @@
    "title": "Windows Deployment Services Remote Code Execution Vulnerability",
    "component": "Windows Deployment Services",
    "tags": [
-    "other"
+    "management",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -14524,7 +14622,8 @@
    "component": "Windows Routing and Remote Access Service (RRAS)",
    "tags": [
     "network",
-    "remote-access"
+    "remote-access",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -14555,7 +14654,7 @@
    "title": "Windows Media Player Remote Code Execution Vulnerability",
    "component": "Windows Media Player",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -14586,6 +14685,7 @@
    "title": "Windows Hyper-V Elevation of Privilege Vulnerability",
    "component": "Windows Hyper-V",
    "tags": [
+    "server-roles",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -14679,7 +14779,7 @@
    "title": "Windows Internet Connection Sharing (ICS) Tampering Vulnerability",
    "component": "Windows Internet Connection Sharing (ICS)",
    "tags": [
-    "other"
+    "network"
    ],
    "impact": "Tampering",
    "severity": {
@@ -14741,7 +14841,8 @@
    "title": "Windows Remote Access Connection Manager Tampering Vulnerability",
    "component": "Windows Remote Access Connection Manager",
    "tags": [
-    "remote-access"
+    "remote-access",
+    "server-roles"
    ],
    "impact": "Tampering",
    "severity": {
@@ -14803,7 +14904,8 @@
    "title": "Windows DHCP Server Remote Code Execution Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -14888,7 +14990,7 @@
    "title": "Internet Connection Sharing (ICS) Remote Code Execution Vulnerability",
    "component": "Windows Internet Connection Sharing (ICS)",
    "tags": [
-    "other"
+    "network"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -14919,7 +15021,7 @@
    "title": "Volume Shadow Copy Elevation of Privilege Vulnerability",
    "component": "Windows Volume Shadow Copy",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -14973,7 +15075,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -15004,7 +15107,7 @@
    "title": "Windows Failover Cluster Information Disclosure Vulnerability",
    "component": "Windows Failover Cluster",
    "tags": [
-    "other"
+    "server-roles"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -15027,7 +15130,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -15058,7 +15162,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -15089,7 +15194,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -15120,7 +15226,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -15151,7 +15258,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -15182,7 +15290,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -15213,7 +15322,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -15244,7 +15354,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -15306,7 +15417,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -15337,7 +15449,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -15368,7 +15481,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -15399,7 +15513,7 @@
    "title": "Windows Modern Device Management (MDM) Elevation of Privilege Vulnerability",
    "component": "Windows Modern Device Management (MDM)",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -15430,7 +15544,7 @@
    "title": "Windows Autopilot Tampering Vulnerability",
    "component": "Windows Autopilot",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Tampering",
    "severity": {
@@ -15492,7 +15606,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -15523,7 +15638,8 @@
    "title": "Windows Biometric Service Information Disclosure Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -15554,7 +15670,7 @@
    "title": "Windows Secure Socket Tunneling Protocol (SSTP) Remote Code Execution Vulnerability",
    "component": "Windows Secure Socket Tunneling Protocol (SSTP)",
    "tags": [
-    "other"
+    "network"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -15585,7 +15701,7 @@
    "title": "Microsoft Failover Cluster Remote Code Execution Vulnerability",
    "component": "Windows Failover Cluster",
    "tags": [
-    "other"
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -15608,7 +15724,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -15639,7 +15756,7 @@
    "title": "Windows Management Services Elevation of Privilege Vulnerability",
    "component": "Windows Management Services",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -15701,7 +15818,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -15795,7 +15913,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -15826,7 +15945,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -15857,7 +15977,7 @@
    "title": "Windows Modern Device Management (MDM) Elevation of Privilege Vulnerability",
    "component": "Windows Modern Device Management (MDM)",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -15951,7 +16071,7 @@
    "title": "Windows iSCSI Security Feature Bypass Vulnerability",
    "component": "Windows iSCSI",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Security Feature Bypass",
    "severity": {
@@ -15974,7 +16094,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -16005,7 +16126,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -16067,6 +16189,7 @@
    "title": "Windows Storage Port Driver Information Disclosure Vulnerability",
    "component": "Storage Port Driver",
    "tags": [
+    "storage",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -16129,7 +16252,8 @@
    "title": "Windows DHCP Server Denial of Service Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Denial of Service",
    "severity": {
@@ -16183,7 +16307,8 @@
    "title": "Windows DHCP Server Denial of Service Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Denial of Service",
    "severity": {
@@ -16206,7 +16331,8 @@
    "title": "Windows DHCP Server Denial of Service Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Denial of Service",
    "severity": {
@@ -16229,7 +16355,7 @@
    "title": "Windows Device Association Service Elevation of Privilege Vulnerability",
    "component": "Windows Device Association Service",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -16252,7 +16378,8 @@
    "title": "Windows DHCP Server Denial of Service Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Denial of Service",
    "severity": {
@@ -16275,7 +16402,8 @@
    "title": "Windows DHCP Server Denial of Service Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Denial of Service",
    "severity": {
@@ -16298,7 +16426,7 @@
    "title": "Windows NTFS Elevation of Privilege Vulnerability",
    "component": "Windows NTFS",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -16329,7 +16457,8 @@
    "title": "Windows DNS Server Remote Code Execution Vulnerability",
    "component": "Role: DNS Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -16352,7 +16481,8 @@
    "title": "Windows DHCP Server Denial of Service Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Denial of Service",
    "severity": {
@@ -16375,7 +16505,8 @@
    "title": "Windows DHCP Server Remote Code Execution Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -16398,7 +16529,8 @@
    "title": "Windows DHCP Server Denial of Service Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Denial of Service",
    "severity": {
@@ -16421,7 +16553,8 @@
    "title": "Windows DHCP Server Denial of Service Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Denial of Service",
    "severity": {
@@ -16444,7 +16577,8 @@
    "title": "Windows DHCP Server Denial of Service Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Denial of Service",
    "severity": {
@@ -16467,7 +16601,8 @@
    "title": "Windows DHCP Server Remote Code Execution Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -16490,7 +16625,7 @@
    "title": "Windows Boot Manager Elevation of Privilege Vulnerability",
    "component": "Windows Boot Manager",
    "tags": [
-    "other"
+    "security"
    ],
    "impact": "Security Feature Bypass",
    "severity": {
@@ -16521,7 +16656,8 @@
    "title": "Windows DHCP Server Denial of Service Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Denial of Service",
    "severity": {
@@ -16575,7 +16711,8 @@
    "title": "Windows DHCP Server Denial of Service Vulnerability",
    "component": "Windows DHCP Server",
    "tags": [
-    "network"
+    "network",
+    "server-roles"
    ],
    "impact": "Denial of Service",
    "severity": {
@@ -16629,7 +16766,7 @@
    "title": "Windows Security Center Elevation of Privilege Vulnerability",
    "component": "Windows Security Center",
    "tags": [
-    "other"
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -16652,6 +16789,7 @@
    "title": "Windows Volume Manager Extension Driver Elevation of Privilege Vulnerability",
    "component": "Windows Volume Manager Extension Driver",
    "tags": [
+    "storage",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -16683,7 +16821,7 @@
    "title": "Windows Management Instrumentation Elevation of Privilege Vulnerability",
    "component": "Windows Management Instrumentation",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -16714,7 +16852,7 @@
    "title": "Microsoft Failover Cluster Remote Code Execution Vulnerability",
    "component": "Windows Failover Cluster",
    "tags": [
-    "other"
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -16792,7 +16930,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -16823,7 +16962,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -16908,7 +17048,7 @@
    "title": "Microsoft Windows SCSI Class System File Elevation of Privilege Vulnerability",
    "component": "Microsoft Windows SCSI Class System File",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -16939,7 +17079,7 @@
    "title": "Microsoft Windows SCSI Class System File Information Disclosure Vulnerability",
    "component": "Microsoft Windows SCSI Class System File",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -16970,7 +17110,7 @@
    "title": "Microsoft Windows SCSI Class System File Information Disclosure Vulnerability",
    "component": "Microsoft Windows SCSI Class System File",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -17055,7 +17195,7 @@
    "title": "Windows MIDI Service Module Elevation of Privileges Vulnerability",
    "component": "Windows MIDI Service Module",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -17109,7 +17249,7 @@
    "title": "Windows Storage Information Disclosure Vulnerability",
    "component": "Windows Storage",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -17194,6 +17334,7 @@
    "title": "Windows Hyper-V Remote Code Execution Vulnerability",
    "component": "Windows Hyper-V",
    "tags": [
+    "server-roles",
     "kernel-drivers"
    ],
    "impact": "Remote Code Execution",
@@ -17225,6 +17366,7 @@
    "title": "Windows Cloud Files Mini Filter Driver Elevation of Privilege Vulnerability",
    "component": "Windows Cloud Files Mini Filter Driver",
    "tags": [
+    "storage",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -17368,6 +17510,7 @@
    "title": "Windows Virtualization-Based Security (VBS) Enclave Elevation of Privilege Vulnerability",
    "component": "Windows Virtualization-Based Security (VBS) Enclave",
    "tags": [
+    "security",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -17395,6 +17538,7 @@
    "title": "Windows Virtualization-Based Security (VBS) Information Disclosure Vulnerability",
    "component": "Windows Virtualization-Based Security (VBS) Enclave",
    "tags": [
+    "security",
     "kernel-drivers"
    ],
    "impact": "Information Disclosure",
@@ -17422,7 +17566,7 @@
    "title": "Windows Device Association Service Elevation of Privilege Vulnerability",
    "component": "Windows Device Association Service",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -17484,7 +17628,7 @@
    "title": "Windows Resilient File System (ReFS) Elevation of Privilege Vulnerability",
    "component": "Windows Resilient File System (ReFS)",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -17511,7 +17655,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -17542,7 +17687,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -17573,7 +17719,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -17604,7 +17751,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -17635,7 +17783,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -17666,7 +17815,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -17697,7 +17847,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -17728,7 +17879,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -17759,7 +17911,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -17790,7 +17943,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -17821,7 +17975,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -17852,7 +18007,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -17883,7 +18039,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -17914,7 +18071,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -17945,7 +18103,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -17976,7 +18135,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -18007,7 +18167,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -18038,7 +18199,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -18069,7 +18231,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -18100,7 +18263,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -18131,7 +18295,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -18162,7 +18327,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -18193,7 +18359,8 @@
    "title": "Windows Biometric Service Elevation of Privilege Vulnerability",
    "component": "Windows Biometric Service",
    "tags": [
-    "other"
+    "sign-in",
+    "security"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -18256,6 +18423,7 @@
    "title": "Windows Cloud Files Mini Filter Driver Tampering Vulnerability",
    "component": "Windows Cloud Files Mini Filter Driver",
    "tags": [
+    "storage",
     "kernel-drivers"
    ],
    "impact": "Tampering",
@@ -18318,7 +18486,7 @@
    "title": "Windows NTFS Elevation of Privilege Vulnerability",
    "component": "Windows NTFS",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -18349,7 +18517,7 @@
    "title": "Windows Error Reporting Elevation of Privilege Vulnerability",
    "component": "Windows Error Reporting",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -18380,7 +18548,7 @@
    "title": "Windows Message Queuing Remote Code Execution Vulnerability",
    "component": "Windows Message Queuing",
    "tags": [
-    "other"
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -18411,7 +18579,7 @@
    "title": "Windows Resilient File System (ReFS) Deduplication Service Elevation of Privilege Vulnerability",
    "component": "Windows Resilient File System (ReFS) Deduplication Service",
    "tags": [
-    "other"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -18438,7 +18606,7 @@
    "title": "Windows Key Distribution Center Denial of Service Vulnerability",
    "component": "Windows Key Distribution Center",
    "tags": [
-    "other"
+    "sign-in"
    ],
    "impact": "Denial of Service",
    "severity": {
@@ -18519,7 +18687,7 @@
    "title": "Windows Advanced Local Procedure Call (ALPC) Elevation of Privilege Vulnerability",
    "component": "Windows ALPC",
    "tags": [
-    "other"
+    "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
    "severity": {

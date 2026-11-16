@@ -3,12 +3,15 @@
  "released": "2026-02-10",
  "fix_count": 27,
  "by_tag": {
-  "kernel-drivers": 12,
+  "kernel-drivers": 13,
   "network": 6,
-  "other": 5,
+  "server-roles": 5,
   "graphics": 2,
+  "other": 2,
   "remote-access": 2,
   "sign-in": 2,
+  "apps-desktop": 1,
+  "storage": 1,
   "print": 1
  },
  "fixes": [
@@ -17,6 +20,7 @@
    "title": "Windows Hyper-V Remote Code Execution Vulnerability",
    "component": "Role: Windows Hyper-V",
    "tags": [
+    "server-roles",
     "kernel-drivers"
    ],
    "impact": "Remote Code Execution",
@@ -52,6 +56,7 @@
    "title": "Windows Hyper-V Remote Code Execution Vulnerability",
    "component": "Role: Windows Hyper-V",
    "tags": [
+    "server-roles",
     "kernel-drivers"
    ],
    "impact": "Remote Code Execution",
@@ -87,7 +92,7 @@
    "title": "Windows Subsystem for Linux Elevation of Privilege Vulnerability",
    "component": "Windows Subsystem for Linux",
    "tags": [
-    "other"
+    "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -248,7 +253,7 @@
    "title": "Windows Shell Security Feature Bypass Vulnerability",
    "component": "Windows Shell",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Security Feature Bypass",
    "severity": {
@@ -283,7 +288,8 @@
    "title": "Windows Remote Access Connection Manager Denial of Service Vulnerability",
    "component": "Windows Remote Access Connection Manager",
    "tags": [
-    "remote-access"
+    "remote-access",
+    "server-roles"
    ],
    "impact": "Denial of Service",
    "severity": {
@@ -318,7 +324,7 @@
    "title": "Windows Storage Elevation of Privilege Vulnerability",
    "component": "Windows Storage",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -353,6 +359,7 @@
    "title": "Windows Hyper-V Security Feature Bypass Vulnerability",
    "component": "Role: Windows Hyper-V",
    "tags": [
+    "server-roles",
     "kernel-drivers"
    ],
    "impact": "Security Feature Bypass",
@@ -508,6 +515,7 @@
    "title": "Windows Hyper-V Remote Code Execution Vulnerability",
    "component": "Role: Windows Hyper-V",
    "tags": [
+    "server-roles",
     "kernel-drivers"
    ],
    "impact": "Remote Code Execution",
@@ -710,7 +718,7 @@
    "title": "Windows Subsystem for Linux Elevation of Privilege Vulnerability",
    "component": "Windows Subsystem for Linux",
    "tags": [
-    "other"
+    "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
    "severity": {

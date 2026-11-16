@@ -1,14 +1,61 @@
 {
  "about": "Maps Microsoft's Windows component names to Patchmap areas. 'match' is a pattern checked against the component name (e.g. 'Windows Print Spooler Components'). A component can get several tags. Edit freely; re-run fetch_msrc.py.",
  "tags": {
-  "print": {"label": "Printing", "match": "print|spool|xps|gdi|imaging|scan"},
-  "sign-in": {"label": "Sign-in & identity", "match": "kerberos|ntlm|lsass|local security authority|ldap|active directory|authentication|credential|netlogon|smart card|hello|certificate|kerberos|entra|security account"},
-  "file-sharing": {"label": "File sharing", "match": "smb|server message block|\\bnfs\\b|file server|\\bdfs\\b|offline files|webdav"},
-  "network": {"label": "Network", "match": "dns|domain name|dhcp|tcp/ip|routing|rras|http\\.sys|\\bike\\b|remote procedure call|\\brpc\\b|wireless|wi-fi|bluetooth|network|winsock|ancillary function"},
-  "remote-access": {"label": "Remote Desktop", "match": "remote desktop|\\brdp\\b|terminal services|remote access"},
-  "activation": {"label": "Activation & licensing", "match": "licens|activation|software protection"},
-  "install-update": {"label": "Installing & updates", "match": "installer|servicing|update stack|windows update|appx|app installer"},
-  "graphics": {"label": "Graphics & display", "match": "graphics|rasteri|direct ?x|dwm|desktop window|win32k|font"},
-  "kernel-drivers": {"label": "Kernel & drivers", "match": "kernel|driver|usb|storage|ntfs|hyper-v|virtual"}
+  "print": {
+   "label": "Printing and scanning",
+   "match": "print|spool|xps|gdi|imaging|scan|image acquisition"
+  },
+  "sign-in": {
+   "label": "Sign-in and identity",
+   "match": "kerberos|ntlm|lsass|local security authority|ldap|active directory|authentication|credential|netlogon|smart card|hello|certificate|entra|security account|biometric|key distribution center"
+  },
+  "file-sharing": {
+   "label": "File sharing",
+   "match": "smb|server message block|\\bnfs\\b|file server|\\bdfs\\b|offline files|webdav|client-side caching"
+  },
+  "network": {
+   "label": "Network",
+   "match": "dns|domain name|dhcp|tcp/ip|routing|rras|http\\.sys|\\bike\\b|remote procedure call|\\brpc\\b|wireless|wi-fi|bluetooth|network|winsock|ancillary function|upnp|universal plug and play|internet connection sharing|sstp|secure socket tunneling|filtering platform|firewall|function discovery|netbios|ndis|ssdp|link layer|wininet|internet \\(wininet|vmswitch"
+  },
+  "remote-access": {
+   "label": "Remote Desktop",
+   "match": "remote desktop|\\brdp\\b|terminal services|remote access"
+  },
+  "security": {
+   "label": "Security features",
+   "match": "bitlocker|secure boot|encrypting file system|\\befs\\b|cryptograph|schannel|defender|firewall|filtering platform|smartscreen|virtualization-based security|\\bvbs\\b|\\btpm\\b|code integrity|applocker|biometric|kernel-mode|luafv|security center|host guardian|boot manager|application identity|appid"
+  },
+  "management": {
+   "label": "Management and admin tools",
+   "match": "management instrumentation|\\bwmi\\b|\\bmdm\\b|device management|management services|event log|event tracing|task scheduler|powershell|performance monitor|autopilot|deployment services|server update service|group policy|error reporting|telemetry|background intelligent transfer|\\bbits\\b|diagnostic|performance counters|setup files cleanup"
+  },
+  "storage": {
+   "label": "Storage and file systems",
+   "match": "storage|ntfs|refs|resilient file|overlay filter|spaceport|projected file system|iscsi|brokering file system|backup|scsi|cloud files|volume|\\bdisk|fat|file history"
+  },
+  "apps-desktop": {
+   "label": "Desktop and apps",
+   "match": "search component|shell|file explorer|push notification|broadcast dvr|audio|media|midi|speech|camera|clipboard|text shaping|windows runtime|\\bole\\b|\\bcom\\b|com\\+|app store|program compatibility|device association|sensor|staterepository|telephony|libarchive|directmusic|notepad|paint|snipping|widgets|start menu|taskbar|text services|user interface core|rich text|notification|accessibility|codecs|core messaging|wallet"
+  },
+  "server-roles": {
+   "label": "Server roles",
+   "match": "message queuing|failover cluster|internet information services|\\biis\\b|hyper-v|deployment services|server update service|iscsi target|dhcp server|dns server|remote access"
+  },
+  "activation": {
+   "label": "Activation and licensing",
+   "match": "licens|activation|software protection"
+  },
+  "install-update": {
+   "label": "Installing and updates",
+   "match": "installer|servicing|update stack|windows update|appx|app installer"
+  },
+  "graphics": {
+   "label": "Graphics and display",
+   "match": "graphics|rasteri|direct ?x|dwm|desktop window|win32k|font|direct composition"
+  },
+  "kernel-drivers": {
+   "label": "Kernel and drivers",
+   "match": "kernel|driver|usb|hyper-v|virtual|alpc|subsystem for linux|\\bhid\\b"
+  }
  }
 }

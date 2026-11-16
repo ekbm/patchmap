@@ -3,12 +3,17 @@
  "released": "2026-01-13",
  "fix_count": 80,
  "by_tag": {
-  "other": 33,
-  "kernel-drivers": 19,
+  "kernel-drivers": 17,
+  "management": 15,
+  "apps-desktop": 10,
   "sign-in": 9,
+  "network": 9,
   "graphics": 8,
-  "network": 7,
-  "file-sharing": 6,
+  "security": 7,
+  "file-sharing": 7,
+  "server-roles": 5,
+  "storage": 4,
+  "other": 3,
   "remote-access": 2,
   "print": 1,
   "install-update": 1
@@ -50,7 +55,8 @@
    "title": "Windows Deployment Services Remote Code Execution Vulnerability",
    "component": "Windows Deployment Services",
    "tags": [
-    "other"
+    "management",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -287,7 +293,7 @@
    "title": "Windows Error Reporting Service Elevation of Privilege Vulnerability",
    "component": "Windows Error Reporting",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -341,6 +347,7 @@
    "title": "Windows Virtualization-Based Security (VBS) Information Disclosure Vulnerability",
    "component": "Windows Virtualization-Based Security (VBS) Enclave",
    "tags": [
+    "security",
     "kernel-drivers"
    ],
    "impact": "Information Disclosure",
@@ -457,7 +464,7 @@
    "title": "Windows File Explorer Information Disclosure Vulnerability",
    "component": "Windows File Explorer",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -519,6 +526,7 @@
    "title": "Windows Hyper-V Information Disclosure Vulnerability",
    "component": "Windows Hyper-V",
    "tags": [
+    "server-roles",
     "kernel-drivers"
    ],
    "impact": "Information Disclosure",
@@ -550,7 +558,7 @@
    "title": "Windows rndismp6.sys Information Disclosure Vulnerability",
    "component": "Windows Internet Connection Sharing (ICS)",
    "tags": [
-    "other"
+    "network"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -581,7 +589,7 @@
    "title": "TPM Trustlet Information Disclosure Vulnerability",
    "component": "Windows TPM",
    "tags": [
-    "other"
+    "security"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -698,7 +706,7 @@
    "title": "Windows Spoofing Vulnerability",
    "component": "Windows Shell",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Spoofing",
    "severity": {
@@ -761,7 +769,7 @@
    "title": "Windows Media Remote Code Execution Vulnerability",
    "component": "Windows Media",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -823,7 +831,7 @@
    "title": "Windows Client-Side Caching (CSC) Service Information Disclosure Vulnerability",
    "component": "Windows Client-Side Caching (CSC) Service",
    "tags": [
-    "other"
+    "file-sharing"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -854,7 +862,7 @@
    "title": "Windows NTFS Remote Code Execution Vulnerability",
    "component": "Windows NTFS",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -917,7 +925,8 @@
    "component": "Windows Routing and Remote Access Service (RRAS)",
    "tags": [
     "network",
-    "remote-access"
+    "remote-access",
+    "server-roles"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -948,7 +957,7 @@
    "title": "Windows Clipboard Server Elevation of Privilege Vulnerability",
    "component": "Windows Clipboard Server",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -979,7 +988,7 @@
    "title": "Microsoft Windows File Explorer Spoofing Vulnerability",
    "component": "Windows Shell",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Spoofing",
    "severity": {
@@ -1103,7 +1112,7 @@
    "title": "Windows WalletService Elevation of Privilege Vulnerability",
    "component": "Windows WalletService",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -1153,7 +1162,8 @@
    "title": "Windows Server Update Service (WSUS) Remote Code Execution Vulnerability",
    "component": "Windows Server Update Service",
    "tags": [
-    "other"
+    "management",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -1184,6 +1194,7 @@
    "title": "Windows Cloud Files Mini Filter Driver Elevation of Privilege Vulnerability",
    "component": "Windows Cloud Files Mini Filter Driver",
    "tags": [
+    "storage",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -1215,7 +1226,7 @@
    "title": "Windows Management Services Elevation of Privilege Vulnerability",
    "component": "Windows Management Services",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -1246,6 +1257,7 @@
    "title": "Windows Kernel-Mode Driver Elevation of Privilege Vulnerability",
    "component": "Windows Kernel-Mode Drivers",
    "tags": [
+    "security",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -1305,7 +1317,7 @@
    "title": "Windows Management Services Elevation of Privilege Vulnerability",
    "component": "Windows Management Services",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -1336,7 +1348,7 @@
    "title": "Windows Management Services Information Disclosure Vulnerability",
    "component": "Windows Management Services",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -1429,7 +1441,7 @@
    "title": "Windows Management Services Elevation of Privilege Vulnerability",
    "component": "Windows Management Services",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -1460,7 +1472,7 @@
    "title": "Windows Management Services Elevation of Privilege Vulnerability",
    "component": "Windows Management Services",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -1491,7 +1503,7 @@
    "title": "Windows Management Services Elevation of Privilege Vulnerability",
    "component": "Windows Management Services",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -1523,7 +1535,8 @@
    "component": "Windows Routing and Remote Access Service (RRAS)",
    "tags": [
     "network",
-    "remote-access"
+    "remote-access",
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -1643,7 +1656,7 @@
    "title": "Windows Management Services Elevation of Privilege Vulnerability",
    "component": "Windows Management Services",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -1674,7 +1687,7 @@
    "title": "Windows Management Services Elevation of Privilege Vulnerability",
    "component": "Windows Management Services",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -1736,6 +1749,7 @@
    "title": "Windows Virtualization-Based Security (VBS) Enclave Elevation of Privilege Vulnerability",
    "component": "Windows Virtualization-Based Security (VBS) Enclave",
    "tags": [
+    "security",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -1763,7 +1777,7 @@
    "title": "Windows Management Services Elevation of Privilege Vulnerability",
    "component": "Windows Management Services",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -1794,7 +1808,7 @@
    "title": "Windows Management Services Elevation of Privilege Vulnerability",
    "component": "Windows Management Services",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -1906,7 +1920,7 @@
    "title": "Windows NTFS Remote Code Execution Vulnerability",
    "component": "Windows NTFS",
    "tags": [
-    "kernel-drivers"
+    "storage"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -1937,7 +1951,7 @@
    "title": "Windows Management Services Elevation of Privilege Vulnerability",
    "component": "Windows Management Services",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -1968,7 +1982,7 @@
    "title": "Windows Management Services Elevation of Privilege Vulnerability",
    "component": "Windows Management Services",
    "tags": [
-    "other"
+    "management"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -2111,7 +2125,7 @@
    "title": "Windows Telephony Service Elevation of Privilege Vulnerability",
    "component": "Windows Telephony Service",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Elevation of Privilege",
    "severity": {
@@ -2142,7 +2156,7 @@
    "title": "Windows File Explorer Information Disclosure Vulnerability",
    "component": "Windows File Explorer",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -2204,6 +2218,7 @@
    "title": "Windows Virtualization-Based Security (VBS) Information Disclosure Vulnerability",
    "component": "Windows Virtualization-Based Security (VBS) Enclave",
    "tags": [
+    "security",
     "kernel-drivers"
    ],
    "impact": "Information Disclosure",
@@ -2227,7 +2242,7 @@
    "title": "Windows NDIS Information Disclosure Vulnerability",
    "component": "Windows NDIS",
    "tags": [
-    "other"
+    "network"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -2258,7 +2273,7 @@
    "title": "Windows File Explorer Information Disclosure Vulnerability",
    "component": "Windows File Explorer",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -2289,6 +2304,7 @@
    "title": "Windows Virtualization-Based Security (VBS) Enclave Elevation of Privilege Vulnerability",
    "component": "Windows Virtualization-Based Security (VBS) Enclave",
    "tags": [
+    "security",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -2312,7 +2328,7 @@
    "title": "Windows File Explorer Information Disclosure Vulnerability",
    "component": "Windows File Explorer",
    "tags": [
-    "other"
+    "apps-desktop"
    ],
    "impact": "Information Disclosure",
    "severity": {
@@ -2343,6 +2359,7 @@
    "title": "Windows Cloud Files Mini Filter Driver Elevation of Privilege Vulnerability",
    "component": "Windows Cloud Files Mini Filter Driver",
    "tags": [
+    "storage",
     "kernel-drivers"
    ],
    "impact": "Elevation of Privilege",
@@ -2362,7 +2379,7 @@
    "title": "Secure Boot Certificate Expiration Security Feature Bypass Vulnerability",
    "component": "Windows Secure Boot",
    "tags": [
-    "other"
+    "security"
    ],
    "impact": "Security Feature Bypass",
    "severity": {

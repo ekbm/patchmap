@@ -41,6 +41,7 @@ GitHub Actions ([.github/workflows/site.yml](.github/workflows/site.yml)).
 |---|---|
 | `versions/<version>.json` | What the website reads: month → area → component → fixes |
 | `known_issues.json` | Known problems, written by hand, each with sources |
+| `release_health.json` | Microsoft's own known problems (titles, status, update numbers, links), collected by `scripts/fetch_release_health.py` |
 | `area_tags.json` | Rules that turn Microsoft's component names into areas |
 | `index.json` | One line per month: release date, fix counts, update numbers |
 | `months/`, `updates/`, `components.json` | The same data organised by month, by update (KB), and by component |
