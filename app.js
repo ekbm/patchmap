@@ -20,7 +20,20 @@ function writeHash() {
   history.replaceState(null, "", "#" + h.toString());
 }
 
+function setupTheme() {
+  const btn = $("theme");
+  const show = () => { btn.textContent = document.documentElement.dataset.theme === "dark" ? "Light" : "Dark"; };
+  btn.onclick = () => {
+    const dark = document.documentElement.dataset.theme !== "dark";
+    if (dark) document.documentElement.dataset.theme = "dark"; else delete document.documentElement.dataset.theme;
+    try { localStorage.setItem("pm-theme", dark ? "dark" : "light"); } catch (e) {}
+    show();
+  };
+  show();
+}
+
 async function init() {
+  setupTheme();
   readHash();
   const [index, tags, issues, ms] = await Promise.all([
     getJSON("data/index.json"), getJSON("data/area_tags.json"), getJSON("data/known_issues.json"),

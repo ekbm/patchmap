@@ -4,13 +4,13 @@
   --ok-bg: #eaf3de; --ok: #2f5a0d; --chip: #f1efe8; --mono: ui-monospace, Consolas, monospace;
   --stripe-red: #e24b4a; --stripe-amber: #ba7517; --stripe-green: #639922;
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #161615; --card: #1f1f1d; --text: #ecebe6; --muted: #a3a29c; --line: #34332f;
-    --accent: #85b7eb; --danger-bg: #3a1818; --danger: #f7c1c1; --warn-bg: #3a2a10; --warn: #fac775;
-    --ok-bg: #1f2f12; --ok: #c0dd97; --chip: #2a2a27;
-  }
+/* Light is the default for everyone. Dark only when the visitor picks it with the switch. */
+:root[data-theme="dark"] {
+  --bg: #161615; --card: #1f1f1d; --text: #ecebe6; --muted: #a3a29c; --line: #34332f;
+  --accent: #85b7eb; --danger-bg: #3a1818; --danger: #f7c1c1; --warn-bg: #3a2a10; --warn: #fac775;
+  --ok-bg: #1f2f12; --ok: #c0dd97; --chip: #2a2a27;
 }
+.theme { margin-left: 16px; font: inherit; font-size: 14px; color: var(--muted); background: none; border: 1px solid var(--line); border-radius: 8px; padding: 2px 10px; cursor: pointer; }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
 a { color: var(--accent); }
@@ -45,8 +45,8 @@ details { border-top: 1px solid var(--line); }
 details details { margin-left: 18px; }
 summary { cursor: pointer; padding: 10px 0; display: flex; justify-content: space-between; gap: 12px; list-style: none; }
 summary::-webkit-details-marker { display: none; }
-summary::before { content: "▸"; color: var(--muted); margin-right: 8px; }
-details[open] > summary::before { content: "▾"; }
+summary > .l::before { content: "▸"; color: var(--muted); margin-right: 8px; }
+details[open] > summary > .l::before { content: "▾"; }
 summary .l { flex: 1; min-width: 0; }
 summary .r { color: var(--muted); font-size: 14px; white-space: nowrap; }
 .month > summary { font-weight: 600; }
@@ -63,4 +63,4 @@ summary .r { color: var(--muted); font-size: 14px; white-space: nowrap; }
 .foot { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; padding-top: 16px; padding-bottom: 32px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
 .res-h { font-size: 15px; margin: 16px 0 4px; }
-@media (max-width: 560px) { summary .r { white-space: normal; text-align: right; } .fix { margin-left: 12px; } details details { margin-left: 10px; } }
+@media (max-width: 560px) { summary { flex-wrap: wrap; } summary .l { flex-basis: calc(100% - 32px); overflow-wrap: anywhere; } summary .r { white-space: normal; width: 100%; padding-left: 18px; } .fix { margin-left: 12px; } details details { margin-left: 10px; } }
