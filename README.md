@@ -4,6 +4,8 @@
 then open an area (printing, sign-in, file sharing...) to see the security fixes in it. Known
 problems caused by updates are shown at the top, with links to their sources.
 
+**Live site: https://patchmap.verilay.dev**
+
 Free and open source. Not affiliated with Microsoft.
 
 **Status: v0.1.** Covers Windows 11 24H2 / 25H2 / 26H2 and Windows Server 2022 / 2025, last 12 months.
