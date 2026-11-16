@@ -34,6 +34,8 @@ PAGES = {
     "win11-26h2": ["status-windows-11-26h2", "resolved-issues-windows-11-26h2"],
     "server-2022": ["status-windows-server-2022", "resolved-issues-windows-server-2022"],
     "server-2025": ["status-windows-server-2025", "resolved-issues-windows-server-2025"],
+    "server-2019": ["status-windows-10-1809-and-windows-server-2019", "resolved-issues-windows-10-1809-and-windows-server-2019"],
+    "server-2016": ["status-windows-10-1607-and-windows-server-2016", "resolved-issues-windows-10-1607-and-windows-server-2016"],
 }
 
 STATUS = {  # Microsoft's word -> Patchmap status

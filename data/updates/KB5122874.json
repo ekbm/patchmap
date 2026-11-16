@@ -1,0 +1,15 @@
+{
+ "kb": "KB5122874",
+ "month": "2026-Sep",
+ "released": "2026-09-08",
+ "type": "Servicing Stack Update",
+ "restart": "Yes",
+ "catalog_url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5122874",
+ "versions": {
+  "server-2016": "10.0.14393.9504"
+ },
+ "supersedes": [],
+ "fixes": [
+  "CVE-2026-81955"
+ ]
+}

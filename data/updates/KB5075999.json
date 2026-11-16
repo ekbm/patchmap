@@ -1,0 +1,32 @@
+{
+ "kb": "KB5075999",
+ "month": "2026-Feb",
+ "released": "2026-02-10",
+ "type": "Security Update",
+ "restart": "Yes",
+ "catalog_url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5075999",
+ "versions": {
+  "server-2016": "10.0.14393.8868"
+ },
+ "supersedes": [],
+ "fixes": [
+  "CVE-2026-20846",
+  "CVE-2026-21222",
+  "CVE-2026-21231",
+  "CVE-2026-21235",
+  "CVE-2026-21236",
+  "CVE-2026-21238",
+  "CVE-2026-21239",
+  "CVE-2026-21244",
+  "CVE-2026-21246",
+  "CVE-2026-21247",
+  "CVE-2026-21248",
+  "CVE-2026-21249",
+  "CVE-2026-21251",
+  "CVE-2026-21255",
+  "CVE-2026-21508",
+  "CVE-2026-21510",
+  "CVE-2026-21525",
+  "CVE-2026-21533"
+ ]
+}

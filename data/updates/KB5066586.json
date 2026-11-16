@@ -1,0 +1,18 @@
+{
+ "kb": "KB5066586",
+ "month": "2025-Dec",
+ "released": "2025-12-09",
+ "type": "Security Update",
+ "restart": "Yes",
+ "catalog_url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5066586",
+ "versions": {
+  "server-2019": "10.0.17763.7919"
+ },
+ "supersedes": [
+  "KB5065428"
+ ],
+ "fixes": [
+  "CVE-2025-64679",
+  "CVE-2025-64680"
+ ]
+}

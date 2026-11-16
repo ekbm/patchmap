@@ -1,5 +1,253 @@
 [
  {
+  "version": "server-2016",
+  "kb": "KB5066836",
+  "build": "10.0.14393.8519",
+  "month": "2025-Dec",
+  "released": "2025-12-09",
+  "type": "Security Update"
+ },
+ {
+  "version": "server-2016",
+  "kb": "KB5068864",
+  "build": "10.0.14393.8594",
+  "month": "2025-Dec",
+  "released": "2025-12-09",
+  "type": "Security Update"
+ },
+ {
+  "version": "server-2016",
+  "kb": "KB5071543",
+  "build": "10.0.14393.8688",
+  "month": "2025-Dec",
+  "released": "2025-12-09",
+  "type": "Security Update"
+ },
+ {
+  "version": "server-2016",
+  "kb": "KB5073722",
+  "build": "10.0.14393.8783",
+  "month": "2026-Jan",
+  "released": "2026-01-13",
+  "type": "Security Update"
+ },
+ {
+  "version": "server-2016",
+  "kb": "KB5075999",
+  "build": "10.0.14393.8868",
+  "month": "2026-Feb",
+  "released": "2026-02-10",
+  "type": "Security Update"
+ },
+ {
+  "version": "server-2016",
+  "kb": "KB5078938",
+  "build": "10.0.14393.8957",
+  "month": "2026-Mar",
+  "released": "2026-03-10",
+  "type": "Security Update"
+ },
+ {
+  "version": "server-2016",
+  "kb": "KB5082198",
+  "build": "10.0.14393.9060",
+  "month": "2026-Apr",
+  "released": "2026-04-14",
+  "type": "Security Update"
+ },
+ {
+  "version": "server-2016",
+  "kb": "KB5087537",
+  "build": "10.0.14393.9140",
+  "month": "2026-May",
+  "released": "2026-05-12",
+  "type": "Security Update"
+ },
+ {
+  "version": "server-2016",
+  "kb": "KB5094122",
+  "build": "10.0.14393.9234",
+  "month": "2026-Jun",
+  "released": "2026-06-09",
+  "type": "Security Update"
+ },
+ {
+  "version": "server-2016",
+  "kb": "KB5099535",
+  "build": "10.0.14393.9339",
+  "month": "2026-Jul",
+  "released": "2026-07-14",
+  "type": "Security Update"
+ },
+ {
+  "version": "server-2016",
+  "kb": "KB5120418",
+  "build": "10.0.14393.9418",
+  "month": "2026-Aug",
+  "released": "2026-08-11",
+  "type": "Security Update"
+ },
+ {
+  "version": "server-2016",
+  "kb": "KB5122874",
+  "build": "10.0.14393.9504",
+  "month": "2026-Sep",
+  "released": "2026-09-08",
+  "type": "Servicing Stack Update"
+ },
+ {
+  "version": "server-2016",
+  "kb": "KB5123099",
+  "build": "10.0.14393.9512",
+  "month": "2026-Sep",
+  "released": "2026-09-08",
+  "type": "Security Update"
+ },
+ {
+  "version": "server-2016",
+  "kb": "KB5126649",
+  "build": "10.0.14393.9596",
+  "month": "2026-Oct",
+  "released": "2026-10-13",
+  "type": "Security Update"
+ },
+ {
+  "version": "server-2016",
+  "kb": "KB5126868",
+  "build": "10.0.14393.9612",
+  "month": "2026-Oct",
+  "released": "2026-10-13",
+  "type": "Security Update"
+ },
+ {
+  "version": "server-2016",
+  "kb": "KB5131083",
+  "build": "10.0.14393.9681",
+  "month": "2026-Nov",
+  "released": "2026-11-10",
+  "type": "Security Update"
+ },
+ {
+  "version": "server-2016",
+  "kb": "KB5131291",
+  "build": "10.0.14393.9688",
+  "month": "2026-Nov",
+  "released": "2026-11-10",
+  "type": "Security Update"
+ },
+ {
+  "version": "server-2019",
+  "kb": "KB5066586",
+  "build": "10.0.17763.7919",
+  "month": "2025-Dec",
+  "released": "2025-12-09",
+  "type": "Security Update"
+ },
+ {
+  "version": "server-2019",
+  "kb": "KB5068791",
+  "build": "10.0.17763.8027",
+  "month": "2025-Dec",
+  "released": "2025-12-09",
+  "type": "Security Update"
+ },
+ {
+  "version": "server-2019",
+  "kb": "KB5071544",
+  "build": "10.0.17763.8146",
+  "month": "2025-Dec",
+  "released": "2025-12-09",
+  "type": "Security Update"
+ },
+ {
+  "version": "server-2019",
+  "kb": "KB5073723",
+  "build": "10.0.17763.8276",
+  "month": "2026-Jan",
+  "released": "2026-01-13",
+  "type": "Security Update"
+ },
+ {
+  "version": "server-2019",
+  "kb": "KB5075904",
+  "build": "10.0.17763.8389",
+  "month": "2026-Feb",
+  "released": "2026-02-10",
+  "type": "Security Update"
+ },
+ {
+  "version": "server-2019",
+  "kb": "KB5078752",
+  "build": "10.0.17763.8511",
+  "month": "2026-Mar",
+  "released": "2026-03-10",
+  "type": "Security Update"
+ },
+ {
+  "version": "server-2019",
+  "kb": "KB5082123",
+  "build": "10.0.17763.8644",
+  "month": "2026-Apr",
+  "released": "2026-04-14",
+  "type": "Security Update"
+ },
+ {
+  "version": "server-2019",
+  "kb": "KB5087538",
+  "build": "10.0.17763.8755",
+  "month": "2026-May",
+  "released": "2026-05-12",
+  "type": "Security Update"
+ },
+ {
+  "version": "server-2019",
+  "kb": "KB5094123",
+  "build": "10.0.17763.8880",
+  "month": "2026-Jun",
+  "released": "2026-06-09",
+  "type": "Security Update"
+ },
+ {
+  "version": "server-2019",
+  "kb": "KB5099538",
+  "build": "10.0.17763.9020",
+  "month": "2026-Jul",
+  "released": "2026-07-14",
+  "type": "Security Update"
+ },
+ {
+  "version": "server-2019",
+  "kb": "KB5120238",
+  "build": "10.0.17763.9121",
+  "month": "2026-Aug",
+  "released": "2026-08-11",
+  "type": "Security Update"
+ },
+ {
+  "version": "server-2019",
+  "kb": "KB5122876",
+  "build": "10.0.17763.9245",
+  "month": "2026-Sep",
+  "released": "2026-09-08",
+  "type": "Security Update"
+ },
+ {
+  "version": "server-2019",
+  "kb": "KB5126651",
+  "build": "10.0.17763.9376",
+  "month": "2026-Oct",
+  "released": "2026-10-13",
+  "type": "Security Update"
+ },
+ {
+  "version": "server-2019",
+  "kb": "KB5131085",
+  "build": "10.0.17763.9487",
+  "month": "2026-Nov",
+  "released": "2026-11-10",
+  "type": "Security Update"
+ },
+ {
   "version": "server-2022",
   "kb": "KB5066782",
   "build": "10.0.20348.4294",

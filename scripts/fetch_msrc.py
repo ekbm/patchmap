@@ -35,13 +35,16 @@ SCOPE = {
     "win11-24h2": ["Windows 11 Version 24H2 for x64-based Systems"],
     "win11-25h2": ["Windows 11 Version 25H2 for x64-based Systems"],
     "win11-26h2": ["Windows 11 Version 26H2 for x64-based Systems"],
-    "server-2022": ["Windows Server 2022", "Windows Server 2022 (Server Core installation)"],
     "server-2025": ["Windows Server 2025", "Windows Server 2025 (Server Core installation)"],
+    "server-2022": ["Windows Server 2022", "Windows Server 2022 (Server Core installation)"],
+    "server-2019": ["Windows Server 2019", "Windows Server 2019 (Server Core installation)"],
+    "server-2016": ["Windows Server 2016", "Windows Server 2016 (Server Core installation)"],
 }
 
 LABELS = {
     "win11-24h2": "Windows 11 24H2", "win11-25h2": "Windows 11 25H2", "win11-26h2": "Windows 11 26H2",
     "server-2022": "Windows Server 2022", "server-2025": "Windows Server 2025",
+    "server-2019": "Windows Server 2019", "server-2016": "Windows Server 2016",
 }
 
 IMPACT_SUFFIX = re.compile(

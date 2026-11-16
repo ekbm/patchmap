@@ -1,32 +1,36 @@
 {
- "generated": "2026-11-16 07:50 UTC",
+ "generated": "2026-11-16 08:19 UTC",
  "source": "https://api.msrc.microsoft.com/cvrf/v3.0",
  "scope": [
   "win11-24h2",
   "win11-25h2",
   "win11-26h2",
+  "server-2025",
   "server-2022",
-  "server-2025"
+  "server-2019",
+  "server-2016"
  ],
  "labels": {
   "win11-24h2": "Windows 11 24H2",
   "win11-25h2": "Windows 11 25H2",
   "win11-26h2": "Windows 11 26H2",
   "server-2022": "Windows Server 2022",
-  "server-2025": "Windows Server 2025"
+  "server-2025": "Windows Server 2025",
+  "server-2019": "Windows Server 2019",
+  "server-2016": "Windows Server 2016"
  },
  "months": [
   {
    "month": "2025-Dec",
    "released": "2025-12-09",
-   "fix_count": 34,
+   "fix_count": 35,
    "by_tag": {
     "storage": 11,
     "kernel-drivers": 9,
     "graphics": 7,
     "file-sharing": 1,
     "remote-access": 5,
-    "server-roles": 6,
+    "server-roles": 7,
     "network": 4,
     "install-update": 1,
     "apps-desktop": 5,
@@ -34,13 +38,19 @@
     "management": 1
    },
    "kbs": [
+    "KB5066586",
     "KB5066782",
     "KB5066835",
+    "KB5066836",
     "KB5068787",
+    "KB5068791",
     "KB5068840",
     "KB5068861",
+    "KB5068864",
     "KB5068966",
     "KB5071413",
+    "KB5071543",
+    "KB5071544",
     "KB5071547",
     "KB5072014",
     "KB5072033",
@@ -51,17 +61,17 @@
   {
    "month": "2026-Jan",
    "released": "2026-01-13",
-   "fix_count": 80,
+   "fix_count": 81,
    "by_tag": {
-    "kernel-drivers": 17,
+    "kernel-drivers": 18,
     "management": 15,
     "server-roles": 5,
     "sign-in": 9,
     "print": 1,
+    "network": 10,
     "graphics": 8,
     "install-update": 1,
     "security": 7,
-    "network": 9,
     "apps-desktop": 10,
     "other": 3,
     "file-sharing": 7,
@@ -71,6 +81,8 @@
    "kbs": [
     "KB5073379",
     "KB5073457",
+    "KB5073722",
+    "KB5073723",
     "KB5074109"
    ]
   },
@@ -92,9 +104,11 @@
    },
    "kbs": [
     "KB5075899",
+    "KB5075904",
     "KB5075906",
     "KB5075942",
     "KB5075943",
+    "KB5075999",
     "KB5077181",
     "KB5077212"
    ]
@@ -102,7 +116,7 @@
   {
    "month": "2026-Mar",
    "released": "2026-03-10",
-   "fix_count": 39,
+   "fix_count": 40,
    "by_tag": {
     "graphics": 6,
     "network": 8,
@@ -111,9 +125,9 @@
     "other": 3,
     "file-sharing": 3,
     "apps-desktop": 6,
+    "sign-in": 2,
     "management": 1,
     "server-roles": 4,
-    "sign-in": 1,
     "remote-access": 3,
     "print": 2
    },
@@ -121,7 +135,9 @@
     "KB5078736",
     "KB5078737",
     "KB5078740",
+    "KB5078752",
     "KB5078766",
+    "KB5078938",
     "KB5079420",
     "KB5079473",
     "KB5084597"
@@ -149,9 +165,13 @@
    },
    "kbs": [
     "KB5082063",
+    "KB5082123",
     "KB5082142",
+    "KB5082198",
     "KB5083769",
+    "KB5099535",
     "KB5099536",
+    "KB5099538",
     "KB5099540",
     "KB5101650"
    ]
@@ -179,6 +199,8 @@
     "KB5078737",
     "KB5087423",
     "KB5087424",
+    "KB5087537",
+    "KB5087538",
     "KB5087539",
     "KB5087545",
     "KB5089466",
@@ -209,6 +231,8 @@
     "KB5087539",
     "KB5089466",
     "KB5089549",
+    "KB5094122",
+    "KB5094123",
     "KB5094125",
     "KB5094126",
     "KB5094128"
@@ -217,7 +241,7 @@
   {
    "month": "2026-Jul",
    "released": "2026-07-14",
-   "fix_count": 379,
+   "fix_count": 380,
    "by_tag": {
     "apps-desktop": 82,
     "network": 51,
@@ -229,13 +253,15 @@
     "install-update": 6,
     "storage": 59,
     "print": 19,
-    "other": 25,
+    "other": 26,
     "remote-access": 22,
     "file-sharing": 8,
     "graphics": 24
    },
    "kbs": [
+    "KB5099535",
     "KB5099536",
+    "KB5099538",
     "KB5099540",
     "KB5101650"
    ]
@@ -265,7 +291,9 @@
     "KB5120228",
     "KB5120229",
     "KB5120233",
+    "KB5120238",
     "KB5120242",
+    "KB5120418",
     "KB5120994",
     "KB5121003",
     "KB5123273",
@@ -278,7 +306,7 @@
   {
    "month": "2026-Sep",
    "released": "2026-09-08",
-   "fix_count": 629,
+   "fix_count": 630,
    "by_tag": {
     "network": 105,
     "kernel-drivers": 91,
@@ -290,7 +318,7 @@
     "print": 30,
     "security": 79,
     "storage": 98,
-    "graphics": 26,
+    "graphics": 27,
     "server-roles": 74,
     "remote-access": 30,
     "activation": 4,
@@ -298,47 +326,57 @@
    },
    "kbs": [
     "KB5122871",
+    "KB5122874",
+    "KB5122876",
     "KB5122882",
+    "KB5123099",
     "KB5124008"
    ]
   },
   {
    "month": "2026-Oct",
    "released": "2026-10-13",
-   "fix_count": 912,
+   "fix_count": 914,
    "by_tag": {
     "install-update": 68,
     "activation": 2,
     "server-roles": 79,
     "storage": 115,
-    "management": 79,
+    "management": 80,
     "apps-desktop": 149,
     "network": 104,
-    "kernel-drivers": 232,
+    "kernel-drivers": 233,
     "graphics": 40,
     "remote-access": 25,
-    "security": 46,
+    "security": 47,
     "sign-in": 36,
     "file-sharing": 18,
     "other": 46,
     "print": 30
    },
    "kbs": [
+    "KB5099535",
     "KB5099536",
+    "KB5099538",
     "KB5099540",
     "KB5101650",
     "KB5122871",
+    "KB5122876",
     "KB5122882",
+    "KB5123099",
     "KB5124008",
     "KB5126646",
+    "KB5126649",
+    "KB5126651",
     "KB5126655",
+    "KB5126868",
     "KB5127648"
    ]
   },
   {
    "month": "2026-Nov",
    "released": "2026-11-10",
-   "fix_count": 648,
+   "fix_count": 649,
    "by_tag": {
     "sign-in": 36,
     "storage": 55,
@@ -347,7 +385,7 @@
     "other": 48,
     "kernel-drivers": 136,
     "graphics": 87,
-    "install-update": 40,
+    "install-update": 41,
     "network": 97,
     "server-roles": 56,
     "security": 18,
@@ -361,14 +399,21 @@
     "KB5120994",
     "KB5121003",
     "KB5122871",
+    "KB5122876",
     "KB5122882",
+    "KB5123099",
     "KB5124008",
     "KB5126646",
+    "KB5126651",
     "KB5126655",
+    "KB5126868",
     "KB5127648",
     "KB5131077",
     "KB5131080",
+    "KB5131083",
+    "KB5131085",
     "KB5131090",
+    "KB5131291",
     "KB5132043",
     "KB5132061",
     "KB5135385",

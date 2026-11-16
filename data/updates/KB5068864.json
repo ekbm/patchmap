@@ -1,0 +1,17 @@
+{
+ "kb": "KB5068864",
+ "month": "2025-Dec",
+ "released": "2025-12-09",
+ "type": "Security Update",
+ "restart": "Yes",
+ "catalog_url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5068864",
+ "versions": {
+  "server-2016": "10.0.14393.8594"
+ },
+ "supersedes": [
+  "KB5066836"
+ ],
+ "fixes": [
+  "CVE-2025-64678"
+ ]
+}

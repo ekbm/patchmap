@@ -25,13 +25,21 @@
    ],
    "impact": "Remote Code Execution",
    "severity": {
+    "server-2019": "Important",
     "server-2022": "Important",
     "server-2025": "Important",
     "win11-25h2": "Important",
-    "win11-24h2": "Important"
+    "win11-24h2": "Important",
+    "server-2016": "Important"
    },
    "customer_action_required": true,
    "kbs": {
+    "server-2016": [
+     "KB5075999"
+    ],
+    "server-2019": [
+     "KB5075904"
+    ],
     "server-2022": [
      "KB5075906",
      "KB5075943"
@@ -61,13 +69,21 @@
    ],
    "impact": "Remote Code Execution",
    "severity": {
+    "server-2019": "Important",
     "server-2022": "Important",
     "server-2025": "Important",
     "win11-25h2": "Important",
-    "win11-24h2": "Important"
+    "win11-24h2": "Important",
+    "server-2016": "Important"
    },
    "customer_action_required": true,
    "kbs": {
+    "server-2016": [
+     "KB5075999"
+    ],
+    "server-2019": [
+     "KB5075904"
+    ],
     "server-2022": [
      "KB5075906",
      "KB5075943"
@@ -131,10 +147,18 @@
    ],
    "impact": "Elevation of Privilege",
    "severity": {
-    "server-2022": "Important"
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2016": "Important"
    },
    "customer_action_required": true,
    "kbs": {
+    "server-2016": [
+     "KB5075999"
+    ],
+    "server-2019": [
+     "KB5075904"
+    ],
     "server-2022": [
      "KB5075906",
      "KB5075943"
@@ -151,6 +175,7 @@
    ],
    "impact": "Elevation of Privilege",
    "severity": {
+    "server-2019": "Important",
     "server-2022": "Important",
     "server-2025": "Important",
     "win11-25h2": "Important",
@@ -158,6 +183,9 @@
    },
    "customer_action_required": true,
    "kbs": {
+    "server-2019": [
+     "KB5075904"
+    ],
     "server-2022": [
      "KB5075906",
      "KB5075943"
@@ -187,13 +215,21 @@
    ],
    "impact": "Elevation of Privilege",
    "severity": {
+    "server-2019": "Important",
     "server-2022": "Important",
     "server-2025": "Important",
     "win11-25h2": "Important",
-    "win11-24h2": "Important"
+    "win11-24h2": "Important",
+    "server-2016": "Important"
    },
    "customer_action_required": true,
    "kbs": {
+    "server-2016": [
+     "KB5075999"
+    ],
+    "server-2019": [
+     "KB5075904"
+    ],
     "server-2022": [
      "KB5075906",
      "KB5075943"
@@ -222,13 +258,21 @@
    ],
    "impact": "Elevation of Privilege",
    "severity": {
+    "server-2019": "Important",
     "server-2022": "Important",
     "server-2025": "Important",
     "win11-25h2": "Important",
-    "win11-24h2": "Important"
+    "win11-24h2": "Important",
+    "server-2016": "Important"
    },
    "customer_action_required": true,
    "kbs": {
+    "server-2016": [
+     "KB5075999"
+    ],
+    "server-2019": [
+     "KB5075904"
+    ],
     "server-2022": [
      "KB5075906",
      "KB5075943"
@@ -257,13 +301,21 @@
    ],
    "impact": "Security Feature Bypass",
    "severity": {
+    "server-2019": "Important",
     "server-2022": "Important",
     "server-2025": "Important",
     "win11-25h2": "Important",
-    "win11-24h2": "Important"
+    "win11-24h2": "Important",
+    "server-2016": "Important"
    },
    "customer_action_required": true,
    "kbs": {
+    "server-2016": [
+     "KB5075999"
+    ],
+    "server-2019": [
+     "KB5075904"
+    ],
     "server-2022": [
      "KB5075906",
      "KB5075943"
@@ -293,13 +345,21 @@
    ],
    "impact": "Denial of Service",
    "severity": {
+    "server-2019": "Moderate",
     "server-2022": "Moderate",
     "server-2025": "Moderate",
     "win11-25h2": "Moderate",
-    "win11-24h2": "Moderate"
+    "win11-24h2": "Moderate",
+    "server-2016": "Moderate"
    },
    "customer_action_required": true,
    "kbs": {
+    "server-2016": [
+     "KB5075999"
+    ],
+    "server-2019": [
+     "KB5075904"
+    ],
     "server-2022": [
      "KB5075906",
      "KB5075943"
@@ -328,13 +388,21 @@
    ],
    "impact": "Elevation of Privilege",
    "severity": {
+    "server-2019": "Important",
     "server-2022": "Important",
     "server-2025": "Important",
     "win11-25h2": "Important",
-    "win11-24h2": "Important"
+    "win11-24h2": "Important",
+    "server-2016": "Important"
    },
    "customer_action_required": true,
    "kbs": {
+    "server-2016": [
+     "KB5075999"
+    ],
+    "server-2019": [
+     "KB5075904"
+    ],
     "server-2022": [
      "KB5075906",
      "KB5075943"
@@ -364,13 +432,21 @@
    ],
    "impact": "Security Feature Bypass",
    "severity": {
+    "server-2019": "Important",
     "server-2022": "Important",
     "server-2025": "Important",
     "win11-25h2": "Important",
-    "win11-24h2": "Important"
+    "win11-24h2": "Important",
+    "server-2016": "Important"
    },
    "customer_action_required": true,
    "kbs": {
+    "server-2016": [
+     "KB5075999"
+    ],
+    "server-2019": [
+     "KB5075904"
+    ],
     "server-2022": [
      "KB5075906",
      "KB5075943"
@@ -399,11 +475,19 @@
    ],
    "impact": "Elevation of Privilege",
    "severity": {
+    "server-2019": "Important",
     "server-2022": "Important",
-    "server-2025": "Important"
+    "server-2025": "Important",
+    "server-2016": "Important"
    },
    "customer_action_required": true,
    "kbs": {
+    "server-2016": [
+     "KB5075999"
+    ],
+    "server-2019": [
+     "KB5075904"
+    ],
     "server-2022": [
      "KB5075906",
      "KB5075943"
@@ -454,13 +538,21 @@
    ],
    "impact": "Spoofing",
    "severity": {
+    "server-2019": "Important",
     "server-2022": "Important",
     "server-2025": "Important",
     "win11-25h2": "Important",
-    "win11-24h2": "Important"
+    "win11-24h2": "Important",
+    "server-2016": "Important"
    },
    "customer_action_required": true,
    "kbs": {
+    "server-2016": [
+     "KB5075999"
+    ],
+    "server-2019": [
+     "KB5075904"
+    ],
     "server-2022": [
      "KB5075906",
      "KB5075943"
@@ -520,13 +612,21 @@
    ],
    "impact": "Remote Code Execution",
    "severity": {
+    "server-2019": "Important",
     "server-2022": "Important",
     "server-2025": "Important",
     "win11-25h2": "Important",
-    "win11-24h2": "Important"
+    "win11-24h2": "Important",
+    "server-2016": "Important"
    },
    "customer_action_required": true,
    "kbs": {
+    "server-2016": [
+     "KB5075999"
+    ],
+    "server-2019": [
+     "KB5075904"
+    ],
     "server-2022": [
      "KB5075906",
      "KB5075943"
@@ -555,11 +655,15 @@
    ],
    "impact": "Denial of Service",
    "severity": {
+    "server-2019": "Important",
     "server-2022": "Important",
     "server-2025": "Important"
    },
    "customer_action_required": true,
    "kbs": {
+    "server-2019": [
+     "KB5075904"
+    ],
     "server-2022": [
      "KB5075906",
      "KB5075943"
@@ -580,6 +684,7 @@
    ],
    "impact": "Elevation of Privilege",
    "severity": {
+    "server-2019": "Important",
     "server-2022": "Important",
     "server-2025": "Important",
     "win11-25h2": "Important",
@@ -587,6 +692,9 @@
    },
    "customer_action_required": true,
    "kbs": {
+    "server-2019": [
+     "KB5075904"
+    ],
     "server-2022": [
      "KB5075906",
      "KB5075943"
@@ -651,13 +759,21 @@
    ],
    "impact": "Elevation of Privilege",
    "severity": {
+    "server-2019": "Important",
     "server-2022": "Important",
     "server-2025": "Important",
     "win11-25h2": "Important",
-    "win11-24h2": "Important"
+    "win11-24h2": "Important",
+    "server-2016": "Important"
    },
    "customer_action_required": true,
    "kbs": {
+    "server-2016": [
+     "KB5075999"
+    ],
+    "server-2019": [
+     "KB5075904"
+    ],
     "server-2022": [
      "KB5075906",
      "KB5075943"
@@ -687,13 +803,21 @@
    ],
    "impact": "Elevation of Privilege",
    "severity": {
+    "server-2019": "Important",
     "server-2022": "Important",
     "server-2025": "Important",
     "win11-25h2": "Important",
-    "win11-24h2": "Important"
+    "win11-24h2": "Important",
+    "server-2016": "Important"
    },
    "customer_action_required": true,
    "kbs": {
+    "server-2016": [
+     "KB5075999"
+    ],
+    "server-2019": [
+     "KB5075904"
+    ],
     "server-2022": [
      "KB5075906",
      "KB5075943"
@@ -787,13 +911,21 @@
    ],
    "impact": "Elevation of Privilege",
    "severity": {
+    "server-2019": "Important",
     "server-2022": "Important",
     "server-2025": "Important",
     "win11-25h2": "Important",
-    "win11-24h2": "Important"
+    "win11-24h2": "Important",
+    "server-2016": "Important"
    },
    "customer_action_required": true,
    "kbs": {
+    "server-2016": [
+     "KB5075999"
+    ],
+    "server-2019": [
+     "KB5075904"
+    ],
     "server-2022": [
      "KB5075906",
      "KB5075943"
@@ -822,12 +954,20 @@
    ],
    "impact": "Information Disclosure",
    "severity": {
+    "server-2019": "Important",
     "server-2022": "Important",
     "server-2025": "Important",
-    "win11-24h2": "Important"
+    "win11-24h2": "Important",
+    "server-2016": "Important"
    },
    "customer_action_required": true,
    "kbs": {
+    "server-2016": [
+     "KB5075999"
+    ],
+    "server-2019": [
+     "KB5075904"
+    ],
     "server-2022": [
      "KB5075906",
      "KB5075943"
@@ -852,13 +992,21 @@
    ],
    "impact": "Elevation of Privilege",
    "severity": {
+    "server-2019": "Important",
     "server-2022": "Important",
     "server-2025": "Important",
     "win11-25h2": "Important",
-    "win11-24h2": "Important"
+    "win11-24h2": "Important",
+    "server-2016": "Important"
    },
    "customer_action_required": true,
    "kbs": {
+    "server-2016": [
+     "KB5075999"
+    ],
+    "server-2019": [
+     "KB5075904"
+    ],
     "server-2022": [
      "KB5075906",
      "KB5075943"
@@ -887,13 +1035,21 @@
    ],
    "impact": "Denial of Service",
    "severity": {
+    "server-2019": "Important",
     "server-2022": "Important",
     "server-2025": "Important",
     "win11-25h2": "Important",
-    "win11-24h2": "Important"
+    "win11-24h2": "Important",
+    "server-2016": "Important"
    },
    "customer_action_required": true,
    "kbs": {
+    "server-2016": [
+     "KB5075999"
+    ],
+    "server-2019": [
+     "KB5075904"
+    ],
     "server-2022": [
      "KB5075906",
      "KB5075943"

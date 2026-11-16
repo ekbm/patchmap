@@ -1,0 +1,18 @@
+{
+ "kb": "KB5131083",
+ "month": "2026-Nov",
+ "released": "2026-11-10",
+ "type": "Security Update",
+ "restart": "Yes",
+ "catalog_url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5131083",
+ "versions": {
+  "server-2016": "10.0.14393.9681"
+ },
+ "supersedes": [
+  "KB5126649"
+ ],
+ "fixes": [
+  "CVE-2026-119831",
+  "CVE-2026-119914"
+ ]
+}

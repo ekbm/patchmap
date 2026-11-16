@@ -8,7 +8,7 @@ problems caused by updates are shown at the top, with links to their sources.
 
 Free and open source. Not affiliated with Microsoft.
 
-**Status: v0.1.** Covers Windows 11 24H2 / 25H2 / 26H2 and Windows Server 2022 / 2025, last 12 months.
+**Status: v0.1.** Covers Windows 11 24H2 / 25H2 / 26H2 and Windows Server 2016 / 2019 / 2022 / 2025, last 12 months. Build number lookup and two-build comparison in the search box.
 
 ## Coming next
 

@@ -1,0 +1,17 @@
+{
+ "kb": "KB5068791",
+ "month": "2025-Dec",
+ "released": "2025-12-09",
+ "type": "Security Update",
+ "restart": "Yes",
+ "catalog_url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5068791",
+ "versions": {
+  "server-2019": "10.0.17763.8027"
+ },
+ "supersedes": [
+  "KB5066586"
+ ],
+ "fixes": [
+  "CVE-2025-64678"
+ ]
+}

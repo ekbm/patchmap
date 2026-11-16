@@ -18,7 +18,9 @@
     "win11-25h2",
     "win11-26h2",
     "server-2022",
-    "server-2025"
+    "server-2025",
+    "server-2019",
+    "server-2016"
    ],
    "status": "open",
    "ms_status": "Confirmed",
@@ -64,6 +66,20 @@
      ],
      "fixed_by": [],
      "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-server-2025#3721msgdesc"
+    },
+    "server-2019": {
+     "caused_by": [
+      "KB5126651"
+     ],
+     "fixed_by": [],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-10-1809-and-windows-server-2019#3721msgdesc"
+    },
+    "server-2016": {
+     "caused_by": [
+      "KB5126868"
+     ],
+     "fixed_by": [],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-10-1607-and-windows-server-2016#3721msgdesc"
     }
    },
    "updated": "2026-11-12"
@@ -85,7 +101,9 @@
     "win11-25h2",
     "win11-26h2",
     "server-2022",
-    "server-2025"
+    "server-2025",
+    "server-2019",
+    "server-2016"
    ],
    "status": "fixed",
    "ms_status": "Resolved",
@@ -139,6 +157,24 @@
       "KB5131080"
      ],
      "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-server-2025#4984msgdesc"
+    },
+    "server-2019": {
+     "caused_by": [
+      "KB5122876"
+     ],
+     "fixed_by": [
+      "KB5131085"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-10-1809-and-windows-server-2019#4984msgdesc"
+    },
+    "server-2016": {
+     "caused_by": [
+      "KB5123099"
+     ],
+     "fixed_by": [
+      "KB5131291"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-10-1607-and-windows-server-2016#4984msgdesc"
     }
    },
    "updated": "2026-11-10"
@@ -212,7 +248,9 @@
    ],
    "versions": [
     "server-2022",
-    "server-2025"
+    "server-2025",
+    "server-2019",
+    "server-2016"
    ],
    "status": "fixed",
    "ms_status": "Resolved",
@@ -241,6 +279,24 @@
       "KB5131080"
      ],
      "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-server-2025#5047msgdesc"
+    },
+    "server-2019": {
+     "caused_by": [
+      "KB5126651"
+     ],
+     "fixed_by": [
+      "KB5131085"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-10-1809-and-windows-server-2019#5047msgdesc"
+    },
+    "server-2016": {
+     "caused_by": [
+      "KB5126868"
+     ],
+     "fixed_by": [
+      "KB5131291"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-10-1607-and-windows-server-2016#5047msgdesc"
     }
    },
    "updated": "2026-11-10"
@@ -369,7 +425,8 @@
     "win11-24h2",
     "win11-25h2",
     "server-2022",
-    "server-2025"
+    "server-2025",
+    "server-2019"
    ],
    "status": "fixed",
    "ms_status": "Resolved",
@@ -400,6 +457,11 @@
      "caused_by": [],
      "fixed_by": [],
      "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#4956msgdesc"
+    },
+    "server-2019": {
+     "caused_by": [],
+     "fixed_by": [],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-10-1809-and-windows-server-2019#4956msgdesc"
     }
    },
    "updated": "2026-09-30"
@@ -473,7 +535,8 @@
     "win11-24h2",
     "win11-25h2",
     "server-2022",
-    "server-2025"
+    "server-2025",
+    "server-2019"
    ],
    "status": "fixed",
    "ms_status": "Resolved",
@@ -520,6 +583,15 @@
       "KB5129235"
      ],
      "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#4981msgdesc"
+    },
+    "server-2019": {
+     "caused_by": [
+      "KB5122876"
+     ],
+     "fixed_by": [
+      "KB5129238"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-10-1809-and-windows-server-2019#4981msgdesc"
     }
    },
    "updated": "2026-09-14"
@@ -813,7 +885,8 @@
     "win11-24h2",
     "win11-25h2",
     "server-2022",
-    "server-2025"
+    "server-2025",
+    "server-2019"
    ],
    "status": "fixed",
    "ms_status": "Resolved",
@@ -844,6 +917,11 @@
      "caused_by": [],
      "fixed_by": [],
      "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#3549msgdesc"
+    },
+    "server-2019": {
+     "caused_by": [],
+     "fixed_by": [],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-10-1809-and-windows-server-2019#3549msgdesc"
     }
    },
    "updated": "2026-07-20"
@@ -909,7 +987,8 @@
     "win11-24h2",
     "win11-25h2",
     "server-2022",
-    "server-2025"
+    "server-2025",
+    "server-2019"
    ],
    "status": "fixed",
    "ms_status": "Resolved",
@@ -956,6 +1035,15 @@
       "KB5099536"
      ],
      "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#4875msgdesc"
+    },
+    "server-2019": {
+     "caused_by": [
+      "KB5094123"
+     ],
+     "fixed_by": [
+      "KB5099538"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-10-1809-and-windows-server-2019#4875msgdesc"
     }
    },
    "updated": "2026-07-14"
@@ -1074,7 +1162,8 @@
    ],
    "versions": [
     "server-2022",
-    "server-2025"
+    "server-2025",
+    "server-2019"
    ],
    "status": "fixed",
    "ms_status": "Resolved",
@@ -1103,6 +1192,15 @@
       "KB5091157"
      ],
      "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#4833msgdesc"
+    },
+    "server-2019": {
+     "caused_by": [
+      "KB5082123"
+     ],
+     "fixed_by": [
+      "KB5091573"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-10-1809-and-windows-server-2019#4833msgdesc"
     }
    },
    "updated": "2026-04-19"
@@ -1118,7 +1216,8 @@
    "months": [],
    "versions": [
     "server-2022",
-    "server-2025"
+    "server-2025",
+    "server-2019"
    ],
    "status": "fixed",
    "ms_status": "Resolved",
@@ -1143,6 +1242,13 @@
       "KB5082063"
      ],
      "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#3404msgdesc"
+    },
+    "server-2019": {
+     "caused_by": [],
+     "fixed_by": [
+      "KB5082123"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-10-1809-and-windows-server-2019#3404msgdesc"
     }
    },
    "updated": "2026-04-14"
@@ -1271,7 +1377,8 @@
     "2026-Jan"
    ],
    "versions": [
-    "server-2022"
+    "server-2022",
+    "server-2019"
    ],
    "status": "fixed",
    "ms_status": "Resolved",
@@ -1291,6 +1398,15 @@
       "KB5075906"
      ],
      "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2022#3764msgdesc"
+    },
+    "server-2019": {
+     "caused_by": [
+      "KB5073723"
+     ],
+     "fixed_by": [
+      "KB5075904"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-10-1809-and-windows-server-2019#3764msgdesc"
     }
    },
    "updated": "2026-02-10"
@@ -1311,7 +1427,8 @@
     "win11-24h2",
     "win11-25h2",
     "server-2022",
-    "server-2025"
+    "server-2025",
+    "server-2019"
    ],
    "status": "fixed",
    "ms_status": "Resolved",
@@ -1358,6 +1475,15 @@
       "KB5077793"
      ],
      "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#3760msgdesc"
+    },
+    "server-2019": {
+     "caused_by": [
+      "KB5073723"
+     ],
+     "fixed_by": [
+      "KB5077795"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-10-1809-and-windows-server-2019#3760msgdesc"
     }
    },
    "updated": "2026-01-24"
@@ -1377,7 +1503,8 @@
     "win11-24h2",
     "win11-25h2",
     "server-2022",
-    "server-2025"
+    "server-2025",
+    "server-2019"
    ],
    "status": "fixed",
    "ms_status": "Resolved",
@@ -1424,9 +1551,54 @@
       "KB5078135"
      ],
      "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#2738msgdesc"
+    },
+    "server-2019": {
+     "caused_by": [
+      "KB5073723"
+     ],
+     "fixed_by": [
+      "KB5078131"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-10-1809-and-windows-server-2019#2738msgdesc"
     }
    },
    "updated": "2026-01-23"
+  },
+  {
+   "id": "ms-3751",
+   "origin": "microsoft",
+   "title": "Message Queuing (MSMQ) might fail with the December 2025 Windows security update",
+   "summary": "",
+   "areas": [
+    "server-roles"
+   ],
+   "months": [
+    "2025-Dec"
+   ],
+   "versions": [
+    "server-2019"
+   ],
+   "status": "fixed",
+   "ms_status": "Resolved",
+   "checked": "2026-11-16",
+   "sources": [
+    {
+     "name": "Microsoft release health",
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-10-1809-and-windows-server-2019"
+    }
+   ],
+   "by_version": {
+    "server-2019": {
+     "caused_by": [
+      "KB5071544"
+     ],
+     "fixed_by": [
+      "KB5074975"
+     ],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-10-1809-and-windows-server-2019#3751msgdesc"
+    }
+   },
+   "updated": "2025-12-18"
   },
   {
    "id": "ms-3707",
@@ -1627,7 +1799,8 @@
     "win11-24h2",
     "win11-25h2",
     "server-2022",
-    "server-2025"
+    "server-2025",
+    "server-2019"
    ],
    "status": "fixed",
    "ms_status": "Resolved",
@@ -1666,6 +1839,13 @@
      ],
      "fixed_by": [],
      "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#3697msgdesc"
+    },
+    "server-2019": {
+     "caused_by": [
+      "KB5066586"
+     ],
+     "fixed_by": [],
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-10-1809-and-windows-server-2019#3697msgdesc"
     }
    },
    "updated": "2025-10-22"

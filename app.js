@@ -69,6 +69,17 @@ function render() {
   writeHash();
   renderChips();
   renderIssues();
+  const pair = parseBuildPair(state.q);
+  if (pair) {
+    const [h1, h2] = [findBuild(pair[0]), findBuild(pair[1])];
+    if (h1 && h2 && h1.version === h2.version && h1.version !== state.ver) { state.ver = h1.version; $("ver").value = h1.version; load(); return; }
+    $("issues").innerHTML = "";
+    const res = compareCard(pair, h1, h2);
+    $("results").innerHTML = res.html;
+    $("results").querySelectorAll("button[data-a]").forEach((x) => (x.onclick = () => { state.area = state.area === x.dataset.a ? "" : x.dataset.a; render(); }));
+    if (res.months) renderMonths(res.months); else $("months").innerHTML = "";
+    return;
+  }
   const b = parseBuild(state.q);
   if (b) {
     const hit = findBuild(b);
@@ -107,6 +118,50 @@ function findBuild(b) {
   const later = list.filter((x) => bparts(x.build)[3] > b.rev);
   return { version: best.version, exact, nearest: earlier[earlier.length - 1] || null, later, list };
 }
+// ---- Compare two builds (R2) ----
+// Accepts "20348.5622 to 20348.5870", "... vs ...", "... -> ...", or two builds separated by a space or comma.
+function parseBuildPair(q) {
+  const parts = String(q).toLowerCase().replace(/os\s*build\s*/g, "").split(/\s*(?:\bto\b|\bvs\.?|->|→|,|\s)\s*/).filter(Boolean);
+  if (parts.length !== 2) return null;
+  const a = parseBuild(parts[0]), b = parseBuild(parts[1]);
+  return a && b ? [a, b] : null;
+}
+function refOf(hit) { return hit.exact[0] || hit.nearest; }
+function compareCard(pair, h1, h2) {
+  const card = (title, body) => `<div class="issue build"><span class="pill src">Compare builds</span><span class="it">${title}</span>${body}</div>`;
+  if (!h1 || !h2) return { html: card(`Can't compare: Patchmap doesn't recognise ${esc((!h1 ? pair[0] : pair[1]).text)}`, `<div class="is">Check the number with <code>winver</code>. Patchmap covers ${Object.values(state.labels).map(esc).join(", ")}.</div>`) };
+  if (h1.version !== h2.version) return { html: card("These builds are different Windows versions", `<div>${esc(pair[0].text)} is ${esc(state.labels[h1.version])}; ${esc(pair[1].text)} is ${esc(state.labels[h2.version])}. Compare two builds of the same version.</div>`) };
+  let [a, b, ha, hb] = [pair[0], pair[1], h1, h2];
+  let swapped = "";
+  if (a.rev > b.rev) { [a, b, ha, hb] = [b, a, h2, h1]; swapped = `<div class="is">Put in order: older build first.</div>`; }
+  const vlabel = state.labels[ha.version];
+  if (a.rev === b.rev) return { html: card(`Both are build ${esc(a.text)} (${esc(vlabel)})`, `<div>Same build, so the same updates and fixes. If one machine misbehaves, the difference isn't the Windows update.</div>`) };
+  const months = state.data.months.map((m) => m.month);
+  const ra = refOf(ha), rb = refOf(hb);
+  const ia = ra ? months.indexOf(ra.month) : months.length;   // older build's month (bigger index = older)
+  const ib = rb ? months.indexOf(rb.month) : months.length;
+  const between = state.data.months.filter((m, i) => i < ia && i >= ib); // months after A, up to and including B
+  const ups = ha.list.filter((x) => { const r = bparts(x.build)[3]; return r > a.rev && r <= b.rev; });
+  const desc = (h, x, ref) => h.exact.length ? `${ref.kb}, ${monthName(ref.month)}` : ref ? `not a listed update; after ${ref.kb} (${monthName(ref.month)})` : "older than 12 months";
+  const fixes = between.reduce((n, m) => n + m.fix_count, 0);
+  const areaTotals = {};
+  between.forEach((m) => Object.entries(m.areas).forEach(([t, a2]) => (areaTotals[t] = (areaTotals[t] || 0) + a2.count)));
+  const areas = Object.entries(areaTotals).sort((x, y) => y[1] - x[1])
+    .map(([t, n]) => `<button class="chip" data-a="${esc(t)}">${esc(label(t))} ${n}</button>`).join(" ");
+  const problems = between.flatMap((m) => issuesFor(m.month));
+  const prob = problems.length
+    ? `<div><b>${problems.length} known problem${problems.length > 1 ? "s" : ""}</b> started in between (${problems.filter((i) => i.status !== "fixed").length} still open): ` +
+      problems.map((i) => `${esc(i.title)} <span class="pill ${esc(i.status)}">${esc(STATUS_LABEL[i.status] || i.status)}</span>`).join("; ") + `</div>`
+    : `<div>No known problems started in between.</div>`;
+  const body =
+    `<div>Older: <b>${esc(a.text)}</b> (${esc(desc(ha, a, ra))})<br>Newer: <b>${esc(b.text)}</b> (${esc(desc(hb, b, rb))})</div>` + swapped +
+    `<div><b>${ups.length} update${ups.length === 1 ? "" : "s"}</b> in between${ups.length ? ": " + ups.map((x) => esc(x.kb)).join(", ") : ""}.</div>` +
+    (between.length ? `<div><b>${fixes} security fixes</b> from ${between.length} month${between.length > 1 ? "s" : ""}. By area (click to filter):</div><div class="chips">${areas}</div>`
+                    : `<div>Both builds are from the same month, so the security fixes are the same; the newer build only adds that month's extra or hotpatch releases.</div>`) +
+    prob + `<div class="is">The months in between are listed below.</div>`;
+  return { html: card(`What changed between two ${esc(vlabel)} builds`, body), months: between.length ? new Set(between.map((m) => m.month)) : null };
+}
+
 function niceDate(d) { return new Date(d + "T00:00:00Z").toLocaleDateString("en-AU", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" }); }
 function daysAgo(d) { return Math.max(0, Math.round((Date.now() - Date.parse(d + "T00:00:00Z")) / 86400000)); }
 function buildCard(b, hit) {
@@ -152,7 +207,7 @@ function buildCard(b, hit) {
     after = `<div class="ok-line">This is the newest update Patchmap knows for ${esc(label)}.</div>`;
   } else {
     const latest = newer[newer.length - 1];
-    after = `<div><b>${newer.length} newer update${newer.length > 1 ? "s" : ""}</b> since, the latest being ${esc(latest.kb)} (build ${esc(latest.build)}, ${esc(monthName(latest.month))}).` +
+    after = `<div><b>${newer.length} newer update${newer.length > 1 ? "s" : ""}</b> since, the latest being ${esc(latest.kb)} (build ${esc(latest.build)}, ${esc(monthName(latest.month))}). <a href="#v=${esc(hit.version)}&q=${encodeURIComponent(b.text + " to " + latest.build)}">Compare with the latest</a>.` +
       (fixesSince ? ` Updating would add <b>${fixesSince} security fixes</b> from ${laterMonths.length} later month${laterMonths.length > 1 ? "s" : ""}.` : "") + `</div>` +
       (problemsSince.length ? `<div class="is">Known problems that started in those later updates: ${problemsSince.length} (${problemsSince.filter((i) => i.status !== "fixed").length} still open). See the months below.</div>` : "");
   }
@@ -205,17 +260,19 @@ function fixHTML(f) {
     `<span>${esc(f.title)}</span>${f.severity ? `<span class="sev ${esc(f.severity)}">${esc(f.severity)}</span>` : ""}<span class="muted">${kbs}</span></div>`;
 }
 
-function renderMonths() {
+function renderMonths(only) {
   const box = $("months");
   const months = state.data.months;
   if (!months.length) { box.innerHTML = '<p class="muted">No data for this version yet.</p>'; return; }
+  const firstShown = months.findIndex((m) => !only || only.has(m.month));
   box.innerHTML = months.map((m, idx) => {
+    if (only && !only.has(m.month)) return "";
     const ups = m.updates.map((u) => `<span class="kb">${esc(u.kb)}</span>`).join(" ") || '<span class="muted">KB not listed</span>';
     const n = state.area ? (m.areas[state.area] ? m.areas[state.area].count : 0) : m.fix_count;
     const ki = issuesFor(m.month).filter((i) => i.status !== "fixed").length;
     const kf = issuesFor(m.month).length - ki;
     const kt = [ki ? `${ki} open problem${ki > 1 ? "s" : ""}` : "", kf ? `${kf} fixed` : ""].filter(Boolean).join(", ");
-    return `<details class="month" data-i="${idx}"${idx === 0 ? " open" : ""}><summary><span class="l">${monthName(m.month)} · ${ups}</span>` +
+    return `<details class="month" data-i="${idx}"${idx === firstShown ? " open" : ""}><summary><span class="l">${monthName(m.month)} · ${ups}</span>` +
       `<span class="r">${n} fixes${state.area ? " in " + esc(label(state.area)) : ""}${kt ? " · " + kt : ""}</span></summary></details>`;
   }).join("");
   box.querySelectorAll("details.month").forEach((d) => {
