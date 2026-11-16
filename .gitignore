@@ -1,2 +1,10 @@
 cache/
 __pycache__/
+
+# Generated on every publish by scripts/build_pages.py
+/kb/
+/problem/
+/error/
+/version/
+/sitemap.xml
+/robots.txt

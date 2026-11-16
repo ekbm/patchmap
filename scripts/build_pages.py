@@ -1,0 +1,246 @@
+"""
+Verilay Patchmap - builds plain pages that search engines (Google, Bing) can read.
+
+Why: the main explorer is one page that fills itself in with JavaScript, and its links use "#",
+so search engines only see an empty shell. This script writes one ordinary HTML page per:
+    /kb/KB5131090/              each update (what it fixed, by area; what it replaced; problems)
+    /problem/<name>/            each known problem
+    /error/0x80041008/          each error code mentioned in a known problem
+    /version/server-2022/       each Windows version (its monthly updates, open problems)
+plus /sitemap.xml and /robots.txt so search engines can find them all.
+
+Pages are generated fresh on every publish and are NOT saved in the repo (see .gitignore).
+
+Run after the data scripts:
+    py scripts\\build_pages.py
+"""
+
+import datetime as dt
+import html
+import json
+import re
+import shutil
+import sys
+from collections import defaultdict
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+DATA = ROOT / "data"
+SITE = "https://patchmap.verilay.dev"
+OUT_DIRS = ["kb", "problem", "error", "version"]
+STATUS = {"open": "Open", "mitigated": "Workaround available", "fix-rolling-out": "Fix rolling out",
+          "fix-available": "Fix available", "fixed": "Fixed"}
+ERR = re.compile(r"0x[0-9A-Fa-f]{8}")
+e = lambda s: html.escape(str(s if s is not None else ""), quote=True)
+
+
+def load(name, default=None):
+    p = DATA / name
+    return json.loads(p.read_text(encoding="utf-8")) if p.exists() else default
+
+
+def month_name(mid):
+    y, m = mid.split("-")
+    return dt.datetime.strptime(m, "%b").strftime("%B") + " " + y
+
+
+def slug(text, n=60):
+    return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", text.lower())).strip("-")[:n].strip("-")
+
+
+def page(path, title, desc, body, crumbs):
+    """Write one page. path like 'kb/KB5131090' -> kb/KB5131090/index.html"""
+    url = f"{SITE}/{path}/"
+    body = body.replace('<table class="src-table">', '<div class="tablewrap"><table class="src-table">').replace("</table>", "</table></div>")
+    nav = " › ".join([f'<a href="/">Patchmap</a>'] + crumbs)
+    doc = f"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{e(title)} · Verilay Patchmap</title>
+<meta name="description" content="{e(desc)}">
+<link rel="canonical" href="{url}">
+<link rel="stylesheet" href="/style.css">
+<link rel="alternate" type="application/atom+xml" title="Verilay Patchmap" href="/feed.xml">
+<script>try {{ if (localStorage.getItem("pm-theme") === "dark") document.documentElement.dataset.theme = "dark"; }} catch (e) {{}}</script>
+</head>
+<body>
+<header class="top"><div class="wrap bar"><a class="brand" href="/">Verilay Patchmap</a>
+<nav><a href="/">Explore updates</a><a href="/about.html">About</a></nav></div></header>
+<main class="wrap page">
+<p class="crumbs muted">{nav}</p>
+{body}
+<p class="muted note">Not Microsoft and not official advice: check Microsoft's own page before acting. Data from the Microsoft Security Update Guide and Windows release health, refreshed weekly.</p>
+</main>
+<footer class="wrap foot"><span>Open source · <a href="https://github.com/ekbm/patchmap/issues/new">Report a problem</a> · <a href="/about.html#alerts">Get alerts</a></span>
+<span>Also by us: <a href="https://verilay.dev" target="_blank" rel="noopener">Verilay</a>, plain-English checks for AI-built apps (opens in a new tab)</span></footer>
+</body>
+</html>
+"""
+    f = ROOT / path / "index.html"
+    f.parent.mkdir(parents=True, exist_ok=True)
+    f.write_text(doc, encoding="utf-8")
+    return url
+
+
+def issue_card(i, ver=None, problem_url=None):
+    pv = (i.get("by_version") or {}).get(ver, {}) if ver else {}
+    st = STATUS.get(i["status"], i["status"])
+    title = f'<a href="{problem_url}">{e(i["title"])}</a>' if problem_url else e(i["title"])
+    return (f'<div class="issue {e(i["status"])}"><span class="pill {e(i["status"])}">{e(st)}</span>'
+            f'<span class="pill src">{"Microsoft" if i.get("origin") == "microsoft" else "Patchmap"}</span>'
+            f'<span class="it">{title}</span></div>')
+
+
+def main():
+    for d in OUT_DIRS:
+        shutil.rmtree(ROOT / d, ignore_errors=True)
+    index = load("index.json")
+    labels = index["labels"]
+    tags = {k: v["label"] for k, v in load("area_tags.json")["tags"].items()}
+    tags["other"] = "Other"
+    issues = load("known_issues.json", {"issues": []})["issues"] + load("release_health.json", {"issues": []})["issues"]
+    builds = load("builds.json", [])
+    fix_by_cve = {}
+    for m in index["months"]:
+        for f in load(f"months/{m['month']}.json")["fixes"]:
+            fix_by_cve[f["cve"]] = f
+    updates = {p.stem: json.loads(p.read_text(encoding="utf-8")) for p in (DATA / "updates").glob("KB*.json")}
+    urls = []
+
+    # names for problem pages, and which problems mention which KBs / error codes
+    pslug = {i["id"]: (i["id"] if i.get("origin") != "microsoft" else f'{slug(i["title"])}-{i["id"][3:]}') for i in issues}
+    purl = lambda i: f'/problem/{pslug[i["id"]]}/'
+    kb_problems = defaultdict(lambda: {"caused": [], "fixed": []})
+    err_problems = defaultdict(list)
+    for i in issues:
+        for ver, pv in (i.get("by_version") or {}).items():
+            for k in pv.get("caused_by", []):
+                if i not in kb_problems[k]["caused"]:
+                    kb_problems[k]["caused"].append(i)
+            for k in pv.get("fixed_by", []):
+                if i not in kb_problems[k]["fixed"]:
+                    kb_problems[k]["fixed"].append(i)
+        if not i.get("by_version"):  # hand-written problems name a month, not a KB: link that month's updates
+            for k, u in updates.items():
+                if u["month"] in i.get("months", []) and set(u["versions"]) & set(i["versions"]) and i not in kb_problems[k]["caused"]:
+                    kb_problems[k]["caused"].append(i)
+        for code in set(c.lower() for c in ERR.findall(" ".join([i["title"], i.get("summary", ""), i.get("status_note", "")]))):
+            err_problems[code].append(i)
+    # "replaced by": the next build of the same version
+    by_ver = defaultdict(list)
+    for b in builds:
+        by_ver[b["version"]].append(b)
+    replaced_by = {}
+    for ver, lst in by_ver.items():
+        for a, b in zip(lst, lst[1:]):
+            replaced_by.setdefault(a["kb"], {})[ver] = b["kb"]
+    kb_link = lambda k: f'<a href="/kb/{e(k)}/">{e(k)}</a>' if k in updates else e(k)
+
+    # ---- update pages ----
+    for kb, u in updates.items():
+        vers = [v for v in u["versions"] if v in labels]
+        if not vers:
+            continue
+        names = ", ".join(labels[v] for v in vers)
+        fixes = [fix_by_cve[c] for c in u["fixes"] if c in fix_by_cve]
+        areas = defaultdict(list)
+        for f in fixes:
+            for t in f["tags"]:
+                areas[t].append(f)
+        rows = "".join(f"<tr><td>{e(labels[v])}</td><td>{e(b)}</td></tr>" for v, b in u["versions"].items() if v in labels)
+        repl = ", ".join(kb_link(k) for k in u.get("supersedes", [])) or "not listed"
+        newer = sorted({replaced_by.get(kb, {}).get(v) for v in vers} - {None})
+        prob_c, prob_f = kb_problems[kb]["caused"], kb_problems[kb]["fixed"]
+        area_list = "".join(
+            f'<details><summary><span class="l">{e(tags.get(t, t))}</span><span class="r">{len(fs)} fixes</span></summary>'
+            + "".join(f'<div class="fix"><a class="cve" href="{e(f["msrc_url"])}" rel="noopener">{e(f["cve"])}</a><span>{e(f["title"])}</span></div>' for f in fs)
+            + "</details>"
+            for t, fs in sorted(areas.items(), key=lambda x: -len(x[1])))
+        top = ", ".join(f"{tags.get(t, t)} ({len(fs)})" for t, fs in sorted(areas.items(), key=lambda x: -len(x[1]))[:4])
+        explore = f'/#v={vers[0]}&q={kb}'
+        body = (f"<h1>{e(kb)}</h1>"
+                f'<p class="lead">{e(u.get("type") or "Update")} for {e(names)}, {e(month_name(u["month"]))} (released {e(u["released"])}). '
+                f'It includes {len(fixes)} security fixes{": most in " + e(top) if top else ""}.</p>'
+                f'<table class="src-table"><tr><th>Windows version</th><th>Build after installing</th></tr>{rows}</table>'
+                f"<p>Replaces: {repl}. "
+                + (f"Replaced by: {', '.join(kb_link(k) for k in newer)}. " if newer else "The newest update Patchmap knows for this version. ")
+                + f'Restart needed: {e(u.get("restart") or "not stated")}.</p>'
+                + ("<h2>Known problems this update started</h2>" + "".join(issue_card(i, vers[0], purl(i)) for i in prob_c) if prob_c else "")
+                + ("<h2>Known problems this update fixed</h2>" + "".join(issue_card(i, vers[0], purl(i)) for i in prob_f) if prob_f else "")
+                + f"<h2>Security fixes by area</h2>{area_list or '<p>No security fixes listed.</p>'}"
+                + f'<h2>Links</h2><ul><li><a href="{explore}">Open {e(kb)} in the Patchmap explorer</a></li>'
+                f'<li><a href="https://support.microsoft.com/help/{e(kb[2:])}" rel="noopener">Microsoft\'s page for {e(kb)}</a></li>'
+                f'<li><a href="{e(u.get("catalog_url") or "")}" rel="noopener">Microsoft Update Catalog</a></li></ul>')
+        desc = f"{kb}: {names} {month_name(u['month'])} update. {len(fixes)} security fixes{', most in ' + top if top else ''}; known problems and what it replaced."
+        urls.append(page(f"kb/{kb}", f"{kb}: {names}, {month_name(u['month'])}", desc, body,
+                         [f'<a href="/version/{vers[0]}/">{e(labels[vers[0]])}</a>', e(kb)]))
+
+    # ---- problem pages ----
+    for i in issues:
+        vers = [v for v in i["versions"] if v in labels]
+        if not vers:
+            continue
+        st = STATUS.get(i["status"], i["status"])
+        rows = ""
+        for v in vers:
+            pv = (i.get("by_version") or {}).get(v, {})
+            caused = pv.get("caused_by") or ([] if i.get("by_version") else
+                     sorted(k for k, u in updates.items() if u["month"] in i.get("months", []) and v in u["versions"]))
+            c = ", ".join(kb_link(k) for k in caused) or "–"
+            f = ", ".join(kb_link(k) for k in pv.get("fixed_by", [])) or "–"
+            rows += f'<tr><td><a href="/version/{v}/">{e(labels[v])}</a></td><td>{c}</td><td>{f}</td></tr>'
+        codes = sorted(set(c.lower() for c in ERR.findall(" ".join([i["title"], i.get("summary", ""), i.get("status_note", "")]))))
+        srcs = "".join(f'<li><a href="{e(s["url"])}" rel="noopener">{e(s["name"])}</a></li>' for s in i.get("sources", []))
+        for v in vers:
+            u = ((i.get("by_version") or {}).get(v) or {}).get("url")
+            if u and u not in srcs:
+                srcs += f'<li><a href="{e(u)}" rel="noopener">Microsoft release health ({e(labels[v])})</a></li>'
+        about = e(i.get("summary")) or "Microsoft lists this problem on its Windows release health pages. Follow the source link for Microsoft's description and any workaround."
+        body = (f'<h1>{e(i["title"])}</h1>'
+                f'<p><span class="pill {e(i["status"])}">{e(st)}</span><span class="pill src">{"From Microsoft" if i.get("origin") == "microsoft" else "From news and vendor reports"}</span> '
+                f'<span class="muted">checked {e(i.get("checked"))}</span></p>'
+                f"<p>{about}</p>" + (f'<p>{e(i["status_note"])}</p>' if i.get("status_note") else "")
+                + f'<h2>Windows versions</h2><table class="src-table"><tr><th>Version</th><th>Started with</th><th>Fixed in</th></tr>{rows}</table>'
+                + (f"<h2>Error codes</h2><p>{', '.join(f'<a href=\"/error/{c}/\">{c}</a>' for c in codes)}</p>" if codes else "")
+                + f"<h2>Sources</h2><ul>{srcs}</ul>")
+        desc = f"{st}: {i['title']}. Affects {', '.join(labels[v] for v in vers)}. Which update started it, which fixed it, and sources."
+        urls.append(page(f"problem/{pslug[i['id']]}", i["title"], desc, body, ["Known problems", e(i["title"][:60])]))
+
+    # ---- error code pages ----
+    for code, plist in err_problems.items():
+        body = (f"<h1>Windows update error {e(code)}</h1>"
+                f"<p class=\"lead\">Known problems that mention error {e(code)}:</p>"
+                + "".join(issue_card(i, None, purl(i)) for i in plist)
+                + '<p class="muted">An error code can have several causes. If none of these match your situation, check Microsoft\'s documentation for the code.</p>')
+        urls.append(page(f"error/{code}", f"Error {code}", f"Windows update error {code}: known problems that cause it, their status and fixes.", body,
+                         ["Error codes", e(code)]))
+
+    # ---- version pages ----
+    for ver, name in labels.items():
+        d = load(f"versions/{ver}.json", {"months": []})
+        open_p = [i for i in issues if ver in i["versions"] and i["status"] != "fixed"]
+        rows = "".join(
+            f"<tr><td>{e(month_name(m['month']))}</td><td>{', '.join(kb_link(x['kb']) for x in m['updates']) or '–'}</td>"
+            f"<td>{', '.join(e(x['build'] or '') for x in m['updates'])}</td><td>{m['fix_count']}</td></tr>" for m in d["months"])
+        body = (f"<h1>{e(name)} updates</h1>"
+                f'<p class="lead">Monthly security updates for {e(name)} over the last 12 months, with build numbers and known problems.</p>'
+                + ("<h2>Open known problems</h2>" + "".join(issue_card(i, ver, purl(i)) for i in open_p) if open_p else "")
+                + f'<h2>Monthly updates</h2><table class="src-table"><tr><th>Month</th><th>Update</th><th>Build</th><th>Security fixes</th></tr>{rows}</table>'
+                + f'<p><a href="/#v={ver}">Explore {e(name)} step by step</a> · <a href="/feeds/{ver}.xml">Alert feed for {e(name)}</a></p>')
+        urls.append(page(f"version/{ver}", f"{name} updates and known problems",
+                         f"{name}: every monthly security update for the last 12 months, build numbers, security fixes and open known problems.", body, [e(name)]))
+
+    # ---- sitemap + robots ----
+    today = dt.date.today().isoformat()
+    core = [f"{SITE}/", f"{SITE}/about.html"]
+    (ROOT / "sitemap.xml").write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + "".join(f"  <url><loc>{u}</loc><lastmod>{today}</lastmod></url>\n" for u in core + urls) + "</urlset>\n", encoding="utf-8")
+    (ROOT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n", encoding="utf-8")
+    print(f"Done: {len(urls)} pages + sitemap.xml + robots.txt")
+
+
+if __name__ == "__main__":
+    sys.exit(main())

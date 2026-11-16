@@ -72,7 +72,11 @@ summary .r { color: var(--muted); font-size: 14px; white-space: nowrap; }
 .about h2 { font-size: 18px; }
 .foot { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; padding-top: 16px; padding-bottom: 32px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
-.page h1 { font-size: 26px; margin: 28px 0 4px; }
+.page h1 { font-size: 26px; margin: 8px 0 4px; }
+.crumbs { margin: 20px 0 0; }
+.tablewrap { overflow-x: auto; }
+.browse { margin: 24px 0 0; font-size: 14px; color: var(--muted); }
+.browse a { margin-right: 10px; white-space: nowrap; }
 .page h2 { font-size: 18px; margin: 32px 0 8px; }
 .page li { margin: 4px 0; }
 .steps { padding-left: 22px; }
