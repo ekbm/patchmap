@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About · Verilay Patchmap</title>
+<meta name="description" content="What Verilay Patchmap is, how to use it, where its data comes from, and its limits.">
+<link rel="stylesheet" href="style.css">
+<script>try { if (localStorage.getItem("pm-theme") === "dark") document.documentElement.dataset.theme = "dark"; } catch (e) {}</script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="./">Verilay Patchmap</a>
+    <nav><a href="./">Explore updates</a><a href="https://github.com/ekbm/patchmap">GitHub</a><button class="theme" id="theme" type="button">Dark</button></nav>
+  </div>
+</header>
+
+<main class="wrap page">
+  <h1>About Patchmap</h1>
+  <p class="lead">A free, open-source way to see what each Windows update touched, so you can work out faster whether a problem started with an update.</p>
+
+  <h2>How to use it</h2>
+  <ol class="steps">
+    <li><b>Pick your Windows version</b> at the top of the page.</li>
+    <li><b>Open a month</b> to see that month's update number, build number and any known problems.</li>
+    <li><b>Open an area</b>, such as Printing and scanning or Sign-in and identity, to see which parts of Windows were fixed.</li>
+    <li><b>Open a part of Windows</b> to see each security fix, with a link to Microsoft's details.</li>
+  </ol>
+  <p>Or type in the search box: an area (<a href="./#v=server-2022&amp;q=print">print</a>), a part of Windows (<a href="./#v=server-2022&amp;q=kerberos">Kerberos</a>), an update number (KB5131090), a fix number (CVE-2026-…) or an error code (<a href="./#v=server-2022&amp;q=0x80041008">0x80041008</a>). The area buttons narrow everything to one area.</p>
+
+  <h2>Known problems</h2>
+  <div class="legend">
+    <div class="issue open"><span class="pill open">Open</span><span class="it">Microsoft or others have confirmed it and there's no fix yet</span></div>
+    <div class="issue mitigated"><span class="pill mitigated">Workaround available</span><span class="pill fix-rolling-out">Fix rolling out</span><span class="it">There's a way around it, or a fix is on its way</span></div>
+    <div class="issue fixed"><span class="pill fixed">Fixed</span><span class="it">A later update fixed it. Shown folded under the month it started.</span></div>
+  </div>
+  <p>The grey label shows where each problem comes from:</p>
+  <ul>
+    <li><span class="pill src">Microsoft</span> collected automatically from Microsoft's own Windows release health pages.</li>
+    <li><span class="pill src">Patchmap</span> problems Microsoft hasn't listed publicly (yet), added by hand from news and vendor reports. Every one links its sources and shows the date it was last checked.</li>
+  </ul>
+
+  <h2>Where the data comes from</h2>
+  <table class="src-table">
+    <tr><th>What</th><th>Source</th><th>Updated</th></tr>
+    <tr><td>Security fixes, update numbers, build numbers</td><td><a href="https://msrc.microsoft.com/update-guide">Microsoft Security Update Guide</a></td><td>Automatically, every Wednesday</td></tr>
+    <tr><td>Microsoft's known problems</td><td><a href="https://learn.microsoft.com/windows/release-health/">Windows release health</a></td><td>Automatically, every Wednesday</td></tr>
+    <tr><td>Other known problems</td><td>News and vendor reports, linked on each entry</td><td>By hand</td></tr>
+    <tr><td>Areas (printing, sign-in…)</td><td>Patchmap's own rules, <a href="https://github.com/ekbm/patchmap/blob/main/data/area_tags.json">open to edit</a></td><td>By hand</td></tr>
+  </table>
+  <p class="muted" id="gen"></p>
+
+  <h2>What's covered</h2>
+  <p>Windows 11 24H2, 25H2 and 26H2, and Windows Server 2022 and 2025, for the last 12 months of security updates.</p>
+
+  <h2>Coming next</h2>
+  <ul>
+    <li>Which <b>files</b> each update changed, in each area</li>
+    <li>An optional <b>"my software" filter</b> for tools that depend on Windows features, starting with print management software</li>
+  </ul>
+
+  <h2>Limits</h2>
+  <ul>
+    <li>Only <b>security</b> fixes are listed automatically. Other bug fixes appear only if they caused a known problem.</li>
+    <li>"This update touched printing" means worth checking, not "this will break your printing".</li>
+    <li>Patchmap isn't Microsoft and isn't official advice. Always check Microsoft's own page before acting.</li>
+  </ul>
+
+  <h2>Help out</h2>
+  <p>Seen a problem an update caused? <a href="https://github.com/ekbm/patchmap/issues/new">Report it on GitHub</a> with the update number, Windows version, the symptom or error code, and a link to a source.</p>
+
+  <h2>Licences</h2>
+  <p>Code: <a href="https://github.com/ekbm/patchmap/blob/main/LICENSE">MIT</a>. Patchmap's own data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Microsoft's data remains Microsoft's (<a href="https://github.com/ekbm/patchmap/blob/main/LICENSE-DATA.md">details</a>). Windows is a trademark of Microsoft Corporation.</p>
+</main>
+
+<footer class="wrap foot">
+  <span>Open source · <a href="https://github.com/ekbm/patchmap">GitHub</a></span>
+  <span>More from <a href="https://verilay.dev">Verilay</a></span>
+</footer>
+<script>
+(function () {
+  const btn = document.getElementById("theme"), root = document.documentElement;
+  const show = () => { btn.textContent = root.dataset.theme === "dark" ? "Light" : "Dark"; };
+  btn.onclick = () => {
+    const dark = root.dataset.theme !== "dark";
+    if (dark) root.dataset.theme = "dark"; else delete root.dataset.theme;
+    try { localStorage.setItem("pm-theme", dark ? "dark" : "light"); } catch (e) {}
+    show();
+  };
+  show();
+})();
+fetch("data/index.json").then((r) => r.json()).then((d) => { document.getElementById("gen").textContent = "Data last updated " + d.generated + "."; }).catch(() => {});
+</script>
+</body>
+</html>

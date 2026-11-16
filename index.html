@@ -12,7 +12,7 @@
 <header class="top">
   <div class="wrap bar">
     <a class="brand" href="./">Verilay Patchmap</a>
-    <nav><a href="#about">About</a><a href="https://github.com/ekbm/patchmap">GitHub</a><button class="theme" id="theme" type="button">Dark</button></nav>
+    <nav><a href="about.html">About</a><a href="https://github.com/ekbm/patchmap">GitHub</a><button class="theme" id="theme" type="button">Dark</button></nav>
   </div>
 </header>
 
@@ -31,16 +31,11 @@
   <section id="results" aria-live="polite"></section>
   <section id="months"><p class="muted">Loading…</p></section>
 
-  <section id="about" class="about">
-    <h2>About</h2>
-    <p>Patchmap lists the Windows security fixes Microsoft publishes each month, grouped by the area of Windows they touch, for the Windows versions shown above. Known problems come from two places: Microsoft's own release health pages (collected automatically, labelled "Microsoft"), and problems reported elsewhere that we add by hand with sources (labelled "Patchmap").</p>
-    <p>Coming next: which files each update changed, and an optional filter for software that depends on Windows features (starting with print management tools).</p>
-    <p class="muted">Not affiliated with Microsoft. Not official advice: always check Microsoft's own pages before acting. Security fix data comes from the <a href="https://msrc.microsoft.com/update-guide">Microsoft Security Update Guide</a>. <span id="gen"></span></p>
-  </section>
+  <p class="muted note">Not Microsoft and not official advice: check Microsoft's own page before acting. <a href="about.html">How Patchmap works</a>. <span id="gen"></span></p>
 </main>
 
 <footer class="wrap foot">
-  <span>Open source · <a href="https://github.com/ekbm/patchmap">Report a problem or suggest a fix</a></span>
+  <span>Open source · <a href="https://github.com/ekbm/patchmap/issues/new">Report a problem</a></span>
   <span>More from <a href="https://verilay.dev">Verilay</a></span>
 </footer>
 <script src="app.js"></script>

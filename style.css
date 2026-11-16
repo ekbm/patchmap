@@ -58,9 +58,17 @@ summary .r { color: var(--muted); font-size: 14px; white-space: nowrap; }
 .sev.Important { background: var(--warn-bg); color: var(--warn); }
 .muted { color: var(--muted); font-size: 14px; }
 .meta { color: var(--muted); font-size: 13px; margin: 0 0 6px 26px; }
-.about { margin: 40px 0 24px; border-top: 1px solid var(--line); }
+.note { margin: 32px 0 16px; }
 .about h2 { font-size: 18px; }
 .foot { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; padding-top: 16px; padding-bottom: 32px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.page h1 { font-size: 26px; margin: 28px 0 4px; }
+.page h2 { font-size: 18px; margin: 32px 0 8px; }
+.page li { margin: 4px 0; }
+.steps { padding-left: 22px; }
+.legend .issue { margin: 8px 0; }
+.src-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.src-table th, .src-table td { text-align: left; padding: 8px 10px 8px 0; border-top: 1px solid var(--line); vertical-align: top; }
+.src-table th { color: var(--muted); font-weight: 500; }
 .res-h { font-size: 15px; margin: 16px 0 4px; }
 @media (max-width: 560px) { summary { flex-wrap: wrap; } summary .l { flex-basis: calc(100% - 32px); overflow-wrap: anywhere; } summary .r { white-space: normal; width: 100%; padding-left: 18px; } .fix { margin-left: 12px; } details details { margin-left: 10px; } }
