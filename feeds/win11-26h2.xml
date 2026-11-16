@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Windows 11 26H2</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/win11-26h2.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/win11-26h2.xml</id>
+  <updated>2026-11-16T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:2026-11-print-zero-size-images:open</id>
+    <title>Open: Printing fails for documents with zero-size images</title>
+    <updated>2026-11-16T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;q=Printing%20fails%20for%20documents%20with%20zero-s"/>
+    <category term="known-problem"/>
+    <summary>Printing can fail when a document contains an image with zero height or width at the selected resolution. These images can be invisible. Mainly Word documents printed through GDI, but other apps can be affected. Confirmed by Microsoft. No fix date announced. Affects: Windows 11 26H2. Source: https://www.ghacks.net/2026/11/15/microsoft-confirms-november-windows-updates-cause-activation-error-0x80041008-and-printing-failures/. From Patchmap (news and vendor reports).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:2026-11-install-0x800f0993:fix-rolling-out</id>
+    <title>Fix rolling out: November update fails to install (0x800f0993, 0x800f0989, 0x80070306)</title>
+    <updated>2026-11-16T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;q=November%20update%20fails%20to%20install%20%280x800f"/>
+    <category term="known-problem"/>
+    <summary>Some devices that installed the October 2026 preview update KB5127936 can't finish installing the November security update and may retry repeatedly. Microsoft says a fix is rolling out for devices using Windows Update. Sources disagree on whether it has fully shipped. Affects: Windows 11 26H2. Source: https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-kb5132061-installation-issues-0x80070306-0x800f0989-0x800f0993-errors/. From Patchmap (news and vendor reports).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:2026-11-activation-0x80041008:fix-available</id>
+    <title>Fix available: Activation and licensing commands fail with 0x80041008</title>
+    <updated>2026-11-16T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;q=Activation%20and%20licensing%20commands%20fail%20w"/>
+    <category term="known-problem"/>
+    <summary>Activation, KMS configuration or product key commands (for example slmgr) can fail with error 0x80041008, especially with automated licensing tools. Reported fixed by an out-of-band update on 13 Nov 2026. Server packages are in the Microsoft Update Catalog only. Check Microsoft's KB page for your version. Affects: Windows 11 26H2. Source: https://support.microsoft.com/en-us/servicing/os/windows-11/2026/11/kb5131087-windows-11-23h2-security-update. From Patchmap (news and vendor reports).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3721:open</id>
+    <title>Open: SQL Server linked server connections might remain open</title>
+    <updated>2026-11-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;q=KB5127648"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5127648. Affects: Windows 11 26H2. Source: https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-26h2#3721msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:win11-26h2:2026-Nov</id>
+    <title>Windows 11 26H2: November 2026 security update KB5132043, KB5132061, KB5135385</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;q=KB5132043"/>
+    <category term="monthly-update"/>
+    <summary>KB5132043 (build 10.0.26300.9911), KB5132061 (build 10.0.26300.9974), KB5135385 (build 10.0.26300.9968). 587 security fixes. Biggest areas: kernel-drivers 135, graphics 87, apps-desktop 73, network 62, storage 51.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-5031:fixed</id>
+    <title>Now fixed: Remote Desktop connections might fail for non-admin users with error 0xC000000D</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;q=KB5124010"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5124010. Fixed in KB5127936. Affects: Windows 11 26H2. Source: https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-26h2#5031msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-4984:fixed</id>
+    <title>Now fixed: USB audio devices might fail to start or produce no sound</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;q=USB%20audio%20devices%20might%20fail%20to%20start%20or"/>
+    <category term="known-problem"/>
+    <summary>Fixed in KB5132061. Affects: Windows 11 26H2. Source: https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-26h2#4984msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:win11-26h2:2026-Oct</id>
+    <title>Windows 11 26H2: October 2026 security update KB5127648</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;q=KB5127648"/>
+    <category term="monthly-update"/>
+    <summary>KB5127648 (build 10.0.26300.9711). 850 security fixes. Biggest areas: kernel-drivers 222, apps-desktop 149, storage 112, network 77, management 71.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-5006:fixed</id>
+    <title>Now fixed: Devices might experience a black screen or desktop loading issues after sign-in</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;q=Devices%20might%20experience%20a%20black%20screen%20"/>
+    <category term="known-problem"/>
+    <summary>Fixed in KB5127648. Affects: Windows 11 26H2. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-26h2#5006msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3781:fixed</id>
+    <title>Now fixed: Applications which require AC-3 audio decoding might close unexpectedly</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;q=KB5124010"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5124010. Fixed in KB5127648. Affects: Windows 11 26H2. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-26h2#3781msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-4990:fixed</id>
+    <title>Now fixed: Domain-joined devices might lose their secure trust relationship with the domain</title>
+    <updated>2026-09-22T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;q=Domain-joined%20devices%20might%20lose%20their%20s"/>
+    <category term="known-problem"/>
+    <summary>Fixed in KB5124010. Affects: Windows 11 26H2. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-26h2#4990msgdesc. From Microsoft release health.</summary>
+  </entry>
+</feed>

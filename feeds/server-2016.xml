@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Windows Server 2016</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/server-2016.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/server-2016.xml</id>
+  <updated>2026-11-16T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:2026-11-print-zero-size-images:open</id>
+    <title>Open: Printing fails for documents with zero-size images</title>
+    <updated>2026-11-16T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;q=Printing%20fails%20for%20documents%20with%20zero-s"/>
+    <category term="known-problem"/>
+    <summary>Printing can fail when a document contains an image with zero height or width at the selected resolution. These images can be invisible. Mainly Word documents printed through GDI, but other apps can be affected. Confirmed by Microsoft. No fix date announced. Affects: Windows Server 2016. Source: https://www.ghacks.net/2026/11/15/microsoft-confirms-november-windows-updates-cause-activation-error-0x80041008-and-printing-failures/. From Patchmap (news and vendor reports).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3721:open</id>
+    <title>Open: SQL Server linked server connections might remain open</title>
+    <updated>2026-11-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;q=KB5126868"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5126868. Affects: Windows Server 2016. Source: https://learn.microsoft.com/en-us/windows/release-health/status-windows-10-1607-and-windows-server-2016#3721msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2016:2026-Nov</id>
+    <title>Windows Server 2016: November 2026 security update KB5131083, KB5131291</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;q=KB5131083"/>
+    <category term="monthly-update"/>
+    <summary>KB5131083 (build 10.0.14393.9681), KB5131291 (build 10.0.14393.9688). 467 security fixes. Biggest areas: kernel-drivers 94, network 78, apps-desktop 45, server-roles 45, other 39.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-5047:fixed</id>
+    <title>Now fixed: Users might be unable to sign in to OWA or send emails on Exchange Server</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;q=KB5126868"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5126868. Fixed in KB5131291. Affects: Windows Server 2016. Source: https://learn.microsoft.com/en-us/windows/release-health/status-windows-10-1607-and-windows-server-2016#5047msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-4984:fixed</id>
+    <title>Now fixed: USB audio devices might fail to start or produce no sound</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;q=KB5123099"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5123099. Fixed in KB5131291. Affects: Windows Server 2016. Source: https://learn.microsoft.com/en-us/windows/release-health/status-windows-10-1607-and-windows-server-2016#4984msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2016:2026-Oct</id>
+    <title>Windows Server 2016: October 2026 security update KB5126649, KB5126868</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;q=KB5126649"/>
+    <category term="monthly-update"/>
+    <summary>KB5126649 (build 10.0.14393.9596), KB5126868 (build 10.0.14393.9612). 603 security fixes. Biggest areas: kernel-drivers 139, network 96, apps-desktop 90, storage 82, server-roles 62.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2016:2026-Sep</id>
+    <title>Windows Server 2016: September 2026 security update KB5122874, KB5123099</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;q=KB5122874"/>
+    <category term="monthly-update"/>
+    <summary>KB5122874 (build 10.0.14393.9504), KB5123099 (build 10.0.14393.9512). 486 security fixes. Biggest areas: network 88, sign-in 80, storage 80, security 73, server-roles 68.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2016:2026-Aug</id>
+    <title>Windows Server 2016: August 2026 security update KB5120418</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;q=KB5120418"/>
+    <category term="monthly-update"/>
+    <summary>KB5120418 (build 10.0.14393.9418). 149 security fixes. Biggest areas: network 44, server-roles 26, apps-desktop 17, storage 15, graphics 14.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2016:2026-Jul</id>
+    <title>Windows Server 2016: July 2026 security update KB5099535</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;q=KB5099535"/>
+    <category term="monthly-update"/>
+    <summary>KB5099535 (build 10.0.14393.9339). 232 security fixes. Biggest areas: storage 43, kernel-drivers 41, apps-desktop 36, network 36, remote-access 21.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2016:2026-Jun</id>
+    <title>Windows Server 2016: June 2026 security update KB5094122</title>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;q=KB5094122"/>
+    <category term="monthly-update"/>
+    <summary>KB5094122 (build 10.0.14393.9234). 62 security fixes. Biggest areas: network 18, kernel-drivers 15, security 12, apps-desktop 7, other 5.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2016:2026-May</id>
+    <title>Windows Server 2016: May 2026 security update KB5087537</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;q=KB5087537"/>
+    <category term="monthly-update"/>
+    <summary>KB5087537 (build 10.0.14393.9140). 45 security fixes. Biggest areas: network 14, kernel-drivers 9, graphics 6, apps-desktop 5, security 4.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2016:2026-Apr</id>
+    <title>Windows Server 2016: April 2026 security update KB5082198</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;q=KB5082198"/>
+    <category term="monthly-update"/>
+    <summary>KB5082198 (build 10.0.14393.9060). 79 security fixes. Biggest areas: network 29, kernel-drivers 20, apps-desktop 16, security 6, sign-in 6.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2016:2026-Mar</id>
+    <title>Windows Server 2016: March 2026 security update KB5078938</title>
+    <updated>2026-03-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;q=KB5078938"/>
+    <category term="monthly-update"/>
+    <summary>KB5078938 (build 10.0.14393.8957). 31 security fixes. Biggest areas: network 7, kernel-drivers 6, apps-desktop 6, graphics 5, storage 3.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2016:2026-Feb</id>
+    <title>Windows Server 2016: February 2026 security update KB5075999</title>
+    <updated>2026-02-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;q=KB5075999"/>
+    <category term="monthly-update"/>
+    <summary>KB5075999 (build 10.0.14393.8868). 18 security fixes. Biggest areas: kernel-drivers 9, server-roles 5, graphics 2, network 2, remote-access 2.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2016:2026-Jan</id>
+    <title>Windows Server 2016: January 2026 security update KB5073722</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;q=KB5073722"/>
+    <category term="monthly-update"/>
+    <summary>KB5073722 (build 10.0.14393.8783). 48 security fixes. Biggest areas: kernel-drivers 9, network 9, sign-in 8, apps-desktop 8, file-sharing 7.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2016:2025-Dec</id>
+    <title>Windows Server 2016: December 2025 security update KB5066836, KB5068864, KB5071543</title>
+    <updated>2025-12-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2016&amp;q=KB5066836"/>
+    <category term="monthly-update"/>
+    <summary>KB5066836 (build 10.0.14393.8519), KB5068864 (build 10.0.14393.8594), KB5071543 (build 10.0.14393.8688). 18 security fixes. Biggest areas: server-roles 7, remote-access 5, graphics 4, kernel-drivers 3, network 3.</summary>
+  </entry>
+</feed>

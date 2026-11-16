@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Windows Server 2019</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/server-2019.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/server-2019.xml</id>
+  <updated>2026-11-16T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:2026-11-print-zero-size-images:open</id>
+    <title>Open: Printing fails for documents with zero-size images</title>
+    <updated>2026-11-16T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=Printing%20fails%20for%20documents%20with%20zero-s"/>
+    <category term="known-problem"/>
+    <summary>Printing can fail when a document contains an image with zero height or width at the selected resolution. These images can be invisible. Mainly Word documents printed through GDI, but other apps can be affected. Confirmed by Microsoft. No fix date announced. Affects: Windows Server 2019. Source: https://www.ghacks.net/2026/11/15/microsoft-confirms-november-windows-updates-cause-activation-error-0x80041008-and-printing-failures/. From Patchmap (news and vendor reports).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3721:open</id>
+    <title>Open: SQL Server linked server connections might remain open</title>
+    <updated>2026-11-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=KB5126651"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5126651. Affects: Windows Server 2019. Source: https://learn.microsoft.com/en-us/windows/release-health/status-windows-10-1809-and-windows-server-2019#3721msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2019:2026-Nov</id>
+    <title>Windows Server 2019: November 2026 security update KB5131085</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=KB5131085"/>
+    <category term="monthly-update"/>
+    <summary>KB5131085 (build 10.0.17763.9487). 556 security fixes. Biggest areas: kernel-drivers 115, network 84, graphics 83, apps-desktop 52, server-roles 47.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-5047:fixed</id>
+    <title>Now fixed: Users might be unable to sign in to OWA or send emails on Exchange Server</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=KB5126651"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5126651. Fixed in KB5131085. Affects: Windows Server 2019. Source: https://learn.microsoft.com/en-us/windows/release-health/status-windows-10-1809-and-windows-server-2019#5047msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-4984:fixed</id>
+    <title>Now fixed: USB audio devices might fail to start or produce no sound</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=KB5122876"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5122876. Fixed in KB5131085. Affects: Windows Server 2019. Source: https://learn.microsoft.com/en-us/windows/release-health/status-windows-10-1809-and-windows-server-2019#4984msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2019:2026-Oct</id>
+    <title>Windows Server 2019: October 2026 security update KB5126651</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=KB5126651"/>
+    <category term="monthly-update"/>
+    <summary>KB5126651 (build 10.0.17763.9376). 739 security fixes. Biggest areas: kernel-drivers 175, apps-desktop 124, storage 101, network 98, server-roles 70.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-4956:fixed</id>
+    <title>Now fixed: Incorrect notifications that "Microsoft Defender Antivirus is turned off"</title>
+    <updated>2026-09-30T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=Incorrect%20notifications%20that%20%22Microsoft%20"/>
+    <category term="known-problem"/>
+    <summary> Affects: Windows Server 2019. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-10-1809-and-windows-server-2019#4956msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-4981:fixed</id>
+    <title>Now fixed: Remote Desktop Services might stop responding after Sept. 2026 security update</title>
+    <updated>2026-09-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=KB5122876"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5122876. Fixed in KB5129238. Affects: Windows Server 2019. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-10-1809-and-windows-server-2019#4981msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2019:2026-Sep</id>
+    <title>Windows Server 2019: September 2026 security update KB5122876</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=KB5122876"/>
+    <category term="monthly-update"/>
+    <summary>KB5122876 (build 10.0.17763.9245). 544 security fixes. Biggest areas: network 95, storage 89, sign-in 83, kernel-drivers 81, security 74.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2019:2026-Aug</id>
+    <title>Windows Server 2019: August 2026 security update KB5120238</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=KB5120238"/>
+    <category term="monthly-update"/>
+    <summary>KB5120238 (build 10.0.17763.9121). 167 security fixes. Biggest areas: network 47, server-roles 27, apps-desktop 19, storage 17, kernel-drivers 16.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3549:fixed</id>
+    <title>Now fixed: Windows Server Update Services sync operations might have issues or time out</title>
+    <updated>2026-07-20T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=Windows%20Server%20Update%20Services%20sync%20oper"/>
+    <category term="known-problem"/>
+    <summary> Affects: Windows Server 2019. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-10-1809-and-windows-server-2019#3549msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2019:2026-Jul</id>
+    <title>Windows Server 2019: July 2026 security update KB5099538</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=KB5099538"/>
+    <category term="monthly-update"/>
+    <summary>KB5099538 (build 10.0.17763.9020). 292 security fixes. Biggest areas: kernel-drivers 57, apps-desktop 54, storage 50, network 44, server-roles 22.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-4875:fixed</id>
+    <title>Now fixed: Deleting a file from the Recycle Bin displays an internal filename in the dialog</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=KB5094123"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5094123. Fixed in KB5099538. Affects: Windows Server 2019. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-10-1809-and-windows-server-2019#4875msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2019:2026-Jun</id>
+    <title>Windows Server 2019: June 2026 security update KB5094123</title>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=KB5094123"/>
+    <category term="monthly-update"/>
+    <summary>KB5094123 (build 10.0.17763.8880). 74 security fixes. Biggest areas: network 19, kernel-drivers 18, apps-desktop 12, security 12, other 6.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2019:2026-May</id>
+    <title>Windows Server 2019: May 2026 security update KB5087538</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=KB5087538"/>
+    <category term="monthly-update"/>
+    <summary>KB5087538 (build 10.0.17763.8755). 53 security fixes. Biggest areas: network 15, kernel-drivers 12, graphics 8, storage 6, apps-desktop 5.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-4833:fixed</id>
+    <title>Now fixed: Domain controllers may restart repeatedly after installing April security update</title>
+    <updated>2026-04-19T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=KB5082123"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5082123. Fixed in KB5091573. Affects: Windows Server 2019. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-10-1809-and-windows-server-2019#4833msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2019:2026-Apr</id>
+    <title>Windows Server 2019: April 2026 security update KB5082123</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=KB5082123"/>
+    <category term="monthly-update"/>
+    <summary>KB5082123 (build 10.0.17763.8644). 98 security fixes. Biggest areas: network 29, apps-desktop 25, kernel-drivers 22, security 8, sign-in 7.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3404:fixed</id>
+    <title>Now fixed: Windows Server 2022 and Server 2019 unexpectedly upgraded to Windows Server 2025</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=Windows%20Server%202022%20and%20Server%202019%20unex"/>
+    <category term="known-problem"/>
+    <summary>Fixed in KB5082123. Affects: Windows Server 2019. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-10-1809-and-windows-server-2019#3404msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2019:2026-Mar</id>
+    <title>Windows Server 2019: March 2026 security update KB5078752</title>
+    <updated>2026-03-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=KB5078752"/>
+    <category term="monthly-update"/>
+    <summary>KB5078752 (build 10.0.17763.8511). 35 security fixes. Biggest areas: network 7, kernel-drivers 7, graphics 6, apps-desktop 6, storage 4.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2019:2026-Feb</id>
+    <title>Windows Server 2019: February 2026 security update KB5075904</title>
+    <updated>2026-02-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=KB5075904"/>
+    <category term="monthly-update"/>
+    <summary>KB5075904 (build 10.0.17763.8389). 21 security fixes. Biggest areas: kernel-drivers 9, server-roles 5, network 3, graphics 2, other 2.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3764:fixed</id>
+    <title>Now fixed: Some devices might fail to shut down or hibernate</title>
+    <updated>2026-02-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=KB5073723"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5073723. Fixed in KB5075904. Affects: Windows Server 2019. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-10-1809-and-windows-server-2019#3764msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3760:fixed</id>
+    <title>Now fixed: Connection and authentication failures in Azure Virtual Desktop and Windows 365</title>
+    <updated>2026-01-24T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=KB5073723"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5073723. Fixed in KB5077795. Affects: Windows Server 2019. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-10-1809-and-windows-server-2019#3760msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-2738:fixed</id>
+    <title>Now fixed: Apps might become unresponsive when saving files to cloud-backed storage</title>
+    <updated>2026-01-23T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=KB5073723"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5073723. Fixed in KB5078131. Affects: Windows Server 2019. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-10-1809-and-windows-server-2019#2738msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2019:2026-Jan</id>
+    <title>Windows Server 2019: January 2026 security update KB5073723</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=KB5073723"/>
+    <category term="monthly-update"/>
+    <summary>KB5073723 (build 10.0.17763.8276). 66 security fixes. Biggest areas: management 14, kernel-drivers 12, network 10, apps-desktop 9, sign-in 8.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3751:fixed</id>
+    <title>Now fixed: Message Queuing (MSMQ) might fail with the December 2025 Windows security update</title>
+    <updated>2025-12-18T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=KB5071544"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5071544. Fixed in KB5074975. Affects: Windows Server 2019. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-10-1809-and-windows-server-2019#3751msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2019:2025-Dec</id>
+    <title>Windows Server 2019: December 2025 security update KB5066586, KB5068791, KB5071544</title>
+    <updated>2025-12-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=KB5066586"/>
+    <category term="monthly-update"/>
+    <summary>KB5066586 (build 10.0.17763.7919), KB5068791 (build 10.0.17763.8027), KB5071544 (build 10.0.17763.8146). 29 security fixes. Biggest areas: storage 10, kernel-drivers 9, server-roles 7, remote-access 5, graphics 4.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3697:fixed</id>
+    <title>Now fixed: Smartcard authentication issues might occur with the October 2025 Windows update</title>
+    <updated>2025-10-22T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=KB5066586"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5066586. Affects: Windows Server 2019. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-10-1809-and-windows-server-2019#3697msgdesc. From Microsoft release health.</summary>
+  </entry>
+</feed>

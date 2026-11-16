@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Windows Server 2022</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/server-2022.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/server-2022.xml</id>
+  <updated>2026-11-16T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:2026-11-print-zero-size-images:open</id>
+    <title>Open: Printing fails for documents with zero-size images</title>
+    <updated>2026-11-16T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;q=Printing%20fails%20for%20documents%20with%20zero-s"/>
+    <category term="known-problem"/>
+    <summary>Printing can fail when a document contains an image with zero height or width at the selected resolution. These images can be invisible. Mainly Word documents printed through GDI, but other apps can be affected. Confirmed by Microsoft. No fix date announced. Affects: Windows Server 2022. Source: https://www.ghacks.net/2026/11/15/microsoft-confirms-november-windows-updates-cause-activation-error-0x80041008-and-printing-failures/. From Patchmap (news and vendor reports).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:2026-11-activation-0x80041008:fix-available</id>
+    <title>Fix available: Activation and licensing commands fail with 0x80041008</title>
+    <updated>2026-11-16T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;q=Activation%20and%20licensing%20commands%20fail%20w"/>
+    <category term="known-problem"/>
+    <summary>Activation, KMS configuration or product key commands (for example slmgr) can fail with error 0x80041008, especially with automated licensing tools. Reported fixed by an out-of-band update on 13 Nov 2026. Server packages are in the Microsoft Update Catalog only. Check Microsoft's KB page for your version. Affects: Windows Server 2022. Source: https://support.microsoft.com/en-us/servicing/os/windows-11/2026/11/kb5131087-windows-11-23h2-security-update. From Patchmap (news and vendor reports).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3721:open</id>
+    <title>Open: SQL Server linked server connections might remain open</title>
+    <updated>2026-11-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;q=KB5126655"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5126655. Affects: Windows Server 2022. Source: https://learn.microsoft.com/en-us/windows/release-health/status-windows-server-2022#3721msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2022:2026-Nov</id>
+    <title>Windows Server 2022: November 2026 security update KB5131090</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;q=KB5131090"/>
+    <category term="monthly-update"/>
+    <summary>KB5131090 (build 10.0.20348.5870). 586 security fixes. Biggest areas: kernel-drivers 126, network 86, graphics 84, apps-desktop 56, server-roles 53.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-5047:fixed</id>
+    <title>Now fixed: Users might be unable to sign in to OWA or send emails on Exchange Server</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;q=KB5126655"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5126655. Fixed in KB5131090. Affects: Windows Server 2022. Source: https://learn.microsoft.com/en-us/windows/release-health/status-windows-server-2022#5047msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-4984:fixed</id>
+    <title>Now fixed: USB audio devices might fail to start or produce no sound</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;q=KB5122882"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5122882. Fixed in KB5129237. Affects: Windows Server 2022. Source: https://learn.microsoft.com/en-us/windows/release-health/status-windows-server-2022#4984msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2022:2026-Oct</id>
+    <title>Windows Server 2022: October 2026 security update KB5126655</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;q=KB5126655"/>
+    <category term="monthly-update"/>
+    <summary>KB5126655 (build 10.0.20348.5761). 797 security fixes. Biggest areas: kernel-drivers 206, apps-desktop 114, storage 107, network 102, server-roles 78.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-4956:fixed</id>
+    <title>Now fixed: Incorrect notifications that "Microsoft Defender Antivirus is turned off"</title>
+    <updated>2026-09-30T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;q=Incorrect%20notifications%20that%20%22Microsoft%20"/>
+    <category term="known-problem"/>
+    <summary> Affects: Windows Server 2022. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2022#4956msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-4981:fixed</id>
+    <title>Now fixed: Remote Desktop Services might stop responding after Sept. 2026 security update</title>
+    <updated>2026-09-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;q=KB5122882"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5122882. Fixed in KB5129237. Affects: Windows Server 2022. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2022#4981msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2022:2026-Sep</id>
+    <title>Windows Server 2022: September 2026 security update KB5122882</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;q=KB5122882"/>
+    <category term="monthly-update"/>
+    <summary>KB5122882 (build 10.0.20348.5622). 566 security fixes. Biggest areas: network 100, storage 90, kernel-drivers 86, sign-in 83, security 76.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2022:2026-Aug</id>
+    <title>Windows Server 2022: August 2026 security update KB5120229, KB5120242, KB5123303</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;q=KB5120229"/>
+    <category term="monthly-update"/>
+    <summary>KB5120229 (build 10.0.20348.5440), KB5120242 (build 10.0.20348.5499), KB5123303 (build 10.0.20348.5499). 178 security fixes. Biggest areas: network 48, server-roles 28, apps-desktop 20, storage 20, graphics 18.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3549:fixed</id>
+    <title>Now fixed: Windows Server Update Services sync operations might have issues or time out</title>
+    <updated>2026-07-20T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;q=Windows%20Server%20Update%20Services%20sync%20oper"/>
+    <category term="known-problem"/>
+    <summary> Affects: Windows Server 2022. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2022#3549msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2022:2026-Jul</id>
+    <title>Windows Server 2022: July 2026 security update KB5099540</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;q=KB5099540"/>
+    <category term="monthly-update"/>
+    <summary>KB5099540 (build 10.0.20348.5386). 306 security fixes. Biggest areas: kernel-drivers 61, apps-desktop 55, storage 50, network 44, server-roles 23.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-4875:fixed</id>
+    <title>Now fixed: Deleting a file from the Recycle Bin displays an internal filename in the dialog</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;q=KB5094128"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5094128. Fixed in KB5099540. Affects: Windows Server 2022. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2022#4875msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2022:2026-Jun</id>
+    <title>Windows Server 2022: June 2026 security update KB5094128</title>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;q=KB5094128"/>
+    <category term="monthly-update"/>
+    <summary>KB5094128 (build 10.0.20348.5256). 88 security fixes. Biggest areas: network 22, kernel-drivers 22, apps-desktop 14, security 13, other 7.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2022:2026-May</id>
+    <title>Windows Server 2022: May 2026 security update KB5087424, KB5087545</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;q=KB5087424"/>
+    <category term="monthly-update"/>
+    <summary>KB5087424 (build 10.0.20348.5074), KB5087545 (build 10.0.20348.5139). 56 security fixes. Biggest areas: network 16, kernel-drivers 15, graphics 8, storage 6, apps-desktop 5.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-4833:fixed</id>
+    <title>Now fixed: Domain controllers may restart repeatedly after installing April security update</title>
+    <updated>2026-04-19T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;q=KB5082142"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5082142. Fixed in KB5091575. Affects: Windows Server 2022. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2022#4833msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2022:2026-Apr</id>
+    <title>Windows Server 2022: April 2026 security update KB5082142</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;q=KB5082142"/>
+    <category term="monthly-update"/>
+    <summary>KB5082142 (build 10.0.20348.5020). 104 security fixes. Biggest areas: network 30, apps-desktop 28, kernel-drivers 23, security 8, sign-in 7.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3404:fixed</id>
+    <title>Now fixed: Windows Server 2022 and Server 2019 unexpectedly upgraded to Windows Server 2025</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;q=Windows%20Server%202022%20and%20Server%202019%20unex"/>
+    <category term="known-problem"/>
+    <summary>Fixed in KB5082142. Affects: Windows Server 2022. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2022#3404msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2022:2026-Mar</id>
+    <title>Windows Server 2022: March 2026 security update KB5078737, KB5078766</title>
+    <updated>2026-03-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;q=KB5078737"/>
+    <category term="monthly-update"/>
+    <summary>KB5078737 (build 10.0.20348.4830), KB5078766 (build 10.0.20348.4893). 37 security fixes. Biggest areas: kernel-drivers 10, network 8, graphics 6, apps-desktop 6, storage 4.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2022:2026-Feb</id>
+    <title>Windows Server 2022: February 2026 security update KB5075906, KB5075943</title>
+    <updated>2026-02-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;q=KB5075906"/>
+    <category term="monthly-update"/>
+    <summary>KB5075906 (build 10.0.20348.4773), KB5075943 (build 10.0.20348.4711). 24 security fixes. Biggest areas: kernel-drivers 12, server-roles 5, network 4, graphics 2, other 2.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3764:fixed</id>
+    <title>Now fixed: Some devices might fail to shut down or hibernate</title>
+    <updated>2026-02-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;q=KB5073457"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5073457. Fixed in KB5075906. Affects: Windows Server 2022. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2022#3764msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3760:fixed</id>
+    <title>Now fixed: Connection and authentication failures in Azure Virtual Desktop and Windows 365</title>
+    <updated>2026-01-24T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;q=KB5073457"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5073457. Fixed in KB5077800. Affects: Windows Server 2022. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2022#3760msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-2738:fixed</id>
+    <title>Now fixed: Apps might become unresponsive when saving files to cloud-backed storage</title>
+    <updated>2026-01-23T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;q=KB5073457"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5073457. Fixed in KB5078136. Affects: Windows Server 2022. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2022#2738msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2022:2026-Jan</id>
+    <title>Windows Server 2022: January 2026 security update KB5073457</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;q=KB5073457"/>
+    <category term="monthly-update"/>
+    <summary>KB5073457 (build 10.0.20348.4648). 71 security fixes. Biggest areas: management 15, kernel-drivers 12, network 9, apps-desktop 9, sign-in 8.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2022:2025-Dec</id>
+    <title>Windows Server 2022: December 2025 security update KB5066782, KB5068787, KB5068840, KB5071413, KB5071547, KB5074353</title>
+    <updated>2025-12-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;q=KB5066782"/>
+    <category term="monthly-update"/>
+    <summary>KB5066782 (build 10.0.20348.4294), KB5068787 (build 10.0.20348.4405), KB5068840 (build 10.0.20348.4346), KB5071413 (build 10.0.20348.4467), KB5071547 (build 10.0.20348.4529), KB5074353 (build 10.0.20348.4467). 32 security fixes. Biggest areas: storage 11, kernel-drivers 9, graphics 7, server-roles 6, remote-access 5.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3697:fixed</id>
+    <title>Now fixed: Smartcard authentication issues might occur with the October 2025 Windows update</title>
+    <updated>2025-10-22T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2022&amp;q=KB5066782"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5066782. Affects: Windows Server 2022. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2022#3697msgdesc. From Microsoft release health.</summary>
+  </entry>
+</feed>

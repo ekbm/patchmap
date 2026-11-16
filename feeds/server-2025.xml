@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verilay Patchmap: Windows Server 2025</title>
+  <subtitle>Known problems and monthly security updates for Windows, from Verilay Patchmap. Not affiliated with Microsoft.</subtitle>
+  <link rel="self" href="https://patchmap.verilay.dev/feeds/server-2025.xml"/>
+  <link rel="alternate" href="https://patchmap.verilay.dev/"/>
+  <id>https://patchmap.verilay.dev/feeds/server-2025.xml</id>
+  <updated>2026-11-16T00:00:00Z</updated>
+  <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:2026-11-print-zero-size-images:open</id>
+    <title>Open: Printing fails for documents with zero-size images</title>
+    <updated>2026-11-16T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=Printing%20fails%20for%20documents%20with%20zero-s"/>
+    <category term="known-problem"/>
+    <summary>Printing can fail when a document contains an image with zero height or width at the selected resolution. These images can be invisible. Mainly Word documents printed through GDI, but other apps can be affected. Confirmed by Microsoft. No fix date announced. Affects: Windows Server 2025. Source: https://www.ghacks.net/2026/11/15/microsoft-confirms-november-windows-updates-cause-activation-error-0x80041008-and-printing-failures/. From Patchmap (news and vendor reports).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:2026-11-activation-0x80041008:fix-available</id>
+    <title>Fix available: Activation and licensing commands fail with 0x80041008</title>
+    <updated>2026-11-16T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=Activation%20and%20licensing%20commands%20fail%20w"/>
+    <category term="known-problem"/>
+    <summary>Activation, KMS configuration or product key commands (for example slmgr) can fail with error 0x80041008, especially with automated licensing tools. Reported fixed by an out-of-band update on 13 Nov 2026. Server packages are in the Microsoft Update Catalog only. Check Microsoft's KB page for your version. Affects: Windows Server 2025. Source: https://support.microsoft.com/en-us/servicing/os/windows-11/2026/11/kb5131087-windows-11-23h2-security-update. From Patchmap (news and vendor reports).</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3721:open</id>
+    <title>Open: SQL Server linked server connections might remain open</title>
+    <updated>2026-11-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5126646"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5126646. Affects: Windows Server 2025. Source: https://learn.microsoft.com/en-us/windows/release-health/status-windows-server-2025#3721msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2025:2026-Nov</id>
+    <title>Windows Server 2025: November 2026 security update KB5131077, KB5131080, KB5135386</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5131077"/>
+    <category term="monthly-update"/>
+    <summary>KB5131077 (build 10.0.26100.33730), KB5131080 (build 10.0.26100.33822), KB5135386 (build 10.0.26100.33812). 619 security fixes. Biggest areas: kernel-drivers 131, network 94, graphics 87, apps-desktop 62, server-roles 56.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-5047:fixed</id>
+    <title>Now fixed: Users might be unable to sign in to OWA or send emails on Exchange Server</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5126646"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5126646. Fixed in KB5131080. Affects: Windows Server 2025. Source: https://learn.microsoft.com/en-us/windows/release-health/status-windows-server-2025#5047msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-4984:fixed</id>
+    <title>Now fixed: USB audio devices might fail to start or produce no sound</title>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5122871"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5122871. Fixed in KB5131080. Affects: Windows Server 2025. Source: https://learn.microsoft.com/en-us/windows/release-health/status-windows-server-2025#4984msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2025:2026-Oct</id>
+    <title>Windows Server 2025: October 2026 security update KB5126646</title>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5126646"/>
+    <category term="monthly-update"/>
+    <summary>KB5126646 (build 10.0.26100.33650). 858 security fixes. Biggest areas: kernel-drivers 229, apps-desktop 122, storage 112, network 104, server-roles 79.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-4956:fixed</id>
+    <title>Now fixed: Incorrect notifications that "Microsoft Defender Antivirus is turned off"</title>
+    <updated>2026-09-30T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=Incorrect%20notifications%20that%20%22Microsoft%20"/>
+    <category term="known-problem"/>
+    <summary> Affects: Windows Server 2025. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#4956msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-4981:fixed</id>
+    <title>Now fixed: Remote Desktop Services might stop responding after Sept. 2026 security update</title>
+    <updated>2026-09-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5122871"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5122871. Fixed in KB5129235. Affects: Windows Server 2025. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#4981msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2025:2026-Sep</id>
+    <title>Windows Server 2025: September 2026 security update KB5122871</title>
+    <updated>2026-09-08T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5122871"/>
+    <category term="monthly-update"/>
+    <summary>KB5122871 (build 10.0.26100.33438). 598 security fixes. Biggest areas: network 103, storage 94, kernel-drivers 89, sign-in 87, security 78.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2025:2026-Aug</id>
+    <title>Windows Server 2025: August 2026 security update KB5120228, KB5120233</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5120228"/>
+    <category term="monthly-update"/>
+    <summary>KB5120228 (build 10.0.26100.33222), KB5120233 (build 10.0.26100.33296). 196 security fixes. Biggest areas: network 52, server-roles 28, kernel-drivers 25, storage 21, apps-desktop 20.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-4891:fixed</id>
+    <title>Now fixed: GIF functionality in the Windows Emoji Panel might become unavailable</title>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=GIF%20functionality%20in%20the%20Windows%20Emoji%20P"/>
+    <category term="known-problem"/>
+    <summary>Fixed in KB5120233. Affects: Windows Server 2025. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#4891msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3549:fixed</id>
+    <title>Now fixed: Windows Server Update Services sync operations might have issues or time out</title>
+    <updated>2026-07-20T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=Windows%20Server%20Update%20Services%20sync%20oper"/>
+    <category term="known-problem"/>
+    <summary> Affects: Windows Server 2025. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#3549msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2025:2026-Jul</id>
+    <title>Windows Server 2025: July 2026 security update KB5099536</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5099536"/>
+    <category term="monthly-update"/>
+    <summary>KB5099536 (build 10.0.26100.33158). 366 security fixes. Biggest areas: kernel-drivers 78, apps-desktop 73, storage 56, network 51, other 25.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-4875:fixed</id>
+    <title>Now fixed: Deleting a file from the Recycle Bin displays an internal filename in the dialog</title>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5094125"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5094125. Fixed in KB5099536. Affects: Windows Server 2025. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#4875msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2025:2026-Jun</id>
+    <title>Windows Server 2025: June 2026 security update KB5094125, KB5094126</title>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5094125"/>
+    <category term="monthly-update"/>
+    <summary>KB5094125 (build 10.0.26100.32995), KB5094126. 93 security fixes. Biggest areas: kernel-drivers 24, network 22, security 16, apps-desktop 14, other 8.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3630:fixed</id>
+    <title>Now fixed: Updates installed via WUSA might fail if installed from a shared folder</title>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5060842"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5060842. Fixed in KB5094125. Affects: Windows Server 2025. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#3630msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2025:2026-May</id>
+    <title>Windows Server 2025: May 2026 security update KB5087423, KB5087539</title>
+    <updated>2026-05-12T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5087423"/>
+    <category term="monthly-update"/>
+    <summary>KB5087423 (build 10.0.26100.32772), KB5087539 (build 10.0.26100.32860). 64 security fixes. Biggest areas: network 18, kernel-drivers 17, graphics 11, security 7, storage 6.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-4833:fixed</id>
+    <title>Now fixed: Domain controllers may restart repeatedly after installing April security update</title>
+    <updated>2026-04-19T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5082063"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5082063. Fixed in KB5091157. Affects: Windows Server 2025. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#4833msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2025:2026-Apr</id>
+    <title>Windows Server 2025: April 2026 security update KB5082063</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5082063"/>
+    <category term="monthly-update"/>
+    <summary>KB5082063 (build 10.0.26100.32690). 111 security fixes. Biggest areas: network 29, apps-desktop 28, kernel-drivers 25, storage 11, security 8.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3404:fixed</id>
+    <title>Now fixed: Windows Server 2022 and Server 2019 unexpectedly upgraded to Windows Server 2025</title>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=Windows%20Server%202022%20and%20Server%202019%20unex"/>
+    <category term="known-problem"/>
+    <summary>Fixed in KB5082063. Affects: Windows Server 2025. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#3404msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2025:2026-Mar</id>
+    <title>Windows Server 2025: March 2026 security update KB5078736, KB5078740</title>
+    <updated>2026-03-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5078736"/>
+    <category term="monthly-update"/>
+    <summary>KB5078736 (build 10.0.26100.32463), KB5078740 (build 10.0.26100.32522). 36 security fixes. Biggest areas: kernel-drivers 10, network 8, apps-desktop 6, storage 4, graphics 4.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2025:2026-Feb</id>
+    <title>Windows Server 2025: February 2026 security update KB5075899, KB5075942</title>
+    <updated>2026-02-10T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5075899"/>
+    <category term="monthly-update"/>
+    <summary>KB5075899 (build 10.0.26100.32370), KB5075942 (build 10.0.26100.32313). 26 security fixes. Biggest areas: kernel-drivers 13, network 6, server-roles 5, other 2, remote-access 2.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3760:fixed</id>
+    <title>Now fixed: Connection and authentication failures in Azure Virtual Desktop and Windows 365</title>
+    <updated>2026-01-24T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5073379"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5073379. Fixed in KB5077793. Affects: Windows Server 2025. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#3760msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-2738:fixed</id>
+    <title>Now fixed: Apps might become unresponsive when saving files to cloud-backed storage</title>
+    <updated>2026-01-23T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5073379"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5073379. Fixed in KB5078135. Affects: Windows Server 2025. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#2738msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2025:2026-Jan</id>
+    <title>Windows Server 2025: January 2026 security update KB5073379</title>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5073379"/>
+    <category term="monthly-update"/>
+    <summary>KB5073379 (build 10.0.26100.32230). 73 security fixes. Biggest areas: management 15, kernel-drivers 13, sign-in 9, apps-desktop 9, network 8.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:update:server-2025:2025-Dec</id>
+    <title>Windows Server 2025: December 2025 security update KB5066835, KB5068861, KB5068966, KB5072014, KB5072033, KB5074204</title>
+    <updated>2025-12-09T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5066835"/>
+    <category term="monthly-update"/>
+    <summary>KB5066835 (build 10.0.26100.6899), KB5068861 (build 10.0.26100.7171), KB5068966 (build 10.0.26100.7092), KB5072014 (build 10.0.26100.7392), KB5072033 (build 10.0.26100.7462), KB5074204 (build 10.0.26100.7392). 33 security fixes. Biggest areas: storage 11, kernel-drivers 9, server-roles 6, graphics 6, remote-access 5.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3692:fixed</id>
+    <title>Now fixed: Directory synchronization fails for AD groups exceeding 10,000 members</title>
+    <updated>2025-11-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5065426"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5065426. Fixed in KB5068861. Affects: Windows Server 2025. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#3692msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3592:fixed</id>
+    <title>Now fixed: IIS websites might fail to load</title>
+    <updated>2025-11-11T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5066835"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5066835. Fixed in KB5068861. Affects: Windows Server 2025. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#3592msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3697:fixed</id>
+    <title>Now fixed: Smartcard authentication issues might occur with the October 2025 Windows update</title>
+    <updated>2025-10-22T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5066835"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5066835. Affects: Windows Server 2025. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#3697msgdesc. From Microsoft release health.</summary>
+  </entry>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:ms-3696:fixed</id>
+    <title>Now fixed: USB mouse and keyboard not working in the Windows Recovery Environment (WinRE)</title>
+    <updated>2025-10-20T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;q=KB5066835"/>
+    <category term="known-problem"/>
+    <summary>Started with KB5066835. Fixed in KB5070773. Affects: Windows Server 2025. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2025#3696msgdesc. From Microsoft release health.</summary>
+  </entry>
+</feed>
