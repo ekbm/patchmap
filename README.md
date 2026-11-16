@@ -10,11 +10,16 @@ Free and open source. Not affiliated with Microsoft.
 
 **Status: v0.1.** Covers Windows 11 24H2 / 25H2 / 26H2 and Windows Server 2016 / 2019 / 2022 / 2025, plus Exchange Server, SQL Server and Microsoft 365 Apps / Office, last 12 months. Build number lookup and two-build comparison in the search box. Alert feeds: [feed.xml](https://patchmap.verilay.dev/feed.xml) (all) or one per version in [feeds/](feeds/).
 
-## Coming next
+## What it does
 
-- An optional **"my software"** filter (starting with print management tools) that narrows the view
-  to the Windows features that software relies on
-- More known problems
+- Drill down: version → month → area → part of Windows → each security fix
+- Known problems from Microsoft and from news/vendor reports, with sources
+- Build number lookup and comparing two builds or two KBs
+- Files each update changed (from Microsoft's file lists, September 2026 onward)
+- "My software" filter for print management tools (PaperCut NG/MF, YSoft SafeQ)
+- Alert feeds: everything, per version, or per area and version (e.g. `feeds/print/server-2022.xml`)
+
+Ideas being considered (no dates): more print management products, alerts by email.
 
 ## Help out
 

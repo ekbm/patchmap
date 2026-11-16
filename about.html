@@ -87,22 +87,22 @@
     <tr><td>Microsoft's known problems</td><td><a href="https://learn.microsoft.com/windows/release-health/">Windows release health</a></td><td>Automatically, every Wednesday</td></tr>
     <tr><td>Other known problems</td><td>News and vendor reports, linked on each entry</td><td>By hand</td></tr>
     <tr><td>Areas (printing, sign-in…)</td><td>Patchmap's own rules, <a href="https://github.com/ekbm/patchmap/blob/main/data/area_tags.json">open to edit</a></td><td>By hand</td></tr>
+    <tr><td>Files each update changed</td><td>Microsoft's file list for each monthly Windows update, compared with the month before</td><td>Automatically, every Wednesday</td></tr>
+    <tr><td>What print software relies on</td><td>Vendor public documentation, or support experience (each list says which), <a href="https://github.com/ekbm/patchmap/tree/main/data/software">open to edit</a></td><td>By hand</td></tr>
   </table>
   <p class="muted" id="gen"></p>
 
   <h2>What's covered</h2>
   <p>Windows 11 24H2, 25H2 and 26H2, Windows Server 2016, 2019, 2022 and 2025, plus Exchange Server (2016, 2019, Subscription Edition), SQL Server (2017 to 2025) and Microsoft 365 Apps and Office (2016 to LTSC 2024), for the last 12 months of security updates. Build lookup and file lists are for Windows only.</p>
 
-  <h2>Coming next</h2>
-  <ul>
-    <li>Which <b>files</b> each update changed, in each area</li>
-    <li>An optional <b>"my software" filter</b> for tools that depend on Windows features, starting with print management software</li>
-  </ul>
+  <h2>Ideas being considered</h2>
+  <p>No dates yet: more print management products in the <b>My software</b> filter, and alerts by email. <a href="https://github.com/ekbm/patchmap/issues/new">Tell us what would help you</a>.</p>
 
   <h2>Limits</h2>
   <ul>
     <li>Only <b>security</b> fixes are listed automatically. Other bug fixes appear only if they caused a known problem.</li>
     <li>"This update touched printing" means worth checking, not "this will break your printing".</li>
+    <li>File lists start from September 2026 and cover x64 files; language (.mui) files are counted but not listed.</li>
     <li>Patchmap isn't Microsoft and isn't official advice. Always check Microsoft's own page before acting.</li>
   </ul>
 
