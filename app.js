@@ -142,13 +142,34 @@ function findBuild(b) {
 function parseBuildPair(q) {
   const parts = String(q).toLowerCase().replace(/os\s*build\s*/g, "").split(/\s*(?:\bto\b|\bvs\.?|->|→|,|\s)\s*/).filter(Boolean);
   if (parts.length !== 2) return null;
+  // KB numbers work too ("KB5122882 to KB5131090"): turn each into its Windows build number.
+  const isKb = (p) => /^kb\d{6,7}$/.test(p);
+  if (isKb(parts[0]) || isKb(parts[1])) {
+    const vers = (p) => isKb(p) ? state.builds.filter((x) => x.kb.toLowerCase() === p && x.build.startsWith("10.0.")).map((x) => x.version) : null;
+    const va = vers(parts[0]), vb = vers(parts[1]);
+    // pick a Windows version both have (prefer the one on screen), e.g. Windows 11 updates cover 3 versions
+    const common = (va || vb || []).filter((v) => (!va || va.includes(v)) && (!vb || vb.includes(v)));
+    const ver = common.includes(state.ver) ? state.ver : common[0];
+    const toBuild = (p) => {
+      if (!isKb(p)) return parseBuild(p);
+      const hit = state.builds.find((x) => x.kb.toLowerCase() === p && x.version === ver);
+      return hit ? Object.assign(parseBuild(hit.build), { kb: p.toUpperCase() }) : { major: 0, rev: 0, text: p.toUpperCase(), kb: p.toUpperCase() };
+    };
+    return [toBuild(parts[0]), toBuild(parts[1])];
+  }
   const a = parseBuild(parts[0]), b = parseBuild(parts[1]);
   return a && b ? [a, b] : null;
 }
 function refOf(hit) { return hit.exact[0] || hit.nearest; }
 function compareCard(pair, h1, h2) {
   const card = (title, body) => `<div class="issue build"><span class="pill src">Compare builds</span><span class="it">${title}</span>${body}</div>`;
-  if (!h1 || !h2) return { html: card(`Can't compare: Patchmap doesn't recognise ${esc((!h1 ? pair[0] : pair[1]).text)}`, `<div class="is">Check the number with <code>winver</code>. Patchmap covers ${Object.values(state.labels).map(esc).join(", ")}.</div>`) };
+  if (!h1 || !h2) {
+    const bad = (!h1 ? pair[0] : pair[1]).text;
+    const help = /^KB/.test(bad)
+      ? `Comparing by KB works for Windows updates Patchmap lists (last 12 months), and both updates must be for the same Windows version. Check the KB numbers, or compare build numbers instead (run <code>winver</code>).`
+      : `Check the number with <code>winver</code>. Patchmap covers ${Object.values(state.labels).map(esc).join(", ")}.`;
+    return { html: card(`Can't compare: Patchmap can't match ${esc(bad)}`, `<div class="is">${help}</div>`) };
+  }
   if (h1.version !== h2.version) return { html: card("These builds are different Windows versions", `<div>${esc(pair[0].text)} is ${esc(state.labels[h1.version])}; ${esc(pair[1].text)} is ${esc(state.labels[h2.version])}. Compare two builds of the same version.</div>`) };
   let [a, b, ha, hb] = [pair[0], pair[1], h1, h2];
   let swapped = "";
