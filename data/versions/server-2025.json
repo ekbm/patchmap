@@ -27587,7 +27587,16 @@
    "month": "2026-Jul",
    "released": "2026-07-14",
    "fix_count": 366,
-   "updates": [],
+   "updates": [
+    {
+     "kb": "KB5099536",
+     "build": "10.0.26100.33158",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5094125"
+     ]
+    }
+   ],
    "areas": {
     "kernel-drivers": {
      "count": 78,
@@ -31795,7 +31804,22 @@
    "month": "2026-Jun",
    "released": "2026-06-09",
    "fix_count": 93,
-   "updates": [],
+   "updates": [
+    {
+     "kb": "KB5094125",
+     "build": "10.0.26100.32995",
+     "type": "Security Update",
+     "supersedes": []
+    },
+    {
+     "kb": "KB5094126",
+     "build": null,
+     "type": "Security Update",
+     "supersedes": [
+      "KB5089549"
+     ]
+    }
+   ],
    "areas": {
     "kernel-drivers": {
      "count": 24,
@@ -33002,12 +33026,6 @@
      "supersedes": [
       "KB5082063"
      ]
-    },
-    {
-     "kb": "KB5094125",
-     "build": "10.0.26100.32995",
-     "type": "Security Update",
-     "supersedes": []
     }
    ],
    "areas": {
@@ -33916,14 +33934,6 @@
      "type": "Security Update",
      "supersedes": [
       "KB5078740"
-     ]
-    },
-    {
-     "kb": "KB5099536",
-     "build": "10.0.26100.33158",
-     "type": "Security Update",
-     "supersedes": [
-      "KB5094125"
      ]
     }
    ],

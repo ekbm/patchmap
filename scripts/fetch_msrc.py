@@ -165,6 +165,51 @@ def write_json(path, obj):
     path.write_text(json.dumps(obj, indent=1, ensure_ascii=False, default=sorted) + "\n", encoding="utf-8")
 
 
+def assign_kb_months(month_results, all_kbs):
+    """Give each update (KB) its real release month.
+
+    Microsoft sometimes adds a NEWER update to an older month's fixes (when it revises them), so
+    "the first month a KB appears in" can be wrong. The month's main cumulative update covers
+    most of that month's fixes, so: a KB is a month's main update if it fixes at least half of
+    that month's fixes for that Windows version. Other KBs (hotpatches, extra releases) take the
+    month of the next main update by build number, or the previous one if there is no next.
+    """
+    released = {r["month"]: r["released"] for r in month_results}
+    order = [r["month"] for r in month_results]
+    main = {}  # (version, kb) -> month
+    seen = defaultdict(set)  # kb -> months it appears in
+    for r in month_results:
+        for ver in SCOPE:
+            fixes = [f for f in r["fixes"] if ver in f["kbs"]]
+            counts = defaultdict(int)
+            for f in fixes:
+                for kb in f["kbs"][ver]:
+                    counts[kb] += 1
+                    seen[kb].add(r["month"])
+            for kb, n in counts.items():
+                if fixes and n >= len(fixes) / 2 and (ver, kb) not in main:
+                    main[(ver, kb)] = r["month"]
+    build_num = lambda b: [int(p) for p in b.split(".")]
+    for ver in SCOPE:
+        kbs = sorted((k for k, i in all_kbs.items() if i["versions"].get(ver)), key=lambda k: build_num(all_kbs[k]["versions"][ver]))
+        mains = [(build_num(all_kbs[k]["versions"][ver]), main[(ver, k)]) for k in kbs if (ver, k) in main]
+        for k in kbs:
+            if (ver, k) in main:
+                m = main[(ver, k)]
+            else:
+                b = build_num(all_kbs[k]["versions"][ver])
+                nxt = [mm for bb, mm in mains if bb >= b]
+                prv = [mm for bb, mm in mains if bb < b]
+                m = nxt[0] if nxt and nxt[0] in seen[k] else (prv[-1] if prv else all_kbs[k]["month"])
+            # one KB can serve several versions; keep the earliest month any version gives it
+            if "month_fixed" not in all_kbs[k] or order.index(m) < order.index(all_kbs[k]["month"]):
+                all_kbs[k]["month"] = m
+                all_kbs[k]["released"] = released[m]
+                all_kbs[k]["month_fixed"] = True
+    for i in all_kbs.values():
+        i.pop("month_fixed", None)
+
+
 def write_versions(month_results, all_kbs):
     """One file per Windows version, shaped for the website's drill-down:
     month -> area -> component -> fixes. Newest month first."""
@@ -230,6 +275,7 @@ def main():
 
         month_results.append(res)
 
+    assign_kb_months(month_results, all_kbs)
     for kb, info in all_kbs.items():
         info["fixes"] = sorted(set(info["fixes"]))
         write_json(DATA / "updates" / f"{kb}.json", info)
@@ -239,6 +285,13 @@ def main():
         "source": API, "scope": list(SCOPE), "labels": LABELS, "months": index,
     })
     write_versions(month_results, all_kbs)
+    # Every (Windows version, update, build number) we know, for the build number lookup.
+    builds = sorted(
+        ({"version": ver, "kb": kb, "build": b, "month": info["month"], "released": info["released"], "type": info["type"]}
+         for kb, info in all_kbs.items() for ver, b in info["versions"].items() if b),
+        key=lambda x: (x["version"], [int(p) for p in x["build"].split(".")]),
+    )
+    write_json(DATA / "builds.json", builds)
     print(f"Done: {len(all_kbs)} update files, {len(components)} Windows components -> {DATA}")
 
 

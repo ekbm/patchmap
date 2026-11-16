@@ -38,6 +38,9 @@ select:focus, input:focus { outline: none; border-color: var(--accent); box-shad
 .issue.open { border-left-color: var(--stripe-red); }
 .issue.mitigated, .issue.fix-rolling-out, .issue.fix-available { border-left-color: var(--stripe-amber); }
 .issue.fixed { border-left-color: var(--stripe-green); }
+.issue.build { border-left-color: var(--accent); }
+.issue.build > div { margin-top: 4px; }
+.ok-line { color: var(--ok); font-weight: 600; }
 .issue .it { font-weight: 600; display: block; margin: 2px 0; }
 .issue .is { color: var(--muted); font-size: 13px; }
 .pill { display: inline-block; font-size: 12px; font-weight: 600; padding: 1px 8px; border-radius: 6px; margin-right: 6px; }

@@ -35,12 +35,16 @@ function setupTheme() {
 async function init() {
   setupTheme();
   readHash();
-  const [index, tags, issues, ms] = await Promise.all([
+  const [index, tags, issues, ms, builds] = await Promise.all([
     getJSON("data/index.json"), getJSON("data/area_tags.json"), getJSON("data/known_issues.json"),
     getJSON("data/release_health.json").catch(() => ({ issues: [] })),
+    getJSON("data/builds.json").catch(() => []),
   ]);
   state.tags = tags.tags;
   state.issues = issues.issues.concat(ms.issues);
+  state.builds = builds;
+  state.labels = index.labels;
+  state.generated = index.generated;
   $("gen").textContent = `Data updated ${index.generated}.`;
   const sel = $("ver");
   sel.innerHTML = index.scope.map((v) => `<option value="${v}">${esc(index.labels[v])}</option>`).join("");
@@ -65,8 +69,95 @@ function render() {
   writeHash();
   renderChips();
   renderIssues();
+  const b = parseBuild(state.q);
+  if (b) {
+    const hit = findBuild(b);
+    if (hit && hit.version !== state.ver) { state.ver = hit.version; $("ver").value = hit.version; load(); return; }
+    $("issues").innerHTML = "";
+    $("results").innerHTML = buildCard(b, hit);
+    renderMonths();
+    return;
+  }
   if (state.q.length >= 2) { $("issues").innerHTML = ""; renderSearch(); $("months").innerHTML = ""; }
   else { $("results").innerHTML = ""; renderMonths(); }
+}
+
+// ---- Build number lookup (R1) ----
+// Accepts 10.0.20348.5870, 20348.5870 or "OS Build 20348.5870".
+function parseBuild(q) {
+  const m = String(q).toLowerCase().replace(/^os\s*build\s*/, "").match(/^(?:10\.0\.)?(\d{5})\.(\d{1,5})$/);
+  return m ? { major: +m[1], rev: +m[2], text: `10.0.${m[1]}.${m[2]}` } : null;
+}
+const bparts = (s) => s.split(".").map(Number);
+function findBuild(b) {
+  const same = state.builds.filter((x) => bparts(x.build)[2] === b.major);
+  if (!same.length) return null;
+  // Several versions can share a build family (e.g. 26100): pick the one whose builds are closest.
+  const byVer = {};
+  same.forEach((x) => (byVer[x.version] = byVer[x.version] || []).push(x));
+  let best = null;
+  for (const [ver, list] of Object.entries(byVer)) {
+    list.sort((a, c) => bparts(a.build)[3] - bparts(c.build)[3]);
+    const dist = Math.min(...list.map((x) => Math.abs(bparts(x.build)[3] - b.rev)));
+    if (!best || dist < best.dist) best = { version: ver, list, dist };
+  }
+  const list = best.list;
+  const exact = list.filter((x) => bparts(x.build)[3] === b.rev);
+  const earlier = list.filter((x) => bparts(x.build)[3] < b.rev);
+  const later = list.filter((x) => bparts(x.build)[3] > b.rev);
+  return { version: best.version, exact, nearest: earlier[earlier.length - 1] || null, later, list };
+}
+function niceDate(d) { return new Date(d + "T00:00:00Z").toLocaleDateString("en-AU", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" }); }
+function daysAgo(d) { return Math.max(0, Math.round((Date.now() - Date.parse(d + "T00:00:00Z")) / 86400000)); }
+function buildCard(b, hit) {
+  if (!hit) {
+    const other = { 19045: "Windows 10 22H2", 19044: "Windows 10 21H2 (LTSC 2021)", 22631: "Windows 11 23H2", 22621: "Windows 11 22H2",
+      17763: "Windows Server 2019 / Windows 10 1809 (LTSC 2019)", 14393: "Windows Server 2016 / Windows 10 1607 (LTSB 2016)", 22000: "Windows 11 21H2" }[b.major];
+    return `<div class="issue"><span class="pill src">Build lookup</span><span class="it">${other ? `Build ${esc(b.text)} is ${esc(other)}, which Patchmap doesn't cover yet` : `We don't recognise build ${esc(b.text)}`}</span>` +
+      `<div class="is">Patchmap covers ${Object.values(state.labels).map(esc).join(", ")}.</div></div>`;
+  }
+  const label = state.labels[hit.version];
+  const months = state.data.months.map((m) => m.month);
+  const oldest = months[months.length - 1];
+  const ref = hit.exact[0] || hit.nearest;
+  let head, note = "";
+  if (hit.exact.length) {
+    const kbs = hit.exact.map((x) => `${x.kb}${x.type && x.type !== "Security Update" ? ` (${x.type})` : ""}`).join(" and ");
+    const maxOfMonth = hit.list.filter((x) => x.month === ref.month).slice(-1)[0];
+    const when = ref.month === oldest && maxOfMonth.build !== ref.build ? `${monthName(ref.month)} or earlier` : `${monthName(ref.month)}, released ${niceDate(ref.released)} (${daysAgo(ref.released)} days ago)`;
+    head = `Build ${esc(b.text)} is ${esc(label)}, update ${esc(kbs)}`;
+    note = `<div>${esc(when)}.</div>`;
+  } else if (hit.nearest && !hit.later.length) {
+    head = `Build ${esc(b.text)} is ${esc(label)}, newer than every update Patchmap knows`;
+    note = `<div>Our newest is ${esc(hit.nearest.kb)} (build ${esc(hit.nearest.build)}). It may be a preview or emergency update, or our data (updated ${esc(state.generated)}) hasn't caught up yet.</div>`;
+  } else if (hit.nearest) {
+    head = `Build ${esc(b.text)} is ${esc(label)}, but not one of the security updates Patchmap lists`;
+    note = `<div>Closest earlier: ${esc(hit.nearest.kb)} (build ${esc(hit.nearest.build)}, ${esc(monthName(hit.nearest.month))}). It's probably a preview or emergency update released after that.</div>`;
+  } else {
+    head = `Build ${esc(b.text)} is ${esc(label)}, older than the 12 months Patchmap covers`;
+    note = `<div>It's at least a year out of date.</div>`;
+  }
+  // What came after this build
+  const newer = hit.later.filter((x) => !ref || x.month !== ref.month || bparts(x.build)[3] > bparts(ref.build)[3]);
+  const refIdx = ref ? months.indexOf(ref.month) : months.length;
+  const laterMonths = state.data.months.slice(0, Math.max(0, refIdx));
+  const fixesSince = laterMonths.reduce((n, m) => n + m.fix_count, 0);
+  const problemsSince = laterMonths.flatMap((m) => issuesFor(m.month));
+  const openUpTo = state.issues.filter((i) => i.versions.includes(hit.version) && i.status !== "fixed" &&
+    i.months.some((m) => months.indexOf(m) >= refIdx));
+  let after;
+  if (!newer.length && !hit.exact.length) {
+    after = "";
+  } else if (!newer.length) {
+    after = `<div class="ok-line">This is the newest update Patchmap knows for ${esc(label)}.</div>`;
+  } else {
+    const latest = newer[newer.length - 1];
+    after = `<div><b>${newer.length} newer update${newer.length > 1 ? "s" : ""}</b> since, the latest being ${esc(latest.kb)} (build ${esc(latest.build)}, ${esc(monthName(latest.month))}).` +
+      (fixesSince ? ` Updating would add <b>${fixesSince} security fixes</b> from ${laterMonths.length} later month${laterMonths.length > 1 ? "s" : ""}.` : "") + `</div>` +
+      (problemsSince.length ? `<div class="is">Known problems that started in those later updates: ${problemsSince.length} (${problemsSince.filter((i) => i.status !== "fixed").length} still open). See the months below.</div>` : "");
+  }
+  const open = openUpTo.length ? `<div class="is">Still-open known problems from this update or earlier: ${openUpTo.map((i) => esc(i.title)).join("; ")}.</div>` : "";
+  return `<div class="issue build"><span class="pill src">Build lookup</span><span class="it">${head}</span>${note}${after}${open}</div>`;
 }
 
 function renderChips() {

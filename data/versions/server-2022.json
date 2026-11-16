@@ -25405,7 +25405,16 @@
    "month": "2026-Jul",
    "released": "2026-07-14",
    "fix_count": 306,
-   "updates": [],
+   "updates": [
+    {
+     "kb": "KB5099540",
+     "build": "10.0.20348.5386",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5094128"
+     ]
+    }
+   ],
    "areas": {
     "kernel-drivers": {
      "count": 61,
@@ -30915,14 +30924,6 @@
      "type": "Security Update",
      "supersedes": [
       "KB5078766"
-     ]
-    },
-    {
-     "kb": "KB5099540",
-     "build": "10.0.20348.5386",
-     "type": "Security Update",
-     "supersedes": [
-      "KB5094128"
      ]
     }
    ],

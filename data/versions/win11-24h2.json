@@ -23473,20 +23473,6 @@
      "build": "10.0.26100.9165",
      "type": "Security Hotpatch Update",
      "supersedes": []
-    },
-    {
-     "kb": "KB5129195",
-     "build": "10.0.26100.9457",
-     "type": "Security Update",
-     "supersedes": [
-      "KB5124008"
-     ]
-    },
-    {
-     "kb": "KB5129241",
-     "build": "10.0.26100.9448",
-     "type": "Security Hotpatch Update",
-     "supersedes": []
     }
    ],
    "areas": {
@@ -25675,7 +25661,16 @@
    "month": "2026-Jul",
    "released": "2026-07-14",
    "fix_count": 361,
-   "updates": [],
+   "updates": [
+    {
+     "kb": "KB5101650",
+     "build": "10.0.26100.8875",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5094126"
+     ]
+    }
+   ],
    "areas": {
     "apps-desktop": {
      "count": 82,
@@ -29731,7 +29726,16 @@
    "month": "2026-Jun",
    "released": "2026-06-09",
    "fix_count": 90,
-   "updates": [],
+   "updates": [
+    {
+     "kb": "KB5094126",
+     "build": "10.0.26100.8655",
+     "type": "Security Update",
+     "supersedes": [
+      "KB5089549"
+     ]
+    }
+   ],
    "areas": {
     "kernel-drivers": {
      "count": 24,
@@ -30897,14 +30901,6 @@
       "KB5082063",
       "KB5083769"
      ]
-    },
-    {
-     "kb": "KB5094126",
-     "build": "10.0.26100.8655",
-     "type": "Security Update",
-     "supersedes": [
-      "KB5089549"
-     ]
     }
    ],
    "areas": {
@@ -31760,14 +31756,6 @@
      "supersedes": [
       "KB5078740",
       "KB5079473"
-     ]
-    },
-    {
-     "kb": "KB5101650",
-     "build": "10.0.26100.8875",
-     "type": "Security Update",
-     "supersedes": [
-      "KB5094126"
      ]
     }
    ],
