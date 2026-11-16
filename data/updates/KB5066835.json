@@ -1,0 +1,20 @@
+{
+ "kb": "KB5066835",
+ "month": "2025-Dec",
+ "released": "2025-12-09",
+ "type": "Security Update",
+ "restart": "Yes",
+ "catalog_url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5066835",
+ "versions": {
+  "server-2025": "10.0.26100.6899",
+  "win11-24h2": "10.0.26100.6899",
+  "win11-25h2": "10.0.26200.6899"
+ },
+ "supersedes": [
+  "KB5065426"
+ ],
+ "fixes": [
+  "CVE-2025-64679",
+  "CVE-2025-64680"
+ ]
+}

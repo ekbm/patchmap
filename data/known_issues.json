@@ -1,0 +1,52 @@
+{
+ "about": "Hand-written known problems caused by Windows updates. Each entry must link at least one source. Status is as reported on 'checked'. Licensed CC BY 4.0 (see LICENSE-DATA.md).",
+ "issues": [
+  {
+   "id": "2026-11-print-zero-size-images",
+   "title": "Printing fails for documents with zero-size images",
+   "summary": "Printing can fail when a document contains an image with zero height or width at the selected resolution. These images can be invisible. Mainly Word documents printed through GDI, but other apps can be affected.",
+   "areas": ["print"],
+   "months": ["2026-Nov"],
+   "versions": ["win11-24h2", "win11-25h2", "win11-26h2", "server-2022", "server-2025"],
+   "applies_note": "Reported for Windows 10 and later, and Windows Server 2016 and later.",
+   "status": "open",
+   "status_note": "Confirmed by Microsoft. No fix date announced.",
+   "checked": "2026-11-16",
+   "sources": [
+    {"name": "gHacks", "url": "https://www.ghacks.net/2026/11/15/microsoft-confirms-november-windows-updates-cause-activation-error-0x80041008-and-printing-failures/"},
+    {"name": "How-To Geek", "url": "https://www.howtogeek.com/word-printing-problems-microsofts-november-windows-updates-are-the-likely-cause/"},
+    {"name": "Windows Report", "url": "https://windowsreport.com/microsoft-confirms-november-2026-windows-updates-are-causing-printing-failures/"}
+   ]
+  },
+  {
+   "id": "2026-11-install-0x800f0993",
+   "title": "November update fails to install (0x800f0993, 0x800f0989, 0x80070306)",
+   "summary": "Some devices that installed the October 2026 preview update KB5127936 can't finish installing the November security update and may retry repeatedly.",
+   "areas": ["install-update"],
+   "months": ["2026-Nov"],
+   "versions": ["win11-24h2", "win11-25h2", "win11-26h2"],
+   "status": "fix-rolling-out",
+   "status_note": "Microsoft says a fix is rolling out for devices using Windows Update. Sources disagree on whether it has fully shipped.",
+   "checked": "2026-11-16",
+   "sources": [
+    {"name": "BleepingComputer", "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-kb5132061-installation-issues-0x80070306-0x800f0989-0x800f0993-errors/"},
+    {"name": "The Register", "url": "https://www.theregister.com/os-platforms/2026/11/11/microsofts-patch-tuesday-cant-break-stuff-if-it-wont-install/5309059"}
+   ]
+  },
+  {
+   "id": "2026-11-activation-0x80041008",
+   "title": "Activation and licensing commands fail with 0x80041008",
+   "summary": "Activation, KMS configuration or product key commands (for example slmgr) can fail with error 0x80041008, especially with automated licensing tools.",
+   "areas": ["activation"],
+   "months": ["2026-Nov"],
+   "versions": ["win11-24h2", "win11-25h2", "win11-26h2", "server-2022", "server-2025"],
+   "status": "fix-available",
+   "status_note": "Reported fixed by an out-of-band update on 13 Nov 2026. Server packages are in the Microsoft Update Catalog only. Check Microsoft's KB page for your version.",
+   "checked": "2026-11-16",
+   "sources": [
+    {"name": "Microsoft KB5131087", "url": "https://support.microsoft.com/en-us/servicing/os/windows-11/2026/11/kb5131087-windows-11-23h2-security-update"},
+    {"name": "How-To Geek", "url": "https://www.howtogeek.com/word-printing-problems-microsofts-november-windows-updates-are-the-likely-cause/"}
+   ]
+  }
+ ]
+}

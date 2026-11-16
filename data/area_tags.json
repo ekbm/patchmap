@@ -1,0 +1,14 @@
+{
+ "about": "Maps Microsoft's Windows component names to Patchmap areas. 'match' is a pattern checked against the component name (e.g. 'Windows Print Spooler Components'). A component can get several tags. Edit freely; re-run fetch_msrc.py.",
+ "tags": {
+  "print": {"label": "Printing", "match": "print|spool|xps|gdi|imaging|scan"},
+  "sign-in": {"label": "Sign-in & identity", "match": "kerberos|ntlm|lsass|local security authority|ldap|active directory|authentication|credential|netlogon|smart card|hello|certificate|kerberos|entra|security account"},
+  "file-sharing": {"label": "File sharing", "match": "smb|server message block|\\bnfs\\b|file server|\\bdfs\\b|offline files|webdav"},
+  "network": {"label": "Network", "match": "dns|domain name|dhcp|tcp/ip|routing|rras|http\\.sys|\\bike\\b|remote procedure call|\\brpc\\b|wireless|wi-fi|bluetooth|network|winsock|ancillary function"},
+  "remote-access": {"label": "Remote Desktop", "match": "remote desktop|\\brdp\\b|terminal services|remote access"},
+  "activation": {"label": "Activation & licensing", "match": "licens|activation|software protection"},
+  "install-update": {"label": "Installing & updates", "match": "installer|servicing|update stack|windows update|appx|app installer"},
+  "graphics": {"label": "Graphics & display", "match": "graphics|rasteri|direct ?x|dwm|desktop window|win32k|font"},
+  "kernel-drivers": {"label": "Kernel & drivers", "match": "kernel|driver|usb|storage|ntfs|hyper-v|virtual"}
+ }
+}

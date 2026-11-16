@@ -1,0 +1,2895 @@
+{
+ "month": "2026-Jun",
+ "released": "2026-06-09",
+ "fix_count": 95,
+ "by_tag": {
+  "other": 46,
+  "kernel-drivers": 26,
+  "network": 17,
+  "graphics": 7,
+  "sign-in": 5,
+  "remote-access": 2
+ },
+ "fixes": [
+  {
+   "cve": "CVE-2026-33828",
+   "title": "Windows Device Health Attestation (DHA) Elevation of Privilege Vulnerability",
+   "component": "Microsoft Azure Attestation service and Device Health Attestation Service",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Critical",
+    "server-2025": "Critical",
+    "win11-25h2": "Critical",
+    "win11-24h2": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33828"
+  },
+  {
+   "cve": "CVE-2026-34335",
+   "title": "Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+   "component": "Windows Ancillary Function Driver for WinSock",
+   "tags": [
+    "network",
+    "kernel-drivers"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34335"
+  },
+  {
+   "cve": "CVE-2026-40404",
+   "title": "Windows Universal Disk Format File System Driver (UDFS) Elevation of Privilege Vulnerability",
+   "component": "Windows Universal Disk Format File System Driver (UDFS)",
+   "tags": [
+    "kernel-drivers"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40404"
+  },
+  {
+   "cve": "CVE-2026-40409",
+   "title": "Windows Universal Disk Format File System Driver (UDFS) Elevation of Privilege Vulnerability",
+   "component": "Windows Universal Disk Format File System Driver (UDFS)",
+   "tags": [
+    "kernel-drivers"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40409"
+  },
+  {
+   "cve": "CVE-2026-41108",
+   "title": "Windows DNS Client Elevation of Privilege Vulnerability",
+   "component": "Windows DNS",
+   "tags": [
+    "network"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41108"
+  },
+  {
+   "cve": "CVE-2026-42828",
+   "title": "Windows Projected File System Elevation of Privilege Vulnerability",
+   "component": "Windows Projected File System Filter Driver",
+   "tags": [
+    "kernel-drivers"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42828"
+  },
+  {
+   "cve": "CVE-2026-42829",
+   "title": "Windows Administrator Protection Secure Feature Bypass Vulnerability",
+   "component": "Windows Administrator Protection",
+   "tags": [
+    "other"
+   ],
+   "impact": "Security Feature Bypass",
+   "severity": {
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42829"
+  },
+  {
+   "cve": "CVE-2026-42836",
+   "title": "Windows Function Discovery Service (fdwsd.dll) Elevation of Privilege Vulnerability",
+   "component": "Function Discovery Service (fdwsd.dll)",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42836"
+  },
+  {
+   "cve": "CVE-2026-42837",
+   "title": "Windows Projected File System Elevation of Privilege Vulnerability",
+   "component": "Windows Projected File System Filter Driver",
+   "tags": [
+    "kernel-drivers"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "win11-25h2": "Important",
+    "server-2025": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42837"
+  },
+  {
+   "cve": "CVE-2026-42903",
+   "title": "Windows Kerberos Denial of Service Vulnerability",
+   "component": "Windows Kerberos",
+   "tags": [
+    "sign-in"
+   ],
+   "impact": "Denial of Service",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42903"
+  },
+  {
+   "cve": "CVE-2026-42904",
+   "title": "Windows TCP/IP Elevation of Privilege Vulnerability",
+   "component": "Windows TCP/IP",
+   "tags": [
+    "network"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42904"
+  },
+  {
+   "cve": "CVE-2026-42905",
+   "title": "Windows DWM Core Library Elevation of Privilege Vulnerability",
+   "component": "Windows DWM Core Library",
+   "tags": [
+    "graphics"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42905"
+  },
+  {
+   "cve": "CVE-2026-42906",
+   "title": "Windows Shell Information Disclosure Vulnerability",
+   "component": "Windows Shell",
+   "tags": [
+    "other"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42906"
+  },
+  {
+   "cve": "CVE-2026-42907",
+   "title": "Windows Shell Information Disclosure Vulnerability",
+   "component": "Windows Shell",
+   "tags": [
+    "other"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42907"
+  },
+  {
+   "cve": "CVE-2026-42908",
+   "title": "Windows Remote Desktop Protocol (RDP) Information Disclosure Vulnerability",
+   "component": "Windows RDP",
+   "tags": [
+    "remote-access"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42908"
+  },
+  {
+   "cve": "CVE-2026-42910",
+   "title": "Windows Hotpatch Monitoring Service Elevation of Privilege Vulnerability",
+   "component": "Windows Hotpatch Monitoring Service",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42910"
+  },
+  {
+   "cve": "CVE-2026-42911",
+   "title": "Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+   "component": "Windows Ancillary Function Driver for WinSock",
+   "tags": [
+    "network",
+    "kernel-drivers"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42911"
+  },
+  {
+   "cve": "CVE-2026-42912",
+   "title": "Windows Telephony Service Elevation of Privilege Vulnerability",
+   "component": "Windows Telephony Service",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42912"
+  },
+  {
+   "cve": "CVE-2026-42914",
+   "title": "Windows Kerberos Denial of Service Vulnerability",
+   "component": "Windows Kerberos",
+   "tags": [
+    "sign-in"
+   ],
+   "impact": "Denial of Service",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42914"
+  },
+  {
+   "cve": "CVE-2026-42915",
+   "title": "Microsoft Windows VMSwitch Denial of Service Vulnerability",
+   "component": "Windows VMSwitch",
+   "tags": [
+    "other"
+   ],
+   "impact": "Denial of Service",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42915"
+  },
+  {
+   "cve": "CVE-2026-42916",
+   "title": "NT OS Kernel Elevation of Privilege Vulnerability",
+   "component": "Windows NT OS Kernel",
+   "tags": [
+    "kernel-drivers"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42916"
+  },
+  {
+   "cve": "CVE-2026-42968",
+   "title": "Windows Telephony Server Information Disclosure Vulnerability",
+   "component": "Windows Telephony Service",
+   "tags": [
+    "other"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42968"
+  },
+  {
+   "cve": "CVE-2026-42969",
+   "title": "Windows Push Notification Information Disclosure Vulnerability",
+   "component": "Windows Push Notifications",
+   "tags": [
+    "other"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42969"
+  },
+  {
+   "cve": "CVE-2026-42970",
+   "title": "Windows Push Notification Information Disclosure Vulnerability",
+   "component": "Windows Push Notifications",
+   "tags": [
+    "other"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42970"
+  },
+  {
+   "cve": "CVE-2026-42971",
+   "title": "Windows Push Notification Information Disclosure Vulnerability",
+   "component": "Windows Push Notifications",
+   "tags": [
+    "other"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42971"
+  },
+  {
+   "cve": "CVE-2026-42972",
+   "title": "Windows Hyper-V Information Disclosure Vulnerability",
+   "component": "Role: Windows Hyper-V",
+   "tags": [
+    "kernel-drivers"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42972"
+  },
+  {
+   "cve": "CVE-2026-42973",
+   "title": "Windows Push Notification Information Disclosure Vulnerability",
+   "component": "Windows Push Notifications",
+   "tags": [
+    "other"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42973"
+  },
+  {
+   "cve": "CVE-2026-42974",
+   "title": "Windows Performance Monitor Remote Code Execution Vulnerability",
+   "component": "Windows Performance Monitor",
+   "tags": [
+    "other"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42974"
+  },
+  {
+   "cve": "CVE-2026-42977",
+   "title": "Windows Push Notifications Elevation of Privilege Vulnerability",
+   "component": "Windows Push Notifications",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42977"
+  },
+  {
+   "cve": "CVE-2026-42978",
+   "title": "Windows Push Notifications Elevation of Privilege Vulnerability",
+   "component": "Windows Push Notifications",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42978"
+  },
+  {
+   "cve": "CVE-2026-42979",
+   "title": "Windows Push Notifications Elevation of Privilege Vulnerability",
+   "component": "Windows Push Notifications",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42979"
+  },
+  {
+   "cve": "CVE-2026-42980",
+   "title": "NT OS Kernel Elevation of Privilege Vulnerability",
+   "component": "Windows NT OS Kernel",
+   "tags": [
+    "kernel-drivers"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42980"
+  },
+  {
+   "cve": "CVE-2026-42981",
+   "title": "Windows Performance Monitor Remote Code Execution Vulnerability",
+   "component": "Windows Performance Monitor",
+   "tags": [
+    "other"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42981"
+  },
+  {
+   "cve": "CVE-2026-42983",
+   "title": "Windows DWM Core Library Elevation of Privilege Vulnerability",
+   "component": "Windows DWM Core Library",
+   "tags": [
+    "graphics"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42983"
+  },
+  {
+   "cve": "CVE-2026-42984",
+   "title": "Windows Kernel Elevation of Privilege Vulnerability",
+   "component": "Windows Kernel",
+   "tags": [
+    "kernel-drivers"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42984"
+  },
+  {
+   "cve": "CVE-2026-42987",
+   "title": "Windows Deployment Services (WDS) Remote Code Execution",
+   "component": "Windows Deployment Services",
+   "tags": [
+    "other"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2022": "Critical",
+    "server-2025": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42987"
+  },
+  {
+   "cve": "CVE-2026-42991",
+   "title": "Windows Push Notifications Elevation of Privilege Vulnerability",
+   "component": "Windows Push Notifications",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42991"
+  },
+  {
+   "cve": "CVE-2026-44802",
+   "title": "Windows DWM Core Library Elevation of Privilege Vulnerability",
+   "component": "Windows DWM Core Library",
+   "tags": [
+    "graphics"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44802"
+  },
+  {
+   "cve": "CVE-2026-44803",
+   "title": "Windows Graphics Component Remote Code Execution Vulnerability",
+   "component": "Windows Win32K - GRFX",
+   "tags": [
+    "graphics"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2022": "Critical",
+    "server-2025": "Critical",
+    "win11-25h2": "Critical",
+    "win11-24h2": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44803"
+  },
+  {
+   "cve": "CVE-2026-44805",
+   "title": "Windows Network Controller (NC) Host Agent Denial of Service Vulnerability",
+   "component": "Windows Network Controller (NC) Host Agent",
+   "tags": [
+    "network"
+   ],
+   "impact": "Denial of Service",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44805"
+  },
+  {
+   "cve": "CVE-2026-44809",
+   "title": "Windows Common Log File System Driver Elevation of Privilege Vulnerability",
+   "component": "Windows Common Log File System Driver",
+   "tags": [
+    "kernel-drivers"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44809"
+  },
+  {
+   "cve": "CVE-2026-44810",
+   "title": "Microsoft Cryptographic Services Elevation of Privilege Vulnerability",
+   "component": "Windows Cryptographic Services",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Critical",
+    "server-2025": "Critical",
+    "win11-25h2": "Critical",
+    "win11-24h2": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44810"
+  },
+  {
+   "cve": "CVE-2026-44812",
+   "title": "Windows Graphics Component Remote Code Execution Vulnerability",
+   "component": "Windows Win32K - GRFX",
+   "tags": [
+    "graphics"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2022": "Critical",
+    "server-2025": "Critical",
+    "win11-25h2": "Critical",
+    "win11-24h2": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44812"
+  },
+  {
+   "cve": "CVE-2026-44815",
+   "title": "Windows DHCP Client Elevation of Privilege Vulnerability",
+   "component": "Windows DHCP Client",
+   "tags": [
+    "network"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-44815"
+  },
+  {
+   "cve": "CVE-2026-45487",
+   "title": "Windows Program Compatibility Assistant Service Elevation of Privilege Vulnerability",
+   "component": "Windows Program Compatibility Assistant Service",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45487"
+  },
+  {
+   "cve": "CVE-2026-45586",
+   "title": "Windows Collaborative Translation Framework (CTFMON) Elevation of Privilege Vulnerability",
+   "component": "Windows Collaborative Translation Framework",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45586"
+  },
+  {
+   "cve": "CVE-2026-45588",
+   "title": "Secure Boot Security Feature Bypass Vulnerability",
+   "component": "Windows Secure Boot",
+   "tags": [
+    "other"
+   ],
+   "impact": "Security Feature Bypass",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45588"
+  },
+  {
+   "cve": "CVE-2026-45592",
+   "title": "Windows Internet (wininet.dll) Elevation of Privilege Vulnerability",
+   "component": "Windows Internet (wininet.dll)",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45592"
+  },
+  {
+   "cve": "CVE-2026-45593",
+   "title": "Windows SDK Elevation of Privilege Vulnerability",
+   "component": "Windows SDK",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45593"
+  },
+  {
+   "cve": "CVE-2026-45594",
+   "title": "Windows Application Identity (AppID) Information Disclosure Vulnerability",
+   "component": "Windows Application Identity (AppID) Subsystem",
+   "tags": [
+    "other"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45594"
+  },
+  {
+   "cve": "CVE-2026-45595",
+   "title": "Windows Mark of the Web Security Feature Bypass Vulnerability",
+   "component": "Windows Mark of the Web (MOTW)",
+   "tags": [
+    "other"
+   ],
+   "impact": "Security Feature Bypass",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45595"
+  },
+  {
+   "cve": "CVE-2026-45596",
+   "title": "Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+   "component": "Windows Ancillary Function Driver for WinSock",
+   "tags": [
+    "network",
+    "kernel-drivers"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45596"
+  },
+  {
+   "cve": "CVE-2026-45597",
+   "title": "Windows UI Automation Manager (uiamanager.dll) Elevation of Privilege Vulnerability",
+   "component": "UI Automation Manager (uiamanager.dll)",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45597"
+  },
+  {
+   "cve": "CVE-2026-45598",
+   "title": "Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+   "component": "Windows Ancillary Function Driver for WinSock",
+   "tags": [
+    "network",
+    "kernel-drivers"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45598"
+  },
+  {
+   "cve": "CVE-2026-45599",
+   "title": "Windows UPnP Device Host Remote Code Execution Vulnerability",
+   "component": "Universal Plug and Play (upnp.dll)",
+   "tags": [
+    "other"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45599"
+  },
+  {
+   "cve": "CVE-2026-45600",
+   "title": "Windows Kernel-Mode Driver Elevation of Privilege Vulnerability",
+   "component": "Windows Kernel-Mode Drivers",
+   "tags": [
+    "kernel-drivers"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45600"
+  },
+  {
+   "cve": "CVE-2026-45601",
+   "title": "Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+   "component": "Windows Ancillary Function Driver for WinSock",
+   "tags": [
+    "network",
+    "kernel-drivers"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45601"
+  },
+  {
+   "cve": "CVE-2026-45602",
+   "title": "Windows Dynamic Host Configuration Protocol (DHCP) Tampering Vulnerability",
+   "component": "Windows DHCP Server",
+   "tags": [
+    "network"
+   ],
+   "impact": "Tampering",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45602"
+  },
+  {
+   "cve": "CVE-2026-45603",
+   "title": "Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+   "component": "Windows Ancillary Function Driver for WinSock",
+   "tags": [
+    "network",
+    "kernel-drivers"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45603"
+  },
+  {
+   "cve": "CVE-2026-45604",
+   "title": "Windows Managed Installer Information Disclosure Vulnerability",
+   "component": "Windows Application Identity (AppID) Subsystem",
+   "tags": [
+    "other"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45604"
+  },
+  {
+   "cve": "CVE-2026-45605",
+   "title": "Windows Bluetooth Service Elevation of Privilege Vulnerability",
+   "component": "Windows Bluetooth Service",
+   "tags": [
+    "network"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45605"
+  },
+  {
+   "cve": "CVE-2026-45607",
+   "title": "Windows Hyper-V Remote Code Execution Vulnerability",
+   "component": "Windows Hyper-V",
+   "tags": [
+    "kernel-drivers"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2022": "Critical",
+    "server-2025": "Critical",
+    "win11-25h2": "Critical",
+    "win11-24h2": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45607"
+  },
+  {
+   "cve": "CVE-2026-45608",
+   "title": "Windows DHCP Client Information Disclosure Vulnerability",
+   "component": "Windows DHCP Client",
+   "tags": [
+    "network"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45608"
+  },
+  {
+   "cve": "CVE-2026-45634",
+   "title": "Windows DHCP Client Information Disclosure Vulnerability",
+   "component": "Windows DHCP Server",
+   "tags": [
+    "network"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45634"
+  },
+  {
+   "cve": "CVE-2026-45635",
+   "title": "Windows UPnP Device Host Remote Code Execution Vulnerability",
+   "component": "Universal Plug and Play (upnp.dll)",
+   "tags": [
+    "other"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45635"
+  },
+  {
+   "cve": "CVE-2026-45636",
+   "title": "Windows NTFS Remote Code Execution Vulnerability",
+   "component": "Windows NTFS",
+   "tags": [
+    "kernel-drivers"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-24h2": "Important",
+    "win11-25h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45636"
+  },
+  {
+   "cve": "CVE-2026-45637",
+   "title": "Microsoft DWM Core Library Elevation of Privilege Vulnerability",
+   "component": "Windows DWM Core Library",
+   "tags": [
+    "graphics"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45637"
+  },
+  {
+   "cve": "CVE-2026-45638",
+   "title": "Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+   "component": "Windows Ancillary Function Driver for WinSock",
+   "tags": [
+    "network",
+    "kernel-drivers"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45638"
+  },
+  {
+   "cve": "CVE-2026-45639",
+   "title": "Windows Remote Desktop Protocol (RDP) Information Disclosure Vulnerability",
+   "component": "Windows RDP",
+   "tags": [
+    "remote-access"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45639"
+  },
+  {
+   "cve": "CVE-2026-45640",
+   "title": "Windows Bluetooth Port Driver Elevation of Privilege Vulnerability",
+   "component": "Windows Bluetooth Port Driver",
+   "tags": [
+    "network",
+    "kernel-drivers"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45640"
+  },
+  {
+   "cve": "CVE-2026-45641",
+   "title": "Windows Hyper-V Remote Code Execution Vulnerability",
+   "component": "Role: Windows Hyper-V",
+   "tags": [
+    "kernel-drivers"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2022": "Critical",
+    "server-2025": "Critical",
+    "win11-25h2": "Critical",
+    "win11-24h2": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45641"
+  },
+  {
+   "cve": "CVE-2026-45648",
+   "title": "Windows Active Directory Domain Services Remote Code Execution Vulnerability",
+   "component": "Active Directory Domain Services",
+   "tags": [
+    "sign-in"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2022": "Critical",
+    "server-2025": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45648"
+  },
+  {
+   "cve": "CVE-2026-45653",
+   "title": "Windows Kernel Elevation of Privilege Vulnerability",
+   "component": "Windows Kernel",
+   "tags": [
+    "kernel-drivers"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45653"
+  },
+  {
+   "cve": "CVE-2026-45654",
+   "title": "Secure Boot Security Feature Bypass Vulnerability",
+   "component": "Windows Secure Boot",
+   "tags": [
+    "other"
+   ],
+   "impact": "Security Feature Bypass",
+   "severity": {
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45654"
+  },
+  {
+   "cve": "CVE-2026-45655",
+   "title": "Windows BitLocker Security Feature Bypass Vulnerability",
+   "component": "Windows BitLocker",
+   "tags": [
+    "other"
+   ],
+   "impact": "Security Feature Bypass",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45655"
+  },
+  {
+   "cve": "CVE-2026-45656",
+   "title": "UEFI Secure Boot Security Feature Bypass Vulnerability",
+   "component": "Windows UEFI",
+   "tags": [
+    "other"
+   ],
+   "impact": "Security Feature Bypass",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45656"
+  },
+  {
+   "cve": "CVE-2026-45657",
+   "title": "Windows Kernel Remote Code Execution Vulnerability",
+   "component": "Windows Kernel",
+   "tags": [
+    "kernel-drivers"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2022": "Critical",
+    "server-2025": "Critical",
+    "win11-25h2": "Critical",
+    "win11-24h2": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45657"
+  },
+  {
+   "cve": "CVE-2026-45658",
+   "title": "Windows BitLocker Security Feature Bypass Vulnerability",
+   "component": "Windows BitLocker",
+   "tags": [
+    "other"
+   ],
+   "impact": "Security Feature Bypass",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45658"
+  },
+  {
+   "cve": "CVE-2026-47288",
+   "title": "Windows Kerberos Key Distribution Center (KDC) Remote Code Execution",
+   "component": "Windows Kerberos",
+   "tags": [
+    "sign-in"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2022": "Critical",
+    "server-2025": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47288"
+  },
+  {
+   "cve": "CVE-2026-47291",
+   "title": "HTTP.sys Remote Code Execution Vulnerability",
+   "component": "Windows HTTP.sys",
+   "tags": [
+    "network"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2022": "Critical",
+    "server-2025": "Critical",
+    "win11-25h2": "Critical",
+    "win11-24h2": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47291"
+  },
+  {
+   "cve": "CVE-2026-47648",
+   "title": "Windows Storage Elevation of Privilege Vulnerability",
+   "component": "Windows Storage",
+   "tags": [
+    "kernel-drivers"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47648"
+  },
+  {
+   "cve": "CVE-2026-47652",
+   "title": "Windows Hyper-V Remote Code Execution Vulnerability",
+   "component": "Windows Hyper-V",
+   "tags": [
+    "kernel-drivers"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2022": "Critical",
+    "server-2025": "Critical",
+    "win11-25h2": "Critical",
+    "win11-24h2": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47652"
+  },
+  {
+   "cve": "CVE-2026-47656",
+   "title": "Windows Boot Manager Security Feature Bypass Vulnerability",
+   "component": "Windows Boot Manager",
+   "tags": [
+    "other"
+   ],
+   "impact": "Security Feature Bypass",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-47656"
+  },
+  {
+   "cve": "CVE-2026-48566",
+   "title": "Windows DWM Core Library Information Disclosure  Vulnerability",
+   "component": "Windows DWM Core Library",
+   "tags": [
+    "graphics"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2025": [
+     "KB5087423",
+     "KB5087539"
+    ],
+    "win11-24h2": [
+     "KB5089466",
+     "KB5089549"
+    ],
+    "win11-25h2": [
+     "KB5089466",
+     "KB5089549"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48566"
+  },
+  {
+   "cve": "CVE-2026-48568",
+   "title": "Secure Boot Security Feature Bypass Vulnerability",
+   "component": "Windows Secure Boot",
+   "tags": [
+    "other"
+   ],
+   "impact": "Security Feature Bypass",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48568"
+  },
+  {
+   "cve": "CVE-2026-48570",
+   "title": "Secure Boot Security Feature Bypass Vulnerability",
+   "component": "Windows Secure Boot",
+   "tags": [
+    "other"
+   ],
+   "impact": "Security Feature Bypass",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48570"
+  },
+  {
+   "cve": "CVE-2026-48573",
+   "title": "Secure Boot Security Feature Bypass Vulnerability",
+   "component": "Windows Secure Boot",
+   "tags": [
+    "other"
+   ],
+   "impact": "Security Feature Bypass",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48573"
+  },
+  {
+   "cve": "CVE-2026-48574",
+   "title": "Windows Media Remote Code Execution Vulnerability",
+   "component": "Windows Media",
+   "tags": [
+    "other"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2022": "Critical",
+    "server-2025": "Critical",
+    "win11-25h2": "Critical",
+    "win11-24h2": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48574"
+  },
+  {
+   "cve": "CVE-2026-48575",
+   "title": "Secure Boot Security Feature Bypass Vulnerability",
+   "component": "Windows Secure Boot",
+   "tags": [
+    "other"
+   ],
+   "impact": "Security Feature Bypass",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48575"
+  },
+  {
+   "cve": "CVE-2026-48576",
+   "title": "Secure Boot Security Feature Bypass Vulnerability",
+   "component": "Windows Secure Boot",
+   "tags": [
+    "other"
+   ],
+   "impact": "Security Feature Bypass",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48576"
+  },
+  {
+   "cve": "CVE-2026-48578",
+   "title": "Secure Boot Security Feature Bypass Vulnerability",
+   "component": "Windows Secure Boot",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48578"
+  },
+  {
+   "cve": "CVE-2026-48583",
+   "title": "Windows Kernel Elevation of Privilege Vulnerability",
+   "component": "Windows Kernel",
+   "tags": [
+    "kernel-drivers"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48583"
+  },
+  {
+   "cve": "CVE-2026-50507",
+   "title": "Windows BitLocker Security Feature Bypass Vulnerability",
+   "component": "Windows BitLocker",
+   "tags": [
+    "other"
+   ],
+   "impact": "Security Feature Bypass",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094126"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50507"
+  },
+  {
+   "cve": "CVE-2026-50508",
+   "title": "Windows NTLM Spoofing Vulnerability",
+   "component": "Windows NTLM",
+   "tags": [
+    "sign-in"
+   ],
+   "impact": "Spoofing",
+   "severity": {
+    "server-2022": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50508"
+  },
+  {
+   "cve": "CVE-2026-8863",
+   "title": "UEFI Secure Boot Security Feature Bypass Vulnerability",
+   "component": "Windows UEFI",
+   "tags": [
+    "other"
+   ],
+   "impact": "Security Feature Bypass",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5094128"
+    ],
+    "server-2025": [
+     "KB5094125"
+    ],
+    "win11-24h2": [
+     "KB5094126"
+    ],
+    "win11-25h2": [
+     "KB5094126"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-8863"
+  }
+ ]
+}

@@ -1,0 +1,322 @@
+{
+ "generated": "2026-11-16 06:53 UTC",
+ "source": "https://api.msrc.microsoft.com/cvrf/v3.0",
+ "scope": [
+  "win11-24h2",
+  "win11-25h2",
+  "win11-26h2",
+  "server-2022",
+  "server-2025"
+ ],
+ "labels": {
+  "win11-24h2": "Windows 11 24H2",
+  "win11-25h2": "Windows 11 25H2",
+  "win11-26h2": "Windows 11 26H2",
+  "server-2022": "Windows Server 2022",
+  "server-2025": "Windows Server 2025"
+ },
+ "months": [
+  {
+   "month": "2025-Dec",
+   "released": "2025-12-09",
+   "fix_count": 34,
+   "by_tag": {
+    "kernel-drivers": 9,
+    "other": 12,
+    "graphics": 7,
+    "remote-access": 5,
+    "network": 3,
+    "install-update": 1
+   },
+   "kbs": [
+    "KB5066782",
+    "KB5066835",
+    "KB5068787",
+    "KB5068840",
+    "KB5068861",
+    "KB5068966",
+    "KB5071413",
+    "KB5071547",
+    "KB5072014",
+    "KB5072033",
+    "KB5074204",
+    "KB5074353"
+   ]
+  },
+  {
+   "month": "2026-Jan",
+   "released": "2026-01-13",
+   "fix_count": 80,
+   "by_tag": {
+    "kernel-drivers": 19,
+    "other": 33,
+    "sign-in": 9,
+    "print": 1,
+    "graphics": 8,
+    "install-update": 1,
+    "network": 7,
+    "remote-access": 2,
+    "file-sharing": 6
+   },
+   "kbs": [
+    "KB5073379",
+    "KB5073457",
+    "KB5074109"
+   ]
+  },
+  {
+   "month": "2026-Feb",
+   "released": "2026-02-10",
+   "fix_count": 27,
+   "by_tag": {
+    "kernel-drivers": 12,
+    "other": 5,
+    "graphics": 2,
+    "network": 6,
+    "remote-access": 2,
+    "sign-in": 2,
+    "print": 1
+   },
+   "kbs": [
+    "KB5075899",
+    "KB5075906",
+    "KB5075942",
+    "KB5075943",
+    "KB5077181",
+    "KB5077212"
+   ]
+  },
+  {
+   "month": "2026-Mar",
+   "released": "2026-03-10",
+   "fix_count": 39,
+   "by_tag": {
+    "graphics": 6,
+    "network": 8,
+    "kernel-drivers": 11,
+    "other": 13,
+    "file-sharing": 3,
+    "sign-in": 1,
+    "remote-access": 3,
+    "print": 2
+   },
+   "kbs": [
+    "KB5078736",
+    "KB5078737",
+    "KB5078740",
+    "KB5078766",
+    "KB5079420",
+    "KB5079473",
+    "KB5084597"
+   ]
+  },
+  {
+   "month": "2026-Apr",
+   "released": "2026-04-14",
+   "fix_count": 116,
+   "by_tag": {
+    "other": 64,
+    "kernel-drivers": 28,
+    "remote-access": 3,
+    "sign-in": 7,
+    "activation": 2,
+    "network": 14,
+    "graphics": 4,
+    "install-update": 1,
+    "print": 4
+   },
+   "kbs": [
+    "KB5082063",
+    "KB5082142",
+    "KB5083769",
+    "KB5099536",
+    "KB5099540",
+    "KB5101650"
+   ]
+  },
+  {
+   "month": "2026-May",
+   "released": "2026-05-12",
+   "fix_count": 65,
+   "by_tag": {
+    "other": 16,
+    "kernel-drivers": 19,
+    "network": 17,
+    "graphics": 11,
+    "sign-in": 2,
+    "print": 2,
+    "remote-access": 1,
+    "file-sharing": 1
+   },
+   "kbs": [
+    "KB5078737",
+    "KB5087423",
+    "KB5087424",
+    "KB5087539",
+    "KB5087545",
+    "KB5089466",
+    "KB5089549",
+    "KB5094125",
+    "KB5094126"
+   ]
+  },
+  {
+   "month": "2026-Jun",
+   "released": "2026-06-09",
+   "fix_count": 95,
+   "by_tag": {
+    "other": 46,
+    "network": 17,
+    "kernel-drivers": 26,
+    "sign-in": 5,
+    "graphics": 7,
+    "remote-access": 2
+   },
+   "kbs": [
+    "KB5087423",
+    "KB5087539",
+    "KB5089466",
+    "KB5089549",
+    "KB5094125",
+    "KB5094126",
+    "KB5094128"
+   ]
+  },
+  {
+   "month": "2026-Jul",
+   "released": "2026-07-14",
+   "fix_count": 379,
+   "by_tag": {
+    "other": 155,
+    "network": 46,
+    "kernel-drivers": 106,
+    "sign-in": 18,
+    "install-update": 6,
+    "print": 18,
+    "remote-access": 22,
+    "file-sharing": 7,
+    "graphics": 24
+   },
+   "kbs": [
+    "KB5099536",
+    "KB5099540",
+    "KB5101650"
+   ]
+  },
+  {
+   "month": "2026-Aug",
+   "released": "2026-08-11",
+   "fix_count": 208,
+   "by_tag": {
+    "network": 50,
+    "sign-in": 10,
+    "other": 64,
+    "kernel-drivers": 36,
+    "print": 7,
+    "install-update": 9,
+    "graphics": 21,
+    "remote-access": 13,
+    "activation": 1,
+    "file-sharing": 4
+   },
+   "kbs": [
+    "KB5120228",
+    "KB5120229",
+    "KB5120233",
+    "KB5120242",
+    "KB5120994",
+    "KB5121003",
+    "KB5123273",
+    "KB5123303",
+    "KB5123607",
+    "KB5129195",
+    "KB5129241"
+   ]
+  },
+  {
+   "month": "2026-Sep",
+   "released": "2026-09-08",
+   "fix_count": 629,
+   "by_tag": {
+    "network": 89,
+    "kernel-drivers": 127,
+    "other": 299,
+    "install-update": 6,
+    "sign-in": 30,
+    "print": 26,
+    "graphics": 26,
+    "remote-access": 30,
+    "activation": 4,
+    "file-sharing": 15
+   },
+   "kbs": [
+    "KB5122871",
+    "KB5122882",
+    "KB5124008"
+   ]
+  },
+  {
+   "month": "2026-Oct",
+   "released": "2026-10-13",
+   "fix_count": 912,
+   "by_tag": {
+    "install-update": 68,
+    "activation": 2,
+    "other": 395,
+    "kernel-drivers": 268,
+    "network": 90,
+    "graphics": 31,
+    "remote-access": 25,
+    "sign-in": 33,
+    "file-sharing": 14,
+    "print": 27
+   },
+   "kbs": [
+    "KB5099536",
+    "KB5099540",
+    "KB5101650",
+    "KB5122871",
+    "KB5122882",
+    "KB5124008",
+    "KB5126646",
+    "KB5126655",
+    "KB5127648"
+   ]
+  },
+  {
+   "month": "2026-Nov",
+   "released": "2026-11-10",
+   "fix_count": 648,
+   "by_tag": {
+    "sign-in": 33,
+    "kernel-drivers": 151,
+    "other": 246,
+    "graphics": 87,
+    "install-update": 40,
+    "network": 71,
+    "print": 29,
+    "remote-access": 15,
+    "file-sharing": 18
+   },
+   "kbs": [
+    "KB5120228",
+    "KB5120233",
+    "KB5120994",
+    "KB5121003",
+    "KB5122871",
+    "KB5122882",
+    "KB5124008",
+    "KB5126646",
+    "KB5126655",
+    "KB5127648",
+    "KB5131077",
+    "KB5131080",
+    "KB5131090",
+    "KB5132043",
+    "KB5132061",
+    "KB5135385",
+    "KB5135386"
+   ]
+  }
+ ]
+}

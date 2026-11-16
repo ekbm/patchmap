@@ -1,0 +1,1175 @@
+{
+ "month": "2025-Dec",
+ "released": "2025-12-09",
+ "fix_count": 34,
+ "by_tag": {
+  "other": 12,
+  "kernel-drivers": 9,
+  "graphics": 7,
+  "remote-access": 5,
+  "network": 3,
+  "install-update": 1
+ },
+ "fixes": [
+  {
+   "cve": "CVE-2025-62454",
+   "title": "Windows Cloud Files Mini Filter Driver Elevation of Privilege Vulnerability",
+   "component": "Windows Cloud Files Mini Filter Driver",
+   "tags": [
+    "kernel-drivers"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "win11-25h2": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5071413",
+     "KB5071547"
+    ],
+    "server-2025": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-24h2": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-25h2": [
+     "KB5072014",
+     "KB5072033"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62454"
+  },
+  {
+   "cve": "CVE-2025-62456",
+   "title": "Windows Resilient File System (ReFS) Remote Code Execution Vulnerability",
+   "component": "Windows Resilient File System (ReFS)",
+   "tags": [
+    "other"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "win11-25h2": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5071413",
+     "KB5071547"
+    ],
+    "server-2025": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-24h2": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-25h2": [
+     "KB5072014",
+     "KB5072033"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62456"
+  },
+  {
+   "cve": "CVE-2025-62457",
+   "title": "Windows Cloud Files Mini Filter Driver Elevation of Privilege Vulnerability",
+   "component": "Windows Cloud Files Mini Filter Driver",
+   "tags": [
+    "kernel-drivers"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "win11-25h2": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5071413",
+     "KB5071547"
+    ],
+    "server-2025": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-24h2": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-25h2": [
+     "KB5072014",
+     "KB5072033"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62457"
+  },
+  {
+   "cve": "CVE-2025-62458",
+   "title": "Win32k Elevation of Privilege Vulnerability",
+   "component": "Windows Win32K - GRFX",
+   "tags": [
+    "graphics"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5071413",
+     "KB5071547"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62458"
+  },
+  {
+   "cve": "CVE-2025-62466",
+   "title": "Windows Client-Side Caching Elevation of Privilege Vulnerability",
+   "component": "Windows Client-Side Caching (CSC) Service",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5071413",
+     "KB5071547"
+    ],
+    "server-2025": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-24h2": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-25h2": [
+     "KB5072014",
+     "KB5072033"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62466"
+  },
+  {
+   "cve": "CVE-2025-62470",
+   "title": "Windows Common Log File System Driver Elevation of Privilege Vulnerability",
+   "component": "Windows Common Log File System Driver",
+   "tags": [
+    "kernel-drivers"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-24h2": "Important",
+    "win11-25h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5071413",
+     "KB5071547"
+    ],
+    "server-2025": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-24h2": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-25h2": [
+     "KB5072014",
+     "KB5072033"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62470"
+  },
+  {
+   "cve": "CVE-2025-62472",
+   "title": "Windows Remote Access Connection Manager Elevation of Privilege Vulnerability",
+   "component": "Windows Remote Access Connection Manager",
+   "tags": [
+    "remote-access"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5071413",
+     "KB5071547"
+    ],
+    "server-2025": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-24h2": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-25h2": [
+     "KB5072014",
+     "KB5072033"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62472"
+  },
+  {
+   "cve": "CVE-2025-62473",
+   "title": "Windows Routing and Remote Access Service (RRAS) Information Disclosure Vulnerability",
+   "component": "Windows Routing and Remote Access Service (RRAS)",
+   "tags": [
+    "network",
+    "remote-access"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5071413",
+     "KB5071547"
+    ],
+    "server-2025": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-24h2": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-25h2": [
+     "KB5072014",
+     "KB5072033"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62473"
+  },
+  {
+   "cve": "CVE-2025-62549",
+   "title": "Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability",
+   "component": "Windows Routing and Remote Access Service (RRAS)",
+   "tags": [
+    "network",
+    "remote-access"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5071413",
+     "KB5071547"
+    ],
+    "server-2025": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-24h2": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-25h2": [
+     "KB5072014",
+     "KB5072033"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62549"
+  },
+  {
+   "cve": "CVE-2025-62571",
+   "title": "Windows Installer Elevation of Privilege Vulnerability",
+   "component": "Windows Installer",
+   "tags": [
+    "install-update"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5071413",
+     "KB5071547"
+    ],
+    "server-2025": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-24h2": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-25h2": [
+     "KB5072014",
+     "KB5072033"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62571"
+  },
+  {
+   "cve": "CVE-2025-62573",
+   "title": "DirectX Graphics Kernel Elevation of Privilege Vulnerability",
+   "component": "Windows DirectX",
+   "tags": [
+    "graphics"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5071413",
+     "KB5071547"
+    ],
+    "server-2025": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-24h2": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-25h2": [
+     "KB5072014",
+     "KB5072033"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62573"
+  },
+  {
+   "cve": "CVE-2025-64658",
+   "title": "Windows File Explorer Elevation of Privilege Vulnerability",
+   "component": "Windows Shell",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5071413",
+     "KB5071547"
+    ],
+    "server-2025": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-24h2": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-25h2": [
+     "KB5072014",
+     "KB5072033"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64658"
+  },
+  {
+   "cve": "CVE-2025-64670",
+   "title": "Windows DirectX Information Disclosure Vulnerability",
+   "component": "Microsoft Graphics Component",
+   "tags": [
+    "graphics"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5071413",
+     "KB5071547"
+    ],
+    "server-2025": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-24h2": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-25h2": [
+     "KB5072014",
+     "KB5072033"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64670"
+  },
+  {
+   "cve": "CVE-2025-64673",
+   "title": "Windows Storage VSP Driver Elevation of Privilege Vulnerability",
+   "component": "Storvsp.sys Driver",
+   "tags": [
+    "kernel-drivers"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5071413",
+     "KB5071547"
+    ],
+    "server-2025": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-24h2": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-25h2": [
+     "KB5072014",
+     "KB5072033"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64673"
+  },
+  {
+   "cve": "CVE-2025-59516",
+   "title": "Windows Storage VSP Driver Elevation of Privilege Vulnerability",
+   "component": "Windows Storage VSP Driver",
+   "tags": [
+    "kernel-drivers"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5071413",
+     "KB5071547"
+    ],
+    "server-2025": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-24h2": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-25h2": [
+     "KB5072014",
+     "KB5072033"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59516"
+  },
+  {
+   "cve": "CVE-2025-59517",
+   "title": "Windows Storage VSP Driver Elevation of Privilege Vulnerability",
+   "component": "Windows Storage VSP Driver",
+   "tags": [
+    "kernel-drivers"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5071413",
+     "KB5071547"
+    ],
+    "server-2025": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-24h2": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-25h2": [
+     "KB5072014",
+     "KB5072033"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59517"
+  },
+  {
+   "cve": "CVE-2025-62461",
+   "title": "Windows Projected File System Elevation of Privilege Vulnerability",
+   "component": "Windows Projected File System Filter Driver",
+   "tags": [
+    "kernel-drivers"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "win11-25h2": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5071413",
+     "KB5071547"
+    ],
+    "server-2025": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-24h2": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-25h2": [
+     "KB5072014",
+     "KB5072033"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62461"
+  },
+  {
+   "cve": "CVE-2025-62462",
+   "title": "Windows Projected File System Elevation of Privilege Vulnerability",
+   "component": "Windows Projected File System",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-24h2": "Important",
+    "win11-25h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5071413",
+     "KB5071547"
+    ],
+    "server-2025": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-24h2": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-25h2": [
+     "KB5072014",
+     "KB5072033"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62462"
+  },
+  {
+   "cve": "CVE-2025-62463",
+   "title": "DirectX Graphics Kernel Denial of Service Vulnerability",
+   "component": "Windows DirectX",
+   "tags": [
+    "graphics"
+   ],
+   "impact": "Denial of Service",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5071413",
+     "KB5071547"
+    ],
+    "server-2025": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-24h2": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-25h2": [
+     "KB5072014",
+     "KB5072033"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62463"
+  },
+  {
+   "cve": "CVE-2025-62464",
+   "title": "Windows Projected File System Elevation of Privilege Vulnerability",
+   "component": "Windows Projected File System",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "win11-25h2": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5071413",
+     "KB5071547"
+    ],
+    "server-2025": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-24h2": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-25h2": [
+     "KB5072014",
+     "KB5072033"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62464"
+  },
+  {
+   "cve": "CVE-2025-62465",
+   "title": "DirectX Graphics Kernel Denial of Service Vulnerability",
+   "component": "Windows DirectX",
+   "tags": [
+    "graphics"
+   ],
+   "impact": "Denial of Service",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5071413",
+     "KB5071547"
+    ],
+    "server-2025": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-24h2": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-25h2": [
+     "KB5072014",
+     "KB5072033"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62465"
+  },
+  {
+   "cve": "CVE-2025-55233",
+   "title": "Windows Projected File System Elevation of Privilege Vulnerability",
+   "component": "Windows Projected File System",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "win11-25h2": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5071413",
+     "KB5071547"
+    ],
+    "server-2025": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-24h2": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-25h2": [
+     "KB5072014",
+     "KB5072033"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55233"
+  },
+  {
+   "cve": "CVE-2025-62467",
+   "title": "Windows Projected File System Elevation of Privilege Vulnerability",
+   "component": "Windows Projected File System",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "win11-25h2": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5071413",
+     "KB5071547"
+    ],
+    "server-2025": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-24h2": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-25h2": [
+     "KB5072014",
+     "KB5072033"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62467"
+  },
+  {
+   "cve": "CVE-2025-62468",
+   "title": "Windows Defender Firewall Service Information Disclosure Vulnerability",
+   "component": "Windows Defender Firewall Service",
+   "tags": [
+    "other"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2025": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-24h2": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-25h2": [
+     "KB5072014",
+     "KB5072033"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62468"
+  },
+  {
+   "cve": "CVE-2025-62474",
+   "title": "Windows Remote Access Connection Manager Elevation of Privilege Vulnerability",
+   "component": "Windows Remote Access Connection Manager",
+   "tags": [
+    "remote-access"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5071413",
+     "KB5071547"
+    ],
+    "server-2025": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-24h2": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-25h2": [
+     "KB5072014",
+     "KB5072033"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62474"
+  },
+  {
+   "cve": "CVE-2025-62567",
+   "title": "Windows Hyper-V Denial of Service Vulnerability",
+   "component": "Windows Hyper-V",
+   "tags": [
+    "kernel-drivers"
+   ],
+   "impact": "Denial of Service",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5071413",
+     "KB5071547"
+    ],
+    "server-2025": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-24h2": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-25h2": [
+     "KB5072014",
+     "KB5072033"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62567"
+  },
+  {
+   "cve": "CVE-2025-62570",
+   "title": "Windows Camera Frame Server Monitor Information Disclosure Vulnerability",
+   "component": "Windows Camera Frame Server Monitor",
+   "tags": [
+    "other"
+   ],
+   "impact": "Information Disclosure",
+   "severity": {
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2025": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-24h2": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-25h2": [
+     "KB5072014",
+     "KB5072033"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62570"
+  },
+  {
+   "cve": "CVE-2025-62565",
+   "title": "Windows File Explorer Elevation of Privilege Vulnerability",
+   "component": "Windows Shell",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5071413",
+     "KB5071547"
+    ],
+    "server-2025": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-24h2": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-25h2": [
+     "KB5072014",
+     "KB5072033"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62565"
+  },
+  {
+   "cve": "CVE-2025-64661",
+   "title": "Windows Shell Elevation of Privilege Vulnerability",
+   "component": "Windows Shell",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5071413",
+     "KB5071547"
+    ],
+    "server-2025": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-24h2": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-25h2": [
+     "KB5072014",
+     "KB5072033"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64661"
+  },
+  {
+   "cve": "CVE-2025-64678",
+   "title": "Windows Routing and Remote Access Service (RRAS) Remote Code Execution Vulnerability",
+   "component": "Windows Routing and Remote Access Service (RRAS)",
+   "tags": [
+    "network",
+    "remote-access"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5068787",
+     "KB5068840"
+    ],
+    "server-2025": [
+     "KB5068861",
+     "KB5068966"
+    ],
+    "win11-24h2": [
+     "KB5068861",
+     "KB5068966"
+    ],
+    "win11-25h2": [
+     "KB5068861",
+     "KB5068966"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64678"
+  },
+  {
+   "cve": "CVE-2025-64679",
+   "title": "Windows DWM Core Library Elevation of Privilege Vulnerability",
+   "component": "Windows DWM Core Library",
+   "tags": [
+    "graphics"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5066782"
+    ],
+    "server-2025": [
+     "KB5066835"
+    ],
+    "win11-24h2": [
+     "KB5066835"
+    ],
+    "win11-25h2": [
+     "KB5066835"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64679"
+  },
+  {
+   "cve": "CVE-2025-64680",
+   "title": "Windows DWM Core Library Elevation of Privilege Vulnerability",
+   "component": "Windows DWM Core Library",
+   "tags": [
+    "graphics"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5066782"
+    ],
+    "server-2025": [
+     "KB5066835"
+    ],
+    "win11-24h2": [
+     "KB5066835"
+    ],
+    "win11-25h2": [
+     "KB5066835"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-64680"
+  },
+  {
+   "cve": "CVE-2025-54100",
+   "title": "PowerShell Remote Code Execution Vulnerability",
+   "component": "Windows PowerShell",
+   "tags": [
+    "other"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5071547",
+     "KB5074353"
+    ],
+    "server-2025": [
+     "KB5072033",
+     "KB5074204"
+    ],
+    "win11-24h2": [
+     "KB5072033",
+     "KB5074204"
+    ],
+    "win11-25h2": [
+     "KB5072033",
+     "KB5074204"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-54100"
+  },
+  {
+   "cve": "CVE-2025-62221",
+   "title": "Windows Cloud Files Mini Filter Driver Elevation of Privilege Vulnerability",
+   "component": "Windows Cloud Files Mini Filter Driver",
+   "tags": [
+    "kernel-drivers"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "server-2022": "Important",
+    "win11-24h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2022": [
+     "KB5071413",
+     "KB5071547"
+    ],
+    "server-2025": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-24h2": [
+     "KB5072014",
+     "KB5072033"
+    ],
+    "win11-25h2": [
+     "KB5072014",
+     "KB5072033"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-62221"
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "kb": "KB5068840",
+ "month": "2025-Dec",
+ "released": "2025-12-09",
+ "type": "Security Hotpatch Update",
+ "restart": "Yes",
+ "catalog_url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5068840",
+ "versions": {
+  "server-2022": "10.0.20348.4346"
+ },
+ "supersedes": [],
+ "fixes": [
+  "CVE-2025-64678"
+ ]
+}

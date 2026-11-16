@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verilay Patchmap</title>
+<meta name="description" content="Free, open-source explorer of what each Windows update touched: areas, fixes and known problems, by Windows version.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="./">Verilay Patchmap</a>
+    <nav><a href="#about">About</a><a href="https://github.com/ekbm/patchmap">GitHub</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="lead">See what each Windows update touched, step by step: pick your Windows version, open an update, then open an area to see the fixes.</p>
+
+  <div class="controls">
+    <label class="sr" for="ver">Windows version</label>
+    <select id="ver"></select>
+    <label class="sr" for="q">Search</label>
+    <input id="q" type="search" placeholder="print, Kerberos, CVE-2026-105567, KB5131090" autocomplete="off">
+  </div>
+  <div class="chips" id="chips"></div>
+
+  <section id="issues"></section>
+  <section id="results" aria-live="polite"></section>
+  <section id="months"><p class="muted">Loading…</p></section>
+
+  <section id="about" class="about">
+    <h2>About</h2>
+    <p>Patchmap lists the Windows security fixes Microsoft publishes each month, grouped by the area of Windows they touch, for the Windows versions shown above. Known problems are added by hand with links to their sources.</p>
+    <p>Coming next: which files each update changed, and an optional filter for software that depends on Windows features (starting with print management tools).</p>
+    <p class="muted">Not affiliated with Microsoft. Not official advice: always check Microsoft's own pages before acting. Security fix data comes from the <a href="https://msrc.microsoft.com/update-guide">Microsoft Security Update Guide</a>. <span id="gen"></span></p>
+  </section>
+</main>
+
+<footer class="wrap foot">
+  <span>Open source · <a href="https://github.com/ekbm/patchmap">Report a problem or suggest a fix</a></span>
+  <span>More from <a href="https://verilay.dev">Verilay</a></span>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

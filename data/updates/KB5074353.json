@@ -1,0 +1,15 @@
+{
+ "kb": "KB5074353",
+ "month": "2025-Dec",
+ "released": "2025-12-09",
+ "type": "Security Only",
+ "restart": "Yes",
+ "catalog_url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5074353",
+ "versions": {
+  "server-2022": "10.0.20348.4467"
+ },
+ "supersedes": [],
+ "fixes": [
+  "CVE-2025-54100"
+ ]
+}

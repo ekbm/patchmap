@@ -1,0 +1,19 @@
+{
+ "kb": "KB5135386",
+ "month": "2026-Nov",
+ "released": "2026-11-10",
+ "type": "Security Update",
+ "restart": "Maybe",
+ "catalog_url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5135386",
+ "versions": {
+  "server-2025": "10.0.26100.33812"
+ },
+ "supersedes": [
+  "KB5126646"
+ ],
+ "fixes": [
+  "CVE-2026-124224",
+  "CVE-2026-124225",
+  "CVE-2026-124226"
+ ]
+}
