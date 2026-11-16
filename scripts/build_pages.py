@@ -67,7 +67,7 @@ def page(path, title, desc, body, crumbs):
 </head>
 <body>
 <header class="top"><div class="wrap bar"><a class="brand" href="/">Verilay Patchmap</a>
-<nav><a href="/">Explore updates</a><a href="/about.html">About</a></nav></div></header>
+<nav><a href="/">Explore</a><a href="/about.html">About</a></nav></div></header>
 <main class="wrap page">
 <p class="crumbs muted">{nav}</p>
 {body}
