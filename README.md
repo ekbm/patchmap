@@ -12,7 +12,6 @@ Free and open source. Not affiliated with Microsoft.
 
 ## Coming next
 
-- Which **files** each update changed, per area
 - An optional **"my software"** filter (starting with print management tools) that narrows the view
   to the Windows features that software relies on
 - More known problems
@@ -40,6 +39,7 @@ GitHub Actions ([.github/workflows/site.yml](.github/workflows/site.yml)).
 | File | What's in it |
 |---|---|
 | `versions/<version>.json` | What the website reads: month → area → component → fixes |
+| `files/` | Files each monthly update changed (from Microsoft's file lists), made by `scripts/fetch_files.py` |
 | `known_issues.json` | Known problems, written by hand, each with sources |
 | `release_health.json` | Microsoft's own known problems (titles, status, update numbers, links), collected by `scripts/fetch_release_health.py` |
 | `area_tags.json` | Rules that turn Microsoft's component names into areas |

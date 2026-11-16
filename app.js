@@ -42,6 +42,7 @@ async function init() {
     getJSON("data/release_health.json").catch(() => ({ issues: [] })),
     getJSON("data/builds.json").catch(() => []),
   ]);
+  state.files = await getJSON("data/files/index.json").catch(() => ({}));
   const swList = await getJSON("data/software/index.json").catch(() => []);
   for (const id of swList) { try { state.software[id] = await getJSON(`data/software/${id}.json`); } catch (e) {} }
   const ssel = $("sw");
@@ -98,6 +99,13 @@ function render() {
     $("issues").innerHTML = "";
     $("results").innerHTML = buildCard(b, hit);
     renderMonths();
+    return;
+  }
+  if (/^[\w.-]+\.(dll|exe|sys|cpl|drv|ocx|efi|mui|winmd)$/i.test(state.q)) {
+    $("issues").innerHTML = ""; $("months").innerHTML = "";
+    const name = state.q.toLowerCase();
+    $("results").innerHTML = '<p class="muted">Loading file history…</p>';
+    fileHistory(name).then((h) => { if (state.q.toLowerCase() === name) $("results").innerHTML = h; });
     return;
   }
   if (state.q.length >= 2) { $("issues").innerHTML = ""; renderSearch(); $("months").innerHTML = ""; }
@@ -329,11 +337,64 @@ function swCard() {
     `<div class="is">${esc(sw.note)} Checked ${esc(sw.checked)}. <a href="https://github.com/ekbm/patchmap/blob/main/data/software/${esc(sw.id)}.json">Suggest a correction</a></div></div>`;
 }
 
+// ---- Files changed per update (R6) ----
+const fileCache = {};
+const loadFiles = (path) => (fileCache[path] = fileCache[path] || getJSON(path));
+function filesInfo(m) { return ((state.files || {})[state.ver] || {})[m.month]; }
+function swFileTags() {
+  const sw = state.software[state.sw];
+  return sw ? [...new Set(sw.depends_on.flatMap((d) => d.file_tags || []))] : null;
+}
+const FILE_TAG_LABEL = { rpc: "Remote Procedure Call (RPC)", other: "Other files" };
+const fileTagLabel = (t) => FILE_TAG_LABEL[t] || label(t);
+function filesBlock(m) {
+  const fi = filesInfo(m);
+  if (!fi) return "";
+  const sw = state.software[state.sw];
+  const swTags = swFileTags();
+  const swN = swTags ? swTags.reduce((n, t) => n + (fi.by_tag[t] || 0), 0) : 0;
+  return `<details class="files" data-path="${esc(fi.path)}"><summary><span class="l">Files changed by ${esc(fi.kb)}</span>` +
+    `<span class="r">${fi.changed.toLocaleString()} files${sw ? ` · <b>${swN} in ${esc(sw.name)}'s parts</b>` : ""}</span></summary><div class="files-body"><p class="muted">Loading…</p></div></details>`;
+}
+function fileRow(f) {
+  return `<div class="fix"><span class="cve">${esc(f.n)}</span><span class="muted">${f.o ? `${esc(f.o)} → ` : "new · "}${esc(f.v)}</span></div>`;
+}
+async function fillFiles(el) {
+  const r = await loadFiles(el.dataset.path);
+  const groups = {};
+  for (const f of r.changed.concat(r.added)) for (const t of (f.t.length ? f.t : ["other"])) (groups[t] = groups[t] || []).push(f);
+  const swTags = swFileTags() || [];
+  const order = Object.keys(groups).sort((a, b) => (swTags.includes(b) - swTags.includes(a)) || (a === "other") - (b === "other") || groups[b].length - groups[a].length);
+  el.querySelector(".files-body").innerHTML =
+    `<p class="is">Compared with ${esc(r.compared_with)}: ${r.counts.changed.toLocaleString()} files with a new version, ${r.counts.added.toLocaleString()} new files` +
+    `${r.counts.language_files ? ` (plus ${r.counts.language_files.toLocaleString()} language files, not listed)` : ""}. x64 files from Microsoft's file list for ${esc(r.kb)}.</p>` +
+    order.map((t) => `<details${swTags.includes(t) ? " open" : ""}><summary><span class="l">${esc(fileTagLabel(t))}${swTags.includes(t) ? ' <span class="pill src">your software</span>' : ""}</span><span class="r">${groups[t].length} files</span></summary>` +
+      (t === "other" && groups[t].length > 400 ? groups[t].slice(0, 400).map(fileRow).join("") + `<p class="is">…and ${groups[t].length - 400} more. Search a file name to see its history.</p>` : groups[t].map(fileRow).join("")) + `</details>`).join("");
+}
+document.addEventListener("toggle", (ev) => {
+  const el = ev.target;
+  if (el.matches && el.matches("details.files") && el.open && !el.dataset.done) { el.dataset.done = 1; fillFiles(el).catch(() => { el.querySelector(".files-body").innerHTML = '<p class="muted">Couldn\'t load the file list.</p>'; }); }
+}, true);
+async function fileHistory(name) {
+  const per = (state.files || {})[state.ver] || {};
+  const rows = [];
+  for (const [month, fi] of Object.entries(per)) {
+    const r = await loadFiles(fi.path);
+    const f = r.changed.concat(r.added).find((x) => x.n === name);
+    rows.push({ month, kb: fi.kb, f });
+  }
+  rows.sort((a, b) => state.data.months.findIndex((m) => m.month === a.month) - state.data.months.findIndex((m) => m.month === b.month));
+  if (!rows.length) return `<div class="issue"><span class="pill src">File history</span><span class="it">No file lists for ${esc(state.data.label)} yet</span></div>`;
+  return `<div class="issue build"><span class="pill src">File history</span><span class="it">${esc(name)} on ${esc(state.data.label)}</span>` +
+    rows.map((x) => `<div>${esc(monthName(x.month))} (${esc(x.kb)}): ${x.f ? `<b>changed</b> ${x.f.o ? esc(x.f.o) + " → " : "new · "}${esc(x.f.v)}` : "not changed"}</div>`).join("") +
+    `<div class="is">Covers the months Patchmap has file lists for. Versions are from Microsoft's file lists (x64).</div></div>`;
+}
+
 function monthBody(m) {
   const ups = m.updates.map((u) => `${esc(u.kb)}${u.build ? ` → build ${esc(u.build)}` : ""}${u.supersedes && u.supersedes.length ? ` (replaces ${esc(u.supersedes.join(", "))})` : ""}`).join(" · ");
   const issues = issuesBlock(issuesFor(m.month));
   const areas = Object.entries(m.areas).filter(([t]) => !state.area || t === state.area);
-  return `<p class="meta">Released ${esc(m.released)}${ups ? " · " + ups : ""}</p>${issues}${swBlock(m)}` + areas.map(([t, a]) =>
+  return `<p class="meta">Released ${esc(m.released)}${ups ? " · " + ups : ""}</p>${issues}${swBlock(m)}${filesBlock(m)}` + areas.map(([t, a]) =>
     `<details class="area" data-t="${esc(t)}"><summary><span class="l">${esc(label(t))}</span><span class="r">${a.count} fixes · ${Object.keys(a.components).length} components</span></summary></details>`
   ).join("");
 }

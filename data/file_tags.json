@@ -1,0 +1,15 @@
+{
+ "about": "Maps Windows file names to Patchmap areas, so changed files can be grouped (printing, sign-in...). 'match' is a pattern checked against the lower-case file name. Edit freely; re-run scripts/fetch_files.py --retag.",
+ "tags": {
+  "print": "^(spoolsv|spoolss|localspl|win32spl|printui|prnt\\w*|ntprint\\w*|printconfig|printisolation\\w*|winprint|unidrv\\w*|pscript\\w*|mxdw\\w*|xps\\w*|printworkflow\\w*|printfilter\\w*|wsdprint|usbprint|tcpmon\\w*|inetpp\\w*|mscms|prncache|printbrm\\w*|appmon|fxs\\w*|wia\\w*|escl\\w*|gdi32\\w*|gdiplus|printticket\\w*|prntvpt|msxpsdrv|winspool\\w*|spoolss\\w*)\\.",
+  "rpc": "^(rpcrt4|rpcss|rpcepmap|rpchttp|rpcns4|rpcrtremote)\\.",
+  "file-sharing": "^(srv2|srv|srvnet|srvsvc|mrxsmb\\w*|rdbss|smbserver\\w*|smbwmiv2|wkssvc|mrxdav|davclnt|webclnt|dfs\\w*|nfs\\w*|csc|cscsvc|cscui|lanmanserver)\\.",
+  "sign-in": "^(kerberos|kerbclientshared|msv1_0|lsasrv|lsass|lsaiso|netlogon|ntlmshared|samsrv|samlib|ntdsai|ntdsa|ntdsapi|wldap32|ldap\\w*|negoexts|pku2u|cloudap|kdcsvc|kdcpw|kdcom|vaultsvc|credssp|tspkg|wdigest|sspicli|sspisrv|secur32|authz|dsparse|dsrole|adsldp\\w*)\\.",
+  "network": "^(tcpip|afd|afdwow|dnsapi|dnsrslvr|dns|dhcp\\w*|http|httpapi|winhttp\\w*|wininet|iphlpsvc|ndis|netio|fwpuclnt|fwpkclnt|mpssvc|bfe|wfplwfs|mswsock|ws2_32|nlasvc|netprofm)\\.",
+  "remote-access": "^(termsrv|rdp\\w*|mstsc\\w*|tssession\\w*|rdpcorets|tsgateway\\w*|remotefx\\w*)\\.",
+  "security": "^(schannel|ncrypt\\w*|bcrypt\\w*|cryptsvc|crypt32|ci|tpm\\w*|fveapi\\w*|bdesvc|wintrust|appidsvc|applocker\\w*|securekernel)\\.",
+  "activation": "^(sppsvc|slc|sppwinob|clipsvc|clipc|licensingdiag|slui|sppobjs)\\.",
+  "install-update": "^(msi|msiexec|wuaueng|wuapi|usoclient|usosvc|cbscore|trustedinstaller|dism\\w*|appxdeployment\\w*)\\.",
+  "kernel-drivers": "^(ntoskrnl|hal|clfs|ntfs|refs|storport|volmgr\\w*|partmgr|fltmgr|win32k\\w*|cng|ksecdd|ksecpkg)\\."
+ }
+}

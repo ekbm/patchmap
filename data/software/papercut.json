@@ -8,57 +8,135 @@
   {
    "name": "Windows print queues and Print Spooler",
    "area": "print",
-   "components": ["Windows Print Spooler Components", "Microsoft Printer Drivers", "Windows HTTP Print Provider", "Printer Association Object"],
+   "components": [
+    "Windows Print Spooler Components",
+    "Microsoft Printer Drivers",
+    "Windows HTTP Print Provider",
+    "Printer Association Object"
+   ],
    "why": "PaperCut runs on the print server and holds and releases jobs on the Windows print queues; its Print Provider uses ports the Spooler hands out. Spooler crashes, often caused by drivers, stop PaperCut tracking.",
    "sources": [
-    {"name": "PaperCut: install on Windows", "url": "https://www.papercut.com/help/manuals/ng-mf/common/install-win/"},
-    {"name": "PaperCut: firewall ports", "url": "https://www.papercut.com/kb/Main/FirewallPorts"},
-    {"name": "PaperCut: improving Print Spooler stability", "url": "https://support.papercut.com/hc/en-us/articles/8931153467023-Improving-Windows-Print-Spooler-stability"}
+    {
+     "name": "PaperCut: install on Windows",
+     "url": "https://www.papercut.com/help/manuals/ng-mf/common/install-win/"
+    },
+    {
+     "name": "PaperCut: firewall ports",
+     "url": "https://www.papercut.com/kb/Main/FirewallPorts"
+    },
+    {
+     "name": "PaperCut: improving Print Spooler stability",
+     "url": "https://support.papercut.com/hc/en-us/articles/8931153467023-Improving-Windows-Print-Spooler-stability"
+    }
+   ],
+   "file_tags": [
+    "print"
    ]
   },
   {
    "name": "Remote Procedure Call (RPC)",
    "area": "network",
-   "components": ["Windows Remote Procedure Call", "Windows RPC API", "Windows Remote Procedure Call Runtime", "Windows Remote Procedure Call Interface Definition Language (IDL)"],
+   "components": [
+    "Windows Remote Procedure Call",
+    "Windows RPC API",
+    "Windows Remote Procedure Call Runtime",
+    "Windows Remote Procedure Call Interface Definition Language (IDL)"
+   ],
    "why": "Windows clients reach the print server's Spooler over RPC (port 135 plus a dynamic range). PaperCut notes that blocking it can cause 0x0000011b and 0x0000007c errors, and the 2021 PrintNightmare fixes changed RPC printing behaviour.",
    "sources": [
-    {"name": "PaperCut: firewall ports", "url": "https://www.papercut.com/kb/Main/FirewallPorts"},
-    {"name": "PaperCut: PrintNightmare impact", "url": "https://www.papercut.com/kb/Main/PrintNightmareCVE2021"}
+    {
+     "name": "PaperCut: firewall ports",
+     "url": "https://www.papercut.com/kb/Main/FirewallPorts"
+    },
+    {
+     "name": "PaperCut: PrintNightmare impact",
+     "url": "https://www.papercut.com/kb/Main/PrintNightmareCVE2021"
+    }
+   ],
+   "file_tags": [
+    "rpc"
    ]
   },
   {
    "name": "File sharing (SMB) for shared print queues",
    "area": "file-sharing",
-   "components": ["Windows SMB", "Windows SMB Server", "Windows SMB Client", "Windows SMB Server Network Transport Driver (srvnet.sys)"],
+   "components": [
+    "Windows SMB",
+    "Windows SMB Server",
+    "Windows SMB Client",
+    "Windows SMB Server Network Transport Driver (srvnet.sys)"
+   ],
    "why": "Shared Windows print queues and macOS-to-Windows printing use SMB (port 445). PaperCut documented SMB printing from Macs breaking after the September 2021 updates and suggests LPR as an alternative.",
    "sources": [
-    {"name": "PaperCut: firewall ports", "url": "https://www.papercut.com/kb/Main/FirewallPorts"},
-    {"name": "PaperCut: PrintNightmare impact", "url": "https://www.papercut.com/kb/Main/PrintNightmareCVE2021"}
+    {
+     "name": "PaperCut: firewall ports",
+     "url": "https://www.papercut.com/kb/Main/FirewallPorts"
+    },
+    {
+     "name": "PaperCut: PrintNightmare impact",
+     "url": "https://www.papercut.com/kb/Main/PrintNightmareCVE2021"
+    }
+   ],
+   "file_tags": [
+    "file-sharing"
    ]
   },
   {
    "name": "Active Directory user sync (LDAP, Kerberos)",
    "area": "sign-in",
-   "components": ["Windows LDAP - Lightweight Directory Access Protocol", "Windows Kerberos", "Windows Active Directory", "Active Directory Domain Services"],
+   "components": [
+    "Windows LDAP - Lightweight Directory Access Protocol",
+    "Windows Kerberos",
+    "Windows Active Directory",
+    "Active Directory Domain Services"
+   ],
    "why": "PaperCut syncs users and groups from Active Directory or LDAP (ports 389/636) and talks to domain controllers using Kerberos (port 88). If sync breaks, new users can't print or get charged correctly.",
    "sources": [
-    {"name": "PaperCut: firewall ports", "url": "https://www.papercut.com/kb/Main/FirewallPorts"},
-    {"name": "PaperCut: install on Windows", "url": "https://www.papercut.com/help/manuals/ng-mf/common/install-win/"}
+    {
+     "name": "PaperCut: firewall ports",
+     "url": "https://www.papercut.com/kb/Main/FirewallPorts"
+    },
+    {
+     "name": "PaperCut: install on Windows",
+     "url": "https://www.papercut.com/help/manuals/ng-mf/common/install-win/"
+    }
+   ],
+   "file_tags": [
+    "sign-in"
    ]
   },
   {
    "name": "Document rendering for printing (GDI)",
    "area": "print",
-   "components": ["Windows GDI", "Windows GDI+"],
+   "components": [
+    "Windows GDI",
+    "Windows GDI+"
+   ],
    "why": "Windows apps render documents for printing through GDI before jobs reach the queue. Not PaperCut itself, but GDI problems look like PaperCut problems: the November 2026 printing failure (zero-size images) was in this path.",
    "sources": [
-    {"name": "How-To Geek: November 2026 printing problem", "url": "https://www.howtogeek.com/word-printing-problems-microsofts-november-windows-updates-are-the-likely-cause/"}
-   ]
+    {
+     "name": "How-To Geek: November 2026 printing problem",
+     "url": "https://www.howtogeek.com/word-printing-problems-microsofts-november-windows-updates-are-the-likely-cause/"
+    }
+   ],
+   "file_tags": []
   }
  ],
  "past_problems": [
-  {"when": "September 2021", "what": "Network printing fails with error 0x0000011b (KB5005565 and others)", "url": "https://www.papercut.com/kb/Main/PrintNightmareCVE2021"},
-  {"when": "September 2021", "what": "macOS-to-Windows printing over SMB stops working", "url": "https://www.papercut.com/kb/Main/PrintNightmareCVE2021"},
-  {"when": "October 2021", "what": "Network printing fails with error 0x00000709 (KB5006670, KB5006672)", "url": "https://www.papercut.com/kb/Main/PrintNightmareCVE2021"}
+  {
+   "when": "September 2021",
+   "what": "Network printing fails with error 0x0000011b (KB5005565 and others)",
+   "url": "https://www.papercut.com/kb/Main/PrintNightmareCVE2021"
+  },
+  {
+   "when": "September 2021",
+   "what": "macOS-to-Windows printing over SMB stops working",
+   "url": "https://www.papercut.com/kb/Main/PrintNightmareCVE2021"
+  },
+  {
+   "when": "October 2021",
+   "what": "Network printing fails with error 0x00000709 (KB5006670, KB5006672)",
+   "url": "https://www.papercut.com/kb/Main/PrintNightmareCVE2021"
+  }
  ]
 }

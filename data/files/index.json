@@ -1,0 +1,394 @@
+{
+ "win11-24h2": {
+  "2026-Sep": {
+   "kb": "KB5124008",
+   "path": "data/files/win11-26100/KB5124008.json",
+   "changed": 5480,
+   "by_tag": {
+    "other": 5240,
+    "print": 70,
+    "remote-access": 30,
+    "network": 30,
+    "security": 28,
+    "sign-in": 23,
+    "kernel-drivers": 17,
+    "file-sharing": 17,
+    "install-update": 16,
+    "activation": 6,
+    "rpc": 3
+   }
+  },
+  "2026-Oct": {
+   "kb": "KB5127648",
+   "path": "data/files/win11-26100/KB5127648.json",
+   "changed": 5895,
+   "by_tag": {
+    "other": 5667,
+    "print": 67,
+    "security": 27,
+    "network": 27,
+    "sign-in": 24,
+    "remote-access": 23,
+    "kernel-drivers": 18,
+    "file-sharing": 17,
+    "install-update": 16,
+    "activation": 6,
+    "rpc": 3
+   }
+  },
+  "2026-Nov": {
+   "kb": "KB5132061",
+   "path": "data/files/win11-26100/KB5132061.json",
+   "changed": 5492,
+   "by_tag": {
+    "other": 5253,
+    "print": 66,
+    "network": 30,
+    "remote-access": 29,
+    "security": 28,
+    "sign-in": 24,
+    "file-sharing": 19,
+    "install-update": 17,
+    "kernel-drivers": 16,
+    "activation": 6,
+    "rpc": 4
+   }
+  }
+ },
+ "win11-25h2": {
+  "2026-Sep": {
+   "kb": "KB5124008",
+   "path": "data/files/win11-26100/KB5124008.json",
+   "changed": 5480,
+   "by_tag": {
+    "other": 5240,
+    "print": 70,
+    "remote-access": 30,
+    "network": 30,
+    "security": 28,
+    "sign-in": 23,
+    "kernel-drivers": 17,
+    "file-sharing": 17,
+    "install-update": 16,
+    "activation": 6,
+    "rpc": 3
+   }
+  },
+  "2026-Oct": {
+   "kb": "KB5127648",
+   "path": "data/files/win11-26100/KB5127648.json",
+   "changed": 5895,
+   "by_tag": {
+    "other": 5667,
+    "print": 67,
+    "security": 27,
+    "network": 27,
+    "sign-in": 24,
+    "remote-access": 23,
+    "kernel-drivers": 18,
+    "file-sharing": 17,
+    "install-update": 16,
+    "activation": 6,
+    "rpc": 3
+   }
+  },
+  "2026-Nov": {
+   "kb": "KB5132061",
+   "path": "data/files/win11-26100/KB5132061.json",
+   "changed": 5492,
+   "by_tag": {
+    "other": 5253,
+    "print": 66,
+    "network": 30,
+    "remote-access": 29,
+    "security": 28,
+    "sign-in": 24,
+    "file-sharing": 19,
+    "install-update": 17,
+    "kernel-drivers": 16,
+    "activation": 6,
+    "rpc": 4
+   }
+  }
+ },
+ "win11-26h2": {
+  "2026-Sep": {
+   "kb": "KB5124008",
+   "path": "data/files/win11-26100/KB5124008.json",
+   "changed": 5480,
+   "by_tag": {
+    "other": 5240,
+    "print": 70,
+    "remote-access": 30,
+    "network": 30,
+    "security": 28,
+    "sign-in": 23,
+    "kernel-drivers": 17,
+    "file-sharing": 17,
+    "install-update": 16,
+    "activation": 6,
+    "rpc": 3
+   }
+  },
+  "2026-Oct": {
+   "kb": "KB5127648",
+   "path": "data/files/win11-26100/KB5127648.json",
+   "changed": 5895,
+   "by_tag": {
+    "other": 5667,
+    "print": 67,
+    "security": 27,
+    "network": 27,
+    "sign-in": 24,
+    "remote-access": 23,
+    "kernel-drivers": 18,
+    "file-sharing": 17,
+    "install-update": 16,
+    "activation": 6,
+    "rpc": 3
+   }
+  },
+  "2026-Nov": {
+   "kb": "KB5132061",
+   "path": "data/files/win11-26100/KB5132061.json",
+   "changed": 5492,
+   "by_tag": {
+    "other": 5253,
+    "print": 66,
+    "network": 30,
+    "remote-access": 29,
+    "security": 28,
+    "sign-in": 24,
+    "file-sharing": 19,
+    "install-update": 17,
+    "kernel-drivers": 16,
+    "activation": 6,
+    "rpc": 4
+   }
+  }
+ },
+ "server-2025": {
+  "2026-Sep": {
+   "kb": "KB5122871",
+   "path": "data/files/server-2025/KB5122871.json",
+   "changed": 2533,
+   "by_tag": {
+    "other": 2363,
+    "print": 42,
+    "network": 26,
+    "security": 23,
+    "remote-access": 17,
+    "sign-in": 16,
+    "file-sharing": 15,
+    "install-update": 12,
+    "kernel-drivers": 12,
+    "activation": 5,
+    "rpc": 2
+   }
+  },
+  "2026-Oct": {
+   "kb": "KB5126646",
+   "path": "data/files/server-2025/KB5126646.json",
+   "changed": 3004,
+   "by_tag": {
+    "other": 2811,
+    "print": 41,
+    "network": 30,
+    "security": 24,
+    "sign-in": 21,
+    "remote-access": 18,
+    "file-sharing": 18,
+    "kernel-drivers": 17,
+    "install-update": 16,
+    "activation": 5,
+    "rpc": 3
+   }
+  },
+  "2026-Nov": {
+   "kb": "KB5131080",
+   "path": "data/files/server-2025/KB5131080.json",
+   "changed": 2134,
+   "by_tag": {
+    "other": 1998,
+    "print": 25,
+    "network": 23,
+    "sign-in": 21,
+    "security": 18,
+    "install-update": 13,
+    "kernel-drivers": 13,
+    "file-sharing": 11,
+    "remote-access": 7,
+    "activation": 3,
+    "rpc": 2
+   }
+  }
+ },
+ "server-2022": {
+  "2026-Sep": {
+   "kb": "KB5122882",
+   "path": "data/files/server-2022/KB5122882.json",
+   "changed": 1221,
+   "by_tag": {
+    "other": 1086,
+    "print": 34,
+    "network": 23,
+    "remote-access": 18,
+    "sign-in": 15,
+    "file-sharing": 13,
+    "kernel-drivers": 11,
+    "security": 10,
+    "install-update": 6,
+    "activation": 3,
+    "rpc": 2
+   }
+  },
+  "2026-Oct": {
+   "kb": "KB5126655",
+   "path": "data/files/server-2022/KB5126655.json",
+   "changed": 1496,
+   "by_tag": {
+    "other": 1355,
+    "network": 24,
+    "security": 19,
+    "print": 17,
+    "sign-in": 17,
+    "file-sharing": 17,
+    "install-update": 16,
+    "remote-access": 13,
+    "kernel-drivers": 12,
+    "activation": 3,
+    "rpc": 3
+   }
+  },
+  "2026-Nov": {
+   "kb": "KB5131090",
+   "path": "data/files/server-2022/KB5131090.json",
+   "changed": 1445,
+   "by_tag": {
+    "other": 1318,
+    "print": 24,
+    "network": 23,
+    "sign-in": 20,
+    "install-update": 15,
+    "security": 12,
+    "kernel-drivers": 12,
+    "file-sharing": 10,
+    "remote-access": 6,
+    "activation": 3,
+    "rpc": 2
+   }
+  }
+ },
+ "server-2019": {
+  "2026-Sep": {
+   "kb": "KB5122876",
+   "path": "data/files/server-2019/KB5122876.json",
+   "changed": 1435,
+   "by_tag": {
+    "other": 1308,
+    "print": 34,
+    "network": 22,
+    "remote-access": 14,
+    "kernel-drivers": 13,
+    "sign-in": 13,
+    "security": 12,
+    "file-sharing": 11,
+    "activation": 3,
+    "install-update": 3,
+    "rpc": 2
+   }
+  },
+  "2026-Oct": {
+   "kb": "KB5126651",
+   "path": "data/files/server-2019/KB5126651.json",
+   "changed": 2195,
+   "by_tag": {
+    "other": 2049,
+    "network": 27,
+    "sign-in": 20,
+    "print": 18,
+    "security": 18,
+    "file-sharing": 17,
+    "kernel-drivers": 14,
+    "install-update": 14,
+    "remote-access": 12,
+    "activation": 3,
+    "rpc": 3
+   }
+  },
+  "2026-Nov": {
+   "kb": "KB5131085",
+   "path": "data/files/server-2019/KB5131085.json",
+   "changed": 1319,
+   "by_tag": {
+    "other": 1211,
+    "network": 23,
+    "print": 22,
+    "sign-in": 19,
+    "kernel-drivers": 10,
+    "file-sharing": 10,
+    "security": 9,
+    "install-update": 7,
+    "activation": 3,
+    "remote-access": 3,
+    "rpc": 2
+   }
+  }
+ },
+ "server-2016": {
+  "2026-Sep": {
+   "kb": "KB5123099",
+   "path": "data/files/server-2016/KB5123099.json",
+   "changed": 1499,
+   "by_tag": {
+    "other": 1371,
+    "print": 38,
+    "network": 22,
+    "remote-access": 13,
+    "sign-in": 12,
+    "file-sharing": 12,
+    "kernel-drivers": 11,
+    "security": 7,
+    "install-update": 7,
+    "activation": 4,
+    "rpc": 2
+   }
+  },
+  "2026-Oct": {
+   "kb": "KB5126868",
+   "path": "data/files/server-2016/KB5126868.json",
+   "changed": 1318,
+   "by_tag": {
+    "other": 1205,
+    "network": 22,
+    "sign-in": 17,
+    "file-sharing": 17,
+    "print": 14,
+    "kernel-drivers": 12,
+    "security": 9,
+    "remote-access": 8,
+    "install-update": 7,
+    "activation": 4,
+    "rpc": 3
+   }
+  },
+  "2026-Nov": {
+   "kb": "KB5131291",
+   "path": "data/files/server-2016/KB5131291.json",
+   "changed": 1441,
+   "by_tag": {
+    "other": 1323,
+    "network": 24,
+    "print": 20,
+    "sign-in": 18,
+    "kernel-drivers": 13,
+    "file-sharing": 13,
+    "remote-access": 9,
+    "install-update": 8,
+    "security": 7,
+    "activation": 4,
+    "rpc": 2
+   }
+  }
+ }
+}

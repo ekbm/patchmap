@@ -93,6 +93,30 @@ def issue_card(i, ver=None, problem_url=None):
             f'<span class="it">{title}</span></div>')
 
 
+def files_section(kb, month, ver, tags):
+    """Files this update changed (from scripts/fetch_files.py), grouped by area; 'other' only counted."""
+    fi = (load("files/index.json", {}).get(ver) or {}).get(month)
+    if not fi or fi["kb"] != kb:
+        return ""
+    r = json.loads((ROOT / fi["path"]).read_text(encoding="utf-8"))
+    groups = defaultdict(list)
+    for f in r["changed"] + r["added"]:
+        for t in f["t"] or ["other"]:
+            groups[t].append(f)
+    names = dict(tags, rpc="Remote Procedure Call (RPC)", other="Other files")
+    parts = []
+    for t, fs in sorted(groups.items(), key=lambda x: (x[0] == "other", -len(x[1]))):
+        if t == "other":
+            parts.append(f'<p class="muted">Plus {len(fs):,} other files.</p>')
+            continue
+        rows = "".join(f'<div class="fix"><span class="cve">{e(f["n"])}</span><span class="muted">{e(f.get("o") or "new")} → {e(f["v"])}</span></div>' for f in fs)
+        parts.append(f'<details><summary><span class="l">{e(names.get(t, t))}</span><span class="r">{len(fs)} files</span></summary>{rows}</details>')
+    c = r["counts"]
+    return (f"<h2>Files this update changed</h2>"
+            f'<p class="muted">Compared with {e(r["compared_with"])}: {c["changed"]:,} files with a new version and {c["added"]:,} new files '
+            f'(x64, from Microsoft\'s file list; language files not counted).</p>' + "".join(parts))
+
+
 def software_section(kb, ver, fixes, software):
     """Which print-management (etc.) software relies on parts of Windows this update changed."""
     out = []
@@ -190,6 +214,7 @@ def main():
                 + ("<h2>Known problems this update started</h2>" + "".join(issue_card(i, vers[0], purl(i)) for i in prob_c) if prob_c else "")
                 + ("<h2>Known problems this update fixed</h2>" + "".join(issue_card(i, vers[0], purl(i)) for i in prob_f) if prob_f else "")
                 + software_section(kb, vers[0], fixes, software)
+                + files_section(kb, u["month"], vers[0], tags)
                 + f"<h2>Security fixes by area</h2>{area_list or '<p>No security fixes listed.</p>'}"
                 + f'<h2>Links</h2><ul><li><a href="{explore}">Open {e(kb)} in the Patchmap explorer</a></li>'
                 f'<li><a href="https://support.microsoft.com/help/{e(kb[2:])}" rel="noopener">Microsoft\'s page for {e(kb)}</a></li>'

@@ -34,6 +34,7 @@ jobs:
         run: |
           python scripts/fetch_msrc.py
           python scripts/fetch_release_health.py
+          python scripts/fetch_files.py
           python scripts/build_feed.py
 
       - name: Save refreshed data
