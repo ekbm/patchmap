@@ -267,6 +267,8 @@ def main():
         explore = f'/#v={vers[0]}&q={kb}'
         kind = (kbinfo.get(kb) or {}).get("kind", "")
         kind_label = KIND.get(kind)
+        if kind == "baseline" and not any(v.startswith(("win11", "server-2025")) for v in vers):
+            kind_label = None  # only meaningful where hotpatching is mainstream
         full_alt = ""
         if kind == "hotpatch":
             same = [b for b in builds if b["version"] == vers[0] and b["month"] == u["month"] and b["kb"] != kb

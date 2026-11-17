@@ -93,6 +93,10 @@ a.issue.banner:hover { border-color: var(--stripe-red); }
 .pill.dis { background: var(--warn-bg); color: var(--warn); }
 .xp-txt { color: var(--danger); font-weight: 600; }
 .xp-line { margin-top: 6px; padding: 6px 10px; border-radius: 6px; background: var(--danger-bg); color: var(--danger); }
+.field[hidden] { display: none; }
+.field .hint { font-size: 12px; color: var(--muted); }
+.field .hint code { font-size: 12px; }
+#bld { max-width: 280px; font-size: 15px; font-weight: 400; }
 .ok-line { color: var(--ok); font-weight: 600; }
 .issue .it { font-weight: 600; display: block; margin: 2px 0; }
 .issue .is { color: var(--muted); font-size: 13px; }

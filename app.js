@@ -69,6 +69,12 @@ async function init() {
   let t;
   q.oninput = () => { clearTimeout(t); t = setTimeout(() => { state.q = q.value.trim(); render(); }, 200); };
   setupSuggest();
+  $("bld").onchange = () => {
+    const v = $("bld").value;
+    state.q = v ? v.replace(/^10\.0\./, "") : "";
+    $("q").value = state.q;
+    render();
+  };
   window.addEventListener("hashchange", () => { readHash(); sel.value = state.ver; q.value = state.q; $("sw").value = state.software[state.sw] ? state.sw : ""; load(); });
   await load();
 }
@@ -76,11 +82,13 @@ async function init() {
 async function load() {
   $("months").innerHTML = '<p class="muted">Loading…</p>';
   state.data = await getJSON(`data/versions/${state.ver}.json`);
+  fillBuilds();
   render();
 }
 
 function render() {
   writeHash();
+  syncBuildMenu();
   renderChips();
   const sw = state.software[state.sw];
   $("swinfo").innerHTML = sw ? `<details class="sw-card" id="swdetails"><summary><span class="l">${esc(sw.name)}: the ${sw.depends_on.length} parts of Windows it relies on</span><span class="r">show</span></summary>${swCard()}</details>` : "";
@@ -119,6 +127,30 @@ function render() {
   }
   if (state.q.length >= 2) { $("issues").innerHTML = ""; renderSearch(); $("months").innerHTML = ""; }
   else { $("results").innerHTML = state.area ? areaCard(state.area) : ""; renderMonths(); if (state.area) loadNames().then(() => { if (state.area && !state.q) $("results").innerHTML = areaCard(state.area); }); }
+}
+
+// ---- Build menu: pick a build of the chosen Windows version ----
+function fillBuilds() {
+  const sel = $("bld"), field = $("bldfield");
+  const list = state.builds.filter((x) => x.version === state.ver && x.build.startsWith("10.0."));
+  if (!list.length) { field.hidden = true; sel.innerHTML = ""; return; }   // Exchange, SQL Server, Microsoft 365: no Windows builds
+  field.hidden = false;
+  const byBuild = new Map();
+  for (const x of list) (byBuild.get(x.build) || byBuild.set(x.build, []).get(x.build)).push(x);
+  const builds = [...byBuild.keys()].sort((a, b) => bparts(b)[3] - bparts(a)[3]);
+  sel.innerHTML = `<option value="">All builds (newest first below)</option>` + builds.map((b) => {
+    const xs = byBuild.get(b);
+    const kbs = xs.map((x) => x.kb + (kindLabel(x.kb) ? " · " + kindLabel(x.kb) : "")).join(", ");
+    return `<option value="${esc(b)}">${esc(b.replace(/^10\.0\./, ""))} · ${esc(kbs)} · ${esc(monthName(xs[0].month))}</option>`;
+  }).join("");
+  syncBuildMenu();
+}
+function syncBuildMenu() {
+  const sel = $("bld");
+  if (!sel || !sel.options.length) return;
+  const b = parseBuild(state.q);
+  const want = b ? b.text : "";
+  sel.value = [...sel.options].some((o) => o.value === want) ? want : "";
 }
 
 // ---- Build number lookup (R1) ----
@@ -214,7 +246,13 @@ function compareCard(pair, h1, h2) {
 // ---- Update types and troubleshooting (hotpatch label + "Something broke?") ----
 const KIND_LABEL = { hotpatch: "Hotpatch", baseline: "Baseline", "out-of-band": "Out-of-band", preview: "Preview" };
 function kbKind(kb) { return ((state.kbinfo || {})[kb] || {}).kind || ""; }
-function kbBadge(kb) { const k = KIND_LABEL[kbKind(kb)]; return k ? ` <span class="pill src" title="${k === "Hotpatch" ? "Patched in memory, no restart" : ""}">${k}</span>` : ""; }
+function kindLabel(kb) {
+  // "Baseline" only means something where hotpatching is mainstream (Windows 11, Server 2025); elsewhere it's just the monthly update
+  const k = kbKind(kb);
+  if (k === "baseline" && !/^(win11|server-2025)/.test(state.ver)) return "";
+  return KIND_LABEL[k] || "";
+}
+function kbBadge(kb) { const k = kindLabel(kb); return k ? ` <span class="pill src" title="${k === "Hotpatch" ? "Patched in memory, no restart" : ""}">${k}</span>` : ""; }
 function fullUpdateFor(ref, hit) {
   // the full (non-hotpatch) update for the same month and version, newest build first
   const same = hit.list.filter((x) => x.month === ref.month && x.kb !== ref.kb && kbKind(x.kb) !== "hotpatch");
@@ -693,7 +731,7 @@ function suggest(q, mode) {
     for (const m of state.data.months) for (const u of m.updates) {
       if (seen.has(u.kb)) continue; seen.add(u.kb);
       const b = state.builds.find((x) => x.kb === u.kb && x.version === state.ver);
-      if (has(u.kb) || (b && has(b.build))) items.push({ kind: "update", text: u.kb + (KIND_LABEL[kbKind(u.kb)] ? " · " + KIND_LABEL[kbKind(u.kb)] : ""), value: u.kb, note: monthName(m.month) + (b ? " · " + b.build.replace("10.0.", "") : "") });
+      if (has(u.kb) || (b && has(b.build))) items.push({ kind: "update", text: u.kb + (kindLabel(u.kb) ? " · " + kindLabel(u.kb) : ""), value: u.kb, note: monthName(m.month) + (b ? " · " + b.build.replace("10.0.", "") : "") });
     }
     if (items.length) groups.push(["Updates", items.slice(0, q ? 5 : 4)]);
   }
