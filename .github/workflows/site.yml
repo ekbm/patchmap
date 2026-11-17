@@ -53,6 +53,7 @@ jobs:
           cp -r kb problem error version sitemap.xml robots.txt _site/
           cp index.html about.html app.js style.css LICENSE LICENSE-DATA.md _site/
           cp -r data _site/data
+          cp -r images _site/images
           cp feed.xml _site/ && cp -r feeds _site/feeds
           if [ -f CNAME ]; then cp CNAME _site/; fi
 

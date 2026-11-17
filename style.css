@@ -83,6 +83,9 @@ select:focus, input:focus { outline: none; border-color: var(--accent); box-shad
 .jumps { margin-top: 8px; font-size: 14px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
 .jumps .jl { font-size: 13px; padding: 2px 9px; border-radius: 8px; background: var(--chip); border: 1px solid var(--line); color: var(--text); text-decoration: none; }
 .jumps .jh { color: var(--muted); font-size: 13px; }
+.shot { margin: 14px 0 18px; }
+.shot img { max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: 8px; display: block; }
+.shot figcaption { font-size: 13px; color: var(--muted); margin-top: 6px; }
 .ok-line { color: var(--ok); font-weight: 600; }
 .issue .it { font-weight: 600; display: block; margin: 2px 0; }
 .issue .is { color: var(--muted); font-size: 13px; }
