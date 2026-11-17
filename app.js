@@ -110,6 +110,11 @@ function render() {
     fileHistory(name).then((h) => { if (state.q.toLowerCase() === name) $("results").innerHTML = h; });
     return;
   }
+  const kbq = /^kb\d{6,7}$/i.test(state.q) ? state.q.toUpperCase() : null;
+  if (kbq && !state.builds.some((x) => x.kb === kbq && x.version === state.ver)) {
+    const other = state.builds.find((x) => x.kb === kbq);
+    if (other) { state.ver = other.version; $("ver").value = other.version; load(); return; }
+  }
   if (state.q.length >= 2) { $("issues").innerHTML = ""; renderSearch(); $("months").innerHTML = ""; }
   else { $("results").innerHTML = ""; renderMonths(); }
 }
@@ -251,6 +256,20 @@ function tshootBlock(ref) {
     tsList(T.uninstall) +
     (areaBits ? `<div class="is"><b>By area</b> (open the one that's failing):</div>${areaBits}` : "") +
     `<div class="is">Searching an error code (for example 0xC1 or 0x0000011b) shows any matching guidance. Not Microsoft advice; check Microsoft's page for the update.</div></details>`;
+}
+function kbCard(q) {
+  // Searching an update number: a summary card on top with its type, build and the troubleshooting guide.
+  if (!/^kb\d{6,7}$/i.test(q)) return "";
+  const kb = q.toUpperCase();
+  const ref = state.builds.find((x) => x.kb === kb && x.version === state.ver);
+  const pageLink = `<a href="/kb/${esc(kb)}/">Full page for ${esc(kb)}</a> · <a href="https://support.microsoft.com/help/${esc(kb.slice(2))}" rel="noopener">Microsoft's page</a>`;
+  if (!ref) return `<div class="issue build"><span class="pill src">Update</span><span class="it">${esc(kb)}${kbBadge(kb)}</span><div class="is">${pageLink}</div></div>`;
+  const hit = findBuild(parseBuild(ref.build));
+  const newer = hit ? hit.later.filter((x) => bparts(x.build)[3] > bparts(ref.build)[3]) : [];
+  return `<div class="issue build"><span class="pill src">Update</span><span class="it">${esc(kb)}${kbBadge(kb)}: ${esc(state.data.label)}, ${esc(monthName(ref.month))}, build ${esc(ref.build)}</span>` +
+    (hit ? hotpatchNote(ref, hit) : "") +
+    `<div>${newer.length ? `${newer.length} newer update${newer.length > 1 ? "s" : ""} since, the latest being ${esc(newer[newer.length - 1].kb)} (build ${esc(newer[newer.length - 1].build)}).` : "The newest update Patchmap knows for this version."}</div>` +
+    `<div class="is">${pageLink}</div>` + tshootBlock(ref) + `</div>`;
 }
 function patternHits(q) {
   const T = state.tshoot;
@@ -514,8 +533,8 @@ function renderSearch() {
     if (hits.length) { total += hits.length; out.push([m, hits]); }
   }
   const head = `<p class="muted">${total} fixes match “${esc(state.q)}” on ${esc(state.data.label)}${state.area ? " in " + esc(label(state.area)) : ""}.</p>`;
-  $("results").innerHTML = patternHits(state.q).join("") + issueHits.map(issueHTML).join("") + head + out.map(([m, hits]) =>
-    `<details class="month"${out[0][0] === m ? " open" : ""}><summary><span class="l">${monthName(m.month)} · ${m.updates.map((u) => `<span class="kb">${esc(u.kb)}</span>`).join(" ")}</span><span class="r">${hits.length} matches</span></summary>${hits.slice(0, 300).map(fixHTML).join("")}</details>`
+  $("results").innerHTML = kbCard(state.q) + patternHits(state.q).join("") + issueHits.map(issueHTML).join("") + head + out.map(([m, hits]) =>
+    `<details class="month"${out[0][0] === m ? " open" : ""}><summary><span class="l">${monthName(m.month)} · ${m.updates.map((u) => `<span class="kb">${esc(u.kb)}</span>${kbBadge(u.kb)}`).join(" ")}</span><span class="r">${hits.length} matches</span></summary>${hits.slice(0, 300).map(fixHTML).join("")}</details>`
   ).join("");
 }
 
