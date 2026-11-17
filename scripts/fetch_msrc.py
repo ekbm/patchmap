@@ -109,6 +109,43 @@ def note(v, note_type):
     return None
 
 
+KEV_URL = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+KEV = {}  # CVE -> {"added": date, "ransomware": bool}; filled in main()
+
+
+def load_kev():
+    """CISA's Known Exploited Vulnerabilities list: weaknesses attackers are confirmed to be using."""
+    try:
+        data = get_json(KEV_URL, CACHE / "kev.json", refresh=True)
+    except Exception as e:  # keep going without it; the weekly run tries again
+        print(f"  CISA list not available ({e.__class__.__name__}); exploited flags use Microsoft's data only")
+        return {}
+    return {x["cveID"]: {"added": x.get("dateAdded"), "ransomware": (x.get("knownRansomwareCampaignUse") or "").lower() == "known"}
+            for x in data.get("vulnerabilities", [])}
+
+
+def exploit_info(v):
+    """Microsoft's 'Exploit Status' (exploited / publicly disclosed / how likely) + CISA's list."""
+    out = {}
+    for t in v.get("Threats", []):
+        if t.get("Type") == 1:
+            val = (t.get("Description") or {}).get("Value", "")
+            if re.search(r"Exploited:\s*Yes", val):
+                out["exploited"] = True
+            if re.search(r"Publicly Disclosed:\s*Yes", val):
+                out["disclosed"] = True
+            if re.search(r"Exploitation More Likely", val):
+                out["likely"] = True
+            break
+    k = KEV.get(v["CVE"])
+    if k:
+        out["exploited"] = True
+        out["kev"] = k["added"]
+        if k["ransomware"]:
+            out["ransomware"] = True
+    return out
+
+
 def process_month(month, rules, refresh):
     doc = get_json(month["CvrfUrl"], CACHE / f"{month['ID']}.json", refresh)
     released = doc["DocumentTracking"]["InitialReleaseDate"][:10]
@@ -184,6 +221,7 @@ def process_month(month, rules, refresh):
             "kbs": {ver: sorted(s) for ver, s in sorted(fix_kbs.items())},
             "msrc_url": f"https://msrc.microsoft.com/update-guide/vulnerability/{v['CVE']}",
         }
+        fix.update(exploit_info(v))
         fixes.append(fix)
         for kb in {k for s in fix_kbs.values() for k in s} - {C2R}:
             kbs[kb]["fixes"].append(v["CVE"])
@@ -259,6 +297,7 @@ def write_versions(month_results, all_kbs):
                     a["components"].setdefault(f["component"], []).append({
                         "cve": f["cve"], "title": f["title"], "impact": f["impact"],
                         "severity": f["severity"].get(ver), "kbs": f["kbs"][ver],
+                        **{k: f[k] for k in ("exploited", "disclosed", "likely", "kev", "ransomware") if f.get(k)},
                     })
             ups = [{"kb": k, "build": all_kbs[k]["versions"].get(ver), "type": all_kbs[k]["type"],
                     "supersedes": all_kbs[k]["supersedes"]} for k in kbs]
@@ -266,6 +305,7 @@ def write_versions(month_results, all_kbs):
                 ups.append({"kb": C2R, "build": None, "type": "Microsoft 365 Apps / Office 2021-2024", "supersedes": []})
             months_out.append({
                 "month": res["month"], "released": res["released"], "fix_count": len(fixes),
+                "exploited_count": sum(1 for f in fixes if f.get("exploited")),
                 "updates": ups,
                 "areas": dict(sorted(areas.items(), key=lambda x: -x[1]["count"])),
             })
@@ -279,6 +319,8 @@ def main():
     args = ap.parse_args()
 
     rules = load_tag_rules()
+    KEV.update(load_kev())
+    print(f"CISA known-exploited list: {len(KEV)} entries")
     months = pick_months(args.months)
     print(f"Fetching {len(months)} months: {months[0]['ID']} .. {months[-1]['ID']}")
 

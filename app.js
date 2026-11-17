@@ -227,15 +227,26 @@ function hotpatchNote(ref, hit) {
     (full ? ` The full update for the same month is <b>${esc(full.kb)}</b> (build ${esc(full.build)}), which replaces the files on disk.` : "") + `</div>`;
 }
 function kbFixStats(kb, month) {
-  const m = state.data.months.find((x) => x.month === month);
+  // A fix published in an earlier month can be delivered by a later update, so look at every month.
   const seen = new Map(), areas = {};
-  if (m) for (const [t, a] of Object.entries(m.areas)) for (const fx of Object.values(a.components)) for (const f of fx) {
+  for (const m of state.data.months) for (const [t, a] of Object.entries(m.areas)) for (const fx of Object.values(a.components)) for (const f of fx) {
     if (!(f.kbs || []).includes(kb)) continue;
     seen.set(f.cve, f);
     areas[t] = areas[t] || new Set(); areas[t].add(f.cve);
   }
-  const crit = [...seen.values()].filter((f) => f.severity === "Critical").length;
-  return { total: seen.size, crit, areas: Object.entries(areas).map(([t, set]) => [t, set.size]).sort((a, b) => b[1] - a[1]) };
+  const all = [...seen.values()];
+  const crit = all.filter((f) => f.severity === "Critical").length;
+  const exploited = all.filter((f) => f.exploited);
+  const exAreas = {};
+  for (const [t, set] of Object.entries(areas)) { const n = exploited.filter((f) => set.has(f.cve)).length; if (n && t !== "other") exAreas[t] = n; }
+  return { total: seen.size, crit, exploited: exploited.length, ransomware: exploited.filter((f) => f.ransomware).length,
+           likely: all.filter((f) => f.likely && !f.exploited).length, exAreas,
+           areas: Object.entries(areas).map(([t, set]) => [t, set.size]).sort((a, b) => b[1] - a[1]) };
+}
+function exploitLine(st, kb) {
+  const where = Object.entries(st.exAreas).sort((a, b) => (b[0] === "print") - (a[0] === "print") || b[1] - a[1]).map(([t, n]) => `${n} in ${label(t)}`).join(", ");
+  if (st.exploited) return `<div class="xp-line"><b>${st.exploited} of its ${st.total} fixes ${st.exploited === 1 ? "is" : "are"} being exploited</b>${where ? ` (${esc(where)})` : ""}${st.ransomware ? `, ${st.ransomware} used in ransomware` : ""}. Attackers are using ${st.exploited === 1 ? "this weakness" : "these weaknesses"}: don't stay without ${esc(kb)} for long.</div>`;
+  return `<div class="is">None of its ${st.total} fixes are known to be exploited (Microsoft and CISA, as of ${esc(state.generated)})${st.likely ? `; Microsoft rates ${st.likely} as more likely to be exploited` : ""}.</div>`;
 }
 function tsList(items) { return items && items.length ? `<ul class="sw-list">${items.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""; }
 function tshootBlock(ref) {
@@ -254,7 +265,7 @@ function tshootBlock(ref) {
   return `<details class="tshoot"><summary><span class="l">Something broke after ${esc(ref.kb)}?</span><span class="r">steps</span></summary>` +
     tsList(T.general) +
     (kbKind(ref.kb) === "hotpatch" ? `<p class="is"><b>Hotpatch:</b> ${esc(T.hotpatch)}${full ? ` For this machine that's <b>${esc(full.kb)}</b> (build ${esc(full.build)}).` : ""}</p>` : "") +
-    `<div class="is"><b>Before removing it:</b> ${esc(ref.kb)} carries ${st.total} security fixes${st.crit ? ` (${st.crit} critical)` : ""}${top ? `, most in ${esc(top)}` : ""}.</div>` +
+    `<div class="is"><b>Before removing it:</b> ${esc(ref.kb)} carries ${st.total} security fixes${st.crit ? ` (${st.crit} critical)` : ""}${top ? `, most in ${esc(top)}` : ""}.</div>` + exploitLine(st, ref.kb) +
     tsList(T.uninstall) +
     (areaBits ? `<div class="is"><b>By area</b> (open the one that's failing):</div>${areaBits}` : "") +
     `<div class="is">Searching an error code (for example 0xC1 or 0x0000011b) shows any matching guidance. Not Microsoft advice; check Microsoft's page for the update.</div></details>`;
@@ -271,8 +282,10 @@ function areaCard(t) {
   const files = fileNamesForVersion().filter(([, tg]) => tg.includes(t)).map(([n]) => n).sort((a, b) => key.includes(b) - key.includes(a)).slice(0, 6);
   const pats = ((state.tshoot || {}).patterns || []).filter((p) => p.area === t);
   const open = state.issues.filter((i) => i.versions.includes(state.ver) && i.areas.includes(t) && i.status !== "fixed");
+  let exN = 0;
+  for (const m of months) for (const fx of Object.values(m.areas[t].components)) exN += fx.filter((f) => f.exploited).length;
   return `<div class="issue build"><span class="pill src">Area</span><span class="it">${esc(label(t))} on ${esc(state.data.label)}</span>` +
-    `<div>Latest: ${esc(monthName(latest.month))} (${latest.updates.map((u) => esc(u.kb) + kbBadge(u.kb)).join(", ")}): <b>${latest.areas[t].count} fixes</b>. ${months.length} of the last ${state.data.months.length} months touched this area.${open.length ? ` <b>${open.length} known problem${open.length > 1 ? "s" : ""} not fixed yet.</b>` : ""}</div>` +
+    `<div>Latest: ${esc(monthName(latest.month))} (${latest.updates.map((u) => esc(u.kb) + kbBadge(u.kb)).join(", ")}): <b>${latest.areas[t].count} fixes</b>. ${months.length} of the last ${state.data.months.length} months touched this area.${exN ? ` <span class="xp-txt">${exN} exploited fix${exN > 1 ? "es" : ""} in 12 months</span> (search “exploited”).` : ""}${open.length ? ` <b>${open.length} known problem${open.length > 1 ? "s" : ""} not fixed yet.</b>` : ""}</div>` +
     jumpsRow([
       ["Parts of Windows", topComps.map(([c, n]) => jl({ q: c, a: t }, `${c.replace(/^Windows /, "")} ${n}`))],
       ["Files", files.map((f) => jl({ q: f }, f))],
@@ -304,7 +317,7 @@ function kbCard(q) {
   return `<div class="issue build"><span class="pill src">Update</span><span class="it">${esc(kb)}${kbBadge(kb)}: ${esc(state.data.label)}, ${esc(monthName(ref.month))}, build ${esc(ref.build)}</span>` +
     (hit ? hotpatchNote(ref, hit) : "") +
     `<div>${newer.length ? `${newer.length} newer update${newer.length > 1 ? "s" : ""} since, the latest being ${esc(newer[newer.length - 1].kb)} (build ${esc(newer[newer.length - 1].build)}).` : "The newest update Patchmap knows for this version."}</div>` +
-    `<div class="is">${pageLink}</div>` + kbJumps(ref) + tshootBlock(ref) + `</div>`;
+    exploitLine(kbFixStats(ref.kb, ref.month), ref.kb) + `<div class="is">${pageLink}</div>` + kbJumps(ref) + tshootBlock(ref) + `</div>`;
 }
 function patternHits(q) {
   const T = state.tshoot;
@@ -366,7 +379,7 @@ function buildCard(b, hit) {
       (problemsSince.length ? `<div class="is">Known problems that started in those later updates: ${problemsSince.length} (${problemsSince.filter((i) => i.status !== "fixed").length} not fixed yet). See the months below.</div>` : "");
   }
   const open = openUpTo.length ? `<div class="is">Known problems not fixed yet, from this update or earlier: ${openUpTo.map((i) => esc(i.title)).join("; ")}.</div>` : "";
-  return `<div class="issue build"><span class="pill src">Build lookup</span><span class="it">${head}</span>${note}${after}${open}${hit.exact.length ? tshootBlock(ref) : ""}</div>`;
+  return `<div class="issue build"><span class="pill src">Build lookup</span><span class="it">${head}</span>${note}${hit.exact.length ? exploitLine(kbFixStats(ref.kb, ref.month), ref.kb) : ""}${after}${open}${hit.exact.length ? tshootBlock(ref) : ""}</div>`;
 }
 
 function renderChips() {
@@ -409,10 +422,18 @@ function renderIssues() {
     `<a class="issue open banner" href="#" data-goto="${esc(i.id)}"><span class="pill open">Not fixed yet</span><span class="it">${esc(i.title)}</span><div class="is">Known problem in the latest update (${monthName(latest)}). <u>See details</u></div></a>`).join("");
 }
 
+function exploitPills(f) {
+  // red: attackers are using it; amber: details were public before the fix; grey: Microsoft rates it more likely to be exploited
+  let out = "";
+  if (f.exploited) out += `<span class="pill xp" title="${f.kev ? "On CISA's Known Exploited Vulnerabilities list since " + esc(f.kev) : "Microsoft says this was exploited"}">Exploited${f.ransomware ? " · ransomware" : ""}</span>`;
+  else if (f.likely) out += `<span class="pill src" title="Microsoft rates this weakness as more likely to be exploited">More likely to be exploited</span>`;
+  if (f.disclosed) out += `<span class="pill dis" title="Details were public before the fix">Publicly disclosed</span>`;
+  return out;
+}
 function fixHTML(f) {
   const kbs = (f.kbs || []).map((k) => `<span class="kb">${esc(k)}</span>`).join(" ");
   return `<div class="fix"><a class="cve" href="https://msrc.microsoft.com/update-guide/vulnerability/${esc(f.cve)}" rel="noopener">${esc(f.cve)}</a>` +
-    `<span>${esc(f.title)}</span>${f.severity ? `<span class="sev ${esc(f.severity)}">${esc(f.severity)}</span>` : ""}<span class="muted">${kbs}</span></div>`;
+    `<span>${esc(f.title)}</span>${f.severity ? `<span class="sev ${esc(f.severity)}">${esc(f.severity)}</span>` : ""}${exploitPills(f)}<span class="muted">${kbs}</span></div>`;
 }
 
 function renderMonths(only) {
@@ -428,7 +449,7 @@ function renderMonths(only) {
     const kf = issuesFor(m.month).length - ki;
     const kt = [ki ? `${ki} problem${ki > 1 ? "s" : ""} not fixed yet` : "", kf ? `${kf} fixed` : ""].filter(Boolean).join(", ");
     return `<details class="month" data-i="${idx}"${idx === firstShown ? " open" : ""}><summary><span class="l">${monthName(m.month)} · ${ups}</span>` +
-      `<span class="r">${n} fixes${state.area ? " in " + esc(label(state.area)) : ""}${swCount(m) !== null ? ` · <b>${swCount(m)} in ${esc(state.software[state.sw].name)}'s parts</b>` : ""}${kt ? " · " + kt : ""}</span></summary></details>`;
+      `<span class="r">${m.exploited_count ? `<span class="xp-txt">${m.exploited_count} exploited</span> · ` : ""}${n} fixes${state.area ? " in " + esc(label(state.area)) : ""}${swCount(m) !== null ? ` · <b>${swCount(m)} in ${esc(state.software[state.sw].name)}'s parts</b>` : ""}${kt ? " · " + kt : ""}</span></summary></details>`;
   }).join("");
   box.querySelectorAll("details.month").forEach((d) => {
     const fill = () => { if (!d.dataset.done) { d.insertAdjacentHTML("beforeend", monthBody(months[+d.dataset.i])); d.dataset.done = 1; wireAreas(d); } };
@@ -593,7 +614,7 @@ function renderSearch() {
       const areaHit = label(t).toLowerCase().includes(q) || t.includes(q);
       for (const [c, fixes] of Object.entries(a.components)) {
         for (const f of fixes) {
-          if (kbHit || areaHit || (c + " " + f.title + " " + f.cve + " " + (f.kbs || []).join(" ")).toLowerCase().includes(q)) {
+          if (kbHit || areaHit || (c + " " + f.title + " " + f.cve + " " + (f.kbs || []).join(" ") + (f.exploited ? " exploited zero-day zero day" : "") + (f.disclosed ? " publicly disclosed" : "") + (f.ransomware ? " ransomware" : "")).toLowerCase().includes(q)) {
             if (!hits.some((h) => h.cve === f.cve)) hits.push(f);
           }
         }

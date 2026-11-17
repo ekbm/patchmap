@@ -322,7 +322,8 @@
      "KB5089549"
     ]
    },
-   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33835"
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33835",
+   "likely": true
   },
   {
    "cve": "CVE-2026-33837",
@@ -365,7 +366,8 @@
      "KB5089549"
     ]
    },
-   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33837"
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33837",
+   "likely": true
   },
   {
    "cve": "CVE-2026-33838",
@@ -477,7 +479,8 @@
      "KB5089549"
     ]
    },
-   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33840"
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33840",
+   "likely": true
   },
   {
    "cve": "CVE-2026-33841",
@@ -512,7 +515,8 @@
      "KB5089549"
     ]
    },
-   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33841"
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33841",
+   "likely": true
   },
   {
    "cve": "CVE-2026-34329",
@@ -1366,7 +1370,8 @@
      "KB5089549"
     ]
    },
-   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-35416"
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-35416",
+   "likely": true
   },
   {
    "cve": "CVE-2026-35417",
@@ -1405,7 +1410,8 @@
      "KB5089549"
     ]
    },
-   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-35417"
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-35417",
+   "likely": true
   },
   {
    "cve": "CVE-2026-35418",
@@ -1748,7 +1754,8 @@
      "KB5089549"
     ]
    },
-   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40369"
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40369",
+   "likely": true
   },
   {
    "cve": "CVE-2026-40370",
@@ -1949,7 +1956,8 @@
      "KB5089549"
     ]
    },
-   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40397"
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40397",
+   "likely": true
   },
   {
    "cve": "CVE-2026-40398",
@@ -1992,7 +2000,8 @@
      "KB5089549"
     ]
    },
-   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40398"
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40398",
+   "likely": true
   },
   {
    "cve": "CVE-2026-40399",
@@ -2736,7 +2745,9 @@
      "KB5094144"
     ]
    },
-   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42897"
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42897",
+   "exploited": true,
+   "kev": "2026-05-15"
   },
   {
    "cve": "CVE-2026-45585",
@@ -2763,7 +2774,9 @@
      "KB5094126"
     ]
    },
-   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45585"
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45585",
+   "disclosed": true,
+   "likely": true
   }
  ]
 }

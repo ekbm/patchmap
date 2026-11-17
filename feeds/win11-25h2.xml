@@ -69,7 +69,7 @@
     <updated>2026-10-13T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;q=KB5127648"/>
     <category term="monthly-update"/>
-    <summary>KB5127648 (build 10.0.26200.9711). 1021 security fixes. Biggest areas: kernel-drivers 246, apps-desktop 151, network 125, storage 118, server-roles 83.</summary>
+    <summary>KB5127648 (build 10.0.26200.9711). 1021 security fixes, 2 being exploited (Microsoft/CISA). Biggest areas: kernel-drivers 246, apps-desktop 151, network 125, storage 118, server-roles 83.</summary>
   </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:issue:ms-5006:fixed</id>
@@ -125,7 +125,7 @@
     <updated>2026-09-08T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;q=KB5124008"/>
     <category term="monthly-update"/>
-    <summary>KB5124008 (build 10.0.26200.9445). 627 security fixes. Biggest areas: storage 107, kernel-drivers 99, sign-in 99, apps-desktop 89, security 79.</summary>
+    <summary>KB5124008 (build 10.0.26200.9445). 627 security fixes, 1 being exploited (Microsoft/CISA). Biggest areas: storage 107, kernel-drivers 99, sign-in 99, apps-desktop 89, security 79.</summary>
   </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:issue:ms-4959:fixed</id>
@@ -165,7 +165,7 @@
     <updated>2026-08-11T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;q=KB5120994"/>
     <category term="monthly-update"/>
-    <summary>KB5120994 (build 10.0.26200.9106), KB5121003 (build 10.0.26200.9168), KB5123273 (build 10.0.26200.9165), KB5123607 (build 10.0.26200.9165). 195 security fixes. Biggest areas: network 31, kernel-drivers 27, apps-desktop 23, graphics 23, storage 18.</summary>
+    <summary>KB5120994 (build 10.0.26200.9106), KB5121003 (build 10.0.26200.9168), KB5123273 (build 10.0.26200.9165), KB5123607 (build 10.0.26200.9165). 195 security fixes, 1 being exploited (Microsoft/CISA). Biggest areas: network 31, kernel-drivers 27, apps-desktop 23, graphics 23, storage 18.</summary>
   </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:issue:ms-4891:fixed</id>
@@ -245,7 +245,7 @@
     <updated>2026-04-14T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;q=KB5083769"/>
     <category term="monthly-update"/>
-    <summary>KB5083769 (build 10.0.26200.8246). 119 security fixes. Biggest areas: network 31, apps-desktop 29, kernel-drivers 27, storage 11, security 9.</summary>
+    <summary>KB5083769 (build 10.0.26200.8246). 119 security fixes, 2 being exploited (Microsoft/CISA). Biggest areas: network 31, apps-desktop 29, kernel-drivers 27, storage 11, security 9.</summary>
   </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:issue:ms-3360:fixed</id>
@@ -277,7 +277,7 @@
     <updated>2026-02-10T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;q=KB5077181"/>
     <category term="monthly-update"/>
-    <summary>KB5077181 (build 10.0.26200.7840), KB5077212 (build 10.0.26200.7781). 26 security fixes. Biggest areas: kernel-drivers 12, network 6, server-roles 5, other 3, graphics 2.</summary>
+    <summary>KB5077181 (build 10.0.26200.7840), KB5077212 (build 10.0.26200.7781). 26 security fixes, 5 being exploited (Microsoft/CISA). Biggest areas: kernel-drivers 12, network 6, server-roles 5, other 3, graphics 2.</summary>
   </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:issue:ms-3760:fixed</id>
@@ -301,7 +301,7 @@
     <updated>2026-01-13T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;q=KB5074109"/>
     <category term="monthly-update"/>
-    <summary>KB5074109 (build 10.0.26200.7623). 85 security fixes. Biggest areas: kernel-drivers 16, management 14, other 11, apps-desktop 10, graphics 9.</summary>
+    <summary>KB5074109 (build 10.0.26200.7623). 85 security fixes, 1 being exploited (Microsoft/CISA). Biggest areas: kernel-drivers 16, management 14, other 11, apps-desktop 10, graphics 9.</summary>
   </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:update:win11-25h2:2025-Dec</id>
@@ -309,7 +309,7 @@
     <updated>2025-12-09T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=win11-25h2&amp;q=KB5066835"/>
     <category term="monthly-update"/>
-    <summary>KB5066835 (build 10.0.26200.6899), KB5068861 (build 10.0.26200.7171), KB5068966 (build 10.0.26200.7092), KB5072014 (build 10.0.26200.7392), KB5072033 (build 10.0.26200.7462), KB5074204 (build 10.0.26100.7392). 36 security fixes. Biggest areas: storage 13, kernel-drivers 9, server-roles 6, graphics 6, remote-access 5.</summary>
+    <summary>KB5066835 (build 10.0.26200.6899), KB5068861 (build 10.0.26200.7171), KB5068966 (build 10.0.26200.7092), KB5072014 (build 10.0.26200.7392), KB5072033 (build 10.0.26200.7462), KB5074204 (build 10.0.26100.7392). 36 security fixes, 1 being exploited (Microsoft/CISA). Biggest areas: storage 13, kernel-drivers 9, server-roles 6, graphics 6, remote-access 5.</summary>
   </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:issue:ms-3707:fixed</id>

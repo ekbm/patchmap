@@ -6,6 +6,7 @@
    "month": "2026-Nov",
    "released": "2026-11-10",
    "fix_count": 175,
+   "exploited_count": 1,
    "updates": [
     {
      "kb": "Click-to-Run update",
@@ -916,7 +917,9 @@
         "severity": "Moderate",
         "kbs": [
          "Click-to-Run update"
-        ]
+        ],
+        "exploited": true,
+        "kev": "2026-11-10"
        },
        {
         "cve": "CVE-2026-124227",
@@ -1775,7 +1778,9 @@
         "severity": "Moderate",
         "kbs": [
          "Click-to-Run update"
-        ]
+        ],
+        "exploited": true,
+        "kev": "2026-11-10"
        },
        {
         "cve": "CVE-2026-124227",
@@ -1804,6 +1809,7 @@
    "month": "2026-Oct",
    "released": "2026-10-13",
    "fix_count": 163,
+   "exploited_count": 0,
    "updates": [
     {
      "kb": "Click-to-Run update",
@@ -3422,6 +3428,7 @@
    "month": "2026-Sep",
    "released": "2026-09-08",
    "fix_count": 105,
+   "exploited_count": 0,
    "updates": [
     {
      "kb": "Click-to-Run update",
@@ -4532,6 +4539,7 @@
    "month": "2026-Aug",
    "released": "2026-08-11",
    "fix_count": 13,
+   "exploited_count": 0,
    "updates": [
     {
      "kb": "KB5002791",
@@ -4698,6 +4706,7 @@
    "month": "2026-Jul",
    "released": "2026-07-14",
    "fix_count": 27,
+   "exploited_count": 0,
    "updates": [
     {
      "kb": "KB5002273",
@@ -4990,6 +4999,7 @@
    "month": "2026-Jun",
    "released": "2026-06-09",
    "fix_count": 10,
+   "exploited_count": 0,
    "updates": [
     {
      "kb": "KB5002852",
@@ -5112,6 +5122,7 @@
    "month": "2026-May",
    "released": "2026-05-12",
    "fix_count": 3,
+   "exploited_count": 0,
    "updates": [
     {
      "kb": "KB5002578",
@@ -5178,6 +5189,7 @@
    "month": "2026-Apr",
    "released": "2026-04-14",
    "fix_count": 1,
+   "exploited_count": 0,
    "updates": [
     {
      "kb": "KB5002859",
@@ -5211,6 +5223,7 @@
    "month": "2026-Mar",
    "released": "2026-03-10",
    "fix_count": 2,
+   "exploited_count": 0,
    "updates": [
     {
      "kb": "KB5002838",
@@ -5261,6 +5274,7 @@
    "month": "2026-Jan",
    "released": "2026-01-13",
    "fix_count": 4,
+   "exploited_count": 1,
    "updates": [
     {
      "kb": "KB5002713",
@@ -5318,7 +5332,9 @@
         "severity": "Important",
         "kbs": [
          "KB5002713"
-        ]
+        ],
+        "exploited": true,
+        "kev": "2026-01-26"
        }
       ]
      }
@@ -5329,6 +5345,7 @@
    "month": "2025-Dec",
    "released": "2025-12-09",
    "fix_count": 2,
+   "exploited_count": 0,
    "updates": [
     {
      "kb": "KB5002819",

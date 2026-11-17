@@ -6,6 +6,7 @@
    "month": "2026-Nov",
    "released": "2026-11-10",
    "fix_count": 522,
+   "exploited_count": 0,
    "updates": [
     {
      "kb": "KB5131083",
@@ -83,7 +84,8 @@
         "severity": "Important",
         "kbs": [
          "KB5131291"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-112790",
@@ -191,7 +193,8 @@
         "severity": "Important",
         "kbs": [
          "KB5131291"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-95905",
@@ -738,7 +741,8 @@
         "severity": "Important",
         "kbs": [
          "KB5131291"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-95938",
@@ -864,7 +868,8 @@
         "severity": "Important",
         "kbs": [
          "KB5131291"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-96133",
@@ -920,7 +925,8 @@
         "severity": "Important",
         "kbs": [
          "KB5131291"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows USB Hub Driver": [
@@ -1291,7 +1297,8 @@
         "severity": "Important",
         "kbs": [
          "KB5131291"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-119873",
@@ -1530,7 +1537,8 @@
         "severity": "Critical",
         "kbs": [
          "KB5131291"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-88212",
@@ -1688,7 +1696,8 @@
         "severity": "Important",
         "kbs": [
          "KB5131291"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-95923",
@@ -1763,7 +1772,8 @@
         "severity": "Important",
         "kbs": [
          "KB5131291"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Virtual Filtering Platform (VFP)": [
@@ -1807,7 +1817,8 @@
         "severity": "Important",
         "kbs": [
          "KB5131291"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-96102",
@@ -2255,7 +2266,8 @@
         "severity": "Important",
         "kbs": [
          "KB5131291"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Local Session Manager (LSM)": [
@@ -2288,7 +2300,8 @@
         "severity": "Important",
         "kbs": [
          "KB5131291"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Event Viewer": [
@@ -2330,7 +2343,8 @@
         "severity": "Important",
         "kbs": [
          "KB5131291"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Connected Devices Platform Service (Cdpsvc)": [
@@ -2448,7 +2462,8 @@
         "severity": "Important",
         "kbs": [
          "KB5131291"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows COM": [
@@ -2555,7 +2570,8 @@
         "severity": "Important",
         "kbs": [
          "KB5131291"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Device Association Service": [
@@ -2751,7 +2767,8 @@
         "severity": "Important",
         "kbs": [
          "KB5131291"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-119931",
@@ -3334,7 +3351,8 @@
         "severity": "Important",
         "kbs": [
          "KB5131291"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Failover Cluster": [
@@ -3401,7 +3419,8 @@
         "severity": "Important",
         "kbs": [
          "KB5131291"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-105507",
@@ -3464,7 +3483,8 @@
         "severity": "Important",
         "kbs": [
          "KB5131291"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-119399",
@@ -3537,7 +3557,8 @@
         "severity": "Important",
         "kbs": [
          "KB5131291"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-119903",
@@ -3546,7 +3567,8 @@
         "severity": "Important",
         "kbs": [
          "KB5131291"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-119929",
@@ -3739,7 +3761,8 @@
         "severity": "Important",
         "kbs": [
          "KB5131083"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows AppX Package Manager": [
@@ -3956,7 +3979,8 @@
         "severity": "Important",
         "kbs": [
          "KB5131291"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-95938",
@@ -4082,7 +4106,8 @@
         "severity": "Important",
         "kbs": [
          "KB5131291"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-96133",
@@ -4248,7 +4273,8 @@
         "severity": "Critical",
         "kbs": [
          "KB5131291"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-118148",
@@ -4257,7 +4283,8 @@
         "severity": "Critical",
         "kbs": [
          "KB5131291"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-118735",
@@ -4507,7 +4534,8 @@
         "severity": "Important",
         "kbs": [
          "KB5131291"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-105546",
@@ -4668,7 +4696,8 @@
         "severity": "Important",
         "kbs": [
          "KB5131291"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-122174",
@@ -5220,7 +5249,8 @@
         "severity": "Important",
         "kbs": [
          "KB5131291"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-112792",
@@ -5265,7 +5295,8 @@
         "severity": "Important",
         "kbs": [
          "KB5131291"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-112976",
@@ -5596,7 +5627,8 @@
         "severity": "Important",
         "kbs": [
          "KB5131291"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Remote Desktop": [
@@ -5866,7 +5898,8 @@
         "severity": "Critical",
         "kbs": [
          "KB5131291"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows LUAFV": [
@@ -5877,7 +5910,8 @@
         "severity": "Important",
         "kbs": [
          "KB5131291"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-96117",
@@ -6033,6 +6067,7 @@
    "month": "2026-Oct",
    "released": "2026-10-13",
    "fix_count": 758,
+   "exploited_count": 1,
    "updates": [
     {
      "kb": "KB5126649",
@@ -7071,7 +7106,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-83872",
@@ -7118,7 +7154,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows DNS": [
@@ -7241,7 +7278,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-70245",
@@ -7250,7 +7288,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-83738",
@@ -7259,7 +7298,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-88149",
@@ -7512,7 +7552,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        }
       ],
       "RPC Endpoint Mapper Service": [
@@ -7604,7 +7645,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-70111",
@@ -7658,7 +7700,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-83833",
@@ -7721,7 +7764,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-88134",
@@ -7748,7 +7792,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Storage Port Driver": [
@@ -7983,7 +8028,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-70067",
@@ -8001,7 +8047,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-70117",
@@ -8010,7 +8057,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-70176",
@@ -8019,7 +8067,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-70209",
@@ -8046,7 +8095,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-70249",
@@ -8055,7 +8105,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-70253",
@@ -8064,7 +8115,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-70271",
@@ -8073,7 +8125,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-70284",
@@ -8172,7 +8225,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-96853",
@@ -8538,7 +8592,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-83664",
@@ -8625,7 +8680,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-70245",
@@ -8634,7 +8690,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-83738",
@@ -8643,7 +8700,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-88149",
@@ -8663,7 +8721,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Common Log File System Driver": [
@@ -8674,7 +8733,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-83835",
@@ -8692,7 +8752,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-85868",
@@ -8710,7 +8771,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Container Isolation FS Filter Driver": [
@@ -8801,7 +8863,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-83837",
@@ -10109,7 +10172,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-70173",
@@ -10181,7 +10245,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-83725",
@@ -10226,7 +10291,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-85869",
@@ -10262,7 +10328,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-96324",
@@ -10289,7 +10356,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Program Compatibility Assistant Service": [
@@ -10340,7 +10408,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-83587",
@@ -10588,7 +10657,9 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "exploited": true,
+        "kev": "2026-10-13"
        }
       ],
       "Windows Audio Service": [
@@ -10677,7 +10748,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-85331",
@@ -10751,7 +10823,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-83830",
@@ -10760,7 +10833,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-83848",
@@ -10769,7 +10843,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-96933",
@@ -10789,7 +10864,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Telephony Server": [
@@ -11390,7 +11466,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-83508",
@@ -11764,7 +11841,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-83519",
@@ -11791,7 +11869,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-83689",
@@ -11845,7 +11924,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-83758",
@@ -11863,7 +11943,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-83916",
@@ -11968,7 +12049,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-83509",
@@ -11977,7 +12059,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-83510",
@@ -11986,7 +12069,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Event Logging Service": [
@@ -12055,7 +12139,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-83783",
@@ -12140,7 +12225,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-85843",
@@ -12149,7 +12235,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-85848",
@@ -12158,7 +12245,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-88118",
@@ -12167,7 +12255,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-88121",
@@ -12194,7 +12283,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-88159",
@@ -12203,7 +12293,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-88173",
@@ -12342,7 +12433,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-83718",
@@ -12396,7 +12488,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-85358",
@@ -12468,7 +12561,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-87693",
@@ -12666,7 +12760,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        }
       ]
      }
@@ -13497,7 +13592,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Microsoft Scripting Engine": [
@@ -13705,7 +13801,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Key Distribution Center": [
@@ -13825,7 +13922,8 @@
         "severity": "Critical",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-83647",
@@ -14156,7 +14254,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-83698",
@@ -14174,7 +14273,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows SMB Server": [
@@ -14641,7 +14741,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-88162",
@@ -14670,7 +14771,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-83837",
@@ -14813,7 +14915,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-85901",
@@ -14822,7 +14925,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-85908",
@@ -14831,7 +14935,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows DWM Core Library": [
@@ -14907,7 +15012,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-83755",
@@ -14945,7 +15051,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-83912",
@@ -14963,7 +15070,8 @@
         "severity": "Important",
         "kbs": [
          "KB5126868"
-        ]
+        ],
+        "likely": true
        }
       ]
      }
@@ -15006,6 +15114,7 @@
    "month": "2026-Sep",
    "released": "2026-09-08",
    "fix_count": 554,
+   "exploited_count": 1,
    "updates": [
     {
      "kb": "KB5122874",
@@ -15043,7 +15152,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Universal Plug and Play (UPnP) Device Host": [
@@ -15451,7 +15561,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-69369",
@@ -15505,7 +15616,8 @@
         "severity": "Critical",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-69813",
@@ -15601,7 +15713,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-69404",
@@ -15668,7 +15781,8 @@
         "severity": "Critical",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-70570",
@@ -16134,7 +16248,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-72947",
@@ -16451,7 +16566,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-69611",
@@ -16860,7 +16976,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Biometric Service": [
@@ -17471,7 +17588,8 @@
         "severity": "Critical",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-69685",
@@ -17578,7 +17696,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows USB Mass Storage Class Driver": [
@@ -17647,7 +17766,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-68884",
@@ -17656,7 +17776,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-69366",
@@ -17665,7 +17786,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-69406",
@@ -17674,7 +17796,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-69466",
@@ -17683,7 +17806,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-69473",
@@ -17692,7 +17816,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-69578",
@@ -17719,7 +17844,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-85360",
@@ -17862,7 +17988,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-78508",
@@ -17978,7 +18105,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-69611",
@@ -18123,7 +18251,8 @@
         "severity": "Critical",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-71330",
@@ -18230,7 +18359,9 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "exploited": true,
+        "kev": "2026-09-08"
        }
       ],
       "Windows Secure Kernel Mode": [
@@ -18261,7 +18392,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-70290",
@@ -19384,7 +19516,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-71352",
@@ -19442,7 +19575,8 @@
         "severity": "Critical",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-70570",
@@ -19563,7 +19697,8 @@
         "severity": "Critical",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Role: DNS Server": [
@@ -19715,7 +19850,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-69534",
@@ -19838,7 +19974,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-69488",
@@ -19874,7 +20011,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-77500",
@@ -19883,7 +20021,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-83940",
@@ -19903,7 +20042,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-69453",
@@ -19930,7 +20070,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-69600",
@@ -19939,7 +20080,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-69608",
@@ -19957,7 +20099,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-70145",
@@ -20013,7 +20156,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Device Association Broker service": [
@@ -20166,7 +20310,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-70584",
@@ -20269,7 +20414,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-69552",
@@ -20592,7 +20738,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-69769",
@@ -20714,7 +20861,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Broker Infrastructure Service": [
@@ -20725,7 +20873,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows VOLSNAP.SYS": [
@@ -21145,7 +21294,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-69539",
@@ -21239,7 +21389,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-71352",
@@ -21288,7 +21439,8 @@
         "severity": "Critical",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-70570",
@@ -21416,7 +21568,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-69462",
@@ -21503,7 +21656,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-70582",
@@ -21599,7 +21753,8 @@
         "severity": "Critical",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Group Policy": [
@@ -21648,7 +21803,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-69274",
@@ -21657,7 +21813,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-69301",
@@ -21666,7 +21823,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-69335",
@@ -21738,7 +21896,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-69792",
@@ -21765,7 +21924,8 @@
         "severity": "Important",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-69844",
@@ -21944,7 +22104,8 @@
         "severity": "Critical",
         "kbs": [
          "KB5123099"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-71330",
@@ -22120,6 +22281,7 @@
    "month": "2026-Aug",
    "released": "2026-08-11",
    "fix_count": 165,
+   "exploited_count": 1,
    "updates": [
     {
      "kb": "KB5120418",
@@ -22153,7 +22315,8 @@
         "severity": "Important",
         "kbs": [
          "KB5120418"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-62792",
@@ -22173,7 +22336,8 @@
         "severity": "Important",
         "kbs": [
          "KB5120418"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-68820",
@@ -22182,7 +22346,9 @@
         "severity": "Important",
         "kbs": [
          "KB5120418"
-        ]
+        ],
+        "exploited": true,
+        "kev": "2026-08-11"
        },
        {
         "cve": "CVE-2026-70307",
@@ -22191,7 +22357,8 @@
         "severity": "Important",
         "kbs": [
          "KB5120418"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Network Connection Broker": [
@@ -22359,7 +22526,8 @@
         "severity": "Important",
         "kbs": [
          "KB5120418"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-62741",
@@ -22368,7 +22536,8 @@
         "severity": "Important",
         "kbs": [
          "KB5120418"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-62753",
@@ -22505,7 +22674,8 @@
         "severity": "Critical",
         "kbs": [
          "KB5120418"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows DHCP Client": [
@@ -22704,7 +22874,8 @@
         "severity": "Critical",
         "kbs": [
          "KB5120418"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Message Queuing": [
@@ -22766,7 +22937,8 @@
         "severity": "Critical",
         "kbs": [
          "KB5120418"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Remote Access API": [
@@ -22963,7 +23135,8 @@
         "severity": "Important",
         "kbs": [
          "KB5120418"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Device Association Service": [
@@ -23200,7 +23373,8 @@
         "severity": "Important",
         "kbs": [
          "KB5120418"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-62733",
@@ -23281,7 +23455,8 @@
         "severity": "Important",
         "kbs": [
          "KB5120418"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Graphics Kernel": [
@@ -23478,7 +23653,8 @@
         "severity": "Important",
         "kbs": [
          "KB5120418"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Virtual Hard Disk (VHD) Miniport Driver": [
@@ -23500,7 +23676,8 @@
         "severity": "Important",
         "kbs": [
          "KB5120418"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-68820",
@@ -23509,7 +23686,9 @@
         "severity": "Important",
         "kbs": [
          "KB5120418"
-        ]
+        ],
+        "exploited": true,
+        "kev": "2026-08-11"
        },
        {
         "cve": "CVE-2026-70307",
@@ -23518,7 +23697,8 @@
         "severity": "Important",
         "kbs": [
          "KB5120418"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Hyper-V": [
@@ -23633,7 +23813,8 @@
         "severity": "Important",
         "kbs": [
          "KB5120418"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Kerberos": [
@@ -23782,7 +23963,8 @@
         "severity": "Important",
         "kbs": [
          "KB5120418"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Wired AutoConfig Service": [
@@ -23840,7 +24022,8 @@
         "severity": "Important",
         "kbs": [
          "KB5120418"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-62768",
@@ -24026,7 +24209,8 @@
         "severity": "Critical",
         "kbs": [
          "KB5120418"
-        ]
+        ],
+        "likely": true
        }
       ]
      }
@@ -24136,6 +24320,7 @@
    "month": "2026-Jul",
    "released": "2026-07-14",
    "fix_count": 248,
+   "exploited_count": 1,
    "updates": [
     {
      "kb": "KB5099535",
@@ -24340,7 +24525,8 @@
         "severity": "Important",
         "kbs": [
          "KB5099535"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-50668",
@@ -24548,7 +24734,8 @@
         "severity": "Important",
         "kbs": [
          "KB5099535"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Virtual Hard Disk (VHD) Miniport Driver": [
@@ -24686,7 +24873,8 @@
         "severity": "Important",
         "kbs": [
          "KB5099535"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-50294",
@@ -24713,7 +24901,8 @@
         "severity": "Important",
         "kbs": [
          "KB5099535"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-50354",
@@ -24740,7 +24929,8 @@
         "severity": "Important",
         "kbs": [
          "KB5099535"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-50397",
@@ -24776,7 +24966,8 @@
         "severity": "Important",
         "kbs": [
          "KB5099535"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-50477",
@@ -24803,7 +24994,8 @@
         "severity": "Important",
         "kbs": [
          "KB5099535"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-54132",
@@ -24965,7 +25157,8 @@
         "severity": "Critical",
         "kbs": [
          "KB5099535"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows SMB Server Network Transport Driver (srvnet.sys)": [
@@ -25061,7 +25254,8 @@
         "severity": "Critical",
         "kbs": [
          "KB5099535"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-50518",
@@ -25070,7 +25264,8 @@
         "severity": "Critical",
         "kbs": [
          "KB5099535"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-50683",
@@ -25175,7 +25370,8 @@
         "severity": "Critical",
         "kbs": [
          "KB5099535"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows HTTP.sys": [
@@ -25301,7 +25497,8 @@
         "severity": "Important",
         "kbs": [
          "KB5099535"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Secure Socket Tunneling Protocol (SSTP)": [
@@ -25323,7 +25520,8 @@
         "severity": "Critical",
         "kbs": [
          "KB5099535"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Network File System": [
@@ -25604,7 +25802,8 @@
         "severity": "Important",
         "kbs": [
          "KB5099535"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Media": [
@@ -25633,7 +25832,8 @@
         "severity": "Important",
         "kbs": [
          "KB5099535"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-50655",
@@ -25642,7 +25842,8 @@
         "severity": "Critical",
         "kbs": [
          "KB5099535"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Push Notifications": [
@@ -26125,7 +26326,9 @@
         "severity": "Important",
         "kbs": [
          "KB5099535"
-        ]
+        ],
+        "exploited": true,
+        "kev": "2026-07-14"
        }
       ],
       "Windows Netlogon": [
@@ -26201,7 +26404,8 @@
         "severity": "Critical",
         "kbs": [
          "KB5099535"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-50518",
@@ -26210,7 +26414,8 @@
         "severity": "Critical",
         "kbs": [
          "KB5099535"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-50683",
@@ -26326,7 +26531,8 @@
         "severity": "Critical",
         "kbs": [
          "KB5099535"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Message Queuing": [
@@ -26395,7 +26601,8 @@
         "severity": "Important",
         "kbs": [
          "KB5099535"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-50297",
@@ -26404,7 +26611,8 @@
         "severity": "Important",
         "kbs": [
          "KB5099535"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-50325",
@@ -26413,7 +26621,8 @@
         "severity": "Important",
         "kbs": [
          "KB5099535"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-50489",
@@ -26422,7 +26631,8 @@
         "severity": "Important",
         "kbs": [
          "KB5099535"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-54107",
@@ -26440,7 +26650,8 @@
         "severity": "Important",
         "kbs": [
          "KB5099535"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-57095",
@@ -26628,7 +26839,8 @@
         "severity": "Important",
         "kbs": [
          "KB5099535"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Web Proxy Auto-Discovery Protocol (WPAD)": [
@@ -26672,7 +26884,8 @@
         "severity": "Important",
         "kbs": [
          "KB5099535"
-        ]
+        ],
+        "likely": true
        }
       ]
      }
@@ -26772,7 +26985,8 @@
         "severity": "Important",
         "kbs": [
          "KB5099535"
-        ]
+        ],
+        "disclosed": true
        }
       ],
       "Windows Schannel": [
@@ -26828,7 +27042,8 @@
         "severity": "Important",
         "kbs": [
          "KB5099535"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Microsoft Printer Drivers": [
@@ -26971,7 +27186,8 @@
         "severity": "Important",
         "kbs": [
          "KB5099535"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows SMB Server Network Transport Driver (srvnet.sys)": [
@@ -27067,6 +27283,7 @@
    "month": "2026-Jun",
    "released": "2026-06-09",
    "fix_count": 76,
+   "exploited_count": 0,
    "updates": [
     {
      "kb": "KB5094122",
@@ -27258,7 +27475,8 @@
         "severity": "Critical",
         "kbs": [
          "KB5094122"
-        ]
+        ],
+        "likely": true
        }
       ]
      }
@@ -27368,7 +27586,8 @@
         "severity": "Important",
         "kbs": [
          "KB5094122"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Role: Windows Hyper-V": [
@@ -27511,7 +27730,8 @@
         "severity": "Important",
         "kbs": [
          "KB5094122"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-50507",
@@ -27520,7 +27740,9 @@
         "severity": "Important",
         "kbs": [
          "KB5094122"
-        ]
+        ],
+        "disclosed": true,
+        "likely": true
        }
       ],
       "Windows Boot Manager": [
@@ -27578,7 +27800,8 @@
         "severity": "Important",
         "kbs": [
          "KB5094122"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Collaborative Translation Framework": [
@@ -27589,7 +27812,9 @@
         "severity": "Important",
         "kbs": [
          "KB5094122"
-        ]
+        ],
+        "disclosed": true,
+        "likely": true
        }
       ],
       "Windows Mark of the Web (MOTW)": [
@@ -27642,7 +27867,9 @@
         "severity": "Important",
         "kbs": [
          "KB5094122"
-        ]
+        ],
+        "disclosed": true,
+        "likely": true
        }
       ]
      }
@@ -27687,7 +27914,8 @@
         "severity": "Critical",
         "kbs": [
          "KB5094122"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-42992",
@@ -27965,7 +28193,8 @@
         "severity": "Important",
         "kbs": [
          "KB5094122"
-        ]
+        ],
+        "likely": true
        }
       ]
      }
@@ -27981,7 +28210,8 @@
         "severity": "Important",
         "kbs": [
          "KB5094122"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Microsoft Graphics Component": [
@@ -27992,7 +28222,8 @@
         "severity": "Important",
         "kbs": [
          "KB5094122"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Win32K - GRFX": [
@@ -28003,7 +28234,8 @@
         "severity": "Critical",
         "kbs": [
          "KB5094122"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-44812",
@@ -28012,7 +28244,8 @@
         "severity": "Critical",
         "kbs": [
          "KB5094122"
-        ]
+        ],
+        "likely": true
        }
       ]
      }
@@ -28039,6 +28272,7 @@
    "month": "2026-May",
    "released": "2026-05-12",
    "fix_count": 47,
+   "exploited_count": 0,
    "updates": [
     {
      "kb": "KB5087537",
@@ -28072,7 +28306,8 @@
         "severity": "Important",
         "kbs": [
          "KB5087537"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-34334",
@@ -28173,7 +28408,8 @@
         "severity": "Important",
         "kbs": [
          "KB5087537"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Internet Key Exchange (IKE) Protocol": [
@@ -28229,7 +28465,8 @@
         "severity": "Important",
         "kbs": [
          "KB5087537"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Kernel": [
@@ -28262,7 +28499,8 @@
         "severity": "Important",
         "kbs": [
          "KB5087537"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-40407",
@@ -28637,7 +28875,8 @@
         "severity": "Important",
         "kbs": [
          "KB5087537"
-        ]
+        ],
+        "likely": true
        }
       ]
      }
@@ -28664,6 +28903,7 @@
    "month": "2026-Apr",
    "released": "2026-04-14",
    "fix_count": 85,
+   "exploited_count": 2,
    "updates": [
     {
      "kb": "KB5082198",
@@ -28816,7 +29056,8 @@
         "severity": "Important",
         "kbs": [
          "KB5082198"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-32077",
@@ -28856,7 +29097,8 @@
         "severity": "Important",
         "kbs": [
          "KB5082198"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-33827",
@@ -28934,7 +29176,8 @@
         "severity": "Important",
         "kbs": [
          "KB5082198"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-32150",
@@ -28974,7 +29217,9 @@
         "severity": "Critical",
         "kbs": [
          "KB5082198"
-        ]
+        ],
+        "exploited": true,
+        "kev": "2026-08-18"
        }
       ]
      }
@@ -29124,7 +29369,8 @@
         "severity": "Important",
         "kbs": [
          "KB5082198"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Client Side Caching driver (csc.sys)": [
@@ -29146,7 +29392,8 @@
         "severity": "Important",
         "kbs": [
          "KB5082198"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows WFP NDIS Lightweight Filter Driver (wfplwfs.sys)": [
@@ -29168,7 +29415,8 @@
         "severity": "Important",
         "kbs": [
          "KB5082198"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Container Isolation FS Filter Driver": [
@@ -29228,7 +29476,8 @@
         "severity": "Important",
         "kbs": [
          "KB5082198"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows User Interface Core": [
@@ -29328,7 +29577,9 @@
         "severity": "Important",
         "kbs": [
          "KB5099535"
-        ]
+        ],
+        "exploited": true,
+        "kev": "2026-04-28"
        },
        {
         "cve": "CVE-2026-32225",
@@ -29337,7 +29588,8 @@
         "severity": "Important",
         "kbs": [
          "KB5082198"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Snipping Tool": [
@@ -29417,7 +29669,8 @@
         "severity": "Important",
         "kbs": [
          "KB5082198"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows LUAFV": [
@@ -29495,7 +29748,8 @@
         "severity": "Critical",
         "kbs": [
          "KB5082198"
-        ]
+        ],
+        "likely": true
        }
       ]
      }
@@ -29576,7 +29830,8 @@
         "severity": "Important",
         "kbs": [
          "KB5082198"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Win32K - GRFX": [
@@ -29603,7 +29858,8 @@
         "severity": "Important",
         "kbs": [
          "KB5082198"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Recovery Environment Agent": [
@@ -29625,7 +29881,8 @@
         "severity": "Important",
         "kbs": [
          "KB5082198"
-        ]
+        ],
+        "likely": true
        }
       ]
      }
@@ -29641,7 +29898,8 @@
         "severity": "Important",
         "kbs": [
          "KB5082198"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Remote Desktop Licensing Service": [
@@ -29781,6 +30039,7 @@
    "month": "2026-Mar",
    "released": "2026-03-10",
    "fix_count": 34,
+   "exploited_count": 0,
    "updates": [
     {
      "kb": "KB5078938",
@@ -29910,7 +30169,8 @@
         "severity": "Important",
         "kbs": [
          "KB5078938"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Ancillary Function Driver for WinSock": [
@@ -29955,7 +30215,8 @@
         "severity": "Important",
         "kbs": [
          "KB5078938"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-25186",
@@ -30022,7 +30283,8 @@
         "severity": "Important",
         "kbs": [
          "KB5078938"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-25168",
@@ -30136,7 +30398,8 @@
         "severity": "Important",
         "kbs": [
          "KB5078938"
-        ]
+        ],
+        "likely": true
        }
       ]
      }
@@ -30258,7 +30521,8 @@
         "severity": "Important",
         "kbs": [
          "KB5078938"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-26128",
@@ -30321,6 +30585,7 @@
    "month": "2026-Feb",
    "released": "2026-02-10",
    "fix_count": 21,
+   "exploited_count": 5,
    "updates": [
     {
      "kb": "KB5075999",
@@ -30388,7 +30653,8 @@
         "severity": "Important",
         "kbs": [
          "KB5075999"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Kernel": [
@@ -30408,7 +30674,8 @@
         "severity": "Important",
         "kbs": [
          "KB5075999"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-21222",
@@ -30471,7 +30738,9 @@
         "severity": "Moderate",
         "kbs": [
          "KB5075999"
-        ]
+        ],
+        "exploited": true,
+        "kev": "2026-02-10"
        }
       ]
      }
@@ -30487,7 +30756,9 @@
         "severity": "Important",
         "kbs": [
          "KB5075999"
-        ]
+        ],
+        "exploited": true,
+        "kev": "2026-02-10"
        }
       ],
       "Microsoft Graphics Component": [
@@ -30523,7 +30794,10 @@
         "severity": "Important",
         "kbs": [
          "KB5075999"
-        ]
+        ],
+        "exploited": true,
+        "disclosed": true,
+        "kev": "2026-02-10"
        }
       ],
       "Mailslot File System": [
@@ -30534,7 +30808,8 @@
         "severity": "Important",
         "kbs": [
          "KB5075999"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Cluster Client Failover": [
@@ -30570,7 +30845,8 @@
         "severity": "Important",
         "kbs": [
          "KB5075999"
-        ]
+        ],
+        "likely": true
        }
       ]
      }
@@ -30586,7 +30862,9 @@
         "severity": "Important",
         "kbs": [
          "KB5075999"
-        ]
+        ],
+        "exploited": true,
+        "kev": "2026-02-10"
        }
       ],
       "Windows Remote Access Connection Manager": [
@@ -30597,7 +30875,9 @@
         "severity": "Moderate",
         "kbs": [
          "KB5075999"
-        ]
+        ],
+        "exploited": true,
+        "kev": "2026-02-10"
        }
       ]
      }
@@ -30613,7 +30893,10 @@
         "severity": "Important",
         "kbs": [
          "KB5075999"
-        ]
+        ],
+        "exploited": true,
+        "disclosed": true,
+        "kev": "2026-02-10"
        }
       ]
      }
@@ -30672,6 +30955,7 @@
    "month": "2026-Jan",
    "released": "2026-01-13",
    "fix_count": 52,
+   "exploited_count": 1,
    "updates": [
     {
      "kb": "KB5073722",
@@ -30694,7 +30978,9 @@
         "severity": "Important",
         "kbs": [
          "KB5073722"
-        ]
+        ],
+        "disclosed": true,
+        "likely": true
        }
       ],
       "Windows Motorola Soft Modem Driver": [
@@ -30758,7 +31044,8 @@
         "severity": "Important",
         "kbs": [
          "KB5073722"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Ancillary Function Driver for WinSock": [
@@ -30778,7 +31065,8 @@
         "severity": "Important",
         "kbs": [
          "KB5073722"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Cloud Files Mini Filter Driver": [
@@ -30836,7 +31124,8 @@
         "severity": "Important",
         "kbs": [
          "KB5073722"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Remote Procedure Call Interface Definition Language (IDL)": [
@@ -30858,7 +31147,8 @@
         "severity": "Important",
         "kbs": [
          "KB5073722"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-20868",
@@ -31160,7 +31450,8 @@
         "severity": "Important",
         "kbs": [
          "KB5073722"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-20868",
@@ -31196,7 +31487,9 @@
         "severity": "Important",
         "kbs": [
          "KB5073722"
-        ]
+        ],
+        "exploited": true,
+        "kev": "2026-01-13"
        }
       ],
       "Windows Graphics Kernel": [
@@ -31290,7 +31583,8 @@
         "severity": "Important",
         "kbs": [
          "KB5073722"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-20922",
@@ -31299,7 +31593,8 @@
         "severity": "Important",
         "kbs": [
          "KB5073722"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Cloud Files Mini Filter Driver": [
@@ -31353,7 +31648,8 @@
         "severity": "Important",
         "kbs": [
          "KB5073722"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2026-20868",
@@ -31378,7 +31674,8 @@
         "severity": "Important",
         "kbs": [
          "KB5073722"
-        ]
+        ],
+        "likely": true
        }
       ]
      }
@@ -31394,7 +31691,8 @@
         "severity": "Important",
         "kbs": [
          "KB5073722"
-        ]
+        ],
+        "disclosed": true
        }
       ]
      }
@@ -31405,6 +31703,7 @@
    "month": "2025-Dec",
    "released": "2025-12-09",
    "fix_count": 18,
+   "exploited_count": 0,
    "updates": [
     {
      "kb": "KB5066836",
@@ -31443,7 +31742,8 @@
         "severity": "Important",
         "kbs": [
          "KB5071543"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2025-62474",
@@ -31519,7 +31819,8 @@
         "severity": "Important",
         "kbs": [
          "KB5071543"
-        ]
+        ],
+        "likely": true
        },
        {
         "cve": "CVE-2025-62474",
@@ -31573,7 +31874,8 @@
         "severity": "Important",
         "kbs": [
          "KB5071543"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows DirectX": [
@@ -31620,7 +31922,8 @@
         "severity": "Important",
         "kbs": [
          "KB5071543"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Storage VSP Driver": [
@@ -31631,7 +31934,8 @@
         "severity": "Important",
         "kbs": [
          "KB5071543"
-        ]
+        ],
+        "likely": true
        }
       ],
       "Windows Hyper-V": [
@@ -31712,7 +32016,8 @@
         "severity": "Important",
         "kbs": [
          "KB5071543"
-        ]
+        ],
+        "disclosed": true
        }
       ]
      }
@@ -31760,7 +32065,8 @@
         "severity": "Important",
         "kbs": [
          "KB5071543"
-        ]
+        ],
+        "likely": true
        }
       ]
      }
@@ -31776,7 +32082,8 @@
         "severity": "Important",
         "kbs": [
          "KB5071543"
-        ]
+        ],
+        "disclosed": true
        }
       ]
      }

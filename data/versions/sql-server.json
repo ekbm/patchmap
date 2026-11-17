@@ -6,6 +6,7 @@
    "month": "2026-Nov",
    "released": "2026-11-10",
    "fix_count": 52,
+   "exploited_count": 0,
    "updates": [
     {
      "kb": "KB5129299",
@@ -873,6 +874,7 @@
    "month": "2026-Oct",
    "released": "2026-10-13",
    "fix_count": 22,
+   "exploited_count": 0,
    "updates": [
     {
      "kb": "KB5126934",
@@ -1264,6 +1266,7 @@
    "month": "2026-Sep",
    "released": "2026-09-08",
    "fix_count": 62,
+   "exploited_count": 0,
    "updates": [
     {
      "kb": "KB5122768",
@@ -2290,6 +2293,7 @@
    "month": "2026-Jul",
    "released": "2026-07-14",
    "fix_count": 7,
+   "exploited_count": 0,
    "updates": [
     {
      "kb": "KB5101346",
@@ -2468,6 +2472,7 @@
    "month": "2026-May",
    "released": "2026-05-12",
    "fix_count": 1,
+   "exploited_count": 0,
    "updates": [
     {
      "kb": "KB5089270",
@@ -2562,6 +2567,7 @@
    "month": "2026-Apr",
    "released": "2026-04-14",
    "fix_count": 3,
+   "exploited_count": 0,
    "updates": [
     {
      "kb": "KB5083245",
@@ -2691,6 +2697,7 @@
    "month": "2026-Mar",
    "released": "2026-03-10",
    "fix_count": 3,
+   "exploited_count": 0,
    "updates": [
     {
      "kb": "KB5077464",
@@ -2790,7 +2797,8 @@
          "KB5077472",
          "KB5077473",
          "KB5077474"
-        ]
+        ],
+        "disclosed": true
        },
        {
         "cve": "CVE-2026-26115",
@@ -2829,6 +2837,7 @@
    "month": "2026-Jan",
    "released": "2026-01-13",
    "fix_count": 1,
+   "exploited_count": 0,
    "updates": [
     {
      "kb": "KB5072936",

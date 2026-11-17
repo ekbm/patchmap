@@ -89,6 +89,10 @@ select:focus, input:focus { outline: none; border-color: var(--accent); box-shad
 a.issue.banner { display: block; text-decoration: none; cursor: pointer; }
 a.issue.banner:hover { border-color: var(--stripe-red); }
 .issue.flash { box-shadow: 0 0 0 3px var(--focus); transition: box-shadow .3s; }
+.pill.xp { background: var(--danger-bg); color: var(--danger); }
+.pill.dis { background: var(--warn-bg); color: var(--warn); }
+.xp-txt { color: var(--danger); font-weight: 600; }
+.xp-line { margin-top: 6px; padding: 6px 10px; border-radius: 6px; background: var(--danger-bg); color: var(--danger); }
 .ok-line { color: var(--ok); font-weight: 600; }
 .issue .it { font-weight: 600; display: block; margin: 2px 0; }
 .issue .is { color: var(--muted); font-size: 13px; }

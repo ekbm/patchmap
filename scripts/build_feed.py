@@ -92,7 +92,9 @@ def update_items(labels, only=None):
                 "title": f"{labels[ver]}: {month_name(m['month'])} security update {', '.join(u['kb'] for u in ups)}".strip(),
                 "updated": ts(m["released"]),
                 "link": site_link(ver, ups[0]["kb"] if ups else ""),
-                "summary": f"{kb}. {m['fix_count']} security fixes. Biggest areas: {areas}.",
+                "summary": f"{kb}. {m['fix_count']} security fixes"
+                           + (f", {m['exploited_count']} being exploited (Microsoft/CISA)" if m.get("exploited_count") else "")
+                           + f". Biggest areas: {areas}.",
                 "category": "monthly-update",
             })
     return items

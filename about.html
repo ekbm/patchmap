@@ -82,6 +82,15 @@
   </ul>
   <p class="muted">To subscribe, copy a link above and paste it into your reader's "add feed" or "subscribe" box. No account or email needed.</p>
 
+  <h2>Exploited fixes</h2>
+  <p>Some weaknesses are already being used by attackers. Patchmap marks those fixes and tells you how many each update carries, so you know the risk before delaying or removing it.</p>
+  <div class="legend">
+    <div class="fix"><span class="pill xp">Exploited</span><span>Attackers are using it: Microsoft says so, or it is on the US agency CISA's <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog">Known Exploited Vulnerabilities</a> list. "· ransomware" means CISA has seen it used in ransomware.</span></div>
+    <div class="fix"><span class="pill dis">Publicly disclosed</span><span>Details were public before the fix came out.</span></div>
+    <div class="fix"><span class="pill src">More likely to be exploited</span><span>Microsoft's own rating of how likely attackers are to use it.</span></div>
+  </div>
+  <p>Search <a href="./#v=win11-25h2&amp;q=exploited">exploited</a> to list them. A fix published in one month can be delivered by a later update, so an update's count includes those too.</p>
+
   <h2>Known problems</h2>
   <div class="legend">
     <div class="issue open"><span class="pill open">Not fixed yet</span><span class="it">Microsoft or others have confirmed it and there's no fix yet</span></div>
@@ -102,6 +111,7 @@
     <tr><td>Other known problems</td><td>News and vendor reports, linked on each entry</td><td>By hand</td></tr>
     <tr><td>Areas (printing, sign-in…)</td><td>Patchmap's own rules, <a href="https://github.com/ekbm/patchmap/blob/main/data/area_tags.json">open to edit</a></td><td>By hand</td></tr>
     <tr><td>Files each update changed</td><td>Microsoft's file list for each monthly Windows update, compared with the month before</td><td>Automatically, every Wednesday</td></tr>
+    <tr><td>Exploited fixes</td><td>Microsoft Security Update Guide (exploited, publicly disclosed, exploitability) and <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog">CISA Known Exploited Vulnerabilities</a></td><td>Automatically, every Wednesday</td></tr>
     <tr><td>Update types (hotpatch, baseline, out-of-band, preview)</td><td>Microsoft's <a href="https://learn.microsoft.com/windows/release-health/windows11-release-information">Windows 11</a> and <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info">Windows Server</a> release information pages</td><td>Automatically, every Wednesday</td></tr>
     <tr><td>Troubleshooting steps</td><td>Patchmap, <a href="https://github.com/ekbm/patchmap/blob/main/data/troubleshooting.json">open to edit</a></td><td>By hand</td></tr>
     <tr><td>What print software relies on</td><td>Vendor public documentation, or support experience (each list says which), <a href="https://github.com/ekbm/patchmap/tree/main/data/software">open to edit</a></td><td>By hand</td></tr>

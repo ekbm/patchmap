@@ -93,6 +93,25 @@ def issue_card(i, ver=None, problem_url=None):
             f'<span class="it">{title}</span></div>')
 
 
+def xpills(f):
+    out = ""
+    if f.get("exploited"):
+        out += f'<span class="pill xp">Exploited{" · ransomware" if f.get("ransomware") else ""}</span>'
+    elif f.get("likely"):
+        out += '<span class="pill src">More likely to be exploited</span>'
+    if f.get("disclosed"):
+        out += '<span class="pill dis">Publicly disclosed</span>'
+    return out
+
+
+def xline(fixes, kb):
+    n = sum(1 for f in fixes if f.get("exploited"))
+    if n:
+        return (f'<p class="xp-line"><b>{n} of its {len(fixes)} fixes {"is" if n == 1 else "are"} being exploited</b> '
+                f'(Microsoft and CISA). Attackers are using {"this weakness" if n == 1 else "these weaknesses"}: don&#39;t stay without {e(kb)} for long.</p>')
+    return f'<p class="muted">None of its {len(fixes)} fixes are known to be exploited (Microsoft and CISA).</p>'
+
+
 def tshoot_section(kb, fixes, areas, tags, T, is_hotpatch, full_alt):
     """'Something broke after this update?' with generic, careful steps (data/troubleshooting.json)."""
     if not T:
@@ -241,7 +260,7 @@ def main():
         prob_c, prob_f = kb_problems[kb]["caused"], kb_problems[kb]["fixed"]
         area_list = "".join(
             f'<details><summary><span class="l">{e(tags.get(t, t))}</span><span class="r">{len(fs)} fixes</span></summary>'
-            + "".join(f'<div class="fix"><a class="cve" href="{e(f["msrc_url"])}" rel="noopener">{e(f["cve"])}</a><span>{e(f["title"])}</span></div>' for f in fs)
+            + "".join(f'<div class="fix"><a class="cve" href="{e(f["msrc_url"])}" rel="noopener">{e(f["cve"])}</a><span>{e(f["title"])}</span>{xpills(f)}</div>' for f in sorted(fs, key=lambda f: not f.get("exploited")))
             + "</details>"
             for t, fs in sorted(areas.items(), key=lambda x: -len(x[1])))
         top = ", ".join(f"{tags.get(t, t)} ({len(fs)})" for t, fs in sorted(areas.items(), key=lambda x: -len(x[1]))[:4])
@@ -260,6 +279,7 @@ def main():
                    + (f" The full update for the same month is {full_alt}, which replaces the files on disk." if full_alt else "") + "</p>" if kind == "hotpatch" else "")
                 + f'<p class="lead">{e(kind_label or u.get("type") or "Update")} for {e(names)}, {e(month_name(u["month"]))} (released {e(u["released"])}). '
                 f'It includes {len(fixes)} security fixes{": most in " + e(top) if top else ""}.</p>'
+                + xline(fixes, kb) +
                 f'<table class="src-table"><tr><th>Windows version</th><th>Build after installing</th></tr>{rows}</table>'
                 f"<p>Replaces: {repl}. "
                 + (f"Replaced by: {', '.join(kb_link(k) for k in newer)}. " if newer else "The newest update Patchmap knows for this version. ")

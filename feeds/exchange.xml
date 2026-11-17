@@ -61,7 +61,7 @@
     <updated>2026-05-12T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=exchange&amp;q=KB5094139"/>
     <category term="monthly-update"/>
-    <summary>KB5094139 (build 15.02.2562.043), KB5094140 (build 15.02.1748.046), KB5094142 (build 15.02.1544.041), KB5094144 (build 15.01.2507.069). 1 security fixes. Biggest areas: email 1.</summary>
+    <summary>KB5094139 (build 15.02.2562.043), KB5094140 (build 15.02.1748.046), KB5094142 (build 15.02.1544.041), KB5094144 (build 15.01.2507.069). 1 security fixes, 1 being exploited (Microsoft/CISA). Biggest areas: email 1.</summary>
   </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:update:exchange:2026-Feb</id>

@@ -53,7 +53,7 @@
     <updated>2026-10-13T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=KB5126651"/>
     <category term="monthly-update"/>
-    <summary>KB5126651 (build 10.0.17763.9376). 923 security fixes. Biggest areas: kernel-drivers 197, network 161, apps-desktop 126, server-roles 113, storage 104.</summary>
+    <summary>KB5126651 (build 10.0.17763.9376). 923 security fixes, 2 being exploited (Microsoft/CISA). Biggest areas: kernel-drivers 197, network 161, apps-desktop 126, server-roles 113, storage 104.</summary>
   </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:issue:ms-4956:fixed</id>
@@ -77,7 +77,7 @@
     <updated>2026-09-08T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=KB5122876"/>
     <category term="monthly-update"/>
-    <summary>KB5122876 (build 10.0.17763.9245). 616 security fixes. Biggest areas: storage 100, network 98, kernel-drivers 93, sign-in 90, security 74.</summary>
+    <summary>KB5122876 (build 10.0.17763.9245). 616 security fixes, 1 being exploited (Microsoft/CISA). Biggest areas: storage 100, network 98, kernel-drivers 93, sign-in 90, security 74.</summary>
   </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:update:server-2019:2026-Aug</id>
@@ -85,7 +85,7 @@
     <updated>2026-08-11T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=KB5120238"/>
     <category term="monthly-update"/>
-    <summary>KB5120238 (build 10.0.17763.9121). 183 security fixes. Biggest areas: network 48, server-roles 27, apps-desktop 20, storage 18, graphics 18.</summary>
+    <summary>KB5120238 (build 10.0.17763.9121). 183 security fixes, 1 being exploited (Microsoft/CISA). Biggest areas: network 48, server-roles 27, apps-desktop 20, storage 18, graphics 18.</summary>
   </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:issue:ms-3549:fixed</id>
@@ -101,7 +101,7 @@
     <updated>2026-07-14T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=KB5099538"/>
     <category term="monthly-update"/>
-    <summary>KB5099538 (build 10.0.17763.9020). 311 security fixes. Biggest areas: kernel-drivers 59, apps-desktop 55, storage 52, network 47, server-roles 22.</summary>
+    <summary>KB5099538 (build 10.0.17763.9020). 311 security fixes, 1 being exploited (Microsoft/CISA). Biggest areas: kernel-drivers 59, apps-desktop 55, storage 52, network 47, server-roles 22.</summary>
   </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:issue:ms-4875:fixed</id>
@@ -141,7 +141,7 @@
     <updated>2026-04-14T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=KB5082123"/>
     <category term="monthly-update"/>
-    <summary>KB5082123 (build 10.0.17763.8644). 104 security fixes. Biggest areas: network 31, apps-desktop 26, kernel-drivers 22, security 8, sign-in 7.</summary>
+    <summary>KB5082123 (build 10.0.17763.8644). 104 security fixes, 2 being exploited (Microsoft/CISA). Biggest areas: network 31, apps-desktop 26, kernel-drivers 22, security 8, sign-in 7.</summary>
   </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:issue:ms-3404:fixed</id>
@@ -165,7 +165,7 @@
     <updated>2026-02-10T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=KB5075904"/>
     <category term="monthly-update"/>
-    <summary>KB5075904 (build 10.0.17763.8389). 24 security fixes. Biggest areas: kernel-drivers 9, server-roles 5, other 4, graphics 3, network 3.</summary>
+    <summary>KB5075904 (build 10.0.17763.8389). 24 security fixes, 5 being exploited (Microsoft/CISA). Biggest areas: kernel-drivers 9, server-roles 5, other 4, graphics 3, network 3.</summary>
   </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:issue:ms-3764:fixed</id>
@@ -197,7 +197,7 @@
     <updated>2026-01-13T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=KB5073723"/>
     <category term="monthly-update"/>
-    <summary>KB5073723 (build 10.0.17763.8276). 71 security fixes. Biggest areas: management 14, kernel-drivers 13, network 10, apps-desktop 9, sign-in 8.</summary>
+    <summary>KB5073723 (build 10.0.17763.8276). 71 security fixes, 1 being exploited (Microsoft/CISA). Biggest areas: management 14, kernel-drivers 13, network 10, apps-desktop 9, sign-in 8.</summary>
   </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:issue:ms-3751:fixed</id>
@@ -213,7 +213,7 @@
     <updated>2025-12-09T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=KB5066586"/>
     <category term="monthly-update"/>
-    <summary>KB5066586 (build 10.0.17763.7919), KB5068791 (build 10.0.17763.8027), KB5071544 (build 10.0.17763.8146). 29 security fixes. Biggest areas: storage 10, kernel-drivers 9, server-roles 7, remote-access 5, graphics 4.</summary>
+    <summary>KB5066586 (build 10.0.17763.7919), KB5068791 (build 10.0.17763.8027), KB5071544 (build 10.0.17763.8146). 29 security fixes, 1 being exploited (Microsoft/CISA). Biggest areas: storage 10, kernel-drivers 9, server-roles 7, remote-access 5, graphics 4.</summary>
   </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:issue:ms-3697:fixed</id>
