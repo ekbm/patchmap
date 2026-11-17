@@ -5,8 +5,16 @@
   <link rel="self" href="https://patchmap.verilay.dev/feed.xml"/>
   <link rel="alternate" href="https://patchmap.verilay.dev/"/>
   <id>https://patchmap.verilay.dev/feed.xml</id>
-  <updated>2026-11-16T00:00:00Z</updated>
+  <updated>2026-11-17T00:00:00Z</updated>
   <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:2026-11-spooler-localspl-0xc1-hotpatch:mitigated</id>
+    <title>Workaround available: Print Spooler fails to load localspl.dll (error 0xC1) after the November hotpatch</title>
+    <updated>2026-11-17T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;q=KB5132043"/>
+    <category term="known-problem"/>
+    <summary>After the November hotpatch KB5132043 (build 26100/26200/26300.9911), the event log can show "Print Spooler failed to load a plug-in module localspl.dll, error code 0xC1" and printing can stop. The hotpatch does not replace localspl.dll on disk (it stays 10.0.26100.9711); it adds localspl_hotpatch.dll, which patches the Spooler in memory. Removing KB5132043 makes the error go away. Reported by a support engineer on one Windows 11 25H2 device; not confirmed by Microsoft. Workaround that worked: install the full November cumulative update KB5132061 (build .9974) and restart. It replaces localspl.dll on disk with 10.0.26100.9974, so no Spooler hotpatch is needed. Removing KB5132043 also works but leaves the November security fixes off until you install KB5132061. Started with KB5132043. Affects: Windows 11 24H2, Windows 11 25H2, Windows 11 26H2. Source: https://patchmap.verilay.dev/kb/KB5132043/. From Patchmap (news and vendor reports).</summary>
+  </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:issue:2026-11-print-zero-size-images:open</id>
     <title>Not fixed yet: Printing fails for documents with zero-size images</title>
@@ -478,13 +486,5 @@
     <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;q=KB5101650"/>
     <category term="monthly-update"/>
     <summary>KB5101650 (build 10.0.26100.8875). 379 security fixes. Biggest areas: apps-desktop 83, kernel-drivers 81, storage 60, network 44, other 31.</summary>
-  </entry>
-  <entry>
-    <id>tag:patchmap.verilay.dev,2026:update:sql-server:2026-Jul</id>
-    <title>SQL Server: July 2026 security update KB5101346, KB5101347, KB5102333, KB5102334, KB5102335, KB5102336, KB5102337, KB5102338, KB5102339, KB5102340</title>
-    <updated>2026-07-14T00:00:00Z</updated>
-    <link href="https://patchmap.verilay.dev/#v=sql-server&amp;q=KB5101346"/>
-    <category term="monthly-update"/>
-    <summary>KB5101346 (build 17.0.4060.2), KB5101347 (build 16.0.4262.2), KB5102333 (build 17.0.1125.2), KB5102334 (build 16.0.1190.2), KB5102335 (build 15.0.4480.2), KB5102336 (build 15.0.2180.2), KB5102337 (build 14.0.3540.1), KB5102338 (build 14.0.2120.1), KB5102339 (build 13.0.7095.1), KB5102340 (build 13.0.6500.1). 7 security fixes. Biggest areas: database 7.</summary>
   </entry>
 </feed>

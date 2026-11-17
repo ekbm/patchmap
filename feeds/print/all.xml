@@ -5,8 +5,16 @@
   <link rel="self" href="https://patchmap.verilay.dev/feeds/print/all.xml"/>
   <link rel="alternate" href="https://patchmap.verilay.dev/"/>
   <id>https://patchmap.verilay.dev/feeds/print/all.xml</id>
-  <updated>2026-11-16T00:00:00Z</updated>
+  <updated>2026-11-17T00:00:00Z</updated>
   <author><name>Verilay Patchmap</name></author>
+  <entry>
+    <id>tag:patchmap.verilay.dev,2026:issue:2026-11-spooler-localspl-0xc1-hotpatch:mitigated</id>
+    <title>Workaround available: Print Spooler fails to load localspl.dll (error 0xC1) after the November hotpatch</title>
+    <updated>2026-11-17T00:00:00Z</updated>
+    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;q=KB5132043"/>
+    <category term="known-problem"/>
+    <summary>After the November hotpatch KB5132043 (build 26100/26200/26300.9911), the event log can show "Print Spooler failed to load a plug-in module localspl.dll, error code 0xC1" and printing can stop. The hotpatch does not replace localspl.dll on disk (it stays 10.0.26100.9711); it adds localspl_hotpatch.dll, which patches the Spooler in memory. Removing KB5132043 makes the error go away. Reported by a support engineer on one Windows 11 25H2 device; not confirmed by Microsoft. Workaround that worked: install the full November cumulative update KB5132061 (build .9974) and restart. It replaces localspl.dll on disk with 10.0.26100.9974, so no Spooler hotpatch is needed. Removing KB5132043 also works but leaves the November security fixes off until you install KB5132061. Started with KB5132043. Affects: Windows 11 24H2, Windows 11 25H2, Windows 11 26H2. Source: https://patchmap.verilay.dev/kb/KB5132043/. From Patchmap (news and vendor reports).</summary>
+  </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:issue:2026-11-print-zero-size-images:open</id>
     <title>Not fixed yet: Printing fails for documents with zero-size images</title>
@@ -478,13 +486,5 @@
     <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;a=print"/>
     <category term="area-update"/>
     <summary>KB5074109: 1 security fixes in Printing and scanning. Biggest parts: Printer Association Object (1).</summary>
-  </entry>
-  <entry>
-    <id>tag:patchmap.verilay.dev,2026:area:print:server-2025:2026-Jan</id>
-    <title>Windows Server 2025: Printing and scanning in the January 2026 update (1 fixes)</title>
-    <updated>2026-01-13T00:00:00Z</updated>
-    <link href="https://patchmap.verilay.dev/#v=server-2025&amp;a=print"/>
-    <category term="area-update"/>
-    <summary>KB5073379: 1 security fixes in Printing and scanning. Biggest parts: Printer Association Object (1).</summary>
   </entry>
 </feed>

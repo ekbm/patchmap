@@ -98,6 +98,44 @@
      "url": "https://www.howtogeek.com/word-printing-problems-microsofts-november-windows-updates-are-the-likely-cause/"
     }
    ]
+  },
+  {
+   "id": "2026-11-spooler-localspl-0xc1-hotpatch",
+   "title": "Print Spooler fails to load localspl.dll (error 0xC1) after the November hotpatch",
+   "summary": "After the November hotpatch KB5132043 (build 26100/26200/26300.9911), the event log can show \"Print Spooler failed to load a plug-in module localspl.dll, error code 0xC1\" and printing can stop. The hotpatch does not replace localspl.dll on disk (it stays 10.0.26100.9711); it adds localspl_hotpatch.dll, which patches the Spooler in memory. Removing KB5132043 makes the error go away.",
+   "areas": [
+    "print"
+   ],
+   "months": [
+    "2026-Nov"
+   ],
+   "versions": [
+    "win11-24h2",
+    "win11-25h2",
+    "win11-26h2"
+   ],
+   "by_version": {
+    "win11-24h2": {"caused_by": ["KB5132043"]},
+    "win11-25h2": {"caused_by": ["KB5132043"]},
+    "win11-26h2": {"caused_by": ["KB5132043"]}
+   },
+   "status": "mitigated",
+   "status_note": "Reported by a support engineer on one Windows 11 25H2 device; not confirmed by Microsoft. Workaround that worked: install the full November cumulative update KB5132061 (build .9974) and restart. It replaces localspl.dll on disk with 10.0.26100.9974, so no Spooler hotpatch is needed. Removing KB5132043 also works but leaves the November security fixes off until you install KB5132061.",
+   "checked": "2026-11-17",
+   "sources": [
+    {
+     "name": "Patchmap: files in KB5132043 (hotpatch)",
+     "url": "https://patchmap.verilay.dev/kb/KB5132043/"
+    },
+    {
+     "name": "Patchmap: files in KB5132061 (full update)",
+     "url": "https://patchmap.verilay.dev/kb/KB5132061/"
+    },
+    {
+     "name": "Microsoft Update Catalog: KB5132061",
+     "url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5132061"
+    }
+   ]
   }
  ]
 }
