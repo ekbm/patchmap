@@ -28,7 +28,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 SITE = "https://patchmap.verilay.dev"
 OUT_DIRS = ["kb", "problem", "error", "version"]
-STATUS = {"open": "Open", "mitigated": "Workaround available", "fix-rolling-out": "Fix rolling out",
+STATUS = {"open": "Not fixed yet", "mitigated": "Workaround available", "fix-rolling-out": "Fix rolling out",
           "fix-available": "Fix available", "fixed": "Fixed"}
 ERR = re.compile(r"0x[0-9A-Fa-f]{8}")
 e = lambda s: html.escape(str(s if s is not None else ""), quote=True)
@@ -326,11 +326,11 @@ def main():
             f"<td>{', '.join(e(x['build'] or '') for x in m['updates'])}</td><td>{m['fix_count']}</td></tr>" for m in d["months"])
         body = (f"<h1>{e(name)} updates</h1>"
                 f'<p class="lead">Monthly security updates for {e(name)} over the last 12 months, with build numbers and known problems.</p>'
-                + ("<h2>Open known problems</h2>" + "".join(issue_card(i, ver, purl(i)) for i in open_p) if open_p else "")
+                + ("<h2>Known problems not fixed yet</h2>" + "".join(issue_card(i, ver, purl(i)) for i in open_p) if open_p else "")
                 + f'<h2>Monthly updates</h2><table class="src-table"><tr><th>Month</th><th>Update</th><th>Build</th><th>Security fixes</th></tr>{rows}</table>'
                 + f'<p><a href="/#v={ver}">Explore {e(name)} step by step</a> · <a href="/feeds/{ver}.xml">Alert feed for {e(name)}</a></p>')
         urls.append(page(f"version/{ver}", f"{name} updates and known problems",
-                         f"{name}: every monthly security update for the last 12 months, build numbers, security fixes and open known problems.", body, [e(name)]))
+                         f"{name}: every monthly security update for the last 12 months, build numbers, security fixes and known problems not fixed yet.", body, [e(name)]))
 
     # ---- software list for the website's "My software" menu ----
     sw_ids = sorted(p.stem for p in (DATA / "software").glob("*.json") if p.stem != "index")

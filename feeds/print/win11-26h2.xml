@@ -9,7 +9,7 @@
   <author><name>Verilay Patchmap</name></author>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:issue:2026-11-print-zero-size-images:open</id>
-    <title>Open: Printing fails for documents with zero-size images</title>
+    <title>Not fixed yet: Printing fails for documents with zero-size images</title>
     <updated>2026-11-16T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;q=Printing%20fails%20for%20documents%20with%20zero-s"/>
     <category term="known-problem"/>
@@ -21,7 +21,7 @@
     <updated>2026-11-10T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;a=print"/>
     <category term="area-update"/>
-    <summary>KB5132043, KB5132061, KB5135385: 36 security fixes in Printing and scanning. Biggest parts: Windows Print Spooler Components (20); Windows GDI (3); Microsoft XPS Document Converter (3); Microsoft Color Management (3). Files changed (66): localspl.dll, ntprint.cat, ntprint.dll, ntprint.exe, ntprint.inf, ntprint4.cat, ntprint4.inf, printui.dll….</summary>
+    <summary>KB5132043, KB5132061, KB5135385: 36 security fixes in Printing and scanning. Biggest parts: Windows Print Spooler Components (20); Windows GDI (3); Microsoft XPS Document Converter (3); Microsoft Color Management (3). Files changed (67): localspl.dll, ntprint.cat, ntprint.dll, ntprint.exe, ntprint.inf, ntprint4.cat, ntprint4.inf, printui.dll….</summary>
   </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:area:print:win11-26h2:2026-Oct</id>
@@ -29,6 +29,6 @@
     <updated>2026-10-13T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=win11-26h2&amp;a=print"/>
     <category term="area-update"/>
-    <summary>KB5127648: 35 security fixes in Printing and scanning. Biggest parts: Windows Print Spooler Components (8); Windows USB Print Driver (8); Microsoft PostScript Printer Driver (6); Windows GDI (6). Files changed (67): localspl.dll, ntprint.cat, ntprint.dll, ntprint.exe, ntprint.inf, ntprint4.cat, ntprint4.inf, printui.dll….</summary>
+    <summary>KB5127648: 35 security fixes in Printing and scanning. Biggest parts: Windows Print Spooler Components (8); Windows USB Print Driver (8); Microsoft PostScript Printer Driver (6); Windows GDI (6). Files changed (68): localspl.dll, ntprint.cat, ntprint.dll, ntprint.exe, ntprint.inf, ntprint4.cat, ntprint4.inf, printui.dll….</summary>
   </entry>
 </feed>

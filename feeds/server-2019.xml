@@ -9,7 +9,7 @@
   <author><name>Verilay Patchmap</name></author>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:issue:2026-11-print-zero-size-images:open</id>
-    <title>Open: Printing fails for documents with zero-size images</title>
+    <title>Not fixed yet: Printing fails for documents with zero-size images</title>
     <updated>2026-11-16T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=Printing%20fails%20for%20documents%20with%20zero-s"/>
     <category term="known-problem"/>
@@ -17,7 +17,7 @@
   </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:issue:ms-3721:open</id>
-    <title>Open: SQL Server linked server connections might remain open</title>
+    <title>Not fixed yet: SQL Server linked server connections might remain open</title>
     <updated>2026-11-12T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=server-2019&amp;q=KB5126651"/>
     <category term="known-problem"/>

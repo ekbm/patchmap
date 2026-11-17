@@ -199,7 +199,7 @@ function compareCard(pair, h1, h2) {
     .map(([t, n]) => `<button class="chip" data-a="${esc(t)}">${esc(label(t))} ${n}</button>`).join(" ");
   const problems = between.flatMap((m) => issuesFor(m.month));
   const prob = problems.length
-    ? `<div><b>${problems.length} known problem${problems.length > 1 ? "s" : ""}</b> started in between (${problems.filter((i) => i.status !== "fixed").length} still open): ` +
+    ? `<div><b>${problems.length} known problem${problems.length > 1 ? "s" : ""}</b> started in between (${problems.filter((i) => i.status !== "fixed").length} not fixed yet): ` +
       problems.map((i) => `${esc(i.title)} <span class="pill ${esc(i.status)}">${esc(STATUS_LABEL[i.status] || i.status)}</span>`).join("; ") + `</div>`
     : `<div>No known problems started in between.</div>`;
   const body =
@@ -272,7 +272,7 @@ function areaCard(t) {
   const pats = ((state.tshoot || {}).patterns || []).filter((p) => p.area === t);
   const open = state.issues.filter((i) => i.versions.includes(state.ver) && i.areas.includes(t) && i.status !== "fixed");
   return `<div class="issue build"><span class="pill src">Area</span><span class="it">${esc(label(t))} on ${esc(state.data.label)}</span>` +
-    `<div>Latest: ${esc(monthName(latest.month))} (${latest.updates.map((u) => esc(u.kb) + kbBadge(u.kb)).join(", ")}): <b>${latest.areas[t].count} fixes</b>. ${months.length} of the last ${state.data.months.length} months touched this area.${open.length ? ` <b>${open.length} open known problem${open.length > 1 ? "s" : ""}.</b>` : ""}</div>` +
+    `<div>Latest: ${esc(monthName(latest.month))} (${latest.updates.map((u) => esc(u.kb) + kbBadge(u.kb)).join(", ")}): <b>${latest.areas[t].count} fixes</b>. ${months.length} of the last ${state.data.months.length} months touched this area.${open.length ? ` <b>${open.length} known problem${open.length > 1 ? "s" : ""} not fixed yet.</b>` : ""}</div>` +
     jumpsRow([
       ["Parts of Windows", topComps.map(([c, n]) => jl({ q: c, a: t }, `${c.replace(/^Windows /, "")} ${n}`))],
       ["Files", files.map((f) => jl({ q: f }, f))],
@@ -363,9 +363,9 @@ function buildCard(b, hit) {
     const latest = newer[newer.length - 1];
     after = `<div><b>${newer.length} newer update${newer.length > 1 ? "s" : ""}</b> since, the latest being ${esc(latest.kb)} (build ${esc(latest.build)}, ${esc(monthName(latest.month))}). <a href="#v=${esc(hit.version)}&q=${encodeURIComponent(b.text + " to " + latest.build)}">Compare with the latest</a>.` +
       (fixesSince ? ` Updating would add <b>${fixesSince} security fixes</b> from ${laterMonths.length} later month${laterMonths.length > 1 ? "s" : ""}.` : "") + `</div>` +
-      (problemsSince.length ? `<div class="is">Known problems that started in those later updates: ${problemsSince.length} (${problemsSince.filter((i) => i.status !== "fixed").length} still open). See the months below.</div>` : "");
+      (problemsSince.length ? `<div class="is">Known problems that started in those later updates: ${problemsSince.length} (${problemsSince.filter((i) => i.status !== "fixed").length} not fixed yet). See the months below.</div>` : "");
   }
-  const open = openUpTo.length ? `<div class="is">Still-open known problems from this update or earlier: ${openUpTo.map((i) => esc(i.title)).join("; ")}.</div>` : "";
+  const open = openUpTo.length ? `<div class="is">Known problems not fixed yet, from this update or earlier: ${openUpTo.map((i) => esc(i.title)).join("; ")}.</div>` : "";
   return `<div class="issue build"><span class="pill src">Build lookup</span><span class="it">${head}</span>${note}${after}${open}${hit.exact.length ? tshootBlock(ref) : ""}</div>`;
 }
 
@@ -381,7 +381,7 @@ function renderChips() {
 function issuesFor(month) {
   return state.issues.filter((i) => i.versions.includes(state.ver) && (!month || i.months.includes(month)) && (!state.area || i.areas.includes(state.area)));
 }
-const STATUS_LABEL = { open: "Open", mitigated: "Workaround available", "fix-rolling-out": "Fix rolling out", "fix-available": "Fix available", fixed: "Fixed" };
+const STATUS_LABEL = { open: "Not fixed yet", mitigated: "Workaround available", "fix-rolling-out": "Fix rolling out", "fix-available": "Fix available", fixed: "Fixed" };
 function issueHTML(i) {
   const pv = (i.by_version && i.by_version[state.ver]) || {};
   const sources = pv.url ? [{ name: "Microsoft release health", url: pv.url }] : i.sources;
@@ -391,7 +391,7 @@ function issueHTML(i) {
   const kbs = [caused.length ? `Started with ${caused.join(", ")}` : "",
                fixedIn.length ? `fixed in ${fixedIn.join(", ")}` : ""].filter(Boolean).join(" · ");
   const body = [i.summary, i.status_note].filter(Boolean).join(" ");
-  return `<div class="issue ${esc(i.status)}"><span class="pill ${esc(i.status)}">${esc(st)}</span>` +
+  return `<div class="issue ${esc(i.status)}" data-issue="${esc(i.id)}"><span class="pill ${esc(i.status)}">${esc(st)}</span>` +
     `<span class="pill src">${i.origin === "microsoft" ? "Microsoft" : "Patchmap"}</span>` +
     `<span class="it">${esc(i.title)}</span>${body ? `<div>${esc(body)}</div>` : ""}` +
     `<div class="is">${kbs ? esc(kbs) + " · " : ""}Sources: ${src} · checked ${esc(i.checked)}</div></div>`;
@@ -406,7 +406,7 @@ function renderIssues() {
   const latest = state.data.months[0] && state.data.months[0].month;
   const list = issuesFor(latest).filter((i) => i.status === "open");
   $("issues").innerHTML = list.map((i) =>
-    `<div class="issue open"><span class="pill open">Open</span><span class="it">${esc(i.title)}</span><div class="is">Known problem in the latest update. Details under ${monthName(latest)} below.</div></div>`).join("");
+    `<a class="issue open banner" href="#" data-goto="${esc(i.id)}"><span class="pill open">Not fixed yet</span><span class="it">${esc(i.title)}</span><div class="is">Known problem in the latest update (${monthName(latest)}). <u>See details</u></div></a>`).join("");
 }
 
 function fixHTML(f) {
@@ -426,7 +426,7 @@ function renderMonths(only) {
     const n = state.area ? (m.areas[state.area] ? m.areas[state.area].count : 0) : m.fix_count;
     const ki = issuesFor(m.month).filter((i) => i.status !== "fixed").length;
     const kf = issuesFor(m.month).length - ki;
-    const kt = [ki ? `${ki} open problem${ki > 1 ? "s" : ""}` : "", kf ? `${kf} fixed` : ""].filter(Boolean).join(", ");
+    const kt = [ki ? `${ki} problem${ki > 1 ? "s" : ""} not fixed yet` : "", kf ? `${kf} fixed` : ""].filter(Boolean).join(", ");
     return `<details class="month" data-i="${idx}"${idx === firstShown ? " open" : ""}><summary><span class="l">${monthName(m.month)} · ${ups}</span>` +
       `<span class="r">${n} fixes${state.area ? " in " + esc(label(state.area)) : ""}${swCount(m) !== null ? ` · <b>${swCount(m)} in ${esc(state.software[state.sw].name)}'s parts</b>` : ""}${kt ? " · " + kt : ""}</span></summary></details>`;
   }).join("");
@@ -608,6 +608,25 @@ function renderSearch() {
 }
 
 document.addEventListener("click", (ev) => {
+  const g = ev.target.closest("[data-goto]");
+  if (g) {
+    ev.preventDefault();
+    const d = document.querySelector('details.month[data-i="0"]');
+    if (d) {
+      d.open = true;
+      let tries = 0;
+      const go = () => {
+        // the month's contents are added just after it opens: wait for the problem card, then scroll to it
+        const card = d.querySelector(`[data-issue="${CSS.escape(g.dataset.goto)}"]`);
+        if (!card && tries++ < 20) return setTimeout(go, 50);
+        const target = card || d;
+        target.scrollIntoView({ block: "center" });
+        target.classList.add("flash"); setTimeout(() => target.classList.remove("flash"), 1600);
+      };
+      setTimeout(go, 50);
+    }
+    return;
+  }
   const t = ev.target.closest("[data-swinfo]");
   if (!t) return;
   ev.preventDefault();

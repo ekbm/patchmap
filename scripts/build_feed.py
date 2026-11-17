@@ -23,7 +23,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 SITE = "https://patchmap.verilay.dev/"
 MAX_ITEMS = 60
-STATUS = {"open": "Open", "mitigated": "Workaround available", "fix-rolling-out": "Fix rolling out",
+STATUS = {"open": "Not fixed yet", "mitigated": "Workaround available", "fix-rolling-out": "Fix rolling out",
           "fix-available": "Fix available", "fixed": "Now fixed"}
 
 
