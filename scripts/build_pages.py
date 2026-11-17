@@ -93,6 +93,30 @@ def issue_card(i, ver=None, problem_url=None):
             f'<span class="it">{title}</span></div>')
 
 
+def tshoot_section(kb, fixes, areas, tags, T, is_hotpatch, full_alt):
+    """'Something broke after this update?' with generic, careful steps (data/troubleshooting.json)."""
+    if not T:
+        return ""
+    li = lambda xs: "".join(f"<li>{e(x)}</li>" for x in xs)
+    crit = sum(1 for f in fixes if (f.get("severity") or {}) and "Critical" in (f.get("severity") or {}).values())
+    top = sorted(areas.items(), key=lambda x: -len(x[1]))
+    blocks = ""
+    for t, fs in top[:4]:
+        a = T["areas"].get(t)
+        if not a:
+            continue
+        blocks += (f'<details><summary><span class="l">{e(tags.get(t, t))}</span><span class="r">{len(fs)} fixes</span></summary>'
+                   f'<p class="is">Where to look</p><ul class="sw-list">{li(a["logs"])}</ul><p class="is">What to check</p><ul class="sw-list">{li(a["checks"])}</ul>'
+                   + (f'<p class="is">Stopgap</p><ul class="sw-list">{li(a["stopgap"])}</ul>' if a.get("stopgap") else "") + "</details>")
+    return ("<h2>Something broke after this update?</h2>"
+            f'<ul class="sw-list">{li(T["general"])}</ul>'
+            + (f'<p><b>Hotpatch:</b> {e(T["hotpatch"])}' + (f" The full update for the same month is {full_alt}." if full_alt else "") + "</p>" if is_hotpatch else "")
+            + f"<p><b>Before removing it:</b> {e(kb)} carries {len(fixes)} security fixes{f' ({crit} critical)' if crit else ''}.</p>"
+            + f'<ul class="sw-list">{li(T["uninstall"])}</ul>'
+            + (f"<p><b>By area</b>:</p>{blocks}" if blocks else "")
+            + '<p class="muted">Not Microsoft advice: check Microsoft&#39;s page for this update before acting.</p>')
+
+
 def files_section(kb, month, ver, tags):
     """Files this update changed (from scripts/fetch_files.py), grouped by area; 'other' only counted."""
     fi = (load("files/index.json", {}).get(ver) or {}).get(month)
@@ -151,6 +175,9 @@ def main():
             fix_by_cve[f["cve"]] = f
     updates = {p.stem: json.loads(p.read_text(encoding="utf-8")) for p in (DATA / "updates").glob("KB*.json")}
     software = [json.loads(p.read_text(encoding="utf-8")) for p in sorted((DATA / "software").glob("*.json")) if p.stem != "index"]
+    kbinfo = load("kb_titles.json", {})
+    tshoot = load("troubleshooting.json", None)
+    KIND = {"hotpatch": "Hotpatch", "baseline": "Baseline", "out-of-band": "Out-of-band", "preview": "Preview"}
     urls = []
 
     # names for problem pages, and which problems mention which KBs / error codes
@@ -204,8 +231,19 @@ def main():
             for t, fs in sorted(areas.items(), key=lambda x: -len(x[1])))
         top = ", ".join(f"{tags.get(t, t)} ({len(fs)})" for t, fs in sorted(areas.items(), key=lambda x: -len(x[1]))[:4])
         explore = f'/#v={vers[0]}&q={kb}'
-        body = (f"<h1>{e(kb)}</h1>"
-                f'<p class="lead">{e(u.get("type") or "Update")} for {e(names)}, {e(month_name(u["month"]))} (released {e(u["released"])}). '
+        kind = (kbinfo.get(kb) or {}).get("kind", "")
+        kind_label = KIND.get(kind)
+        full_alt = ""
+        if kind == "hotpatch":
+            same = [b for b in builds if b["version"] == vers[0] and b["month"] == u["month"] and b["kb"] != kb
+                    and (kbinfo.get(b["kb"]) or {}).get("kind") != "hotpatch"]
+            same.sort(key=lambda b: [int(x) for x in b["build"].split(".") if x.isdigit()], reverse=True)
+            if same:
+                full_alt = kb_link(same[0]["kb"]) + (f' (build {e(same[0]["build"])})' if len(vers) == 1 else "")
+        body = (f"<h1>{e(kb)}{f' <span class=\"pill src\">{kind_label}</span>' if kind_label else ''}</h1>"
+                + (f'<p class="is">This is a <b>hotpatch</b>: Windows is patched in memory, without a restart.'
+                   + (f" The full update for the same month is {full_alt}, which replaces the files on disk." if full_alt else "") + "</p>" if kind == "hotpatch" else "")
+                + f'<p class="lead">{e(kind_label or u.get("type") or "Update")} for {e(names)}, {e(month_name(u["month"]))} (released {e(u["released"])}). '
                 f'It includes {len(fixes)} security fixes{": most in " + e(top) if top else ""}.</p>'
                 f'<table class="src-table"><tr><th>Windows version</th><th>Build after installing</th></tr>{rows}</table>'
                 f"<p>Replaces: {repl}. "
@@ -215,6 +253,7 @@ def main():
                 + ("<h2>Known problems this update fixed</h2>" + "".join(issue_card(i, vers[0], purl(i)) for i in prob_f) if prob_f else "")
                 + software_section(kb, vers[0], fixes, software)
                 + files_section(kb, u["month"], vers[0], tags)
+                + tshoot_section(kb, fixes, areas, tags, tshoot, kind == "hotpatch", full_alt)
                 + f"<h2>Security fixes by area</h2>{area_list or '<p>No security fixes listed.</p>'}"
                 + f'<h2>Links</h2><ul><li><a href="{explore}">Open {e(kb)} in the Patchmap explorer</a></li>'
                 f'<li><a href="https://support.microsoft.com/help/{e(kb[2:])}" rel="noopener">Microsoft\'s page for {e(kb)}</a></li>'

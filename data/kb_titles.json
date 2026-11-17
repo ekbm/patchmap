@@ -1,0 +1,5450 @@
+{
+ "KB3176495": {
+  "kind": "standard",
+  "builds": [
+   "14393.51"
+  ],
+  "type": "2016-08 B"
+ },
+ "KB3176929": {
+  "kind": "standard",
+  "builds": [
+   "14393.10"
+  ],
+  "type": "2016-08 A"
+ },
+ "KB3176934": {
+  "kind": "preview",
+  "builds": [
+   "14393.82"
+  ],
+  "type": "2016-08 D"
+ },
+ "KB3176938": {
+  "kind": "standard",
+  "builds": [
+   "14393.105"
+  ],
+  "type": "2016-08 E"
+ },
+ "KB3189866": {
+  "kind": "standard",
+  "builds": [
+   "14393.187"
+  ],
+  "type": "2016-09 B"
+ },
+ "KB3193494": {
+  "kind": "standard",
+  "builds": [
+   "14393.187"
+  ],
+  "type": "2016-09 B"
+ },
+ "KB3194496": {
+  "kind": "preview",
+  "builds": [
+   "14393.222"
+  ],
+  "type": "2016-09 D"
+ },
+ "KB3194798": {
+  "kind": "standard",
+  "builds": [
+   "14393.321"
+  ],
+  "type": "2016-10 B"
+ },
+ "KB3197954": {
+  "kind": "preview",
+  "builds": [
+   "14393.351"
+  ],
+  "type": "2016-10 D"
+ },
+ "KB3200970": {
+  "kind": "standard",
+  "builds": [
+   "14393.447"
+  ],
+  "type": "2016-11 B"
+ },
+ "KB3201845": {
+  "kind": "standard",
+  "builds": [
+   "14393.479"
+  ],
+  "type": "2016-11 C"
+ },
+ "KB3206632": {
+  "kind": "standard",
+  "builds": [
+   "14393.576"
+  ],
+  "type": "2016-12 B"
+ },
+ "KB3213986": {
+  "kind": "standard",
+  "builds": [
+   "14393.693"
+  ],
+  "type": "2017-01 B"
+ },
+ "KB4013429": {
+  "kind": "standard",
+  "builds": [
+   "14393.953"
+  ],
+  "type": "2017-03 B"
+ },
+ "KB4015217": {
+  "kind": "standard",
+  "builds": [
+   "14393.1066"
+  ],
+  "type": "2017-04 B"
+ },
+ "KB4015438": {
+  "kind": "out-of-band",
+  "builds": [
+   "14393.969"
+  ],
+  "type": "2017-03 OOB"
+ },
+ "KB4019472": {
+  "kind": "standard",
+  "builds": [
+   "14393.1198"
+  ],
+  "type": "2017-05 B"
+ },
+ "KB4022715": {
+  "kind": "standard",
+  "builds": [
+   "14393.1358"
+  ],
+  "type": "2017-06 B"
+ },
+ "KB4022723": {
+  "kind": "standard",
+  "builds": [
+   "14393.1378"
+  ],
+  "type": "2017-06 C"
+ },
+ "KB4025334": {
+  "kind": "standard",
+  "builds": [
+   "14393.1532"
+  ],
+  "type": "2017-07 C"
+ },
+ "KB4025339": {
+  "kind": "standard",
+  "builds": [
+   "14393.1480"
+  ],
+  "type": "2017-07 B"
+ },
+ "KB4034658": {
+  "kind": "standard",
+  "builds": [
+   "14393.1593"
+  ],
+  "type": "2017-08 B"
+ },
+ "KB4034661": {
+  "kind": "standard",
+  "builds": [
+   "14393.1613"
+  ],
+  "type": "2017-08 C"
+ },
+ "KB4038220": {
+  "kind": "out-of-band",
+  "builds": [
+   "14393.1537"
+  ],
+  "type": "2017-08 OOB"
+ },
+ "KB4038782": {
+  "kind": "standard",
+  "builds": [
+   "14393.1715"
+  ],
+  "type": "2017-09 B"
+ },
+ "KB4038801": {
+  "kind": "standard",
+  "builds": [
+   "14393.1737"
+  ],
+  "type": "2017-09 C"
+ },
+ "KB4039396": {
+  "kind": "out-of-band",
+  "builds": [
+   "14393.1670"
+  ],
+  "type": "2017-08 OOB"
+ },
+ "KB4041688": {
+  "kind": "standard",
+  "builds": [
+   "14393.1794"
+  ],
+  "type": "2017-10 C"
+ },
+ "KB4041691": {
+  "kind": "standard",
+  "builds": [
+   "14393.1770"
+  ],
+  "type": "2017-10 B"
+ },
+ "KB4048953": {
+  "kind": "standard",
+  "builds": [
+   "14393.1884"
+  ],
+  "type": "2017-11 B"
+ },
+ "KB4051033": {
+  "kind": "standard",
+  "builds": [
+   "14393.1914"
+  ],
+  "type": "2017-11 C"
+ },
+ "KB4052231": {
+  "kind": "out-of-band",
+  "builds": [
+   "14393.1797"
+  ],
+  "type": "2017-10 OOB"
+ },
+ "KB4053579": {
+  "kind": "standard",
+  "builds": [
+   "14393.1944"
+  ],
+  "type": "2017-12 B"
+ },
+ "KB4056890": {
+  "kind": "standard",
+  "builds": [
+   "14393.2007"
+  ],
+  "type": "2018-01 B"
+ },
+ "KB4057142": {
+  "kind": "standard",
+  "builds": [
+   "14393.2035"
+  ],
+  "type": "2018-01 C"
+ },
+ "KB4074590": {
+  "kind": "standard",
+  "builds": [
+   "14393.2068"
+  ],
+  "type": "2018-02 B"
+ },
+ "KB4077525": {
+  "kind": "standard",
+  "builds": [
+   "14393.2097"
+  ],
+  "type": "2018-02 C"
+ },
+ "KB4088787": {
+  "kind": "standard",
+  "builds": [
+   "14393.2125"
+  ],
+  "type": "2018-03 B"
+ },
+ "KB4088889": {
+  "kind": "standard",
+  "builds": [
+   "14393.2155"
+  ],
+  "type": "2018-03 C"
+ },
+ "KB4093119": {
+  "kind": "standard",
+  "builds": [
+   "14393.2189"
+  ],
+  "type": "2018-04 B"
+ },
+ "KB4093120": {
+  "kind": "standard",
+  "builds": [
+   "14393.2214"
+  ],
+  "type": "2018-04 C"
+ },
+ "KB4096309": {
+  "kind": "out-of-band",
+  "builds": [
+   "14393.2156"
+  ],
+  "type": "2018-03 OOB"
+ },
+ "KB4103720": {
+  "kind": "standard",
+  "builds": [
+   "14393.2273"
+  ],
+  "type": "2018-05 C"
+ },
+ "KB4103723": {
+  "kind": "standard",
+  "builds": [
+   "14393.2248"
+  ],
+  "type": "2018-05 B"
+ },
+ "KB4284833": {
+  "kind": "standard",
+  "builds": [
+   "14393.2339"
+  ],
+  "type": "2018-06 C"
+ },
+ "KB4284880": {
+  "kind": "standard",
+  "builds": [
+   "14393.2312"
+  ],
+  "type": "2018-06 B"
+ },
+ "KB4338814": {
+  "kind": "standard",
+  "builds": [
+   "14393.2363"
+  ],
+  "type": "2018-07 B"
+ },
+ "KB4338822": {
+  "kind": "standard",
+  "builds": [
+   "14393.2395"
+  ],
+  "type": "2018-07 C"
+ },
+ "KB4343884": {
+  "kind": "standard",
+  "builds": [
+   "14393.2457"
+  ],
+  "type": "2018-08 C"
+ },
+ "KB4343887": {
+  "kind": "standard",
+  "builds": [
+   "14393.2430"
+  ],
+  "type": "2018-08 B"
+ },
+ "KB4345418": {
+  "kind": "out-of-band",
+  "builds": [
+   "14393.2368"
+  ],
+  "type": "2018-07 OOB"
+ },
+ "KB4346877": {
+  "kind": "out-of-band",
+  "builds": [
+   "14393.2396"
+  ],
+  "type": "2018-07 OOB"
+ },
+ "KB4457127": {
+  "kind": "standard",
+  "builds": [
+   "14393.2515"
+  ],
+  "type": "2018-09 C"
+ },
+ "KB4457131": {
+  "kind": "standard",
+  "builds": [
+   "14393.2485"
+  ],
+  "type": "2018-09 B"
+ },
+ "KB4462917": {
+  "kind": "standard",
+  "builds": [
+   "14393.2551"
+  ],
+  "type": "2018-10 B"
+ },
+ "KB4462928": {
+  "kind": "standard",
+  "builds": [
+   "14393.2580"
+  ],
+  "type": "2018-10 C"
+ },
+ "KB4464330": {
+  "kind": "standard",
+  "builds": [
+   "17763.55"
+  ],
+  "type": "2018-10 B"
+ },
+ "KB4464455": {
+  "kind": "preview",
+  "builds": [
+   "17763.107"
+  ],
+  "type": "2018-10 D"
+ },
+ "KB4467684": {
+  "kind": "standard",
+  "builds": [
+   "14393.2639"
+  ],
+  "type": "2018-11 C"
+ },
+ "KB4467691": {
+  "kind": "standard",
+  "builds": [
+   "14393.2608"
+  ],
+  "type": "2018-11 B"
+ },
+ "KB4467708": {
+  "kind": "standard",
+  "builds": [
+   "17763.134"
+  ],
+  "type": "2018-11 B"
+ },
+ "KB4469342": {
+  "kind": "preview",
+  "builds": [
+   "17763.168"
+  ],
+  "type": "2018-11 D"
+ },
+ "KB4471321": {
+  "kind": "standard",
+  "builds": [
+   "14393.2665"
+  ],
+  "type": "2018-12 B"
+ },
+ "KB4471332": {
+  "kind": "standard",
+  "builds": [
+   "17763.194"
+  ],
+  "type": "2018-12 B"
+ },
+ "KB4476976": {
+  "kind": "preview",
+  "builds": [
+   "17763.292"
+  ],
+  "type": "2019-01 D"
+ },
+ "KB4478877": {
+  "kind": "out-of-band",
+  "builds": [
+   "14393.2641"
+  ],
+  "type": "2018-11 OOB"
+ },
+ "KB4480116": {
+  "kind": "standard",
+  "builds": [
+   "17763.253"
+  ],
+  "type": "2019-01 B"
+ },
+ "KB4480961": {
+  "kind": "standard",
+  "builds": [
+   "14393.2724"
+  ],
+  "type": "2019-01 B"
+ },
+ "KB4480977": {
+  "kind": "standard",
+  "builds": [
+   "14393.2759"
+  ],
+  "type": "2019-01 C"
+ },
+ "KB4482887": {
+  "kind": "preview",
+  "builds": [
+   "17763.348"
+  ],
+  "type": "2019-02 D"
+ },
+ "KB4483229": {
+  "kind": "out-of-band",
+  "builds": [
+   "14393.2670"
+  ],
+  "type": "2018-12 OOB"
+ },
+ "KB4483235": {
+  "kind": "out-of-band",
+  "builds": [
+   "17763.195"
+  ],
+  "type": "2018-12 OOB"
+ },
+ "KB4487006": {
+  "kind": "standard",
+  "builds": [
+   "14393.2828"
+  ],
+  "type": "2019-02 C"
+ },
+ "KB4487026": {
+  "kind": "standard",
+  "builds": [
+   "14393.2791"
+  ],
+  "type": "2019-02 B"
+ },
+ "KB4487044": {
+  "kind": "standard",
+  "builds": [
+   "17763.316"
+  ],
+  "type": "2019-02 B"
+ },
+ "KB4489882": {
+  "kind": "standard",
+  "builds": [
+   "14393.2848"
+  ],
+  "type": "2019-03 B"
+ },
+ "KB4489889": {
+  "kind": "standard",
+  "builds": [
+   "14393.2879"
+  ],
+  "type": "2019-03 C"
+ },
+ "KB4489899": {
+  "kind": "standard",
+  "builds": [
+   "17763.379"
+  ],
+  "type": "2019-03 B"
+ },
+ "KB4490481": {
+  "kind": "preview",
+  "builds": [
+   "17763.404"
+  ],
+  "type": "2019-03 D"
+ },
+ "KB4493470": {
+  "kind": "standard",
+  "builds": [
+   "14393.2906"
+  ],
+  "type": "2019-04 B"
+ },
+ "KB4493473": {
+  "kind": "standard",
+  "builds": [
+   "14393.2941"
+  ],
+  "type": "2019-04 C"
+ },
+ "KB4493509": {
+  "kind": "standard",
+  "builds": [
+   "17763.437"
+  ],
+  "type": "2019-04 B"
+ },
+ "KB4494440": {
+  "kind": "standard",
+  "builds": [
+   "14393.2969"
+  ],
+  "type": "2019-05 B"
+ },
+ "KB4494441": {
+  "kind": "standard",
+  "builds": [
+   "17763.503"
+  ],
+  "type": "2019-05 B"
+ },
+ "KB4495667": {
+  "kind": "standard",
+  "builds": [
+   "17763.475"
+  ],
+  "type": "2019-04 C"
+ },
+ "KB4497934": {
+  "kind": "standard",
+  "builds": [
+   "17763.529"
+  ],
+  "type": "2019-05 C"
+ },
+ "KB4499177": {
+  "kind": "standard",
+  "builds": [
+   "14393.2999"
+  ],
+  "type": "2019-05 C"
+ },
+ "KB4499418": {
+  "kind": "out-of-band",
+  "builds": [
+   "14393.2908"
+  ],
+  "type": "2019-04 OOB"
+ },
+ "KB4501371": {
+  "kind": "standard",
+  "builds": [
+   "17763.592"
+  ],
+  "type": "2019-06 C"
+ },
+ "KB4501835": {
+  "kind": "out-of-band",
+  "builds": [
+   "17763.439"
+  ],
+  "type": "2019-04 OOB"
+ },
+ "KB4503267": {
+  "kind": "standard",
+  "builds": [
+   "14393.3025"
+  ],
+  "type": "2019-06 B"
+ },
+ "KB4503294": {
+  "kind": "standard",
+  "builds": [
+   "14393.3053"
+  ],
+  "type": "2019-06 C"
+ },
+ "KB4503327": {
+  "kind": "standard",
+  "builds": [
+   "17763.557"
+  ],
+  "type": "2019-06 B"
+ },
+ "KB4505052": {
+  "kind": "out-of-band",
+  "builds": [
+   "14393.2972"
+  ],
+  "type": "2019-05 OOB"
+ },
+ "KB4505056": {
+  "kind": "out-of-band",
+  "builds": [
+   "17763.504"
+  ],
+  "type": "2019-05 OOB"
+ },
+ "KB4505658": {
+  "kind": "standard",
+  "builds": [
+   "17763.652"
+  ],
+  "type": "2019-07 C"
+ },
+ "KB4507459": {
+  "kind": "standard",
+  "builds": [
+   "14393.3115"
+  ],
+  "type": "2019-07 C"
+ },
+ "KB4507460": {
+  "kind": "standard",
+  "builds": [
+   "14393.3085"
+  ],
+  "type": "2019-07 B"
+ },
+ "KB4507469": {
+  "kind": "standard",
+  "builds": [
+   "17763.615"
+  ],
+  "type": "2019-07 B"
+ },
+ "KB4509475": {
+  "kind": "out-of-band",
+  "builds": [
+   "14393.3056"
+  ],
+  "type": "2019-06 OOB"
+ },
+ "KB4509479": {
+  "kind": "out-of-band",
+  "builds": [
+   "17763.593"
+  ],
+  "type": "2019-06 OOB"
+ },
+ "KB4511553": {
+  "kind": "standard",
+  "builds": [
+   "17763.678"
+  ],
+  "type": "2019-08 B"
+ },
+ "KB4512495": {
+  "kind": "standard",
+  "builds": [
+   "14393.3181"
+  ],
+  "type": "2019-08 C"
+ },
+ "KB4512517": {
+  "kind": "standard",
+  "builds": [
+   "14393.3144"
+  ],
+  "type": "2019-08 B"
+ },
+ "KB4512534": {
+  "kind": "standard",
+  "builds": [
+   "17763.720"
+  ],
+  "type": "2019-08 C"
+ },
+ "KB4512578": {
+  "kind": "standard",
+  "builds": [
+   "17763.737"
+  ],
+  "type": "2019-09 B"
+ },
+ "KB4516044": {
+  "kind": "standard",
+  "builds": [
+   "14393.3204"
+  ],
+  "type": "2019-09 B"
+ },
+ "KB4516061": {
+  "kind": "standard",
+  "builds": [
+   "14393.3242"
+  ],
+  "type": "2019-09 C"
+ },
+ "KB4516077": {
+  "kind": "standard",
+  "builds": [
+   "17763.774"
+  ],
+  "type": "2019-09 C"
+ },
+ "KB4519338": {
+  "kind": "standard",
+  "builds": [
+   "17763.805"
+  ],
+  "type": "2019-10 B"
+ },
+ "KB4519979": {
+  "kind": "standard",
+  "builds": [
+   "14393.3300"
+  ],
+  "type": "2019-10 C"
+ },
+ "KB4519998": {
+  "kind": "standard",
+  "builds": [
+   "14393.3274"
+  ],
+  "type": "2019-10 B"
+ },
+ "KB4520062": {
+  "kind": "standard",
+  "builds": [
+   "17763.832"
+  ],
+  "type": "2019-10 C"
+ },
+ "KB4522010": {
+  "kind": "out-of-band",
+  "builds": [
+   "14393.3206"
+  ],
+  "type": "2019-09 OOB"
+ },
+ "KB4522015": {
+  "kind": "out-of-band",
+  "builds": [
+   "17763.740"
+  ],
+  "type": "2019-09 OOB"
+ },
+ "KB4523205": {
+  "kind": "standard",
+  "builds": [
+   "17763.864"
+  ],
+  "type": "2019-11 B"
+ },
+ "KB4524148": {
+  "kind": "out-of-band",
+  "builds": [
+   "17763.775"
+  ],
+  "type": "2019-09 OOB"
+ },
+ "KB4524152": {
+  "kind": "out-of-band",
+  "builds": [
+   "14393.3243"
+  ],
+  "type": "2019-09 OOB"
+ },
+ "KB4525236": {
+  "kind": "standard",
+  "builds": [
+   "14393.3326"
+  ],
+  "type": "2019-11 B"
+ },
+ "KB4530689": {
+  "kind": "standard",
+  "builds": [
+   "14393.3384"
+  ],
+  "type": "2019-12 B"
+ },
+ "KB4530715": {
+  "kind": "standard",
+  "builds": [
+   "17763.914"
+  ],
+  "type": "2019-12 B"
+ },
+ "KB4532691": {
+  "kind": "standard",
+  "builds": [
+   "17763.1039"
+  ],
+  "type": "2020-02 B"
+ },
+ "KB4534271": {
+  "kind": "standard",
+  "builds": [
+   "14393.3443"
+  ],
+  "type": "2020-01 B"
+ },
+ "KB4534273": {
+  "kind": "standard",
+  "builds": [
+   "17763.973"
+  ],
+  "type": "2020-01 B"
+ },
+ "KB4534307": {
+  "kind": "standard",
+  "builds": [
+   "14393.3474"
+  ],
+  "type": "2020-01 C"
+ },
+ "KB4534321": {
+  "kind": "standard",
+  "builds": [
+   "17763.1012"
+  ],
+  "type": "2020-01 C"
+ },
+ "KB4537764": {
+  "kind": "standard",
+  "builds": [
+   "14393.3504"
+  ],
+  "type": "2020-02 B"
+ },
+ "KB4537806": {
+  "kind": "standard",
+  "builds": [
+   "14393.3542"
+  ],
+  "type": "2020-02 C"
+ },
+ "KB4537818": {
+  "kind": "standard",
+  "builds": [
+   "17763.1075"
+  ],
+  "type": "2020-02 C"
+ },
+ "KB4538461": {
+  "kind": "standard",
+  "builds": [
+   "17763.1098"
+  ],
+  "type": "2020-03 B"
+ },
+ "KB4540670": {
+  "kind": "standard",
+  "builds": [
+   "14393.3564"
+  ],
+  "type": "2020-03 B"
+ },
+ "KB4541329": {
+  "kind": "standard",
+  "builds": [
+   "14393.3595"
+  ],
+  "type": "2020-03 C"
+ },
+ "KB4541331": {
+  "kind": "standard",
+  "builds": [
+   "17763.1131"
+  ],
+  "type": "2020-03 C"
+ },
+ "KB4549949": {
+  "kind": "standard",
+  "builds": [
+   "17763.1158"
+  ],
+  "type": "2020-04 B"
+ },
+ "KB4550929": {
+  "kind": "standard",
+  "builds": [
+   "14393.3630"
+  ],
+  "type": "2020-04 B"
+ },
+ "KB4550947": {
+  "kind": "standard",
+  "builds": [
+   "14393.3659"
+  ],
+  "type": "2020-04 C"
+ },
+ "KB4550969": {
+  "kind": "standard",
+  "builds": [
+   "17763.1192"
+  ],
+  "type": "2020-04 C"
+ },
+ "KB4551853": {
+  "kind": "standard",
+  "builds": [
+   "17763.1217"
+  ],
+  "type": "2020-05 B"
+ },
+ "KB4554354": {
+  "kind": "out-of-band",
+  "builds": [
+   "17763.1132"
+  ],
+  "type": "2020-03 OOB"
+ },
+ "KB4556813": {
+  "kind": "standard",
+  "builds": [
+   "14393.3686"
+  ],
+  "type": "2020-05 B"
+ },
+ "KB4558998": {
+  "kind": "standard",
+  "builds": [
+   "17763.1339"
+  ],
+  "type": "2020-07 B"
+ },
+ "KB4559003": {
+  "kind": "standard",
+  "builds": [
+   "17763.1369"
+  ],
+  "type": "2020-07 C"
+ },
+ "KB4561608": {
+  "kind": "standard",
+  "builds": [
+   "17763.1282"
+  ],
+  "type": "2020-06 B"
+ },
+ "KB4561616": {
+  "kind": "standard",
+  "builds": [
+   "14393.3750"
+  ],
+  "type": "2020-06 B"
+ },
+ "KB4565349": {
+  "kind": "standard",
+  "builds": [
+   "17763.1397"
+  ],
+  "type": "2020-08 B"
+ },
+ "KB4565511": {
+  "kind": "standard",
+  "builds": [
+   "14393.3808"
+  ],
+  "type": "2020-07 B"
+ },
+ "KB4567513": {
+  "kind": "out-of-band",
+  "builds": [
+   "17763.1294"
+  ],
+  "type": "2020-06 OOB"
+ },
+ "KB4567517": {
+  "kind": "out-of-band",
+  "builds": [
+   "14393.3755"
+  ],
+  "type": "2020-06 OOB"
+ },
+ "KB4570333": {
+  "kind": "standard",
+  "builds": [
+   "17763.1457"
+  ],
+  "type": "2020-09 B"
+ },
+ "KB4571694": {
+  "kind": "standard",
+  "builds": [
+   "14393.3866"
+  ],
+  "type": "2020-08 B"
+ },
+ "KB4571748": {
+  "kind": "standard",
+  "builds": [
+   "17763.1432"
+  ],
+  "type": "2020-08 C"
+ },
+ "KB4577015": {
+  "kind": "standard",
+  "builds": [
+   "14393.3930"
+  ],
+  "type": "2020-09 B"
+ },
+ "KB4577069": {
+  "kind": "standard",
+  "builds": [
+   "17763.1490"
+  ],
+  "type": "2020-09 C"
+ },
+ "KB4577668": {
+  "kind": "standard",
+  "builds": [
+   "17763.1518"
+  ],
+  "type": "2020-10 B"
+ },
+ "KB4580346": {
+  "kind": "standard",
+  "builds": [
+   "14393.3986"
+  ],
+  "type": "2020-10 B"
+ },
+ "KB4580390": {
+  "kind": "standard",
+  "builds": [
+   "17763.1554"
+  ],
+  "type": "2020-10 C"
+ },
+ "KB4586793": {
+  "kind": "standard",
+  "builds": [
+   "17763.1577"
+  ],
+  "type": "2020-11 B"
+ },
+ "KB4586830": {
+  "kind": "standard",
+  "builds": [
+   "14393.4046"
+  ],
+  "type": "2020-11 B"
+ },
+ "KB4586839": {
+  "kind": "standard",
+  "builds": [
+   "17763.1613"
+  ],
+  "type": "2020-11 C"
+ },
+ "KB4592440": {
+  "kind": "standard",
+  "builds": [
+   "17763.1637"
+  ],
+  "type": "2020-12 B"
+ },
+ "KB4593226": {
+  "kind": "standard",
+  "builds": [
+   "14393.4104"
+  ],
+  "type": "2020-12 B"
+ },
+ "KB4594441": {
+  "kind": "out-of-band",
+  "builds": [
+   "14393.4048"
+  ],
+  "type": "2020-11 OOB"
+ },
+ "KB4594442": {
+  "kind": "out-of-band",
+  "builds": [
+   "17763.1579"
+  ],
+  "type": "2020-11 OOB"
+ },
+ "KB4598230": {
+  "kind": "standard",
+  "builds": [
+   "17763.1697"
+  ],
+  "type": "2021-01 B"
+ },
+ "KB4598243": {
+  "kind": "standard",
+  "builds": [
+   "14393.4169"
+  ],
+  "type": "2021-01 B"
+ },
+ "KB4598296": {
+  "kind": "standard",
+  "builds": [
+   "17763.1728"
+  ],
+  "type": "2021-01 C"
+ },
+ "KB4601318": {
+  "kind": "standard",
+  "builds": [
+   "14393.4225"
+  ],
+  "type": "2021-02 B"
+ },
+ "KB4601345": {
+  "kind": "standard",
+  "builds": [
+   "17763.1757"
+  ],
+  "type": "2021-02 B"
+ },
+ "KB4601383": {
+  "kind": "standard",
+  "builds": [
+   "17763.1790"
+  ],
+  "type": "2021-02 C"
+ },
+ "KB5000803": {
+  "kind": "standard",
+  "builds": [
+   "14393.4283"
+  ],
+  "type": "2021-03 B"
+ },
+ "KB5000822": {
+  "kind": "standard",
+  "builds": [
+   "17763.1817"
+  ],
+  "type": "2021-03 B"
+ },
+ "KB5000854": {
+  "kind": "standard",
+  "builds": [
+   "17763.1852"
+  ],
+  "type": "2021-03 C"
+ },
+ "KB5001342": {
+  "kind": "standard",
+  "builds": [
+   "17763.1879"
+  ],
+  "type": "2021-04 B"
+ },
+ "KB5001347": {
+  "kind": "standard",
+  "builds": [
+   "14393.4350"
+  ],
+  "type": "2021-04 B"
+ },
+ "KB5001384": {
+  "kind": "standard",
+  "builds": [
+   "17763.1911"
+  ],
+  "type": "2021-04 C"
+ },
+ "KB5001568": {
+  "kind": "out-of-band",
+  "builds": [
+   "17763.1821"
+  ],
+  "type": "2021-03 OOB"
+ },
+ "KB5001633": {
+  "kind": "out-of-band",
+  "builds": [
+   "14393.4288"
+  ],
+  "type": "2021-03 OOB"
+ },
+ "KB5001638": {
+  "kind": "out-of-band",
+  "builds": [
+   "17763.1823"
+  ],
+  "type": "2021-03 OOB"
+ },
+ "KB5003171": {
+  "kind": "standard",
+  "builds": [
+   "17763.1935"
+  ],
+  "type": "2021-05 B"
+ },
+ "KB5003197": {
+  "kind": "standard",
+  "builds": [
+   "14393.4402"
+  ],
+  "type": "2021-05 B"
+ },
+ "KB5003217": {
+  "kind": "standard",
+  "builds": [
+   "17763.1971"
+  ],
+  "type": "2021-05 C"
+ },
+ "KB5003638": {
+  "kind": "standard",
+  "builds": [
+   "14393.4467"
+  ],
+  "type": "2021-06 B"
+ },
+ "KB5003646": {
+  "kind": "standard",
+  "builds": [
+   "17763.1999"
+  ],
+  "type": "2021-06 B"
+ },
+ "KB5003703": {
+  "kind": "standard",
+  "builds": [
+   "17763.2028"
+  ],
+  "type": "2021-06 C"
+ },
+ "KB5004238": {
+  "kind": "standard",
+  "builds": [
+   "14393.4530"
+  ],
+  "type": "2021-07 B"
+ },
+ "KB5004244": {
+  "kind": "standard",
+  "builds": [
+   "17763.2061"
+  ],
+  "type": "2021-07 B"
+ },
+ "KB5004308": {
+  "kind": "standard",
+  "builds": [
+   "17763.2090"
+  ],
+  "type": "2021-07 C"
+ },
+ "KB5004947": {
+  "kind": "out-of-band",
+  "builds": [
+   "17763.2029"
+  ],
+  "type": "2021-07 OOB"
+ },
+ "KB5004948": {
+  "kind": "out-of-band",
+  "builds": [
+   "14393.4470"
+  ],
+  "type": "2021-07 OOB"
+ },
+ "KB5005030": {
+  "kind": "standard",
+  "builds": [
+   "17763.2114"
+  ],
+  "type": "2021-08 B"
+ },
+ "KB5005043": {
+  "kind": "standard",
+  "builds": [
+   "14393.4583"
+  ],
+  "type": "2021-08 B"
+ },
+ "KB5005102": {
+  "kind": "standard",
+  "builds": [
+   "17763.2145"
+  ],
+  "type": "2021-08 C"
+ },
+ "KB5005104": {
+  "kind": "standard",
+  "builds": [
+   "20348.202"
+  ],
+  "type": "2021-08 C"
+ },
+ "KB5005393": {
+  "kind": "out-of-band",
+  "builds": [
+   "14393.4532"
+  ],
+  "type": "2021-07 OOB"
+ },
+ "KB5005394": {
+  "kind": "out-of-band",
+  "builds": [
+   "17763.2091"
+  ],
+  "type": "2021-07 OOB"
+ },
+ "KB5005568": {
+  "kind": "standard",
+  "builds": [
+   "17763.2183"
+  ],
+  "type": "2021-09 B"
+ },
+ "KB5005573": {
+  "kind": "standard",
+  "builds": [
+   "14393.4651"
+  ],
+  "type": "2021-09 B"
+ },
+ "KB5005575": {
+  "kind": "standard",
+  "builds": [
+   "20348.230"
+  ],
+  "type": "2021-09 B"
+ },
+ "KB5005619": {
+  "kind": "standard",
+  "builds": [
+   "20348.261"
+  ],
+  "type": "2021-09 C"
+ },
+ "KB5005625": {
+  "kind": "standard",
+  "builds": [
+   "17763.2213"
+  ],
+  "type": "2021-09 C"
+ },
+ "KB5006669": {
+  "kind": "standard",
+  "builds": [
+   "14393.4704"
+  ],
+  "type": "2021-10 B"
+ },
+ "KB5006672": {
+  "kind": "standard",
+  "builds": [
+   "17763.2237"
+  ],
+  "type": "2021-10 B"
+ },
+ "KB5006674": {
+  "kind": "standard",
+  "builds": [
+   "22000.258"
+  ],
+  "type": "2021-10 B"
+ },
+ "KB5006699": {
+  "kind": "standard",
+  "builds": [
+   "20348.288"
+  ],
+  "type": "2021-10 B"
+ },
+ "KB5006744": {
+  "kind": "standard",
+  "builds": [
+   "17763.2268"
+  ],
+  "type": "2021-10 C"
+ },
+ "KB5006745": {
+  "kind": "standard",
+  "builds": [
+   "20348.320"
+  ],
+  "type": "2021-10 C"
+ },
+ "KB5006746": {
+  "kind": "standard",
+  "builds": [
+   "22000.282"
+  ],
+  "type": "2021-10 C"
+ },
+ "KB5007192": {
+  "kind": "standard",
+  "builds": [
+   "14393.4770"
+  ],
+  "type": "2021-11 B"
+ },
+ "KB5007205": {
+  "kind": "standard",
+  "builds": [
+   "20348.350"
+  ],
+  "type": "2021-11 B"
+ },
+ "KB5007206": {
+  "kind": "standard",
+  "builds": [
+   "17763.2300"
+  ],
+  "type": "2021-11 B"
+ },
+ "KB5007215": {
+  "kind": "standard",
+  "builds": [
+   "22000.318"
+  ],
+  "type": "2021-11 B"
+ },
+ "KB5007254": {
+  "kind": "standard",
+  "builds": [
+   "20348.380"
+  ],
+  "type": "2021-11 C"
+ },
+ "KB5007262": {
+  "kind": "standard",
+  "builds": [
+   "22000.348"
+  ],
+  "type": "2021-11 C"
+ },
+ "KB5007266": {
+  "kind": "standard",
+  "builds": [
+   "17763.2330"
+  ],
+  "type": "2021-11 C"
+ },
+ "KB5008207": {
+  "kind": "standard",
+  "builds": [
+   "14393.4825"
+  ],
+  "type": "2021-12 B"
+ },
+ "KB5008215": {
+  "kind": "standard",
+  "builds": [
+   "22000.376"
+  ],
+  "type": "2021-12 B"
+ },
+ "KB5008218": {
+  "kind": "standard",
+  "builds": [
+   "17763.2366"
+  ],
+  "type": "2021-12 B"
+ },
+ "KB5008223": {
+  "kind": "standard",
+  "builds": [
+   "20348.405"
+  ],
+  "type": "2021-12 B"
+ },
+ "KB5008353": {
+  "kind": "standard",
+  "builds": [
+   "22000.469"
+  ],
+  "type": "2022-01 C"
+ },
+ "KB5008601": {
+  "kind": "out-of-band",
+  "builds": [
+   "14393.4771"
+  ],
+  "type": "2021-11 OOB"
+ },
+ "KB5008602": {
+  "kind": "out-of-band",
+  "builds": [
+   "17763.2305"
+  ],
+  "type": "2021-11 OOB"
+ },
+ "KB5009546": {
+  "kind": "standard",
+  "builds": [
+   "14393.4886"
+  ],
+  "type": "2022-01 B"
+ },
+ "KB5009555": {
+  "kind": "standard",
+  "builds": [
+   "20348.469"
+  ],
+  "type": "2022-01 B"
+ },
+ "KB5009557": {
+  "kind": "standard",
+  "builds": [
+   "17763.2452"
+  ],
+  "type": "2022-01 B"
+ },
+ "KB5009566": {
+  "kind": "standard",
+  "builds": [
+   "22000.434"
+  ],
+  "type": "2022-01 B"
+ },
+ "KB5009608": {
+  "kind": "standard",
+  "builds": [
+   "20348.502"
+  ],
+  "type": "2022-01 C"
+ },
+ "KB5009616": {
+  "kind": "standard",
+  "builds": [
+   "17763.2510"
+  ],
+  "type": "2022-01 C"
+ },
+ "KB5010195": {
+  "kind": "out-of-band",
+  "builds": [
+   "14393.4827"
+  ],
+  "type": "2022-01 OOB"
+ },
+ "KB5010196": {
+  "kind": "out-of-band",
+  "builds": [
+   "17763.2369"
+  ],
+  "type": "2022-01 OOB"
+ },
+ "KB5010197": {
+  "kind": "out-of-band",
+  "builds": [
+   "20348.407"
+  ],
+  "type": "2022-01 OOB"
+ },
+ "KB5010351": {
+  "kind": "standard",
+  "builds": [
+   "17763.2565"
+  ],
+  "type": "2022-02 B"
+ },
+ "KB5010354": {
+  "kind": "standard",
+  "builds": [
+   "20348.524"
+  ],
+  "type": "2022-02 B"
+ },
+ "KB5010359": {
+  "kind": "standard",
+  "builds": [
+   "14393.4946"
+  ],
+  "type": "2022-02 B"
+ },
+ "KB5010386": {
+  "kind": "standard",
+  "builds": [
+   "22000.493"
+  ],
+  "type": "2022-02 B"
+ },
+ "KB5010414": {
+  "kind": "standard",
+  "builds": [
+   "22000.527"
+  ],
+  "type": "2022-02 C"
+ },
+ "KB5010421": {
+  "kind": "standard",
+  "builds": [
+   "20348.558"
+  ],
+  "type": "2022-02 C"
+ },
+ "KB5010427": {
+  "kind": "standard",
+  "builds": [
+   "17763.2628"
+  ],
+  "type": "2022-02 C"
+ },
+ "KB5010790": {
+  "kind": "out-of-band",
+  "builds": [
+   "14393.4889"
+  ],
+  "type": "2022-01 OOB"
+ },
+ "KB5010791": {
+  "kind": "out-of-band",
+  "builds": [
+   "17763.2458"
+  ],
+  "type": "2022-01 OOB"
+ },
+ "KB5010795": {
+  "kind": "out-of-band",
+  "builds": [
+   "22000.438"
+  ],
+  "type": "2022-01 OOB"
+ },
+ "KB5010796": {
+  "kind": "out-of-band",
+  "builds": [
+   "20348.473"
+  ],
+  "type": "2022-01 OOB"
+ },
+ "KB5011493": {
+  "kind": "standard",
+  "builds": [
+   "22000.556"
+  ],
+  "type": "2022-03 B"
+ },
+ "KB5011495": {
+  "kind": "standard",
+  "builds": [
+   "14393.5006"
+  ],
+  "type": "2022-03 B"
+ },
+ "KB5011497": {
+  "kind": "standard",
+  "builds": [
+   "20348.587"
+  ],
+  "type": "2022-03 B"
+ },
+ "KB5011503": {
+  "kind": "standard",
+  "builds": [
+   "17763.2686"
+  ],
+  "type": "2022-03 B"
+ },
+ "KB5011551": {
+  "kind": "standard",
+  "builds": [
+   "17763.2746"
+  ],
+  "type": "2022-03 C"
+ },
+ "KB5011558": {
+  "kind": "standard",
+  "builds": [
+   "20348.617"
+  ],
+  "type": "2022-03 C"
+ },
+ "KB5011563": {
+  "kind": "standard",
+  "builds": [
+   "22000.593"
+  ],
+  "type": "2022-03 C"
+ },
+ "KB5012592": {
+  "kind": "standard",
+  "builds": [
+   "22000.613"
+  ],
+  "type": "2022-04 B"
+ },
+ "KB5012596": {
+  "kind": "standard",
+  "builds": [
+   "14393.5066"
+  ],
+  "type": "2022-04 B"
+ },
+ "KB5012604": {
+  "kind": "standard",
+  "builds": [
+   "20348.643"
+  ],
+  "type": "2022-04 B"
+ },
+ "KB5012636": {
+  "kind": "standard",
+  "builds": [
+   "17763.2867"
+  ],
+  "type": "2022-04 C"
+ },
+ "KB5012637": {
+  "kind": "standard",
+  "builds": [
+   "20348.681"
+  ],
+  "type": "2022-04 C"
+ },
+ "KB5012643": {
+  "kind": "standard",
+  "builds": [
+   "22000.652"
+  ],
+  "type": "2022-04 C"
+ },
+ "KB5012647": {
+  "kind": "standard",
+  "builds": [
+   "17763.2803"
+  ],
+  "type": "2022-04 B"
+ },
+ "KB5013941": {
+  "kind": "standard",
+  "builds": [
+   "17763.2928"
+  ],
+  "type": "2022-05 B"
+ },
+ "KB5013943": {
+  "kind": "standard",
+  "builds": [
+   "22000.675"
+  ],
+  "type": "2022-05 B"
+ },
+ "KB5013944": {
+  "kind": "standard",
+  "builds": [
+   "20348.707"
+  ],
+  "type": "2022-05 B"
+ },
+ "KB5013952": {
+  "kind": "standard",
+  "builds": [
+   "14393.5125"
+  ],
+  "type": "2022-05 B"
+ },
+ "KB5014019": {
+  "kind": "standard",
+  "builds": [
+   "22000.708"
+  ],
+  "type": "2022-05 C"
+ },
+ "KB5014021": {
+  "kind": "standard",
+  "builds": [
+   "20348.740"
+  ],
+  "type": "2022-05 C"
+ },
+ "KB5014022": {
+  "kind": "standard",
+  "builds": [
+   "17763.2989"
+  ],
+  "type": "2022-05 C"
+ },
+ "KB5014665": {
+  "kind": "standard",
+  "builds": [
+   "20348.803"
+  ],
+  "type": "2022-06 C"
+ },
+ "KB5014668": {
+  "kind": "standard",
+  "builds": [
+   "22000.778"
+  ],
+  "type": "2022-06 C"
+ },
+ "KB5014669": {
+  "kind": "standard",
+  "builds": [
+   "17763.3113"
+  ],
+  "type": "2022-06 C"
+ },
+ "KB5014678": {
+  "kind": "standard",
+  "builds": [
+   "20348.768"
+  ],
+  "type": "2022-06 B"
+ },
+ "KB5014692": {
+  "kind": "standard",
+  "builds": [
+   "17763.3046"
+  ],
+  "type": "2022-06 B"
+ },
+ "KB5014697": {
+  "kind": "standard",
+  "builds": [
+   "22000.739"
+  ],
+  "type": "2022-06 B"
+ },
+ "KB5014702": {
+  "kind": "standard",
+  "builds": [
+   "14393.5192"
+  ],
+  "type": "2022-06 B"
+ },
+ "KB5015013": {
+  "kind": "out-of-band",
+  "builds": [
+   "20348.709"
+  ],
+  "type": "2022-05 OOB"
+ },
+ "KB5015018": {
+  "kind": "out-of-band",
+  "builds": [
+   "17763.2931"
+  ],
+  "type": "2022-05 OOB"
+ },
+ "KB5015019": {
+  "kind": "out-of-band",
+  "builds": [
+   "14393.5127"
+  ],
+  "type": "2022-05 OOB"
+ },
+ "KB5015808": {
+  "kind": "standard",
+  "builds": [
+   "14393.5246"
+  ],
+  "type": "2022-07 B"
+ },
+ "KB5015811": {
+  "kind": "standard",
+  "builds": [
+   "17763.3165"
+  ],
+  "type": "2022-07 B"
+ },
+ "KB5015814": {
+  "kind": "standard",
+  "builds": [
+   "22000.795"
+  ],
+  "type": "2022-07 B"
+ },
+ "KB5015827": {
+  "kind": "standard",
+  "builds": [
+   "20348.825"
+  ],
+  "type": "2022-07 B"
+ },
+ "KB5015879": {
+  "kind": "standard",
+  "builds": [
+   "20348.859"
+  ],
+  "type": "2022-07 C"
+ },
+ "KB5015880": {
+  "kind": "standard",
+  "builds": [
+   "17763.3232"
+  ],
+  "type": "2022-07 C"
+ },
+ "KB5015882": {
+  "kind": "standard",
+  "builds": [
+   "22000.832"
+  ],
+  "type": "2022-07 C"
+ },
+ "KB5016138": {
+  "kind": "out-of-band",
+  "builds": [
+   "22000.740"
+  ],
+  "type": "2022-06 OOB"
+ },
+ "KB5016622": {
+  "kind": "standard",
+  "builds": [
+   "14393.5291"
+  ],
+  "type": "2022-08 B"
+ },
+ "KB5016623": {
+  "kind": "standard",
+  "builds": [
+   "17763.3287"
+  ],
+  "type": "2022-08 B"
+ },
+ "KB5016627": {
+  "kind": "standard",
+  "builds": [
+   "20348.887"
+  ],
+  "type": "2022-08 B"
+ },
+ "KB5016629": {
+  "kind": "standard",
+  "builds": [
+   "22000.856"
+  ],
+  "type": "2022-08 B"
+ },
+ "KB5016690": {
+  "kind": "standard",
+  "builds": [
+   "17763.3346"
+  ],
+  "type": "2022-08 C"
+ },
+ "KB5016691": {
+  "kind": "standard",
+  "builds": [
+   "22000.918"
+  ],
+  "type": "2022-08 C"
+ },
+ "KB5016693": {
+  "kind": "standard",
+  "builds": [
+   "20348.946"
+  ],
+  "type": "2022-08 C"
+ },
+ "KB5017305": {
+  "kind": "standard",
+  "builds": [
+   "14393.5356"
+  ],
+  "type": "2022-09 B"
+ },
+ "KB5017315": {
+  "kind": "standard",
+  "builds": [
+   "17763.3406"
+  ],
+  "type": "2022-09 B"
+ },
+ "KB5017316": {
+  "kind": "standard",
+  "builds": [
+   "20348.1006"
+  ],
+  "type": "2022-09 B"
+ },
+ "KB5017328": {
+  "kind": "standard",
+  "builds": [
+   "22000.978"
+  ],
+  "type": "2022-09 B"
+ },
+ "KB5017379": {
+  "kind": "standard",
+  "builds": [
+   "17763.3469"
+  ],
+  "type": "2022-09 C"
+ },
+ "KB5017381": {
+  "kind": "standard",
+  "builds": [
+   "20348.1070"
+  ],
+  "type": "2022-09 C"
+ },
+ "KB5017383": {
+  "kind": "standard",
+  "builds": [
+   "22000.1042"
+  ],
+  "type": "2022-09 C"
+ },
+ "KB5017389": {
+  "kind": "preview",
+  "builds": [
+   "22621.608"
+  ],
+  "type": "2022-09 D"
+ },
+ "KB5018411": {
+  "kind": "standard",
+  "builds": [
+   "14393.5427"
+  ],
+  "type": "2022-10 B"
+ },
+ "KB5018418": {
+  "kind": "standard",
+  "builds": [
+   "22000.1098"
+  ],
+  "type": "2022-10 B"
+ },
+ "KB5018419": {
+  "kind": "standard",
+  "builds": [
+   "17763.3532"
+  ],
+  "type": "2022-10 B"
+ },
+ "KB5018421": {
+  "kind": "standard",
+  "builds": [
+   "20348.1129"
+  ],
+  "type": "2022-10 B"
+ },
+ "KB5018427": {
+  "kind": "standard",
+  "builds": [
+   "22621.674"
+  ],
+  "type": "2022-10 B"
+ },
+ "KB5018483": {
+  "kind": "standard",
+  "builds": [
+   "22000.1165"
+  ],
+  "type": "2022-10 C"
+ },
+ "KB5018485": {
+  "kind": "standard",
+  "builds": [
+   "20348.1194"
+  ],
+  "type": "2022-10 C"
+ },
+ "KB5018496": {
+  "kind": "preview",
+  "builds": [
+   "22621.755"
+  ],
+  "type": "2022-10 D"
+ },
+ "KB5019081": {
+  "kind": "standard",
+  "builds": [
+   "20348.1249"
+  ],
+  "type": "2022-11 B"
+ },
+ "KB5019157": {
+  "kind": "standard",
+  "builds": [
+   "22000.1281"
+  ],
+  "type": "2022-11 C"
+ },
+ "KB5019274": {
+  "kind": "standard",
+  "builds": [
+   "22000.1516"
+  ],
+  "type": "2023-01 C"
+ },
+ "KB5019311": {
+  "kind": "out-of-band",
+  "builds": [
+   "22621.525"
+  ],
+  "type": "2022-09 OOB"
+ },
+ "KB5019509": {
+  "kind": "out-of-band",
+  "builds": [
+   "22621.675"
+  ],
+  "type": "2022-10 OOB"
+ },
+ "KB5019961": {
+  "kind": "standard",
+  "builds": [
+   "22000.1219"
+  ],
+  "type": "2022-11 B"
+ },
+ "KB5019964": {
+  "kind": "standard",
+  "builds": [
+   "14393.5501"
+  ],
+  "type": "2022-11 B"
+ },
+ "KB5019966": {
+  "kind": "standard",
+  "builds": [
+   "17763.3650"
+  ],
+  "type": "2022-11 B"
+ },
+ "KB5019980": {
+  "kind": "standard",
+  "builds": [
+   "22621.819"
+  ],
+  "type": "2022-11 B"
+ },
+ "KB5020032": {
+  "kind": "standard",
+  "builds": [
+   "20348.1311"
+  ],
+  "type": "2022-11 C"
+ },
+ "KB5020044": {
+  "kind": "preview",
+  "builds": [
+   "22621.900"
+  ],
+  "type": "2022-11 D"
+ },
+ "KB5020387": {
+  "kind": "out-of-band",
+  "builds": [
+   "22000.1100"
+  ],
+  "type": "2022-10 OOB"
+ },
+ "KB5020436": {
+  "kind": "out-of-band",
+  "builds": [
+   "20348.1131"
+  ],
+  "type": "2022-10 OOB"
+ },
+ "KB5020438": {
+  "kind": "out-of-band",
+  "builds": [
+   "17763.3534"
+  ],
+  "type": "2022-10 OOB"
+ },
+ "KB5020439": {
+  "kind": "out-of-band",
+  "builds": [
+   "14393.5429"
+  ],
+  "type": "2022-10 OOB"
+ },
+ "KB5021234": {
+  "kind": "standard",
+  "builds": [
+   "22000.1335"
+  ],
+  "type": "2022-12 B"
+ },
+ "KB5021235": {
+  "kind": "standard",
+  "builds": [
+   "14393.5582"
+  ],
+  "type": "2022-12 B"
+ },
+ "KB5021237": {
+  "kind": "standard",
+  "builds": [
+   "17763.3770"
+  ],
+  "type": "2022-12 B"
+ },
+ "KB5021249": {
+  "kind": "standard",
+  "builds": [
+   "20348.1366"
+  ],
+  "type": "2022-12 B"
+ },
+ "KB5021255": {
+  "kind": "standard",
+  "builds": [
+   "22621.963"
+  ],
+  "type": "2022-12 B"
+ },
+ "KB5021654": {
+  "kind": "out-of-band",
+  "builds": [
+   "14393.5502"
+  ],
+  "type": "2022-11 OOB"
+ },
+ "KB5021655": {
+  "kind": "out-of-band",
+  "builds": [
+   "17763.3653"
+  ],
+  "type": "2022-11 OOB"
+ },
+ "KB5021656": {
+  "kind": "out-of-band",
+  "builds": [
+   "20348.1251"
+  ],
+  "type": "2022-11 OOB"
+ },
+ "KB5022286": {
+  "kind": "standard",
+  "builds": [
+   "17763.3887"
+  ],
+  "type": "2023-01 B"
+ },
+ "KB5022287": {
+  "kind": "standard",
+  "builds": [
+   "22000.1455"
+  ],
+  "type": "2023-01 B"
+ },
+ "KB5022289": {
+  "kind": "standard",
+  "builds": [
+   "14393.5648"
+  ],
+  "type": "2023-01 B"
+ },
+ "KB5022291": {
+  "kind": "standard",
+  "builds": [
+   "20348.1487"
+  ],
+  "type": "2023-01 B"
+ },
+ "KB5022303": {
+  "kind": "standard",
+  "builds": [
+   "22621.1105"
+  ],
+  "type": "2023-01 B"
+ },
+ "KB5022360": {
+  "kind": "preview",
+  "builds": [
+   "22621.1194"
+  ],
+  "type": "2023-01 D"
+ },
+ "KB5022553": {
+  "kind": "out-of-band",
+  "builds": [
+   "20348.1368"
+  ],
+  "type": "2022-12 OOB"
+ },
+ "KB5022554": {
+  "kind": "out-of-band",
+  "builds": [
+   "17763.3772"
+  ],
+  "type": "2022-12 OOB"
+ },
+ "KB5022836": {
+  "kind": "standard",
+  "builds": [
+   "22000.1574"
+  ],
+  "type": "2023-02 B"
+ },
+ "KB5022838": {
+  "kind": "standard",
+  "builds": [
+   "14393.5717"
+  ],
+  "type": "2023-02 B"
+ },
+ "KB5022840": {
+  "kind": "standard",
+  "builds": [
+   "17763.4010"
+  ],
+  "type": "2023-02 B"
+ },
+ "KB5022842": {
+  "kind": "standard",
+  "builds": [
+   "20348.1547"
+  ],
+  "type": "2023-02 B"
+ },
+ "KB5022845": {
+  "kind": "standard",
+  "builds": [
+   "22621.1265"
+  ],
+  "type": "2023-02 B"
+ },
+ "KB5022905": {
+  "kind": "standard",
+  "builds": [
+   "22000.1641"
+  ],
+  "type": "2023-02 C"
+ },
+ "KB5022913": {
+  "kind": "preview",
+  "builds": [
+   "22621.1344"
+  ],
+  "type": "2023-02 D"
+ },
+ "KB5023697": {
+  "kind": "standard",
+  "builds": [
+   "14393.5786"
+  ],
+  "type": "2023-03 B"
+ },
+ "KB5023698": {
+  "kind": "standard",
+  "builds": [
+   "22000.1696"
+  ],
+  "type": "2023-03 B"
+ },
+ "KB5023702": {
+  "kind": "standard",
+  "builds": [
+   "17763.4131"
+  ],
+  "type": "2023-03 B"
+ },
+ "KB5023705": {
+  "kind": "standard",
+  "builds": [
+   "20348.1607"
+  ],
+  "type": "2023-03 B"
+ },
+ "KB5023706": {
+  "kind": "standard",
+  "builds": [
+   "22621.1413"
+  ],
+  "type": "2023-03 B"
+ },
+ "KB5023774": {
+  "kind": "standard",
+  "builds": [
+   "22000.1761"
+  ],
+  "type": "2023-03 C"
+ },
+ "KB5023778": {
+  "kind": "preview",
+  "builds": [
+   "22621.1485"
+  ],
+  "type": "2023-03 D"
+ },
+ "KB5025224": {
+  "kind": "standard",
+  "builds": [
+   "22000.1817"
+  ],
+  "type": "2023-04 B"
+ },
+ "KB5025228": {
+  "kind": "standard",
+  "builds": [
+   "14393.5850"
+  ],
+  "type": "2023-04 B"
+ },
+ "KB5025229": {
+  "kind": "standard",
+  "builds": [
+   "17763.4252"
+  ],
+  "type": "2023-04 B"
+ },
+ "KB5025230": {
+  "kind": "standard",
+  "builds": [
+   "20348.1668"
+  ],
+  "type": "2023-04 B"
+ },
+ "KB5025239": {
+  "kind": "standard",
+  "builds": [
+   "22621.1555"
+  ],
+  "type": "2023-04 B"
+ },
+ "KB5025298": {
+  "kind": "preview",
+  "builds": [
+   "22000.1880"
+  ],
+  "type": "2023-04 D"
+ },
+ "KB5025305": {
+  "kind": "preview",
+  "builds": [
+   "22621.1635"
+  ],
+  "type": "2023-04 D"
+ },
+ "KB5026362": {
+  "kind": "standard",
+  "builds": [
+   "17763.4377"
+  ],
+  "type": "2023-05 B"
+ },
+ "KB5026363": {
+  "kind": "standard",
+  "builds": [
+   "14393.5921"
+  ],
+  "type": "2023-05 B"
+ },
+ "KB5026368": {
+  "kind": "standard",
+  "builds": [
+   "22000.1936"
+  ],
+  "type": "2023-05 B"
+ },
+ "KB5026370": {
+  "kind": "standard",
+  "builds": [
+   "20348.1726"
+  ],
+  "type": "2023-05 B"
+ },
+ "KB5026372": {
+  "kind": "standard",
+  "builds": [
+   "22621.1702"
+  ],
+  "type": "2023-05 B"
+ },
+ "KB5026436": {
+  "kind": "preview",
+  "builds": [
+   "22000.2003"
+  ],
+  "type": "2023-05 D"
+ },
+ "KB5026446": {
+  "kind": "preview",
+  "builds": [
+   "22621.1778"
+  ],
+  "type": "2023-05 D"
+ },
+ "KB5027219": {
+  "kind": "standard",
+  "builds": [
+   "14393.5989"
+  ],
+  "type": "2023-06 B"
+ },
+ "KB5027222": {
+  "kind": "standard",
+  "builds": [
+   "17763.4499"
+  ],
+  "type": "2023-06 B"
+ },
+ "KB5027223": {
+  "kind": "standard",
+  "builds": [
+   "22000.2057"
+  ],
+  "type": "2023-06 B"
+ },
+ "KB5027225": {
+  "kind": "standard",
+  "builds": [
+   "20348.1787"
+  ],
+  "type": "2023-06 B"
+ },
+ "KB5027231": {
+  "kind": "standard",
+  "builds": [
+   "22621.1848"
+  ],
+  "type": "2023-06 B"
+ },
+ "KB5027292": {
+  "kind": "preview",
+  "builds": [
+   "22000.2124"
+  ],
+  "type": "2023-06 D"
+ },
+ "KB5027303": {
+  "kind": "preview",
+  "builds": [
+   "22621.1928"
+  ],
+  "type": "2023-06 D"
+ },
+ "KB5028168": {
+  "kind": "standard",
+  "builds": [
+   "17763.4645"
+  ],
+  "type": "2023-07 B"
+ },
+ "KB5028169": {
+  "kind": "standard",
+  "builds": [
+   "14393.6085"
+  ],
+  "type": "2023-07 B"
+ },
+ "KB5028171": {
+  "kind": "standard",
+  "builds": [
+   "20348.1850"
+  ],
+  "type": "2023-07 B"
+ },
+ "KB5028182": {
+  "kind": "standard",
+  "builds": [
+   "22000.2176"
+  ],
+  "type": "2023-07 B"
+ },
+ "KB5028185": {
+  "kind": "standard",
+  "builds": [
+   "22621.1992"
+  ],
+  "type": "2023-07 B"
+ },
+ "KB5028245": {
+  "kind": "preview",
+  "builds": [
+   "22000.2245"
+  ],
+  "type": "2023-07 D"
+ },
+ "KB5028254": {
+  "kind": "preview",
+  "builds": [
+   "22621.2070"
+  ],
+  "type": "2023-07 D"
+ },
+ "KB5028623": {
+  "kind": "out-of-band",
+  "builds": [
+   "14393.5996"
+  ],
+  "type": "2023-06 OOB"
+ },
+ "KB5029242": {
+  "kind": "standard",
+  "builds": [
+   "14393.6167"
+  ],
+  "type": "2023-08 B"
+ },
+ "KB5029247": {
+  "kind": "standard",
+  "builds": [
+   "17763.4737"
+  ],
+  "type": "2023-08 B"
+ },
+ "KB5029250": {
+  "kind": "standard",
+  "builds": [
+   "20348.1906"
+  ],
+  "type": "2023-08 B"
+ },
+ "KB5029253": {
+  "kind": "standard",
+  "builds": [
+   "22000.2295"
+  ],
+  "type": "2023-08 B"
+ },
+ "KB5029263": {
+  "kind": "standard",
+  "builds": [
+   "22621.2134"
+  ],
+  "type": "2023-08 B"
+ },
+ "KB5029332": {
+  "kind": "preview",
+  "builds": [
+   "22000.2360"
+  ],
+  "type": "2023-08 D"
+ },
+ "KB5029351": {
+  "kind": "preview",
+  "builds": [
+   "22621.2215"
+  ],
+  "type": "2023-08 D"
+ },
+ "KB5030213": {
+  "kind": "standard",
+  "builds": [
+   "14393.6252"
+  ],
+  "type": "2023-09 B"
+ },
+ "KB5030214": {
+  "kind": "standard",
+  "builds": [
+   "17763.4851"
+  ],
+  "type": "2023-09 B"
+ },
+ "KB5030216": {
+  "kind": "standard",
+  "builds": [
+   "20348.1970"
+  ],
+  "type": "2023-09 B"
+ },
+ "KB5030217": {
+  "kind": "standard",
+  "builds": [
+   "22000.2416"
+  ],
+  "type": "2023-09 B"
+ },
+ "KB5030219": {
+  "kind": "standard",
+  "builds": [
+   "22621.2283"
+  ],
+  "type": "2023-09 B"
+ },
+ "KB5030301": {
+  "kind": "preview",
+  "builds": [
+   "22000.2482"
+  ],
+  "type": "2023-09 D"
+ },
+ "KB5030310": {
+  "kind": "preview",
+  "builds": [
+   "22621.2361"
+  ],
+  "type": "2023-09 D"
+ },
+ "KB5031354": {
+  "kind": "standard",
+  "builds": [
+   "22621.2428"
+  ],
+  "type": "2023-10 B"
+ },
+ "KB5031358": {
+  "kind": "standard",
+  "builds": [
+   "22000.2538"
+  ],
+  "type": "2023-10 B"
+ },
+ "KB5031361": {
+  "kind": "standard",
+  "builds": [
+   "17763.4974"
+  ],
+  "type": "2023-10 B"
+ },
+ "KB5031362": {
+  "kind": "standard",
+  "builds": [
+   "14393.6351"
+  ],
+  "type": "2023-10 B"
+ },
+ "KB5031364": {
+  "kind": "standard",
+  "builds": [
+   "20348.2031"
+  ],
+  "type": "2023-10 B"
+ },
+ "KB5031455": {
+  "kind": "preview",
+  "builds": [
+   "22631.2506",
+   "22621.2506"
+  ],
+  "type": "2023-10 D"
+ },
+ "KB5032190": {
+  "kind": "standard",
+  "builds": [
+   "22631.2715",
+   "22621.2715"
+  ],
+  "type": "2023-11 B"
+ },
+ "KB5032192": {
+  "kind": "standard",
+  "builds": [
+   "22000.2600"
+  ],
+  "type": "2023-11 B"
+ },
+ "KB5032196": {
+  "kind": "standard",
+  "builds": [
+   "17763.5122"
+  ],
+  "type": "2023-11 B"
+ },
+ "KB5032197": {
+  "kind": "standard",
+  "builds": [
+   "14393.6452"
+  ],
+  "type": "2023-11 B"
+ },
+ "KB5032198": {
+  "kind": "standard",
+  "builds": [
+   "20348.2113"
+  ],
+  "type": "2023-11 B"
+ },
+ "KB5032288": {
+  "kind": "preview",
+  "builds": [
+   "22631.2792",
+   "22621.2792"
+  ],
+  "type": "2023-11 D"
+ },
+ "KB5033118": {
+  "kind": "standard",
+  "builds": [
+   "20348.2159"
+  ],
+  "type": "2023-12 B"
+ },
+ "KB5033369": {
+  "kind": "standard",
+  "builds": [
+   "22000.2652"
+  ],
+  "type": "2023-12 B"
+ },
+ "KB5033371": {
+  "kind": "standard",
+  "builds": [
+   "17763.5206"
+  ],
+  "type": "2023-12 B"
+ },
+ "KB5033373": {
+  "kind": "standard",
+  "builds": [
+   "14393.6529"
+  ],
+  "type": "2023-12 B"
+ },
+ "KB5033375": {
+  "kind": "standard",
+  "builds": [
+   "22631.2861",
+   "22621.2861"
+  ],
+  "type": "2023-12 B"
+ },
+ "KB5034119": {
+  "kind": "standard",
+  "builds": [
+   "14393.6614"
+  ],
+  "type": "2024-01 B"
+ },
+ "KB5034121": {
+  "kind": "standard",
+  "builds": [
+   "22000.2713"
+  ],
+  "type": "2024-01 B"
+ },
+ "KB5034123": {
+  "kind": "standard",
+  "builds": [
+   "22631.3007",
+   "22621.3007"
+  ],
+  "type": "2024-01 B"
+ },
+ "KB5034127": {
+  "kind": "standard",
+  "builds": [
+   "17763.5329"
+  ],
+  "type": "2024-01 B"
+ },
+ "KB5034129": {
+  "kind": "baseline",
+  "builds": [
+   "20348.2227"
+  ],
+  "type": "2024-01 B"
+ },
+ "KB5034204": {
+  "kind": "preview",
+  "builds": [
+   "22631.3085",
+   "22621.3085"
+  ],
+  "type": "2024-01 D"
+ },
+ "KB5034765": {
+  "kind": "standard",
+  "builds": [
+   "22631.3155",
+   "22621.3155"
+  ],
+  "type": "2024-02 B"
+ },
+ "KB5034766": {
+  "kind": "standard",
+  "builds": [
+   "22000.2777"
+  ],
+  "type": "2024-02 B"
+ },
+ "KB5034767": {
+  "kind": "standard",
+  "builds": [
+   "14393.6709"
+  ],
+  "type": "2024-02 B"
+ },
+ "KB5034768": {
+  "kind": "standard",
+  "builds": [
+   "17763.5458"
+  ],
+  "type": "2024-02 B"
+ },
+ "KB5034770": {
+  "kind": "standard",
+  "builds": [
+   "20348.2322"
+  ],
+  "type": "2024-02 B"
+ },
+ "KB5034848": {
+  "kind": "preview",
+  "builds": [
+   "22631.3235",
+   "22621.3235"
+  ],
+  "type": "2024-02 D"
+ },
+ "KB5034860": {
+  "kind": "hotpatch",
+  "builds": [
+   "20348.2277"
+  ],
+  "type": "2024.02 B"
+ },
+ "KB5035849": {
+  "kind": "standard",
+  "builds": [
+   "17763.5576"
+  ],
+  "type": "2024-03 B"
+ },
+ "KB5035853": {
+  "kind": "standard",
+  "builds": [
+   "22631.3296",
+   "22621.3296"
+  ],
+  "type": "2024-03 B"
+ },
+ "KB5035854": {
+  "kind": "standard",
+  "builds": [
+   "22000.2836"
+  ],
+  "type": "2024-03 B"
+ },
+ "KB5035855": {
+  "kind": "standard",
+  "builds": [
+   "14393.6796"
+  ],
+  "type": "2024-03 B"
+ },
+ "KB5035857": {
+  "kind": "standard",
+  "builds": [
+   "20348.2340"
+  ],
+  "type": "2024-03 B"
+ },
+ "KB5035942": {
+  "kind": "preview",
+  "builds": [
+   "22631.3374",
+   "22621.3374"
+  ],
+  "type": "2024-03 D"
+ },
+ "KB5035959": {
+  "kind": "hotpatch",
+  "builds": [
+   "20348.2333"
+  ],
+  "type": "2024.03 B"
+ },
+ "KB5036893": {
+  "kind": "standard",
+  "builds": [
+   "22631.3447",
+   "22621.3447"
+  ],
+  "type": "2024-04 B"
+ },
+ "KB5036894": {
+  "kind": "standard",
+  "builds": [
+   "22000.2899"
+  ],
+  "type": "2024-04 B"
+ },
+ "KB5036896": {
+  "kind": "standard",
+  "builds": [
+   "17763.5696"
+  ],
+  "type": "2024-04 B"
+ },
+ "KB5036899": {
+  "kind": "standard",
+  "builds": [
+   "14393.6897"
+  ],
+  "type": "2024-04 B"
+ },
+ "KB5036909": {
+  "kind": "baseline",
+  "builds": [
+   "20348.2402"
+  ],
+  "type": "2024-04 B"
+ },
+ "KB5036980": {
+  "kind": "preview",
+  "builds": [
+   "22631.3527",
+   "22621.3527"
+  ],
+  "type": "2024-04 D"
+ },
+ "KB5037422": {
+  "kind": "out-of-band",
+  "builds": [
+   "20348.2342"
+  ],
+  "type": "2024-03 OOB"
+ },
+ "KB5037423": {
+  "kind": "out-of-band",
+  "builds": [
+   "14393.6800"
+  ],
+  "type": "2024-03 OOB"
+ },
+ "KB5037425": {
+  "kind": "out-of-band",
+  "builds": [
+   "17763.5579"
+  ],
+  "type": "2024-03 OOB"
+ },
+ "KB5037763": {
+  "kind": "standard",
+  "builds": [
+   "14393.6981"
+  ],
+  "type": "2024-05 B"
+ },
+ "KB5037765": {
+  "kind": "standard",
+  "builds": [
+   "17763.5820"
+  ],
+  "type": "2024-05 B"
+ },
+ "KB5037770": {
+  "kind": "standard",
+  "builds": [
+   "22000.2960"
+  ],
+  "type": "2024-05 B"
+ },
+ "KB5037771": {
+  "kind": "standard",
+  "builds": [
+   "22631.3593",
+   "22621.3593"
+  ],
+  "type": "2024-05 B"
+ },
+ "KB5037782": {
+  "kind": "standard",
+  "builds": [
+   "20348.2461"
+  ],
+  "type": "2024-05 B"
+ },
+ "KB5037848": {
+  "kind": "hotpatch",
+  "builds": [
+   "20348.2458"
+  ],
+  "type": "2024.05 B"
+ },
+ "KB5037853": {
+  "kind": "preview",
+  "builds": [
+   "22631.3672",
+   "22621.3672"
+  ],
+  "type": "2024-05 D"
+ },
+ "KB5039212": {
+  "kind": "standard",
+  "builds": [
+   "22631.3737",
+   "22621.3737"
+  ],
+  "type": "2024-06 B"
+ },
+ "KB5039213": {
+  "kind": "standard",
+  "builds": [
+   "22000.3019"
+  ],
+  "type": "2024-06 B"
+ },
+ "KB5039214": {
+  "kind": "standard",
+  "builds": [
+   "14393.7070"
+  ],
+  "type": "2024-06 B"
+ },
+ "KB5039217": {
+  "kind": "standard",
+  "builds": [
+   "17763.5936"
+  ],
+  "type": "2024-06 B"
+ },
+ "KB5039227": {
+  "kind": "standard",
+  "builds": [
+   "20348.2527"
+  ],
+  "type": "2024-06 B"
+ },
+ "KB5039302": {
+  "kind": "preview",
+  "builds": [
+   "22631.3810",
+   "22621.3810"
+  ],
+  "type": "2024-06 D"
+ },
+ "KB5039330": {
+  "kind": "hotpatch",
+  "builds": [
+   "20348.2522"
+  ],
+  "type": "2024.06 B"
+ },
+ "KB5039705": {
+  "kind": "out-of-band",
+  "builds": [
+   "17763.5830"
+  ],
+  "type": "2024-05 OOB"
+ },
+ "KB5040430": {
+  "kind": "standard",
+  "builds": [
+   "17763.6054"
+  ],
+  "type": "2024-07 B"
+ },
+ "KB5040431": {
+  "kind": "standard",
+  "builds": [
+   "22000.3079"
+  ],
+  "type": "2024-07 B"
+ },
+ "KB5040434": {
+  "kind": "standard",
+  "builds": [
+   "14393.7159"
+  ],
+  "type": "2024-07 B"
+ },
+ "KB5040437": {
+  "kind": "baseline",
+  "builds": [
+   "20348.2582"
+  ],
+  "type": "2024-07 B"
+ },
+ "KB5040442": {
+  "kind": "standard",
+  "builds": [
+   "22631.3880",
+   "22621.3880"
+  ],
+  "type": "2024-07 B"
+ },
+ "KB5040527": {
+  "kind": "preview",
+  "builds": [
+   "22631.3958",
+   "22621.3958"
+  ],
+  "type": "2024-07 D"
+ },
+ "KB5041054": {
+  "kind": "out-of-band",
+  "builds": [
+   "20348.2529"
+  ],
+  "type": "2024-06 OOB"
+ },
+ "KB5041160": {
+  "kind": "baseline",
+  "builds": [
+   "20348.2655"
+  ],
+  "type": "2024-08 B"
+ },
+ "KB5041578": {
+  "kind": "standard",
+  "builds": [
+   "17763.6189"
+  ],
+  "type": "2024-08 B"
+ },
+ "KB5041585": {
+  "kind": "standard",
+  "builds": [
+   "22631.4037",
+   "22621.4037"
+  ],
+  "type": "2024-08 B"
+ },
+ "KB5041587": {
+  "kind": "preview",
+  "builds": [
+   "22631.4112",
+   "22621.4112"
+  ],
+  "type": "2024-08 D"
+ },
+ "KB5041592": {
+  "kind": "standard",
+  "builds": [
+   "22000.3147"
+  ],
+  "type": "2024-08 B"
+ },
+ "KB5041773": {
+  "kind": "standard",
+  "builds": [
+   "14393.7259"
+  ],
+  "type": "2024-08 B"
+ },
+ "KB5042880": {
+  "kind": "hotpatch",
+  "builds": [
+   "20348.2695"
+  ],
+  "type": "2024.09 B"
+ },
+ "KB5042881": {
+  "kind": "standard",
+  "builds": [
+   "20348.2700"
+  ],
+  "type": "2024-09 B"
+ },
+ "KB5043050": {
+  "kind": "standard",
+  "builds": [
+   "17763.6293"
+  ],
+  "type": "2024-09 B"
+ },
+ "KB5043051": {
+  "kind": "standard",
+  "builds": [
+   "14393.7336"
+  ],
+  "type": "2024-09 B"
+ },
+ "KB5043067": {
+  "kind": "standard",
+  "builds": [
+   "22000.3197"
+  ],
+  "type": "2024-09 B"
+ },
+ "KB5043076": {
+  "kind": "standard",
+  "builds": [
+   "22631.4169",
+   "22621.4169"
+  ],
+  "type": "2024-09 B"
+ },
+ "KB5043145": {
+  "kind": "preview",
+  "builds": [
+   "22631.4249",
+   "22621.4249"
+  ],
+  "type": "2024-09 D"
+ },
+ "KB5044277": {
+  "kind": "standard",
+  "builds": [
+   "17763.6414"
+  ],
+  "type": "2024-10 B"
+ },
+ "KB5044280": {
+  "kind": "standard",
+  "builds": [
+   "22000.3260"
+  ],
+  "type": "2024-10 B"
+ },
+ "KB5044281": {
+  "kind": "baseline",
+  "builds": [
+   "20348.2762"
+  ],
+  "type": "2024-10 B"
+ },
+ "KB5044284": {
+  "kind": "standard",
+  "builds": [
+   "26100.2033"
+  ],
+  "type": "2024-10 B"
+ },
+ "KB5044285": {
+  "kind": "standard",
+  "builds": [
+   "22631.4317",
+   "22621.4317"
+  ],
+  "type": "2024-10 B"
+ },
+ "KB5044293": {
+  "kind": "standard",
+  "builds": [
+   "14393.7428"
+  ],
+  "type": "2024-10 B"
+ },
+ "KB5044380": {
+  "kind": "preview",
+  "builds": [
+   "22631.4391",
+   "22621.4391"
+  ],
+  "type": "2024-10 D"
+ },
+ "KB5044384": {
+  "kind": "preview",
+  "builds": [
+   "26100.2161"
+  ],
+  "type": "2024-10 D"
+ },
+ "KB5046612": {
+  "kind": "standard",
+  "builds": [
+   "14393.7515"
+  ],
+  "type": "2024-11 B"
+ },
+ "KB5046615": {
+  "kind": "standard",
+  "builds": [
+   "17763.6532"
+  ],
+  "type": "2024-11 B"
+ },
+ "KB5046616": {
+  "kind": "standard",
+  "builds": [
+   "20348.2849"
+  ],
+  "type": "2024-11 B"
+ },
+ "KB5046617": {
+  "kind": "standard",
+  "builds": [
+   "26100.2314"
+  ],
+  "type": "2024-11 B"
+ },
+ "KB5046633": {
+  "kind": "standard",
+  "builds": [
+   "22631.4460",
+   "22621.4460"
+  ],
+  "type": "2024-11 B"
+ },
+ "KB5046696": {
+  "kind": "hotpatch",
+  "builds": [
+   "26100.2240"
+  ],
+  "type": "2024.11 B"
+ },
+ "KB5046698": {
+  "kind": "hotpatch",
+  "builds": [
+   "20348.2819"
+  ],
+  "type": "2024.11 B"
+ },
+ "KB5046732": {
+  "kind": "preview",
+  "builds": [
+   "22631.4541",
+   "22621.4541"
+  ],
+  "type": "2024-11 D"
+ },
+ "KB5046740": {
+  "kind": "preview",
+  "builds": [
+   "26100.2454"
+  ],
+  "type": "2024-11 D"
+ },
+ "KB5048654": {
+  "kind": "standard",
+  "builds": [
+   "20348.2966"
+  ],
+  "type": "2024-12 B"
+ },
+ "KB5048661": {
+  "kind": "standard",
+  "builds": [
+   "17763.6659"
+  ],
+  "type": "2024-12 B"
+ },
+ "KB5048667": {
+  "kind": "standard",
+  "builds": [
+   "26100.2605"
+  ],
+  "type": "2024-12 B"
+ },
+ "KB5048671": {
+  "kind": "standard",
+  "builds": [
+   "14393.7606"
+  ],
+  "type": "2024-12 B"
+ },
+ "KB5048685": {
+  "kind": "standard",
+  "builds": [
+   "22631.4602",
+   "22621.4602"
+  ],
+  "type": "2024-12 B"
+ },
+ "KB5048794": {
+  "kind": "hotpatch",
+  "builds": [
+   "26100.2528"
+  ],
+  "type": "2024.12 B"
+ },
+ "KB5048800": {
+  "kind": "hotpatch",
+  "builds": [
+   "20348.2908"
+  ],
+  "type": "2024.12 B"
+ },
+ "KB5049983": {
+  "kind": "baseline",
+  "builds": [
+   "20348.3091"
+  ],
+  "type": "2025-01 B"
+ },
+ "KB5049993": {
+  "kind": "standard",
+  "builds": [
+   "14393.7699"
+  ],
+  "type": "2025-01 B"
+ },
+ "KB5050008": {
+  "kind": "standard",
+  "builds": [
+   "17763.6775"
+  ],
+  "type": "2025-01 B"
+ },
+ "KB5050009": {
+  "kind": "baseline",
+  "builds": [
+   "26100.2894"
+  ],
+  "type": "2025-01 B"
+ },
+ "KB5050021": {
+  "kind": "standard",
+  "builds": [
+   "22631.4751",
+   "22621.4751"
+  ],
+  "type": "2025-01 B"
+ },
+ "KB5050092": {
+  "kind": "preview",
+  "builds": [
+   "22631.4830",
+   "22621.4830"
+  ],
+  "type": "2025-01 D"
+ },
+ "KB5050094": {
+  "kind": "preview",
+  "builds": [
+   "26100.3037"
+  ],
+  "type": "2025-01 D"
+ },
+ "KB5051979": {
+  "kind": "standard",
+  "builds": [
+   "20348.3207"
+  ],
+  "type": "2025-02 B"
+ },
+ "KB5051987": {
+  "kind": "standard",
+  "builds": [
+   "26100.3194"
+  ],
+  "type": "2025-02 B"
+ },
+ "KB5051989": {
+  "kind": "standard",
+  "builds": [
+   "22631.4890",
+   "22621.4890"
+  ],
+  "type": "2025-02 B"
+ },
+ "KB5052000": {
+  "kind": "standard",
+  "builds": [
+   "17763.6893"
+  ],
+  "type": "2025-02 B"
+ },
+ "KB5052006": {
+  "kind": "standard",
+  "builds": [
+   "14393.7785"
+  ],
+  "type": "2025-02 B"
+ },
+ "KB5052093": {
+  "kind": "preview",
+  "builds": [
+   "26100.3323"
+  ],
+  "type": "2025-02 D"
+ },
+ "KB5052094": {
+  "kind": "preview",
+  "builds": [
+   "22631.4974",
+   "22621.4974"
+  ],
+  "type": "2025-02 D"
+ },
+ "KB5052105": {
+  "kind": "hotpatch",
+  "builds": [
+   "26100.3107"
+  ],
+  "type": "2025.02 B"
+ },
+ "KB5052106": {
+  "kind": "hotpatch",
+  "builds": [
+   "20348.3148"
+  ],
+  "type": "2025.02 B"
+ },
+ "KB5052819": {
+  "kind": "out-of-band",
+  "builds": [
+   "20348.3095"
+  ],
+  "type": "2025-01 OOB"
+ },
+ "KB5053594": {
+  "kind": "standard",
+  "builds": [
+   "14393.7876"
+  ],
+  "type": "2025-03 B"
+ },
+ "KB5053596": {
+  "kind": "standard",
+  "builds": [
+   "17763.7009"
+  ],
+  "type": "2025-03 B"
+ },
+ "KB5053598": {
+  "kind": "standard",
+  "builds": [
+   "26100.3476"
+  ],
+  "type": "2025-03 B"
+ },
+ "KB5053602": {
+  "kind": "standard",
+  "builds": [
+   "22631.5039",
+   "22621.5039"
+  ],
+  "type": "2025-03 B"
+ },
+ "KB5053603": {
+  "kind": "standard",
+  "builds": [
+   "20348.3328"
+  ],
+  "type": "2025-03 B"
+ },
+ "KB5053636": {
+  "kind": "hotpatch",
+  "builds": [
+   "26100.3403"
+  ],
+  "type": "2025.03 B"
+ },
+ "KB5053638": {
+  "kind": "hotpatch",
+  "builds": [
+   "20348.3270"
+  ],
+  "type": "2025.03 B"
+ },
+ "KB5053656": {
+  "kind": "preview",
+  "builds": [
+   "26100.3624"
+  ],
+  "type": "2025-03 D"
+ },
+ "KB5053657": {
+  "kind": "preview",
+  "builds": [
+   "22631.5126",
+   "22621.5126"
+  ],
+  "type": "2025-03 D"
+ },
+ "KB5055519": {
+  "kind": "standard",
+  "builds": [
+   "17763.7136"
+  ],
+  "type": "2025-04 B"
+ },
+ "KB5055521": {
+  "kind": "standard",
+  "builds": [
+   "14393.7969"
+  ],
+  "type": "2025-04 B"
+ },
+ "KB5055523": {
+  "kind": "baseline",
+  "builds": [
+   "26100.3775"
+  ],
+  "type": "2025-04 B"
+ },
+ "KB5055526": {
+  "kind": "baseline",
+  "builds": [
+   "20348.3453"
+  ],
+  "type": "2025-04 B"
+ },
+ "KB5055528": {
+  "kind": "standard",
+  "builds": [
+   "22631.5189",
+   "22621.5189"
+  ],
+  "type": "2025-04 B"
+ },
+ "KB5055627": {
+  "kind": "preview",
+  "builds": [
+   "26100.3915"
+  ],
+  "type": "2025-04 D"
+ },
+ "KB5055629": {
+  "kind": "preview",
+  "builds": [
+   "22631.5262",
+   "22621.5262"
+  ],
+  "type": "2025-04 D"
+ },
+ "KB5058383": {
+  "kind": "standard",
+  "builds": [
+   "14393.8066"
+  ],
+  "type": "2025-05 B"
+ },
+ "KB5058385": {
+  "kind": "standard",
+  "builds": [
+   "20348.3692"
+  ],
+  "type": "2025-05 B"
+ },
+ "KB5058392": {
+  "kind": "standard",
+  "builds": [
+   "17763.7314"
+  ],
+  "type": "2025-05 B"
+ },
+ "KB5058405": {
+  "kind": "standard",
+  "builds": [
+   "22631.5335",
+   "22621.5335"
+  ],
+  "type": "2025-05 B"
+ },
+ "KB5058411": {
+  "kind": "standard",
+  "builds": [
+   "26100.4061"
+  ],
+  "type": "2025-05 B"
+ },
+ "KB5058497": {
+  "kind": "hotpatch",
+  "builds": [
+   "26100.3981"
+  ],
+  "type": "2025.05 B"
+ },
+ "KB5058499": {
+  "kind": "preview",
+  "builds": [
+   "26100.4202"
+  ],
+  "type": "2025-05 D"
+ },
+ "KB5058500": {
+  "kind": "hotpatch",
+  "builds": [
+   "20348.3630"
+  ],
+  "type": "2025.05 B"
+ },
+ "KB5058502": {
+  "kind": "preview",
+  "builds": [
+   "22631.5413",
+   "22621.5413"
+  ],
+  "type": "2025-05 D"
+ },
+ "KB5058919": {
+  "kind": "out-of-band",
+  "builds": [
+   "22631.5192",
+   "22621.5192"
+  ],
+  "type": "2025-04 OOB"
+ },
+ "KB5058920": {
+  "kind": "out-of-band",
+  "builds": [
+   "20348.3561"
+  ],
+  "type": "2025-04 OOB"
+ },
+ "KB5058921": {
+  "kind": "out-of-band",
+  "builds": [
+   "14393.7973"
+  ],
+  "type": "2025-04 OOB"
+ },
+ "KB5058922": {
+  "kind": "out-of-band",
+  "builds": [
+   "17763.7240"
+  ],
+  "type": "2025-04 OOB"
+ },
+ "KB5059087": {
+  "kind": "out-of-band",
+  "builds": [
+   "26100.3781"
+  ],
+  "type": "2025-04 OOB"
+ },
+ "KB5059091": {
+  "kind": "out-of-band",
+  "builds": [
+   "17763.7249"
+  ],
+  "type": "2025-04 OOB"
+ },
+ "KB5059092": {
+  "kind": "out-of-band",
+  "builds": [
+   "20348.3566"
+  ],
+  "type": "2025-04 OOB"
+ },
+ "KB5060525": {
+  "kind": "hotpatch",
+  "builds": [
+   "20348.3745"
+  ],
+  "type": "2025.06 B"
+ },
+ "KB5060526": {
+  "kind": "standard",
+  "builds": [
+   "20348.3807"
+  ],
+  "type": "2025-06 B"
+ },
+ "KB5060531": {
+  "kind": "standard",
+  "builds": [
+   "17763.7434"
+  ],
+  "type": "2025-06 B"
+ },
+ "KB5060826": {
+  "kind": "preview",
+  "builds": [
+   "22631.5549",
+   "22621.5549"
+  ],
+  "type": "2025-06 D"
+ },
+ "KB5060829": {
+  "kind": "preview",
+  "builds": [
+   "26100.4484"
+  ],
+  "type": "2025-06 D"
+ },
+ "KB5060841": {
+  "kind": "hotpatch",
+  "builds": [
+   "26100.4270"
+  ],
+  "type": "2025.06 B"
+ },
+ "KB5060842": {
+  "kind": "standard",
+  "builds": [
+   "26100.4349"
+  ],
+  "type": "2025-06 B"
+ },
+ "KB5060999": {
+  "kind": "standard",
+  "builds": [
+   "22631.5472",
+   "22621.5472"
+  ],
+  "type": "2025-06 B"
+ },
+ "KB5061010": {
+  "kind": "standard",
+  "builds": [
+   "14393.8148"
+  ],
+  "type": "2025-06 B"
+ },
+ "KB5061906": {
+  "kind": "out-of-band",
+  "builds": [
+   "20348.3695"
+  ],
+  "type": "2025-05 OOB"
+ },
+ "KB5061977": {
+  "kind": "out-of-band",
+  "builds": [
+   "26100.4066"
+  ],
+  "type": "2025-05 OOB"
+ },
+ "KB5061978": {
+  "kind": "out-of-band",
+  "builds": [
+   "17763.7322"
+  ],
+  "type": "2025-05 OOB"
+ },
+ "KB5062170": {
+  "kind": "out-of-band",
+  "builds": [
+   "22631.5415",
+   "22621.5415"
+  ],
+  "type": "2025-05 OOB"
+ },
+ "KB5062552": {
+  "kind": "standard",
+  "builds": [
+   "22631.5624",
+   "22621.5624"
+  ],
+  "type": "2025-07 B"
+ },
+ "KB5062553": {
+  "kind": "baseline",
+  "builds": [
+   "26100.4652"
+  ],
+  "type": "2025-07 B"
+ },
+ "KB5062557": {
+  "kind": "standard",
+  "builds": [
+   "17763.7558"
+  ],
+  "type": "2025-07 B"
+ },
+ "KB5062560": {
+  "kind": "standard",
+  "builds": [
+   "14393.8246"
+  ],
+  "type": "2025-07 B"
+ },
+ "KB5062572": {
+  "kind": "baseline",
+  "builds": [
+   "20348.3932"
+  ],
+  "type": "2025-07 B"
+ },
+ "KB5062660": {
+  "kind": "preview",
+  "builds": [
+   "26100.4770"
+  ],
+  "type": "2025-07 D"
+ },
+ "KB5062663": {
+  "kind": "preview",
+  "builds": [
+   "22631.5699"
+  ],
+  "type": "2025-07 D"
+ },
+ "KB5063060": {
+  "kind": "out-of-band",
+  "builds": [
+   "26100.4351"
+  ],
+  "type": "2025-06 OOB"
+ },
+ "KB5063812": {
+  "kind": "hotpatch",
+  "builds": [
+   "20348.3989"
+  ],
+  "type": "2025.08 B"
+ },
+ "KB5063871": {
+  "kind": "standard",
+  "builds": [
+   "14393.8330"
+  ],
+  "type": "2025-08 B"
+ },
+ "KB5063875": {
+  "kind": "standard",
+  "builds": [
+   "22631.5768",
+   "22621.5768"
+  ],
+  "type": "2025-08 B"
+ },
+ "KB5063877": {
+  "kind": "standard",
+  "builds": [
+   "17763.7678"
+  ],
+  "type": "2025-08 B"
+ },
+ "KB5063878": {
+  "kind": "standard",
+  "builds": [
+   "26100.4946"
+  ],
+  "type": "2025-08 B"
+ },
+ "KB5063880": {
+  "kind": "standard",
+  "builds": [
+   "20348.4052"
+  ],
+  "type": "2025-08 B"
+ },
+ "KB5064010": {
+  "kind": "hotpatch",
+  "builds": [
+   "26100.4851"
+  ],
+  "type": "2025.08 B"
+ },
+ "KB5064080": {
+  "kind": "preview",
+  "builds": [
+   "22631.5840"
+  ],
+  "type": "2025-08 D"
+ },
+ "KB5064081": {
+  "kind": "preview",
+  "builds": [
+   "26100.5074"
+  ],
+  "type": "2025-08 D"
+ },
+ "KB5064489": {
+  "kind": "out-of-band",
+  "builds": [
+   "26100.4656"
+  ],
+  "type": "2025-07 OOB"
+ },
+ "KB5065306": {
+  "kind": "hotpatch",
+  "builds": [
+   "20348.4106"
+  ],
+  "type": "2025.09 B"
+ },
+ "KB5065426": {
+  "kind": "standard",
+  "builds": [
+   "26100.6584"
+  ],
+  "type": "2025-09 B"
+ },
+ "KB5065427": {
+  "kind": "standard",
+  "builds": [
+   "14393.8422"
+  ],
+  "type": "2025-09 B"
+ },
+ "KB5065428": {
+  "kind": "standard",
+  "builds": [
+   "17763.7792"
+  ],
+  "type": "2025-09 B"
+ },
+ "KB5065431": {
+  "kind": "standard",
+  "builds": [
+   "22631.5909",
+   "22621.5909"
+  ],
+  "type": "2025-09 B"
+ },
+ "KB5065432": {
+  "kind": "standard",
+  "builds": [
+   "20348.4171"
+  ],
+  "type": "2025-09 B"
+ },
+ "KB5065474": {
+  "kind": "hotpatch",
+  "builds": [
+   "26100.6508"
+  ],
+  "type": "2025.09 B"
+ },
+ "KB5065789": {
+  "kind": "preview",
+  "builds": [
+   "26100.6725"
+  ],
+  "type": "2025-09 D"
+ },
+ "KB5065790": {
+  "kind": "preview",
+  "builds": [
+   "22631.5984"
+  ],
+  "type": "2025-09 D"
+ },
+ "KB5066187": {
+  "kind": "out-of-band",
+  "builds": [
+   "17763.7683"
+  ],
+  "type": "2025-08 OOB"
+ },
+ "KB5066189": {
+  "kind": "out-of-band",
+  "builds": [
+   "22631.5771",
+   "22621.5771"
+  ],
+  "type": "2025-08 OOB"
+ },
+ "KB5066586": {
+  "kind": "standard",
+  "builds": [
+   "17763.7919"
+  ],
+  "type": "2025-10 B"
+ },
+ "KB5066782": {
+  "kind": "baseline",
+  "builds": [
+   "20348.4294"
+  ],
+  "type": "2025-10 B"
+ },
+ "KB5066793": {
+  "kind": "standard",
+  "builds": [
+   "22631.6060",
+   "22621.6060"
+  ],
+  "type": "2025-10 B"
+ },
+ "KB5066835": {
+  "kind": "baseline",
+  "builds": [
+   "26200.6899",
+   "26100.6899"
+  ],
+  "type": "2025-10 B"
+ },
+ "KB5066836": {
+  "kind": "standard",
+  "builds": [
+   "14393.8519"
+  ],
+  "type": "2025-10 B"
+ },
+ "KB5067036": {
+  "kind": "preview",
+  "builds": [
+   "26200.7019",
+   "26100.7019"
+  ],
+  "type": "2025-10 D"
+ },
+ "KB5067112": {
+  "kind": "preview",
+  "builds": [
+   "22631.6133"
+  ],
+  "type": "2025-10 D"
+ },
+ "KB5068221": {
+  "kind": "out-of-band",
+  "builds": [
+   "26100.6588"
+  ],
+  "type": "2025-09 OOB"
+ },
+ "KB5068787": {
+  "kind": "standard",
+  "builds": [
+   "20348.4405"
+  ],
+  "type": "2025-11 B"
+ },
+ "KB5068791": {
+  "kind": "standard",
+  "builds": [
+   "17763.8027"
+  ],
+  "type": "2025-11 B"
+ },
+ "KB5068840": {
+  "kind": "hotpatch",
+  "builds": [
+   "20348.4346"
+  ],
+  "type": "2025.11 B"
+ },
+ "KB5068861": {
+  "kind": "standard",
+  "builds": [
+   "26200.7171",
+   "26100.7171"
+  ],
+  "type": "2025-11 B"
+ },
+ "KB5068864": {
+  "kind": "standard",
+  "builds": [
+   "14393.8594"
+  ],
+  "type": "2025-11 B"
+ },
+ "KB5068865": {
+  "kind": "standard",
+  "builds": [
+   "22631.6199"
+  ],
+  "type": "2025-11 B"
+ },
+ "KB5068966": {
+  "kind": "hotpatch",
+  "builds": [
+   "26200.7092",
+   "26100.7092"
+  ],
+  "type": "2025.11 B"
+ },
+ "KB5070311": {
+  "kind": "preview",
+  "builds": [
+   "26200.7309",
+   "26100.7309"
+  ],
+  "type": "2025-11 D"
+ },
+ "KB5070312": {
+  "kind": "preview",
+  "builds": [
+   "22631.6276"
+  ],
+  "type": "2025-11 D"
+ },
+ "KB5070773": {
+  "kind": "out-of-band",
+  "builds": [
+   "26200.6901",
+   "26100.6901"
+  ],
+  "type": "2025-10 OOB"
+ },
+ "KB5070881": {
+  "kind": "out-of-band",
+  "builds": [
+   "26100.6905"
+  ],
+  "type": "2025-10 OOB"
+ },
+ "KB5070882": {
+  "kind": "out-of-band",
+  "builds": [
+   "14393.8524"
+  ],
+  "type": "2025-10 OOB"
+ },
+ "KB5070883": {
+  "kind": "out-of-band",
+  "builds": [
+   "17763.7922"
+  ],
+  "type": "2025-10 OOB"
+ },
+ "KB5070884": {
+  "kind": "out-of-band",
+  "builds": [
+   "20348.4297"
+  ],
+  "type": "2025-10 OOB"
+ },
+ "KB5071413": {
+  "kind": "hotpatch",
+  "builds": [
+   "20348.4467"
+  ],
+  "type": "2025.12 B"
+ },
+ "KB5071417": {
+  "kind": "standard",
+  "builds": [
+   "22631.6345"
+  ],
+  "type": "2025-12 B"
+ },
+ "KB5071543": {
+  "kind": "standard",
+  "builds": [
+   "14393.8688"
+  ],
+  "type": "2025-12 B"
+ },
+ "KB5071544": {
+  "kind": "standard",
+  "builds": [
+   "17763.8146"
+  ],
+  "type": "2025-12 B"
+ },
+ "KB5071547": {
+  "kind": "standard",
+  "builds": [
+   "20348.4529"
+  ],
+  "type": "2025-12 B"
+ },
+ "KB5072014": {
+  "kind": "hotpatch",
+  "builds": [
+   "26200.7392",
+   "26100.7392"
+  ],
+  "type": "2025.12 B"
+ },
+ "KB5072033": {
+  "kind": "standard",
+  "builds": [
+   "26200.7462",
+   "26100.7462"
+  ],
+  "type": "2025-12 B"
+ },
+ "KB5072359": {
+  "kind": "out-of-band",
+  "builds": [
+   "26100.7178"
+  ],
+  "type": "2025-11 OOB"
+ },
+ "KB5073379": {
+  "kind": "baseline",
+  "builds": [
+   "26100.32230"
+  ],
+  "type": "2026-01 B"
+ },
+ "KB5073455": {
+  "kind": "standard",
+  "builds": [
+   "22631.6491"
+  ],
+  "type": "2026-01 B"
+ },
+ "KB5073457": {
+  "kind": "baseline",
+  "builds": [
+   "20348.4648"
+  ],
+  "type": "2026-01 B"
+ },
+ "KB5073722": {
+  "kind": "standard",
+  "builds": [
+   "14393.8783"
+  ],
+  "type": "2026-01 B"
+ },
+ "KB5073723": {
+  "kind": "standard",
+  "builds": [
+   "17763.8276"
+  ],
+  "type": "2026-01 B"
+ },
+ "KB5074105": {
+  "kind": "preview",
+  "builds": [
+   "26200.7705",
+   "26100.7705"
+  ],
+  "type": "2026-01 D"
+ },
+ "KB5074109": {
+  "kind": "baseline",
+  "builds": [
+   "26200.7623",
+   "26100.7623"
+  ],
+  "type": "2026-01 B"
+ },
+ "KB5074974": {
+  "kind": "out-of-band",
+  "builds": [
+   "14393.8692"
+  ],
+  "type": "2025-12 OOB"
+ },
+ "KB5074975": {
+  "kind": "out-of-band",
+  "builds": [
+   "17763.8148"
+  ],
+  "type": "2025-12 OOB"
+ },
+ "KB5075899": {
+  "kind": "standard",
+  "builds": [
+   "26100.32370"
+  ],
+  "type": "2026-02 B"
+ },
+ "KB5075904": {
+  "kind": "standard",
+  "builds": [
+   "17763.8389"
+  ],
+  "type": "2026-02 B"
+ },
+ "KB5075906": {
+  "kind": "standard",
+  "builds": [
+   "20348.4773"
+  ],
+  "type": "2026-02 B"
+ },
+ "KB5075941": {
+  "kind": "standard",
+  "builds": [
+   "22631.6649"
+  ],
+  "type": "2026-02 B"
+ },
+ "KB5075942": {
+  "kind": "hotpatch",
+  "builds": [
+   "26100.32313"
+  ],
+  "type": "2026.02 B"
+ },
+ "KB5075943": {
+  "kind": "hotpatch",
+  "builds": [
+   "20348.4711"
+  ],
+  "type": "2026.02 B"
+ },
+ "KB5075999": {
+  "kind": "standard",
+  "builds": [
+   "14393.8868"
+  ],
+  "type": "2026-02 B"
+ },
+ "KB5077179": {
+  "kind": "standard",
+  "builds": [
+   "28000.1575"
+  ],
+  "type": "2026-02 B"
+ },
+ "KB5077181": {
+  "kind": "standard",
+  "builds": [
+   "26200.7840",
+   "26100.7840"
+  ],
+  "type": "2026-02 B"
+ },
+ "KB5077212": {
+  "kind": "hotpatch",
+  "builds": [
+   "26200.7781",
+   "26100.7781"
+  ],
+  "type": "2026.02 B"
+ },
+ "KB5077239": {
+  "kind": "preview",
+  "builds": [
+   "28000.1643"
+  ],
+  "type": "2026-02 D"
+ },
+ "KB5077241": {
+  "kind": "preview",
+  "builds": [
+   "26200.7922",
+   "26100.7922"
+  ],
+  "type": "2026-02 D"
+ },
+ "KB5077744": {
+  "kind": "out-of-band",
+  "builds": [
+   "26200.7627",
+   "26100.7627"
+  ],
+  "type": "2026-01 OOB"
+ },
+ "KB5077793": {
+  "kind": "out-of-band",
+  "builds": [
+   "26100.32234"
+  ],
+  "type": "2026-01 OOB"
+ },
+ "KB5077795": {
+  "kind": "out-of-band",
+  "builds": [
+   "17763.8280"
+  ],
+  "type": "2026-01 OOB"
+ },
+ "KB5077797": {
+  "kind": "out-of-band",
+  "builds": [
+   "22631.6494"
+  ],
+  "type": "2026-01 OOB"
+ },
+ "KB5077800": {
+  "kind": "out-of-band",
+  "builds": [
+   "20348.4650"
+  ],
+  "type": "2026-01 OOB"
+ },
+ "KB5078127": {
+  "kind": "out-of-band",
+  "builds": [
+   "26200.7628",
+   "26100.7628"
+  ],
+  "type": "2026-01 OOB"
+ },
+ "KB5078131": {
+  "kind": "out-of-band",
+  "builds": [
+   "17763.8281"
+  ],
+  "type": "2026-01 OOB"
+ },
+ "KB5078132": {
+  "kind": "out-of-band",
+  "builds": [
+   "22631.6495"
+  ],
+  "type": "2026-01 OOB"
+ },
+ "KB5078135": {
+  "kind": "out-of-band",
+  "builds": [
+   "26100.32236"
+  ],
+  "type": "2026-01 OOB"
+ },
+ "KB5078136": {
+  "kind": "out-of-band",
+  "builds": [
+   "20348.4651"
+  ],
+  "type": "2026-01 OOB"
+ },
+ "KB5078736": {
+  "kind": "hotpatch",
+  "builds": [
+   "26100.32463"
+  ],
+  "type": "2026.03 B"
+ },
+ "KB5078737": {
+  "kind": "hotpatch",
+  "builds": [
+   "20348.4830"
+  ],
+  "type": "2026.03 B"
+ },
+ "KB5078740": {
+  "kind": "standard",
+  "builds": [
+   "26100.32522"
+  ],
+  "type": "2026-03 B"
+ },
+ "KB5078752": {
+  "kind": "standard",
+  "builds": [
+   "17763.8511"
+  ],
+  "type": "2026-03 B"
+ },
+ "KB5078766": {
+  "kind": "standard",
+  "builds": [
+   "20348.4893"
+  ],
+  "type": "2026-03 B"
+ },
+ "KB5078883": {
+  "kind": "standard",
+  "builds": [
+   "22631.6783"
+  ],
+  "type": "2026-03 B"
+ },
+ "KB5078938": {
+  "kind": "standard",
+  "builds": [
+   "14393.8957"
+  ],
+  "type": "2026-03 B"
+ },
+ "KB5079391": {
+  "kind": "preview",
+  "builds": [
+   "26200.8116",
+   "26100.8116"
+  ],
+  "type": "2026-03 D"
+ },
+ "KB5079420": {
+  "kind": "hotpatch",
+  "builds": [
+   "26200.7979",
+   "26100.7979"
+  ],
+  "type": "2026.03 B"
+ },
+ "KB5079466": {
+  "kind": "standard",
+  "builds": [
+   "28000.1719"
+  ],
+  "type": "2026-03 B"
+ },
+ "KB5079473": {
+  "kind": "standard",
+  "builds": [
+   "26200.8037",
+   "26100.8037"
+  ],
+  "type": "2026-03 B"
+ },
+ "KB5079489": {
+  "kind": "preview",
+  "builds": [
+   "28000.1764"
+  ],
+  "type": "2026-03 D"
+ },
+ "KB5082052": {
+  "kind": "standard",
+  "builds": [
+   "22631.6936"
+  ],
+  "type": "2026-04 B"
+ },
+ "KB5082063": {
+  "kind": "baseline",
+  "builds": [
+   "26100.32690"
+  ],
+  "type": "2026-04 B"
+ },
+ "KB5082123": {
+  "kind": "standard",
+  "builds": [
+   "17763.8644"
+  ],
+  "type": "2026-04 B"
+ },
+ "KB5082142": {
+  "kind": "baseline",
+  "builds": [
+   "20348.5020"
+  ],
+  "type": "2026-04 B"
+ },
+ "KB5082198": {
+  "kind": "standard",
+  "builds": [
+   "14393.9060"
+  ],
+  "type": "2026-04 B"
+ },
+ "KB5082314": {
+  "kind": "out-of-band",
+  "builds": [
+   "20348.4776"
+  ],
+  "type": "2026-02 OOB"
+ },
+ "KB5083631": {
+  "kind": "preview",
+  "builds": [
+   "26200.8328",
+   "26100.8328"
+  ],
+  "type": "2026-04 D"
+ },
+ "KB5083768": {
+  "kind": "standard",
+  "builds": [
+   "28000.1836"
+  ],
+  "type": "2026-04 B"
+ },
+ "KB5083769": {
+  "kind": "baseline",
+  "builds": [
+   "26200.8246",
+   "26100.8246"
+  ],
+  "type": "2026-04 B"
+ },
+ "KB5083806": {
+  "kind": "preview",
+  "builds": [
+   "28000.1896"
+  ],
+  "type": "2026-04 D"
+ },
+ "KB5084597": {
+  "kind": "hotpatch",
+  "builds": [],
+  "type": null
+ },
+ "KB5085516": {
+  "kind": "out-of-band",
+  "builds": [
+   "26200.8039",
+   "26100.8039"
+  ],
+  "type": "2026-03 OOB"
+ },
+ "KB5086672": {
+  "kind": "out-of-band",
+  "builds": [
+   "26200.8117",
+   "26100.8117"
+  ],
+  "type": "2026-03 OOB"
+ },
+ "KB5087420": {
+  "kind": "standard",
+  "builds": [
+   "22631.7079"
+  ],
+  "type": "2026-05 B"
+ },
+ "KB5087423": {
+  "kind": "hotpatch",
+  "builds": [
+   "26100.32772"
+  ],
+  "type": "2026.05 B"
+ },
+ "KB5087424": {
+  "kind": "hotpatch",
+  "builds": [
+   "20348.5074"
+  ],
+  "type": "2026.05 B"
+ },
+ "KB5087537": {
+  "kind": "standard",
+  "builds": [
+   "14393.9140"
+  ],
+  "type": "2026-05 B"
+ },
+ "KB5087538": {
+  "kind": "standard",
+  "builds": [
+   "17763.8755"
+  ],
+  "type": "2026-05 B"
+ },
+ "KB5087539": {
+  "kind": "standard",
+  "builds": [
+   "26100.32860"
+  ],
+  "type": "2026-05 B"
+ },
+ "KB5087545": {
+  "kind": "standard",
+  "builds": [
+   "20348.5139"
+  ],
+  "type": "2026-05 B"
+ },
+ "KB5089466": {
+  "kind": "hotpatch",
+  "builds": [
+   "26200.8390",
+   "26100.8390"
+  ],
+  "type": "2026.05 B"
+ },
+ "KB5089548": {
+  "kind": "standard",
+  "builds": [
+   "28000.2113"
+  ],
+  "type": "2026-05 B"
+ },
+ "KB5089549": {
+  "kind": "standard",
+  "builds": [
+   "26200.8457",
+   "26100.8457"
+  ],
+  "type": "2026-05 B"
+ },
+ "KB5089570": {
+  "kind": "preview",
+  "builds": [
+   "28000.2179"
+  ],
+  "type": "2026-05 D"
+ },
+ "KB5089573": {
+  "kind": "preview",
+  "builds": [
+   "26200.8524",
+   "26100.8524"
+  ],
+  "type": "2026-05 D"
+ },
+ "KB5091157": {
+  "kind": "out-of-band",
+  "builds": [
+   "26100.32698"
+  ],
+  "type": "2026-04 OOB"
+ },
+ "KB5091572": {
+  "kind": "out-of-band",
+  "builds": [
+   "14393.9062"
+  ],
+  "type": "2026-04 OOB"
+ },
+ "KB5091573": {
+  "kind": "out-of-band",
+  "builds": [
+   "17763.8647"
+  ],
+  "type": "2026-04 OOB"
+ },
+ "KB5091575": {
+  "kind": "out-of-band",
+  "builds": [
+   "20348.5024"
+  ],
+  "type": "2026-04 OOB"
+ },
+ "KB5093998": {
+  "kind": "standard",
+  "builds": [
+   "22631.7219"
+  ],
+  "type": "2026-06 B"
+ },
+ "KB5094122": {
+  "kind": "standard",
+  "builds": [
+   "14393.9234"
+  ],
+  "type": "2026-06 B"
+ },
+ "KB5094123": {
+  "kind": "standard",
+  "builds": [
+   "17763.8880"
+  ],
+  "type": "2026-06 B"
+ },
+ "KB5094125": {
+  "kind": "baseline",
+  "builds": [
+   "26100.32995"
+  ],
+  "type": "2026-06 B"
+ },
+ "KB5094126": {
+  "kind": "baseline",
+  "builds": [
+   "26200.8655",
+   "26100.8655"
+  ],
+  "type": "2026-06 B"
+ },
+ "KB5094128": {
+  "kind": "baseline",
+  "builds": [
+   "20348.5256"
+  ],
+  "type": "2026-06 B"
+ },
+ "KB5095051": {
+  "kind": "standard",
+  "builds": [
+   "28000.2269"
+  ],
+  "type": "2026-06 B"
+ },
+ "KB5095091": {
+  "kind": "preview",
+  "builds": [
+   "28000.2340"
+  ],
+  "type": "2026-06 D"
+ },
+ "KB5095093": {
+  "kind": "preview",
+  "builds": [
+   "26200.8737",
+   "26100.8737"
+  ],
+  "type": "2026-06 D"
+ },
+ "KB5099414": {
+  "kind": "standard",
+  "builds": [
+   "22631.7376"
+  ],
+  "type": "2026-07 B"
+ },
+ "KB5099535": {
+  "kind": "standard",
+  "builds": [
+   "14393.9339"
+  ],
+  "type": "2026-07 B"
+ },
+ "KB5099536": {
+  "kind": "baseline",
+  "builds": [
+   "26100.33158"
+  ],
+  "type": "2026-07 B"
+ },
+ "KB5099538": {
+  "kind": "standard",
+  "builds": [
+   "17763.9020"
+  ],
+  "type": "2026-07 B"
+ },
+ "KB5099540": {
+  "kind": "baseline",
+  "builds": [
+   "20348.5386"
+  ],
+  "type": "2026-07 B"
+ },
+ "KB5101649": {
+  "kind": "standard",
+  "builds": [
+   "28000.2525"
+  ],
+  "type": "2026-07 B"
+ },
+ "KB5101650": {
+  "kind": "baseline",
+  "builds": [
+   "26200.8875",
+   "26100.8875"
+  ],
+  "type": "2026-07 B"
+ },
+ "KB5101681": {
+  "kind": "preview",
+  "builds": [
+   "28000.2608"
+  ],
+  "type": "2026-07 D"
+ },
+ "KB5101684": {
+  "kind": "preview",
+  "builds": [
+   "26200.8973",
+   "26100.8973"
+  ],
+  "type": "2026-07 D"
+ },
+ "KB5120228": {
+  "kind": "hotpatch",
+  "builds": [
+   "26100.33222"
+  ],
+  "type": "2026.08 B"
+ },
+ "KB5120229": {
+  "kind": "hotpatch",
+  "builds": [
+   "20348.5440"
+  ],
+  "type": "2026.08 B"
+ },
+ "KB5120233": {
+  "kind": "standard",
+  "builds": [
+   "26100.33296"
+  ],
+  "type": "2026-08 B"
+ },
+ "KB5120238": {
+  "kind": "standard",
+  "builds": [
+   "17763.9121"
+  ],
+  "type": "2026-08 B"
+ },
+ "KB5120240": {
+  "kind": "standard",
+  "builds": [
+   "22631.7517"
+  ],
+  "type": "2026-08 B"
+ },
+ "KB5120242": {
+  "kind": "standard",
+  "builds": [
+   "20348.5499"
+  ],
+  "type": "2026-08 B"
+ },
+ "KB5120418": {
+  "kind": "standard",
+  "builds": [
+   "14393.9418"
+  ],
+  "type": "2026-08 B"
+ },
+ "KB5120994": {
+  "kind": "hotpatch",
+  "builds": [
+   "26200.9106",
+   "26100.9106"
+  ],
+  "type": "2026.08 B"
+ },
+ "KB5120996": {
+  "kind": "preview",
+  "builds": [
+   "28000.2804"
+  ],
+  "type": "2026-08 D"
+ },
+ "KB5120998": {
+  "kind": "preview",
+  "builds": [
+   "26200.9278",
+   "26100.9278"
+  ],
+  "type": "2026-08 D"
+ },
+ "KB5121000": {
+  "kind": "standard",
+  "builds": [
+   "28000.2704"
+  ],
+  "type": "2026-08 B"
+ },
+ "KB5121003": {
+  "kind": "standard",
+  "builds": [
+   "26200.9168",
+   "26100.9168"
+  ],
+  "type": "2026-08 B"
+ },
+ "KB5121767": {
+  "kind": "out-of-band",
+  "builds": [
+   "26200.8894",
+   "26100.8894"
+  ],
+  "type": "2026-07 OOB"
+ },
+ "KB5122871": {
+  "kind": "baseline",
+  "builds": [
+   "26100.33438"
+  ],
+  "type": "2026-09 B"
+ },
+ "KB5122876": {
+  "kind": "standard",
+  "builds": [
+   "17763.9245"
+  ],
+  "type": "2026-09 B"
+ },
+ "KB5122880": {
+  "kind": "standard",
+  "builds": [
+   "22631.7582"
+  ],
+  "type": "2026-09 B"
+ },
+ "KB5122882": {
+  "kind": "baseline",
+  "builds": [
+   "20348.5622"
+  ],
+  "type": "2026-09 B"
+ },
+ "KB5123099": {
+  "kind": "standard",
+  "builds": [
+   "14393.9512"
+  ],
+  "type": "2026-09 B"
+ },
+ "KB5123607": {
+  "kind": "hotpatch",
+  "builds": [],
+  "type": null
+ },
+ "KB5124006": {
+  "kind": "preview",
+  "builds": [
+   "28000.3086"
+  ],
+  "type": "2026-09 D"
+ },
+ "KB5124008": {
+  "kind": "baseline",
+  "builds": [
+   "26200.9445",
+   "26100.9445"
+  ],
+  "type": "2026-09 B"
+ },
+ "KB5124010": {
+  "kind": "preview",
+  "builds": [
+   "26300.9550",
+   "26200.9550",
+   "26100.9550"
+  ],
+  "type": "2026-09 D"
+ },
+ "KB5124012": {
+  "kind": "standard",
+  "builds": [
+   "28000.2954"
+  ],
+  "type": "2026-09 B"
+ },
+ "KB5126646": {
+  "kind": "baseline",
+  "builds": [
+   "26100.33650"
+  ],
+  "type": "2026-10 B"
+ },
+ "KB5126651": {
+  "kind": "standard",
+  "builds": [
+   "17763.9376"
+  ],
+  "type": "2026-10 B"
+ },
+ "KB5126653": {
+  "kind": "standard",
+  "builds": [
+   "22631.7652"
+  ],
+  "type": "2026-10 B"
+ },
+ "KB5126655": {
+  "kind": "baseline",
+  "builds": [
+   "20348.5761"
+  ],
+  "type": "2026-10 B"
+ },
+ "KB5126868": {
+  "kind": "standard",
+  "builds": [
+   "14393.9612"
+  ],
+  "type": "2026-10 B"
+ },
+ "KB5127646": {
+  "kind": "standard",
+  "builds": [
+   "28000.3231"
+  ],
+  "type": "2026-10 B"
+ },
+ "KB5127648": {
+  "kind": "baseline",
+  "builds": [
+   "26300.9711",
+   "26200.9711",
+   "26100.9711"
+  ],
+  "type": "2026-10 B"
+ },
+ "KB5127653": {
+  "kind": "preview",
+  "builds": [
+   "28000.3365"
+  ],
+  "type": "2026-10 D"
+ },
+ "KB5127936": {
+  "kind": "preview",
+  "builds": [
+   "26300.9818",
+   "26200.9818"
+  ],
+  "type": "2026-10 D"
+ },
+ "KB5129194": {
+  "kind": "out-of-band",
+  "builds": [
+   "28000.2956"
+  ],
+  "type": "2026-09 OOB"
+ },
+ "KB5129195": {
+  "kind": "out-of-band",
+  "builds": [
+   "26200.9457",
+   "26100.9457"
+  ],
+  "type": "2026-09 OOB"
+ },
+ "KB5129235": {
+  "kind": "out-of-band",
+  "builds": [
+   "26100.33451"
+  ],
+  "type": "2026-09 OOB"
+ },
+ "KB5129237": {
+  "kind": "out-of-band",
+  "builds": [
+   "20348.5631"
+  ],
+  "type": "2026-09 OOB"
+ },
+ "KB5129238": {
+  "kind": "out-of-band",
+  "builds": [
+   "17763.9247"
+  ],
+  "type": "2026-09 OOB"
+ },
+ "KB5129239": {
+  "kind": "out-of-band",
+  "builds": [
+   "14393.9514"
+  ],
+  "type": "2026-09 OOB"
+ },
+ "KB5129241": {
+  "kind": "hotpatch",
+  "builds": [],
+  "type": null
+ },
+ "KB5129242": {
+  "kind": "out-of-band",
+  "builds": [
+   "22631.7584"
+  ],
+  "type": "2026-09 OOB"
+ },
+ "KB5131077": {
+  "kind": "hotpatch",
+  "builds": [
+   "26100.33730"
+  ],
+  "type": "2026.11 B"
+ },
+ "KB5131080": {
+  "kind": "standard",
+  "builds": [
+   "26100.33822"
+  ],
+  "type": "2026-11 B"
+ },
+ "KB5131085": {
+  "kind": "standard",
+  "builds": [
+   "17763.9487"
+  ],
+  "type": "2026-11 B"
+ },
+ "KB5131087": {
+  "kind": "standard",
+  "builds": [
+   "22631.7711"
+  ],
+  "type": "2026-11 B"
+ },
+ "KB5131090": {
+  "kind": "baseline",
+  "builds": [
+   "20348.5870"
+  ],
+  "type": "2026-11 B"
+ },
+ "KB5131291": {
+  "kind": "standard",
+  "builds": [
+   "14393.9688"
+  ],
+  "type": "2026-11 B"
+ },
+ "KB5132043": {
+  "kind": "hotpatch",
+  "builds": [
+   "26300.9911",
+   "26200.9911",
+   "26100.9911"
+  ],
+  "type": "2026.11 B"
+ },
+ "KB5132059": {
+  "kind": "standard",
+  "builds": [
+   "28000.3501"
+  ],
+  "type": "2026-11 B"
+ },
+ "KB5132061": {
+  "kind": "standard",
+  "builds": [
+   "26300.9974",
+   "26200.9974",
+   "26100.9974"
+  ],
+  "type": "2026-11 B"
+ },
+ "KB5134123": {
+  "kind": "out-of-band",
+  "builds": [
+   "14393.9615"
+  ],
+  "type": "2026-10 OOB"
+ },
+ "KB5134124": {
+  "kind": "out-of-band",
+  "builds": [
+   "17763.9378"
+  ],
+  "type": "2026-10 OOB"
+ },
+ "KB5134130": {
+  "kind": "out-of-band",
+  "builds": [
+   "22631.7654"
+  ],
+  "type": "2026-10 OOB"
+ },
+ "KB5134133": {
+  "kind": "out-of-band",
+  "builds": [
+   "26300.9725",
+   "26200.9725",
+   "26100.9725"
+  ],
+  "type": "2026-10 OOB"
+ },
+ "KB5134134": {
+  "kind": "out-of-band",
+  "builds": [
+   "28000.3237"
+  ],
+  "type": "2026-10 OOB"
+ },
+ "KB5134137": {
+  "kind": "out-of-band",
+  "builds": [
+   "26100.33674"
+  ],
+  "type": "2026-10 OOB"
+ },
+ "KB5134140": {
+  "kind": "out-of-band",
+  "builds": [
+   "20348.5773"
+  ],
+  "type": "2026-10 OOB"
+ },
+ "KB5136487": {
+  "kind": "out-of-band",
+  "builds": [
+   "20348.5873"
+  ],
+  "type": "2026-11 OOB"
+ },
+ "KB5136489": {
+  "kind": "out-of-band",
+  "builds": [
+   "26100.33828"
+  ],
+  "type": "2026-11 OOB"
+ },
+ "KB5136490": {
+  "kind": "out-of-band",
+  "builds": [
+   "17763.9488"
+  ],
+  "type": "2026-11 OOB"
+ }
+}

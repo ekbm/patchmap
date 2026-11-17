@@ -66,6 +66,9 @@ select:focus, input:focus { outline: none; border-color: var(--accent); box-shad
 .feedlink { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 10px 0 2px; }
 .feedlink code { font-family: var(--mono); font-size: 13px; background: var(--chip); padding: 6px 8px; border-radius: 6px; overflow-wrap: anywhere; flex: 1 1 260px; }
 .feedlink .theme { margin-left: 0; }
+.tshoot { margin-top: 8px; border-top: 1px solid var(--line); }
+.tshoot > summary { font-weight: 600; color: var(--accent); }
+.tshoot details { margin-left: 8px; }
 .ok-line { color: var(--ok); font-weight: 600; }
 .issue .it { font-weight: 600; display: block; margin: 2px 0; }
 .issue .is { color: var(--muted); font-size: 13px; }

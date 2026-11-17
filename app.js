@@ -43,6 +43,8 @@ async function init() {
     getJSON("data/builds.json").catch(() => []),
   ]);
   state.files = await getJSON("data/files/index.json").catch(() => ({}));
+  state.kbinfo = await getJSON("data/kb_titles.json").catch(() => ({}));
+  state.tshoot = await getJSON("data/troubleshooting.json").catch(() => null);
   const swList = await getJSON("data/software/index.json").catch(() => []);
   for (const id of swList) { try { state.software[id] = await getJSON(`data/software/${id}.json`); } catch (e) {} }
   const ssel = $("sw");
@@ -202,6 +204,63 @@ function compareCard(pair, h1, h2) {
   return { html: card(`What changed between two ${esc(vlabel)} builds`, body), months: between.length ? new Set(between.map((m) => m.month)) : null };
 }
 
+// ---- Update types and troubleshooting (hotpatch label + "Something broke?") ----
+const KIND_LABEL = { hotpatch: "Hotpatch", baseline: "Baseline", "out-of-band": "Out-of-band", preview: "Preview" };
+function kbKind(kb) { return ((state.kbinfo || {})[kb] || {}).kind || ""; }
+function kbBadge(kb) { const k = KIND_LABEL[kbKind(kb)]; return k ? ` <span class="pill src" title="${k === "Hotpatch" ? "Patched in memory, no restart" : ""}">${k}</span>` : ""; }
+function fullUpdateFor(ref, hit) {
+  // the full (non-hotpatch) update for the same month and version, newest build first
+  const same = hit.list.filter((x) => x.month === ref.month && x.kb !== ref.kb && kbKind(x.kb) !== "hotpatch");
+  return same.sort((a, c) => bparts(c.build)[3] - bparts(a.build)[3])[0] || null;
+}
+function hotpatchNote(ref, hit) {
+  if (kbKind(ref.kb) !== "hotpatch") return "";
+  const full = fullUpdateFor(ref, hit);
+  return `<div class="is">This is a <b>hotpatch</b>: Windows was patched in memory, without a restart.` +
+    (full ? ` The full update for the same month is <b>${esc(full.kb)}</b> (build ${esc(full.build)}), which replaces the files on disk.` : "") + `</div>`;
+}
+function kbFixStats(kb, month) {
+  const m = state.data.months.find((x) => x.month === month);
+  const seen = new Map(), areas = {};
+  if (m) for (const [t, a] of Object.entries(m.areas)) for (const fx of Object.values(a.components)) for (const f of fx) {
+    if (!(f.kbs || []).includes(kb)) continue;
+    seen.set(f.cve, f);
+    areas[t] = areas[t] || new Set(); areas[t].add(f.cve);
+  }
+  const crit = [...seen.values()].filter((f) => f.severity === "Critical").length;
+  return { total: seen.size, crit, areas: Object.entries(areas).map(([t, set]) => [t, set.size]).sort((a, b) => b[1] - a[1]) };
+}
+function tsList(items) { return items && items.length ? `<ul class="sw-list">${items.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""; }
+function tshootBlock(ref) {
+  const T = state.tshoot;
+  if (!T || !ref) return "";
+  const st = kbFixStats(ref.kb, ref.month);
+  const hit = findBuild(parseBuild(ref.build));
+  const full = kbKind(ref.kb) === "hotpatch" && hit ? fullUpdateFor(ref, hit) : null;
+  const areaBits = st.areas.filter(([t]) => T.areas[t]).sort((x, y) => (y[0] === "print") - (x[0] === "print")).map(([t, n]) => {
+    const a = T.areas[t];
+    return `<details><summary><span class="l">${esc(label(t))}</span><span class="r">${n} fix${n === 1 ? "" : "es"} in this update</span></summary>` +
+      `<div class="is">Where to look</div>${tsList(a.logs)}<div class="is">What to check</div>${tsList(a.checks)}` +
+      (a.stopgap && a.stopgap.length ? `<div class="is">Stopgap</div>${tsList(a.stopgap)}` : "") + `</details>`;
+  }).join("");
+  const top = st.areas.slice(0, 4).map(([t, n]) => `${label(t)} ${n}`).join(", ");
+  return `<details class="tshoot"><summary><span class="l">Something broke after ${esc(ref.kb)}?</span><span class="r">steps</span></summary>` +
+    tsList(T.general) +
+    (kbKind(ref.kb) === "hotpatch" ? `<p class="is"><b>Hotpatch:</b> ${esc(T.hotpatch)}${full ? ` For this machine that's <b>${esc(full.kb)}</b> (build ${esc(full.build)}).` : ""}</p>` : "") +
+    `<div class="is"><b>Before removing it:</b> ${esc(ref.kb)} carries ${st.total} security fixes${st.crit ? ` (${st.crit} critical)` : ""}${top ? `, most in ${esc(top)}` : ""}.</div>` +
+    tsList(T.uninstall) +
+    (areaBits ? `<div class="is"><b>By area</b> (open the one that's failing):</div>${areaBits}` : "") +
+    `<div class="is">Searching an error code (for example 0xC1 or 0x0000011b) shows any matching guidance. Not Microsoft advice; check Microsoft's page for the update.</div></details>`;
+}
+function patternHits(q) {
+  const T = state.tshoot;
+  if (!T || !q || q.length < 3) return [];
+  const ql = q.toLowerCase();
+  return T.patterns.filter((p) => p.match.some((m) => ql.includes(m) || (m.length > 4 && m.includes(ql)))).map((p) =>
+    `<div class="issue build"><span class="pill src">Troubleshooting</span><span class="it">${esc(p.title)}</span>${tsList(p.advice)}` +
+    `<div class="is">Basis: ${esc(p.basis)}${(p.sources || []).map((s) => ` · <a href="${esc(s.url)}" rel="noopener">${esc(s.name)}</a>`).join("")}</div></div>`);
+}
+
 function niceDate(d) { return new Date(d + "T00:00:00Z").toLocaleDateString("en-AU", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" }); }
 function daysAgo(d) { return Math.max(0, Math.round((Date.now() - Date.parse(d + "T00:00:00Z")) / 86400000)); }
 function buildCard(b, hit) {
@@ -220,8 +279,8 @@ function buildCard(b, hit) {
     const kbs = hit.exact.map((x) => `${x.kb}${x.type && x.type !== "Security Update" ? ` (${x.type})` : ""}`).join(" and ");
     const maxOfMonth = hit.list.filter((x) => x.month === ref.month).slice(-1)[0];
     const when = ref.month === oldest && maxOfMonth.build !== ref.build ? `${monthName(ref.month)} or earlier` : `${monthName(ref.month)}, released ${niceDate(ref.released)} (${daysAgo(ref.released)} days ago)`;
-    head = `Build ${esc(b.text)} is ${esc(label)}, update ${esc(kbs)}`;
-    note = `<div>${esc(when)}.</div>`;
+    head = `Build ${esc(b.text)} is ${esc(label)}, update ${esc(kbs)}${kbBadge(ref.kb)}`;
+    note = `<div>${esc(when)}.</div>` + hotpatchNote(ref, hit);
   } else if (hit.nearest && !hit.later.length) {
     head = `Build ${esc(b.text)} is ${esc(label)}, newer than every update Patchmap knows`;
     note = `<div>Our newest is ${esc(hit.nearest.kb)} (build ${esc(hit.nearest.build)}). It may be a preview or emergency update, or our data (updated ${esc(state.generated)}) hasn't caught up yet.</div>`;
@@ -252,7 +311,7 @@ function buildCard(b, hit) {
       (problemsSince.length ? `<div class="is">Known problems that started in those later updates: ${problemsSince.length} (${problemsSince.filter((i) => i.status !== "fixed").length} still open). See the months below.</div>` : "");
   }
   const open = openUpTo.length ? `<div class="is">Still-open known problems from this update or earlier: ${openUpTo.map((i) => esc(i.title)).join("; ")}.</div>` : "";
-  return `<div class="issue build"><span class="pill src">Build lookup</span><span class="it">${head}</span>${note}${after}${open}</div>`;
+  return `<div class="issue build"><span class="pill src">Build lookup</span><span class="it">${head}</span>${note}${after}${open}${hit.exact.length ? tshootBlock(ref) : ""}</div>`;
 }
 
 function renderChips() {
@@ -308,7 +367,7 @@ function renderMonths(only) {
   const firstShown = months.findIndex((m) => !only || only.has(m.month));
   box.innerHTML = months.map((m, idx) => {
     if (only && !only.has(m.month)) return "";
-    const ups = m.updates.map((u) => `<span class="kb">${esc(u.kb)}</span>`).join(" ") || '<span class="muted">KB not listed</span>';
+    const ups = m.updates.map((u) => `<span class="kb">${esc(u.kb)}</span>${kbBadge(u.kb)}`).join(" ") || '<span class="muted">KB not listed</span>';
     const n = state.area ? (m.areas[state.area] ? m.areas[state.area].count : 0) : m.fix_count;
     const ki = issuesFor(m.month).filter((i) => i.status !== "fixed").length;
     const kf = issuesFor(m.month).length - ki;
@@ -455,7 +514,7 @@ function renderSearch() {
     if (hits.length) { total += hits.length; out.push([m, hits]); }
   }
   const head = `<p class="muted">${total} fixes match “${esc(state.q)}” on ${esc(state.data.label)}${state.area ? " in " + esc(label(state.area)) : ""}.</p>`;
-  $("results").innerHTML = issueHits.map(issueHTML).join("") + head + out.map(([m, hits]) =>
+  $("results").innerHTML = patternHits(state.q).join("") + issueHits.map(issueHTML).join("") + head + out.map(([m, hits]) =>
     `<details class="month"${out[0][0] === m ? " open" : ""}><summary><span class="l">${monthName(m.month)} · ${m.updates.map((u) => `<span class="kb">${esc(u.kb)}</span>`).join(" ")}</span><span class="r">${hits.length} matches</span></summary>${hits.slice(0, 300).map(fixHTML).join("")}</details>`
   ).join("");
 }

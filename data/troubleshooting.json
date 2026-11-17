@@ -1,0 +1,75 @@
+{
+ "about": "Practical, generic steps for when something breaks after a Windows update. Written by Patchmap (CC BY 4.0). Not Microsoft guidance: always check Microsoft's own page for the update. Edit freely and send a pull request.",
+ "general": [
+  "Check the known problems for this update (shown above, with sources). If yours is listed, follow its workaround.",
+  "Note exactly what fails and when it started, and check the event logs for the area (below).",
+  "Test on one machine first. Change one thing at a time."
+ ],
+ "hotpatch": "This is a hotpatch: Windows was patched in memory, without a restart. If a problem started with it, try the full cumulative update for the same month instead (it replaces the files on disk and needs one restart). Devices managed with hotpatching (Intune or Windows Autopatch) may need to be excluded from hotpatch until the next baseline.",
+ "uninstall": [
+  "Removing an update also removes every security fix it carries (the count is shown here). Keep the time without it short.",
+  "To remove: Settings → Windows Update → Update history → Uninstall updates, or your management tool. For updates that come combined with a servicing stack update, Microsoft's KB page explains removing the update with DISM /Remove-Package (wusa /uninstall doesn't work on the combined package).",
+  "Pause updates while you work on a fix, or Windows will reinstall it.",
+  "Report it: Feedback Hub, a Microsoft support case, and Patchmap (Report a problem), so others can find it."
+ ],
+ "areas": {
+  "print": {
+   "logs": ["Event Viewer → Applications and Services Logs → Microsoft → Windows → PrintService → Admin (for example event 808: a plug-in module failed to load).", "The PrintService → Operational log has more detail, but it's off by default: right-click it → Enable Log, then reproduce the problem."],
+   "checks": ["If an error names a module, look at its path: a Windows file (C:\\Windows\\System32\\…) points to the update; a third-party file (print processor, port monitor, driver) points to that software.", "Print a test page on the print server itself: if that works, the problem is between clients and the server (network printing, RPC, SMB or drivers).", "Try a Microsoft built-in driver (for example Microsoft IPP Class Driver) to rule out the printer's own driver.", "Restart the Print Spooler service after each change."],
+   "stopgap": ["If the update must stay removed for a while on a PC that doesn't share printers, the Group Policy setting \"Allow Print Spooler to accept client connections\" = Disabled reduces exposure."]
+  },
+  "sign-in": {
+   "logs": ["Event Viewer → Windows Logs → System (sources such as Kerberos, KDC, Netlogon, LSA) and Security (failed sign-ins)."],
+   "checks": ["Check whether only some users, devices or service accounts fail, often older systems or devices using older sign-in methods (NTLM, weak encryption).", "Check the clocks: Kerberos sign-in fails if clocks differ by more than a few minutes.", "Check this month's known problems for sign-in hardening changes."],
+   "stopgap": []
+  },
+  "file-sharing": {
+   "logs": ["Event Viewer → Applications and Services Logs → Microsoft → Windows → SMBServer → Operational, and SMBClient → Connectivity."],
+   "checks": ["Test opening \\\\server\\share from another PC.", "Check devices that scan to a shared folder (copiers, scanners): updates that tighten file-sharing security (signing, encryption, older sign-in methods) often stop them first.", "Check whether only older devices or systems fail."],
+   "stopgap": []
+  },
+  "network": {
+   "logs": ["Event Viewer → Windows Logs → System, filtered on the failing service."],
+   "checks": ["Remote printing and many admin tools use RPC: port 135 plus a dynamic port range must be open between client and server.", "Check whether the problem is only across the network (works locally, fails remotely)."],
+   "stopgap": []
+  },
+  "install-update": {
+   "logs": ["Settings → Windows Update → Update history (error code), and C:\\Windows\\Logs\\CBS\\CBS.log."],
+   "checks": ["Repair Windows' update files, then try again: in an admin command prompt run DISM /Online /Cleanup-Image /RestoreHealth, then sfc /scannow, then restart.", "Search the error code here: some install failures are known problems with a fix rolling out."],
+   "stopgap": []
+  },
+  "activation": {
+   "logs": ["Run slmgr /dlv in an admin command prompt to see licence status."],
+   "checks": ["Check the KMS host or licensing tool can be reached.", "Search the error code here: this month has a known activation problem."],
+   "stopgap": []
+  }
+ },
+ "patterns": [
+  {
+   "id": "spooler-plugin-0xc1",
+   "match": ["0xc1", "localspl", "event 808", "plug-in module"],
+   "title": "Print Spooler failed to load a plug-in module (event 808, error 0xC1)",
+   "area": "print",
+   "advice": [
+    "0xC1 is Windows error 193, \"not a valid Win32 application\": a program file couldn't be loaded.",
+    "Check the module path in the event. A third-party file (for example a 32-bit print processor or port monitor on 64-bit Windows) usually means that software needs updating or reinstalling.",
+    "If it names a Windows file such as localspl.dll and started after a hotpatch, try installing the full cumulative update for the same month instead of the hotpatch (it replaces the file on disk). Removing the hotpatch also stops it, but removes that month's security fixes.",
+    "Report it to Microsoft (Feedback Hub or a support case) if it's a Windows file."
+   ],
+   "basis": "Support experience; Windows error code 193 (0xC1)."
+  },
+  {
+   "id": "rpc-print-0x11b-0x709",
+   "match": ["0x0000011b", "0x00000709", "0x0000007c", "11b", "709"],
+   "title": "Network printing fails with 0x0000011b, 0x00000709 or 0x0000007c",
+   "area": "print",
+   "advice": [
+    "These errors appeared widely after the 2021 print security changes (\"PrintNightmare\"), which tightened how clients connect to a print server over RPC.",
+    "Check that the client and the print server have the same month's updates, and that RPC (port 135 plus the dynamic range) isn't blocked.",
+    "Print management vendors documented workarounds at the time; prefer updating over registry workarounds that weaken security."
+   ],
+   "basis": "PaperCut's PrintNightmare notes and firewall ports article.",
+   "sources": [{"name": "PaperCut: PrintNightmare impact", "url": "https://www.papercut.com/kb/Main/PrintNightmareCVE2021"}]
+  }
+ ]
+}

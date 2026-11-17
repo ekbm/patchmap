@@ -30,6 +30,9 @@
   <p>Or type in the search box: an area (<a href="./#v=server-2022&amp;q=print">print</a>), a part of Windows (<a href="./#v=server-2022&amp;q=kerberos">Kerberos</a>), an update number (KB5131090), a fix number (CVE-2026-…) or an error code (<a href="./#v=server-2022&amp;q=0x80041008">0x80041008</a>). The area buttons narrow everything to one area.</p>
   <h2>Look up a build number</h2>
   <p>Paste a build number from a PC or server (for example <a href="./#v=server-2022&amp;q=20348.5622">10.0.20348.5622</a>; run <code>winver</code> to find it). Patchmap tells you which Windows version and update it is, how old it is, how many newer updates and security fixes you are missing, and which known problems are still open for it.</p>
+  <h2>Something broke after an update?</h2>
+  <p>Look up the build (or open the update's page) and open <b>Something broke after this update?</b>: matching known problems, what you'd lose by removing the update (how many security fixes, by area), where to look in the logs for the area that's failing, and safe stopgaps. Updates marked <b>Hotpatch</b> were applied in memory without a restart; Patchmap shows the full update for the same month as an alternative. Searching an error code such as <a href="./#v=win11-25h2&amp;q=0xc1">0xC1</a> shows matching guidance. This is general guidance, not Microsoft advice.</p>
+
   <h2>Compare two builds</h2>
   <p>Type two update numbers (for example <a href="./#v=server-2022&amp;q=KB5122882%20to%20KB5131090">KB5122882 to KB5131090</a>) or two build numbers of the same Windows version, for example <a href="./#v=server-2022&amp;q=20348.5622%20to%2020348.5870">20348.5622 to 20348.5870</a>. Patchmap lists the updates, security fixes (by area) and known problems between them: handy when one server misbehaves and another doesn't.</p>
 
@@ -88,6 +91,8 @@
     <tr><td>Other known problems</td><td>News and vendor reports, linked on each entry</td><td>By hand</td></tr>
     <tr><td>Areas (printing, sign-in…)</td><td>Patchmap's own rules, <a href="https://github.com/ekbm/patchmap/blob/main/data/area_tags.json">open to edit</a></td><td>By hand</td></tr>
     <tr><td>Files each update changed</td><td>Microsoft's file list for each monthly Windows update, compared with the month before</td><td>Automatically, every Wednesday</td></tr>
+    <tr><td>Update types (hotpatch, baseline, out-of-band, preview)</td><td>Microsoft's <a href="https://learn.microsoft.com/windows/release-health/windows11-release-information">Windows 11</a> and <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info">Windows Server</a> release information pages</td><td>Automatically, every Wednesday</td></tr>
+    <tr><td>Troubleshooting steps</td><td>Patchmap, <a href="https://github.com/ekbm/patchmap/blob/main/data/troubleshooting.json">open to edit</a></td><td>By hand</td></tr>
     <tr><td>What print software relies on</td><td>Vendor public documentation, or support experience (each list says which), <a href="https://github.com/ekbm/patchmap/tree/main/data/software">open to edit</a></td><td>By hand</td></tr>
   </table>
   <p class="muted" id="gen"></p>
