@@ -119,6 +119,21 @@ def tshoot_section(kb, fixes, areas, tags, T, is_hotpatch, full_alt):
 
 def files_section(kb, month, ver, tags):
     """Files this update changed (from scripts/fetch_files.py), grouped by area; 'other' only counted."""
+    hp = next((h for h in ((load("files/hotpatch_index.json", {}).get(ver) or {}).get(month) or []) if h["kb"] == kb), None)
+    if hp:  # a hotpatch: files patched in memory, not replaced on disk
+        r = json.loads((ROOT / hp["path"]).read_text(encoding="utf-8"))
+        groups = defaultdict(list)
+        for f in r["patches"]:
+            for t in f["t"] or ["other"]:
+                groups[t].append(f)
+        names = dict(tags, rpc="Remote Procedure Call (RPC)", other="Other files")
+        parts = "".join(
+            f'<details><summary><span class="l">{e(names.get(t, t))}</span><span class="r">{len(fs)} files</span></summary>'
+            + "".join(f'<div class="fix"><span class="cve">{e(f["n"])}</span><span class="muted">via {e(f["hp"])} {e(f["v"])}</span></div>' for f in fs)
+            + "</details>" for t, fs in sorted(groups.items(), key=lambda x: (x[0] == "other", -len(x[1]))))
+        return ("<h2>Files this hotpatch patches in memory</h2>"
+                f'<p class="muted">{r["count"]} Windows files are patched in memory, without a restart. The files on disk keep the last '
+                "full or baseline update's version until the next one (x64, from Microsoft's file list).</p>" + parts)
     fi = (load("files/index.json", {}).get(ver) or {}).get(month)
     if not fi or fi["kb"] != kb:
         return ""

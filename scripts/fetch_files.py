@@ -138,6 +138,71 @@ def save_result(family, kb, month, prev_kb, old, new, tag):
     return res
 
 
+def hotpatch_files(text, tag):
+    """Hotpatch file lists name files like 1/localspl_hotpatch.dll (with a backslash): return the Windows file each one patches."""
+    out, section = {}, ""
+    for line in text.splitlines():
+        if line and not line.startswith('"'):
+            section = line.lower()
+            continue
+        if "x64" not in section or "arm64" in section:
+            continue
+        row = next(csv.reader(io.StringIO(line)), [])
+        if len(row) < 2 or row[0] == "File name":
+            continue
+        hp = row[0].split("\\")[-1]
+        base = re.sub(r"_hotpatch(?=\.[^.]+$)", "", hp, flags=re.I).lower()
+        if base == hp.lower():
+            continue  # not a hotpatch module
+        if base not in out or vkey(row[1]) > vkey(out[base]["v"]):
+            out[base] = {"n": base, "hp": hp, "v": row[1], "t": tag(base)}
+    return sorted(out.values(), key=lambda f: f["n"])
+
+
+def do_hotpatches(family, tag, since_month):
+    """Save the files each hotpatch patches in memory: data/files/<family>/hotpatch/<KB>.json"""
+    kinds = json.loads((DATA / "kb_titles.json").read_text(encoding="utf-8")) if (DATA / "kb_titles.json").exists() else {}
+    months = monthly_kbs_all(family)
+    order = [m for m, _ in months]
+    for month, kbs in months:
+        if since_month and order.index(month) < order.index(since_month):
+            continue
+        for kb in kbs:
+            if (kinds.get(kb) or {}).get("kind") != "hotpatch":
+                continue
+            out = OUT / family / "hotpatch" / f"{kb}.json"
+            if out.exists():
+                continue
+            text = file_list_csv(kb)
+            if not text:
+                print(f"  {family} {month} hotpatch {kb}: no file list found")
+                continue
+            files = hotpatch_files(text, tag)
+            by_tag = {}
+            for f in files:
+                for t in f["t"] or ["other"]:
+                    by_tag[t] = by_tag.get(t, 0) + 1
+            out.parent.mkdir(parents=True, exist_ok=True)
+            out.write_text(json.dumps({"kb": kb, "family": family, "month": month, "kind": "hotpatch", "count": len(files),
+                                       "by_tag": dict(sorted(by_tag.items(), key=lambda x: -x[1])), "patches": files},
+                                      ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+            print(f"  {family} {month} hotpatch {kb}: patches {len(files)} files in memory (print {by_tag.get('print', 0)})")
+
+
+def monthly_kbs_all(family):
+    """[(month, [every KB that month])] oldest first, for any version in the family."""
+    seen = {}
+    for ver in FAMILIES[family]:
+        p = DATA / "versions" / f"{ver}.json"
+        if not p.exists():
+            continue
+        for m in json.loads(p.read_text(encoding="utf-8"))["months"]:
+            seen.setdefault(m["month"], set()).update(u["kb"] for u in m["updates"])
+    d = json.loads((DATA / "versions" / f"{FAMILIES[family][0]}.json").read_text(encoding="utf-8"))
+    order = [m["month"] for m in reversed(d["months"])]
+    return [(m, sorted(seen.get(m, []))) for m in order]
+
+
 def write_index():
     idx = {}
     for family, vers in FAMILIES.items():
@@ -147,6 +212,14 @@ def write_index():
                 idx.setdefault(v, {})[r["month"]] = {"kb": r["kb"], "path": f"data/files/{family}/{p.name}",
                                                      "changed": r["counts"]["changed"] + r["counts"]["added"], "by_tag": r["by_tag"]}
     (OUT / "index.json").write_text(json.dumps(idx, indent=1), encoding="utf-8")
+    hp = {}
+    for family, vers in FAMILIES.items():
+        for p in sorted((OUT / family / "hotpatch").glob("KB*.json")) if (OUT / family / "hotpatch").exists() else []:
+            r = json.loads(p.read_text(encoding="utf-8"))
+            for v in vers:
+                hp.setdefault(v, {}).setdefault(r["month"], []).append(
+                    {"kb": r["kb"], "path": f"data/files/{family}/hotpatch/{p.name}", "count": r["count"], "by_tag": r["by_tag"]})
+    (OUT / "hotpatch_index.json").write_text(json.dumps(hp, indent=1), encoding="utf-8")
 
 
 def main():
@@ -198,6 +271,9 @@ def main():
             else:
                 print(f"  {family} {month} {kb}: starting point ({len(files)} files)")
             prev = {"kb": kb, "month": month, "files": files}
+        first = min((json.loads(p.read_text(encoding="utf-8"))["month"] for p in (OUT / family).glob("KB*.json")),
+                    key=lambda m: [x for x, _ in months].index(m), default=None) if (OUT / family).exists() else None
+        do_hotpatches(family, tag, first)
         if prev:
             latest_p.parent.mkdir(parents=True, exist_ok=True)
             latest_p.write_bytes(gzip.compress(json.dumps(prev).encode("utf-8")))

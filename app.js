@@ -44,6 +44,7 @@ async function init() {
   ]);
   state.files = await getJSON("data/files/index.json").catch(() => ({}));
   state.kbinfo = await getJSON("data/kb_titles.json").catch(() => ({}));
+  state.hotpatch = await getJSON("data/files/hotpatch_index.json").catch(() => ({}));
   state.tshoot = await getJSON("data/troubleshooting.json").catch(() => null);
   const swList = await getJSON("data/software/index.json").catch(() => []);
   for (const id of swList) { try { state.software[id] = await getJSON(`data/software/${id}.json`); } catch (e) {} }
@@ -453,7 +454,10 @@ function filesBlock(m) {
   const sw = state.software[state.sw];
   const swTags = swFileTags();
   const swN = swTags ? swTags.reduce((n, t) => n + (fi.by_tag[t] || 0), 0) : 0;
-  return `<details class="files" data-path="${esc(fi.path)}"><summary><span class="l">Files changed by ${esc(fi.kb)}</span>` +
+  const hps = ((state.hotpatch || {})[state.ver] || {})[m.month] || [];
+  const hpBlocks = hps.map((h) => `<details class="files hp" data-hppath="${esc(h.path)}"><summary><span class="l">Hotpatch ${esc(h.kb)} patches files in memory</span>` +
+    `<span class="r">${h.count} files${swTags ? ` · <b>${swTags.reduce((n, t) => n + (h.by_tag[t] || 0), 0)} in ${esc(sw.name)}'s parts</b>` : ""}</span></summary><div class="files-body"><p class="muted">Loading…</p></div></details>`).join("");
+  return hpBlocks + `<details class="files" data-path="${esc(fi.path)}"><summary><span class="l">Files changed by ${esc(fi.kb)}</span>` +
     `<span class="r">${fi.changed.toLocaleString()} files${sw ? ` · <b>${swN} in ${esc(sw.name)}'s parts</b>` : ""}</span></summary><div class="files-body"><p class="muted">Loading…</p></div></details>`;
 }
 function fileRow(f) {
@@ -471,23 +475,46 @@ async function fillFiles(el) {
     order.map((t) => `<details${swTags.includes(t) ? " open" : ""}><summary><span class="l">${esc(fileTagLabel(t))}${swTags.includes(t) ? ' <span class="pill src">your software</span>' : ""}</span><span class="r">${groups[t].length} files</span></summary>` +
       (t === "other" && groups[t].length > 400 ? groups[t].slice(0, 400).map(fileRow).join("") + `<p class="is">…and ${groups[t].length - 400} more. Search a file name to see its history.</p>` : groups[t].map(fileRow).join("")) + `</details>`).join("");
 }
+async function fillHotpatch(el) {
+  const r = await loadFiles(el.dataset.hppath);
+  const groups = {};
+  for (const f of r.patches) for (const t of (f.t.length ? f.t : ["other"])) (groups[t] = groups[t] || []).push(f);
+  const swTags = swFileTags() || [];
+  const order = Object.keys(groups).sort((a, b) => (swTags.includes(b) - swTags.includes(a)) || (a === "other") - (b === "other") || groups[b].length - groups[a].length);
+  el.querySelector(".files-body").innerHTML =
+    `<p class="is">Only on devices enrolled in hotpatching: these Windows files were patched in memory, without a restart. The files on disk keep the last full or baseline update's version.</p>` +
+    order.map((t) => `<details${swTags.includes(t) ? " open" : ""}><summary><span class="l">${esc(fileTagLabel(t))}</span><span class="r">${groups[t].length} files</span></summary>` +
+      groups[t].map((f) => `<div class="fix"><span class="cve">${esc(f.n)}</span><span class="muted">via ${esc(f.hp)} ${esc(f.v)}</span></div>`).join("") + `</details>`).join("");
+}
 document.addEventListener("toggle", (ev) => {
   const el = ev.target;
+  if (el.matches && el.matches("details.files.hp") && el.open && !el.dataset.done) { el.dataset.done = 1; fillHotpatch(el).catch(() => { el.querySelector(".files-body").innerHTML = '<p class="muted">Could not load the hotpatch list.</p>'; }); return; }
   if (el.matches && el.matches("details.files") && el.open && !el.dataset.done) { el.dataset.done = 1; fillFiles(el).catch(() => { el.querySelector(".files-body").innerHTML = '<p class="muted">Couldn\'t load the file list.</p>'; }); }
 }, true);
 async function fileHistory(name) {
   const per = (state.files || {})[state.ver] || {};
   const rows = [];
+  const hpPer = (state.hotpatch || {})[state.ver] || {};
   for (const [month, fi] of Object.entries(per)) {
     const r = await loadFiles(fi.path);
     const f = r.changed.concat(r.added).find((x) => x.n === name);
-    rows.push({ month, kb: fi.kb, f });
+    const hps = [];
+    for (const h of hpPer[month] || []) {
+      const hr = await loadFiles(h.path);
+      const p = hr.patches.find((x) => x.n === name);
+      if (p) hps.push({ kb: h.kb, p });
+    }
+    rows.push({ month, kb: fi.kb, f, hps });
   }
   rows.sort((a, b) => state.data.months.findIndex((m) => m.month === a.month) - state.data.months.findIndex((m) => m.month === b.month));
   if (!rows.length) return `<div class="issue"><span class="pill src">File history</span><span class="it">No file lists for ${esc(state.data.label)} yet</span></div>`;
   return `<div class="issue build"><span class="pill src">File history</span><span class="it">${esc(name)} on ${esc(state.data.label)}</span>` +
-    rows.map((x) => `<div>${esc(monthName(x.month))} (${esc(x.kb)}): ${x.f ? `<b>changed</b> ${x.f.o ? esc(x.f.o) + " → " : "new · "}${esc(x.f.v)}` : "not changed"}</div>`).join("") +
-    `<div class="is">Covers the months Patchmap has file lists for. Versions are from Microsoft's file lists (x64).</div></div>`;
+    rows.map((x) => `<div class="fh-month"><b>${esc(monthName(x.month))}</b>` +
+      `<div>• Full update ${esc(x.kb)}${kbBadge(x.kb)}: ${x.f ? `<b>changed</b> ${x.f.o ? esc(x.f.o) + " → " : "new · "}${esc(x.f.v)}` : "not changed"}</div>` +
+      x.hps.map((h) => `<div>• ${esc(h.kb)}${kbBadge(h.kb)}: <b>patched in memory</b> (${esc(h.p.hp)} ${esc(h.p.v)}). ` +
+        `The file on disk stays ${x.f && x.f.o ? `at ${esc(x.f.o)}` : "at the last full or baseline update's version"} on hotpatched devices, until the next full or baseline update.</div>`).join("") +
+      `</div>`).join("") +
+    `<div class="is">Covers the months Patchmap has file lists for. Versions are from Microsoft's file lists (x64). Hotpatch lines only matter for devices enrolled in hotpatching.</div></div>`;
 }
 
 function monthBody(m) {

@@ -1,0 +1,86 @@
+{
+ "win11-24h2": {
+  "2026-Nov": [
+   {
+    "kb": "KB5132043",
+    "path": "data/files/win11-26100/hotpatch/KB5132043.json",
+    "count": 366,
+    "by_tag": {
+     "other": 302,
+     "print": 14,
+     "network": 13,
+     "sign-in": 10,
+     "file-sharing": 8,
+     "kernel-drivers": 8,
+     "security": 5,
+     "remote-access": 3,
+     "rpc": 2,
+     "install-update": 1
+    }
+   }
+  ]
+ },
+ "win11-25h2": {
+  "2026-Nov": [
+   {
+    "kb": "KB5132043",
+    "path": "data/files/win11-26100/hotpatch/KB5132043.json",
+    "count": 366,
+    "by_tag": {
+     "other": 302,
+     "print": 14,
+     "network": 13,
+     "sign-in": 10,
+     "file-sharing": 8,
+     "kernel-drivers": 8,
+     "security": 5,
+     "remote-access": 3,
+     "rpc": 2,
+     "install-update": 1
+    }
+   }
+  ]
+ },
+ "win11-26h2": {
+  "2026-Nov": [
+   {
+    "kb": "KB5132043",
+    "path": "data/files/win11-26100/hotpatch/KB5132043.json",
+    "count": 366,
+    "by_tag": {
+     "other": 302,
+     "print": 14,
+     "network": 13,
+     "sign-in": 10,
+     "file-sharing": 8,
+     "kernel-drivers": 8,
+     "security": 5,
+     "remote-access": 3,
+     "rpc": 2,
+     "install-update": 1
+    }
+   }
+  ]
+ },
+ "server-2025": {
+  "2026-Nov": [
+   {
+    "kb": "KB5131077",
+    "path": "data/files/server-2025/hotpatch/KB5131077.json",
+    "count": 370,
+    "by_tag": {
+     "other": 302,
+     "network": 15,
+     "print": 14,
+     "sign-in": 11,
+     "file-sharing": 9,
+     "kernel-drivers": 8,
+     "security": 5,
+     "remote-access": 3,
+     "rpc": 2,
+     "install-update": 1
+    }
+   }
+  ]
+ }
+}
