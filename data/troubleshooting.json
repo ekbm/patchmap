@@ -14,40 +14,82 @@
  ],
  "areas": {
   "print": {
-   "logs": ["Event Viewer → Applications and Services Logs → Microsoft → Windows → PrintService → Admin (for example event 808: a plug-in module failed to load).", "The PrintService → Operational log has more detail, but it's off by default: right-click it → Enable Log, then reproduce the problem."],
-   "checks": ["If an error names a module, look at its path: a Windows file (C:\\Windows\\System32\\…) points to the update; a third-party file (print processor, port monitor, driver) points to that software.", "Print a test page on the print server itself: if that works, the problem is between clients and the server (network printing, RPC, SMB or drivers).", "Try a Microsoft built-in driver (for example Microsoft IPP Class Driver) to rule out the printer's own driver.", "Restart the Print Spooler service after each change."],
-   "stopgap": ["If the update must stay removed for a while on a PC that doesn't share printers, the Group Policy setting \"Allow Print Spooler to accept client connections\" = Disabled reduces exposure."]
+   "logs": [
+    "Event Viewer → Applications and Services Logs → Microsoft → Windows → PrintService → Admin (for example event 808: a plug-in module failed to load).",
+    "The PrintService → Operational log has more detail, but it's off by default: right-click it → Enable Log, then reproduce the problem."
+   ],
+   "checks": [
+    "If an error names a module, look at its path: a Windows file (C:\\Windows\\System32\\…) points to the update; a third-party file (print processor, port monitor, driver) points to that software.",
+    "Print a test page on the print server itself: if that works, the problem is between clients and the server (network printing, RPC, SMB or drivers).",
+    "Try a Microsoft built-in driver (for example Microsoft IPP Class Driver) to rule out the printer's own driver.",
+    "Restart the Print Spooler service after each change."
+   ],
+   "stopgap": [
+    "If the update must stay removed for a while on a PC that doesn't share printers, the Group Policy setting \"Allow Print Spooler to accept client connections\" = Disabled reduces exposure."
+   ]
   },
   "sign-in": {
-   "logs": ["Event Viewer → Windows Logs → System (sources such as Kerberos, KDC, Netlogon, LSA) and Security (failed sign-ins)."],
-   "checks": ["Check whether only some users, devices or service accounts fail, often older systems or devices using older sign-in methods (NTLM, weak encryption).", "Check the clocks: Kerberos sign-in fails if clocks differ by more than a few minutes.", "Check this month's known problems for sign-in hardening changes."],
+   "logs": [
+    "Event Viewer → Windows Logs → System (sources such as Kerberos, KDC, Netlogon, LSA) and Security (failed sign-ins)."
+   ],
+   "checks": [
+    "Check whether only some users, devices or service accounts fail, often older systems or devices using older sign-in methods (NTLM, weak encryption).",
+    "Check the clocks: Kerberos sign-in fails if clocks differ by more than a few minutes.",
+    "Check this month's known problems for sign-in hardening changes."
+   ],
    "stopgap": []
   },
   "file-sharing": {
-   "logs": ["Event Viewer → Applications and Services Logs → Microsoft → Windows → SMBServer → Operational, and SMBClient → Connectivity."],
-   "checks": ["Test opening \\\\server\\share from another PC.", "Check devices that scan to a shared folder (copiers, scanners): updates that tighten file-sharing security (signing, encryption, older sign-in methods) often stop them first.", "Check whether only older devices or systems fail."],
+   "logs": [
+    "Event Viewer → Applications and Services Logs → Microsoft → Windows → SMBServer → Operational, and SMBClient → Connectivity."
+   ],
+   "checks": [
+    "Test opening \\\\server\\share from another PC.",
+    "Check devices that scan to a shared folder (copiers, scanners): updates that tighten file-sharing security (signing, encryption, older sign-in methods) often stop them first.",
+    "Check whether only older devices or systems fail."
+   ],
    "stopgap": []
   },
   "network": {
-   "logs": ["Event Viewer → Windows Logs → System, filtered on the failing service."],
-   "checks": ["Remote printing and many admin tools use RPC: port 135 plus a dynamic port range must be open between client and server.", "Check whether the problem is only across the network (works locally, fails remotely)."],
+   "logs": [
+    "Event Viewer → Windows Logs → System, filtered on the failing service."
+   ],
+   "checks": [
+    "Remote printing and many admin tools use RPC: port 135 plus a dynamic port range must be open between client and server.",
+    "Check whether the problem is only across the network (works locally, fails remotely)."
+   ],
    "stopgap": []
   },
   "install-update": {
-   "logs": ["Settings → Windows Update → Update history (error code), and C:\\Windows\\Logs\\CBS\\CBS.log."],
-   "checks": ["Repair Windows' update files, then try again: in an admin command prompt run DISM /Online /Cleanup-Image /RestoreHealth, then sfc /scannow, then restart.", "Search the error code here: some install failures are known problems with a fix rolling out."],
+   "logs": [
+    "Settings → Windows Update → Update history (error code), and C:\\Windows\\Logs\\CBS\\CBS.log."
+   ],
+   "checks": [
+    "Repair Windows' update files, then try again: in an admin command prompt run DISM /Online /Cleanup-Image /RestoreHealth, then sfc /scannow, then restart.",
+    "Search the error code here: some install failures are known problems with a fix rolling out."
+   ],
    "stopgap": []
   },
   "activation": {
-   "logs": ["Run slmgr /dlv in an admin command prompt to see licence status."],
-   "checks": ["Check the KMS host or licensing tool can be reached.", "Search the error code here: this month has a known activation problem."],
+   "logs": [
+    "Run slmgr /dlv in an admin command prompt to see licence status."
+   ],
+   "checks": [
+    "Check the KMS host or licensing tool can be reached.",
+    "Search the error code here: this month has a known activation problem."
+   ],
    "stopgap": []
   }
  },
  "patterns": [
   {
    "id": "spooler-plugin-0xc1",
-   "match": ["0xc1", "localspl", "event 808", "plug-in module"],
+   "match": [
+    "0xc1",
+    "localspl",
+    "event 808",
+    "plug-in module"
+   ],
    "title": "Print Spooler failed to load a plug-in module (event 808, error 0xC1)",
    "area": "print",
    "advice": [
@@ -56,11 +98,22 @@
     "If it names a Windows file such as localspl.dll and started after a hotpatch, try installing the full cumulative update for the same month instead of the hotpatch (it replaces the file on disk). Removing the hotpatch also stops it, but removes that month's security fixes.",
     "Report it to Microsoft (Feedback Hub or a support case) if it's a Windows file."
    ],
-   "basis": "Support experience; Windows error code 193 (0xC1)."
+   "basis": "Support experience; Windows error code 193 (0xC1).",
+   "files": [
+    "localspl.dll",
+    "spoolsv.exe",
+    "win32spl.dll"
+   ]
   },
   {
    "id": "rpc-print-0x11b-0x709",
-   "match": ["0x0000011b", "0x00000709", "0x0000007c", "11b", "709"],
+   "match": [
+    "0x0000011b",
+    "0x00000709",
+    "0x0000007c",
+    "11b",
+    "709"
+   ],
    "title": "Network printing fails with 0x0000011b, 0x00000709 or 0x0000007c",
    "area": "print",
    "advice": [
@@ -69,7 +122,17 @@
     "Print management vendors documented workarounds at the time; prefer updating over registry workarounds that weaken security."
    ],
    "basis": "PaperCut's PrintNightmare notes and firewall ports article.",
-   "sources": [{"name": "PaperCut: PrintNightmare impact", "url": "https://www.papercut.com/kb/Main/PrintNightmareCVE2021"}]
+   "sources": [
+    {
+     "name": "PaperCut: PrintNightmare impact",
+     "url": "https://www.papercut.com/kb/Main/PrintNightmareCVE2021"
+    }
+   ],
+   "files": [
+    "rpcrt4.dll",
+    "localspl.dll",
+    "win32spl.dll"
+   ]
   }
  ]
 }

@@ -27,12 +27,21 @@
     </div>
     <div class="field grow">
       <label for="q">Search updates, areas, files, error codes or a build number</label>
-      <input id="q" type="search" placeholder="print, KB5131090, localspl.dll, 0x80041008, 20348.5870" autocomplete="off">
+      <div class="search-wrap">
+        <input id="q" type="search" placeholder="print, KB5131090, localspl.dll, 0x80041008, 20348.5870" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="sugg">
+        <div id="sugg" class="sugg" role="listbox" hidden></div>
+      </div>
     </div>
     <div class="field">
       <label for="sw">My software (optional)</label>
       <select id="sw"></select>
     </div>
+  </div>
+  <div class="startfrom" id="startfrom">Start from:
+    <button type="button" class="chip" data-mode="update">Update or build</button>
+    <button type="button" class="chip" data-mode="area">Area</button>
+    <button type="button" class="chip" data-mode="error">Error or symptom</button>
+    <button type="button" class="chip" data-mode="file">File or component</button>
   </div>
   <div class="chips" id="chips"></div>
 

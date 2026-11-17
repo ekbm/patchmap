@@ -68,6 +68,7 @@ async function init() {
   q.value = state.q;
   let t;
   q.oninput = () => { clearTimeout(t); t = setTimeout(() => { state.q = q.value.trim(); render(); }, 200); };
+  setupSuggest();
   window.addEventListener("hashchange", () => { readHash(); sel.value = state.ver; q.value = state.q; $("sw").value = state.software[state.sw] ? state.sw : ""; load(); });
   await load();
 }
@@ -108,7 +109,7 @@ function render() {
     $("issues").innerHTML = ""; $("months").innerHTML = "";
     const name = state.q.toLowerCase();
     $("results").innerHTML = '<p class="muted">Loading file history…</p>';
-    fileHistory(name).then((h) => { if (state.q.toLowerCase() === name) $("results").innerHTML = h; });
+    loadNames().then(() => fileHistory(name)).then((h) => { if (state.q.toLowerCase() === name) $("results").innerHTML = h; });
     return;
   }
   const kbq = /^kb\d{6,7}$/i.test(state.q) ? state.q.toUpperCase() : null;
@@ -117,7 +118,7 @@ function render() {
     if (other) { state.ver = other.version; $("ver").value = other.version; load(); return; }
   }
   if (state.q.length >= 2) { $("issues").innerHTML = ""; renderSearch(); $("months").innerHTML = ""; }
-  else { $("results").innerHTML = ""; renderMonths(); }
+  else { $("results").innerHTML = state.area ? areaCard(state.area) : ""; renderMonths(); if (state.area) loadNames().then(() => { if (state.area && !state.q) $("results").innerHTML = areaCard(state.area); }); }
 }
 
 // ---- Build number lookup (R1) ----
@@ -258,6 +259,39 @@ function tshootBlock(ref) {
     (areaBits ? `<div class="is"><b>By area</b> (open the one that's failing):</div>${areaBits}` : "") +
     `<div class="is">Searching an error code (for example 0xC1 or 0x0000011b) shows any matching guidance. Not Microsoft advice; check Microsoft's page for the update.</div></details>`;
 }
+function areaCard(t) {
+  if (!state.tags[t] && t !== "other") return "";
+  const months = state.data.months.filter((m) => m.areas[t]);
+  if (!months.length) return "";
+  const latest = months[0];
+  const comps = {};
+  for (const m of months) for (const [c, fx] of Object.entries(m.areas[t].components)) comps[c] = (comps[c] || 0) + fx.length;
+  const topComps = Object.entries(comps).sort((a, b) => b[1] - a[1]).slice(0, 5);
+  const key = ["spoolsv.exe", "localspl.dll", "win32spl.dll", "kerberos.dll", "lsasrv.dll", "msv1_0.dll", "srv2.sys", "mrxsmb.sys", "rpcrt4.dll", "gdi32full.dll"];
+  const files = fileNamesForVersion().filter(([, tg]) => tg.includes(t)).map(([n]) => n).sort((a, b) => key.includes(b) - key.includes(a)).slice(0, 6);
+  const pats = ((state.tshoot || {}).patterns || []).filter((p) => p.area === t);
+  const open = state.issues.filter((i) => i.versions.includes(state.ver) && i.areas.includes(t) && i.status !== "fixed");
+  return `<div class="issue build"><span class="pill src">Area</span><span class="it">${esc(label(t))} on ${esc(state.data.label)}</span>` +
+    `<div>Latest: ${esc(monthName(latest.month))} (${latest.updates.map((u) => esc(u.kb) + kbBadge(u.kb)).join(", ")}): <b>${latest.areas[t].count} fixes</b>. ${months.length} of the last ${state.data.months.length} months touched this area.${open.length ? ` <b>${open.length} open known problem${open.length > 1 ? "s" : ""}.</b>` : ""}</div>` +
+    jumpsRow([
+      ["Parts of Windows", topComps.map(([c, n]) => jl({ q: c, a: t }, `${c.replace(/^Windows /, "")} ${n}`))],
+      ["Files", files.map((f) => jl({ q: f }, f))],
+      ["Errors", pats.map((p) => jl({ q: p.match[0] }, p.title.length > 40 ? p.title.slice(0, 40) + "…" : p.title))],
+      ["Updates", [jl({ q: latest.updates[0] ? latest.updates[0].kb : "" }, "Latest update")]],
+    ]) + `</div>`;
+}
+function kbJumps(ref) {
+  const st = kbFixStats(ref.kb, ref.month);
+  const fi = filesInfo({ month: ref.month });
+  const probs = state.issues.filter((i) => i.versions.includes(state.ver) &&
+    (((i.by_version || {})[state.ver] || {}).caused_by || []).includes(ref.kb) || (!i.by_version && i.versions.includes(state.ver) && i.months.includes(ref.month)));
+  const codes = [...new Set(probs.flatMap((i) => (i.title.match(/0x[0-9a-f]{6,8}/gi) || [])))];
+  return jumpsRow([
+    ["Areas", st.areas.filter(([t]) => t !== "other").sort((x, y) => (y[0] === "print") - (x[0] === "print")).slice(0, 5).map(([t, n]) => jl({ a: t }, `${label(t)} ${n}`))],
+    ["Files", fi ? [`<a class="jl" href="/kb/${esc(fi.kb)}/">Files changed in ${esc(monthName(ref.month))}</a>`] : []],
+    ["Errors", codes.slice(0, 4).map((c) => jl({ q: c }, c))],
+  ]);
+}
 function kbCard(q) {
   // Searching an update number: a summary card on top with its type, build and the troubleshooting guide.
   if (!/^kb\d{6,7}$/i.test(q)) return "";
@@ -270,7 +304,7 @@ function kbCard(q) {
   return `<div class="issue build"><span class="pill src">Update</span><span class="it">${esc(kb)}${kbBadge(kb)}: ${esc(state.data.label)}, ${esc(monthName(ref.month))}, build ${esc(ref.build)}</span>` +
     (hit ? hotpatchNote(ref, hit) : "") +
     `<div>${newer.length ? `${newer.length} newer update${newer.length > 1 ? "s" : ""} since, the latest being ${esc(newer[newer.length - 1].kb)} (build ${esc(newer[newer.length - 1].build)}).` : "The newest update Patchmap knows for this version."}</div>` +
-    `<div class="is">${pageLink}</div>` + tshootBlock(ref) + `</div>`;
+    `<div class="is">${pageLink}</div>` + kbJumps(ref) + tshootBlock(ref) + `</div>`;
 }
 function patternHits(q) {
   const T = state.tshoot;
@@ -278,7 +312,8 @@ function patternHits(q) {
   const ql = q.toLowerCase();
   return T.patterns.filter((p) => p.match.some((m) => ql.includes(m) || (m.length > 4 && m.includes(ql)))).map((p) =>
     `<div class="issue build"><span class="pill src">Troubleshooting</span><span class="it">${esc(p.title)}</span>${tsList(p.advice)}` +
-    `<div class="is">Basis: ${esc(p.basis)}${(p.sources || []).map((s) => ` · <a href="${esc(s.url)}" rel="noopener">${esc(s.name)}</a>`).join("")}</div></div>`);
+    `<div class="is">Basis: ${esc(p.basis)}${(p.sources || []).map((s) => ` · <a href="${esc(s.url)}" rel="noopener">${esc(s.name)}</a>`).join("")}</div>` +
+    jumpsRow([["Area", p.area && state.tags[p.area] ? [jl({ a: p.area }, label(p.area))] : []], ["Files", (p.files || []).map((f) => jl({ q: f }, f))]]) + `</div>`);
 }
 
 function niceDate(d) { return new Date(d + "T00:00:00Z").toLocaleDateString("en-AU", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" }); }
@@ -508,7 +543,14 @@ async function fileHistory(name) {
   }
   rows.sort((a, b) => state.data.months.findIndex((m) => m.month === a.month) - state.data.months.findIndex((m) => m.month === b.month));
   if (!rows.length) return `<div class="issue"><span class="pill src">File history</span><span class="it">No file lists for ${esc(state.data.label)} yet</span></div>`;
-  return `<div class="issue build"><span class="pill src">File history</span><span class="it">${esc(name)} on ${esc(state.data.label)}</span>` +
+  const tags = (fileNamesForVersion().find(([n]) => n === name) || [null, []])[1];
+  const last = rows.find((x) => x.f);
+  const fileJumps = jumpsRow([
+    ["Area", tags.map((t) => state.tags[t] ? jl({ a: t }, label(t)) : "").filter(Boolean)],
+    ["Updates", (last ? [jl({ q: last.kb }, "Last changed by " + last.kb)] : []).concat(rows.flatMap((x) => x.hps).slice(0, 1).map((h) => jl({ q: h.kb }, "Hotpatch " + h.kb)))],
+    ["Errors", patternsForFile(name).map((p) => jl({ q: p.match[0] }, p.title.length > 45 ? p.title.slice(0, 45) + "…" : p.title))],
+  ]);
+  return `<div class="issue build"><span class="pill src">File history</span><span class="it">${esc(name)} on ${esc(state.data.label)}</span>` + fileJumps +
     rows.map((x) => `<div class="fh-month"><b>${esc(monthName(x.month))}</b>` +
       `<div>• Full update ${esc(x.kb)}${kbBadge(x.kb)}: ${x.f ? `<b>changed</b> ${x.f.o ? esc(x.f.o) + " → " : "new · "}${esc(x.f.v)}` : "not changed"}</div>` +
       x.hps.map((h) => `<div>• ${esc(h.kb)}${kbBadge(h.kb)}: <b>patched in memory</b> (${esc(h.p.hp)} ${esc(h.p.v)}). ` +
@@ -573,4 +615,135 @@ document.addEventListener("click", (ev) => {
   if (d) { d.open = true; d.scrollIntoView({ behavior: "smooth", block: "start" }); }
 });
 
+
+// ---- Four ways in: suggestions as you type + "Start from" (update, area, error, file/component) ----
+const sg = { mode: "", items: [], active: -1, names: null };
+const MODE_HINT = {
+  update: "KB5132043 or a build like 26200.9911",
+  area: "printing, sign-in, file sharing",
+  error: "0xC1, 0x0000011b, event 808",
+  file: "localspl.dll or Print Spooler",
+};
+async function loadNames() {
+  if (sg.names === null) sg.names = await getJSON("data/files/names.json").catch(() => ({ families: {}, versions: {} }));
+  return sg.names;
+}
+function fileNamesForVersion() {
+  const n = sg.names || { families: {}, versions: {} };
+  return n.families[n.versions[state.ver]] || [];
+}
+function errorItems() {
+  const out = [];
+  for (const p of (state.tshoot || {}).patterns || []) out.push({ kind: "error", text: p.title, value: p.match[0], note: "guide" });
+  const codes = new Map();
+  for (const i of state.issues) {
+    if (!i.versions.includes(state.ver)) continue;
+    for (const c of (i.title + " " + (i.summary || "")).match(/0x[0-9a-f]{6,8}/gi) || []) if (!codes.has(c.toLowerCase())) codes.set(c.toLowerCase(), i.title);
+  }
+  for (const [c, t] of codes) out.push({ kind: "error", text: c, value: c, note: t.length > 40 ? t.slice(0, 40) + "…" : t });
+  return out;
+}
+function suggest(q, mode) {
+  q = (q || "").trim().toLowerCase();
+  const groups = [];
+  const want = (m) => !mode || mode === m;
+  const has = (s) => !q || s.toLowerCase().includes(q);
+  if (want("update")) {
+    const seen = new Set(), items = [];
+    for (const m of state.data.months) for (const u of m.updates) {
+      if (seen.has(u.kb)) continue; seen.add(u.kb);
+      const b = state.builds.find((x) => x.kb === u.kb && x.version === state.ver);
+      if (has(u.kb) || (b && has(b.build))) items.push({ kind: "update", text: u.kb + (KIND_LABEL[kbKind(u.kb)] ? " · " + KIND_LABEL[kbKind(u.kb)] : ""), value: u.kb, note: monthName(m.month) + (b ? " · " + b.build.replace("10.0.", "") : "") });
+    }
+    if (items.length) groups.push(["Updates", items.slice(0, q ? 5 : 4)]);
+  }
+  if (want("area")) {
+    const present = new Set(state.data.months.flatMap((m) => Object.keys(m.areas)));
+    const items = Object.keys(state.tags).filter((t) => present.has(t) && (has(label(t)) || has(t))).map((t) => ({ kind: "area", text: label(t), value: t, note: "area" }));
+    if (items.length) groups.push(["Areas", items.slice(0, mode ? 20 : 4)]);
+  }
+  if (want("error")) {
+    const items = errorItems().filter((x) => has(x.text) || has(x.value) || (x.note && q && x.note.toLowerCase().includes(q)));
+    if (items.length) groups.push(["Errors and symptoms", items.slice(0, mode ? 12 : 4)]);
+  }
+  if (want("file")) {
+    const comps = new Set();
+    for (const m of state.data.months) for (const a of Object.values(m.areas)) for (const c of Object.keys(a.components)) comps.add(c);
+    const ci = [...comps].filter((c) => q && c.toLowerCase().includes(q)).slice(0, 4).map((c) => ({ kind: "component", text: c, value: c, note: "part of Windows" }));
+    const key = ["spoolsv.exe", "localspl.dll", "win32spl.dll", "kerberos.dll", "lsasrv.dll", "srv2.sys", "mrxsmb.sys", "rpcrt4.dll", "gdi32full.dll"];
+    // only Windows program files (not app resources like locales\af.pak); best-known and tagged files first
+    const names = fileNamesForVersion().filter(([n]) => !/[\\/]/.test(n) && /\.(dll|exe|sys|drv|cpl|ocx|efi|winmd)$/.test(n));
+    const rank = ([n, t]) => (key.includes(n) ? 0 : 2) + (t && t.length ? 0 : 1) + (n.startsWith(q) ? 0 : 3);
+    let fi;
+    if (!q) fi = names.filter(([n]) => key.includes(n));
+    else fi = names.filter(([n]) => n.includes(q)).sort((a, b) => rank(a) - rank(b) || a[0].localeCompare(b[0]));
+    fi = fi.slice(0, 6).map(([n, t]) => ({ kind: "file", text: n, value: n, note: t && t.length ? fileTagLabel(t[0]) : "file" }));
+    if (ci.length || fi.length) groups.push(["Files and components", ci.concat(fi)]);
+  }
+  return groups;
+}
+function showSugg() {
+  const box = $("sugg"), input = $("q");
+  if (!state.data) return;
+  const groups = suggest(input.value, sg.mode);
+  sg.items = groups.flatMap(([, items]) => items);
+  sg.active = -1;
+  if (!sg.items.length) { box.hidden = true; input.setAttribute("aria-expanded", "false"); return; }
+  let i = 0;
+  box.innerHTML = groups.map(([h, items]) => `<div class="sg-h">${esc(h)}</div>` +
+    items.map((x) => `<div class="sg-i" role="option" data-i="${i++}"><span>${esc(x.text)}</span><small>${esc(x.note || "")}</small></div>`).join("")).join("");
+  box.hidden = false;
+  input.setAttribute("aria-expanded", "true");
+}
+function hideSugg() { $("sugg").hidden = true; $("q").setAttribute("aria-expanded", "false"); }
+function pickSugg(x) {
+  hideSugg();
+  sg.mode = "";
+  document.querySelectorAll("#startfrom .chip").forEach((b) => b.classList.remove("on"));
+  if (x.kind === "area") { state.area = x.value; state.q = ""; $("q").value = ""; }
+  else { state.q = x.value; $("q").value = x.value; }
+  render();
+}
+function setupSuggest() {
+  const input = $("q"), box = $("sugg");
+  input.addEventListener("focus", () => { loadNames().then(() => { if (document.activeElement === input) showSugg(); }); });
+  input.addEventListener("input", () => { loadNames().then(showSugg); });
+  input.addEventListener("blur", () => setTimeout(hideSugg, 150));
+  input.addEventListener("keydown", (ev) => {
+    if (box.hidden) return;
+    const els = box.querySelectorAll(".sg-i");
+    if (ev.key === "ArrowDown" || ev.key === "ArrowUp") {
+      ev.preventDefault();
+      sg.active = (sg.active + (ev.key === "ArrowDown" ? 1 : -1) + els.length) % els.length;
+      els.forEach((e, k) => e.classList.toggle("active", k === sg.active));
+      els[sg.active].scrollIntoView({ block: "nearest" });
+    } else if (ev.key === "Enter" && sg.active >= 0) {
+      ev.preventDefault(); pickSugg(sg.items[sg.active]);
+    } else if (ev.key === "Escape") { hideSugg(); }
+  });
+  box.addEventListener("mousedown", (ev) => {
+    const el = ev.target.closest(".sg-i");
+    if (el) { ev.preventDefault(); pickSugg(sg.items[+el.dataset.i]); }
+  });
+  document.querySelectorAll("#startfrom .chip").forEach((b) => (b.onclick = () => {
+    const on = sg.mode !== b.dataset.mode;
+    sg.mode = on ? b.dataset.mode : "";
+    document.querySelectorAll("#startfrom .chip").forEach((x) => x.classList.toggle("on", x === b && on));
+    input.placeholder = on ? MODE_HINT[sg.mode] : "print, KB5131090, localspl.dll, 0x80041008, 20348.5870";
+    if (on) input.value = "";
+    input.focus();
+    loadNames().then(showSugg);
+  }));
+}
+
+// ---- Jump links between the four ways in ----
+const jl = (params, text) => `<a class="jl" href="#${new URLSearchParams(Object.assign({ v: state.ver }, params)).toString()}">${esc(text)}</a>`;
+function jumpsRow(parts) {
+  const bits = parts.filter(([, links]) => links.length).map(([h, links]) => `<span class="jh">${esc(h)}:</span> ${links.join(" ")}`);
+  return bits.length ? `<div class="jumps">${bits.join(" ")}</div>` : "";
+}
+function patternsForFile(name) {
+  const base = name.replace(/\.[^.]+$/, "").toLowerCase();
+  return ((state.tshoot || {}).patterns || []).filter((p) => (p.files || []).includes(name) || p.match.some((m) => m === base));
+}
 init().catch((e) => { $("months").innerHTML = `<p class="muted">Couldn't load the data (${esc(e.message)}). Try refreshing.</p>`; });

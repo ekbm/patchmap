@@ -220,6 +220,17 @@ def write_index():
                 hp.setdefault(v, {}).setdefault(r["month"], []).append(
                     {"kb": r["kb"], "path": f"data/files/{family}/hotpatch/{p.name}", "count": r["count"], "by_tag": r["by_tag"]})
     (OUT / "hotpatch_index.json").write_text(json.dumps(hp, indent=1), encoding="utf-8")
+    # every file name Patchmap has history for, per version, with its area tags (for search suggestions)
+    names = {}
+    for family, vers in FAMILIES.items():
+        seen = {}
+        for p in list((OUT / family).glob("KB*.json")) + list((OUT / family / "hotpatch").glob("KB*.json")) if (OUT / family).exists() else []:
+            r = json.loads(p.read_text(encoding="utf-8"))
+            for f in r.get("changed", []) + r.get("added", []) + r.get("patches", []):
+                seen.setdefault(f["n"], f["t"])
+        names[family] = [[n, t] for n, t in sorted(seen.items())]
+    (OUT / "names.json").write_text(json.dumps({"families": names, "versions": {v: f for f, vs in FAMILIES.items() for v in vs}},
+                                               separators=(",", ":")), encoding="utf-8")
 
 
 def main():
