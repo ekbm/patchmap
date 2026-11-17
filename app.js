@@ -2,7 +2,8 @@
 const state = { ver: "server-2022", q: "", area: "", sw: "", software: {}, data: null, tags: {}, issues: [] };
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-const monthName = (id) => { const [y, m] = id.split("-"); return `${({Jan:"January",Feb:"February",Mar:"March",Apr:"April",May:"May",Jun:"June",Jul:"July",Aug:"August",Sep:"September",Oct:"October",Nov:"November",Dec:"December"})[m]} ${y}`; };
+// Escaped, because month names go straight into the page in several places (Verilay scan, 17 Nov 2026).
+const monthName = (id) => { const [y, m] = String(id).split("-"); return esc(`${({Jan:"January",Feb:"February",Mar:"March",Apr:"April",May:"May",Jun:"June",Jul:"July",Aug:"August",Sep:"September",Oct:"October",Nov:"November",Dec:"December"})[m] || m} ${y}`); };
 const label = (tag) => (state.tags[tag] && state.tags[tag].label) || (tag === "other" ? "Other" : tag);
 const getJSON = (p) => fetch(p).then((r) => { if (!r.ok) throw new Error(p); return r.json(); });
 
@@ -60,7 +61,7 @@ async function init() {
   state.generated = index.generated;
   $("gen").textContent = `Data updated ${index.generated}.`;
   const sel = $("ver");
-  sel.innerHTML = index.scope.map((v) => `<option value="${v}">${esc(index.labels[v])}</option>`).join("");
+  sel.innerHTML = index.scope.map((v) => `<option value="${esc(v)}">${esc(index.labels[v])}</option>`).join("");
   if (!index.scope.includes(state.ver)) state.ver = index.scope[0];
   sel.value = state.ver;
   sel.onchange = () => { state.ver = sel.value; load(); };
@@ -425,7 +426,8 @@ function renderChips() {
   const order = Object.keys(state.tags).concat("other").filter((t) => present.has(t) || t === state.area);
   $("chips").innerHTML = '<span class="muted" style="align-self:center">Area:</span>' +
     [["", "All"]].concat(order.map((t) => [t, label(t)]))
-      .map(([t, l]) => `<button class="chip${state.area === t ? " on" : ""}" data-a="${t}">${esc(l)}</button>`).join("");
+      // esc(t): the area can come from the page address (#a=...), so it must never go into the page raw
+      .map(([t, l]) => `<button class="chip${state.area === t ? " on" : ""}" data-a="${esc(t)}">${esc(l)}</button>`).join("");
   $("chips").querySelectorAll("button").forEach((b) => (b.onclick = () => { state.area = b.dataset.a; render(); }));
 }
 
