@@ -9,7 +9,9 @@ const getJSON = (p) => fetch(p).then((r) => { if (!r.ok) throw new Error(p); ret
 
 function readHash() {
   const h = new URLSearchParams(location.hash.slice(1));
-  if (h.get("v")) state.ver = h.get("v");
+  // A link that names a version wins; otherwise open on the version this browser used last.
+  let last = ""; try { last = localStorage.getItem("pm-ver") || ""; } catch (e) {}
+  if (h.get("v") || last) state.ver = h.get("v") || last;
   state.q = h.get("q") || "";
   state.area = h.get("a") || "";
   state.sw = h.get("s") || "";
@@ -21,6 +23,7 @@ function writeHash() {
   if (state.area) h.set("a", state.area);
   if (state.sw) h.set("s", state.sw);
   history.replaceState(null, "", "#" + h.toString());
+  try { localStorage.setItem("pm-ver", state.ver); } catch (e) {}
 }
 
 function setupTheme() {
@@ -38,17 +41,28 @@ function setupTheme() {
 async function init() {
   setupTheme();
   readHash();
-  const [index, tags, issues, ms, builds] = await Promise.all([
-    getJSON("data/index.json"), getJSON("data/area_tags.json"), getJSON("data/known_issues.json"),
+  // Ask for every file at once (not one after another), and fill the version box
+  // as soon as the small version list arrives, so it isn't blank while the rest loads.
+  const indexP = getJSON("data/index.json");
+  indexP.then((index) => {
+    const sel = $("ver");
+    sel.innerHTML = index.scope.map((v) => `<option value="${esc(v)}">${esc(index.labels[v])}</option>`).join("");
+    sel.value = index.scope.includes(state.ver) ? state.ver : index.scope[0];
+  }).catch(() => {});
+  const softwareP = getJSON("data/software/index.json").catch(() => [])
+    .then((ids) => Promise.all(ids.map((id) => getJSON(`data/software/${id}.json`).catch(() => null))));
+  const [index, tags, issues, ms, builds, files, kbinfo, hotpatch, tshoot, sw] = await Promise.all([
+    indexP, getJSON("data/area_tags.json"), getJSON("data/known_issues.json"),
     getJSON("data/release_health.json").catch(() => ({ issues: [] })),
     getJSON("data/builds.json").catch(() => []),
+    getJSON("data/files/index.json").catch(() => ({})),
+    getJSON("data/kb_titles.json").catch(() => ({})),
+    getJSON("data/files/hotpatch_index.json").catch(() => ({})),
+    getJSON("data/troubleshooting.json").catch(() => null),
+    softwareP,
   ]);
-  state.files = await getJSON("data/files/index.json").catch(() => ({}));
-  state.kbinfo = await getJSON("data/kb_titles.json").catch(() => ({}));
-  state.hotpatch = await getJSON("data/files/hotpatch_index.json").catch(() => ({}));
-  state.tshoot = await getJSON("data/troubleshooting.json").catch(() => null);
-  const swList = await getJSON("data/software/index.json").catch(() => []);
-  for (const id of swList) { try { state.software[id] = await getJSON(`data/software/${id}.json`); } catch (e) {} }
+  Object.assign(state, { files, kbinfo, hotpatch, tshoot });
+  for (const x of sw) if (x && x.id) state.software[x.id] = x;
   const ssel = $("sw");
   ssel.innerHTML = '<option value="">No filter</option>' + Object.values(state.software).map((x) => `<option value="${esc(x.id)}">${esc(x.name)}</option>`).join("");
   if (!state.software[state.sw]) state.sw = "";
