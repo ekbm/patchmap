@@ -26,20 +26,19 @@
       <select id="ver"></select>
     </div>
     <div class="field" id="bldfield">
-      <label for="bld">Build (optional)</label>
+      <label for="bld" title="Run winver on the PC to see its build">Build (optional, see <code>winver</code>)</label>
       <select id="bld"></select>
-      <small class="hint">Not sure? Run <code>winver</code> on the PC.</small>
-    </div>
-    <div class="field grow">
-      <label for="q">Search updates, areas, files, error codes or a build number</label>
-      <div class="search-wrap">
-        <input id="q" type="search" placeholder="print, KB5131090, localspl.dll, 0x80041008, 20348.5870" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="sugg">
-        <div id="sugg" class="sugg" role="listbox" hidden></div>
-      </div>
     </div>
     <div class="field">
       <label for="sw">My software (optional)</label>
       <select id="sw"></select>
+    </div>
+    <div class="field grow">
+      <label for="q">Search: update, area, file, error or build</label>
+      <div class="search-wrap">
+        <input id="q" type="search" placeholder="print, KB5131090, localspl.dll, 0x80041008, 20348.5870" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="sugg">
+        <div id="sugg" class="sugg" role="listbox" hidden></div>
+      </div>
     </div>
   </div>
   <div class="startfrom" id="startfrom">Start from:

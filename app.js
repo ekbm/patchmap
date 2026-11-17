@@ -138,7 +138,7 @@ function fillBuilds() {
   const byBuild = new Map();
   for (const x of list) (byBuild.get(x.build) || byBuild.set(x.build, []).get(x.build)).push(x);
   const builds = [...byBuild.keys()].sort((a, b) => bparts(b)[3] - bparts(a)[3]);
-  sel.innerHTML = `<option value="">All builds (newest first below)</option>` + builds.map((b) => {
+  sel.innerHTML = `<option value="">All builds</option>` + builds.map((b) => {
     const xs = byBuild.get(b);
     const kbs = xs.map((x) => x.kb + (kindLabel(x.kb) ? " · " + kindLabel(x.kb) : "")).join(", ");
     return `<option value="${esc(b)}">${esc(b.replace(/^10\.0\./, ""))} · ${esc(kbs)} · ${esc(monthName(xs[0].month))}</option>`;
