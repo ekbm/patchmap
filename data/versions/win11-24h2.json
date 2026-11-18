@@ -3429,6 +3429,28 @@
     "other": {
      "count": 69,
      "components": {
+      "Windows Setup and Deployment": [
+       {
+        "cve": "CVE-2026-119914",
+        "title": "Windows Setup and Deployment Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5132043",
+         "KB5132061"
+        ]
+       },
+       {
+        "cve": "CVE-2026-105547",
+        "title": "Windows Setup and Deployment Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5132043",
+         "KB5132061"
+        ]
+       }
+      ],
       "Windows CNG Key Isolation Service": [
        {
         "cve": "CVE-2026-103571",
@@ -3549,28 +3571,6 @@
         "cve": "CVE-2026-105537",
         "title": "Mailslot File System Information Disclosure Vulnerability",
         "impact": "Information Disclosure",
-        "severity": "Important",
-        "kbs": [
-         "KB5132043",
-         "KB5132061"
-        ]
-       }
-      ],
-      "Windows Setup and Deployment": [
-       {
-        "cve": "CVE-2026-105547",
-        "title": "Windows Setup and Deployment Elevation of Privilege Vulnerability",
-        "impact": "Elevation of Privilege",
-        "severity": "Important",
-        "kbs": [
-         "KB5132043",
-         "KB5132061"
-        ]
-       },
-       {
-        "cve": "CVE-2026-119914",
-        "title": "Windows Setup and Deployment Elevation of Privilege Vulnerability",
-        "impact": "Elevation of Privilege",
         "severity": "Important",
         "kbs": [
          "KB5132043",
@@ -6414,12 +6414,12 @@
     "sign-in": {
      "count": 36,
      "components": {
-      "Windows LDAP - Lightweight Directory Access Protocol": [
+      "Windows NTLM": [
        {
-        "cve": "CVE-2026-119958",
-        "title": "Windows LDAP - Lightweight Directory Access Protocol Remote Code Execution Vulnerability",
-        "impact": "Remote Code Execution",
-        "severity": "Critical",
+        "cve": "CVE-2026-121680",
+        "title": "Windows NTLM Spoofing Vulnerability",
+        "impact": "Spoofing",
+        "severity": "Important",
         "kbs": [
          "KB5132043",
          "KB5132061"
@@ -6682,12 +6682,12 @@
         ]
        }
       ],
-      "Windows NTLM": [
+      "Windows LDAP - Lightweight Directory Access Protocol": [
        {
-        "cve": "CVE-2026-121680",
-        "title": "Windows NTLM Spoofing Vulnerability",
-        "impact": "Spoofing",
-        "severity": "Important",
+        "cve": "CVE-2026-119958",
+        "title": "Windows LDAP - Lightweight Directory Access Protocol Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
         "kbs": [
          "KB5132043",
          "KB5132061"
@@ -7187,6 +7187,38 @@
     "server-roles": {
      "count": 33,
      "components": {
+      "Windows Internet Information Services": [
+       {
+        "cve": "CVE-2026-119961",
+        "title": "Windows Internet Information Services Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5132043",
+         "KB5132061"
+        ]
+       },
+       {
+        "cve": "CVE-2026-119909",
+        "title": "Windows Internet Information Services Denial of Service Vulnerability",
+        "impact": "Denial of Service",
+        "severity": "Important",
+        "kbs": [
+         "KB5132043",
+         "KB5132061"
+        ]
+       },
+       {
+        "cve": "CVE-2026-119936",
+        "title": "Windows Internet Information Services Denial of Service Vulnerability",
+        "impact": "Denial of Service",
+        "severity": "Important",
+        "kbs": [
+         "KB5132043",
+         "KB5132061"
+        ]
+       }
+      ],
       "Windows Message Queuing": [
        {
         "cve": "CVE-2026-105515",
@@ -7499,38 +7531,6 @@
          "KB5132061"
         ],
         "likely": true
-       }
-      ],
-      "Windows Internet Information Services": [
-       {
-        "cve": "CVE-2026-119909",
-        "title": "Windows Internet Information Services Denial of Service Vulnerability",
-        "impact": "Denial of Service",
-        "severity": "Important",
-        "kbs": [
-         "KB5132043",
-         "KB5132061"
-        ]
-       },
-       {
-        "cve": "CVE-2026-119936",
-        "title": "Windows Internet Information Services Denial of Service Vulnerability",
-        "impact": "Denial of Service",
-        "severity": "Important",
-        "kbs": [
-         "KB5132043",
-         "KB5132061"
-        ]
-       },
-       {
-        "cve": "CVE-2026-119961",
-        "title": "Windows Internet Information Services Remote Code Execution Vulnerability",
-        "impact": "Remote Code Execution",
-        "severity": "Critical",
-        "kbs": [
-         "KB5132043",
-         "KB5132061"
-        ]
        }
       ]
      }
@@ -10531,6 +10531,89 @@
     "apps-desktop": {
      "count": 151,
      "components": {
+      "Microsoft Windows Media Foundation": [
+       {
+        "cve": "CVE-2026-70278",
+        "title": "Microsoft Windows Media Foundation Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5127648"
+        ]
+       },
+       {
+        "cve": "CVE-2026-102201",
+        "title": "Microsoft Windows Media Foundation Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5127648"
+        ]
+       },
+       {
+        "cve": "CVE-2026-70044",
+        "title": "Microsoft Windows Media Foundation Information Disclosure Vulnerability",
+        "impact": "Information Disclosure",
+        "severity": "Important",
+        "kbs": [
+         "KB5127648"
+        ]
+       },
+       {
+        "cve": "CVE-2026-70131",
+        "title": "Microsoft Windows Media Foundation Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5127648"
+        ]
+       },
+       {
+        "cve": "CVE-2026-70258",
+        "title": "Microsoft Windows Media Foundation Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5127648"
+        ]
+       },
+       {
+        "cve": "CVE-2026-83517",
+        "title": "Microsoft Windows Media Foundation Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5127648"
+        ]
+       },
+       {
+        "cve": "CVE-2026-85814",
+        "title": "Microsoft Windows Media Foundation Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5127648"
+        ]
+       },
+       {
+        "cve": "CVE-2026-96186",
+        "title": "Microsoft Windows Media Foundation Elevation of Privilege Vulnerability",
+        "impact": "Elevation of Privilege",
+        "severity": "Important",
+        "kbs": [
+         "KB5127648"
+        ]
+       },
+       {
+        "cve": "CVE-2026-96952",
+        "title": "Microsoft Windows Media Foundation Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Critical",
+        "kbs": [
+         "KB5127648"
+        ]
+       }
+      ],
       "Windows Media Video Decoder": [
        {
         "cve": "CVE-2026-100220",
@@ -10730,89 +10813,6 @@
         "title": "Microsoft Windows Codecs Library Denial of Service Vulnerability",
         "impact": "Denial of Service",
         "severity": "Important",
-        "kbs": [
-         "KB5127648"
-        ]
-       }
-      ],
-      "Microsoft Windows Media Foundation": [
-       {
-        "cve": "CVE-2026-102201",
-        "title": "Microsoft Windows Media Foundation Elevation of Privilege Vulnerability",
-        "impact": "Elevation of Privilege",
-        "severity": "Important",
-        "kbs": [
-         "KB5127648"
-        ]
-       },
-       {
-        "cve": "CVE-2026-70044",
-        "title": "Microsoft Windows Media Foundation Information Disclosure Vulnerability",
-        "impact": "Information Disclosure",
-        "severity": "Important",
-        "kbs": [
-         "KB5127648"
-        ]
-       },
-       {
-        "cve": "CVE-2026-70131",
-        "title": "Microsoft Windows Media Foundation Elevation of Privilege Vulnerability",
-        "impact": "Elevation of Privilege",
-        "severity": "Important",
-        "kbs": [
-         "KB5127648"
-        ]
-       },
-       {
-        "cve": "CVE-2026-70258",
-        "title": "Microsoft Windows Media Foundation Remote Code Execution Vulnerability",
-        "impact": "Remote Code Execution",
-        "severity": "Important",
-        "kbs": [
-         "KB5127648"
-        ]
-       },
-       {
-        "cve": "CVE-2026-70278",
-        "title": "Microsoft Windows Media Foundation Elevation of Privilege Vulnerability",
-        "impact": "Elevation of Privilege",
-        "severity": "Important",
-        "kbs": [
-         "KB5127648"
-        ]
-       },
-       {
-        "cve": "CVE-2026-83517",
-        "title": "Microsoft Windows Media Foundation Remote Code Execution Vulnerability",
-        "impact": "Remote Code Execution",
-        "severity": "Important",
-        "kbs": [
-         "KB5127648"
-        ]
-       },
-       {
-        "cve": "CVE-2026-85814",
-        "title": "Microsoft Windows Media Foundation Remote Code Execution Vulnerability",
-        "impact": "Remote Code Execution",
-        "severity": "Important",
-        "kbs": [
-         "KB5127648"
-        ]
-       },
-       {
-        "cve": "CVE-2026-96186",
-        "title": "Microsoft Windows Media Foundation Elevation of Privilege Vulnerability",
-        "impact": "Elevation of Privilege",
-        "severity": "Important",
-        "kbs": [
-         "KB5127648"
-        ]
-       },
-       {
-        "cve": "CVE-2026-96952",
-        "title": "Microsoft Windows Media Foundation Remote Code Execution Vulnerability",
-        "impact": "Remote Code Execution",
-        "severity": "Critical",
         "kbs": [
          "KB5127648"
         ]
@@ -29814,6 +29814,17 @@
     "apps-desktop": {
      "count": 83,
      "components": {
+      "Windows PowerShell": [
+       {
+        "cve": "CVE-2026-40400",
+        "title": "Windows PowerShell Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5101650"
+        ]
+       }
+      ],
       "Windows File Explorer": [
        {
         "cve": "CVE-2026-33842",
@@ -30043,17 +30054,6 @@
         "title": "Windows Media Remote Code Execution Vulnerability",
         "impact": "Remote Code Execution",
         "severity": "Critical",
-        "kbs": [
-         "KB5101650"
-        ]
-       }
-      ],
-      "Windows PowerShell": [
-       {
-        "cve": "CVE-2026-40400",
-        "title": "Windows PowerShell Remote Code Execution Vulnerability",
-        "impact": "Remote Code Execution",
-        "severity": "Important",
         "kbs": [
          "KB5101650"
         ]
@@ -33964,6 +33964,17 @@
     "management": {
      "count": 6,
      "components": {
+      "Windows PowerShell": [
+       {
+        "cve": "CVE-2026-40400",
+        "title": "Windows PowerShell Remote Code Execution Vulnerability",
+        "impact": "Remote Code Execution",
+        "severity": "Important",
+        "kbs": [
+         "KB5101650"
+        ]
+       }
+      ],
       "Windows Event Logging Service": [
        {
         "cve": "CVE-2026-34348",
@@ -33977,17 +33988,6 @@
        {
         "cve": "CVE-2026-50502",
         "title": "Windows Event Logging Service Remote Code Execution Vulnerability",
-        "impact": "Remote Code Execution",
-        "severity": "Important",
-        "kbs": [
-         "KB5101650"
-        ]
-       }
-      ],
-      "Windows PowerShell": [
-       {
-        "cve": "CVE-2026-40400",
-        "title": "Windows PowerShell Remote Code Execution Vulnerability",
         "impact": "Remote Code Execution",
         "severity": "Important",
         "kbs": [

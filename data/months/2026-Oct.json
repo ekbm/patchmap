@@ -24,6 +24,68 @@
  },
  "fixes": [
   {
+   "cve": "CVE-2026-108440",
+   "title": "Microsoft Office Word Remote Code Execution Vulnerability",
+   "component": "Microsoft Office Word",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "m365-apps": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "Click-to-Run update"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108440"
+  },
+  {
+   "cve": "CVE-2026-70278",
+   "title": "Microsoft Windows Media Foundation Elevation of Privilege Vulnerability",
+   "component": "Microsoft Windows Media Foundation",
+   "tags": [
+    "apps-desktop"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important",
+    "win11-26h2": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5126868"
+    ],
+    "server-2019": [
+     "KB5126651"
+    ],
+    "server-2022": [
+     "KB5126655"
+    ],
+    "server-2025": [
+     "KB5126646"
+    ],
+    "win11-24h2": [
+     "KB5127648"
+    ],
+    "win11-25h2": [
+     "KB5127648"
+    ],
+    "win11-26h2": [
+     "KB5127648"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70278"
+  },
+  {
    "cve": "CVE-2026-111497",
    "title": "Google: CVE-2026-111497 Buffer overflow vulnerability in the Brotli decoder",
    "component": ".NET",
@@ -3791,25 +3853,6 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108439"
-  },
-  {
-   "cve": "CVE-2026-108440",
-   "title": "Microsoft Office Word Remote Code Execution Vulnerability",
-   "component": "Microsoft Office Word",
-   "tags": [
-    "office-apps"
-   ],
-   "impact": "Remote Code Execution",
-   "severity": {
-    "m365-apps": "Critical"
-   },
-   "customer_action_required": true,
-   "kbs": {
-    "m365-apps": [
-     "Click-to-Run update"
-    ]
-   },
-   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108440"
   },
   {
    "cve": "CVE-2026-108441",
@@ -15888,49 +15931,6 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70277"
-  },
-  {
-   "cve": "CVE-2026-70278",
-   "title": "Microsoft Windows Media Foundation Elevation of Privilege Vulnerability",
-   "component": "Microsoft Windows Media Foundation",
-   "tags": [
-    "apps-desktop"
-   ],
-   "impact": "Elevation of Privilege",
-   "severity": {
-    "server-2019": "Important",
-    "server-2022": "Important",
-    "server-2025": "Important",
-    "win11-25h2": "Important",
-    "win11-24h2": "Important",
-    "server-2016": "Important",
-    "win11-26h2": "Important"
-   },
-   "customer_action_required": true,
-   "kbs": {
-    "server-2016": [
-     "KB5126868"
-    ],
-    "server-2019": [
-     "KB5126651"
-    ],
-    "server-2022": [
-     "KB5126655"
-    ],
-    "server-2025": [
-     "KB5126646"
-    ],
-    "win11-24h2": [
-     "KB5127648"
-    ],
-    "win11-25h2": [
-     "KB5127648"
-    ],
-    "win11-26h2": [
-     "KB5127648"
-    ]
-   },
-   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70278"
   },
   {
    "cve": "CVE-2026-70279",

@@ -6,8 +6,8 @@
  "restart": "Yes",
  "catalog_url": "https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB5127648",
  "versions": {
-  "win11-24h2": "10.0.26100.9711",
   "win11-25h2": "10.0.26200.9711",
+  "win11-24h2": "10.0.26100.9711",
   "win11-26h2": "10.0.26300.9711"
  },
  "supersedes": [

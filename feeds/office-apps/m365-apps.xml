@@ -9,11 +9,11 @@
   <author><name>Verilay Patchmap</name></author>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:area:office-apps:m365-apps:2026-Nov</id>
-    <title>Microsoft 365 Apps and Office: Office apps in the November 2026 update (175 fixes)</title>
+    <title>Microsoft 365 Apps and Office: Office apps in the November 2026 update (176 fixes)</title>
     <updated>2026-11-10T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=m365-apps&amp;a=office-apps"/>
     <category term="area-update"/>
-    <summary>Click-to-Run update: 175 security fixes in Office apps. Biggest parts: Microsoft Office Word (65); Microsoft Office Excel (64); Microsoft Office Outlook (20); Microsoft Office (9).</summary>
+    <summary>Click-to-Run update: 176 security fixes in Office apps. Biggest parts: Microsoft Office Word (65); Microsoft Office Excel (64); Microsoft Office Outlook (20); Microsoft Office (9).</summary>
   </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:area:office-apps:m365-apps:2026-Oct</id>

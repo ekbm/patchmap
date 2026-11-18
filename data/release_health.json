@@ -1,6 +1,6 @@
 {
  "about": "Collected from Microsoft's public Windows release health pages by scripts/fetch_release_health.py. Titles and statuses only; follow the links for Microsoft's details.",
- "checked": "2026-11-17",
+ "checked": "2026-11-18",
  "issues": [
   {
    "id": "ms-3721",
@@ -24,7 +24,7 @@
    ],
    "status": "open",
    "ms_status": "Confirmed",
-   "checked": "2026-11-17",
+   "checked": "2026-11-18",
    "sources": [
     {
      "name": "Microsoft release health",
@@ -107,7 +107,7 @@
    ],
    "status": "fixed",
    "ms_status": "Resolved",
-   "checked": "2026-11-17",
+   "checked": "2026-11-18",
    "sources": [
     {
      "name": "Microsoft release health",
@@ -147,7 +147,7 @@
      "fixed_by": [
       "KB5129237"
      ],
-     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-server-2022#4984msgdesc"
+     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2022#4984msgdesc"
     },
     "server-2025": {
      "caused_by": [
@@ -197,7 +197,7 @@
    ],
    "status": "fixed",
    "ms_status": "Resolved",
-   "checked": "2026-11-17",
+   "checked": "2026-11-18",
    "sources": [
     {
      "name": "Microsoft release health",
@@ -254,7 +254,7 @@
    ],
    "status": "fixed",
    "ms_status": "Resolved",
-   "checked": "2026-11-17",
+   "checked": "2026-11-18",
    "sources": [
     {
      "name": "Microsoft release health",
@@ -319,7 +319,7 @@
    ],
    "status": "fixed",
    "ms_status": "Resolved",
-   "checked": "2026-11-17",
+   "checked": "2026-11-18",
    "sources": [
     {
      "name": "Microsoft release health",
@@ -373,7 +373,7 @@
    ],
    "status": "fixed",
    "ms_status": "Resolved",
-   "checked": "2026-11-17",
+   "checked": "2026-11-18",
    "sources": [
     {
      "name": "Microsoft release health",
@@ -430,7 +430,7 @@
    ],
    "status": "fixed",
    "ms_status": "Resolved",
-   "checked": "2026-11-17",
+   "checked": "2026-11-18",
    "sources": [
     {
      "name": "Microsoft release health",
@@ -484,7 +484,7 @@
    ],
    "status": "fixed",
    "ms_status": "Resolved",
-   "checked": "2026-11-17",
+   "checked": "2026-11-18",
    "sources": [
     {
      "name": "Microsoft release health",
@@ -540,7 +540,7 @@
    ],
    "status": "fixed",
    "ms_status": "Resolved",
-   "checked": "2026-11-17",
+   "checked": "2026-11-18",
    "sources": [
     {
      "name": "Microsoft release health",
@@ -614,7 +614,7 @@
    ],
    "status": "fixed",
    "ms_status": "Resolved",
-   "checked": "2026-11-17",
+   "checked": "2026-11-18",
    "sources": [
     {
      "name": "Microsoft release health",
@@ -660,7 +660,7 @@
    ],
    "status": "fixed",
    "ms_status": "Resolved",
-   "checked": "2026-11-17",
+   "checked": "2026-11-18",
    "sources": [
     {
      "name": "Microsoft release health",
@@ -706,7 +706,7 @@
    ],
    "status": "fixed",
    "ms_status": "Resolved",
-   "checked": "2026-11-17",
+   "checked": "2026-11-18",
    "sources": [
     {
      "name": "Microsoft release health",
@@ -752,7 +752,7 @@
    ],
    "status": "fixed",
    "ms_status": "Resolved",
-   "checked": "2026-11-17",
+   "checked": "2026-11-18",
    "sources": [
     {
      "name": "Microsoft release health",
@@ -798,7 +798,7 @@
    ],
    "status": "fixed",
    "ms_status": "Resolved",
-   "checked": "2026-11-17",
+   "checked": "2026-11-18",
    "sources": [
     {
      "name": "Microsoft release health",
@@ -839,7 +839,7 @@
    ],
    "status": "fixed",
    "ms_status": "Resolved",
-   "checked": "2026-11-17",
+   "checked": "2026-11-18",
    "sources": [
     {
      "name": "Microsoft release health",
@@ -890,7 +890,7 @@
    ],
    "status": "fixed",
    "ms_status": "Resolved",
-   "checked": "2026-11-17",
+   "checked": "2026-11-18",
    "sources": [
     {
      "name": "Microsoft release health",
@@ -943,7 +943,7 @@
    ],
    "status": "fixed",
    "ms_status": "Resolved",
-   "checked": "2026-11-17",
+   "checked": "2026-11-18",
    "sources": [
     {
      "name": "Microsoft release health",
@@ -992,7 +992,7 @@
    ],
    "status": "fixed",
    "ms_status": "Resolved",
-   "checked": "2026-11-17",
+   "checked": "2026-11-18",
    "sources": [
     {
      "name": "Microsoft release health",
@@ -1067,7 +1067,7 @@
    ],
    "status": "fixed",
    "ms_status": "Resolved",
-   "checked": "2026-11-17",
+   "checked": "2026-11-18",
    "sources": [
     {
      "name": "Microsoft release health",
@@ -1120,7 +1120,7 @@
    ],
    "status": "fixed",
    "ms_status": "Resolved",
-   "checked": "2026-11-17",
+   "checked": "2026-11-18",
    "sources": [
     {
      "name": "Microsoft release health",
@@ -1167,7 +1167,7 @@
    ],
    "status": "fixed",
    "ms_status": "Resolved",
-   "checked": "2026-11-17",
+   "checked": "2026-11-18",
    "sources": [
     {
      "name": "Microsoft release health",
@@ -1221,7 +1221,7 @@
    ],
    "status": "fixed",
    "ms_status": "Resolved",
-   "checked": "2026-11-17",
+   "checked": "2026-11-18",
    "sources": [
     {
      "name": "Microsoft release health",
@@ -1270,7 +1270,7 @@
    ],
    "status": "fixed",
    "ms_status": "Resolved",
-   "checked": "2026-11-17",
+   "checked": "2026-11-18",
    "sources": [
     {
      "name": "Microsoft release health",
@@ -1314,7 +1314,7 @@
    ],
    "status": "fixed",
    "ms_status": "Resolved external",
-   "checked": "2026-11-17",
+   "checked": "2026-11-18",
    "sources": [
     {
      "name": "Microsoft release health",
@@ -1349,7 +1349,7 @@
    ],
    "status": "fixed",
    "ms_status": "Resolved",
-   "checked": "2026-11-17",
+   "checked": "2026-11-18",
    "sources": [
     {
      "name": "Microsoft release health",
@@ -1382,7 +1382,7 @@
    ],
    "status": "fixed",
    "ms_status": "Resolved",
-   "checked": "2026-11-17",
+   "checked": "2026-11-18",
    "sources": [
     {
      "name": "Microsoft release health",
@@ -1432,7 +1432,7 @@
    ],
    "status": "fixed",
    "ms_status": "Resolved",
-   "checked": "2026-11-17",
+   "checked": "2026-11-18",
    "sources": [
     {
      "name": "Microsoft release health",
@@ -1508,7 +1508,7 @@
    ],
    "status": "fixed",
    "ms_status": "Resolved",
-   "checked": "2026-11-17",
+   "checked": "2026-11-18",
    "sources": [
     {
      "name": "Microsoft release health",
@@ -1580,7 +1580,7 @@
    ],
    "status": "fixed",
    "ms_status": "Resolved",
-   "checked": "2026-11-17",
+   "checked": "2026-11-18",
    "sources": [
     {
      "name": "Microsoft release health",
@@ -1617,7 +1617,7 @@
    ],
    "status": "fixed",
    "ms_status": "Resolved",
-   "checked": "2026-11-17",
+   "checked": "2026-11-18",
    "sources": [
     {
      "name": "Microsoft release health",
@@ -1665,7 +1665,7 @@
    ],
    "status": "fixed",
    "ms_status": "Resolved",
-   "checked": "2026-11-17",
+   "checked": "2026-11-18",
    "sources": [
     {
      "name": "Microsoft release health",
@@ -1719,7 +1719,7 @@
    ],
    "status": "fixed",
    "ms_status": "Resolved",
-   "checked": "2026-11-17",
+   "checked": "2026-11-18",
    "sources": [
     {
      "name": "Microsoft release health",
@@ -1756,7 +1756,7 @@
    ],
    "status": "fixed",
    "ms_status": "Resolved",
-   "checked": "2026-11-17",
+   "checked": "2026-11-18",
    "sources": [
     {
      "name": "Microsoft release health",
@@ -1804,7 +1804,7 @@
    ],
    "status": "fixed",
    "ms_status": "Resolved",
-   "checked": "2026-11-17",
+   "checked": "2026-11-18",
    "sources": [
     {
      "name": "Microsoft release health",
@@ -1868,7 +1868,7 @@
    ],
    "status": "fixed",
    "ms_status": "Resolved",
-   "checked": "2026-11-17",
+   "checked": "2026-11-18",
    "sources": [
     {
      "name": "Microsoft release health",
@@ -1905,66 +1905,6 @@
     }
    },
    "updated": "2025-10-20"
-  },
-  {
-   "id": "ms-3509",
-   "origin": "microsoft",
-   "title": "Devices with apps using sprotect.sys driver might stop responding",
-   "summary": "",
-   "areas": [
-    "kernel-drivers"
-   ],
-   "months": [],
-   "versions": [
-    "win11-24h2"
-   ],
-   "status": "fixed",
-   "ms_status": "Resolved",
-   "checked": "2026-11-17",
-   "sources": [
-    {
-     "name": "Microsoft release health",
-     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2"
-    }
-   ],
-   "by_version": {
-    "win11-24h2": {
-     "caused_by": [],
-     "fixed_by": [],
-     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#3509msgdesc"
-    }
-   },
-   "updated": "2025-10-16"
-  },
-  {
-   "id": "ms-3370",
-   "origin": "microsoft",
-   "title": "Wallpaper customization applications might not work as expected",
-   "summary": "",
-   "areas": [
-    "other"
-   ],
-   "months": [],
-   "versions": [
-    "win11-24h2"
-   ],
-   "status": "fixed",
-   "ms_status": "Resolved",
-   "checked": "2026-11-17",
-   "sources": [
-    {
-     "name": "Microsoft release health",
-     "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2"
-    }
-   ],
-   "by_version": {
-    "win11-24h2": {
-     "caused_by": [],
-     "fixed_by": [],
-     "url": "https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#3370msgdesc"
-    }
-   },
-   "updated": "2025-10-16"
   }
  ]
 }

@@ -23,6 +23,46 @@
  },
  "fixes": [
   {
+   "cve": "CVE-2026-40400",
+   "title": "Windows PowerShell Remote Code Execution Vulnerability",
+   "component": "Windows PowerShell",
+   "tags": [
+    "management",
+    "apps-desktop"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "server-2025": "Important",
+    "win11-25h2": "Important",
+    "win11-24h2": "Important",
+    "server-2016": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5099535"
+    ],
+    "server-2019": [
+     "KB5099538"
+    ],
+    "server-2022": [
+     "KB5099540"
+    ],
+    "server-2025": [
+     "KB5099536"
+    ],
+    "win11-24h2": [
+     "KB5101650"
+    ],
+    "win11-25h2": [
+     "KB5101650"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40400"
+  },
+  {
    "cve": "CVE-2026-33842",
    "title": "Windows File Explorer Information Disclosure Vulnerability",
    "component": "Windows File Explorer",
@@ -244,46 +284,6 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40378"
-  },
-  {
-   "cve": "CVE-2026-40400",
-   "title": "Windows PowerShell Remote Code Execution Vulnerability",
-   "component": "Windows PowerShell",
-   "tags": [
-    "management",
-    "apps-desktop"
-   ],
-   "impact": "Remote Code Execution",
-   "severity": {
-    "server-2019": "Important",
-    "server-2022": "Important",
-    "server-2025": "Important",
-    "win11-25h2": "Important",
-    "win11-24h2": "Important",
-    "server-2016": "Important"
-   },
-   "customer_action_required": true,
-   "kbs": {
-    "server-2016": [
-     "KB5099535"
-    ],
-    "server-2019": [
-     "KB5099538"
-    ],
-    "server-2022": [
-     "KB5099540"
-    ],
-    "server-2025": [
-     "KB5099536"
-    ],
-    "win11-24h2": [
-     "KB5101650"
-    ],
-    "win11-25h2": [
-     "KB5101650"
-    ]
-   },
-   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40400"
   },
   {
    "cve": "CVE-2026-40422",

@@ -13,7 +13,7 @@
     <updated>2026-11-10T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=m365-apps&amp;q=Click-to-Run%20update"/>
     <category term="monthly-update"/>
-    <summary>Click-to-Run update. 175 security fixes, 1 being exploited (Microsoft/CISA). Biggest areas: office-apps 175, email 20.</summary>
+    <summary>Click-to-Run update. 176 security fixes, 1 being exploited (Microsoft/CISA). Biggest areas: office-apps 176, email 20.</summary>
   </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:update:m365-apps:2026-Oct</id>

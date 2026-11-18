@@ -1,9 +1,9 @@
 {
  "month": "2026-Nov",
  "released": "2026-11-10",
- "fix_count": 959,
+ "fix_count": 960,
  "by_tag": {
-  "office-apps": 175,
+  "office-apps": 176,
   "kernel-drivers": 147,
   "network": 103,
   "graphics": 98,
@@ -24,11 +24,58 @@
  },
  "fixes": [
   {
-   "cve": "CVE-2026-119958",
-   "title": "Windows LDAP - Lightweight Directory Access Protocol Remote Code Execution Vulnerability",
-   "component": "Windows LDAP - Lightweight Directory Access Protocol",
+   "cve": "CVE-2026-121680",
+   "title": "Windows NTLM Spoofing Vulnerability",
+   "component": "Windows NTLM",
    "tags": [
     "sign-in"
+   ],
+   "impact": "Spoofing",
+   "severity": {
+    "server-2016": "Important",
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "win11-24h2": "Important",
+    "win11-25h2": "Important",
+    "win11-26h2": "Important",
+    "server-2025": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5131291"
+    ],
+    "server-2019": [
+     "KB5131085"
+    ],
+    "server-2022": [
+     "KB5131090"
+    ],
+    "server-2025": [
+     "KB5131077",
+     "KB5131080"
+    ],
+    "win11-24h2": [
+     "KB5132043",
+     "KB5132061"
+    ],
+    "win11-25h2": [
+     "KB5132043",
+     "KB5132061"
+    ],
+    "win11-26h2": [
+     "KB5132043",
+     "KB5132061"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-121680"
+  },
+  {
+   "cve": "CVE-2026-119961",
+   "title": "Windows Internet Information Services Remote Code Execution Vulnerability",
+   "component": "Windows Internet Information Services",
+   "tags": [
+    "server-roles"
    ],
    "impact": "Remote Code Execution",
    "severity": {
@@ -68,7 +115,55 @@
      "KB5132061"
     ]
    },
-   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119958"
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119961"
+  },
+  {
+   "cve": "CVE-2026-119914",
+   "title": "Windows Setup and Deployment Elevation of Privilege Vulnerability",
+   "component": "Windows Setup and Deployment",
+   "tags": [
+    "other"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "server-2016": "Important",
+    "server-2019": "Important",
+    "server-2022": "Important",
+    "win11-24h2": "Important",
+    "win11-25h2": "Important",
+    "win11-26h2": "Important",
+    "server-2025": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5131083",
+     "KB5131291"
+    ],
+    "server-2019": [
+     "KB5131085"
+    ],
+    "server-2022": [
+     "KB5131090"
+    ],
+    "server-2025": [
+     "KB5131077",
+     "KB5131080"
+    ],
+    "win11-24h2": [
+     "KB5132043",
+     "KB5132061"
+    ],
+    "win11-25h2": [
+     "KB5132043",
+     "KB5132061"
+    ],
+    "win11-26h2": [
+     "KB5132043",
+     "KB5132061"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119914"
   },
   {
    "cve": "CVE-2026-100223",
@@ -19905,54 +20000,6 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119913"
   },
   {
-   "cve": "CVE-2026-119914",
-   "title": "Windows Setup and Deployment Elevation of Privilege Vulnerability",
-   "component": "Windows Setup and Deployment",
-   "tags": [
-    "other"
-   ],
-   "impact": "Elevation of Privilege",
-   "severity": {
-    "server-2016": "Important",
-    "server-2019": "Important",
-    "server-2022": "Important",
-    "win11-24h2": "Important",
-    "win11-25h2": "Important",
-    "win11-26h2": "Important",
-    "server-2025": "Important"
-   },
-   "customer_action_required": true,
-   "kbs": {
-    "server-2016": [
-     "KB5131083",
-     "KB5131291"
-    ],
-    "server-2019": [
-     "KB5131085"
-    ],
-    "server-2022": [
-     "KB5131090"
-    ],
-    "server-2025": [
-     "KB5131077",
-     "KB5131080"
-    ],
-    "win11-24h2": [
-     "KB5132043",
-     "KB5132061"
-    ],
-    "win11-25h2": [
-     "KB5132043",
-     "KB5132061"
-    ],
-    "win11-26h2": [
-     "KB5132043",
-     "KB5132061"
-    ]
-   },
-   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119914"
-  },
-  {
    "cve": "CVE-2026-119916",
    "title": "Windows Input System Elevation of Privilege Vulnerability",
    "component": "Windows Input System",
@@ -21431,6 +21478,53 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119957"
   },
   {
+   "cve": "CVE-2026-119958",
+   "title": "Windows LDAP - Lightweight Directory Access Protocol Remote Code Execution Vulnerability",
+   "component": "Windows LDAP - Lightweight Directory Access Protocol",
+   "tags": [
+    "sign-in"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "server-2016": "Critical",
+    "server-2019": "Critical",
+    "server-2022": "Critical",
+    "win11-24h2": "Critical",
+    "win11-25h2": "Critical",
+    "win11-26h2": "Critical",
+    "server-2025": "Critical"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "server-2016": [
+     "KB5131291"
+    ],
+    "server-2019": [
+     "KB5131085"
+    ],
+    "server-2022": [
+     "KB5131090"
+    ],
+    "server-2025": [
+     "KB5131077",
+     "KB5131080"
+    ],
+    "win11-24h2": [
+     "KB5132043",
+     "KB5132061"
+    ],
+    "win11-25h2": [
+     "KB5132043",
+     "KB5132061"
+    ],
+    "win11-26h2": [
+     "KB5132043",
+     "KB5132061"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119958"
+  },
+  {
    "cve": "CVE-2026-119959",
    "title": "Windows Hyper-V Spoofing Vulnerability",
    "component": "Windows Hyper-V",
@@ -21509,53 +21603,6 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119960"
-  },
-  {
-   "cve": "CVE-2026-119961",
-   "title": "Windows Internet Information Services Remote Code Execution Vulnerability",
-   "component": "Windows Internet Information Services",
-   "tags": [
-    "server-roles"
-   ],
-   "impact": "Remote Code Execution",
-   "severity": {
-    "server-2016": "Critical",
-    "server-2019": "Critical",
-    "server-2022": "Critical",
-    "win11-24h2": "Critical",
-    "win11-25h2": "Critical",
-    "win11-26h2": "Critical",
-    "server-2025": "Critical"
-   },
-   "customer_action_required": true,
-   "kbs": {
-    "server-2016": [
-     "KB5131291"
-    ],
-    "server-2019": [
-     "KB5131085"
-    ],
-    "server-2022": [
-     "KB5131090"
-    ],
-    "server-2025": [
-     "KB5131077",
-     "KB5131080"
-    ],
-    "win11-24h2": [
-     "KB5132043",
-     "KB5132061"
-    ],
-    "win11-25h2": [
-     "KB5132043",
-     "KB5132061"
-    ],
-    "win11-26h2": [
-     "KB5132043",
-     "KB5132061"
-    ]
-   },
-   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119961"
   },
   {
    "cve": "CVE-2026-119962",
@@ -22592,53 +22639,6 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-121673"
-  },
-  {
-   "cve": "CVE-2026-121680",
-   "title": "Windows NTLM Spoofing Vulnerability",
-   "component": "Windows NTLM",
-   "tags": [
-    "sign-in"
-   ],
-   "impact": "Spoofing",
-   "severity": {
-    "server-2016": "Important",
-    "server-2019": "Important",
-    "server-2022": "Important",
-    "win11-24h2": "Important",
-    "win11-25h2": "Important",
-    "win11-26h2": "Important",
-    "server-2025": "Important"
-   },
-   "customer_action_required": true,
-   "kbs": {
-    "server-2016": [
-     "KB5131291"
-    ],
-    "server-2019": [
-     "KB5131085"
-    ],
-    "server-2022": [
-     "KB5131090"
-    ],
-    "server-2025": [
-     "KB5131077",
-     "KB5131080"
-    ],
-    "win11-24h2": [
-     "KB5132043",
-     "KB5132061"
-    ],
-    "win11-25h2": [
-     "KB5132043",
-     "KB5132061"
-    ],
-    "win11-26h2": [
-     "KB5132043",
-     "KB5132061"
-    ]
-   },
-   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-121680"
   },
   {
    "cve": "CVE-2026-121681",
@@ -24272,6 +24272,25 @@
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-124194",
    "exploited": true,
    "kev": "2026-11-10"
+  },
+  {
+   "cve": "CVE-2026-124222",
+   "title": "Microsoft Office SharePoint Elevation of Privilege Vulnerability",
+   "component": "Microsoft Office SharePoint",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Elevation of Privilege",
+   "severity": {
+    "m365-apps": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "Click-to-Run update"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-124222"
   },
   {
    "cve": "CVE-2026-124224",

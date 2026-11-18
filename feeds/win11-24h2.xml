@@ -367,20 +367,4 @@
     <category term="known-problem"/>
     <summary>Started with KB5066835. Fixed in KB5070773. Affects: Windows 11 24H2. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#3696msgdesc. From Microsoft release health.</summary>
   </entry>
-  <entry>
-    <id>tag:patchmap.verilay.dev,2026:issue:ms-3509:fixed</id>
-    <title>Now fixed: Devices with apps using sprotect.sys driver might stop responding</title>
-    <updated>2025-10-16T00:00:00Z</updated>
-    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;q=Devices%20with%20apps%20using%20sprotect.sys%20dri"/>
-    <category term="known-problem"/>
-    <summary> Affects: Windows 11 24H2. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#3509msgdesc. From Microsoft release health.</summary>
-  </entry>
-  <entry>
-    <id>tag:patchmap.verilay.dev,2026:issue:ms-3370:fixed</id>
-    <title>Now fixed: Wallpaper customization applications might not work as expected</title>
-    <updated>2025-10-16T00:00:00Z</updated>
-    <link href="https://patchmap.verilay.dev/#v=win11-24h2&amp;q=Wallpaper%20customization%20applications%20mig"/>
-    <category term="known-problem"/>
-    <summary> Affects: Windows 11 24H2. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-11-24h2#3370msgdesc. From Microsoft release health.</summary>
-  </entry>
 </feed>

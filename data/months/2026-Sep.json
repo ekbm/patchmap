@@ -24,6 +24,26 @@
  },
  "fixes": [
   {
+   "cve": "CVE-2026-78524",
+   "title": "Microsoft Office Remote Code Execution Vulnerability",
+   "component": "Microsoft Office",
+   "tags": [
+    "office-apps"
+   ],
+   "impact": "Remote Code Execution",
+   "severity": {
+    "m365-apps": "Important"
+   },
+   "customer_action_required": true,
+   "kbs": {
+    "m365-apps": [
+     "Click-to-Run update",
+     "KB5002916"
+    ]
+   },
+   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78524"
+  },
+  {
    "cve": "CVE-2026-47297",
    "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
    "component": "SQL Server",
@@ -26846,26 +26866,6 @@
     ]
    },
    "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78523"
-  },
-  {
-   "cve": "CVE-2026-78524",
-   "title": "Microsoft Office Remote Code Execution Vulnerability",
-   "component": "Microsoft Office",
-   "tags": [
-    "office-apps"
-   ],
-   "impact": "Remote Code Execution",
-   "severity": {
-    "m365-apps": "Important"
-   },
-   "customer_action_required": true,
-   "kbs": {
-    "m365-apps": [
-     "Click-to-Run update",
-     "KB5002916"
-    ]
-   },
-   "msrc_url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78524"
   },
   {
    "cve": "CVE-2026-78525",

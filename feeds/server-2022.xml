@@ -53,7 +53,7 @@
     <updated>2026-11-10T00:00:00Z</updated>
     <link href="https://patchmap.verilay.dev/#v=server-2022&amp;q=KB5122882"/>
     <category term="known-problem"/>
-    <summary>Started with KB5122882. Fixed in KB5129237. Affects: Windows Server 2022. Source: https://learn.microsoft.com/en-us/windows/release-health/status-windows-server-2022#4984msgdesc. From Microsoft release health.</summary>
+    <summary>Started with KB5122882. Fixed in KB5129237. Affects: Windows Server 2022. Source: https://learn.microsoft.com/en-us/windows/release-health/resolved-issues-windows-server-2022#4984msgdesc. From Microsoft release health.</summary>
   </entry>
   <entry>
     <id>tag:patchmap.verilay.dev,2026:update:server-2022:2026-Oct</id>
