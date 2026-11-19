@@ -74,6 +74,9 @@ async function init() {
   state.labels = index.labels;
   state.generated = index.generated;
   $("gen").textContent = `Data updated ${index.generated}.`;
+  // Same date, near the top where people actually see it: "Data updated 18 Nov 2026 · refreshed every Wednesday"
+  const g = String(index.generated || "").match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if (g) $("gentop").textContent = `Data updated ${+g[3]} ${"Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split(" ")[+g[2] - 1]} ${g[1]} · refreshed every Wednesday`;
   const sel = $("ver");
   sel.innerHTML = index.scope.map((v) => `<option value="${esc(v)}">${esc(index.labels[v])}</option>`).join("");
   if (!index.scope.includes(state.ver)) state.ver = index.scope[0];

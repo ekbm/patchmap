@@ -30,6 +30,9 @@ a { color: var(--accent); }
 .brand { font-weight: 600; color: var(--text); text-decoration: none; }
 nav a { margin-left: 16px; font-size: 14px; color: var(--muted); text-decoration: none; }
 .lead { color: var(--muted); margin: 24px 0 16px; }
+.lead:has(+ .fresh) { margin-bottom: 4px; }
+.fresh { margin: 0 0 16px; font-size: 13px; }
+.fresh:empty { display: none; }
 /* Row 1: version, build, software (three equal columns). Row 2: search, full width. Phones: one column. */
 .controls { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px 14px; align-items: end; }
 .field { display: flex; flex-direction: column; gap: 4px; }
