@@ -5,6 +5,7 @@
    "id": "2026-11-print-zero-size-images",
    "title": "Printing fails for documents with zero-size images",
    "summary": "Printing can fail when a document contains an image with zero height or width at the selected resolution. These images can be invisible. Mainly Word documents printed through GDI, but other apps can be affected.",
+   "what_to_do": "No fix or official workaround yet. Check the sources for updates.",
    "areas": [
     "print"
    ],
@@ -43,6 +44,7 @@
    "id": "2026-11-install-0x800f0993",
    "title": "November update fails to install (0x800f0993, 0x800f0989, 0x80070306)",
    "summary": "Some devices that installed the October 2026 preview update KB5127936 can't finish installing the November security update and may retry repeatedly.",
+   "what_to_do": "Leave Windows Update on: Microsoft says its fix is rolling out through Windows Update.",
    "areas": [
     "install-update"
    ],
@@ -72,6 +74,7 @@
    "id": "2026-11-activation-0x80041008",
    "title": "Activation and licensing commands fail with 0x80041008",
    "summary": "Activation, KMS configuration or product key commands (for example slmgr) can fail with error 0x80041008, especially with automated licensing tools.",
+   "what_to_do": "Install the 13 Nov 2026 out-of-band update for your version (Server: from the Microsoft Update Catalog).",
    "areas": [
     "activation"
    ],
@@ -103,6 +106,7 @@
    "id": "2026-11-spooler-localspl-0xc1-hotpatch",
    "title": "Print Spooler fails to load localspl.dll (error 0xC1) after the November hotpatch",
    "summary": "After the November hotpatch KB5132043 (build 26100/26200/26300.9911), the event log can show \"Print Spooler failed to load a plug-in module localspl.dll, error code 0xC1\" and printing can stop. The hotpatch does not replace localspl.dll on disk (it stays 10.0.26100.9711); it adds localspl_hotpatch.dll, which patches the Spooler in memory. Removing KB5132043 makes the error go away.",
+   "what_to_do": "Install the full update KB5132061 and restart. Removing hotpatch KB5132043 also works, but removes its security fixes too.",
    "areas": [
     "print"
    ],
@@ -115,9 +119,21 @@
     "win11-26h2"
    ],
    "by_version": {
-    "win11-24h2": {"caused_by": ["KB5132043"]},
-    "win11-25h2": {"caused_by": ["KB5132043"]},
-    "win11-26h2": {"caused_by": ["KB5132043"]}
+    "win11-24h2": {
+     "caused_by": [
+      "KB5132043"
+     ]
+    },
+    "win11-25h2": {
+     "caused_by": [
+      "KB5132043"
+     ]
+    },
+    "win11-26h2": {
+     "caused_by": [
+      "KB5132043"
+     ]
+    }
    },
    "status": "mitigated",
    "status_note": "Reported by a support engineer on one Windows 11 25H2 device; not confirmed by Microsoft. Workaround that worked: install the full November cumulative update KB5132061 (build .9974) and restart. It replaces localspl.dll on disk with 10.0.26100.9974, so no Spooler hotpatch is needed. Removing KB5132043 also works but leaves the November security fixes off until you install KB5132061.",

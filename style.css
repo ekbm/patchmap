@@ -149,3 +149,42 @@ summary .r { color: var(--muted); font-size: 14px; white-space: nowrap; }
 .src-table th { color: var(--muted); font-weight: 500; }
 .res-h { font-size: 15px; margin: 16px 0 4px; }
 @media (max-width: 560px) { summary { flex-wrap: wrap; } summary .l { flex-basis: calc(100% - 32px); overflow-wrap: anywhere; } summary .r { white-space: normal; width: 100%; padding-left: 18px; } .fix { margin-left: 12px; } details details { margin-left: 10px; } }
+
+/* ---- Month view: numbers first, short cards, area bars (19 Nov) ---- */
+.alert-line { display: flex; gap: 12px; align-items: center; background: var(--danger-bg); color: var(--danger); border-radius: 8px; padding: 10px 14px; font-size: 15px; margin: 12px 0; text-decoration: none; }
+.alert-line b { margin-left: auto; white-space: nowrap; text-decoration: underline; }
+.alert-line:hover { box-shadow: 0 0 0 2px var(--stripe-red) inset; }
+.month > summary .l { font-size: 18px; }
+.mbody { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px 8px; margin: 0 0 14px; }
+.mbody .meta { margin: 0 0 8px; }
+.tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 6px 0 4px; }
+.tile { border: 1px solid var(--line); border-radius: 10px; padding: 8px 12px; }
+.tile .n { font-size: 26px; font-weight: 650; line-height: 1.2; }
+.tile .tl { font-size: 13px; color: var(--muted); line-height: 1.35; }
+.tile.red .n { color: var(--stripe-red); } .tile.amber .n { color: var(--stripe-amber); } .tile.green .n { color: var(--stripe-green); }
+.mh { font-size: 13px; margin: 20px 0 6px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+table.ups { width: 100%; border-collapse: collapse; font-size: 15px; }
+table.ups th { text-align: left; font-size: 13px; color: var(--muted); font-weight: 600; border-bottom: 1px solid var(--line); padding: 6px 8px; }
+table.ups th code { font-family: var(--mono); font-size: 12px; font-weight: 400; }
+table.ups td { border-bottom: 1px solid var(--line); padding: 7px 8px; }
+table.ups .kbc { font-family: var(--mono); font-size: 14px; }
+.tag { font-size: 12px; padding: 2px 8px; border-radius: 6px; background: var(--chip); border: 1px solid var(--line); color: var(--muted); margin-right: 4px; }
+.tag.hot { background: var(--warn-bg); color: var(--warn); border-color: transparent; }
+.tag.full { background: var(--ok-bg); color: var(--ok); border-color: transparent; }
+.issue .todo { margin-top: 4px; }
+.issue details.more { border-top: 0; margin: 2px 0 0; font-size: 13px; }
+.issue details.more > summary { padding: 4px 0 0; color: var(--accent); justify-content: flex-start; }
+.issue details.more > div { margin: 4px 0; }
+.bars details.area > summary { display: grid; grid-template-columns: 220px 1fr 48px; align-items: center; gap: 10px; padding: 6px 0; }
+.bars .bar { height: 12px; border-radius: 4px; background: var(--chip); overflow: hidden; }
+.bars .bar i { display: block; height: 100%; background: var(--accent); opacity: .75; border-radius: 4px; }
+.bars .l.pin { font-weight: 650; }
+.bars .l.pin + .bar i { background: var(--stripe-amber); opacity: 1; }
+.bars summary .r { text-align: right; }
+.linkbtn { background: none; border: 0; padding: 8px 0; font: inherit; font-size: 14px; color: var(--accent); cursor: pointer; text-decoration: underline; }
+.chip.more { color: var(--accent); }
+@media (max-width: 640px) {
+  .tiles { grid-template-columns: 1fr 1fr; }
+  .bars details.area > summary { grid-template-columns: 1fr 70px 40px; }
+  .alert-line { flex-wrap: wrap; }
+}

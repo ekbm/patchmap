@@ -441,11 +441,18 @@ function buildCard(b, hit) {
 function renderChips() {
   const present = new Set((state.data ? state.data.months : []).flatMap((m) => Object.keys(m.areas)));
   const order = Object.keys(state.tags).concat("other").filter((t) => present.has(t) || t === state.area);
+  // Show the first 6 areas (Printing first) and fold the rest behind "More areas", so the row isn't a wall of buttons
+  const SHOW = 6;
+  const shown = state.chipsAll ? order : order.filter((t, i) => i < SHOW || t === state.area);
   $("chips").innerHTML = '<span class="muted" style="align-self:center">Area:</span>' +
-    [["", "All"]].concat(order.map((t) => [t, label(t)]))
+    [["", "All"]].concat(shown.map((t) => [t, label(t)]))
       // esc(t): the area can come from the page address (#a=...), so it must never go into the page raw
-      .map(([t, l]) => `<button class="chip${state.area === t ? " on" : ""}" data-a="${esc(t)}">${esc(l)}</button>`).join("");
-  $("chips").querySelectorAll("button").forEach((b) => (b.onclick = () => { state.area = b.dataset.a; render(); }));
+      .map(([t, l]) => `<button class="chip${state.area === t ? " on" : ""}" data-a="${esc(t)}">${esc(l)}</button>`).join("") +
+    (order.length > SHOW ? `<button class="chip more" data-chipmore="1">${state.chipsAll ? "Fewer areas" : `More areas (${order.length - shown.length}) ▾`}</button>` : "");
+  $("chips").querySelectorAll("button").forEach((b) => (b.onclick = () => {
+    if (b.dataset.chipmore) { state.chipsAll = !state.chipsAll; renderChips(); return; }
+    state.area = b.dataset.a; render();
+  }));
 }
 
 function issuesFor(month) {
@@ -461,10 +468,16 @@ function issueHTML(i) {
   const kbs = [caused.length ? `Started with ${caused.join(", ")}` : "",
                fixedIn.length ? `fixed in ${fixedIn.join(", ")}` : ""].filter(Boolean).join(" · ");
   const body = [i.summary, i.status_note].filter(Boolean).join(" ");
+  // One plain line on what to do. Patchmap's own problems carry a hand-written line; for Microsoft's we only point
+  // to Microsoft's page, so Patchmap never makes up advice.
+  const todo = i.what_to_do ? esc(i.what_to_do)
+    : i.status === "fixed" ? "Install the update that fixed it (see details)."
+    : sources[0] ? `See <a href="${esc(sources[0].url)}" rel="noopener">Microsoft's page</a> for the latest workaround or fix.` : "";
   return `<div class="issue ${esc(i.status)}" data-issue="${esc(i.id)}"><span class="pill ${esc(i.status)}">${esc(st)}</span>` +
     `<span class="pill src">${i.origin === "microsoft" ? "Microsoft" : "Patchmap"}</span>` +
-    `<span class="it">${esc(i.title)}</span>${body ? `<div>${esc(body)}</div>` : ""}` +
-    `<div class="is">${kbs ? esc(kbs) + " · " : ""}Sources: ${src} · checked ${esc(i.checked)}</div></div>`;
+    `<span class="it">${esc(i.title)}</span>${todo ? `<div class="todo"><b>What to do:</b> ${todo}</div>` : ""}` +
+    `<details class="more"><summary><span class="l">More details and sources</span></summary>${body ? `<div>${esc(body)}</div>` : ""}` +
+    `<div class="is">${kbs ? esc(kbs) + " · " : ""}Sources: ${src} · checked ${esc(i.checked)}</div></details></div>`;
 }
 function issuesBlock(list) {
   const active = list.filter((i) => i.status !== "fixed");
@@ -475,8 +488,9 @@ function issuesBlock(list) {
 function renderIssues() {
   const latest = state.data.months[0] && state.data.months[0].month;
   const list = issuesFor(latest).filter((i) => i.status === "open");
-  $("issues").innerHTML = list.map((i) =>
-    `<a class="issue open banner" href="#" data-goto="${esc(i.id)}"><span class="pill open">Not fixed yet</span><span class="it">${esc(i.title)}</span><div class="is">Known problem in the latest update (${monthName(latest)}). <u>See details</u></div></a>`).join("");
+  const n = list.length;
+  $("issues").innerHTML = n ? `<a class="alert-line" href="#" data-goto="${esc(list[0].id)}"><span>⚠ ${n} problem${n > 1 ? "s" : ""} in the latest update (${monthName(latest)}) ${n > 1 ? "are" : "is"} not fixed yet: ` +
+    `${list.map((i) => esc(i.title)).join("; ")}.</span><b>See what to do ↓</b></a>` : "";
 }
 
 function exploitPills(f) {
@@ -500,13 +514,16 @@ function renderMonths(only) {
   const firstShown = months.findIndex((m) => !only || only.has(m.month));
   box.innerHTML = months.map((m, idx) => {
     if (only && !only.has(m.month)) return "";
-    const ups = m.updates.map((u) => `<span class="kb">${esc(u.kb)}</span>${kbBadge(u.kb)}`).join(" ") || '<span class="muted">KB not listed</span>';
     const n = state.area ? (m.areas[state.area] ? m.areas[state.area].count : 0) : m.fix_count;
-    const ki = issuesFor(m.month).filter((i) => i.status !== "fixed").length;
-    const kf = issuesFor(m.month).length - ki;
-    const kt = [ki ? `${ki} problem${ki > 1 ? "s" : ""} not fixed yet` : "", kf ? `${kf} fixed` : ""].filter(Boolean).join(", ");
-    return `<details class="month" data-i="${idx}"${idx === firstShown ? " open" : ""}><summary><span class="l">${monthName(m.month)} · ${ups}</span>` +
-      `<span class="r">${m.exploited_count ? `<span class="xp-txt">${m.exploited_count} exploited</span> · ` : ""}${n} fixes${state.area ? " in " + esc(label(state.area)) : ""}${swCount(m) !== null ? ` · <b>${swCount(m)} in ${esc(state.software[state.sw].name)}'s parts</b>` : ""}${kt ? " · " + kt : ""}</span></summary></details>`;
+    const ki = issuesFor(m.month).filter((i) => i.status === "open").length;
+    const ex = exCount(m);
+    const facts = [`${m.updates.length} update${m.updates.length === 1 ? "" : "s"}`,
+      `${n.toLocaleString()} fixes${state.area ? " in " + esc(label(state.area)) : ""}`,
+      ex ? `<span class="xp-txt">${ex} exploited</span>` : "",
+      swCount(m) !== null ? `<b>${swCount(m)} in ${esc(state.software[state.sw].name)}'s parts</b>` : "",
+      ki ? `<span class="xp-txt">${ki} not fixed yet</span>` : ""].filter(Boolean).join(" · ");
+    return `<details class="month" data-i="${idx}"${idx === firstShown ? " open" : ""}><summary><span class="l">${monthName(m.month)}</span>` +
+      `<span class="r">${facts}</span></summary></details>`;
   }).join("");
   box.querySelectorAll("details.month").forEach((d) => {
     const fill = () => { if (!d.dataset.done) { d.insertAdjacentHTML("beforeend", monthBody(months[+d.dataset.i])); d.dataset.done = 1; wireAreas(d); } };
@@ -637,14 +654,64 @@ async function fileHistory(name) {
     `<div class="is">Covers the months Patchmap has file lists for. Versions are from Microsoft's file lists (x64). Hotpatch lines only matter for devices enrolled in hotpatching.</div></div>`;
 }
 
-function monthBody(m) {
-  const ups = m.updates.map((u) => `${esc(u.kb)}${u.build ? ` → build ${esc(u.build)}` : ""}${u.supersedes && u.supersedes.length ? ` (replaces ${esc(u.supersedes.join(", "))})` : ""}`).join(" · ");
-  const issues = issuesBlock(issuesFor(m.month));
-  const areas = Object.entries(m.areas).filter(([t]) => !state.area || t === state.area);
-  return `<p class="meta">Released ${esc(m.released)}${ups ? " · " + ups : ""}</p>${issues}${swBlock(m)}${filesBlock(m)}` + areas.map(([t, a]) =>
-    `<details class="area" data-t="${esc(t)}"><summary><span class="l">${esc(label(t))}</span><span class="r">${a.count} fixes · ${Object.keys(a.components).length} components</span></summary></details>`
-  ).join("");
+function exCount(m) {
+  // fixes being exploited: the whole month, or only the chosen area
+  if (!state.area) return m.exploited_count || 0;
+  const a = m.areas[state.area];
+  return a ? new Set(Object.values(a.components).flat().filter((f) => f.exploited).map((f) => f.cve)).size : 0;
 }
+function updateType(u) {
+  const k = kbKind(u.kb), win = /^10\.0\./.test(u.build || "");
+  if (!/^KB\d+$/.test(u.kb)) return '<span class="tag">Monthly channel update</span>';   // Microsoft 365 Apps: no KB number
+  if (k === "hotpatch") return '<span class="tag hot">Hotpatch</span> no restart';
+  if (k === "baseline" && /^(win11|server-2025)/.test(state.ver)) return '<span class="tag full">Baseline</span> needs restart';
+  if (k === "standard" || k === "baseline") return '<span class="tag full">Full update</span> needs restart';
+  if (k === "out-of-band") return '<span class="tag">Out-of-band</span> urgent fix outside Patch Tuesday';
+  if (k === "preview") return '<span class="tag">Preview</span> optional';
+  return win ? '<span class="tag">Type not listed yet</span>' : '<span class="tag">Update</span>';
+}
+function monthBody(m) {
+  const list = issuesFor(m.month);
+  const notFixed = list.filter((i) => i.status === "open").length;
+  const withFix = list.filter((i) => ["mitigated", "fix-rolling-out", "fix-available"].includes(i.status)).length;
+  const ex = exCount(m);
+  const tile = (n, l, cls) => `<div class="tile ${cls}"><div class="n">${n}</div><div class="tl">${l}</div></div>`;
+  const tiles = `<div class="tiles">` +
+    tile(m.updates.length, `update${m.updates.length === 1 ? "" : "s"} this month`, "") +
+    tile(notFixed, `problem${notFixed === 1 ? "" : "s"} not fixed yet`, notFixed ? "red" : "green") +
+    tile(withFix, `problem${withFix === 1 ? "" : "s"} with a fix or workaround`, withFix ? "amber" : "") +
+    tile(ex, `fix${ex === 1 ? "" : "es"} being exploited${state.area ? " in " + esc(label(state.area)) : ""}`, ex ? "red" : "green") + `</div>`;
+  const isWin = m.updates.some((u) => /^10\.0\./.test(u.build || ""));
+  const rows = m.updates.map((u) => `<tr><td class="kbc">${esc(u.kb)}</td><td>${updateType(u)}</td>` +
+    (isWin ? `<td class="kbc">${esc((u.build || "").replace(/^10\.0\./, ""))}</td>` : "") +
+    `<td>${/^KB\d+$/.test(u.kb) ? `<a href="/kb/${esc(u.kb)}/">Details</a>` : ""}</td></tr>`).join("");
+  const ups = m.updates.length ? `<h3 class="mh">Which update do you have?</h3><div class="tablewrap"><table class="ups"><tr><th>Update</th><th>Type</th>` +
+    (isWin ? `<th>Build (see <code>winver</code>)</th>` : "") + `<th></th></tr>${rows}</table></div>` : "";
+  const probs = `<h3 class="mh">Known problems</h3>` + (list.length ? issuesBlock(list) : `<p class="muted">None listed for this update${state.area ? " in " + esc(label(state.area)) : ""}.</p>`);
+  const files = swBlock(m) + filesBlock(m);
+  // Areas as bars, biggest first; your software's areas pinned on top; only the top 6 until you ask for more
+  const pins = swFileTags() || [];
+  const areas = Object.entries(m.areas).filter(([t]) => !state.area || t === state.area)
+    .sort((a, b) => (pins.includes(b[0]) - pins.includes(a[0])) || ((b[0] === "print") - (a[0] === "print")) * pins.includes(a[0]) || b[1].count - a[1].count);
+  const max = Math.max(1, ...areas.map(([, a]) => a.count));
+  const bar = ([t, a]) => `<details class="area" data-t="${esc(t)}"><summary><span class="l${pins.includes(t) ? " pin" : ""}">${esc(label(t))}</span>` +
+    `<span class="bar"><i style="width:${Math.max(2, Math.round(a.count / max * 100))}%"></i></span><span class="r">${a.count}</span></summary></details>`;
+  const SHOW = 6;
+  const total = state.area ? (m.areas[state.area] || { count: 0 }).count : m.fix_count;
+  const areaHTML = `<h3 class="mh">What it changed: ${total.toLocaleString()} fixes${state.area ? " in " + esc(label(state.area)) : " by area"}</h3>` +
+    `<div class="bars">${areas.slice(0, SHOW).map(bar).join("")}` +
+    (areas.length > SHOW ? `<div class="more-areas" hidden>${areas.slice(SHOW).map(bar).join("")}</div>` +
+      `<button type="button" class="linkbtn" data-moreareas="${areas.length}">Show all ${areas.length} areas ›</button>` : "") + `</div>` +
+    `<p class="muted">${pins.length ? "Areas your software relies on are pinned first. " : ""}Click an area to see its fixes.</p>`;
+  return `<div class="mbody"><p class="meta">Released ${esc(niceDate(m.released))}</p>${tiles}${ups}${probs}${files ? `<h3 class="mh">Files changed</h3>${files}` : ""}${areaHTML}</div>`;
+}
+document.addEventListener("click", (ev) => {
+  const b = ev.target.closest("[data-moreareas]");
+  if (!b) return;
+  const box = b.parentElement.querySelector(".more-areas");
+  box.hidden = !box.hidden;
+  b.textContent = box.hidden ? `Show all ${b.dataset.moreareas} areas ›` : "Show fewer areas";
+});
 
 function wireAreas(monthEl) {
   const m = state.data.months[+monthEl.dataset.i];
