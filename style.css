@@ -138,8 +138,9 @@ summary .r { color: var(--muted); font-size: 14px; white-space: nowrap; }
 .page h1 { font-size: 26px; margin: 8px 0 4px; }
 .crumbs { margin: 20px 0 0; }
 .tablewrap { overflow-x: auto; }
-.browse { margin: 24px 0 0; font-size: 14px; color: var(--muted); }
-.browse a { margin-right: 10px; white-space: nowrap; }
+/* flex + wrap: the links sit side by side with no spaces between them, so they could never wrap on their own */
+.browse { margin: 24px 0 0; font-size: 14px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 10px; }
+.browse a { white-space: nowrap; }
 .page h2 { font-size: 18px; margin: 32px 0 8px; }
 .page li { margin: 4px 0; }
 .steps { padding-left: 22px; }
