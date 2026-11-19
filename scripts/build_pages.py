@@ -130,10 +130,79 @@ def tshoot_section(kb, fixes, areas, tags, T, is_hotpatch, full_alt):
     return ("<h2>Something broke after this update?</h2>"
             f'<ul class="sw-list">{li(T["general"])}</ul>'
             + (f'<p><b>Hotpatch:</b> {e(T["hotpatch"])}' + (f" The full update for the same month is {full_alt}." if full_alt else "") + "</p>" if is_hotpatch else "")
-            + f"<p><b>Before removing it:</b> {e(kb)} carries {len(fixes)} security fixes{f' ({crit} critical)' if crit else ''}.</p>"
+            + f"<p><b>Before removing it:</b> {e(kb)} carries {len(fixes)} security fixes{f' ({crit} critical)' if crit else ''}. "
+            + f'<a href="#remove">See what removing it costs</a>.</p>'
             + f'<ul class="sw-list">{li(T["uninstall"])}</ul>'
             + (f"<p><b>By area</b>:</p>{blocks}" if blocks else "")
             + '<p class="muted">Not Microsoft advice: check Microsoft&#39;s page for this update before acting.</p>')
+
+
+def build_key(b):
+    return [int(x) for x in str(b).split(".") if x.isdigit()]
+
+
+def remove_section(kb, ver, fixes, prob_c, tags, kbinfo, ver_builds, kb_link):
+    """'Thinking of removing this update?': what you give up, and a safer way if Microsoft (or a Patchmap problem)
+    names one. Everything comes from data Patchmap already has; nothing here is hand-written per update."""
+    if not fixes or not ver_builds:
+        return ""
+    sev = lambda f: (f.get("severity") or {}).get(ver) or ""
+    crit = sum(1 for f in fixes if sev(f) == "Critical")
+    likely = sum(1 for f in fixes if f.get("likely") and not f.get("exploited"))
+    expl = [f for f in fixes if f.get("exploited")]
+    tile = lambda n, l, c: f'<div class="tile {c}"><div class="n">{n:,}</div><div class="tl">{l}</div></div>'
+    tiles = ('<div class="tiles">'
+             + tile(len(fixes), "security fixes removed", "red")
+             + tile(crit, "of them Critical", "red" if crit else "green")
+             + tile(likely, "Microsoft rates &quot;more likely to be attacked&quot;", "amber" if likely else "green")
+             + tile(len(expl), "already being exploited by attackers" if expl else "being exploited right now", "red" if expl else "green")
+             + "</div>")
+    # the area the problem is in, if this update started one
+    area_note = ""
+    areas = [a for i in prob_c for a in i.get("areas", []) if a != "other"]
+    if len(prob_c) == 1 and areas:
+        a = areas[0]
+        n = sum(1 for f in fixes if a in f.get("tags", []))
+        if n:
+            area_note = f'<p class="muted">{n} of the fixes are in <b>{e(tags.get(a, a))}</b>, the area with the known problem.</p>'
+    # where removing it takes you, and the newest full update for this version
+    lst = sorted(ver_builds, key=lambda b: build_key(b["build"]))
+    me = next((b for b in lst if b["kb"] == kb), None)
+    if not me:
+        return ""
+    full = lambda b: (kbinfo.get(b["kb"]) or {}).get("kind") not in ("hotpatch", "preview")
+    latest = next((b for b in reversed(lst) if full(b)), None)
+    if latest and build_key(latest["build"]) <= build_key(me["build"]):
+        latest = None
+    # a safer way for each problem this update started, only where a fix is named (Microsoft's "fixed by", or a
+    # Patchmap problem whose "What to do" names another update); problems with no named fix are left out
+    safer, fix_kbs = [], []
+    for i in prob_c:
+        pv = (i.get("by_version") or {}).get(ver, {})
+        fx = [k for k in pv.get("fixed_by", []) if k != kb]
+        if fx:
+            fix_kbs += [k for k in fx if k not in fix_kbs]
+            safer.append(f'<li><b>{e(i["title"])}</b>: Microsoft says {", ".join(kb_link(k) for k in fx)} fixes it.</li>')
+        elif i.get("what_to_do") and [k for k in re.findall(r"KB\d+", i["what_to_do"].split("Removing")[0]) if k != kb]:
+            fix_kbs += re.findall(r"KB\d+", i["what_to_do"].split("Removing")[0])
+            safer.append(f'<li><b>{e(i["title"])}</b>: {e(i["what_to_do"])} <span class="muted">(Patchmap)</span></li>')
+    if latest and latest["kb"] not in fix_kbs:
+        safer.append(f'<li>Or install the newest full update for this version, {kb_link(latest["kb"])} (build {e(latest["build"].replace("10.0.", ""))}): '
+                     "each update includes the fixes of the ones before it.</li>")
+    worst = sorted(fixes, key=lambda f: (not f.get("exploited"), not (sev(f) == "Critical" and f.get("likely")), sev(f) != "Critical"))
+    worst = [f for f in worst if f.get("exploited") or sev(f) == "Critical"][:4]
+    why = lambda f: "Already being exploited" if f.get("exploited") else ("Critical, more likely to be attacked" if f.get("likely") else "Critical")
+    lose = ("<details><summary><span class=\"l\">The most serious fixes you&#39;d lose</span></summary><ul class=\"sw-list\">"
+            + "".join(f'<li><b>{why(f)}:</b> {e(f["title"])} <a href="{e(f["msrc_url"])}" rel="noopener">{e(f["cve"])}</a></li>' for f in worst)
+            + "</ul></details>") if worst else ""
+    return (f'<h2 id="remove">Thinking of removing {e(kb)}?</h2>'
+            "<p class=\"muted\">What you give up, and whether there&#39;s a safer way.</p>"
+            + tiles + area_note
+            + f"<p>Removing it leaves this device without these fixes{' (including one attackers are already using)' if len(expl) == 1 else (f' (including {len(expl)} attackers are already using)' if expl else '')}.</p>"
+            + (f'<div class="safer"><b>Safer options</b><ul>{"".join(safer)}</ul></div>' if safer else "")
+            + lose
+            + '<p class="muted">Worked out from Microsoft&#39;s public data (security update guide and Windows release health). '
+            "&quot;More likely to be attacked&quot; is Microsoft&#39;s own rating. Not Microsoft advice: check Microsoft&#39;s page before acting.</p>")
 
 
 def files_section(kb, month, ver, tags):
@@ -288,6 +357,7 @@ def main():
                 + f'Restart needed: {e(u.get("restart") or "not stated")}.</p>'
                 + ("<h2>Known problems this update started</h2>" + "".join(issue_card(i, vers[0], purl(i)) for i in prob_c) if prob_c else "")
                 + ("<h2>Known problems this update fixed</h2>" + "".join(issue_card(i, vers[0], purl(i)) for i in prob_f) if prob_f else "")
+                + remove_section(kb, vers[0], fixes, prob_c, tags, kbinfo, by_ver.get(vers[0], []), kb_link)
                 + software_section(kb, vers[0], fixes, software)
                 + files_section(kb, u["month"], vers[0], tags)
                 + tshoot_section(kb, fixes, areas, tags, tshoot, kind == "hotpatch", full_alt)

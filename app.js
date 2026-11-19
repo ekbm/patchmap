@@ -473,9 +473,12 @@ function issueHTML(i) {
   const todo = i.what_to_do ? esc(i.what_to_do)
     : i.status === "fixed" ? "Install the update that fixed it (see details)."
     : sources[0] ? `See <a href="${esc(sources[0].url)}" rel="noopener">Microsoft's page</a> for the latest workaround or fix.` : "";
+  // Link to "Thinking of removing it?" on the update's page, only for updates Patchmap has a page for (this version)
+  const rmKb = i.status !== "fixed" && caused.find((k) => (state.builds || []).some((b) => b.kb === k && b.version === state.ver));
+  const cost = rmKb ? `<a class="cost" href="/kb/${esc(rmKb)}/#remove">What does removing ${esc(rmKb)} cost? ›</a>` : "";
   return `<div class="issue ${esc(i.status)}" data-issue="${esc(i.id)}"><span class="pill ${esc(i.status)}">${esc(st)}</span>` +
     `<span class="pill src">${i.origin === "microsoft" ? "Microsoft" : "Patchmap"}</span>` +
-    `<span class="it">${esc(i.title)}</span>${todo ? `<div class="todo"><b>What to do:</b> ${todo}</div>` : ""}` +
+    `<span class="it">${esc(i.title)}</span>${todo ? `<div class="todo"><b>What to do:</b> ${todo}</div>` : ""}${cost ? `<div>${cost}</div>` : ""}` +
     `<details class="more"><summary><span class="l">More details and sources</span></summary>${body ? `<div>${esc(body)}</div>` : ""}` +
     `<div class="is">${kbs ? esc(kbs) + " · " : ""}Sources: ${src} · checked ${esc(i.checked)}</div></details></div>`;
 }

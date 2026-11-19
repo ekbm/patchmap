@@ -183,6 +183,14 @@ table.ups .kbc { font-family: var(--mono); font-size: 14px; }
 .bars summary .r { text-align: right; }
 .linkbtn { background: none; border: 0; padding: 8px 0; font: inherit; font-size: 14px; color: var(--accent); cursor: pointer; text-decoration: underline; }
 .chip.more { color: var(--accent); }
+/* "Thinking of removing this update?" on update pages */
+#remove { scroll-margin-top: 16px; }
+.safer { background: var(--ok-bg); color: var(--ok); border-radius: 8px; padding: 10px 14px; margin: 12px 0; }
+.safer ul { margin: 6px 0 0; padding-left: 20px; }
+.safer li { margin: 4px 0; }
+.safer a { color: inherit; text-decoration: underline; }
+.safer .muted { color: inherit; opacity: .8; }
+.issue .cost { display: inline-block; margin-top: 4px; font-size: 14px; color: var(--accent); }
 @media (max-width: 640px) {
   .tiles { grid-template-columns: 1fr 1fr; }
   .bars details.area > summary { grid-template-columns: 1fr 70px 40px; }
