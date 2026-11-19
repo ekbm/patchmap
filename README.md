@@ -54,7 +54,11 @@ GitHub Actions ([.github/workflows/site.yml](.github/workflows/site.yml)).
 Notes: security fixes only (non-security bugs go in `known_issues.json` by hand). A month can list
 older updates that Microsoft also names as fixing that month's issues.
 
-## Licence
+## Licence and credit
 
 Code: [MIT](LICENSE). Data: see [LICENSE-DATA.md](LICENSE-DATA.md).
+
+**Using Patchmap or its data?** Please credit "Verilay Patchmap" (by Moses Ekbote) with a link to
+https://patchmap.verilay.dev. I'd love to hear what you build with it:
+[open an issue](https://github.com/ekbm/patchmap/issues/new) and say hello.
 More from [Verilay](https://verilay.dev).
