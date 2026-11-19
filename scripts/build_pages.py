@@ -112,6 +112,75 @@ def xline(fixes, kb):
     return f'<p class="muted">None of its {len(fixes)} fixes are known to be exploited (Microsoft and CISA).</p>'
 
 
+# One plain line per kind of weakness (Microsoft's "impact"). Kept the same as IMPACT_PLAIN in app.js.
+IMPACT_PLAIN = {
+    "Remote Code Execution": "an attacker could run their own code on the machine. This is the most serious kind of weakness.",
+    "Elevation of Privilege": "someone who already has a foothold on the machine (a normal user account, or malware) can make themselves admin. Attackers often use this as the second step of an attack.",
+    "Security Feature Bypass": "an attacker can get past a Windows protection that would normally stop or warn you.",
+    "Spoofing": "an attacker can make something fake look trustworthy, for example an email or a link, to trick people into acting on it.",
+    "Information Disclosure": "an attacker can read information they shouldn't, which can help a bigger attack.",
+    "Denial of Service": "an attacker can crash or freeze a service, so it stops working for everyone.",
+    "Tampering": "an attacker can change data or settings they shouldn't be able to.",
+}
+
+
+def nice_date(d):
+    try:
+        x = dt.date.fromisoformat(d)
+        return f"{x.day} {x.strftime('%b')} {x.year}"
+    except Exception:
+        return d or ""
+
+
+def days_between(a, b):
+    try:
+        return (dt.date.fromisoformat(b) - dt.date.fromisoformat(a)).days
+    except Exception:
+        return None
+
+
+def short_name(f):
+    """'Windows Update Stack Elevation of Privilege Vulnerability' -> 'Windows Update Stack'"""
+    t = re.sub(r"\s+Vulnerability$", "", f["title"])
+    imp = f.get("impact") or ""
+    return t[: -len(imp)].strip() if imp and t.endswith(imp) and len(t) > len(imp) else f["title"]
+
+
+def exploited_card(f, k, fixed_in, fix_released):
+    """One exploited fix: a single line; 'What this means' opens on click."""
+    imp = f.get("impact") or ""
+    facts = [f"Fixed in: <b>{fixed_in}</b>"]
+    if k and k.get("added"):
+        gap = days_between(fix_released, k["added"]) if fix_released else None
+        later = f", {gap // 30} month{'s' if gap // 30 != 1 else ''} after the fix came out" if gap and gap >= 45 else ""
+        facts.append(f"Attacks seen: <b>CISA added it {e(nice_date(k['added']))}</b>{later}")
+        n = days_between(k["added"], k.get("due"))
+        if n is not None:
+            facts.append(f'<span class="{"urgent" if n <= 7 else ""}">CISA gave US agencies {n} days to patch (by {e(nice_date(k["due"]))})</span>')
+        facts.append("Ransomware: <b>seen in ransomware</b>" if k.get("ransomware") else "Ransomware: <b>not known</b>")
+    else:
+        facts.append("Attacks seen: <b>Microsoft</b>")
+    return (f'<details class="xf"><summary><span class="pill xp">Exploited{" · ransomware" if k and k.get("ransomware") else ""}</span>'
+            f'<span class="nm">{e(short_name(f))}</span><code>{e(f["cve"])}</code><span class="open">What this means ›</span></summary>'
+            f'<div class="xbody">' + (f'<span class="pill src">{e(imp)}</span>' if imp else "")
+            + (f'<p class="means"><b>What this means:</b> {e(IMPACT_PLAIN[imp])}</p>' if imp in IMPACT_PLAIN else "")
+            + f'<div class="facts">{"".join(f"<span>{x}</span>" for x in facts)}</div>'
+            + (f'<p class="is">CISA&#39;s description: &quot;{e(k["desc"])}&quot;</p>' if k and k.get("desc") else "")
+            + f'<p class="is"><a href="{e(f["msrc_url"])}" rel="noopener">Microsoft&#39;s page for {e(f["cve"])}</a></p></div></details>')
+
+
+def exploited_section(kb, fixes, kev, fix_released):
+    xs = [f for f in fixes if f.get("exploited")]
+    if not xs:
+        return ""
+    return ("<h2>Fixes being exploited</h2>"
+            "<p class=\"muted\">Attackers are using these weaknesses. Click one to see what it lets them do.</p>"
+            + "".join(exploited_card(f, kev.get(f["cve"]), e(kb), fix_released.get(f["cve"])) for f in xs)
+            + '<p class="muted">From Microsoft&#39;s Security Update Guide and CISA&#39;s Known Exploited Vulnerabilities list. '
+            "Neither says who the attackers are or exactly how they attack, so Patchmap doesn&#39;t either. "
+            "CISA&#39;s deadlines are for US government agencies, but they&#39;re a good sign of how urgent a fix is.</p>")
+
+
 def tshoot_section(kb, fixes, areas, tags, T, is_hotpatch, full_alt):
     """'Something broke after this update?' with generic, careful steps (data/troubleshooting.json)."""
     if not T:
@@ -272,10 +341,14 @@ def main():
     tags["other"] = "Other"
     issues = load("known_issues.json", {"issues": []})["issues"] + load("release_health.json", {"issues": []})["issues"]
     builds = load("builds.json", [])
-    fix_by_cve = {}
+    fix_by_cve, fix_released = {}, {}
     for m in index["months"]:
-        for f in load(f"months/{m['month']}.json")["fixes"]:
+        md = load(f"months/{m['month']}.json")
+        for f in md["fixes"]:
             fix_by_cve[f["cve"]] = f
+            if md.get("released") and (f["cve"] not in fix_released or md["released"] < fix_released[f["cve"]]):
+                fix_released[f["cve"]] = md["released"]  # when the fix first came out
+    kev = load("kev.json", {})
     updates = {p.stem: json.loads(p.read_text(encoding="utf-8")) for p in (DATA / "updates").glob("KB*.json")}
     software = [json.loads(p.read_text(encoding="utf-8")) for p in sorted((DATA / "software").glob("*.json")) if p.stem != "index"]
     kbinfo = load("kb_titles.json", {})
@@ -350,7 +423,8 @@ def main():
                    + (f" The full update for the same month is {full_alt}, which replaces the files on disk." if full_alt else "") + "</p>" if kind == "hotpatch" else "")
                 + f'<p class="lead">{e(kind_label or u.get("type") or "Update")} for {e(names)}, {e(month_name(u["month"]))} (released {e(u["released"])}). '
                 f'It includes {len(fixes)} security fixes{": most in " + e(top) if top else ""}.</p>'
-                + xline(fixes, kb) +
+                + xline(fixes, kb)
+                + exploited_section(kb, fixes, kev, fix_released) +
                 f'<table class="src-table"><tr><th>Windows version</th><th>Build after installing</th></tr>{rows}</table>'
                 f"<p>Replaces: {repl}. "
                 + (f"Replaced by: {', '.join(kb_link(k) for k in newer)}. " if newer else "The newest update Patchmap knows for this version. ")

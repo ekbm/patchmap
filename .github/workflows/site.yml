@@ -33,6 +33,7 @@ jobs:
         if: github.event_name != 'push'
         run: |
           python scripts/fetch_msrc.py
+          python scripts/kev_details.py
           python scripts/fetch_release_health.py
           python scripts/fetch_kb_titles.py
           python scripts/fetch_files.py

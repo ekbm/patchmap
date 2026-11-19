@@ -192,6 +192,21 @@ table.ups .kbc { font-family: var(--mono); font-size: 14px; }
 .safer a { color: inherit; text-decoration: underline; }
 .safer .muted { color: inherit; opacity: .8; }
 .issue .cost { display: inline-block; margin-top: 4px; font-size: 14px; color: var(--accent); }
+/* "Fixes being exploited": one line each, "What this means" opens on click */
+details.xf { border: 1px solid var(--line); border-left: 4px solid var(--stripe-red); border-radius: 8px; padding: 10px 14px; margin: 8px 0; background: var(--card); }
+details.xf > summary { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; cursor: pointer; list-style: none; padding: 0; }
+details.xf > summary::-webkit-details-marker { display: none; }
+details.xf > summary::before { content: none; }
+details.xf .nm { font-weight: 600; }
+details.xf summary code { font-family: var(--mono); font-size: 13px; color: var(--muted); }
+details.xf .open { margin-left: auto; color: var(--accent); font-size: 14px; }
+details.xf[open] .open { visibility: hidden; }
+details.xf .xbody { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--line); }
+details.xf .means { margin: 8px 0; }
+details.xf .facts { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 13px; color: var(--muted); }
+details.xf .facts b { color: var(--text); }
+details.xf .urgent { color: var(--stripe-red); font-weight: 600; }
+details.xf .xbody .is { font-size: 13px; color: var(--muted); margin: 8px 0 0; }
 @media (max-width: 640px) {
   .tiles { grid-template-columns: 1fr 1fr; }
   .bars details.area > summary { grid-template-columns: 1fr 70px 40px; }

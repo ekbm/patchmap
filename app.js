@@ -51,7 +51,7 @@ async function init() {
   }).catch(() => {});
   const softwareP = getJSON("data/software/index.json").catch(() => [])
     .then((ids) => Promise.all(ids.map((id) => getJSON(`data/software/${id}.json`).catch(() => null))));
-  const [index, tags, issues, ms, builds, files, kbinfo, hotpatch, tshoot, sw] = await Promise.all([
+  const [index, tags, issues, ms, builds, files, kbinfo, hotpatch, tshoot, sw, kev] = await Promise.all([
     indexP, getJSON("data/area_tags.json"), getJSON("data/known_issues.json"),
     getJSON("data/release_health.json").catch(() => ({ issues: [] })),
     getJSON("data/builds.json").catch(() => []),
@@ -60,8 +60,9 @@ async function init() {
     getJSON("data/files/hotpatch_index.json").catch(() => ({})),
     getJSON("data/troubleshooting.json").catch(() => null),
     softwareP,
+    getJSON("data/kev.json").catch(() => ({})),
   ]);
-  Object.assign(state, { files, kbinfo, hotpatch, tshoot });
+  Object.assign(state, { files, kbinfo, hotpatch, tshoot, kev });
   for (const x of sw) if (x && x.id) state.software[x.id] = x;
   const ssel = $("sw");
   ssel.innerHTML = '<option value="">No filter</option>' + Object.values(state.software).map((x) => `<option value="${esc(x.id)}">${esc(x.name)}</option>`).join("");
@@ -673,6 +674,51 @@ function updateType(u) {
   if (k === "preview") return '<span class="tag">Preview</span> optional';
   return win ? '<span class="tag">Type not listed yet</span>' : '<span class="tag">Update</span>';
 }
+// ---- Fixes being exploited: one line each, "What this means" opens on click ----
+// One plain line per kind of weakness (Microsoft's "impact"). Kept the same as IMPACT_PLAIN in scripts/build_pages.py.
+const IMPACT_PLAIN = {
+  "Remote Code Execution": "an attacker could run their own code on the machine. This is the most serious kind of weakness.",
+  "Elevation of Privilege": "someone who already has a foothold on the machine (a normal user account, or malware) can make themselves admin. Attackers often use this as the second step of an attack.",
+  "Security Feature Bypass": "an attacker can get past a Windows protection that would normally stop or warn you.",
+  "Spoofing": "an attacker can make something fake look trustworthy, for example an email or a link, to trick people into acting on it.",
+  "Information Disclosure": "an attacker can read information they shouldn't, which can help a bigger attack.",
+  "Denial of Service": "an attacker can crash or freeze a service, so it stops working for everyone.",
+  "Tampering": "an attacker can change data or settings they shouldn't be able to.",
+};
+const dayDiff = (a, b) => (a && b ? Math.round((Date.parse(b) - Date.parse(a)) / 86400000) : null);
+function shortName(f) {
+  const t = f.title.replace(/\s+Vulnerability$/, ""), imp = f.impact || "";
+  return imp && t.endsWith(imp) && t.length > imp.length ? t.slice(0, -imp.length).trim() : f.title;
+}
+function exploitedBlock(m) {
+  const seen = new Map();
+  for (const [t, a] of Object.entries(m.areas)) {
+    if (state.area && t !== state.area) continue;
+    for (const fx of Object.values(a.components)) for (const f of fx) if (f.exploited && !seen.has(f.cve)) seen.set(f.cve, f);
+  }
+  if (!seen.size) return "";
+  const card = (f) => {
+    const k = (state.kev || {})[f.cve], imp = f.impact || "";
+    const facts = [`Fixed in: <b>${esc((f.kbs || []).join(", ") || monthName(m.month))}</b>`];
+    if (k && k.added) {
+      const gap = dayDiff(m.released, k.added);
+      const later = gap >= 45 ? `, ${Math.floor(gap / 30)} month${Math.floor(gap / 30) === 1 ? "" : "s"} after the fix came out` : "";
+      facts.push(`Attacks seen: <b>CISA added it ${esc(niceDate(k.added))}</b>${later}`);
+      const n = dayDiff(k.added, k.due);
+      if (n !== null) facts.push(`<span class="${n <= 7 ? "urgent" : ""}">CISA gave US agencies ${n} days to patch (by ${esc(niceDate(k.due))})</span>`);
+      facts.push(`Ransomware: <b>${k.ransomware ? "seen in ransomware" : "not known"}</b>`);
+    } else facts.push("Attacks seen: <b>Microsoft</b>");
+    return `<details class="xf"><summary><span class="pill xp">Exploited${k && k.ransomware ? " · ransomware" : ""}</span>` +
+      `<span class="nm">${esc(shortName(f))}</span><code>${esc(f.cve)}</code><span class="open">What this means ›</span></summary><div class="xbody">` +
+      (imp ? `<span class="pill src">${esc(imp)}</span>` : "") +
+      (IMPACT_PLAIN[imp] ? `<p class="means"><b>What this means:</b> ${esc(IMPACT_PLAIN[imp])}</p>` : "") +
+      `<div class="facts">${facts.map((x) => `<span>${x}</span>`).join("")}</div>` +
+      (k && k.desc ? `<p class="is">CISA's description: "${esc(k.desc)}"</p>` : "") +
+      `<p class="is"><a href="https://msrc.microsoft.com/update-guide/vulnerability/${esc(f.cve)}" rel="noopener">Microsoft's page for ${esc(f.cve)}</a></p></div></details>`;
+  };
+  return `<h3 class="mh">Fixes being exploited</h3><p class="is">Attackers are using these weaknesses. Click one to see what it lets them do. ` +
+    `From Microsoft and CISA; neither says who the attackers are, so Patchmap doesn't either.</p>` + [...seen.values()].map(card).join("");
+}
 function monthBody(m) {
   const list = issuesFor(m.month);
   const notFixed = list.filter((i) => i.status === "open").length;
@@ -691,6 +737,7 @@ function monthBody(m) {
   const ups = m.updates.length ? `<h3 class="mh">Which update do you have?</h3><div class="tablewrap"><table class="ups"><tr><th>Update</th><th>Type</th>` +
     (isWin ? `<th>Build (see <code>winver</code>)</th>` : "") + `<th></th></tr>${rows}</table></div>` : "";
   const probs = `<h3 class="mh">Known problems</h3>` + (list.length ? issuesBlock(list) : `<p class="muted">None listed for this update${state.area ? " in " + esc(label(state.area)) : ""}.</p>`);
+  const xfix = exploitedBlock(m);
   const files = swBlock(m) + filesBlock(m);
   // Areas as bars, biggest first; your software's areas pinned on top; only the top 6 until you ask for more
   const pins = swFileTags() || [];
@@ -706,7 +753,7 @@ function monthBody(m) {
     (areas.length > SHOW ? `<div class="more-areas" hidden>${areas.slice(SHOW).map(bar).join("")}</div>` +
       `<button type="button" class="linkbtn" data-moreareas="${areas.length}">Show all ${areas.length} areas ›</button>` : "") + `</div>` +
     `<p class="muted">${pins.length ? "Areas your software relies on are pinned first. " : ""}Click an area to see its fixes.</p>`;
-  return `<div class="mbody"><p class="meta">Released ${esc(niceDate(m.released))}</p>${tiles}${ups}${probs}${files ? `<h3 class="mh">Files changed</h3>${files}` : ""}${areaHTML}</div>`;
+  return `<div class="mbody"><p class="meta">Released ${esc(niceDate(m.released))}</p>${tiles}${ups}${probs}${xfix}${files ? `<h3 class="mh">Files changed</h3>${files}` : ""}${areaHTML}</div>`;
 }
 document.addEventListener("click", (ev) => {
   const b = ev.target.closest("[data-moreareas]");
