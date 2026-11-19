@@ -23,10 +23,19 @@
   <h2>How to use it</h2>
   <ol class="steps">
     <li><b>Pick your Windows version</b> at the top of the page.</li>
-    <li><b>Open a month</b> to see that month's update number, build number and any known problems.</li>
-    <li><b>Open an area</b>, such as Printing and scanning or Sign-in and identity, to see which parts of Windows were fixed.</li>
+    <li><b>Open a month</b>. It starts with four numbers (updates, problems not fixed yet, problems with a fix or workaround, fixes being exploited), then <b>Which update do you have?</b>: each update with its type (hotpatch, no restart, or full update, needs restart) and build number to compare with <code>winver</code>.</li>
+    <li><b>Read the known problems.</b> Each card has a short <b>What to do</b> line; details and sources are folded underneath.</li>
+    <li><b>Open an area</b> from the bars under <b>What it changed</b>, such as Printing and scanning or Sign-in and identity, to see which parts of Windows were fixed. The 6 biggest areas show first; <b>Show all areas</b> lists the rest.</li>
     <li><b>Open a part of Windows</b> to see each security fix, with a link to Microsoft's details.</li>
   </ol>
+  <figure class="shot">
+    <img src="images/month-view.png" width="720" height="430" loading="lazy" alt="November 2026 for Windows 11 25H2: four number tiles, a table of the month's three updates with their type and build, and the first known problem with its What to do line">
+    <figcaption>A month at a glance: the numbers first, which update you have, then known problems with what to do.</figcaption>
+  </figure>
+  <figure class="shot">
+    <img src="images/month-areas.png" width="720" height="372" loading="lazy" alt="What it changed: bars for each area, with Printing and scanning, Sign-in and identity and File sharing pinned first in amber because PaperCut NG/MF is picked under My software">
+    <figcaption>What each update changed, by area. Pick your software under My software and the areas it relies on are pinned first.</figcaption>
+  </figure>
   <p>Or type in the search box: an area (<a href="./#v=server-2022&amp;q=print">print</a>), a part of Windows (<a href="./#v=server-2022&amp;q=kerberos">Kerberos</a>), an update number (KB5131090), a fix number (CVE-2026-…) or an error code (<a href="./#v=server-2022&amp;q=0x80041008">0x80041008</a>). The area buttons narrow everything to one area.</p>
   <h2>Four ways in</h2>
   <p>Start from whatever you have: an <b>update or build</b> (KB5132043, 26200.9911), an <b>area</b> (printing), an <b>error or symptom</b> (0xC1) or a <b>file or part of Windows</b> (localspl.dll, Print Spooler). Suggestions appear as you type, grouped by these four, and the <b>Start from</b> buttons show examples of each. Every result links to the other three: an update to the areas and files it changed, a file to the updates that changed it and related errors, an error to its area and files.</p>
@@ -97,6 +106,7 @@
     <div class="issue mitigated"><span class="pill mitigated">Workaround available</span><span class="pill fix-rolling-out">Fix rolling out</span><span class="it">There's a way around it, or a fix is on its way</span></div>
     <div class="issue fixed"><span class="pill fixed">Fixed</span><span class="it">A later update fixed it. Shown folded under the month it started.</span></div>
   </div>
+  <p>Each card starts with a short <b>What to do</b> line. For problems Patchmap tracks by hand, it's written from the sources; for Microsoft's own problems it points to Microsoft's page, so Patchmap never makes up advice. The red line at the top of the page jumps to any problem in the latest update that isn't fixed yet.</p>
   <p>The grey label shows where each problem comes from:</p>
   <ul>
     <li><span class="pill src">Microsoft</span> collected automatically from Microsoft's own Windows release health pages.</li>
