@@ -367,8 +367,13 @@ function kbCard(q) {
   if (!/^kb\d{6,7}$/i.test(q)) return "";
   const kb = q.toUpperCase();
   const ref = state.builds.find((x) => x.kb === kb && x.version === state.ver);
-  const pageLink = `<a href="/kb/${esc(kb)}/">Full page for ${esc(kb)}</a> · <a href="https://support.microsoft.com/help/${esc(kb.slice(2))}" rel="noopener">Microsoft's page</a>`;
-  if (!ref) return `<div class="issue build"><span class="pill src">Update</span><span class="it">${esc(kb)}${kbBadge(kb)}</span><div class="is">${pageLink}</div></div>`;
+  // Patchmap only has a page for updates in builds.json (its last 12 months), so don't link to a page that isn't there
+  const msLink = `<a href="https://support.microsoft.com/help/${esc(kb.slice(2))}" rel="noopener">Microsoft's page for ${esc(kb)}</a>`;
+  const hasPage = state.builds.some((x) => x.kb === kb);
+  const pageLink = hasPage ? `<a href="/kb/${esc(kb)}/">Full page for ${esc(kb)}</a> · ${msLink}` : msLink;
+  if (!ref) return `<div class="issue build"><span class="pill src">Update</span><span class="it">${esc(kb)}${kbBadge(kb)}</span>` +
+    (hasPage ? "" : `<div>Patchmap doesn't have this update. It covers the last 12 months of updates for the versions it lists, so older updates aren't included.</div>`) +
+    `<div class="is">${pageLink}</div></div>`;
   const hit = findBuild(parseBuild(ref.build));
   const newer = hit ? hit.later.filter((x) => bparts(x.build)[3] > bparts(ref.build)[3]) : [];
   return `<div class="issue build"><span class="pill src">Update</span><span class="it">${esc(kb)}${kbBadge(kb)}: ${esc(state.data.label)}, ${esc(monthName(ref.month))}, build ${esc(ref.build)}</span>` +
