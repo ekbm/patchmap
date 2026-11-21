@@ -32,6 +32,9 @@ nav a { margin-left: 16px; font-size: 14px; color: var(--muted); text-decoration
 .lead { color: var(--muted); margin: 24px 0 16px; }
 .lead:has(+ .fresh) { margin-bottom: 4px; }
 .fresh { margin: 0 0 16px; font-size: 13px; }
+.freshbadge { display: inline-flex; align-items: center; gap: 8px; background: var(--ok-bg); color: var(--ok); border-radius: 999px; padding: 5px 14px; font-size: 14px; }
+.freshbadge svg { width: 16px; height: 16px; flex: none; }
+.freshbadge b { font-weight: 650; }
 .fresh:empty { display: none; }
 /* Row 1: version, build, software (three equal columns). Row 2: search, full width. Phones: one column. */
 .controls { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px 14px; align-items: end; }
@@ -84,6 +87,15 @@ select:focus, input:focus { outline: none; border-color: var(--accent); box-shad
 .sugg .sg-i small { color: var(--muted); font-size: 12px; white-space: nowrap; }
 .sugg .sg-i.active, .sugg .sg-i:hover { background: var(--chip); }
 .startfrom { margin: 10px 0 0; font-size: 13px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.cmpbar { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 10px; padding: 12px 14px; margin: 10px 0 0; }
+.cmpbar[hidden] { display: none; }
+.cmpbar .row { display: flex; flex-wrap: wrap; align-items: end; gap: 10px; }
+.cmpbar label { display: block; font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+.cmpbar select { font: inherit; font-size: 15px; padding: 8px 10px; border: 1px solid var(--field); border-radius: 8px; background: var(--card); color: var(--text); min-width: 300px; }
+.cmpbar .to { padding-bottom: 10px; font-weight: 600; }
+.cmpbar .swap { font: inherit; font-size: 13px; background: none; border: 0; color: var(--accent); cursor: pointer; padding: 0 0 10px; text-decoration: underline; }
+.cmpbar .tip { font-size: 13px; color: var(--muted); margin: 8px 0 0; }
+@media (max-width: 640px) { .cmpbar select { min-width: 0; width: 100%; } .cmpbar .row > div { width: 100%; } }
 .startfrom .chip.on { background: var(--accent); color: var(--card); border-color: var(--accent); }
 .jumps { margin-top: 8px; font-size: 14px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
 .jumps .jl { font-size: 13px; padding: 2px 9px; border-radius: 8px; background: var(--chip); border: 1px solid var(--line); color: var(--text); text-decoration: none; }

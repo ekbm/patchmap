@@ -22,7 +22,7 @@ document.addEventListener("click", (ev) => { const a = ev.target.closest && ev.t
 
 <main class="wrap">
   <p class="lead">See what each Windows update touched, step by step: pick your Windows version, open an update, then open an area to see the fixes.</p>
-  <p class="muted fresh" id="gentop"></p>
+  <p class="fresh" id="gentop"></p>
 
   <div class="controls">
     <div class="field">
@@ -50,7 +50,16 @@ document.addEventListener("click", (ev) => { const a = ev.target.closest && ev.t
     <button type="button" class="chip" data-mode="area">Area</button>
     <button type="button" class="chip" data-mode="error">Error or symptom</button>
     <button type="button" class="chip" data-mode="file">File or component</button>
-    <button type="button" class="chip" id="cmpbtn" title="Type two builds or updates with 'to' between them, for example 26200.9445 to 26200.9974">Compare two builds</button>
+    <button type="button" class="chip" id="cmpbtn" aria-expanded="false" aria-controls="cmpbar">Compare two builds</button>
+  </div>
+  <div class="cmpbar" id="cmpbar" hidden>
+    <div class="row">
+      <div><label for="cmpa">Older build (the device that works, or hasn't updated)</label><select id="cmpa"></select></div>
+      <div class="to">to</div>
+      <div><label for="cmpb">Newer build (the device with the problem)</label><select id="cmpb"></select></div>
+      <button type="button" class="swap" id="cmpswap">⇄ Swap</button>
+    </div>
+    <p class="tip">Find a device's build with <code>winver</code>. The comparison updates as soon as you pick. You can still type two builds in the search box, for example from a ticket.</p>
   </div>
   <div class="chips" id="chips"></div>
 

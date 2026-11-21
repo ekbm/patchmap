@@ -77,12 +77,18 @@ async function init() {
   $("gen").textContent = `Data updated ${index.generated}.`;
   // Same date, near the top where people actually see it: "Data updated 18 Nov 2026 · refreshed every Wednesday"
   const g = String(index.generated || "").match(/^(\d{4})-(\d{2})-(\d{2})/);
-  if (g) $("gentop").textContent = `Data updated ${+g[3]} ${"Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split(" ")[+g[2] - 1]} ${g[1]} · refreshed every Wednesday`;
+  if (g) $("gentop").innerHTML = `<span class="freshbadge"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="8" cy="8" r="6.5"/><path d="M8 4.5V8l2.5 1.5"/></svg>` +
+    `<span><b>Data updated ${+g[3]} ${"Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split(" ")[+g[2] - 1]} ${g[1]}</b> · refreshed every Wednesday</span></span>`;
   const sel = $("ver");
   sel.innerHTML = index.scope.map((v) => `<option value="${esc(v)}">${esc(index.labels[v])}</option>`).join("");
   if (!index.scope.includes(state.ver)) state.ver = index.scope[0];
   sel.value = state.ver;
-  sel.onchange = () => { state.ver = sel.value; load(); };
+  sel.onchange = () => {
+    state.ver = sel.value;
+    // a build comparison belongs to the old version: clear it, or it would switch the version straight back
+    if (parseBuildPair(state.q)) { state.q = ""; q.value = ""; }
+    load();
+  };
   const q = $("q");
   q.value = state.q;
   let t;
@@ -105,7 +111,37 @@ async function load() {
   render();
 }
 
+// The compare bar's drop-downs: Windows builds for the version on screen, newest first. Only builds of the version's
+// own build series (e.g. 26200 for 25H2), so an odd build listed under the wrong version can't be picked.
+function fillCompare(run) {
+  const bar = $("cmpbar");
+  if (!bar || bar.hidden) return;
+  const ca = $("cmpa"), cb = $("cmpb");
+  const key = (b) => b.split(".").map(Number);
+  let wb = state.builds.filter((x) => x.version === state.ver && /^10\.0\./.test(x.build));
+  const major = wb.length ? key(wb.reduce((m, x) => (key(x.build)[3] > key(m.build)[3] ? x : m)).build)[2] : 0;
+  const seen = new Set();
+  wb = wb.filter((x) => key(x.build)[2] === major && !seen.has(x.build) && seen.add(x.build)).sort((x, y) => key(y.build)[3] - key(x.build)[3]);
+  bar.dataset.ver = state.ver;
+  if (wb.length < 2) {
+    ca.innerHTML = cb.innerHTML = '<option value="">Compare works for Windows versions</option>';
+    ca.disabled = cb.disabled = true;
+    return;
+  }
+  ca.disabled = cb.disabled = false;
+  const kind = (kb) => kindLabel(kb) || ({ standard: "Full update", "out-of-band": "Out-of-band" })[kbKind(kb)] || "Update";
+  const mon = (mid) => { const [y, m] = mid.split("-"); return `${m} ${y}`; };
+  const opt = (x) => { const s = x.build.replace(/^10\.0\./, ""); return `<option value="${esc(s)}">${esc(s)} · ${esc(x.kb)} · ${esc(mon(x.month))} · ${esc(kind(x.kb))}</option>`; };
+  ca.innerHTML = cb.innerHTML = wb.map(opt).join("");
+  // start with a recent build and the newest one, unless the search already holds a pair
+  const pair = parseBuildPair(state.q || "");
+  const has = (v) => wb.some((x) => x.build.endsWith(v));
+  if (pair && has(pair[0].text) && has(pair[1].text)) { ca.value = pair[0].text.replace(/^10\.0\./, ""); cb.value = pair[1].text.replace(/^10\.0\./, ""); }
+  else { ca.selectedIndex = Math.min(3, wb.length - 1); cb.selectedIndex = 0; if (run) { $("q").value = `${ca.value} to ${cb.value}`; $("q").dispatchEvent(new Event("input")); } }
+}
+
 function render() {
+  if ($("cmpbar") && !$("cmpbar").hidden && $("cmpbar").dataset.ver !== state.ver) fillCompare(true);
   writeHash();
   syncBuildMenu();
   renderChips();
@@ -946,17 +982,20 @@ function setupSuggest() {
   });
   // "Compare two builds": fills in a real example for the version on screen (a recent build to the newest one), so
   // people see what the comparison shows and how to type their own.
-  const cmp = $("cmpbtn");
-  if (cmp) cmp.onclick = () => {
-    const key = (b) => b.split(".").map(Number);
-    const wb = state.builds.filter((x) => x.version === state.ver && /^10\.0\./.test(x.build))
-      .sort((x, y) => { const a = key(x.build), b = key(y.build); return a[2] - b[2] || a[3] - b[3]; });
-    if (wb.length < 2) { input.value = ""; input.placeholder = "Compare works for Windows versions: pick one above, then type two builds, e.g. 26200.9445 to 26200.9974"; input.focus(); return; }
-    const short = (x) => x.build.replace(/^10\.0\./, "");
-    input.value = `${short(wb[Math.max(0, wb.length - 4)])} to ${short(wb[wb.length - 1])}`;
-    input.dispatchEvent(new Event("input"));
-    input.focus();
-  };
+  // Clicking it opens a bar with two drop-downs of real builds; picking runs the comparison (no typing needed).
+  const cmp = $("cmpbtn"), bar = $("cmpbar"), ca = $("cmpa"), cb = $("cmpb");
+  const runCmp = () => { input.value = `${ca.value} to ${cb.value}`; input.dispatchEvent(new Event("input")); };
+  if (cmp && bar) {
+    cmp.onclick = () => {
+      bar.hidden = !bar.hidden;
+      cmp.classList.toggle("on", !bar.hidden);
+      cmp.setAttribute("aria-expanded", String(!bar.hidden));
+      cmp.textContent = bar.hidden ? "Compare two builds" : "Compare two builds ▴";
+      if (!bar.hidden) { fillCompare(true); ca.focus(); }
+    };
+    ca.onchange = cb.onchange = runCmp;
+    $("cmpswap").onclick = () => { [ca.value, cb.value] = [cb.value, ca.value]; runCmp(); };
+  }
   document.querySelectorAll("#startfrom .chip[data-mode]").forEach((b) => (b.onclick = () => {
     const on = sg.mode !== b.dataset.mode;
     sg.mode = on ? b.dataset.mode : "";
