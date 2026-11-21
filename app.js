@@ -972,10 +972,24 @@ function showSugg() {
   input.setAttribute("aria-expanded", "true");
 }
 function hideSugg() { $("sugg").hidden = true; $("q").setAttribute("aria-expanded", "false"); }
+const Q_HINT = "print, KB5131090, localspl.dll, 0x80041008, 20348.5870";
+// Leave a "Start from" mode without picking anything (Esc, clicking away, or clicking the button again):
+// un-highlight the button, bring back the normal hint, and put back what was in the search box.
+function cancelMode() {
+  if (!sg.mode) return;
+  sg.mode = "";
+  document.querySelectorAll("#startfrom .chip[data-mode]").forEach((b) => b.classList.remove("on"));
+  const input = $("q");
+  input.placeholder = Q_HINT;
+  if (!input.value && sg.prev) input.value = sg.prev;
+  sg.prev = "";
+  hideSugg();
+}
 function pickSugg(x) {
   hideSugg();
-  sg.mode = "";
-  document.querySelectorAll("#startfrom .chip").forEach((b) => b.classList.remove("on"));
+  sg.mode = ""; sg.prev = "";
+  $("q").placeholder = Q_HINT;
+  document.querySelectorAll("#startfrom .chip[data-mode]").forEach((b) => b.classList.remove("on"));
   if (x.kind === "area") { state.area = x.value; state.q = ""; $("q").value = ""; }
   else { state.q = x.value; $("q").value = x.value; }
   render();
@@ -984,8 +998,14 @@ function setupSuggest() {
   const input = $("q"), box = $("sugg");
   input.addEventListener("focus", () => { loadNames().then(() => { if (document.activeElement === input) showSugg(); }); });
   input.addEventListener("input", () => { loadNames().then(showSugg); });
-  input.addEventListener("blur", () => setTimeout(hideSugg, 150));
+  // clicking away closes the list, and cancels a "Start from" mode if nothing was typed
+  // (unless the click went to another "Start from" button, which focuses the box again)
+  input.addEventListener("blur", () => setTimeout(() => { hideSugg(); if (document.activeElement !== input) cancelMode(); }, 150));
+  document.addEventListener("click", (ev) => {
+    if (sg.mode && !ev.target.closest("#q, #sugg, #startfrom")) cancelMode();   // typed text stays; an empty box gets its old search back
+  });
   input.addEventListener("keydown", (ev) => {
+    if (ev.key === "Escape" && sg.mode) { ev.preventDefault(); cancelMode(); return; }
     if (box.hidden) return;
     const els = box.querySelectorAll(".sg-i");
     if (ev.key === "ArrowDown" || ev.key === "ArrowUp") {
@@ -1019,10 +1039,12 @@ function setupSuggest() {
   }
   document.querySelectorAll("#startfrom .chip[data-mode]").forEach((b) => (b.onclick = () => {
     const on = sg.mode !== b.dataset.mode;
-    sg.mode = on ? b.dataset.mode : "";
-    document.querySelectorAll("#startfrom .chip[data-mode]").forEach((x) => x.classList.toggle("on", x === b && on));
-    input.placeholder = on ? MODE_HINT[sg.mode] : "print, KB5131090, localspl.dll, 0x80041008, 20348.5870";
-    if (on) input.value = "";
+    if (!on) { cancelMode(); input.focus(); return; }
+    if (!sg.mode) sg.prev = input.value;   // remember the search, to put it back if they change their mind
+    sg.mode = b.dataset.mode;
+    document.querySelectorAll("#startfrom .chip[data-mode]").forEach((x) => x.classList.toggle("on", x === b));
+    input.placeholder = MODE_HINT[sg.mode];
+    input.value = "";
     input.focus();
     loadNames().then(showSugg);
   }));
