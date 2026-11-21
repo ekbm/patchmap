@@ -51,6 +51,7 @@ document.addEventListener("click", (ev) => { const a = ev.target.closest && ev.t
     <button type="button" class="chip" data-mode="error">Error or symptom</button>
     <button type="button" class="chip" data-mode="file">File or component</button>
     <button type="button" class="chip" id="cmpbtn" aria-expanded="false" aria-controls="cmpbar">Compare two builds</button>
+    <button type="button" class="clearall" id="clearall" hidden>✕ Clear all</button>
   </div>
   <div class="cmpbar" id="cmpbar" hidden>
     <div class="row">

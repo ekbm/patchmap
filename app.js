@@ -137,11 +137,14 @@ function fillCompare(run) {
   const pair = parseBuildPair(state.q || "");
   const has = (v) => wb.some((x) => x.build.endsWith(v));
   if (pair && has(pair[0].text) && has(pair[1].text)) { ca.value = pair[0].text.replace(/^10\.0\./, ""); cb.value = pair[1].text.replace(/^10\.0\./, ""); }
-  else { ca.selectedIndex = Math.min(3, wb.length - 1); cb.selectedIndex = 0; if (run) { $("q").value = `${ca.value} to ${cb.value}`; $("q").dispatchEvent(new Event("input")); } }
+  else { ca.selectedIndex = Math.min(3, wb.length - 1); cb.selectedIndex = 0; if (run) { $("q").value = `${ca.value} to ${cb.value}`; state.q = $("q").value; render(); } }
 }
 
 function render() {
+  // the compare bar only stays open while the search holds a comparison (typing or picking something else closes it)
+  if ($("cmpbar") && !$("cmpbar").hidden && $("cmpbar").dataset.ver === state.ver && !parseBuildPair(state.q)) closeCompare();
   if ($("cmpbar") && !$("cmpbar").hidden && $("cmpbar").dataset.ver !== state.ver) fillCompare(true);
+  if ($("clearall")) $("clearall").hidden = !(state.q || state.area || state.sw || sg.mode || ($("cmpbar") && !$("cmpbar").hidden));
   writeHash();
   syncBuildMenu();
   renderChips();
@@ -981,9 +984,33 @@ function cancelMode() {
   document.querySelectorAll("#startfrom .chip[data-mode]").forEach((b) => b.classList.remove("on"));
   const input = $("q");
   input.placeholder = Q_HINT;
-  if (!input.value && sg.prev) input.value = sg.prev;
+  if (!input.value && sg.prev) { input.value = sg.prev; state.q = sg.prev; render(); }
   sg.prev = "";
   hideSugg();
+}
+// Only one way in at a time: close the compare bar (used when a "Start from" button is picked)
+function closeCompareWasOpen() { const open = $("cmpbar") && !$("cmpbar").hidden; closeCompare(); return open; }
+function closeCompare() {
+  const bar = $("cmpbar"), cmp = $("cmpbtn");
+  if (!bar || bar.hidden) return;
+  bar.hidden = true;
+  cmp.classList.remove("on");
+  cmp.setAttribute("aria-expanded", "false");
+  cmp.textContent = "Compare two builds";
+}
+// "Clear all": back to the default view for this Windows version (the version itself is kept)
+function clearAll() {
+  sg.mode = ""; sg.prev = "";
+  document.querySelectorAll("#startfrom .chip[data-mode]").forEach((b) => b.classList.remove("on"));
+  closeCompare();
+  const input = $("q");
+  input.value = ""; input.placeholder = Q_HINT;
+  hideSugg();
+  state.q = ""; state.area = ""; state.sw = "";
+  if ($("sw")) $("sw").value = "";
+  if ($("bld")) $("bld").value = "";
+  render();
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 function pickSugg(x) {
   hideSugg();
@@ -1025,9 +1052,17 @@ function setupSuggest() {
   // people see what the comparison shows and how to type their own.
   // Clicking it opens a bar with two drop-downs of real builds; picking runs the comparison (no typing needed).
   const cmp = $("cmpbtn"), bar = $("cmpbar"), ca = $("cmpa"), cb = $("cmpb");
+  if ($("clearall")) $("clearall").onclick = clearAll;
   const runCmp = () => { input.value = `${ca.value} to ${cb.value}`; input.dispatchEvent(new Event("input")); };
   if (cmp && bar) {
     cmp.onclick = () => {
+      if (!bar.hidden) {   // closing the bar: leave the comparison, back to the default view
+        closeCompare();
+        if (parseBuildPair(state.q)) { input.value = ""; state.q = ""; render(); }
+        return;
+      }
+      if (sg.mode) { sg.mode = ""; sg.prev = ""; input.placeholder = Q_HINT; hideSugg();
+        document.querySelectorAll("#startfrom .chip[data-mode]").forEach((x) => x.classList.remove("on")); }
       bar.hidden = !bar.hidden;
       cmp.classList.toggle("on", !bar.hidden);
       cmp.setAttribute("aria-expanded", String(!bar.hidden));
@@ -1041,10 +1076,12 @@ function setupSuggest() {
     const on = sg.mode !== b.dataset.mode;
     if (!on) { cancelMode(); input.focus(); return; }
     if (!sg.mode) sg.prev = input.value;   // remember the search, to put it back if they change their mind
+    if (closeCompareWasOpen()) sg.prev = "";   // a comparison isn't put back: they chose another way in
     sg.mode = b.dataset.mode;
     document.querySelectorAll("#startfrom .chip[data-mode]").forEach((x) => x.classList.toggle("on", x === b));
     input.placeholder = MODE_HINT[sg.mode];
     input.value = "";
+    if (state.q) { state.q = ""; render(); }   // don't leave the old results on screen
     input.focus();
     loadNames().then(showSugg);
   }));
