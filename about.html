@@ -6,7 +6,10 @@
 <title>About · Verilay Patchmap</title>
 <meta name="description" content="What Verilay Patchmap is, how to use it, where its data comes from, and its limits.">
 <link rel="stylesheet" href="style.css">
-<script>try { if (localStorage.getItem("pm-theme") === "dark") document.documentElement.dataset.theme = "dark"; } catch (e) {}</script>
+<script>try { if (localStorage.getItem("pm-theme") === "dark") document.documentElement.dataset.theme = "dark"; } catch (e) {}
+// Links to other sites (Microsoft, CISA, GitHub) open in a new tab, so Patchmap stays open
+document.addEventListener("click", (ev) => { const a = ev.target.closest && ev.target.closest("a[href]");
+  if (a && /^https?:$/.test(a.protocol) && a.host !== location.host) { a.target = "_blank"; a.rel = "noopener"; } });</script>
 </head>
 <body>
 <header class="top">

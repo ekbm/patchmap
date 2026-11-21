@@ -63,7 +63,10 @@ def page(path, title, desc, body, crumbs):
 <link rel="canonical" href="{url}">
 <link rel="stylesheet" href="/style.css">
 <link rel="alternate" type="application/atom+xml" title="Verilay Patchmap" href="/feed.xml">
-<script>try {{ if (localStorage.getItem("pm-theme") === "dark") document.documentElement.dataset.theme = "dark"; }} catch (e) {{}}</script>
+<script>try {{ if (localStorage.getItem("pm-theme") === "dark") document.documentElement.dataset.theme = "dark"; }} catch (e) {{}}
+// Links to other sites (Microsoft, CISA, GitHub) open in a new tab, so Patchmap stays open
+document.addEventListener("click", (ev) => {{ const a = ev.target.closest && ev.target.closest("a[href]");
+  if (a && /^https?:$/.test(a.protocol) && a.host !== location.host) {{ a.target = "_blank"; a.rel = "noopener"; }} }});</script>
 </head>
 <body>
 <header class="top"><div class="wrap bar"><a class="brand" href="/">Verilay Patchmap</a>
