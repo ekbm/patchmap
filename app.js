@@ -944,10 +944,23 @@ function setupSuggest() {
     const el = ev.target.closest(".sg-i");
     if (el) { ev.preventDefault(); pickSugg(sg.items[+el.dataset.i]); }
   });
-  document.querySelectorAll("#startfrom .chip").forEach((b) => (b.onclick = () => {
+  // "Compare two builds": fills in a real example for the version on screen (a recent build to the newest one), so
+  // people see what the comparison shows and how to type their own.
+  const cmp = $("cmpbtn");
+  if (cmp) cmp.onclick = () => {
+    const key = (b) => b.split(".").map(Number);
+    const wb = state.builds.filter((x) => x.version === state.ver && /^10\.0\./.test(x.build))
+      .sort((x, y) => { const a = key(x.build), b = key(y.build); return a[2] - b[2] || a[3] - b[3]; });
+    if (wb.length < 2) { input.value = ""; input.placeholder = "Compare works for Windows versions: pick one above, then type two builds, e.g. 26200.9445 to 26200.9974"; input.focus(); return; }
+    const short = (x) => x.build.replace(/^10\.0\./, "");
+    input.value = `${short(wb[Math.max(0, wb.length - 4)])} to ${short(wb[wb.length - 1])}`;
+    input.dispatchEvent(new Event("input"));
+    input.focus();
+  };
+  document.querySelectorAll("#startfrom .chip[data-mode]").forEach((b) => (b.onclick = () => {
     const on = sg.mode !== b.dataset.mode;
     sg.mode = on ? b.dataset.mode : "";
-    document.querySelectorAll("#startfrom .chip").forEach((x) => x.classList.toggle("on", x === b && on));
+    document.querySelectorAll("#startfrom .chip[data-mode]").forEach((x) => x.classList.toggle("on", x === b && on));
     input.placeholder = on ? MODE_HINT[sg.mode] : "print, KB5131090, localspl.dll, 0x80041008, 20348.5870";
     if (on) input.value = "";
     input.focus();
