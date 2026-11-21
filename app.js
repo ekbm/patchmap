@@ -284,17 +284,38 @@ function compareCard(pair, h1, h2) {
   between.forEach((m) => Object.entries(m.areas).forEach(([t, a2]) => (areaTotals[t] = (areaTotals[t] || 0) + a2.count)));
   const areas = Object.entries(areaTotals).sort((x, y) => y[1] - x[1])
     .map(([t, n]) => `<button class="chip" data-a="${esc(t)}">${esc(label(t))} ${n}</button>`).join(" ");
-  const problems = between.flatMap((m) => issuesFor(m.month));
+  // Problems that started in between: by month, plus any Microsoft ties to one of the updates in between
+  const upKbs = [...new Set(ups.map((x) => x.kb))];
+  const pv = (i) => (i.by_version && i.by_version[state.ver]) || {};
+  const seenP = new Set();
+  const problems = between.flatMap((m) => issuesFor(m.month))
+    .concat(state.issues.filter((i) => (pv(i).caused_by || []).some((k) => upKbs.includes(k))))
+    .filter((i) => !seenP.has(i.id) && seenP.add(i.id));
+  const notFixed = problems.filter((i) => i.status === "open").length;
   const prob = problems.length
-    ? `<div><b>${problems.length} known problem${problems.length > 1 ? "s" : ""}</b> started in between (${problems.filter((i) => i.status !== "fixed").length} not fixed yet): ` +
+    ? `<div><b>${problems.length} known problem${problems.length > 1 ? "s" : ""}</b> started in between (${notFixed} not fixed yet): ` +
       problems.map((i) => `${esc(i.title)} <span class="pill ${esc(i.status)}">${esc(STATUS_LABEL[i.status] || i.status)}</span>`).join("; ") + `</div>`
     : `<div>No known problems started in between.</div>`;
+  // Problems Microsoft says an update in between fixed: the newer build has the fix, the older one doesn't
+  const fixedP = state.issues.filter((i) => (pv(i).fixed_by || []).some((k) => upKbs.includes(k)));
+  const fixedLine = fixedP.length
+    ? `<div><b>${fixedP.length} known problem${fixedP.length > 1 ? "s" : ""} fixed</b> in between (Microsoft says): ` +
+      fixedP.map((i) => `${esc(i.title)} <span class="is">(fixed by ${esc((pv(i).fixed_by || []).filter((k) => upKbs.includes(k)).join(", "))})</span>`).join("; ") + `</div>`
+    : "";
+  // Each update in between, with its type and a link to its page
+  const upList = upKbs.map((k) => {
+    const x = ups.find((u) => u.kb === k);
+    return `<li><b>${esc(k)}</b> · build ${esc(x.build.replace(/^10\.0\./, ""))} · ${updateType(x)}` +
+      (state.builds.some((y) => y.kb === k) ? ` · <a href="/kb/${esc(k)}/">Details ›</a>` : "") + `</li>`;
+  }).join("");
+  const sameMonth = !between.length && rb ? monthName(rb.month) : "";
   const body =
     `<div>Older: <b>${esc(a.text)}</b> (${esc(desc(ha, a, ra))})<br>Newer: <b>${esc(b.text)}</b> (${esc(desc(hb, b, rb))})</div>` + swapped +
-    `<div><b>${ups.length} update${ups.length === 1 ? "" : "s"}</b> in between${ups.length ? ": " + ups.map((x) => esc(x.kb)).join(", ") : ""}.</div>` +
+    `<div><b>${upKbs.length} update${upKbs.length === 1 ? "" : "s"}</b> in between${upKbs.length ? ":" : "."}</div>` +
+    (upList ? `<ul class="cmp-ups">${upList}</ul>` : "") +
     (between.length ? `<div><b>${fixes} security fixes</b> from ${between.length} month${between.length > 1 ? "s" : ""}. By area (click to filter):</div><div class="chips">${areas}</div>`
-                    : `<div>Both builds are from the same month, so the security fixes are the same; the newer build only adds that month's extra or hotpatch releases.</div>`) +
-    prob + `<div class="is">The months in between are listed below.</div>`;
+                    : `<div>Both builds are from ${esc(sameMonth || "the same month")}, so their security fixes are the same. The difference is the update${upKbs.length === 1 ? "" : "s"} above: open Details to see the files and fixes ${upKbs.length === 1 ? "it" : "each one"} changed.</div>`) +
+    prob + fixedLine + (between.length ? `<div class="is">The months in between are listed below.</div>` : "");
   return { html: card(`What changed between two ${esc(vlabel)} builds`, body), months: between.length ? new Set(between.map((m) => m.month)) : null };
 }
 
